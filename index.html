@@ -207,6 +207,17 @@
     .nm-time{font-family:var(--mono);font-size:9px;color:var(--txt3);}
     .nm-arr{font-size:11px;color:var(--txt3);flex-shrink:0;}
 
+
+    /* 탭 */
+    .tab-bar{display:flex;border-bottom:1px solid var(--line);flex-shrink:0;}
+    .tab-btn{flex:1;padding:8px 0;font-size:11px;font-weight:700;font-family:var(--font);background:none;border:none;cursor:pointer;color:var(--txt2);border-bottom:2px solid transparent;transition:color .15s,border-color .15s;letter-spacing:.2px;}
+    .tab-btn.active{color:var(--accent);border-bottom-color:var(--accent);}
+    .tab-btn:hover:not(.active){color:var(--txt);}
+    .tab-pane{display:none;overflow-y:auto;max-height:300px;}
+    .tab-pane.active{display:block;}
+    .tab-pane::-webkit-scrollbar{width:3px;}
+    .tab-pane::-webkit-scrollbar-thumb{background:rgba(0,0,0,.12);border-radius:3px;}
+
     /* 상태 */
     .sbox{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 16px;gap:10px;color:var(--txt2);font-size:12px;}
     .ldr{width:22px;height:22px;border:2px solid rgba(0,0,0,.08);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite;}
@@ -311,11 +322,16 @@
       <div class="card-hd">
         <div class="card-ttl">
           <div class="card-ico ic-g">🔍</div>
-          <div><h2>구글 급상승 검색어</h2><div class="card-sub">대한민국 실시간 트렌드</div></div>
+          <div><h2>구글 급상승 검색어</h2><div class="card-sub">실시간 트렌드</div></div>
         </div>
         <div class="card-meta"><div class="card-upd" id="upd-gtrend">—</div></div>
       </div>
-      <div class="trends-pane" id="body-gtrend"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
+      <div class="tab-bar">
+        <button class="tab-btn active" id="tab-kr" onclick="switchTrend('kr')">🇰🇷 대한민국</button>
+        <button class="tab-btn" id="tab-global" onclick="switchTrend('global')">🌍 글로벌</button>
+      </div>
+      <div class="tab-pane active" id="pane-kr"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
+      <div class="tab-pane" id="pane-global"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
     </div>
 
     <!-- 나무위키 -->
@@ -542,99 +558,131 @@ function renderNews(articles){
 /* ════════════════════════════════════════════════
    구글 트렌드 (RSS 텍스트 파싱)
    ════════════════════════════════════════════════ */
+async function switchTrend(tab){
+  ['kr','global'].forEach(t=>{
+    document.getElementById('tab-'+t).classList.toggle('active', t===tab);
+    document.getElementById('pane-'+t).classList.toggle('active', t===tab);
+  });
+}
+
+function renderTrendHtml(xmlText){
+  const items = parseRSS(xmlText);
+  if(!items.length) throw new Error('항목 없음');
+  const volRe = /<ht:approx_traffic>([^<]+)<\/ht:approx_traffic>/gi;
+  const vols=[]; let vm;
+  while((vm=volRe.exec(xmlText))!==null) vols.push(vm[1]);
+  return '<div class="tg">'+items.slice(0,20).map((it,i)=>{
+    const rank=i+1, cls=rank===1?'r1':rank<=3?'r3':'';
+    const url='https://www.google.com/search?q='+encodeURIComponent(it.title)+'&gl=kr&hl=ko';
+    return '<a class="tr-link" href="'+url+'" target="_blank" rel="noopener">'
+      +'<div class="tr-item">'
+      +'<span class="tr-rank '+cls+'">'+rank+'</span>'
+      +'<span class="tr-kw">'+esc(it.title)+'</span>'
+      +(vols[i]?'<span class="tr-vol">'+esc(vols[i])+'</span>':'')
+      +'</div></a>';
+  }).join('')+'</div>';
+}
+
 async function loadGTrend(force=false){
-  const KEY='gtrend';
-  const bodyEl=$('body-gtrend'), updEl=$('upd-gtrend');
-  const cached=gc(KEY,300);
-  if(!force&&cached){ bodyEl.innerHTML=cached; return; }
-  bodyEl.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
-  try{
-    const xmlText = await fetchViaProxy('https://trends.google.co.kr/trending/rss?geo=KR');
-    const items   = parseRSS(xmlText);
-    if(!items.length) throw new Error('항목 없음');
+  const updEl=$('upd-gtrend');
 
-    // approx_traffic은 parseRSS가 못 잡으므로 별도 정규식
-    const volRe = /<ht:approx_traffic>([^<]+)<\/ht:approx_traffic>/gi;
-    const vols  = [];
-    let vm;
-    while((vm=volRe.exec(xmlText))!==null) vols.push(vm[1]);
+  // 한국
+  const KEY_KR='gtrend_kr';
+  const paneKR=$('pane-kr');
+  const cachedKR=gc(KEY_KR,300);
+  if(!force&&cachedKR){ paneKR.innerHTML=cachedKR; }
+  else{
+    paneKR.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
+    try{
+      const xml=await fetchViaProxy('https://trends.google.co.kr/trending/rss?geo=KR');
+      const html=renderTrendHtml(xml);
+      sc(KEY_KR,html); paneKR.innerHTML=html;
+      updEl.textContent='갱신 '+nowKST();
+    }catch(e){ paneKR.innerHTML='<div class="errbox">'+esc(e.message)+'</div>'; }
+  }
 
-    const html='<div class="tg">'+items.slice(0,20).map((it,i)=>{
-      const rank=i+1;
-      const cls=rank===1?'r1':rank<=3?'r3':'';
-      const url=`https://www.google.com/search?q=${encodeURIComponent(it.title)}&gl=kr&hl=ko`;
-      return`<a class="tr-link" href="${url}" target="_blank" rel="noopener">
-        <div class="tr-item">
-          <span class="tr-rank ${cls}">${rank}</span>
-          <span class="tr-kw">${esc(it.title)}</span>
-          ${vols[i]?`<span class="tr-vol">${esc(vols[i])}</span>`:''}
-        </div></a>`;
-    }).join('')+'</div>';
-    sc(KEY,html);
-    bodyEl.innerHTML=html;
-    updEl.textContent=`갱신 ${nowKST()}`;
-  }catch(e){
-    bodyEl.innerHTML=`<div class="errbox">트렌드를 불러올 수 없습니다.<br><small style="color:var(--txt3)">${esc(String(e.message))}</small></div>`;
+  // 글로벌
+  const KEY_GL='gtrend_global';
+  const paneGL=$('pane-global');
+  const cachedGL=gc(KEY_GL,300);
+  if(!force&&cachedGL){ paneGL.innerHTML=cachedGL; }
+  else{
+    paneGL.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
+    try{
+      const xml=await fetchViaProxy('https://trends.google.com/trending/rss?geo=US');
+      const html=renderTrendHtml(xml);
+      sc(KEY_GL,html); paneGL.innerHTML=html;
+    }catch(e){ paneGL.innerHTML='<div class="errbox">'+esc(e.message)+'</div>'; }
   }
 }
 
-/* ════════════════════════════════════════════════
+/*/* ════════════════════════════════════════════════
    아르카 나무실검 (최신순 10개)
    ════════════════════════════════════════════════ */
 async function loadNamu(force=false){
   const KEY='namu';
   const bodyEl=$('body-namu'), updEl=$('upd-namu');
-  const cached=gc(KEY,120);
+  const cached=gc(KEY,60);
   if(!force&&cached){ bodyEl.innerHTML=cached; return; }
   bodyEl.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
   try{
-    const src = await fetchViaProxy('https://arca.live/b/namuhotnow');
-    const items=[];
-    const seen=new Set();
+    // 나무위키 공식 실시간 검색어 API
+    const r = await fetch('https://search.namu.wiki/api/ranking', {
+      signal: AbortSignal.timeout(8000),
+      headers: {'Referer':'https://namu.wiki/', 'Origin':'https://namu.wiki'}
+    });
+    if(!r.ok) throw new Error('API '+r.status);
+    const data = await r.json();
+    // 응답 형식: 배열 또는 {items:[...]} 등
+    const list = Array.isArray(data) ? data : (data.items || data.keywords || data.result || []);
+    if(!list.length) throw new Error('데이터 없음');
 
-    // vrow 전체 블록 추출
-    const vrowRe = /class="vrow[^"]*"[^>]*href="(\/b\/namuhotnow\/(\d+))[^"]*"([\s\S]*?)(?=class="vrow|<\/tbody|<\/ul)/g;
-    let m;
-    while((m=vrowRe.exec(src))!==null && items.length<15){
-      const id=m[2];
-      if(seen.has(id)) continue;
-      seen.add(id);
-      const blk=m[3];
-
-      // 제목: vrow-top > title 안에서 카테고리/뱃지 제외한 순수 텍스트
-      // vrow-title 혹은 title 클래스 span 중 가장 긴 텍스트
-      const spans=[...blk.matchAll(/<span[^>]*class="[^"]*title[^"]*"[^>]*>([\s\S]*?)<\/span>/gi)];
-      let title='';
-      for(const s of spans){
-        const t=s[1].replace(/<[^>]+>/g,'').replace(/\[\d+\]/g,'').replace(/\s+/g,' ').trim();
-        if(t.length>title.length) title=t;
-      }
-      title=title.replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').trim();
-
-      if(title.length<2) continue;
-
-      // 공지 키워드 제외
-      const skip=['이용 안내','채널 규정','스크립트','신고','건의','질문하는','탭이 신설','기준 개정','댓글 영구','공지사항'];
-      if(skip.some(k=>title.includes(k))) continue;
-
-      items.push({title, url:'https://arca.live'+m[1]});
-    }
-
-    if(!items.length) throw new Error('게시물 없음');
-
-    const out=items.slice(0,10).map((item,i)=>{
-      const rank=i+1;
-      const cls=rank===1?'r1':rank<=3?'r3':'';
-      return '<a class="namu-item" href="'+esc(item.url)+'" target="_blank" rel="noopener">'
+    const out = list.slice(0,15).map((item,i)=>{
+      const rank=i+1, cls=rank===1?'r1':rank<=3?'r3':'';
+      const kw = typeof item==='string' ? item : (item.keyword||item.name||item.title||String(item));
+      const url = 'https://namu.wiki/w/'+encodeURIComponent(kw);
+      return '<a class="namu-item" href="'+esc(url)+'" target="_blank" rel="noopener">'
         +'<span class="nm-rank '+cls+'">'+rank+'</span>'
-        +'<div class="nm-info"><div class="nm-title">'+esc(item.title)+'</div></div>'
+        +'<div class="nm-info"><div class="nm-title">'+esc(kw)+'</div></div>'
         +'<span class="nm-arr">›</span></a>';
     }).join('');
     sc(KEY,out);
     bodyEl.innerHTML=out;
     updEl.textContent='갱신 '+nowKST();
   }catch(e){
-    bodyEl.innerHTML='<div class="errbox">나무위키 실시간 검색어를 불러올 수 없습니다.<br><small style="color:var(--txt3)">'+esc(String(e.message))+'</small></div>';
+    // 폴백: 아르카 나무실검 페이지
+    try{
+      const src = await fetchViaProxy('https://arca.live/b/namuhotnow?p=1');
+      const items=[];
+      const seen=new Set();
+      // 게시글 ID + 제목 추출 - data-title 속성 우선
+      const re1 = /data-title="([^"]{3,80})"[^>]*href="(\/b\/namuhotnow\/(\d+))"/g;
+      const re2 = /href="(\/b\/namuhotnow\/(\d+))"[^>]*data-title="([^"]{3,80})"/g;
+      let m;
+      for(const re of [re1,re2]){
+        while((m=re.exec(src))!==null && items.length<10){
+          const id=re===re1?m[3]:m[2];
+          if(seen.has(id)) continue;
+          seen.add(id);
+          const title=(re===re1?m[1]:m[3]).replace(/&amp;/g,'&').trim();
+          const url='https://arca.live'+(re===re1?m[2]:m[1]);
+          items.push({title,url});
+        }
+      }
+      if(!items.length) throw new Error('아르카도 실패');
+      const out2=items.map((item,i)=>{
+        const rank=i+1,cls=rank===1?'r1':rank<=3?'r3':'';
+        return '<a class="namu-item" href="'+esc(item.url)+'" target="_blank" rel="noopener">'
+          +'<span class="nm-rank '+cls+'">'+rank+'</span>'
+          +'<div class="nm-info"><div class="nm-title">'+esc(item.title)+'</div></div>'
+          +'<span class="nm-arr">›</span></a>';
+      }).join('');
+      sc(KEY,out2);
+      bodyEl.innerHTML=out2;
+      updEl.textContent='갱신 '+nowKST();
+    }catch(e2){
+      bodyEl.innerHTML='<div class="errbox">실시간 검색어를 불러올 수 없습니다.<br><small style="color:var(--txt3)">'+esc(e2.message)+'</small></div>';
+    }
   }
 }
 
