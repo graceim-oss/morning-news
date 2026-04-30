@@ -1,9 +1,9 @@
 {
   "version": 2,
   "functions": {
-    "api/news.py":   { "runtime": "python3.12", "maxDuration": 15 },
-    "api/prices.py": { "runtime": "python3.12", "maxDuration": 10 },
-    "api/trends.py": { "runtime": "python3.12", "maxDuration": 15 }
+    "api/news.py":   { "runtime": "python3.12" },
+    "api/prices.py": { "runtime": "python3.12" },
+    "api/trends.py": { "runtime": "python3.12" }
   },
   "routes": [
     { "src": "/api/news",   "dest": "/api/news.py"   },
