@@ -1,10 +1,5 @@
 {
   "version": 2,
-  "functions": {
-    "api/news.py":   { "runtime": "python3.9" },
-    "api/prices.py": { "runtime": "python3.9" },
-    "api/trends.py": { "runtime": "python3.9" }
-  },
   "routes": [
     { "src": "/api/news",   "dest": "/api/news.py"   },
     { "src": "/api/prices", "dest": "/api/prices.py" },
