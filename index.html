@@ -590,28 +590,41 @@ async function loadNamu(force=false){
   try{
     const src = await fetchViaProxy('https://arca.live/b/namuhotnow');
     const items=[];
-    // 게시글 링크 + 제목 파싱
-    const rowRe = /href="(\/b\/namuhotnow\/(\d+))[^"]*"[^>]*>[^<]*<\/a>[\s\S]{0,300}?class="[^"]*title[^"]*"[^>]*>([\s\S]*?)<\/[a-z]+>/g;
+    const seen=new Set();
+
+    // 아르카 게시글: <a href="/b/namuhotnow/숫자" ...> 안의 제목 추출
+    // 패턴: href="/b/namuhotnow/숫자" 를 찾고, 그 근처 title 텍스트 추출
+    const articleRe = /<a[^>]+href="(\/b\/namuhotnow\/(\d+))"[^>]*class="[^"]*vrow[^"]*"[^>]*>([\s\S]*?)<\/a>/g;
     let m;
-    while((m=rowRe.exec(src))!==null && items.length<10){
-      const url='https://arca.live'+m[1];
-      const title=m[3].replace(/<[^>]+>/g,'').replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/\s+/g,' ').trim();
+    while((m=articleRe.exec(src))!==null && items.length<10){
+      const id=m[2];
+      if(seen.has(id)) continue;
+      seen.add(id);
+      const blk=m[3];
+      // title span 추출
+      const titleM=/class="[^"]*title[^"]*"[^>]*>([\s\S]*?)<\/span>/i.exec(blk);
+      if(!titleM) continue;
+      const title=titleM[1].replace(/<[^>]+>/g,'').replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/\s+/g,' ').trim();
       if(title.length<2) continue;
-      items.push({title, url});
+      items.push({title, url:'https://arca.live'+m[1]});
     }
-    // 폴백: 링크만 추출
+
+    // 폴백: href + 인근 텍스트로 제목 추출
     if(items.length<3){
-      const fallRe=/href="(\/b\/namuhotnow\/(\d+))"/g;
-      const titleRe2=/title="([^"]{2,60})"/g;
-      const seen=new Set();
-      let lm;
-      while((lm=fallRe.exec(src))!==null && items.length<10){
-        if(seen.has(lm[2])) continue;
-        seen.add(lm[2]);
-        items.push({title:'나무위키 실검 #'+lm[2], url:'https://arca.live'+lm[1]});
+      seen.clear();
+      const fallRe=/href="(\/b\/namuhotnow\/(\d+))[^"]*"[\s\S]{0,500}?<span[^>]*class="[^"]*title[^"]*"[^>]*>([\s\S]*?)<\/span>/g;
+      while((m=fallRe.exec(src))!==null && items.length<10){
+        const id=m[2];
+        if(seen.has(id)) continue;
+        seen.add(id);
+        const title=m[3].replace(/<[^>]+>/g,'').replace(/&amp;/g,'&').replace(/\s+/g,' ').trim();
+        if(title.length<2) continue;
+        items.push({title, url:'https://arca.live'+m[1]});
       }
     }
-    if(!items.length) throw new Error('항목 없음');
+
+    if(!items.length) throw new Error('파싱 실패 - 구조 변경됐을 수 있음');
+
     const out=items.map((item,i)=>{
       const rank=i+1;
       const cls=rank===1?'r1':rank<=3?'r3':'';
@@ -650,7 +663,8 @@ async function refreshAll(force=false){
 refreshAll(false);
 setInterval(()=>refreshAll(true),    30*60*1000); // 30분: 뉴스
 setInterval(()=>loadTicker(true),       60*1000); //  1분: 주가
-setInterval(()=>{ loadGTrend(true); loadNamu(true); }, 5*60*1000); // 5분: 트렌드
+setInterval(()=>loadGTrend(true), 5*60*1000);   // 5분: 구글 트렌드
+setInterval(()=>loadNamu(true),   2*60*1000);   // 2분: 나무실검 // 5분: 트렌드
 </script>
 </body>
 </html>
