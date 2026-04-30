@@ -259,30 +259,27 @@ async function loadGTrend(force=false){
 }
 async function loadNamu(force=false){
   const KEY='namu',bodyEl=$('body-namu'),updEl=$('upd-namu');
-  const cached=gc(KEY,300);if(!force&&cached){bodyEl.innerHTML=cached;return;}
+  const cached=gc(KEY,60);if(!force&&cached){bodyEl.innerHTML=cached;return;}
   bodyEl.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
   try{
-    const src=await fetchText('https://namu.wiki/RecentChanges');
-    const SKIP=['사용자:','나무위키:','파일:','틀:','분류:','위키프로젝트:','토론:'];
-    const linkRe=/href=["']\/w\/([^"'?#]+)["']/g;
-    const timeRe=/(\d{4}-\d{2}-\d{2}[ T]\d{2}:\d{2}:\d{2})/g;
-    const times=[];let tm2;while((tm2=timeRe.exec(src))!==null)times.push(tm2[1]);
-    const cnt={},tmMap={};let lm,idx=0;
-    while((lm=linkRe.exec(src))!==null){
-      let title;try{title=decodeURIComponent(lm[1]);}catch{title=lm[1];}
-      if(SKIP.some(ns=>title.startsWith(ns))||title.length<2){idx++;continue;}
-      cnt[title]=(cnt[title]??0)+1;if(!tmMap[title])tmMap[title]=times[idx]??'';idx++;
+    const src=await fetchText('https://namu.wiki/w/%EB%82%98%EB%AC%B4%EC%9C%84%ED%82%A4:%EB%8C%80%EB%AC%B8');
+    const sections=[...src.matchAll(/href=['"]\/w\/([^\'"?#]+)[\'"]/g)];
+    const SKIP=['사용자:','나무위키:','파일:','틀:','분류:','위키프로젝트:','토론:','특수기능:'];
+    const seen=new Set();const items=[];
+    for(const m of sections){
+      let title;try{title=decodeURIComponent(m[1]);}catch{title=m[1];}
+      if(SKIP.some(ns=>title.startsWith(ns))||title.length<2||seen.has(title))continue;
+      seen.add(title);
+      items.push({title,url:"https://namu.wiki/w/"+m[1]});
+      if(items.length>=15)break;
     }
-    const sorted=Object.entries(cnt).sort((a,b)=>b[1]-a[1]).slice(0,15);
-    if(!sorted.length)throw new Error('항목 없음');
-    const out=sorted.map(([title,n],i)=>{
-      const rank=i+1,cls=rank===1?'r1':rank<=3?'r3':'';
-      const edits=n>1?`${n}회 편집`:'편집됨';
-      const tAgo=tmMap[title]?relTime(tmMap[title].replace(' ','T')):'';
-      return`<a class="namu-item" href="https://namu.wiki/w/${encodeURIComponent(title)}" target="_blank" rel="noopener"><span class="nm-rank ${cls}">${rank}</span><div class="nm-info"><div class="nm-title">${esc(title)}</div><div class="nm-meta"><span class="nm-edits">${edits}</span><span class="nm-time">${tAgo}</span></div></div><span class="nm-arr">›</span></a>`;
-    }).join('');
-    sc(KEY,out);bodyEl.innerHTML=out;updEl.textContent=`갱신 ${nowKST()}`;
-  }catch(e){bodyEl.innerHTML=`<div class="errbox">나무위키 데이터를 불러올 수 없습니다.<br><small style="color:var(--txt3)">${esc(e.message)}</small></div>`;}
+    if(items.length<3)throw new Error('항목 없음');
+    const out=items.map((item,i)=>{
+      const rank=i+1,cls=rank===1?"r1":rank<=3?"r3":"";
+      return "<a class=\"namu-item\" href=\""+esc(item.url)+"\" target=\"_blank\" rel=\"noopener\"><span class=\"nm-rank "+cls+"\">"+rank+"</span><div class=\"nm-info\"><div class=\"nm-title\">"+esc(item.title)+"</div></div><span class=\"nm-arr\">›</span></a>";
+    }).join("");
+    sc(KEY,out);bodyEl.innerHTML=out;updEl.textContent="갱신 "+nowKST();
+  }catch(e){bodyEl.innerHTML="<div class=\"errbox\">나무위키 데이터를 불러올 수 없습니다.<br><small style=\"color:var(--txt3)\">"+esc(e.message)+"</small></div>";}
 }
 async function refreshAll(force=false){
   const btn=$('btn-ref'),icon=$('spin');
