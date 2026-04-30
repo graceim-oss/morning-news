@@ -592,52 +592,50 @@ async function loadNamu(force=false){
     const items=[];
     const seen=new Set();
 
-    // 아르카 게시글: <a href="/b/namuhotnow/숫자" ...> 안의 제목 추출
-    // 패턴: href="/b/namuhotnow/숫자" 를 찾고, 그 근처 title 텍스트 추출
-    const articleRe = /<a[^>]+href="(\/b\/namuhotnow\/(\d+))"[^>]*class="[^"]*vrow[^"]*"[^>]*>([\s\S]*?)<\/a>/g;
-    let m;
-    while((m=articleRe.exec(src))!==null && items.length<10){
-      const id=m[2];
-      if(seen.has(id)) continue;
-      seen.add(id);
-      const blk=m[3];
-      // title span 추출
-      const titleM=/class="[^"]*title[^"]*"[^>]*>([\s\S]*?)<\/span>/i.exec(blk);
+    // 모든 게시글 ID 추출 후 내림차순(최신순) 정렬
+    const allLinks=[];
+    const linkRe=/href="(\/b\/namuhotnow\/(\d+))(?:\?[^"]*)?"/g;
+    let lm;
+    while((lm=linkRe.exec(src))!==null){
+      const id=parseInt(lm[2]);
+      if(!seen.has(id)){ seen.add(id); allLinks.push({id,path:lm[1]}); }
+    }
+    allLinks.sort((a,b)=>b.id-a.id);
+
+    for(const link of allLinks){
+      if(items.length>=10) break;
+      const pos=src.indexOf('/b/namuhotnow/'+link.id);
+      if(pos<0) continue;
+      const block=src.slice(Math.max(0,pos-100), pos+600);
+      const titleM=/class="[^"]*title[^"]*"[^>]*>([\s\S]*?)<\/span>/i.exec(block);
       if(!titleM) continue;
-      const title=titleM[1].replace(/<[^>]+>/g,'').replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/\s+/g,' ').trim();
+      const title=titleM[1]
+        .replace(/<[^>]+>/g,'')
+        .replace(/\[\d+\]/g,'')
+        .replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>')
+        .replace(/\s+/g,' ').trim();
       if(title.length<2) continue;
-      items.push({title, url:'https://arca.live'+m[1]});
+      // 공지 키워드 제외
+      const skip=['이용 안내','채널 규정','스크립트','신고','건의','질문하는곳','탭이 신설','기준 개정','댓글 영구','공지'];
+      if(skip.some(k=>title.includes(k))) continue;
+      items.push({title, url:'https://arca.live'+link.path});
     }
 
-    // 폴백: href + 인근 텍스트로 제목 추출
-    if(items.length<3){
-      seen.clear();
-      const fallRe=/href="(\/b\/namuhotnow\/(\d+))[^"]*"[\s\S]{0,500}?<span[^>]*class="[^"]*title[^"]*"[^>]*>([\s\S]*?)<\/span>/g;
-      while((m=fallRe.exec(src))!==null && items.length<10){
-        const id=m[2];
-        if(seen.has(id)) continue;
-        seen.add(id);
-        const title=m[3].replace(/<[^>]+>/g,'').replace(/&amp;/g,'&').replace(/\s+/g,' ').trim();
-        if(title.length<2) continue;
-        items.push({title, url:'https://arca.live'+m[1]});
-      }
-    }
-
-    if(!items.length) throw new Error('파싱 실패 - 구조 변경됐을 수 있음');
+    if(!items.length) throw new Error('게시물 없음');
 
     const out=items.map((item,i)=>{
       const rank=i+1;
       const cls=rank===1?'r1':rank<=3?'r3':'';
-      return `<a class="namu-item" href="${esc(item.url)}" target="_blank" rel="noopener">
-        <span class="nm-rank ${cls}">${rank}</span>
-        <div class="nm-info"><div class="nm-title">${esc(item.title)}</div></div>
-        <span class="nm-arr">›</span></a>`;
+      return '<a class="namu-item" href="'+esc(item.url)+'" target="_blank" rel="noopener">'
+        +'<span class="nm-rank '+cls+'">'+rank+'</span>'
+        +'<div class="nm-info"><div class="nm-title">'+esc(item.title)+'</div></div>'
+        +'<span class="nm-arr">›</span></a>';
     }).join('');
     sc(KEY,out);
     bodyEl.innerHTML=out;
-    updEl.textContent=`갱신 ${nowKST()}`;
+    updEl.textContent='갱신 '+nowKST();
   }catch(e){
-    bodyEl.innerHTML=`<div class="errbox">나무위키 실시간 검색어를 불러올 수 없습니다.<br><small style="color:var(--txt3)">${esc(String(e.message))}</small></div>`;
+    bodyEl.innerHTML='<div class="errbox">나무위키 실시간 검색어를 불러올 수 없습니다.<br><small style="color:var(--txt3)">'+esc(String(e.message))+'</small></div>';
   }
 }
 
