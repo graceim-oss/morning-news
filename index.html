@@ -3,168 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>위메이드 모닝 클리핑</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>위메이드 브랜드마케팅 뉴스클리핑</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --navy: #0a1128; --navy-light: #121b3d; --toss-blue: #3182f6;
-            --text: #ffffff; --muted: #94a3b8; --border: rgba(255,255,255,0.1);
-            --up: #ef4444; --down: #3b82f6; --card: #1e293b;
+            --bg-body: #f1f3f6;
+            --bg-card: #ffffff;
+            --bg-header: #101c40;
+            --primary: #3182f6;
+            --text-dark: #222222;
+            --text-gray: #7d7d7d;
+            --border: #e6e6e6;
+            --shadow: 0 6px 16px rgba(0,0,0,0.06);
+            --font-family: 'Inter', 'Noto Sans KR', sans-serif;
         }
+
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Noto Sans KR', sans-serif; background-color: var(--navy); color: var(--text); line-height: 1.6; }
-        header { padding: 15px 25px; background: var(--navy); border-bottom: var(--border); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
-        .logo { font-size: 18px; font-weight: 700; color: var(--toss-blue); }
-        .price-bar { background: var(--navy-light); padding: 12px 25px; display: flex; gap: 30px; overflow-x: auto; border-bottom: 1px solid var(--border); }
-        .price-item { display: flex; flex-direction: column; min-width: 140px; border-right: 1px solid var(--border); padding-right: 15px; }
-        .price-item:last-child { border: none; }
-        .price-item .label { font-size: 11px; color: var(--muted); }
-        .price-item .val { font-size: 15px; font-weight: 700; }
-        main { display: grid; grid-template-columns: 2.2fr 1fr; gap: 15px; padding: 15px; max-width: 1400px; margin: 0 auto; }
-        .panel { background: var(--card); border-radius: 12px; padding: 20px; min-height: 300px; }
-        .panel-title { font-size: 17px; font-weight: 700; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 15px; display: flex; justify-content: space-between; }
-        .news-item { text-decoration: none; color: inherit; display: block; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
-        .news-item h4 { font-size: 14px; margin-bottom: 4px; color: #f1f5f9; }
-        .news-meta { font-size: 11px; color: var(--muted); }
-        .trend-group { margin-bottom: 25px; }
-        .trend-group h3 { font-size: 13px; color: var(--toss-blue); margin-bottom: 12px; }
-        .trend-item { display: flex; align-items: center; gap: 10px; padding: 10px; background: rgba(255,255,255,0.04); border-radius: 8px; text-decoration: none; color: inherit; font-size: 13px; margin-bottom: 6px; }
-        .trend-item .rank { font-weight: 700; color: var(--toss-blue); width: 18px; text-align: center; }
-        .up { color: var(--up); } .down { color: var(--down); }
-        .loading-text { font-size: 12px; color: var(--muted); animation: pulse 1.5s infinite; }
-        @keyframes pulse { 0% { opacity: 0.5; } 50% { opacity: 1; } 100% { opacity: 0.5; } }
-        @media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+        body { font-family: var(--font-family); background-color: var(--bg-body); color: var(--text-dark); -webkit-font-smoothing: antialiased; }
+
+        /* --- Header --- */
+        header { 
+            background-color: var(--bg-header); 
+            color: white; 
+            padding: 18px 40px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .header-left { display: flex; align-items: center; gap: 10px; }
+        .header-left h1 { font-size: 19px; font-weight: 700; }
+        .header-left span { font-weight: 400; color: #a1b0d6; font-size: 17px; }
+        .status-badge { 
+            background-color: rgba(255,255,255,0.08); 
+            padding: 4px 10px; 
+            border-radius: 20px; 
+            font-size: 11px; 
+            font-weight: 500; 
+            color: #d1d5db; 
+            display: flex; align-items: center; gap: 4px; 
+        }
+        .status-badge::before { content: ""; display: block; width: 6px; height: 6px; background-color: #2fb138; border-radius: 50%; }
+        .header-right { display: flex; align-items: center; gap: 15px; }
+        .header-right .time-info { text-align: right; }
+        .header-right .current-date { font-size: 12px; color: #a1b0d6; }
+        .header-right .current-time { font-size: 20px; font-weight: 700; }
+        .btn-refresh { 
+            background-color: rgba(255,255,255,0.08); 
+            color: white; border: none; 
+            padding: 10px 15px; border-radius: 8px; 
+            font-size: 13px; font-weight: 500; cursor: pointer; 
+            display: flex; align-items: center; gap: 6px; 
+            transition: 0.2s;
+        }
+        .btn-refresh:hover { background-color: rgba(255,255,255,0.15); }
+
+        /* --- Main Content --- */
+        main { 
+            max-width: 1600px; margin: 30px auto; 
+            padding: 0 40px; 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 25px; 
+        }
+
+        /* --- Card Style --- */
+        .card { 
+            background-color: var(--bg-card); 
+            border-radius: 16px; 
+            padding: 25px; 
+            box-shadow: var(--shadow); 
+            border: 1px solid #e1e3e7;
+            display: flex; flex-direction: column; 
+            transition: box-shadow 0.2s;
+        }
+        .card:hover { box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .card-header { 
+            display: flex; justify-content: space-between; align-items: flex-start; 
+            padding-bottom: 20px; 
+            border-bottom: 1px solid var(--border); 
+            margin-bottom: 15px;
+        }
+        .card-header-left { display: flex; align-items: center; gap: 15px; }
+        .category-icon { font-size: 24px; padding: 10px; background-color: #f6f8fb; border-radius: 10px; width: 44px; height: 44px; display: flex; justify-content: center; align-items: center; }
+        .category-meta { display: flex; flex-direction: column; gap: 1px; }
+        .category-title { font-size: 16px; font-weight: 700; color: var(--text-dark); }
+        .category-tags { font-size: 12px; color: var(--text-gray); }
+        .card-header-right { text-align: right; }
+        .update-time { font-size: 11px; color: #a0a8b9; font-weight: 500; margin-bottom: 5px; }
+        .source-tag { font-size: 11px; color: #a1b0d6; background-color: #f1f3f6; padding: 3px 8px; border-radius: 4px; font-weight: 700; color: #101c40; }
+
+        .news-list, .trend-list { display: flex; flex-direction: column; flex-grow: 1; }
+        .list-item { 
+            text-decoration: none; color: inherit; display: block; 
+            padding: 12px 0; border-bottom: 1px solid #f6f8fb; 
+            transition: color 0.1s; 
+        }
+        .list-item:last-child { border-bottom: none; }
+        .list-item:hover .item-title { color: var(--primary); }
+        .item-title { font-size: 14px; font-weight: 500; color: #333333; margin-bottom: 3px; line-height: 1.4; }
+        .item-meta { font-size: 11px; color: var(--text-gray); display: flex; align-items: center; gap: 8px; }
+
+        /* --- Trend Specific --- */
+        .trend-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 20px; }
+        .trend-list-item { 
+            text-decoration: none; color: inherit; 
+            padding: 10px; background-color: #f6f8fb; 
+            border-radius: 8px; font-size: 13px; font-weight: 500; 
+            display: flex; align-items: center; gap: 10px; 
+            transition: 0.2s;
+        }
+        .trend-list-item:hover { background-color: #ebeff5; }
+        .rank { color: var(--primary); font-weight: 700; width: 20px; text-align: center; }
+
+        /* --- Responsive --- */
+        @media (max-width: 1024px) { main { grid-template-columns: 1fr; } header { padding: 18px 25px; } main { padding: 0 20px; } }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo">WEMADE <span style="color:white">Morning</span></div>
-    <div id="current-time">--:--:--</div>
+    <div class="header-left">
+        <h1>위메이드 <span>브랜드마케팅 뉴스클리핑</span></h1>
+        <div class="status-badge" title="데이터 연결 상태 양호">정상 작동</div>
+    </div>
+    <div class="header-right">
+        <div class="time-info">
+            <div class="current-date" id="current-date">--년 --월 --일 --요일</div>
+            <div class="current-time" id="current-time">--:--:--</div>
+        </div>
+        <button class="btn-refresh" id="btn-refresh">↻ 새로고침</button>
+    </div>
 </header>
 
-<div class="price-bar">
-    <div class="price-item"><span class="label">위메이드(KRX)</span><span class="val" id="p-wemade"><span class="loading-text">...</span></span></div>
-    <div class="price-item"><span class="label">위메이드맥스(KRX)</span><span class="val" id="p-max"><span class="loading-text">...</span></span></div>
-    <div class="price-item"><span class="label">WEMIX (Bithumb)</span><span class="val" id="p-wemix"><span class="loading-text">...</span></span></div>
-</div>
-
 <main>
-    <section class="panel">
-        <div class="panel-title">주요 뉴스 📰</div>
-        <div id="news-list"><p class="loading-text">최신 뉴스를 가져오고 있습니다...</p></div>
+    <section class="card">
+        <div class="card-header">
+            <div class="card-header-left">
+                <div class="category-icon">📰</div>
+                <div class="category-meta">
+                    <span class="category-title">위메이드 뉴스</span>
+                    <span class="category-tags">위메이드, 위믹스, WEMADE</span>
+                </div>
+            </div>
+            <div class="card-header-right">
+                <div class="update-time">업데이트 <span class="u-time">--:--</span></div>
+                <span class="source-tag">출처: 구글</span>
+            </div>
+        </div>
+        <div class="news-list" id="n-wemade"></div>
     </section>
 
-    <aside class="panel">
-        <div class="panel-title">실시간 트렌드 🔥</div>
-        <div class="trend-group">
-            <h3>🔍 구글 급상승 검색어</h3>
-            <div id="g-trends"><p class="loading-text">데이터 로드 중...</p></div>
+    <section class="card">
+        <div class="card-header">
+            <div class="card-header-left">
+                <div class="category-icon">🔗</div>
+                <div class="category-meta">
+                    <span class="category-title">블록체인 / Web3</span>
+                    <span class="category-tags">업계 동향, 가상자산, NFT, 마케팅</span>
+                </div>
+            </div>
+            <div class="card-header-right">
+                <div class="update-time">업데이트 <span class="u-time">--:--</span></div>
+                <span class="source-tag">출처: 구글</span>
+            </div>
         </div>
-        <div class="trend-group">
-            <h3>📖 나무위키 실시간 검색어</h3>
-            <div id="n-trends"><p class="loading-text">데이터 로드 중...</p></div>
+        <div class="news-list" id="n-web3"></div>
+    </section>
+
+    <section class="card">
+        <div class="card-header">
+            <div class="card-header-left">
+                <div class="category-icon">📣</div>
+                <div class="category-meta">
+                    <span class="category-title">브랜딩 / 마케팅</span>
+                    <span class="category-tags">트렌드, 캠페인, 광고, 인사이트</span>
+                </div>
+            </div>
+            <div class="card-header-right">
+                <div class="update-time">업데이트 <span class="u-time">--:--</span></div>
+                <span class="source-tag">출처: 구글</span>
+            </div>
         </div>
-    </aside>
+        <div class="news-list" id="n-brand"></div>
+    </section>
+
+    <section class="card">
+        <div class="card-header">
+            <div class="card-header-left">
+                <div class="category-icon">🔥</div>
+                <div class="category-meta">
+                    <span class="category-title">실시간 급상승 검색어</span>
+                    <span class="category-tags">지금 사람들이 관심 갖는 키워드</span>
+                </div>
+            </div>
+            <div class="card-header-right">
+                <div class="update-time">업데이트 <span class="u-time">--:--</span></div>
+                <span class="source-tag">출처: 구글</span>
+            </div>
+        </div>
+        <div class="trend-grid" id="t-trends"></div>
+    </section>
 </main>
 
 <script>
-    // 프록시는 뉴스/트렌드 등 외부 도메인에만 사용
     const PROXY = "https://api.allorigins.win/get?url=";
+    const NEWS_KEYS = {
+        'wemade': encodeURIComponent('위메이드 OR 장현국 OR 위믹스 OR WEMIX'),
+        'web3': encodeURIComponent('블록체인 마케팅 OR web3 프로젝트 OR 가상자산 동향'),
+        'brand': encodeURIComponent('브랜딩 성공 사례 OR 캠페인 OR 국내 마케팅 트렌드')
+    };
 
-    function updateTime() {
+    // 시계 및 업데이트 타임 표시
+    function updateClock() {
         const now = new Date();
-        document.getElementById('current-time').innerText = now.toLocaleTimeString('ko-KR', {hour12:false});
+        const y = now.getFullYear(); const m = (now.getMonth()+1).toString().padStart(2,'0'); const d = now.getDate().toString().padStart(2,'0'); const w = ['일','월','화','수','목','금','토'][now.getDay()];
+        const h = now.getHours().toString().padStart(2,'0'); const min = now.getMinutes().toString().padStart(2,'0'); const s = now.getSeconds().toString().padStart(2,'0');
+        document.getElementById('current-date').textContent = `${y}년 ${m}월 ${d}일 ${w}요일`;
+        document.getElementById('current-time').textContent = `${h}:${min}:${s}`;
+        
+        // 카드 업데이트 시간 표시
+        const utime = `${m}/${d} ${h}:${min}`;
+        document.querySelectorAll('.u-time').forEach(el => el.textContent = utime);
     }
-    setInterval(updateTime, 1000);
-    updateTime();
+    setInterval(updateClock, 1000);
+    updateClock();
 
-    // 1. 주가 정보 (업비트/빗썸 API는 CORS 프록시 없이 가능하여 매우 빠름)
-    async function fetchPrices() {
-        // 위믹스 (빗썸 API 직접 호출 - 프록시 없음)
+    // 뉴스 가져오기
+    async function fetchNews(type, targetId) {
+        document.getElementById(targetId).innerHTML = "<div style='font-size:12px; color:gray; padding:20px 0;'>로딩 중...</div>";
+        const url = `https://news.google.com/rss/search?q=${NEWS_KEYS[type]}&hl=ko&gl=KR&ceid=KR:ko`;
         try {
-            const res = await fetch("https://api.bithumb.com/public/ticker/WEMIX_KRW");
-            const data = await res.json();
-            const val = data.data;
-            const changeRate = ((val.closing_price - val.prev_closing_price) / val.prev_closing_price * 100).toFixed(2);
-            const color = changeRate >= 0 ? 'up' : 'down';
-            document.getElementById('p-wemix').innerHTML = `${parseInt(val.closing_price).toLocaleString()} <span class="${color}" style="font-size:11px">${changeRate}%</span>`;
-        } catch (e) { document.getElementById('p-wemix').innerText = "확인 불가"; }
-
-        // 주식 (네이버 금융은 프록시 필수라 별도 처리)
-        const stocks = {'112040':'p-wemade', '233180':'p-max'};
-        for (const [code, id] of Object.entries(stocks)) {
-            try {
-                // 초경량 API 사용
-                const res = await fetch(`${PROXY}${encodeURIComponent(`https://polling.finance.naver.com/api/realtime?query=SERVICE_ITEM:${code}`)}`);
-                const json = await res.json();
-                const data = JSON.parse(json.contents).result.areas[0].datas[0];
-                const color = data.cr > 0 ? 'up' : 'down';
-                document.getElementById(id).innerHTML = `${data.nv.toLocaleString()} <span class="${color}" style="font-size:11px">${data.cr > 0 ? '+':''}${data.cr}%</span>`;
-            } catch (e) { document.getElementById(id).innerText = "로드 지연"; }
-        }
-    }
-
-    // 2. 뉴스 (Google News RSS)
-    async function fetchNews() {
-        const q = encodeURIComponent("위메이드 | 위믹스 | 블록체인");
-        try {
-            const res = await fetch(`${PROXY}${encodeURIComponent(`https://news.google.com/rss/search?q=${q}&hl=ko&gl=KR&ceid=KR:ko`)}`);
+            const res = await fetch(`${PROXY}${encodeURIComponent(url)}`);
             const data = await res.json();
             const parser = new DOMParser();
             const xml = parser.parseFromString(data.contents, "text/xml");
-            const items = Array.from(xml.querySelectorAll("item")).slice(0, 10);
+            const items = Array.from(xml.querySelectorAll("item")).slice(0, 7);
             
-            document.getElementById('news-list').innerHTML = items.map(item => {
+            if (items.length === 0) { throw new Error("no news"); }
+
+            document.getElementById(targetId).innerHTML = items.map(item => {
                 const title = item.querySelector("title").textContent;
                 const link = item.querySelector("link").textContent;
                 const source = item.querySelector("source").textContent;
+                const pubDate = new Date(item.querySelector("pubDate").textContent).toLocaleDateString('ko-KR', {month:'2-digit', day:'2-digit'});
                 return `
-                    <a href="${link}" target="_blank" class="news-item">
-                        <h4>${title}</h4>
-                        <div class="news-meta">${source}</div>
+                    <a href="${link}" target="_blank" class="list-item">
+                        <div class="item-title">${title}</div>
+                        <div class="item-meta">${source} · ${pubDate}</div>
                     </a>
                 `;
             }).join('');
-        } catch (e) { document.getElementById('news-list').innerText = "뉴스를 불러올 수 없습니다."; }
+        } catch (e) {
+            document.getElementById(targetId).innerHTML = "<div style='font-size:12px; color:#ef4444; padding:20px 0;'>오류: 데이터를 가져오지 못했습니다.</div>";
+        }
     }
 
-    // 3. 트렌드 (구글/나무위키)
+    // 트렌드 (급상승 검색어) 가져오기
     async function fetchTrends() {
-        // 구글 트렌드
+        document.getElementById('t-trends').innerHTML = "<div style='grid-column: span 2; font-size:12px; color:gray; padding:20px 0;'>로딩 중...</div>";
+        const url = "https://trends.google.co.kr/trending/rss?geo=KR";
         try {
-            const res = await fetch(`${PROXY}${encodeURIComponent("https://trends.google.co.kr/trending/rss?geo=KR")}`);
+            const res = await fetch(`${PROXY}${encodeURIComponent(url)}`);
             const data = await res.json();
             const parser = new DOMParser();
             const xml = parser.parseFromString(data.contents, "text/xml");
             const items = Array.from(xml.querySelectorAll("item")).slice(0, 10);
-            document.getElementById('g-trends').innerHTML = items.map((item, i) => `
-                <a href="https://www.google.com/search?q=${encodeURIComponent(item.querySelector("title").textContent)}" target="_blank" class="trend-item">
-                    <span class="rank">${i+1}</span> ${item.querySelector("title").textContent}
-                </a>
-            `).join('');
-        } catch (e) { document.getElementById('g-trends').innerText = "로드 실패"; }
 
-        // 나무위키 실시간 검색어
-        try {
-            const res = await fetch(`${PROXY}${encodeURIComponent("https://search.namu.wiki/api/ranking")}`);
-            const data = await res.json();
-            const items = JSON.parse(data.contents);
-            document.getElementById('n-trends').innerHTML = items.slice(0, 10).map((kw, i) => `
-                <a href="https://namu.wiki/w/${encodeURIComponent(kw)}" target="_blank" class="trend-item">
-                    <span class="rank">${i+1}</span> ${kw}
-                </a>
-            `).join('');
-        } catch (e) { document.getElementById('n-trends').innerText = "데이터 없음"; }
+            document.getElementById('t-trends').innerHTML = items.map((item, i) => {
+                const kw = item.querySelector("title").textContent;
+                return `
+                    <a href="https://www.google.com/search?q=${encodeURIComponent(kw)}" target="_blank" class="trend-list-item">
+                        <span class="rank">${i+1}</span> ${kw}
+                    </a>
+                `;
+            }).join('');
+        } catch (e) {
+            document.getElementById('t-trends').innerHTML = "<div style='grid-column: span 2; font-size:12px; color:#ef4444; padding:20px 0;'>오류: 데이터를 가져오지 못했습니다.</div>";
+        }
     }
 
-    // 순차적 로드 (주가부터 빨리 띄우기)
-    fetchPrices();
-    setTimeout(fetchNews, 100);
-    setTimeout(fetchTrends, 300);
+    function refreshAll() {
+        fetchNews('wemade', 'n-wemade');
+        fetchNews('web3', 'n-web3');
+        fetchNews('brand', 'n-brand');
+        fetchTrends();
+        updateClock();
+    }
 
-    // 1분마다 주가 갱신
-    setInterval(fetchPrices, 60000);
+    // 초반 로딩
+    refreshAll();
+
+    // 5분마다 전체 갱신
+    setInterval(refreshAll, 300000);
+
+    // 새로고침 버튼 작동
+    document.getElementById('btn-refresh').addEventListener('click', refreshAll);
 </script>
 </body>
 </html>
