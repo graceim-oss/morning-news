@@ -9,20 +9,20 @@
   <style>
     /* ─── 토큰 ─────────────────────────────────────── */
     :root {
-      --bg:        #07090f;
-      --bg2:       #0d111c;
-      --bg3:       #131929;
-      --line:      rgba(255,255,255,0.06);
-      --line2:     rgba(255,255,255,0.1);
-      --txt:       #dde2f0;
-      --txt2:      #8892aa;
-      --txt3:      #4e5870;
-      --accent:    #5b6af0;
-      --accent-lt: rgba(91,106,240,0.15);
-      --up:        #f06060;
-      --down:      #5b9df0;
-      --green:     #3dd68c;
-      --amber:     #f0b43c;
+      --bg:        #f4f6fb;
+      --bg2:       #ffffff;
+      --bg3:       #f0f2f8;
+      --line:      rgba(0,0,0,0.07);
+      --line2:     rgba(0,0,0,0.12);
+      --txt:       #1a1f36;
+      --txt2:      #5a6282;
+      --txt3:      #9ea6c0;
+      --accent:    #4f5bd5;
+      --accent-lt: rgba(79,91,213,0.1);
+      --up:        #e03131;
+      --down:      #1971c2;
+      --green:     #0ca678;
+      --amber:     #e67700;
       --font:      'Pretendard', 'Noto Sans KR', sans-serif;
       --mono:      'DM Mono', monospace;
       --r:         12px;
@@ -147,13 +147,13 @@
     /* 뉴스 목록 */
     .news-body{overflow-y:auto;max-height:320px;}
     .news-body::-webkit-scrollbar{width:3px;}
-    .news-body::-webkit-scrollbar-thumb{background:rgba(255,255,255,.08);border-radius:3px;}
+    .news-body::-webkit-scrollbar-thumb{background:rgba(0,0,0,.12);border-radius:3px;}
     .ni{
       padding:10px 16px;
       border-bottom:1px solid rgba(255,255,255,.035);
       transition:background .12s;
     }
-    .ni:hover{background:rgba(255,255,255,.02);}
+    .ni:hover{background:rgba(79,91,213,.04);}
     .ni:last-child{border-bottom:none;}
     .ni a{
       font-size:12.5px;font-weight:500;color:var(--txt);
@@ -170,7 +170,7 @@
     /* 트렌드 그리드 */
     .trends-pane{overflow-y:auto;max-height:320px;}
     .trends-pane::-webkit-scrollbar{width:3px;}
-    .trends-pane::-webkit-scrollbar-thumb{background:rgba(255,255,255,.08);border-radius:3px;}
+    .trends-pane::-webkit-scrollbar-thumb{background:rgba(0,0,0,.12);border-radius:3px;}
     .tg{padding:12px 14px;display:grid;grid-template-columns:1fr 1fr;gap:5px;}
     .tr-link{text-decoration:none;display:block;}
     .tr-item{
@@ -189,13 +189,13 @@
     /* 나무위키 */
     .namu-pane{overflow-y:auto;max-height:320px;}
     .namu-pane::-webkit-scrollbar{width:3px;}
-    .namu-pane::-webkit-scrollbar-thumb{background:rgba(255,255,255,.08);border-radius:3px;}
+    .namu-pane::-webkit-scrollbar-thumb{background:rgba(0,0,0,.12);border-radius:3px;}
     .namu-item{
       display:flex;align-items:center;gap:9px;
       padding:9px 16px;border-bottom:1px solid rgba(255,255,255,.035);
       text-decoration:none;transition:background .12s;
     }
-    .namu-item:hover{background:rgba(255,255,255,.02);}
+    .namu-item:hover{background:rgba(79,91,213,.04);}
     .namu-item:last-child{border-bottom:none;}
     .nm-rank{font-family:var(--mono);font-size:10px;font-weight:700;color:var(--green);min-width:20px;text-align:center;flex-shrink:0;}
     .nm-rank.r1{color:var(--up);font-size:12px;}
@@ -209,7 +209,7 @@
 
     /* 상태 */
     .sbox{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 16px;gap:10px;color:var(--txt2);font-size:12px;}
-    .ldr{width:22px;height:22px;border:2px solid rgba(255,255,255,.07);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite;}
+    .ldr{width:22px;height:22px;border:2px solid rgba(0,0,0,.08);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite;}
     .errbox{padding:30px;text-align:center;color:var(--up);font-size:11px;line-height:1.6;}
 
     /* 푸터 */
@@ -592,38 +592,37 @@ async function loadNamu(force=false){
     const items=[];
     const seen=new Set();
 
-    // 모든 게시글 ID 추출 후 내림차순(최신순) 정렬
-    const allLinks=[];
-    const linkRe=/href="(\/b\/namuhotnow\/(\d+))(?:\?[^"]*)?"/g;
-    let lm;
-    while((lm=linkRe.exec(src))!==null){
-      const id=parseInt(lm[2]);
-      if(!seen.has(id)){ seen.add(id); allLinks.push({id,path:lm[1]}); }
-    }
-    allLinks.sort((a,b)=>b.id-a.id);
+    // vrow 전체 블록 추출
+    const vrowRe = /class="vrow[^"]*"[^>]*href="(\/b\/namuhotnow\/(\d+))[^"]*"([\s\S]*?)(?=class="vrow|<\/tbody|<\/ul)/g;
+    let m;
+    while((m=vrowRe.exec(src))!==null && items.length<15){
+      const id=m[2];
+      if(seen.has(id)) continue;
+      seen.add(id);
+      const blk=m[3];
 
-    for(const link of allLinks){
-      if(items.length>=10) break;
-      const pos=src.indexOf('/b/namuhotnow/'+link.id);
-      if(pos<0) continue;
-      const block=src.slice(Math.max(0,pos-100), pos+600);
-      const titleM=/class="[^"]*title[^"]*"[^>]*>([\s\S]*?)<\/span>/i.exec(block);
-      if(!titleM) continue;
-      const title=titleM[1]
-        .replace(/<[^>]+>/g,'')
-        .replace(/\[\d+\]/g,'')
-        .replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>')
-        .replace(/\s+/g,' ').trim();
+      // 제목: vrow-top > title 안에서 카테고리/뱃지 제외한 순수 텍스트
+      // vrow-title 혹은 title 클래스 span 중 가장 긴 텍스트
+      const spans=[...blk.matchAll(/<span[^>]*class="[^"]*title[^"]*"[^>]*>([\s\S]*?)<\/span>/gi)];
+      let title='';
+      for(const s of spans){
+        const t=s[1].replace(/<[^>]+>/g,'').replace(/\[\d+\]/g,'').replace(/\s+/g,' ').trim();
+        if(t.length>title.length) title=t;
+      }
+      title=title.replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').trim();
+
       if(title.length<2) continue;
+
       // 공지 키워드 제외
-      const skip=['이용 안내','채널 규정','스크립트','신고','건의','질문하는곳','탭이 신설','기준 개정','댓글 영구','공지'];
+      const skip=['이용 안내','채널 규정','스크립트','신고','건의','질문하는','탭이 신설','기준 개정','댓글 영구','공지사항'];
       if(skip.some(k=>title.includes(k))) continue;
-      items.push({title, url:'https://arca.live'+link.path});
+
+      items.push({title, url:'https://arca.live'+m[1]});
     }
 
     if(!items.length) throw new Error('게시물 없음');
 
-    const out=items.map((item,i)=>{
+    const out=items.slice(0,10).map((item,i)=>{
       const rank=i+1;
       const cls=rank===1?'r1':rank<=3?'r3':'';
       return '<a class="namu-item" href="'+esc(item.url)+'" target="_blank" rel="noopener">'
