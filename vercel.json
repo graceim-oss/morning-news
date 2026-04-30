@@ -1,9 +1,3 @@
 {
-  "version": 2,
-  "routes": [
-    { "src": "/api/news",   "dest": "/api/news.py"   },
-    { "src": "/api/prices", "dest": "/api/prices.py" },
-    { "src": "/api/trends", "dest": "/api/trends.py" },
-    { "src": "/(.*)",       "dest": "/index.html"    }
-  ]
+  "version": 2
 }
