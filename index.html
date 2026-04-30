@@ -7,117 +7,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-body: #f1f3f6;
-            --bg-card: #ffffff;
-            --bg-header: #101c40;
-            --primary: #3182f6;
-            --text-dark: #222222;
-            --text-gray: #7d7d7d;
-            --border: #e6e6e6;
-            --shadow: 0 6px 16px rgba(0,0,0,0.06);
+            --bg-body: #f1f3f6; --bg-card: #ffffff; --bg-header: #101c40;
+            --primary: #3182f6; --text-dark: #222222; --text-gray: #7d7d7d;
+            --border: #e6e6e6; --shadow: 0 6px 16px rgba(0,0,0,0.06);
             --font-family: 'Inter', 'Noto Sans KR', sans-serif;
         }
-
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: var(--font-family); background-color: var(--bg-body); color: var(--text-dark); -webkit-font-smoothing: antialiased; }
-
-        /* --- Header --- */
-        header { 
-            background-color: var(--bg-header); 
-            color: white; 
-            padding: 18px 40px; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            position: sticky; top: 0; z-index: 1000;
-        }
+        header { background-color: var(--bg-header); color: white; padding: 18px 40px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
         .header-left { display: flex; align-items: center; gap: 10px; }
         .header-left h1 { font-size: 19px; font-weight: 700; }
         .header-left span { font-weight: 400; color: #a1b0d6; font-size: 17px; }
-        .status-badge { 
-            background-color: rgba(255,255,255,0.08); 
-            padding: 4px 10px; 
-            border-radius: 20px; 
-            font-size: 11px; 
-            font-weight: 500; 
-            color: #d1d5db; 
-            display: flex; align-items: center; gap: 4px; 
-        }
-        .status-badge::before { content: ""; display: block; width: 6px; height: 6px; background-color: #2fb138; border-radius: 50%; }
-        .header-right { display: flex; align-items: center; gap: 15px; }
-        .header-right .time-info { text-align: right; }
-        .header-right .current-date { font-size: 12px; color: #a1b0d6; }
-        .header-right .current-time { font-size: 20px; font-weight: 700; }
-        .btn-refresh { 
-            background-color: rgba(255,255,255,0.08); 
-            color: white; border: none; 
-            padding: 10px 15px; border-radius: 8px; 
-            font-size: 13px; font-weight: 500; cursor: pointer; 
-            display: flex; align-items: center; gap: 6px; 
-            transition: 0.2s;
-        }
-        .btn-refresh:hover { background-color: rgba(255,255,255,0.15); }
-
-        /* --- Main Content --- */
-        main { 
-            max-width: 1600px; margin: 30px auto; 
-            padding: 0 40px; 
-            display: grid; 
-            grid-template-columns: repeat(2, 1fr); 
-            gap: 25px; 
-        }
-
-        /* --- Card Style --- */
-        .card { 
-            background-color: var(--bg-card); 
-            border-radius: 16px; 
-            padding: 25px; 
-            box-shadow: var(--shadow); 
-            border: 1px solid #e1e3e7;
-            display: flex; flex-direction: column; 
-            transition: box-shadow 0.2s;
-        }
-        .card:hover { box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
-        .card-header { 
-            display: flex; justify-content: space-between; align-items: flex-start; 
-            padding-bottom: 20px; 
-            border-bottom: 1px solid var(--border); 
-            margin-bottom: 15px;
-        }
-        .card-header-left { display: flex; align-items: center; gap: 15px; }
-        .category-icon { font-size: 24px; padding: 10px; background-color: #f6f8fb; border-radius: 10px; width: 44px; height: 44px; display: flex; justify-content: center; align-items: center; }
-        .category-meta { display: flex; flex-direction: column; gap: 1px; }
-        .category-title { font-size: 16px; font-weight: 700; color: var(--text-dark); }
-        .category-tags { font-size: 12px; color: var(--text-gray); }
-        .card-header-right { text-align: right; }
-        .update-time { font-size: 11px; color: #a0a8b9; font-weight: 500; margin-bottom: 5px; }
-        .source-tag { font-size: 11px; color: #a1b0d6; background-color: #f1f3f6; padding: 3px 8px; border-radius: 4px; font-weight: 700; color: #101c40; }
-
-        .news-list, .trend-list { display: flex; flex-direction: column; flex-grow: 1; }
-        .list-item { 
-            text-decoration: none; color: inherit; display: block; 
-            padding: 12px 0; border-bottom: 1px solid #f6f8fb; 
-            transition: color 0.1s; 
-        }
-        .list-item:last-child { border-bottom: none; }
-        .list-item:hover .item-title { color: var(--primary); }
-        .item-title { font-size: 14px; font-weight: 500; color: #333333; margin-bottom: 3px; line-height: 1.4; }
-        .item-meta { font-size: 11px; color: var(--text-gray); display: flex; align-items: center; gap: 8px; }
-
-        /* --- Trend Specific --- */
-        .trend-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 20px; }
-        .trend-list-item { 
-            text-decoration: none; color: inherit; 
-            padding: 10px; background-color: #f6f8fb; 
-            border-radius: 8px; font-size: 13px; font-weight: 500; 
-            display: flex; align-items: center; gap: 10px; 
-            transition: 0.2s;
-        }
-        .trend-list-item:hover { background-color: #ebeff5; }
-        .rank { color: var(--primary); font-weight: 700; width: 20px; text-align: center; }
-
-        /* --- Responsive --- */
-        @media (max-width: 1024px) { main { grid-template-columns: 1fr; } header { padding: 18px 25px; } main { padding: 0 20px; } }
+        .header-right { display: flex; align-items: center; gap: 15px; text-align: right; }
+        .current-time { font-size: 20px; font-weight: 700; display: block; }
+        .btn-refresh { background-color: rgba(255,255,255,0.08); color: white; border: none; padding: 8px 15px; border-radius: 8px; font-size: 13px; cursor: pointer; }
+        main { max-width: 1600px; margin: 30px auto; padding: 0 40px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
+        .card { background-color: var(--bg-card); border-radius: 16px; padding: 25px; box-shadow: var(--shadow); border: 1px solid #e1e3e7; min-height: 420px; display: flex; flex-direction: column; }
+        .card-header { display: flex; justify-content: space-between; padding-bottom: 15px; border-bottom: 1px solid var(--border); margin-bottom: 10px; }
+        .card-header-left { display: flex; align-items: center; gap: 12px; }
+        .category-icon { font-size: 20px; background-color: #f6f8fb; border-radius: 10px; width: 40px; height: 44px; display: flex; justify-content: center; align-items: center; }
+        .category-title { font-size: 16px; font-weight: 700; }
+        .category-tags { font-size: 11px; color: var(--text-gray); display: block; }
+        .update-time { font-size: 11px; color: #a0a8b9; }
+        .list-item { text-decoration: none; color: inherit; display: block; padding: 12px 0; border-bottom: 1px solid #f9fafb; }
+        .item-title { font-size: 14px; font-weight: 500; margin-bottom: 3px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+        .item-meta { font-size: 11px; color: var(--text-gray); }
+        .trend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+        .trend-list-item { text-decoration: none; color: inherit; padding: 10px; background-color: #f6f8fb; border-radius: 8px; font-size: 13px; display: flex; gap: 10px; }
+        .rank { color: var(--primary); font-weight: 700; }
+        .loading { color: var(--text-gray); font-size: 13px; padding: 20px 0; text-align: center; }
+        .error { color: #ef4444; font-size: 13px; padding: 20px 0; text-align: center; }
+        @media (max-width: 1024px) { main { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -125,180 +45,139 @@
 <header>
     <div class="header-left">
         <h1>위메이드 <span>브랜드마케팅 뉴스클리핑</span></h1>
-        <div class="status-badge" title="데이터 연결 상태 양호">정상 작동</div>
     </div>
     <div class="header-right">
-        <div class="time-info">
-            <div class="current-date" id="current-date">--년 --월 --일 --요일</div>
-            <div class="current-time" id="current-time">--:--:--</div>
+        <div>
+            <span id="current-time" class="current-time">00:00:00</span>
         </div>
-        <button class="btn-refresh" id="btn-refresh">↻ 새로고침</button>
+        <button class="btn-refresh" onclick="refreshAll()">↻ 새로고침</button>
     </div>
 </header>
 
 <main>
     <section class="card">
         <div class="card-header">
-            <div class="card-header-left">
-                <div class="category-icon">📰</div>
-                <div class="category-meta">
-                    <span class="category-title">위메이드 뉴스</span>
-                    <span class="category-tags">위메이드, 위믹스, WEMADE</span>
-                </div>
-            </div>
-            <div class="card-header-right">
-                <div class="update-time">업데이트 <span class="u-time">--:--</span></div>
-                <span class="source-tag">출처: 구글</span>
-            </div>
+            <div class="card-header-left"><div class="category-icon">🏢</div><div class="category-meta"><span class="category-title">위메이드 뉴스</span><span class="category-tags">위메이드, 위믹스, WEMIX</span></div></div>
+            <div class="update-time">업데이트 <span class="u-ts">--:--</span></div>
         </div>
-        <div class="news-list" id="n-wemade"></div>
+        <div id="n-wemade" class="news-list"><div class="loading">데이터 로딩 중...</div></div>
     </section>
 
     <section class="card">
         <div class="card-header">
-            <div class="card-header-left">
-                <div class="category-icon">🔗</div>
-                <div class="category-meta">
-                    <span class="category-title">블록체인 / Web3</span>
-                    <span class="category-tags">업계 동향, 가상자산, NFT, 마케팅</span>
-                </div>
-            </div>
-            <div class="card-header-right">
-                <div class="update-time">업데이트 <span class="u-time">--:--</span></div>
-                <span class="source-tag">출처: 구글</span>
-            </div>
+            <div class="card-header-left"><div class="category-icon">🔗</div><div class="category-meta"><span class="category-title">블록체인 / Web3</span><span class="category-tags">업계 동향, 가상자산, NFT</span></div></div>
+            <div class="update-time">업데이트 <span class="u-ts">--:--</span></div>
         </div>
-        <div class="news-list" id="n-web3"></div>
+        <div id="n-web3" class="news-list"><div class="loading">데이터 로딩 중...</div></div>
     </section>
 
     <section class="card">
         <div class="card-header">
-            <div class="card-header-left">
-                <div class="category-icon">📣</div>
-                <div class="category-meta">
-                    <span class="category-title">브랜딩 / 마케팅</span>
-                    <span class="category-tags">트렌드, 캠페인, 광고, 인사이트</span>
-                </div>
-            </div>
-            <div class="card-header-right">
-                <div class="update-time">업데이트 <span class="u-time">--:--</span></div>
-                <span class="source-tag">출처: 구글</span>
-            </div>
+            <div class="card-header-left"><div class="category-icon">📢</div><div class="category-meta"><span class="category-title">브랜딩 / 마케팅</span><span class="category-tags">트렌드, 캠페인, 인사이트</span></div></div>
+            <div class="update-time">업데이트 <span class="u-ts">--:--</span></div>
         </div>
-        <div class="news-list" id="n-brand"></div>
+        <div id="n-brand" class="news-list"><div class="loading">데이터 로딩 중...</div></div>
     </section>
 
     <section class="card">
         <div class="card-header">
-            <div class="card-header-left">
-                <div class="category-icon">🔥</div>
-                <div class="category-meta">
-                    <span class="category-title">실시간 급상승 검색어</span>
-                    <span class="category-tags">지금 사람들이 관심 갖는 키워드</span>
-                </div>
-            </div>
-            <div class="card-header-right">
-                <div class="update-time">업데이트 <span class="u-time">--:--</span></div>
-                <span class="source-tag">출처: 구글</span>
-            </div>
+            <div class="card-header-left"><div class="category-icon">🔥</div><div class="category-meta"><span class="category-title">실시간 급상승 검색어</span><span class="category-tags">구글 대한민국 트렌드</span></div></div>
+            <div class="update-time">업데이트 <span class="u-ts">--:--</span></div>
         </div>
-        <div class="trend-grid" id="t-trends"></div>
+        <div id="t-trends" class="trend-grid"><div class="loading" style="grid-column: span 2;">트렌드 분석 중...</div></div>
     </section>
 </main>
 
 <script>
-    const PROXY = "https://api.allorigins.win/get?url=";
-    const NEWS_KEYS = {
-        'wemade': encodeURIComponent('위메이드 OR 장현국 OR 위믹스 OR WEMIX'),
-        'web3': encodeURIComponent('블록체인 마케팅 OR web3 프로젝트 OR 가상자산 동향'),
-        'brand': encodeURIComponent('브랜딩 성공 사례 OR 캠페인 OR 국내 마케팅 트렌드')
-    };
+    // 여러 개의 프록시 서버를 대안으로 설정 (안정성 강화)
+    const PROXIES = [
+        "https://api.allorigins.win/get?url=",
+        "https://api.codetabs.com/v1/proxy?quest="
+    ];
 
-    // 시계 및 업데이트 타임 표시
-    function updateClock() {
-        const now = new Date();
-        const y = now.getFullYear(); const m = (now.getMonth()+1).toString().padStart(2,'0'); const d = now.getDate().toString().padStart(2,'0'); const w = ['일','월','화','수','목','금','토'][now.getDay()];
-        const h = now.getHours().toString().padStart(2,'0'); const min = now.getMinutes().toString().padStart(2,'0'); const s = now.getSeconds().toString().padStart(2,'0');
-        document.getElementById('current-date').textContent = `${y}년 ${m}월 ${d}일 ${w}요일`;
-        document.getElementById('current-time').textContent = `${h}:${min}:${s}`;
-        
-        // 카드 업데이트 시간 표시
-        const utime = `${m}/${d} ${h}:${min}`;
-        document.querySelectorAll('.u-time').forEach(el => el.textContent = utime);
+    async function fetchWithRetry(url) {
+        // 첫 번째 프록시 시도, 실패 시 두 번째 프록시 사용
+        for (let proxy of PROXIES) {
+            try {
+                const response = await fetch(proxy + encodeURIComponent(url));
+                if (!response.ok) throw new Error();
+                const data = await response.json();
+                // allorigins는 .contents에 데이터가 담겨있고, codetabs는 바로 데이터임
+                return data.contents || data;
+            } catch (e) {
+                continue; // 다음 프록시로 시도
+            }
+        }
+        throw new Error("모든 프록시 연결 실패");
     }
-    setInterval(updateClock, 1000);
-    updateClock();
 
-    // 뉴스 가져오기
-    async function fetchNews(type, targetId) {
-        document.getElementById(targetId).innerHTML = "<div style='font-size:12px; color:gray; padding:20px 0;'>로딩 중...</div>";
-        const url = `https://news.google.com/rss/search?q=${NEWS_KEYS[type]}&hl=ko&gl=KR&ceid=KR:ko`;
+    function updateTime() {
+        const now = new Date();
+        document.getElementById('current-time').textContent = now.toLocaleTimeString('ko-KR', {hour12:false});
+        const ts = `${(now.getMonth()+1).toString().padStart(2,'0')}/${now.getDate().toString().padStart(2,'0')} ${now.getHours().toString().padStart(2,'0')}:${now.getMinutes().toString().padStart(2,'0')}`;
+        document.querySelectorAll('.u-ts').forEach(el => el.textContent = ts);
+    }
+    setInterval(updateTime, 1000); updateTime();
+
+    async function loadNews(query, targetId) {
+        const container = document.getElementById(targetId);
         try {
-            const res = await fetch(`${PROXY}${encodeURIComponent(url)}`);
-            const data = await res.json();
+            const rssUrl = `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=ko&gl=KR&ceid=KR:ko`;
+            const xmlText = await fetchWithRetry(rssUrl);
             const parser = new DOMParser();
-            const xml = parser.parseFromString(data.contents, "text/xml");
+            const xml = parser.parseFromString(xmlText, "text/xml");
             const items = Array.from(xml.querySelectorAll("item")).slice(0, 7);
-            
-            if (items.length === 0) { throw new Error("no news"); }
 
-            document.getElementById(targetId).innerHTML = items.map(item => {
+            if (items.length === 0) throw new Error();
+
+            container.innerHTML = items.map(item => {
                 const title = item.querySelector("title").textContent;
                 const link = item.querySelector("link").textContent;
-                const source = item.querySelector("source").textContent;
-                const pubDate = new Date(item.querySelector("pubDate").textContent).toLocaleDateString('ko-KR', {month:'2-digit', day:'2-digit'});
+                const source = item.querySelector("source") ? item.querySelector("source").textContent : "뉴스";
                 return `
                     <a href="${link}" target="_blank" class="list-item">
-                        <div class="item-title">${title}</div>
-                        <div class="item-meta">${source} · ${pubDate}</div>
+                        <div class="item-title">${title.split(' - ')[0]}</div>
+                        <div class="item-meta">${source}</div>
                     </a>
                 `;
             }).join('');
         } catch (e) {
-            document.getElementById(targetId).innerHTML = "<div style='font-size:12px; color:#ef4444; padding:20px 0;'>오류: 데이터를 가져오지 못했습니다.</div>";
+            container.innerHTML = `<div class="error">데이터를 가져오는데 실패했습니다.<br>잠시 후 다시 시도해 주세요.</div>`;
         }
     }
 
-    // 트렌드 (급상승 검색어) 가져오기
-    async function fetchTrends() {
-        document.getElementById('t-trends').innerHTML = "<div style='grid-column: span 2; font-size:12px; color:gray; padding:20px 0;'>로딩 중...</div>";
-        const url = "https://trends.google.co.kr/trending/rss?geo=KR";
+    async function loadTrends() {
+        const container = document.getElementById('t-trends');
         try {
-            const res = await fetch(`${PROXY}${encodeURIComponent(url)}`);
-            const data = await res.json();
+            const url = "https://trends.google.co.kr/trending/rss?geo=KR";
+            const xmlText = await fetchWithRetry(url);
             const parser = new DOMParser();
-            const xml = parser.parseFromString(data.contents, "text/xml");
+            const xml = parser.parseFromString(xmlText, "text/xml");
             const items = Array.from(xml.querySelectorAll("item")).slice(0, 10);
 
-            document.getElementById('t-trends').innerHTML = items.map((item, i) => {
+            container.innerHTML = items.map((item, i) => {
                 const kw = item.querySelector("title").textContent;
                 return `
                     <a href="https://www.google.com/search?q=${encodeURIComponent(kw)}" target="_blank" class="trend-list-item">
-                        <span class="rank">${i+1}</span> ${kw}
+                        <span class="rank">${i+1}</span>
+                        <span>${kw}</span>
                     </a>
                 `;
             }).join('');
         } catch (e) {
-            document.getElementById('t-trends').innerHTML = "<div style='grid-column: span 2; font-size:12px; color:#ef4444; padding:20px 0;'>오류: 데이터를 가져오지 못했습니다.</div>";
+            container.innerHTML = `<div class="error" style="grid-column: span 2;">트렌드 로딩 실패</div>`;
         }
     }
 
     function refreshAll() {
-        fetchNews('wemade', 'n-wemade');
-        fetchNews('web3', 'n-web3');
-        fetchNews('brand', 'n-brand');
-        fetchTrends();
-        updateClock();
+        loadNews("위메이드 OR 위믹스 OR " + encodeURIComponent("WEMIX"), "n-wemade");
+        loadNews("블록체인 마케팅 OR " + encodeURIComponent("Web3 트렌드") + " OR NFT 동향", "n-web3");
+        loadNews("마케팅 캠페인 OR 브랜딩 사례 OR 광고 트렌드", "n-brand");
+        loadTrends();
     }
 
-    // 초반 로딩
     refreshAll();
-
-    // 5분마다 전체 갱신
-    setInterval(refreshAll, 300000);
-
-    // 새로고침 버튼 작동
-    document.getElementById('btn-refresh').addEventListener('click', refreshAll);
+    setInterval(refreshAll, 600000); // 10분마다 갱신
 </script>
 </body>
 </html>
