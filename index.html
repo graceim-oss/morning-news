@@ -655,14 +655,14 @@ async function loadNamuasync function loadNamuasync function loadNamu(force=fals
 async function refreshAll(force=false){
   const btn=$('btn-ref'), icon=$('spin');
   btn.disabled=true; icon.classList.add('spinning');
+  loadTicker(force);
   await Promise.all([
-    loadTicker(force),
     loadNews('wemade',force),
     loadNews('blockchain',force),
     loadNews('marketing',force),
-    loadGTrend(force),
-    loadNamu(force),
   ]);
+  await loadGTrend(force);
+  await loadNamu(force);
   icon.classList.remove('spinning');
   btn.disabled=false;
 }
