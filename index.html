@@ -343,7 +343,7 @@
         </div>
         <div class="card-meta"><div class="card-upd" id="upd-namu">—</div></div>
       </div>
-      <div class="namu-pane" id="body-namu"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
+      <div class="trends-pane" id="body-namu"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
     </div>
 
   </div>
@@ -626,63 +626,33 @@ async function loadNamu(force=false){
   if(!force&&cached){ bodyEl.innerHTML=cached; return; }
   bodyEl.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
   try{
-    // 나무위키 공식 실시간 검색어 API
     const r = await fetch('https://search.namu.wiki/api/ranking', {
       signal: AbortSignal.timeout(8000),
       headers: {'Referer':'https://namu.wiki/', 'Origin':'https://namu.wiki'}
     });
     if(!r.ok) throw new Error('API '+r.status);
     const data = await r.json();
-    // 응답 형식: 배열 또는 {items:[...]} 등
     const list = Array.isArray(data) ? data : (data.items || data.keywords || data.result || []);
     if(!list.length) throw new Error('데이터 없음');
 
-    const out = list.slice(0,15).map((item,i)=>{
+    // 키워드 클릭 → 아르카 나무실검 채널에서 해당 키워드 검색
+    const out = '<div class="tg">' + list.slice(0,15).map((item,i)=>{
       const rank=i+1, cls=rank===1?'r1':rank<=3?'r3':'';
       const kw = typeof item==='string' ? item : (item.keyword||item.name||item.title||String(item));
-      const url = 'https://namu.wiki/w/'+encodeURIComponent(kw);
-      return '<a class="namu-item" href="'+esc(url)+'" target="_blank" rel="noopener">'
-        +'<span class="nm-rank '+cls+'">'+rank+'</span>'
-        +'<div class="nm-info"><div class="nm-title">'+esc(kw)+'</div></div>'
-        +'<span class="nm-arr">›</span></a>';
-    }).join('');
+      // 아르카 나무실검 채널 검색 URL
+      const url = 'https://arca.live/b/namuhotnow?q='+encodeURIComponent(kw)+'&sort=date';
+      return '<a class="tr-link" href="'+esc(url)+'" target="_blank" rel="noopener">'
+        +'<div class="tr-item">'
+        +'<span class="tr-rank '+cls+'">'+rank+'</span>'
+        +'<span class="tr-kw">'+esc(kw)+'</span>'
+        +'</div></a>';
+    }).join('') + '</div>';
+
     sc(KEY,out);
     bodyEl.innerHTML=out;
     updEl.textContent='갱신 '+nowKST();
   }catch(e){
-    // 폴백: 아르카 나무실검 페이지
-    try{
-      const src = await fetchViaProxy('https://arca.live/b/namuhotnow?p=1');
-      const items=[];
-      const seen=new Set();
-      // 게시글 ID + 제목 추출 - data-title 속성 우선
-      const re1 = /data-title="([^"]{3,80})"[^>]*href="(\/b\/namuhotnow\/(\d+))"/g;
-      const re2 = /href="(\/b\/namuhotnow\/(\d+))"[^>]*data-title="([^"]{3,80})"/g;
-      let m;
-      for(const re of [re1,re2]){
-        while((m=re.exec(src))!==null && items.length<10){
-          const id=re===re1?m[3]:m[2];
-          if(seen.has(id)) continue;
-          seen.add(id);
-          const title=(re===re1?m[1]:m[3]).replace(/&amp;/g,'&').trim();
-          const url='https://arca.live'+(re===re1?m[2]:m[1]);
-          items.push({title,url});
-        }
-      }
-      if(!items.length) throw new Error('아르카도 실패');
-      const out2=items.map((item,i)=>{
-        const rank=i+1,cls=rank===1?'r1':rank<=3?'r3':'';
-        return '<a class="namu-item" href="'+esc(item.url)+'" target="_blank" rel="noopener">'
-          +'<span class="nm-rank '+cls+'">'+rank+'</span>'
-          +'<div class="nm-info"><div class="nm-title">'+esc(item.title)+'</div></div>'
-          +'<span class="nm-arr">›</span></a>';
-      }).join('');
-      sc(KEY,out2);
-      bodyEl.innerHTML=out2;
-      updEl.textContent='갱신 '+nowKST();
-    }catch(e2){
-      bodyEl.innerHTML='<div class="errbox">실시간 검색어를 불러올 수 없습니다.<br><small style="color:var(--txt3)">'+esc(e2.message)+'</small></div>';
-    }
+    bodyEl.innerHTML='<div class="errbox">실시간 검색어를 불러올 수 없습니다.<br><small style="color:var(--txt3)">'+esc(e.message)+'</small></div>';
   }
 }
 
