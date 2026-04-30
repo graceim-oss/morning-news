@@ -601,115 +601,87 @@ async function loadGTrend(force=false){
     }catch(e){ paneKR.innerHTML='<div class="errbox">'+esc(e.message)+'</div>'; }
   }
 
-  // 글로벌
+  // 글로벌 (블록체인·게임·마케팅·브랜딩 카테고리별 Google News RSS)
   const KEY_GL='gtrend_global';
   const paneGL=$('pane-global');
   const cachedGL=gc(KEY_GL,300);
-  if(!force&&cachedGL){ paneGL.innerHTML=cachedGL; }
-  else{
-    paneGL.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
-    try{
-      const xml=await fetchViaProxy('https://trends.google.com/trending/rss?geo=US');
-      const html=renderTrendHtml(xml);
-      sc(KEY_GL,html); paneGL.innerHTML=html;
-    }catch(e){ paneGL.innerHTML='<div class="errbox">'+esc(e.message)+'</div>'; }
+  if(!force&&cachedGL){ paneGL.innerHTML=cachedGL; return; }
+
+  paneGL.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
+  try{
+    const GLOBAL_CATS = [
+      {label:'⛓️ Blockchain', q:'blockchain crypto NFT Web3', color:'#1971c2'},
+      {label:'🎮 Games',      q:'game gaming esports metaverse', color:'#5f3dc4'},
+      {label:'📣 Marketing',  q:'marketing campaign brand strategy', color:'#e67700'},
+      {label:'✨ Branding',   q:'branding brand identity design trend', color:'#0ca678'},
+    ];
+
+    const results = await Promise.all(
+      GLOBAL_CATS.map(cat =>
+        fetchViaProxy(
+          'https://news.google.com/rss/search?q='+encodeURIComponent(cat.q)
+          +'&hl=en-US&gl=US&ceid=US:en'
+        ).then(xml => ({cat, items: parseRSS(xml).slice(0,5)}))
+         .catch(() => ({cat, items:[]}))
+      )
+    );
+
+    let html='';
+    for(const {cat, items} of results){
+      if(!items.length) continue;
+      html += '<div style="padding:10px 14px 4px;">'
+        +'<div style="font-size:10px;font-weight:700;color:'+cat.color+';letter-spacing:.5px;margin-bottom:6px;">'+cat.label+'</div>';
+      html += items.map(it=>{
+        const url='https://www.google.com/search?q='+encodeURIComponent(it.title)+'&gl=us&hl=en';
+        return '<a class="tr-link" href="'+esc(it.link||url)+'" target="_blank" rel="noopener" style="margin-bottom:4px;display:block;">'
+          +'<div class="tr-item" style="background:none;border:1px solid var(--line);padding:6px 10px;">'
+          +'<span class="tr-kw" style="font-size:11px;">'+esc(it.title)+'</span>'
+          +'<span class="tr-vol" style="white-space:nowrap;">'+esc(it.source||'')+'</span>'
+          +'</div></a>';
+      }).join('');
+      html += '</div>';
+    }
+
+    if(!html) throw new Error('데이터 없음');
+    sc(KEY_GL, html);
+    paneGL.innerHTML = html;
+  }catch(e){
+    paneGL.innerHTML='<div class="errbox">글로벌 트렌드를 불러올 수 없습니다.<br><small style="color:var(--txt3)">'+esc(e.message)+'</small></div>';
   }
 }
 
-/*/* ════════════════════════════════════════════════
-   아르카 나무실검 (최신순 10개)
-   ════════════════════════════════════════════════ */
-async function loadNamu(force=false){
+async function loadNamuasync function loadNamu(force=false){
   const KEY='namu';
   const bodyEl=$('body-namu'), updEl=$('upd-namu');
-  const cached=gc(KEY,120);
+  const cached=gc(KEY,60);
   if(!force&&cached){ bodyEl.innerHTML=cached; return; }
   bodyEl.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
   try{
-    // 아르카 나무실검 채널 최신순
-    const src = await fetchViaProxy('https://arca.live/b/namuhotnow?sort=date&p=1');
-    const items=[];
-    const seen=new Set();
+    const r = await fetch('https://search.namu.wiki/api/ranking', {
+      signal: AbortSignal.timeout(8000),
+      headers: {'Referer':'https://namu.wiki/', 'Origin':'https://namu.wiki'}
+    });
+    if(!r.ok) throw new Error('API '+r.status);
+    const data = await r.json();
+    const list = Array.isArray(data) ? data : (data.items || data.keywords || data.result || []);
+    if(!list.length) throw new Error('데이터 없음');
 
-    // href="/b/namuhotnow/숫자" 패턴으로 게시물 ID 수집
-    const allLinks=[];
-    const linkRe=/href="(\/b\/namuhotnow\/(\d+))(?:\?[^"]*)?"/g;
-    let lm;
-    while((lm=linkRe.exec(src))!==null){
-      const id=parseInt(lm[2]);
-      if(!seen.has(id)){ seen.add(id); allLinks.push({id, path:lm[1]}); }
-    }
-    // 최신순 정렬
-    allLinks.sort((a,b)=>b.id-a.id);
-
-    // 각 게시물 제목 추출
-    const skip=['이용 안내','채널 규정','스크립트','신고','건의','질문하는','탭이 신설','기준 개정','댓글 영구','공지'];
-    for(const link of allLinks){
-      if(items.length>=10) break;
-      const pos=src.indexOf('/b/namuhotnow/'+link.id);
-      if(pos<0) continue;
-      const block=src.slice(Math.max(0,pos-200), pos+800);
-
-      // title 클래스 span 중 가장 긴 것
-      const spans=[...block.matchAll(/<span[^>]*class="[^"]*title[^"]*"[^>]*>([\s\S]*?)<\/span>/gi)];
-      let title='';
-      for(const s of spans){
-        const t=s[1].replace(/<[^>]+>/g,'').replace(/\[\d+\]/g,'').replace(/\s+/g,' ').trim();
-        if(t.length>title.length) title=t;
-      }
-      // data-title 속성도 시도
-      if(title.length<2){
-        const dtm=/data-title="([^"]{3,80})"/.exec(block);
-        if(dtm) title=dtm[1];
-      }
-      title=title.replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').trim();
-      if(title.length<2) continue;
-      if(skip.some(k=>title.includes(k))) continue;
-
-      items.push({title, url:'https://arca.live'+link.path});
-    }
-
-    if(!items.length) throw new Error('게시물 없음');
-
-    const out='<div class="tg">'+items.map((item,i)=>{
+    const out = '<div class="tg">' + list.slice(0,15).map((item,i)=>{
       const rank=i+1, cls=rank===1?'r1':rank<=3?'r3':'';
-      return '<a class="tr-link" href="'+esc(item.url)+'" target="_blank" rel="noopener">'
+      const kw = typeof item==='string' ? item : (item.keyword||item.name||item.title||String(item));
+      const url = 'https://arca.live/b/namuhotnow?q='+encodeURIComponent(kw)+'&sort=date';
+      return '<a class="tr-link" href="'+esc(url)+'" target="_blank" rel="noopener">'
         +'<div class="tr-item">'
         +'<span class="tr-rank '+cls+'">'+rank+'</span>'
-        +'<span class="tr-kw">'+esc(item.title)+'</span>'
+        +'<span class="tr-kw">'+esc(kw)+'</span>'
         +'</div></a>';
-    }).join('')+'</div>';
+    }).join('') + '</div>';
 
     sc(KEY,out);
     bodyEl.innerHTML=out;
     updEl.textContent='갱신 '+nowKST();
   }catch(e){
-    // 폴백: 나무위키 공식 실검 API
-    try{
-      const r=await fetch('https://search.namu.wiki/api/ranking',{
-        signal:AbortSignal.timeout(8000),
-        headers:{'Referer':'https://namu.wiki/'}
-      });
-      if(!r.ok) throw new Error('API '+r.status);
-      const data=await r.json();
-      const list=Array.isArray(data)?data:(data.items||data.keywords||data.result||[]);
-      if(!list.length) throw new Error('데이터 없음');
-      const out2='<div class="tg">'+list.slice(0,15).map((item,i)=>{
-        const rank=i+1,cls=rank===1?'r1':rank<=3?'r3':'';
-        const kw=typeof item==='string'?item:(item.keyword||item.name||item.title||String(item));
-        const url='https://arca.live/b/namuhotnow?q='+encodeURIComponent(kw)+'&sort=date';
-        return '<a class="tr-link" href="'+esc(url)+'" target="_blank" rel="noopener">'
-          +'<div class="tr-item">'
-          +'<span class="tr-rank '+cls+'">'+rank+'</span>'
-          +'<span class="tr-kw">'+esc(kw)+'</span>'
-          +'</div></a>';
-      }).join('')+'</div>';
-      sc(KEY,out2);
-      bodyEl.innerHTML=out2;
-      updEl.textContent='갱신 '+nowKST()+' (나무위키 실검)';
-    }catch(e2){
-      bodyEl.innerHTML='<div class="errbox">불러올 수 없습니다.<br><small style="color:var(--txt3)">'+esc(e2.message)+'</small></div>';
-    }
+    bodyEl.innerHTML='<div class="errbox">실시간 검색어를 불러올 수 없습니다.<br><small style="color:var(--txt3)">'+esc(e.message)+'</small></div>';
   }
 }
 
