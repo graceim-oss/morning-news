@@ -447,21 +447,25 @@ async function loadTicker(force=false){
   const cached=gc('ticker',60);
   if(!force&&cached){ $('ticker').innerHTML=cached; return; }
 
-  async function getStock(code){
+    async function getStock(code){
     try{
-      const url=`https://m.stock.naver.com/api/stock/${code}/basic`;
-      const text = await fetchViaProxy(url);
-      const d = JSON.parse(text);
-      if(d.code==='StockConflict') return {err:'거래정지'};
-      const dir=d.compareToPreviousPrice?.name??'STEADY';
-      return{
-        price:   d.closePrice??'—',
-        change:  d.compareToPreviousClosePrice??'0',
-        ratio:   d.fluctuationsRatio??'0.00',
-        dir, isOpen: d.marketStatus==='OPEN',
-        sign:    dir==='RISING'?'+':dir==='FALLING'?'-':'',
-      };
-    }catch(e){ return{err:'로드 실패'}; }
+      const today=new Date().toLocaleDateString('ko-KR',{timeZone:'Asia/Seoul'}).replace(/\. /g,'').replace('.','');
+      const r=await fetch('https://data.krx.co.kr/comm/bldAttendant/getJsonData.cmd',{
+        method:'POST',
+        body:new URLSearchParams({bld:'dbms/MDC/STAT/standard/MDCSTAT01901',locale:'ko_KR',isuSrtCd:code,strtDd:today,endDd:today,share:'1',money:'1',csvxls_isNo:'false'}),
+        signal:AbortSignal.timeout(8000),
+        headers:{'Referer':'https://data.krx.co.kr/'}
+      });
+      const j=await r.json();
+      const row=j?.output?.[0];
+      if(!row) throw new Error('no data');
+      const price=parseInt((row.TDD_CLSPRC||'0').replace(/,/g,''));
+      const prev=parseInt((row.PRV_DD_CLSPRC||'0').replace(/,/g,''));
+      const change=price-prev;
+      const ratio=prev?Math.abs((change/prev)*100).toFixed(2):'0.00';
+      const dir=change>0?'RISING':change<0?'FALLING':'STEADY';
+      return{price:price.toLocaleString('ko-KR'),change:Math.abs(change).toLocaleString('ko-KR'),ratio,dir,isOpen:false,sign:dir==='RISING'?'+':dir==='FALLING'?'-':''};
+    }catch(e){return{err:'로드 실패'};}
   }
 
   async function getWemix(){
