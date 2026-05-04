@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>위메이드 모닝 브리핑</title>
+  <title>위메이드 브랜드마케팅팀 인사이트</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
   <style>
@@ -241,7 +241,7 @@
 <header>
   <div class="logo">
     <div class="logo-mark">W</div>
-    <span class="logo-text">모닝 브리핑</span>
+    <span class="logo-text">브랜드마케팅팀 인사이트</span>
     <span class="logo-sub" id="hd-date"></span>
   </div>
   <div class="hd-right">
@@ -363,9 +363,7 @@ const QUERIES = {
 
 /* ── CORS 프록시 (순서대로 폴백) ── */
 const PROXIES = [
-  u => `https://corsproxy.io/?${encodeURIComponent(u)}`,
-  u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
-  u => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`,
+  u => `https://stock-proxy.graceim.workers.dev/?url=${encodeURIComponent(u)}`,
 ];
 
 // 프록시 순서대로 시도, 성공한 텍스트 반환
@@ -373,7 +371,7 @@ async function fetchViaProxy(url, expectJson=false) {
   let lastErr;
   for (const mkProxy of PROXIES) {
     try {
-      const r = await fetch(mkProxy(url), {signal: AbortSignal.timeout(8000)});
+      const r = await fetch(mkProxy(url), {signal: AbortSignal.timeout(10000)});
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       const text = await r.text();
       if (!text || text.length < 10) throw new Error('empty response');
@@ -420,7 +418,7 @@ function parseRSS(xmlText) {
     items.push({
       title:     stripTags(get('title')),
       link:      linkM ? linkM[1].trim() : '',
-      source:    get('source') || get('dc:creator') || 'Google News',
+      source:    get('source') || get('News:Source') || get('dc:creator') || 'Bing News',
       published: get('pubDate') || get('dc:date') || '',
     });
   }
@@ -447,24 +445,21 @@ async function loadTicker(force=false){
   const cached=gc('ticker',60);
   if(!force&&cached){ $('ticker').innerHTML=cached; return; }
 
-    async function getStock(code){
+  async function getStock(code){
     try{
-      const ticker=code+'.KQ';
-      const url='https://query1.finance.yahoo.com/v8/finance/chart/'+ticker+'?interval=1d&range=1d';
-      const r=await fetch(url,{signal:AbortSignal.timeout(8000),headers:{'Accept':'application/json'}});
-      const j=await r.json();
-      const meta=j?.chart?.result?.[0]?.meta;
-      if(!meta) throw new Error('no data');
-      const price=meta.regularMarketPrice??0;
-      const prev=meta.chartPreviousClose??meta.previousClose??price;
-      const change=price-prev;
-      const ratio=prev?Math.abs((change/prev)*100).toFixed(2):'0.00';
+      const r=await fetch(`https://stock-proxy.graceim.workers.dev/?code=${code}`,
+        {signal:AbortSignal.timeout(10000)});
+      const d=await r.json();
+      if(!d||d.error) throw new Error(d?.error||'no data');
+      const price=Number((d.closePrice||'0').replace(/,/g,''));
+      const change=Number(d.compareToPreviousClosePrice||0);
+      const ratio=Math.abs(Number(d.fluctuationsRatio||0)).toFixed(2);
       const dir=change>0?'RISING':change<0?'FALLING':'STEADY';
+      const isOpen=d.overMarketStatus==='OPEN'||d.marketStatus==='OPEN';
       return{
-        price:Math.round(price).toLocaleString('ko-KR'),
-        change:Math.round(Math.abs(change)).toLocaleString('ko-KR'),
-        ratio,dir,
-        isOpen:meta.marketState==='REGULAR',
+        price:price.toLocaleString('ko-KR'),
+        change:Math.abs(change).toLocaleString('ko-KR'),
+        ratio,dir,isOpen,
         sign:dir==='RISING'?'+':dir==='FALLING'?'-':'',
       };
     }catch(e){return{err:'로드 실패'};}
@@ -474,7 +469,7 @@ async function loadTicker(force=false){
     try{
       // CoinGecko는 CORS 허용이라 직접 호출
       const r=await fetch('https://api.coingecko.com/api/v3/simple/price?ids=wemix-token&vs_currencies=krw,usd&include_24hr_change=true',
-        {signal:AbortSignal.timeout(8000)});
+        {signal:AbortSignal.timeout(10000)});
       const d=(await r.json())['wemix-token']??{};
       const chg=d.krw_24h_change??0;
       return{ krw:d.krw??0, chg24h:chg, dir:chg>=0?'RISING':'FALLING', sign:chg>=0?'+':'-' };
@@ -508,7 +503,7 @@ async function loadTicker(force=false){
       </div><span class="tk-pill pl-live">LIVE</span></a>`;
   }
 
-  const [s1,s2,wx]=await Promise.all([getStock('112040'),getStock('233180'),getWemix()]);
+  const [s1,s2,wx]=await Promise.all([getStock('112040'),getStock('101730'),getWemix()]);
   const html=
     stockCard('위메이드','KOSDAQ',s1,'112040')+
     stockCard('위메이드맥스','KOSDAQ',s2,'233180')+
@@ -533,7 +528,7 @@ async function loadNews(cat,force=false){
   }
   bodyEl.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
   try{
-    const rssUrl=`https://news.google.com/rss/search?q=${encodeURIComponent(QUERIES[cat])}&hl=ko&gl=KR&ceid=KR:ko`;
+    const rssUrl=`https://www.bing.com/news/search?q=${encodeURIComponent(QUERIES[cat])}&format=RSS`;
     const xmlText = await fetchViaProxy(rssUrl);
     const items = parseRSS(xmlText);
     const articles = items.slice(0,14).map(it=>({...it, provider:'google'}));
@@ -579,7 +574,7 @@ function renderTrendHtml(xmlText){
   while((vm=volRe.exec(xmlText))!==null) vols.push(vm[1]);
   return '<div class="tg">'+items.slice(0,20).map((it,i)=>{
     const rank=i+1, cls=rank===1?'r1':rank<=3?'r3':'';
-    const url='https://www.google.com/search?q='+encodeURIComponent(it.title)+'&gl=kr&hl=ko';
+    const url='https://www.google.com/search?q='+encodeURIComponent(it.title)+'&gl=us&hl=en';
     return '<a class="tr-link" href="'+url+'" target="_blank" rel="noopener">'
       +'<div class="tr-item">'
       +'<span class="tr-rank '+cls+'">'+rank+'</span>'
@@ -607,53 +602,17 @@ async function loadGTrend(force=false){
     }catch(e){ paneKR.innerHTML='<div class="errbox">'+esc(e.message)+'</div>'; }
   }
 
-  // 글로벌 (블록체인·게임·마케팅·브랜딩 카테고리별 Google News RSS)
+  // 글로벌 (미국 기준)
   const KEY_GL='gtrend_global';
   const paneGL=$('pane-global');
   const cachedGL=gc(KEY_GL,300);
   if(!force&&cachedGL){ paneGL.innerHTML=cachedGL; return; }
-
   paneGL.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
   try{
-    const GLOBAL_CATS = [
-      {label:'⛓️ Blockchain', q:'blockchain crypto NFT Web3', color:'#1971c2'},
-      {label:'🎮 Games',      q:'game gaming esports metaverse', color:'#5f3dc4'},
-      {label:'📣 Marketing',  q:'marketing campaign brand strategy', color:'#e67700'},
-      {label:'✨ Branding',   q:'branding brand identity design trend', color:'#0ca678'},
-    ];
-
-    const results = await Promise.all(
-      CATS.map(cat =>
-        fetchViaProxy(
-          'https://www.bing.com/news/search?q='+encodeURIComponent(cat.q)+'&format=RSS'
-        ).then(xml => ({cat, items: parseRSS(xml).slice(0,5)}))
-         .catch(() => ({cat, items:[]}))
-      )
-
-    );
-
-    let html='';
-    for(const {cat, items} of results){
-      if(!items.length) continue;
-      html += '<div style="padding:10px 14px 4px;">'
-        +'<div style="font-size:10px;font-weight:700;color:'+cat.color+';letter-spacing:.5px;margin-bottom:6px;">'+cat.label+'</div>';
-      html += items.map(it=>{
-        const url='https://www.google.com/search?q='+encodeURIComponent(it.title)+'&gl=us&hl=en';
-        return '<a class="tr-link" href="'+esc(it.link||url)+'" target="_blank" rel="noopener" style="margin-bottom:4px;display:block;">'
-          +'<div class="tr-item" style="background:none;border:1px solid var(--line);padding:6px 10px;">'
-          +'<span class="tr-kw" style="font-size:11px;">'+esc(it.title)+'</span>'
-          +'<span class="tr-vol" style="white-space:nowrap;">'+esc(it.source||'')+'</span>'
-          +'</div></a>';
-      }).join('');
-      html += '</div>';
-    }
-
-    if(!html) throw new Error('데이터 없음');
-    sc(KEY_GL, html);
-    paneGL.innerHTML = html;
-  }catch(e){
-    paneGL.innerHTML='<div class="errbox">글로벌 트렌드를 불러올 수 없습니다.<br><small style="color:var(--txt3)">'+esc(e.message)+'</small></div>';
-  }
+    const xml=await fetchViaProxy('https://trends.google.com/trending/rss?geo=US');
+    const html=renderTrendHtml(xml);
+    sc(KEY_GL,html); paneGL.innerHTML=html;
+  }catch(e){ paneGL.innerHTML='<div class="errbox">'+esc(e.message)+'</div>'; }
 }
 
 async function loadNamu(force=false){
@@ -664,7 +623,7 @@ async function loadNamu(force=false){
   bodyEl.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
   try{
     const r = await fetch('https://search.namu.wiki/api/ranking', {
-      signal: AbortSignal.timeout(8000),
+      signal: AbortSignal.timeout(10000),
       headers: {'Referer':'https://namu.wiki/', 'Origin':'https://namu.wiki'}
     });
     if(!r.ok) throw new Error('API '+r.status);
@@ -697,14 +656,14 @@ async function loadNamu(force=false){
 async function refreshAll(force=false){
   const btn=$('btn-ref'), icon=$('spin');
   btn.disabled=true; icon.classList.add('spinning');
+  loadTicker(force);
   await Promise.all([
-    loadTicker(force),
     loadNews('wemade',force),
     loadNews('blockchain',force),
     loadNews('marketing',force),
-    loadGTrend(force),
-    loadNamu(force),
   ]);
+  await loadGTrend(force);
+  await loadNamu(force);
   icon.classList.remove('spinning');
   btn.disabled=false;
 }
