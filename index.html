@@ -614,7 +614,7 @@ async function loadGTrend(force=false){
   }catch(e){ paneGL.innerHTML='<div class="errbox">'+esc(e.message)+'</div>'; }
 }
 
-async function loadNamuasync function loadNamuasync function loadNamu(force=false){
+async function loadNamu(force=false){
   const KEY='namu';
   const bodyEl=$('body-namu'), updEl=$('upd-namu');
   const cached=gc(KEY,60);
