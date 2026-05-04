@@ -629,7 +629,7 @@ async function loadGTrend(force=false){
         ).then(xml => ({cat, items: parseRSS(xml).slice(0,5)}))
          .catch(() => ({cat, items:[]}))
       )
-    );
+
     );
 
     let html='';
