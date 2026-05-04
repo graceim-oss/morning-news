@@ -361,26 +361,38 @@ const QUERIES = {
   marketing:  '브랜딩 OR 마케팅트렌드 OR 디지털마케팅',
 };
 
-/* ── CORS 프록시 (순서대로 폴백) ── */
+/* ── CORS 프록시 (순서대로 폴백) ──
+   브라우저에서 Google/Bing RSS를 직접 호출하면 CORS로 막히는 경우가 많아서
+   여러 프록시를 순차적으로 시도하도록 구성합니다.
+*/
 const PROXIES = [
+  u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
+  u => `https://corsproxy.io/?${encodeURIComponent(u)}`,
   u => `https://stock-proxy.graceim.workers.dev/?url=${encodeURIComponent(u)}`,
 ];
 
 // 프록시 순서대로 시도, 성공한 텍스트 반환
 async function fetchViaProxy(url, expectJson=false) {
   let lastErr;
+
   for (const mkProxy of PROXIES) {
     try {
-      const r = await fetch(mkProxy(url), {signal: AbortSignal.timeout(10000)});
+      const r = await fetch(mkProxy(url), {
+        signal: AbortSignal.timeout(12000),
+        cache: 'no-store'
+      });
+
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
+
       const text = await r.text();
       if (!text || text.length < 10) throw new Error('empty response');
-      if (expectJson) {
-        return JSON.parse(text); // JSON 그대로 파싱
-      }
-      return text; // 텍스트(XML/HTML) 그대로 반환
-    } catch(e) { lastErr = e; }
+
+      return expectJson ? JSON.parse(text) : text;
+    } catch(e) {
+      lastErr = e;
+    }
   }
+
   throw lastErr ?? new Error('all proxies failed');
 }
 
@@ -528,10 +540,10 @@ async function loadNews(cat,force=false){
   }
   bodyEl.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
   try{
-    const rssUrl=`https://www.bing.com/news/search?q=${encodeURIComponent(QUERIES[cat])}&format=RSS`;
+    const rssUrl = `https://news.google.com/rss/search?q=${encodeURIComponent(QUERIES[cat])}&hl=ko&gl=KR&ceid=KR:ko`;
     const xmlText = await fetchViaProxy(rssUrl);
     const items = parseRSS(xmlText);
-    const articles = items.slice(0,14).map(it=>({...it, provider:'google'}));
+    const articles = items.slice(0,14).map(it=>({...it, provider:'google', source: it.source || 'Google News'}));
     if(!articles.length) throw new Error('기사 없음');
     const updated=`${nowKST()} 기준`;
     sc(KEY,{articles,updated});
