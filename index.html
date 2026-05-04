@@ -573,7 +573,7 @@ function renderTrendHtml(xmlText){
   while((vm=volRe.exec(xmlText))!==null) vols.push(vm[1]);
   return '<div class="tg">'+items.slice(0,20).map((it,i)=>{
     const rank=i+1, cls=rank===1?'r1':rank<=3?'r3':'';
-    const url='https://www.google.com/search?q='+encodeURIComponent(it.title)+'&gl=us&hl=en';
+    const url='https://www.google.com/search?q='+encodeURIComponent(it.title)+'&gl=kr&hl=ko';
     return '<a class="tr-link" href="'+url+'" target="_blank" rel="noopener">'
       +'<div class="tr-item">'
       +'<span class="tr-rank '+cls+'">'+rank+'</span>'
@@ -601,20 +601,56 @@ async function loadGTrend(force=false){
     }catch(e){ paneKR.innerHTML='<div class="errbox">'+esc(e.message)+'</div>'; }
   }
 
-  // 글로벌 (미국 기준)
+  // 글로벌 (블록체인·게임·마케팅·브랜딩 카테고리별 Google News RSS)
   const KEY_GL='gtrend_global';
   const paneGL=$('pane-global');
   const cachedGL=gc(KEY_GL,300);
   if(!force&&cachedGL){ paneGL.innerHTML=cachedGL; return; }
+
   paneGL.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
   try{
-    const xml=await fetchViaProxy('https://trends.google.com/trending/rss?geo=US');
-    const html=renderTrendHtml(xml);
-    sc(KEY_GL,html); paneGL.innerHTML=html;
-  }catch(e){ paneGL.innerHTML='<div class="errbox">'+esc(e.message)+'</div>'; }
+    const GLOBAL_CATS = [
+      {label:'⛓️ Blockchain', q:'blockchain crypto NFT Web3', color:'#1971c2'},
+      {label:'🎮 Games',      q:'game gaming esports metaverse', color:'#5f3dc4'},
+      {label:'📣 Marketing',  q:'marketing campaign brand strategy', color:'#e67700'},
+      {label:'✨ Branding',   q:'branding brand identity design trend', color:'#0ca678'},
+    ];
+
+    const results = await Promise.all(
+      GLOBAL_CATS.map(cat =>
+        fetchViaProxy(
+          'https://news.google.com/rss/search?q='+encodeURIComponent(cat.q)
+          +'&hl=en-US&gl=US&ceid=US:en'
+        ).then(xml => ({cat, items: parseRSS(xml).slice(0,5)}))
+         .catch(() => ({cat, items:[]}))
+      )
+    );
+
+    let html='';
+    for(const {cat, items} of results){
+      if(!items.length) continue;
+      html += '<div style="padding:10px 14px 4px;">'
+        +'<div style="font-size:10px;font-weight:700;color:'+cat.color+';letter-spacing:.5px;margin-bottom:6px;">'+cat.label+'</div>';
+      html += items.map(it=>{
+        const url='https://www.google.com/search?q='+encodeURIComponent(it.title)+'&gl=us&hl=en';
+        return '<a class="tr-link" href="'+esc(it.link||url)+'" target="_blank" rel="noopener" style="margin-bottom:4px;display:block;">'
+          +'<div class="tr-item" style="background:none;border:1px solid var(--line);padding:6px 10px;">'
+          +'<span class="tr-kw" style="font-size:11px;">'+esc(it.title)+'</span>'
+          +'<span class="tr-vol" style="white-space:nowrap;">'+esc(it.source||'')+'</span>'
+          +'</div></a>';
+      }).join('');
+      html += '</div>';
+    }
+
+    if(!html) throw new Error('데이터 없음');
+    sc(KEY_GL, html);
+    paneGL.innerHTML = html;
+  }catch(e){
+    paneGL.innerHTML='<div class="errbox">글로벌 트렌드를 불러올 수 없습니다.<br><small style="color:var(--txt3)">'+esc(e.message)+'</small></div>';
+  }
 }
 
-async function loadNamu(force=false){
+async function loadNamuasync function loadNamu(force=false){
   const KEY='namu';
   const bodyEl=$('body-namu'), updEl=$('upd-namu');
   const cached=gc(KEY,60);
@@ -655,14 +691,14 @@ async function loadNamu(force=false){
 async function refreshAll(force=false){
   const btn=$('btn-ref'), icon=$('spin');
   btn.disabled=true; icon.classList.add('spinning');
-  loadTicker(force);
   await Promise.all([
+    loadTicker(force),
     loadNews('wemade',force),
     loadNews('blockchain',force),
     loadNews('marketing',force),
+    loadGTrend(force),
+    loadNamu(force),
   ]);
-  await loadGTrend(force);
-  await loadNamu(force);
   icon.classList.remove('spinning');
   btn.disabled=false;
 }
