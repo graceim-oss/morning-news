@@ -449,22 +449,24 @@ async function loadTicker(force=false){
 
     async function getStock(code){
     try{
-      const today=new Date().toLocaleDateString('ko-KR',{timeZone:'Asia/Seoul'}).replace(/\. /g,'').replace('.','');
-      const r=await fetch('https://data.krx.co.kr/comm/bldAttendant/getJsonData.cmd',{
-        method:'POST',
-        body:new URLSearchParams({bld:'dbms/MDC/STAT/standard/MDCSTAT01901',locale:'ko_KR',isuSrtCd:code,strtDd:today,endDd:today,share:'1',money:'1',csvxls_isNo:'false'}),
-        signal:AbortSignal.timeout(8000),
-        headers:{'Referer':'https://data.krx.co.kr/'}
-      });
+      const ticker=code+'.KQ';
+      const url='https://query1.finance.yahoo.com/v8/finance/chart/'+ticker+'?interval=1d&range=1d';
+      const r=await fetch(url,{signal:AbortSignal.timeout(8000),headers:{'Accept':'application/json'}});
       const j=await r.json();
-      const row=j?.output?.[0];
-      if(!row) throw new Error('no data');
-      const price=parseInt((row.TDD_CLSPRC||'0').replace(/,/g,''));
-      const prev=parseInt((row.PRV_DD_CLSPRC||'0').replace(/,/g,''));
+      const meta=j?.chart?.result?.[0]?.meta;
+      if(!meta) throw new Error('no data');
+      const price=meta.regularMarketPrice??0;
+      const prev=meta.chartPreviousClose??meta.previousClose??price;
       const change=price-prev;
       const ratio=prev?Math.abs((change/prev)*100).toFixed(2):'0.00';
       const dir=change>0?'RISING':change<0?'FALLING':'STEADY';
-      return{price:price.toLocaleString('ko-KR'),change:Math.abs(change).toLocaleString('ko-KR'),ratio,dir,isOpen:false,sign:dir==='RISING'?'+':dir==='FALLING'?'-':''};
+      return{
+        price:Math.round(price).toLocaleString('ko-KR'),
+        change:Math.round(Math.abs(change)).toLocaleString('ko-KR'),
+        ratio,dir,
+        isOpen:meta.marketState==='REGULAR',
+        sign:dir==='RISING'?'+':dir==='FALLING'?'-':'',
+      };
     }catch(e){return{err:'로드 실패'};}
   }
 
