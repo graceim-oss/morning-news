@@ -623,10 +623,10 @@ async function loadGTrend(force=false){
     ];
 
     const results = await Promise.all(
-      GLOBAL_CATS.map(cat =>
+    const results = await Promise.all(
+      CATS.map(cat =>
         fetchViaProxy(
-          'https://news.google.com/rss/search?q='+encodeURIComponent(cat.q)
-          +'&hl=en-US&gl=US&ceid=US:en'
+          'https://www.bing.com/news/search?q='+encodeURIComponent(cat.q)+'&format=RSS'
         ).then(xml => ({cat, items: parseRSS(xml).slice(0,5)}))
          .catch(() => ({cat, items:[]}))
       )
