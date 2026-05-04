@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
   <style>
-    /* ─── 원본 디자인 토큰 완벽 복구 ────────────────────────── */
+    /* ─── 원본 디자인 토큰 ────────────────────────── */
     :root {
       --bg: #f4f6fb; --bg2: #ffffff; --bg3: #f0f2f8;
       --line: rgba(0,0,0,0.07); --line2: rgba(0,0,0,0.12);
@@ -24,7 +24,6 @@
     .logo{display:flex;align-items:center;gap:10px;}
     .logo-mark{width:28px;height:28px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;}
     .logo-text{font-size:15px;font-weight:700;}
-    .hd-right{display:flex;align-items:center;gap:10px;}
     #hd-clock{font-family:var(--mono);font-size:13px;color:var(--accent);letter-spacing:1px;}
 
     /* 주가 티커 */
@@ -34,13 +33,13 @@
     .tk-price{font-family:var(--mono);font-size:14px;font-weight:500;color:var(--txt);}
     .up{color:var(--up);} .dn{color:var(--down);}
 
-    /* 그리드 레이아웃 */
+    /* 레이아웃 */
     .wrapper{max-width:1520px;margin:0 auto;padding:20px 28px 48px;}
     .section-label{font-size:10px;font-weight:700;letter-spacing:1.2px;color:var(--txt3);text-transform:uppercase;margin:24px 0 10px;}
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
     .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
 
-    /* 카드 스타일 */
+    /* 카드 */
     .card{background:var(--bg2); border:1px solid var(--line); border-radius:var(--r); overflow:hidden; display:flex; flex-direction:column; height: 100%;}
     .card-hd{padding:12px 16px; border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; background: #fff;}
     .card-ttl{display:flex;align-items:center;gap:9px;}
@@ -50,20 +49,19 @@
     .card-ttl h2{font-size:13px; font-weight:700;}
     .card-upd{font-family:var(--mono); font-size:10px; color:var(--txt3);}
 
-    /* 뉴스 목록 스타일 */
-    .news-body{overflow-y:auto; max-height:350px; min-height:300px;}
+    /* 뉴스 목록 */
+    .news-body{overflow-y:auto; height:320px;}
     .ni{padding:12px 16px; border-bottom:1px solid var(--line); transition:background .12s;}
     .ni:hover{background:var(--bg3);}
     .ni a{font-size:12.5px; font-weight:500; color:var(--txt); text-decoration:none; line-height:1.5; display:block;}
     .ni-meta{margin-top:4px; display:flex; align-items:center; gap:8px; font-size:10px; color:var(--txt3);}
 
-    /* 탭 스타일 */
+    /* 트렌드 탭 */
     .tab-bar{display:flex; border-bottom:1px solid var(--line);}
     .tab-btn{flex:1; padding:10px; font-size:11px; font-weight:700; background:none; border:none; cursor:pointer; color:var(--txt2); border-bottom:2px solid transparent;}
     .tab-btn.active{color:var(--accent); border-bottom-color:var(--accent);}
     .tab-pane{display:none;}
     .tab-pane.active{display:block;}
-
     .tg-list{padding:10px; display:grid; grid-template-columns: 1fr 1fr; gap:8px;}
     .tr-item{display:flex; align-items:center; gap:8px; padding:8px; background:var(--bg3); border-radius:6px; font-size:12px;}
     .tr-rank{font-family:var(--mono); font-weight:700; color:var(--accent); width:15px;}
@@ -87,7 +85,7 @@
   </div>
   <div class="hd-right">
     <span id="hd-clock">00:00:00</span>
-    <button class="btn" id="btn-ref" onclick="refreshAll(true)">
+    <button class="btn" onclick="refreshAll(true)">
       <span id="spin">↻</span> 새로고침
     </button>
   </div>
@@ -101,15 +99,24 @@
   <div class="section-label">📰 오늘의 뉴스 클리핑</div>
   <div class="grid-3">
     <div class="card">
-      <div class="card-hd"><div class="card-ttl"><div class="card-ico ic-w">🏢</div><div><h2>위메이드 / 위믹스</h2></div></div><div class="card-upd" id="upd-wemade">—</div></div>
+      <div class="card-hd">
+        <div class="card-ttl"><div class="card-ico ic-w">🏢</div><div><h2>위메이드 / 위믹스</h2></div></div>
+        <div class="card-upd" id="upd-wemade">—</div>
+      </div>
       <div class="news-body" id="body-wemade"><div class="sbox"><div class="ldr"></div></div></div>
     </div>
     <div class="card">
-      <div class="card-hd"><div class="card-ttl"><div class="card-ico ic-b">⛓️</div><div><h2>블록체인 / Web3</h2></div></div><div class="card-upd" id="upd-blockchain">—</div></div>
+      <div class="card-hd">
+        <div class="card-ttl"><div class="card-ico ic-b">⛓️</div><div><h2>블록체인 / Web3</h2></div></div>
+        <div class="card-upd" id="upd-blockchain">—</div>
+      </div>
       <div class="news-body" id="body-blockchain"><div class="sbox"><div class="ldr"></div></div></div>
     </div>
     <div class="card">
-      <div class="card-hd"><div class="card-ttl"><div class="card-ico ic-m">📣</div><div><h2>마케팅 / 트렌드</h2></div></div><div class="card-upd" id="upd-marketing">—</div></div>
+      <div class="card-hd">
+        <div class="card-ttl"><div class="card-ico ic-m">📣</div><div><h2>마케팅 / 트렌드</h2></div></div>
+        <div class="card-upd" id="upd-marketing">—</div>
+      </div>
       <div class="news-body" id="body-marketing"><div class="sbox"><div class="ldr"></div></div></div>
     </div>
   </div>
@@ -117,26 +124,32 @@
   <div class="section-label">🔥 실시간 트렌드</div>
   <div class="grid-2">
     <div class="card">
-      <div class="card-hd"><div class="card-ttl"><div class="card-ico ic-g">🔍</div><div><h2>구글 트렌드</h2></div></div><div class="card-upd" id="upd-gtrend">—</div></div>
+      <div class="card-hd">
+        <div class="card-ttl"><div class="card-ico ic-g">🔍</div><div><h2>구글 트렌드</h2></div></div>
+        <div class="card-upd" id="upd-gtrend">—</div>
+      </div>
       <div class="tab-bar">
-        <button class="tab-btn active" onclick="switchTab('kr', this)">🇰🇷 한국</button>
-        <button class="tab-btn" onclick="switchTab('us', this)">🇺🇸 글로벌</button>
+        <button class="tab-btn active" onclick="switchTrend('kr', this)">🇰🇷 한국</button>
+        <button class="tab-btn" onclick="switchTrend('us', this)">🇺🇸 글로벌</button>
       </div>
       <div id="pane-kr" class="tab-pane active"><div class="sbox"><div class="ldr"></div></div></div>
       <div id="pane-us" class="tab-pane"><div class="sbox"><div class="ldr"></div></div></div>
     </div>
     <div class="card">
-      <div class="card-hd"><div class="card-ttl"><div class="card-ico ic-n">📖</div><div><h2>나무위키 실검</h2></div></div><div class="card-upd" id="upd-namu">—</div></div>
+      <div class="card-hd">
+        <div class="card-ttl"><div class="card-ico ic-n">📖</div><div><h2>나무위키 실검</h2></div></div>
+        <div class="card-upd" id="upd-namu">—</div>
+      </div>
       <div class="news-body" id="body-namu"><div class="sbox"><div class="ldr"></div></div></div>
     </div>
   </div>
 </div>
 
 <script>
-const QUERIES = { wemade: '위메이드 OR 위믹스 OR "WEMIX"', blockchain: '블록체인 Web3 OR NFT 가상자산', marketing: '마케팅 트렌드 OR 브랜드 캠페인' };
+const QUERIES = { wemade: '위메이드 OR 위믹스 OR "WEMIX"', blockchain: '블록체인 Web3 OR NFT 가상자산', marketing: '마케팅 트렌드 OR 디지털 캠페인' };
 const $ = id => document.getElementById(id);
 
-/* 프록시 패치 */
+/* 프록시 우회 함수 */
 async function fetchSafe(url) {
   try {
     const res = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(url)}&_=${Date.now()}`);
@@ -148,23 +161,25 @@ async function fetchSafe(url) {
   }
 }
 
-/* 뉴스 로드 */
+/* 뉴스 파싱 및 출력 */
 async function loadNews(cat) {
   const body = $(`body-${cat}`);
   try {
     const rss = await fetchSafe(`https://news.google.com/rss/search?q=${encodeURIComponent(QUERIES[cat])}&hl=ko&gl=KR&ceid=KR:ko`);
     const xml = new DOMParser().parseFromString(rss, "text/xml");
     const items = Array.from(xml.querySelectorAll("item")).slice(0, 10);
-    body.innerHTML = items.map(it => `
-      <div class="ni">
-        <a href="${it.querySelector("link").textContent}" target="_blank">${it.querySelector("title").textContent}</a>
-        <div class="ni-meta"><span>${it.querySelector("source")?.textContent || '뉴스'}</span><span>${new Date(it.querySelector("pubDate").textContent).toLocaleDateString()}</span></div>
-      </div>`).join('');
+    body.innerHTML = items.map(it => {
+      const title = it.querySelector("title").textContent;
+      const link = it.querySelector("link").textContent;
+      const source = it.querySelector("source")?.textContent || "뉴스";
+      const date = new Date(it.querySelector("pubDate").textContent).toLocaleDateString();
+      return `<div class="ni"><a href="${link}" target="_blank">${title}</a><div class="ni-meta"><span>${source}</span><span>${date}</span></div></div>`;
+    }).join('');
     $(`upd-${cat}`).innerText = new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
   } catch (e) { body.innerHTML = '<div class="sbox">뉴스 로드 실패</div>'; }
 }
 
-/* 주가 로드 */
+/* 주가 정보 */
 async function loadStocks() {
   try {
     const raw = await fetchSafe('https://polling.finance.naver.com/api/realtime/site/stock/get?stockCodes=112040,233180');
@@ -175,11 +190,11 @@ async function loadStocks() {
         <span class="tk-name">${s.nm}</span>
         <span class="tk-price ${s.cv>0?'up':s.cv<0?'dn':''}">₩${s.nv.toLocaleString()}</span>
         <span style="font-size:10px;">${s.cr}%</span>
-      </div>`).join('');
+      </div>`).join('') + `<span style="margin-left:auto; font-size:10px; color:#999;">${new Date().toLocaleTimeString()}</span>`;
   } catch (e) { $('ticker-area').innerText = '주가 로드 실패'; }
 }
 
-/* 트렌드 로드 */
+/* 트렌드 정보 */
 async function loadTrend(geo, paneId) {
   try {
     const rss = await fetchSafe(`https://trends.google.com/trending/rss?geo=${geo.toUpperCase()}`);
@@ -199,7 +214,7 @@ async function loadNamu() {
   } catch (e) { $('body-namu').innerHTML = '<div class="sbox">로드 실패</div>'; }
 }
 
-function switchTab(geo, btn) {
+function switchTrend(geo, btn) {
   const card = btn.closest('.card');
   card.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   card.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
