@@ -1,5 +1,5 @@
 {
-  "updated": "17:24:35",
+  "updated": "17:26:10",
   "stocks": {
     "wemade": {
       "price": "23,700",
@@ -18,8 +18,8 @@
       "sign": "-"
     },
     "wemix": {
-      "krw": 353.46,
-      "chg24h": -0.6905952316860985,
+      "krw": 353.44,
+      "chg24h": -0.6238337279590248,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -319,6 +319,10 @@
     ],
     "global": [
       {
+        "title": "eta aquarids meteor shower",
+        "vol": "2000+"
+      },
+      {
         "title": "max holloway",
         "vol": "100+"
       },
@@ -353,10 +357,6 @@
       {
         "title": "yosemite national park",
         "vol": "200+"
-      },
-      {
-        "title": "popeyes chicken wraps permanent menu",
-        "vol": "1000+"
       }
     ]
   },
@@ -433,8 +433,130 @@
         "link": "https://store.steampowered.com/app/550"
       }
     ],
-    "gametrics": [],
-    "gplay_kr": [],
+    "gametrics": [
+      {
+        "rank": 1,
+        "name": "리그 오브 레전드",
+        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%eb%a6%ac%ea%b7%b8+%ec%98%a4%eb%b8%8c+%eb%a0%88%ec%a0%84%eb%93%9c",
+        "pct": ""
+      },
+      {
+        "rank": 2,
+        "name": "발로란트",
+        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%eb%b0%9c%eb%a1%9c%eb%9e%80%ed%8a%b8",
+        "pct": ""
+      },
+      {
+        "rank": 3,
+        "name": "리니지 클래식",
+        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%eb%a6%ac%eb%8b%88%ec%a7%80+%ed%81%b4%eb%9e%98%ec%8b%9d",
+        "pct": ""
+      },
+      {
+        "rank": 4,
+        "name": "배틀그라운드",
+        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%eb%b0%b0%ed%8b%80%ea%b7%b8%eb%9d%bc%ec%9a%b4%eb%93%9c",
+        "pct": ""
+      },
+      {
+        "rank": 5,
+        "name": "FC온라인",
+        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=FC%ec%98%a8%eb%9d%bc%ec%9d%b8",
+        "pct": ""
+      },
+      {
+        "rank": 6,
+        "name": "오버워치",
+        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%ec%98%a4%eb%b2%84%ec%9b%8c%ec%b9%98",
+        "pct": ""
+      },
+      {
+        "rank": 7,
+        "name": "서든어택",
+        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%ec%84%9c%eb%93%a0%ec%96%b4%ed%83%9d",
+        "pct": ""
+      },
+      {
+        "rank": 8,
+        "name": "Roblox",
+        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=Roblox",
+        "pct": ""
+      },
+      {
+        "rank": 9,
+        "name": "MapleStory Worlds",
+        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=MapleStory+Worlds",
+        "pct": ""
+      },
+      {
+        "rank": 10,
+        "name": "메이플 스토리",
+        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%eb%a9%94%ec%9d%b4%ed%94%8c+%ec%8a%a4%ed%86%a0%eb%a6%ac",
+        "pct": ""
+      }
+    ],
+    "gplay_kr": [
+      {
+        "rank": 1,
+        "name": "승리의 여신: 니케",
+        "developer": "Level Infinite",
+        "link": "https://play.google.com/store/apps/details?id=com.proximabeta.nikke"
+      },
+      {
+        "rank": 2,
+        "name": "리니지M",
+        "developer": "NC Corporation",
+        "link": "https://play.google.com/store/apps/details?id=com.ncsoft.lineagem19"
+      },
+      {
+        "rank": 3,
+        "name": "로블록스 (Roblox)",
+        "developer": "Roblox Corporation",
+        "link": "https://play.google.com/store/apps/details?id=com.roblox.client"
+      },
+      {
+        "rank": 4,
+        "name": "메이플 키우기",
+        "developer": "NEXON Company",
+        "link": "https://play.google.com/store/apps/details?id=com.nexon.ma"
+      },
+      {
+        "rank": 5,
+        "name": "WOS: 화이트아웃 서바이벌",
+        "developer": "Century Games PTE. LTD.",
+        "link": "https://play.google.com/store/apps/details?id=com.gof.global"
+      },
+      {
+        "rank": 6,
+        "name": "킹샷:Kingshot",
+        "developer": "Century Games PTE. LTD.",
+        "link": "https://play.google.com/store/apps/details?id=com.run.tower.defense"
+      },
+      {
+        "rank": 7,
+        "name": "명조:워더링 웨이브 - 2주년 축제",
+        "developer": "HK KURO GAMES LIMITED",
+        "link": "https://play.google.com/store/apps/details?id=com.kurogame.wutheringwaves.global"
+      },
+      {
+        "rank": 8,
+        "name": "라스트 워: 서바이벌",
+        "developer": "FUNFLY PTE. LTD.",
+        "link": "https://play.google.com/store/apps/details?id=com.fun.lastwar.gp"
+      },
+      {
+        "rank": 9,
+        "name": "한게임포커 클래식 : 7포커 홀덤 섯다 훌라 슬롯",
+        "developer": "NHN Corp.",
+        "link": "https://play.google.com/store/apps/details?id=com.nhnent.pokerclassic"
+      },
+      {
+        "rank": 10,
+        "name": "로얄 매치 Royal Match",
+        "developer": "Dream Games, Ltd.",
+        "link": "https://play.google.com/store/apps/details?id=com.dreamgames.royalmatch"
+      }
+    ],
     "appstore_kr": []
   }
 }
