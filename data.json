@@ -1,25 +1,25 @@
 {
-  "updated": "14:33:20",
+  "updated": "14:45:35",
   "stocks": {
     "wemade": {
-      "price": "23,700",
-      "change": "700",
-      "ratio": "2.87",
+      "price": "23,750",
+      "change": "650",
+      "ratio": "2.66",
       "dir": "FALLING",
       "isOpen": true,
       "sign": "-"
     },
     "wemade_max": {
-      "price": "5,530",
-      "change": "230",
-      "ratio": "3.99",
+      "price": "5,520",
+      "change": "240",
+      "ratio": "4.17",
       "dir": "FALLING",
       "isOpen": true,
       "sign": "-"
     },
     "wemix": {
-      "krw": 353.56,
-      "chg24h": -1.081270643441645,
+      "krw": 354.16,
+      "chg24h": -0.7245520139053685,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -69,6 +69,12 @@
         "published": "Tue, 05 May 2026 11:03:40 GMT"
       },
       {
+        "title": "5주간 빠른 성장, 미르의 전설3 몽환서버 2026 운영 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBQemFac0FMb0FRTm9KeHVFdmR2dFBoLUdXWW92d3QtaVVUZE1aTzUxcEJwVV9iYlhrMVB0OVE5YTVqSXhmMzZ3NlM0N3U0Ymc3Vmdmc1dYV03SAVtBVV95cUxPYzR5VUtUbVAyblpqY19uT3lCQURKTHV0V2VvV3IzMHhkb1dJS0ZVTXkxREl6Y2U5eW1IQ0djM1RreW16UXBZVlRvN2JuY0NwTWlZRmNQVUNFQTk4?oc=5",
+        "source": "게임메카",
+        "published": "Wed, 06 May 2026 05:39:45 GMT"
+      },
+      {
         "title": "위메이드커넥트, 서브컬처 신작 ‘메이크 드라마: MAD’ 사전예약 실시 - 브릿지경제",
         "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1zaXF5RHZqV0tQVGhpeU91WDJNTC13RVFmOUs2dzZVQm1DekRwSXRlYjBkZUwyclIyRnE5N3pNeFQ3ZU9mdVJabW5hMTl2dzFzdjI3MWFGUnBqUQ?oc=5",
         "source": "브릿지경제",
@@ -79,12 +85,6 @@
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBDYjQ5MmVJZ0gtWm02bk1SdzUzajlGalpvVWtFSVNsRGtCVjRJYmJFN01VTEtFWUFrVUw4d0ZNZXRwODhVUHk0YmZrX1VDUmxRdDFmUHhjYTBZSXpFU2xxVF9aMDM?oc=5",
         "source": "베타뉴스",
         "published": "Mon, 04 May 2026 05:26:37 GMT"
-      },
-      {
-        "title": "상폐 코인 ‘위믹스’를 향한 질문… 고집인가 집착인가 - 더스쿠프",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9tUkkyaXNkMlhMNmdYMmtyYlhDWTI4dEJfcm1feGg3N19XcmlIdVViU1c4am11VFZQb2lXSE15Y3ptVXltWFpGZ09IbXc4QU1IckVEc3NaNjhLeHFFX0hBQS01N1JfeHJzcTZYNTZn?oc=5",
-        "source": "더스쿠프",
-        "published": "Wed, 11 Feb 2026 08:00:00 GMT"
       }
     ],
     "blockchain": [
@@ -131,10 +131,10 @@
         "published": "Wed, 06 May 2026 04:59:25 GMT"
       },
       {
-        "title": "[단독]'청담동 주식부자' 주식·코인 전혀 없다…다 어디로? - 노컷뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5zOXBxeWhCdEdnc2IzNFZjcWJaOVlXZmdBMXdSc0xaR1FvV1pjaHFTLXM3UEltdTcxN1F6VW9FTUhWbmFJMG9yMTZ4YmhDR2VfMXc?oc=5",
-        "source": "노컷뉴스",
-        "published": "Tue, 05 May 2026 20:00:00 GMT"
+        "title": "Midnight (NIGHT) 가격, 차트, 시가총액 | 코인마켓캡 - CoinMarketCap",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5HbXVLbldwRWR6VWhCVmhnYXJJbll4NHBKektPNDYxYjdNSlg1eEFiR3pmNVdaNmNjNmxkM1ZVN1JEZTJPTWhTbllnY21pTVRwV2l1Vy10ZVVkcTh0YkJaZVlWbzRtSkhT?oc=5",
+        "source": "CoinMarketCap",
+        "published": "Wed, 06 May 2026 02:11:49 GMT"
       },
       {
         "title": "‘여고생 흉기 살해’ 20대 신상공개 검토…코인세탁소 들러 - KBS 뉴스",
@@ -277,28 +277,36 @@
   "trends": {
     "kr": [
       {
-        "title": "에이 비엘 바이오",
+        "title": "박지원",
         "vol": "500+"
       },
       {
+        "title": "울산항",
+        "vol": "200+"
+      },
+      {
+        "title": "에이 비엘 바이오",
+        "vol": "1000+"
+      },
+      {
         "title": "하하",
+        "vol": "500+"
+      },
+      {
+        "title": "삼성물산",
         "vol": "200+"
       },
       {
         "title": "풍력 발전",
-        "vol": "100+"
-      },
-      {
-        "title": "삼성물산",
-        "vol": "100+"
+        "vol": "200+"
       },
       {
         "title": "지수",
-        "vol": "2000+"
+        "vol": "5000+"
       },
       {
         "title": "수익률",
-        "vol": "500+"
+        "vol": "1000+"
       },
       {
         "title": "라이언 와이스",
@@ -307,17 +315,21 @@
       {
         "title": "사우디아라비아",
         "vol": "500+"
-      },
-      {
-        "title": "teams",
-        "vol": "200+"
-      },
-      {
-        "title": "키움 히어로즈",
-        "vol": "200+"
       }
     ],
     "global": [
+      {
+        "title": "caro claire burke",
+        "vol": "200+"
+      },
+      {
+        "title": "oregon state baseball",
+        "vol": "200+"
+      },
+      {
+        "title": "iphone 16 pro",
+        "vol": "100+"
+      },
       {
         "title": "yosemite national park",
         "vol": "200+"
@@ -327,12 +339,12 @@
         "vol": "500+"
       },
       {
-        "title": "walt frazier",
-        "vol": "500+"
-      },
-      {
         "title": "popeyes chicken wraps permanent menu",
         "vol": "200+"
+      },
+      {
+        "title": "walt frazier",
+        "vol": "500+"
       },
       {
         "title": "samsung stock",
@@ -344,18 +356,6 @@
       },
       {
         "title": "los angeles angels",
-        "vol": "200+"
-      },
-      {
-        "title": "mariners game today",
-        "vol": "500+"
-      },
-      {
-        "title": "eta aquarid meteor shower",
-        "vol": "2000+"
-      },
-      {
-        "title": "richard gere",
         "vol": "200+"
       }
     ]
