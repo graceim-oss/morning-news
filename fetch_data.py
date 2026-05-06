@@ -160,24 +160,44 @@ def main():
         'wemix':      fetch_wemix(),
     }
 
-    print('뉴스 수집 중...')
+    print('뉴스/트렌드/순위 병렬 수집 중...')
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    tasks = {
+        'news_wemade':       lambda: fetch_news('위메이드 OR 위믹스 OR WEMIX OR 레전드오브이미르 OR 나이트크로우'),
+        'news_blockchain':   lambda: fetch_news('블록체인 OR 가상자산 OR NFT OR Web3 OR 코인 OR 스테이블코인'),
+        'news_marketing':    lambda: fetch_news('토스 브랜딩 OR 카카오 마케팅 OR 배달의민족 브랜드 OR 쿠팡 마케팅 OR 무신사 브랜딩 OR 브랜드 캠페인 OR 마케팅 인사이트 OR 디자인 트렌드'),
+        'news_brand_global': lambda: fetch_news('brand campaign OR brand strategy OR marketing trend 2026 OR brand design OR brand identity'),
+        'trend_kr':          lambda: fetch_gtrend('KR'),
+        'trend_global':      lambda: fetch_gtrend('US'),
+        'steam':             lambda: fetch_steam_top(),
+        'gamemeca':          lambda: fetch_gamemeca_top(),
+    }
+
+    results = {}
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        future_map = {executor.submit(fn): key for key, fn in tasks.items()}
+        for future in as_completed(future_map):
+            key = future_map[future]
+            try:
+                results[key] = future.result()
+            except Exception as e:
+                print(key + ' 오류: ' + str(e))
+                results[key] = []
+
     news = {
-        'wemade':     fetch_news('위메이드 OR 위믹스 OR WEMIX OR 레전드오브이미르 OR 나이트크로우'),
-        'blockchain': fetch_news('블록체인 OR 가상자산 OR NFT OR Web3 OR 코인 OR 스테이블코인'),
-        'marketing':  fetch_news('토스 브랜딩 OR 카카오 마케팅 OR 배달의민족 브랜드 OR 쿠팡 마케팅 OR 무신사 브랜딩 OR 브랜드 캠페인 OR 마케팅 인사이트 OR 디자인 트렌드'),
-        'brand_global': fetch_news('brand campaign OR brand strategy OR marketing trend 2026 OR brand design OR brand identity'),
+        'wemade':       results.get('news_wemade', []),
+        'blockchain':   results.get('news_blockchain', []),
+        'marketing':    results.get('news_marketing', []),
+        'brand_global': results.get('news_brand_global', []),
     }
-
-    print('트렌드 수집 중...')
     trends = {
-        'kr':     fetch_gtrend('KR'),
-        'global': fetch_gtrend('US'),
+        'kr':     results.get('trend_kr', []),
+        'global': results.get('trend_global', []),
     }
-
-    print('게임 순위 수집 중...')
     rankings = {
-        'steam':    fetch_steam_top(),
-        'gamemeca': fetch_gamemeca_top(),
+        'steam':    results.get('steam', []),
+        'gamemeca': results.get('gamemeca', []),
     }
 
     data = {
