@@ -1,25 +1,25 @@
 {
-  "updated": "09:52:53",
+  "updated": "10:12:02",
   "stocks": {
     "wemade": {
-      "price": "23,950",
-      "change": "450",
-      "ratio": "1.84",
+      "price": "24,050",
+      "change": "350",
+      "ratio": "1.43",
       "dir": "FALLING",
       "isOpen": true,
       "sign": "-"
     },
     "wemade_max": {
-      "price": "5,620",
-      "change": "140",
-      "ratio": "2.43",
+      "price": "5,600",
+      "change": "160",
+      "ratio": "2.78",
       "dir": "FALLING",
       "isOpen": true,
       "sign": "-"
     },
     "wemix": {
-      "krw": 354.07,
-      "chg24h": -0.9197660749846459,
+      "krw": 353.94,
+      "chg24h": -0.9834021554926943,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -151,16 +151,22 @@
     ],
     "marketing": [
       {
-        "title": "군산시, ‘디지털 마케팅 지원사업’ 참여자 모집 - 전북제일신문",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1uUFdjTUc5VHJPNHNIWGl0X2xPOHh2ZUN6ZVdoNFNHMlk0aGNBeEhwSWwtZ2Y3OVphMEJjOTg2MUs0SDlaUVlvTGd5MXgyc3BTM3JldFJNTExEZWtSS042cjJoXzU4QTNzWnc?oc=5",
-        "source": "전북제일신문",
-        "published": "Tue, 05 May 2026 23:34:51 GMT"
+        "title": "군산시, ‘디지털 마케팅 지원사업’ 참여자 모집 - 대한뉴스방송",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB3QjIwZ0RueVZHWEZmdDlmVE1WVWtXV1NHODQ0alZ1MWFqRVhlVktZSmVsaHhBaDFNLU1DdGRaWWRDZjFxWUNhU0hSVHViNURLRmlUb3V4RTRPVXVjVkdnM0s0cWV6Y3BxUmRZdQ?oc=5",
+        "source": "대한뉴스방송",
+        "published": "Tue, 05 May 2026 23:46:03 GMT"
       },
       {
         "title": "괴산군, 대상그룹 ‘지식존중’ 2026년 대상지 선정…지역 브랜딩 본격화 - 뉴시니어",
         "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1JVlFTa2ZMYTh5YkRIUm4wYVB6VWtfekx1UUF4VWhIektCR0ZieVN6U2ZGbV9LaUYwb2VOUWZJZVNRaVJDN2Z6dGhfLWtuU25MYmdwU1BWZjRVQkVCaURkU0VGNA?oc=5",
         "source": "뉴시니어",
         "published": "Tue, 05 May 2026 23:16:38 GMT"
+      },
+      {
+        "title": "[군산시] 청년뜰 창업센터, 디지털 마케팅 지원사업 참여자 모집 - 투데이안",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBhT0laei05LU92QlZKTmdJMEJqN0pRMkVwSzRSWmE0XzhFQ0oteDJOcUdRdU5VSUFsWm9MR2RlR0xBa09GMFk5d3pFNHpaVGRUaE03TTg1RUpGQUV1N2c4TDk0VktpMW5U?oc=5",
+        "source": "투데이안",
+        "published": "Wed, 06 May 2026 01:03:17 GMT"
       },
       {
         "title": "애피어의 ROI 내는'에이전틱 AI' 전략[커머스마케팅 대전] - 블로터",
@@ -203,23 +209,41 @@
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBBdXp3OEQwWUEyQU84SnBtTDQxR3ZvYWxBbTJCbGdGUl9zem8xYkFlMDRCOU55STlNV2x6dXowdXIwNUU0bnZmSmhWTVk2SW5y?oc=5",
         "source": "패션비즈",
         "published": "Sun, 03 May 2026 22:00:16 GMT"
-      },
-      {
-        "title": "트렌드 코리아 2026에서 찾은 마케팅 트렌드와 역량 - 오픈애즈",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB1Vm9kYS1GTmxsOVlzbE5ycFFoN19FbTFndElPQmxEYmFMZWIzQXlBTWZpUmRZcjJfVDc0d3draC00eE1xTFhNQ0IyMUVYeEFYamdEOW1VYkEzODFUUGdDQUxHeFZIT0J4?oc=5",
-        "source": "오픈애즈",
-        "published": "Fri, 24 Oct 2025 07:00:00 GMT"
       }
     ]
   },
   "trends": {
     "kr": [
       {
-        "title": "긴축",
+        "title": "인플 루 언서",
+        "vol": "20000+"
+      },
+      {
+        "title": "사이드카",
+        "vol": "10000+"
+      },
+      {
+        "title": "삼성전자 주가",
+        "vol": "2000+"
+      },
+      {
+        "title": "sh",
         "vol": "100+"
       },
       {
-        "title": "삼성증권",
+        "title": "신종오 판사",
+        "vol": "5000+"
+      },
+      {
+        "title": "삼성전자 주식",
+        "vol": "1000+"
+      },
+      {
+        "title": "롯데홈쇼핑",
+        "vol": "100+"
+      },
+      {
+        "title": "긴축",
         "vol": "200+"
       },
       {
@@ -227,75 +251,127 @@
         "vol": "200+"
       },
       {
-        "title": "이정규",
-        "vol": "2000+"
-      },
-      {
-        "title": "토스증권",
-        "vol": "2000+"
-      },
-      {
-        "title": "skc",
-        "vol": "100+"
-      },
-      {
-        "title": "와우넷",
-        "vol": "100+"
-      },
-      {
-        "title": "삼전 주가",
-        "vol": "500+"
-      },
-      {
-        "title": "sk하이닉스 주가",
-        "vol": "500+"
-      },
-      {
-        "title": "하이닉스 주가",
-        "vol": "10000+"
+        "title": "삼성증권",
+        "vol": "200+"
       }
     ],
     "global": [
       {
-        "title": "brock nelson",
-        "vol": "500+"
-      },
-      {
-        "title": "sporting cristal vs palmeiras",
-        "vol": "500+"
-      },
-      {
-        "title": "sporting cristal - palmeiras",
-        "vol": "500+"
-      },
-      {
-        "title": "meteor shower may 2026",
-        "vol": "200+"
-      },
-      {
-        "title": "sga",
-        "vol": "500+"
-      },
-      {
-        "title": "lord of the flies (tv series)",
-        "vol": "500+"
-      },
-      {
-        "title": "nick kurtz",
-        "vol": "500+"
-      },
-      {
-        "title": "ausar thompson",
+        "title": "shai gilgeous-alexander",
         "vol": "2000+"
       },
       {
-        "title": "nathan mackinnon",
+        "title": "pirates vs diamondbacks",
+        "vol": "1000+"
+      },
+      {
+        "title": "max strus",
+        "vol": "1000+"
+      },
+      {
+        "title": "braden shewmake",
+        "vol": "1000+"
+      },
+      {
+        "title": "chet holmgren",
+        "vol": "2000+"
+      },
+      {
+        "title": "apple ai settlement",
+        "vol": "1000+"
+      },
+      {
+        "title": "boca juniors",
+        "vol": "2000+"
+      },
+      {
+        "title": "isaiah hartenstein",
+        "vol": "1000+"
+      },
+      {
+        "title": "christian walker",
         "vol": "500+"
       },
       {
-        "title": "plane",
-        "vol": "500+"
+        "title": "nba mvp",
+        "vol": "1000+"
       }
     ]
+  },
+  "rankings": {
+    "steam": [
+      {
+        "rank": 1,
+        "name": "Counter-Strike: Global Offensive",
+        "appid": "730",
+        "players_2weeks": 0,
+        "link": "https://store.steampowered.com/app/730"
+      },
+      {
+        "rank": 2,
+        "name": "Apex Legends",
+        "appid": "1172470",
+        "players_2weeks": 0,
+        "link": "https://store.steampowered.com/app/1172470"
+      },
+      {
+        "rank": 3,
+        "name": "PUBG: BATTLEGROUNDS",
+        "appid": "578080",
+        "players_2weeks": 0,
+        "link": "https://store.steampowered.com/app/578080"
+      },
+      {
+        "rank": 4,
+        "name": "Palworld",
+        "appid": "1623730",
+        "players_2weeks": 0,
+        "link": "https://store.steampowered.com/app/1623730"
+      },
+      {
+        "rank": 5,
+        "name": "Team Fortress 2",
+        "appid": "440",
+        "players_2weeks": 0,
+        "link": "https://store.steampowered.com/app/440"
+      },
+      {
+        "rank": 6,
+        "name": "Call of Duty: Modern Warfare II",
+        "appid": "1938090",
+        "players_2weeks": 0,
+        "link": "https://store.steampowered.com/app/1938090"
+      },
+      {
+        "rank": 7,
+        "name": "New World: Aeternum",
+        "appid": "1063730",
+        "players_2weeks": 0,
+        "link": "https://store.steampowered.com/app/1063730"
+      },
+      {
+        "rank": 8,
+        "name": "Black Myth: Wukong",
+        "appid": "2358720",
+        "players_2weeks": 0,
+        "link": "https://store.steampowered.com/app/2358720"
+      },
+      {
+        "rank": 9,
+        "name": "Grand Theft Auto V Legacy",
+        "appid": "271590",
+        "players_2weeks": 0,
+        "link": "https://store.steampowered.com/app/271590"
+      },
+      {
+        "rank": 10,
+        "name": "Left 4 Dead 2",
+        "appid": "550",
+        "players_2weeks": 0,
+        "link": "https://store.steampowered.com/app/550"
+      }
+    ],
+    "appstore": [],
+    "googleplay": []
   }
 }
