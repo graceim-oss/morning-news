@@ -20,6 +20,9 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install dependencies
+        run: pip install gplay-scraper requests
+
       - name: Run fetch script
         run: python fetch_data.py
 
