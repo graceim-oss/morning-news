@@ -1,0 +1,298 @@
+{
+  "updated": "09:51:26",
+  "stocks": {
+    "wemade": {
+      "price": "23,850",
+      "change": "550",
+      "ratio": "2.25",
+      "dir": "FALLING",
+      "isOpen": true,
+      "sign": "-"
+    },
+    "wemade_max": {
+      "price": "5,620",
+      "change": "140",
+      "ratio": "2.43",
+      "dir": "FALLING",
+      "isOpen": true,
+      "sign": "-"
+    },
+    "wemix": {
+      "err": "로드 실패"
+    }
+  },
+  "news": {
+    "wemade": [
+      {
+        "title": "위메이드맥스 최대주주 위메이드, 위메이드맥스 주식등의 수 141만424주 감소…총 지분율 72.37% - 디지털투데이",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBaSVhpdjM0Z2JzWFBYY3JtdHU2cHNtWU9iM1BlYzJ2UnFJWG1hR0gtWVRUQXcwc1dZNEdXQ0M4RG04SDY2U2ZPbVc4WVFGVHJvWXExTFFQM3RxdkJnWFRsdDEtZHhNaHY1c1gwUVFNTDNDUDA?oc=5",
+        "source": "디지털투데이",
+        "published": "Tue, 05 May 2026 23:29:02 GMT"
+      },
+      {
+        "title": "[게임 브리핑] 위메이드커넥트, 서브컬처 신작 ‘메이크 드라마: MAD’ 사전예약 실시 - 워크투데이",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5RN2l2a0VaSmt6SFBGY1JSNzRPM05laVRrNzViQmgyRDQ5Y0VrRXVWbDdSZkJVWWtXYkxQdUlDdkhMU3laLUVObGVIRUc2UUFjZ0JfN09fZHp1azlXS20xN043U0JESnNWeGVRYw?oc=5",
+        "source": "워크투데이",
+        "published": "Tue, 05 May 2026 11:03:40 GMT"
+      },
+      {
+        "title": "위메이드커넥트, 신작 서브컬처 `메이크 드라마: 매드` 사전예약 - 디지털데일리",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9WclA0M2V3cjktbEpiUkgwV0NOOXc2ZVp0WE9wazVWRUNSNmNGVWVXQzZoblNLeXdDdE5PTXFSdnNTUnFqZHl4UkxUX0RSQXdmRVo2TlR5X3IzRm5ocnJ0WjVIU2w?oc=5",
+        "source": "디지털데일리",
+        "published": "Mon, 04 May 2026 05:54:11 GMT"
+      },
+      {
+        "title": "블록체인 게임 해외 흥행…위메이드 그룹株 강세 [핫종목] - 뉴스1",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBiakVYZVgyLW5aVWVJdmhBb19IdklQZ1hjeXlkVGc5SWpwMmdDY0FKaExkUmpVZnhIYl9iazA5YmFNN0JwNXRITEJ6RE5qZzJQQy11TkZ0ZFVRUC1VVHpn?oc=5",
+        "source": "뉴스1",
+        "published": "Mon, 20 Apr 2026 07:00:00 GMT"
+      },
+      {
+        "title": "위메이드커넥트, 서브컬처 신작 ‘메이크 드라마: MAD’ 사전예약 실시 - 브릿지경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1zaXF5RHZqV0tQVGhpeU91WDJNTC13RVFmOUs2dzZVQm1DekRwSXRlYjBkZUwyclIyRnE5N3pNeFQ3ZU9mdVJabW5hMTl2dzFzdjI3MWFGUnBqUQ?oc=5",
+        "source": "브릿지경제",
+        "published": "Tue, 05 May 2026 00:28:00 GMT"
+      },
+      {
+        "title": "상폐 코인 ‘위믹스’를 향한 질문… 고집인가 집착인가 - 더스쿠프",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9tUkkyaXNkMlhMNmdYMmtyYlhDWTI4dEJfcm1feGg3N19XcmlIdVViU1c4am11VFZQb2lXSE15Y3ptVXltWFpGZ09IbXc4QU1IckVEc3NaNjhLeHFFX0hBQS01N1JfeHJzcTZYNTZn?oc=5",
+        "source": "더스쿠프",
+        "published": "Wed, 11 Feb 2026 08:00:00 GMT"
+      },
+      {
+        "title": "위메이드커넥트, 서브컬처 신작 '메이크 드라마: MAD' 사전예약 실시 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5XRFF1RTdrNVNWQTR6RHNKaWdfZWJzNkVWelpxZzV3MlJ4bDNtam8wMGpsQ2tmeGp4SHVLRDMycGh2TUpwekxnS04yWmpCaEE?oc=5",
+        "source": "v.daum.net",
+        "published": "Mon, 04 May 2026 04:19:07 GMT"
+      },
+      {
+        "title": "위메이드커넥트, 메이크 드라마: MAD 사전예약 실시 - 베타뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBDYjQ5MmVJZ0gtWm02bk1SdzUzajlGalpvVWtFSVNsRGtCVjRJYmJFN01VTEtFWUFrVUw4d0ZNZXRwODhVUHk0YmZrX1VDUmxRdDFmUHhjYTBZSXpFU2xxVF9aMDM?oc=5",
+        "source": "베타뉴스",
+        "published": "Mon, 04 May 2026 05:26:37 GMT"
+      },
+      {
+        "title": "위메이드맥스, 미소녀 RPG '메이크 드라마' 사전예약 시작 - 뉴시스",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5JSGpnNTdMNjltTDE1elEteFk3M2drN0NaSnBlVUxYOXJ2Q2ZvTDVPWnJheW05ZzV5U2c3a1FLNVh0QTFzYzVUVzlWRzRLQ0VsaWNwV0RONmNpendicF91V9IBeEFVX3lxTE1qbVBfeE1iNy1EcURJT2xsM0FXOEw2YzBJY0VEQkt5cGc4ODlHYURlUDVGc3Bqa0FFMnhvQ2hEVEkzNlhwNVZNdVd0UEljRUhUMFN6MXNqOFhza2h2eERnX0lTVjc1WHRrNlNjczAtU01pdy1haDBBVA?oc=5",
+        "source": "뉴시스",
+        "published": "Mon, 04 May 2026 05:06:34 GMT"
+      },
+      {
+        "title": "위메이드커넥트, 서브컬처 신작 ‘메이크 드라마’ 사전예약 실시 - 바이라인네트워크",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5kZDFxUFYtbWJadXY0NnYxb2dWQVQtUnZ5R2lpWHNkejdhZWZIRkJuMmV6a0tjUzB6ek9HQkJkUW9ta0d6VDcxSGhETUdhdw?oc=5",
+        "source": "바이라인네트워크",
+        "published": "Mon, 04 May 2026 08:17:09 GMT"
+      }
+    ],
+    "blockchain": [
+      {
+        "title": "김남웅 대표 \"리서치 넘어 인프라로 도약…금융·블록체인 '연결자' 꿈꾼다\" - 뉴스1",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9mWE9QTl9zZjRTZlBFVTFVQ0hIbDNuZl82ZnZ6NUJ6QlNERThZdXdDYXZWWnJlU3RiOGlIZWxZMVlYRTltNTQwT0tBd1diemktQTA1a2tLU3d6UGNfRUFOcEZWaFE5QQ?oc=5",
+        "source": "뉴스1",
+        "published": "Tue, 05 May 2026 22:00:00 GMT"
+      },
+      {
+        "title": "삼성SDS, 디지털 자산 판 키운다…예탁결제원 토큰증권 플랫폼 구축 수주 - 지디넷코리아",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4tUmlTODJlVnlRQ1EwQnhubEhTNVRtVDJLY1JSYmFUWlBvWTVQa1RtRFpXSWc2TExLTWkyR0d5M21rQUc0Um5lU1VGN0lHZ29JMmxDSU1B?oc=5",
+        "source": "지디넷코리아",
+        "published": "Wed, 06 May 2026 00:03:54 GMT"
+      },
+      {
+        "title": "[07:49 가상자산] 비트코인, 클래리티 액트 통과 기대감에 상승 - 신아일보",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE85UzZUa2stQkJ6bHozTnJGb3gyVDRlMGJMZm1vYVZXcVlWVjhHdkEwSmdSb2dOYjZ4NFJSVGw0eHhyVDgxOEl1bFVaSzBGV3h4M3pEcGxtWkNMYlRQbTBQR1NBUWlwc1RGTDZvNjFLUm8?oc=5",
+        "source": "신아일보",
+        "published": "Tue, 05 May 2026 22:55:49 GMT"
+      },
+      {
+        "title": "코인베이스 “가상자산 2분기 전망은 중립”…이란 리스크·거시경제에 발목 잡혀 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBPQk11bGZfdWViMDdxcS1SM09mRjhmcEFTa0VhQjM1QmRUeXJJQmZlbE1sTWRtaGZUVEdCbEdIV0x0dmxwaGZSMHozN2JFb3c?oc=5",
+        "source": "v.daum.net",
+        "published": "Wed, 06 May 2026 00:18:01 GMT"
+      },
+      {
+        "title": "[강세 토픽] 디지털자산·블록체인 테마, 다날 +15.61%, 우리기술투자 +8.31% - 조선비즈 - Chosunbiz",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPb2t6ekd3eVhiRmJ0TFhPNjJZdno5ZWhBMFRsM01Hb29tYmxtX2lqZkxROUkzb21JTG16bDM4YUZyQS1yelJpUjdpSGF3d0lMMzBKWVRtVEhOQUNZTHRLN0hodjI0cDh6Q2VFaGNGdTFRWWtjbkNOUnJmUVFOZk9rMnB4MNIBlwFBVV95cUxPaWY2T1Q3UEFaY0VYSkdnZlhybjdSY0RTQm1Lc1ZZQWtWM1RIazJsSkxJaE03WEV1Z3I4RnVxWHo0U2RxN3RBTmg4OFg0S1JJU0VaRDhpZDBWckxDQ0pjeGs3ZnV6ck15anBCbE0wZ1dSZnhHZGw2alRhUEllZ2dReDVmZHdaSDl3UjJFc1hKNVd5LWtDbG5R?oc=5",
+        "source": "Chosunbiz",
+        "published": "Wed, 06 May 2026 00:19:23 GMT"
+      },
+      {
+        "title": "[금융 Pick] KB금융, 美 블록체인 투자 선두 ‘판테라 캐피탈’과 협업…디지털 자산 전략 가속 - 라이센스뉴스",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9Hbmd2b21UMmhqcC02Q3NlZC1iM1h6Q2tIY0dCREtkNzNnaXJhRTlCVlZuMjRhR3FwZXE1NkZRWVFTd2RabFFKZVhVdkU5SEkwN292VFlxbV9WWTBGME1mZ2ZLbWh2TDB6R1pZ?oc=5",
+        "source": "라이센스뉴스",
+        "published": "Tue, 05 May 2026 10:10:50 GMT"
+      },
+      {
+        "title": "삼성SDS, 예탁결제원 토큰증권 플랫폼 사업 수주 - 디일렉",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBHdnJvWWZGNWJsa3d4ejQ0LVlQa2ZlZC04Rlp0NVRIQVNzbmtMcEs0dnNhZTVMZUhBc0Y0MmNQbkp2Tm0tVWdQTldOeDdTTHRXQjVhRF9OenFWdFBRMEk0TTFCZVc1UQ?oc=5",
+        "source": "디일렉",
+        "published": "Wed, 06 May 2026 00:34:23 GMT"
+      },
+      {
+        "title": "미 블록체인 기업, 북한 연계 해커 위협 정보 가상화폐 업계와 공유 - VOA 한국어 홈페이지",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPLVJ0TW41UVp0TmlTY1ZLekNkbVFqenIxbjF6NmFUNzlERWV0QVlYRTBJSG12dkJmei0wZTVIM0Z3T2JiUTYtaURkcUdqcmlGS0xGRmdIbjFtMFNYTjFVZUlJTDVLa0tyS3NacXN0R2dxVnVoNlJ1WXU1TEdkQkUxSHVsbm53Y0tLZnpsUU5mUkVBbVlmRG8yNzJlM2tpNlVuaUJhY3V5Nmtzd1IydmNRa1VYcUNzcWFqbUJLYk9xcmpkSG05ZGhKd3NVTkJGU3pPZGp0bzVod9IB2gFBVV95cUxNTkV0SXRBNV9GcHJnM3BScU9uYVlWdGEzVjlvVnZvMjhwMFFLdEZlUE51WHUxckdfLUNJSGxfdkVoQ2dQMnBjLVkwb0FhalVxT3JXLURfMXRWWDBWSUZ6NXBhMkkwbUlqMW9iVTNHeDhBbEJYZ1JKWDg2WXFGeTR1LVR1M1N6eUtENlR0VzJTdmpfZ1VSY3lKc0MyTXphckdxQTJMdEEwRzZraVNhTEIzM0NJRnJHOEdkUkpqXzZhSlFzaTNudnkxeU9acktkMjJJV3BQQXdINGI4QQ?oc=5",
+        "source": "VOA 한국어 홈페이지",
+        "published": "Tue, 05 May 2026 15:32:59 GMT"
+      },
+      {
+        "title": "FIU 제재 줄줄이 법정행…가상자산 거래소 책임 범위 시험대 - 전자신문",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4xRnVOcmVoeVlFSnBpaVZ0bHFjeHFPZzMwZWRfeEpPMXJsck9yd0c2NjF6RnFqY3NFSEZNQUg0SG9GS2ZWTjFWOG4xTmR1Zw?oc=5",
+        "source": "전자신문",
+        "published": "Tue, 05 May 2026 05:00:00 GMT"
+      },
+      {
+        "title": "美 가상자산 플랫폼 불리시, '6조' 들여 토큰증권 인프라 사업 진입 - 디지털애셋",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBvazlSUGNodlctUEdqaEtKV1QzakpuQWpCaUJsZVFyemNMYmVISklxQy02a1o4MFFYUFQ0Y2hzdl9wenM5U0JjQlVJbUJ2VXA5S1FyVHlOQUhEMkhHbndYeVpFa0kwdU9ZcDdlQ3AwcGgzZw?oc=5",
+        "source": "디지털애셋",
+        "published": "Wed, 06 May 2026 00:45:00 GMT"
+      }
+    ],
+    "marketing": [
+      {
+        "title": "군산시, ‘디지털 마케팅 지원사업’ 참여자 모집 - 전북제일신문",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1uUFdjTUc5VHJPNHNIWGl0X2xPOHh2ZUN6ZVdoNFNHMlk0aGNBeEhwSWwtZ2Y3OVphMEJjOTg2MUs0SDlaUVlvTGd5MXgyc3BTM3JldFJNTExEZWtSS042cjJoXzU4QTNzWnc?oc=5",
+        "source": "전북제일신문",
+        "published": "Tue, 05 May 2026 23:34:51 GMT"
+      },
+      {
+        "title": "괴산군, 대상그룹 ‘지식존중’ 2026년 대상지 선정…지역 브랜딩 본격화 - 뉴시니어",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1JVlFTa2ZMYTh5YkRIUm4wYVB6VWtfekx1UUF4VWhIektCR0ZieVN6U2ZGbV9LaUYwb2VOUWZJZVNRaVJDN2Z6dGhfLWtuU25MYmdwU1BWZjRVQkVCaURkU0VGNA?oc=5",
+        "source": "뉴시니어",
+        "published": "Tue, 05 May 2026 23:16:38 GMT"
+      },
+      {
+        "title": "애피어의 ROI 내는'에이전틱 AI' 전략[커머스마케팅 대전] - 블로터",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5LajFKelJNekszNG8xU3FiM0swdXN1T2JNT0lmRkJoLUl6ZWhOdFhvamdtOTF3UDEwMVg5dDZ6b3lWVFhLaEY2ZTlYUnpyOUUtbnJFZjlYal9PckZrdkd1MmpzVS04M2g20gFsQVVfeXFMT3poLUM0OXpXRGlXM3M2NlB5R2tqZjBlZVhVbVVBRHhIUTRENzdQTHpLbFFDSkprcEc3SzI4clRlTmhFb0RMWDVsMXZ1VVIxdVdnbnB4TEpzdnV1OWxOOXc1QnJHU0JvdEljeDY0?oc=5",
+        "source": "블로터",
+        "published": "Wed, 06 May 2026 00:23:41 GMT"
+      },
+      {
+        "title": "[브랜딩연구소] 오늘의 인물: 정진 강사 “관계에서 상처받은 분들이 다시 사랑의 길을 걸어갈 수 있도록” - 한국강사신문",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBVQlZ4LW9aaXJSeEtfazBROW9WcU12eUlZYm1DQVIyU0ZvWjNqOHdRYlpOcXgtcy1TWDdJaEdWVjZWZ0x0dmFXallWSTZ3OENWbVNRNUYxNWhpc055WmZBaGlmd2NyT2hoV2ZYR1hjcWU?oc=5",
+        "source": "한국강사신문",
+        "published": "Tue, 05 May 2026 23:00:00 GMT"
+      },
+      {
+        "title": "[피처링] 2026 인플루언서 마케팅 트렌드 리포트 : S.I.M.P.A.C.T - 아이보스",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBrTnlYYTFEck0xOXVsMGZIMUNjYW1VaXFIRW5OS2w3a21NeE1tYzN3NDJGS0NZNm5jRVVyTmRDYzBWeXZTTWJKZFdHZm82X0xlM2puVw?oc=5",
+        "source": "아이보스",
+        "published": "Mon, 04 May 2026 03:53:44 GMT"
+      },
+      {
+        "title": "“닥터 브랜딩은 진료 철학의 회복… 황폐해진 의료 현장 다시 세우는 꿈” - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4zQWhJUXpDVU9tNVZqbEFSNkZSV2JuSFVEX25EQmYwcGNmSGFfNmFkYkRvSmhfOFdzTlR0TnpfekQ1MGJwalVfbFpORHZDdVE?oc=5",
+        "source": "v.daum.net",
+        "published": "Tue, 05 May 2026 04:59:32 GMT"
+      },
+      {
+        "title": "[이머시브 브랜딩] 팝업 과잉시대, 인증샷 너머의 참여 설계가 시급한 이유 - kmjournal.net",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9TWFNVVzBQR0R5UXVZTDhPTnBUQXBDbjdWbDcxVzVELWw0ay14dkw4VG5zdi1SYzFFQVM0ejVBR1RsTjZ1Z1lBUHJVbDlaVGJCRjBuUFBTWmhpbkFXcDl1QzUwLUFlSVFNV2lB?oc=5",
+        "source": "kmjournal.net",
+        "published": "Tue, 05 May 2026 22:52:10 GMT"
+      },
+      {
+        "title": "을지대 브랜딩모델최고위, 여성 프로틴 'BTBT'와 바레 클래스 열어 - 경기신문",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8tREhGZk9fd3pWRjFCSzcwSjdiOXRuTmZvcHkybWl5Q0tRd1Z6cWtJQmZ2bDhDMGg5UmhFQWhMNEE0Z1htV0gzQW1vbUF0YUhVWnIzd09NR0VrTnhsdndqSlNn?oc=5",
+        "source": "경기신문",
+        "published": "Mon, 04 May 2026 11:11:26 GMT"
+      },
+      {
+        "title": "AI 시대, 버티컬 전문직의 퍼스널브랜딩이 시작됐다 - 브랜드뉴스",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5uWlE2NWlTX1RGVV95WXA5eXgtRi11dVhYa3NGYTJhYzhvTkdSOEtMaVBwSXRCY1YwYThINEloZUc4bEhJX0NIZ1RoN0NBX0Rvc01adUFmMWJFRTlXOEFmclJkQWJiZG1HOGd4bw?oc=5",
+        "source": "브랜드뉴스",
+        "published": "Mon, 04 May 2026 04:57:46 GMT"
+      },
+      {
+        "title": "리브랜딩 마친 ‘GLXY’ 어떻게 바뀌었나?... 뉴포티 라이프스타일 맞춰 - 패션비즈",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBBdXp3OEQwWUEyQU84SnBtTDQxR3ZvYWxBbTJCbGdGUl9zem8xYkFlMDRCOU55STlNV2x6dXowdXIwNUU0bnZmSmhWTVk2SW5y?oc=5",
+        "source": "패션비즈",
+        "published": "Sun, 03 May 2026 22:00:16 GMT"
+      }
+    ]
+  },
+  "trends": {
+    "kr": [
+      {
+        "title": "긴축",
+        "vol": "100+"
+      },
+      {
+        "title": "삼성증권",
+        "vol": "200+"
+      },
+      {
+        "title": "미래에셋증권",
+        "vol": "200+"
+      },
+      {
+        "title": "이정규",
+        "vol": "2000+"
+      },
+      {
+        "title": "토스증권",
+        "vol": "2000+"
+      },
+      {
+        "title": "skc",
+        "vol": "100+"
+      },
+      {
+        "title": "와우넷",
+        "vol": "100+"
+      },
+      {
+        "title": "삼전 주가",
+        "vol": "500+"
+      },
+      {
+        "title": "sk하이닉스 주가",
+        "vol": "500+"
+      },
+      {
+        "title": "하이닉스 주가",
+        "vol": "10000+"
+      }
+    ],
+    "global": [
+      {
+        "title": "brock nelson",
+        "vol": "500+"
+      },
+      {
+        "title": "sporting cristal vs palmeiras",
+        "vol": "500+"
+      },
+      {
+        "title": "sporting cristal - palmeiras",
+        "vol": "500+"
+      },
+      {
+        "title": "meteor shower may 2026",
+        "vol": "200+"
+      },
+      {
+        "title": "sga",
+        "vol": "500+"
+      },
+      {
+        "title": "lord of the flies (tv series)",
+        "vol": "500+"
+      },
+      {
+        "title": "nick kurtz",
+        "vol": "500+"
+      },
+      {
+        "title": "ausar thompson",
+        "vol": "2000+"
+      },
+      {
+        "title": "nathan mackinnon",
+        "vol": "500+"
+      },
+      {
+        "title": "plane",
+        "vol": "500+"
+      }
+    ]
+  }
+}
