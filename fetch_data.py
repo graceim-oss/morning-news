@@ -95,103 +95,12 @@ def fetch_gtrend(geo):
         return []
 
 def fetch_steam_top():
-    """Steam 실시간 인기 게임 (동시접속자 기준)"""
-    url = 'https://store.steampowered.com/api/featuredcategories?cc=KR&l=koreana'
+    """Steam 인기 게임 (SteamSpy)"""
     try:
-        text = fetch(url)
-        d = json.loads(text)
-        items = []
-        # top_sellers 카테고리
-        for item in d.get('top_sellers', {}).get('items', [])[:10]:
-            items.append({
-                'rank': len(items) + 1,
-                'name': item.get('name', ''),
-                'appid': item.get('id', ''),
-                'price': item.get('final_price', 0),
-                'discount': item.get('discount_percent', 0),
-                'link': f"https://store.steampowered.com/app/{item.get('id','')}",
-            })
-        return items
-    except Exception as e:
-        print(f'Steam 오류: {e}')
-        # fallback: Steam 인기 게임 API
-        try:
-            url2 = 'https://store.steampowered.com/api/featured/?cc=KR&l=koreana'
-            text2 = fetch(url2)
-            d2 = json.loads(text2)
-            items = []
-            for item in d2.get('featured_win', [])[:10]:
-                items.append({
-                    'rank': len(items) + 1,
-                    'name': item.get('name', ''),
-                    'appid': item.get('id', ''),
-                    'price': item.get('final_price', 0),
-                    'discount': item.get('discount_percent', 0),
-                    'link': f"https://store.steampowered.com/app/{item.get('id','')}",
-                })
-            return items
-        except Exception as e2:
-            print(f'Steam fallback 오류: {e2}')
-            return []
-
-def fetch_google_play_top():
-    """Google Play 한국 인기 게임"""
-    urls = [
-        'https://rss.marketingtools.apple.com/api/v2/kr/apps/top-free/10/games.json',
-        'https://rss.applemarketingtools.com/api/v2/kr/apps/top-free/10/games.json',
-    ]
-    for url in urls:
-        try:
-            text = fetch(url)
-            d = json.loads(text)
-            results = d.get('feed', {}).get('results', [])
-            items = []
-            for i, entry in enumerate(results[:10]):
-                items.append({
-                    'rank': i + 1,
-                    'name': entry.get('name', ''),
-                    'developer': entry.get('artistName', ''),
-                    'link': entry.get('url', ''),
-                })
-            if items:
-                return items
-        except Exception as e:
-            print(f'Google Play 순위 오류: {e}')
-    return []
-
-def fetch_appstore_top():
-    """App Store 한국 인기 게임"""
-    urls = [
-        'https://rss.marketingtools.apple.com/api/v2/kr/apps/top-free/10/games.json',
-        'https://rss.applemarketingtools.com/api/v2/kr/apps/top-free/10/games.json',
-        'https://rss.marketingtools.apple.com/api/v2/us/apps/top-free/10/games.json',
-    ]
-    for url in urls:
-        try:
-            text = fetch(url)
-            d = json.loads(text)
-            results = d.get('feed', {}).get('results', [])
-            items = []
-            for i, entry in enumerate(results[:10]):
-                items.append({
-                    'rank': i + 1,
-                    'name': entry.get('name', ''),
-                    'developer': entry.get('artistName', ''),
-                    'link': entry.get('url', ''),
-                })
-            if items:
-                return items
-        except Exception as e:
-            print(f'App Store 순위 오류: {e}')
-    return []
-
-def fetch_steam_concurrent():
-    """Steam 실시간 동시접속자 Top 10"""
-    url = 'https://store.steampowered.com/api/featuredcategories/?cc=KR&l=koreana'
-    try:
-        # Steam Spy API (공개)
-        url2 = 'https://steamspy.com/api.php?request=top100in2weeks'
-        text = fetch(url2)
+        text = fetch('https://steamspy.com/api.php?request=top100in2weeks', headers={
+            'User-Agent': 'Mozilla/5.0',
+            'Referer': 'https://steamspy.com/',
+        })
         d = json.loads(text)
         items = []
         for i, (appid, info) in enumerate(list(d.items())[:10]):
@@ -204,7 +113,57 @@ def fetch_steam_concurrent():
             })
         return items
     except Exception as e:
-        print(f'Steam 동시접속 오류: {e}')
+        print(f'Steam 오류: {e}')
+        return []
+
+def fetch_gplay_top(country='kr', lang='ko', chart='TOP_GROSSING'):
+    """Google Play 게임 순위 (gplay-scraper)"""
+    try:
+        from gplay_scraper import GPlayScraper
+        scraper = GPlayScraper()
+        result = scraper.list_get_fields(
+            collection=chart,
+            category='GAME',
+            fields=['title', 'developer', 'appId', 'score'],
+            count=10,
+            lang=lang,
+            country=country
+        )
+        items = []
+        for i, item in enumerate(result or []):
+            items.append({
+                'rank': i + 1,
+                'name': item.get('title', ''),
+                'developer': item.get('developer', ''),
+                'appId': item.get('appId', ''),
+                'score': round(item.get('score', 0), 1),
+                'link': f"https://play.google.com/store/apps/details?id={item.get('appId','')}",
+            })
+        return items
+    except Exception as e:
+        print(f'Google Play 순위 오류 ({country}): {e}')
+        return []
+
+def fetch_appstore_top(country='kr', chart='topgrossing'):
+    """App Store 게임 순위 (app-store-scraper)"""
+    try:
+        from app_store_scraper import AppStore
+        # app-store-scraper로 top charts
+        import requests
+        url = f'https://rss.applemarketingtools.com/api/v2/{country}/apps/top-free/10/games.json'
+        r = requests.get(url, timeout=10)
+        d = r.json()
+        items = []
+        for i, entry in enumerate(d.get('feed', {}).get('results', [])[:10]):
+            items.append({
+                'rank': i + 1,
+                'name': entry.get('name', ''),
+                'developer': entry.get('artistName', ''),
+                'link': entry.get('url', ''),
+            })
+        return items
+    except Exception as e:
+        print(f'App Store 순위 오류 ({country}): {e}')
         return []
 
 def main():
@@ -233,9 +192,11 @@ def main():
 
     print('게임 순위 수집 중...')
     rankings = {
-        'steam':       fetch_steam_concurrent(),
-        'appstore':    fetch_appstore_top(),
-        'googleplay':  fetch_google_play_top(),
+        'steam':           fetch_steam_top(),
+        'gplay_kr':        fetch_gplay_top('kr', 'ko', 'TOP_GROSSING'),
+        'gplay_global':    fetch_gplay_top('us', 'en', 'TOP_GROSSING'),
+        'appstore_kr':     fetch_appstore_top('kr'),
+        'appstore_global': fetch_appstore_top('us'),
     }
 
     data = {
@@ -249,10 +210,9 @@ def main():
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f'완료! data.json 저장됨')
-    print(f'  Steam: {len(rankings["steam"])}개')
-    print(f'  App Store: {len(rankings["appstore"])}개')
-    print(f'  Google Play: {len(rankings["googleplay"])}개')
+    print(f'완료!')
+    for k, v in rankings.items():
+        print(f'  {k}: {len(v)}개')
 
 if __name__ == '__main__':
     main()
