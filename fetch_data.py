@@ -172,8 +172,10 @@ def main():
         'trend_kr':          lambda: fetch_gtrend('KR'),
         'trend_global':      lambda: fetch_gtrend('US'),
         'steam':             lambda: fetch_steam_top(),
-        'gamemeca':          lambda: fetch_gamemeca_top(),
-    }
+        'steam':             lambda: fetch_steam_top(),
+        'gametrics':         lambda: fetch_gametrics_top(),
+        'gplay_kr':          lambda: fetch_gplay_top('kr', 'ko', 'TOP_GROSSING'),
+        'appstore_kr':       lambda: fetch_appstore_top('kr'),
 
     results = {}
     with ThreadPoolExecutor(max_workers=8) as executor:
@@ -197,10 +199,11 @@ def main():
         'global': results.get('trend_global', []),
     }
     rankings = {
-        'steam':    results.get('steam', []),
-        'gamemeca': results.get('gamemeca', []),
-    }
-
+    rankings = {
+        'steam':       results.get('steam', []),
+        'gametrics':   results.get('gametrics', []),
+        'gplay_kr':    results.get('gplay_kr', []),
+        'appstore_kr': results.get('appstore_kr', []),
     data = {
         'updated': now,
         'stocks': stocks,
