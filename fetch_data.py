@@ -175,7 +175,8 @@ def main():
         'gametrics':         lambda: fetch_gametrics_top(),
         'gplay_kr':          lambda: fetch_gplay_top('kr', 'ko', 'TOP_GROSSING'),
         'appstore_kr':       lambda: fetch_appstore_top('kr'),
-
+        'appstore_kr':       lambda: fetch_appstore_top('kr'),
+    }
     results = {}
     with ThreadPoolExecutor(max_workers=8) as executor:
         future_map = {executor.submit(fn): key for key, fn in tasks.items()}
