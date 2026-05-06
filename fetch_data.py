@@ -131,11 +131,10 @@ def fetch_gamemeca_top():
         # 순위 + 게임명 패턴: <td>숫자</td> 다음에 gmview 링크
         # 전체 HTML에서 순위와 gmview 링크를 동시에 찾기
         # 패턴: | 숫자 | ... | [게임명](gmview링크)
-        rank_game = re.findall(
-            r'<td[^>]*>\s*(\d+)\s*(?:<span[^>]*>[^<]*</span>)?\s*</td>[\s\S]{1,500}?href="([^"]*rts=gmview[^"]*)"[^>]*>\s*([^<
-]+?)\s*</a>',
-            html
-        )
+        # 순위와 게임명 각각 추출 후 매칭
+        all_ranks = re.findall(r'<td[^>]*>[ \t]*(\d+)[ \t]*(?:<span[^>]*>[^<]*</span>)?[ \t]*</td>', html)
+        all_games = re.findall(r'href="([^"]*rts=gmview[^"]*)"[^>]*>[ \t]*([^<\n]+?)[ \t]*</a>', html)
+        rank_game = [(all_ranks[i], g[0], g[1]) for i, g in enumerate(all_games) if i < len(all_ranks)]
 
         for rank_str, link, name in rank_game:
             rank = int(rank_str)
