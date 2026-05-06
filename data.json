@@ -1,5 +1,5 @@
 {
-  "updated": "10:24:43",
+  "updated": "10:28:40",
   "stocks": {
     "wemade": {
       "price": "23,900",
@@ -10,16 +10,16 @@
       "sign": "-"
     },
     "wemade_max": {
-      "price": "5,590",
-      "change": "170",
-      "ratio": "2.95",
+      "price": "5,600",
+      "change": "160",
+      "ratio": "2.78",
       "dir": "FALLING",
       "isOpen": true,
       "sign": "-"
     },
     "wemix": {
-      "krw": 353.51,
-      "chg24h": -1.193726588680953,
+      "krw": 354.16,
+      "chg24h": -0.9064418362099149,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -143,10 +143,10 @@
         "published": "Wed, 06 May 2026 00:45:00 GMT"
       },
       {
-        "title": "FIU 제재 줄줄이 법정행…가상자산 거래소 책임 범위 시험대 - 전자신문",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4xRnVOcmVoeVlFSnBpaVZ0bHFjeHFPZzMwZWRfeEpPMXJsck9yd0c2NjF6RnFqY3NFSEZNQUg0SG9GS2ZWTjFWOG4xTmR1Zw?oc=5",
-        "source": "전자신문",
-        "published": "Tue, 05 May 2026 05:00:00 GMT"
+        "title": "“이더리움·솔라나 대신 자체망 쓴다”…월가서 뜨는 기업형 블록체인 ‘코프체인’ - 매일경제 마켓",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1CMUdPTUlzNk4ySlN6V3N0cnJMZmNXUks0Mnd4ejZiZmZHbnpuX3RnUXNkU205eHRvS1V2dWlfMi0xcF9pTEdZSUJ5UldYQmRZQ1E?oc=5",
+        "source": "매일경제 마켓",
+        "published": "Tue, 05 May 2026 23:59:15 GMT"
       }
     ],
     "marketing": [
@@ -187,6 +187,12 @@
         "published": "Tue, 05 May 2026 23:00:00 GMT"
       },
       {
+        "title": "[피처링] 2026 인플루언서 마케팅 트렌드 리포트 : S.I.M.P.A.C.T - 아이보스",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBrTnlYYTFEck0xOXVsMGZIMUNjYW1VaXFIRW5OS2w3a21NeE1tYzN3NDJGS0NZNm5jRVVyTmRDYzBWeXZTTWJKZFdHZm82X0xlM2puVw?oc=5",
+        "source": "아이보스",
+        "published": "Mon, 04 May 2026 03:53:44 GMT"
+      },
+      {
         "title": "“닥터 브랜딩은 진료 철학의 회복… 황폐해진 의료 현장 다시 세우는 꿈” - v.daum.net",
         "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4zQWhJUXpDVU9tNVZqbEFSNkZSV2JuSFVEX25EQmYwcGNmSGFfNmFkYkRvSmhfOFdzTlR0TnpfekQ1MGJwalVfbFpORHZDdVE?oc=5",
         "source": "v.daum.net",
@@ -203,12 +209,6 @@
         "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8tREhGZk9fd3pWRjFCSzcwSjdiOXRuTmZvcHkybWl5Q0tRd1Z6cWtJQmZ2bDhDMGg5UmhFQWhMNEE0Z1htV0gzQW1vbUF0YUhVWnIzd09NR0VrTnhsdndqSlNn?oc=5",
         "source": "경기신문",
         "published": "Mon, 04 May 2026 11:11:26 GMT"
-      },
-      {
-        "title": "AI 시대, 버티컬 전문직의 퍼스널브랜딩이 시작됐다 - 브랜드뉴스",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5uWlE2NWlTX1RGVV95WXA5eXgtRi11dVhYa3NGYTJhYzhvTkdSOEtMaVBwSXRCY1YwYThINEloZUc4bEhJX0NIZ1RoN0NBX0Rvc01adUFmMWJFRTlXOEFmclJkQWJiZG1HOGd4bw?oc=5",
-        "source": "브랜드뉴스",
-        "published": "Mon, 04 May 2026 04:57:46 GMT"
       }
     ]
   },
