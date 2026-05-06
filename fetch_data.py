@@ -135,18 +135,30 @@ def fetch_steam_top():
             return []
 
 def fetch_google_play_top():
-    """Google Play 인기 게임 (Apple RSS 형식)"""
-    # Google Play 무료 게임 인기차트 RSS
-    url = 'https://play.google.com/store/apps/collection/cluster?clp=ogooCAEaIAoaY29tLmdvb2dsZS5hbmRyb2lkLmdtcy5nYW1lEAEYAw%3D%3D&hl=ko&gl=KR'
-    # iTunes RSS 방식으로 Google Play top 가져오기
+    """Google Play 한국 인기 게임"""
+    # Google Play RSS (비공식이지만 안정적)
+    url = 'https://androidrank.org/listapps?category=GAME&start=1&price=all&region=kr&sort=4&chart=topselling_free&json=1'
     try:
-        # AppMagic 또는 공개 RSS 사용
-        rss_url = 'https://rss.applemarketingtools.com/api/v2/kr/apps/top-free/50/games.json'
-        # 대신 Google Play 공개 차트 JSON 사용
-        url2 = 'https://androidrank.org/listapps?category=GAME&start=1&price=all&region=kr&sort=4&chart=topselling_free'
-        # 가장 안정적인 방법: iTunes API로 한국 앱스토어 게임 순위 (크로스 레퍼런스용)
-        itunes_url = 'https://rss.applemarketingtools.com/api/v2/kr/apps/top-free/10/games.json'
-        text = fetch(itunes_url)
+        text = fetch(url)
+        d = json.loads(text)
+        items = []
+        for i, entry in enumerate(d[:10]):
+            items.append({
+                'rank': i + 1,
+                'name': entry.get('title', ''),
+                'developer': entry.get('developer', ''),
+                'link': 'https://play.google.com/store/apps/details?id=' + entry.get('id',''),
+            })
+        if items:
+            return items
+    except Exception as e:
+        print(f'Google Play androidrank 오류: {e}')
+    # fallback: Google Play RSS
+    try:
+        rss_url = 'https://play.google.com/store/apps/collection/topselling_free_games?hl=ko&gl=KR'
+        # Apple RSS로 Google Play 순위 대체 (같은 한국 시장)
+        url2 = 'https://rss.applemarketingtools.com/api/v2/kr/apps/top-free/10/games.json'
+        text = fetch(url2)
         d = json.loads(text)
         items = []
         for i, entry in enumerate(d.get('feed', {}).get('results', [])[:10]):
@@ -155,8 +167,6 @@ def fetch_google_play_top():
                 'name': entry.get('name', ''),
                 'developer': entry.get('artistName', ''),
                 'link': entry.get('url', ''),
-                'icon': entry.get('artworkUrl100', ''),
-                'genre': entry.get('genres', [{}])[0].get('name', '') if entry.get('genres') else '',
             })
         return items
     except Exception as e:
@@ -165,24 +175,35 @@ def fetch_google_play_top():
 
 def fetch_appstore_top():
     """App Store 한국 인기 게임"""
-    url = 'https://rss.applemarketingtools.com/api/v2/kr/apps/top-free/10/games.json'
-    try:
-        text = fetch(url)
-        d = json.loads(text)
-        items = []
-        for i, entry in enumerate(d.get('feed', {}).get('results', [])[:10]):
-            items.append({
-                'rank': i + 1,
-                'name': entry.get('name', ''),
-                'developer': entry.get('artistName', ''),
-                'link': entry.get('url', ''),
-                'icon': entry.get('artworkUrl100', ''),
-                'genre': entry.get('genres', [{}])[0].get('name', '') if entry.get('genres') else '',
-            })
-        return items
-    except Exception as e:
-        print(f'App Store 순위 오류: {e}')
-        return []
+    urls = [
+        'https://rss.applemarketingtools.com/api/v2/kr/apps/top-free/10/games.json',
+        'https://itunes.apple.com/kr/rss/topfreegames/limit=10/json',
+    ]
+    for url in urls:
+        try:
+            text = fetch(url)
+            d = json.loads(text)
+            # applemarketingtools 형식
+            results = d.get('feed', {}).get('results', [])
+            if not results:
+                # itunes 형식
+                results = d.get('feed', {}).get('entry', [])
+            items = []
+            for i, entry in enumerate(results[:10]):
+                name = entry.get('name') or entry.get('im:name', {}).get('label', '')
+                developer = entry.get('artistName') or entry.get('im:artist', {}).get('label', '')
+                link = entry.get('url') or entry.get('id', {}).get('label', '')
+                items.append({
+                    'rank': i + 1,
+                    'name': name,
+                    'developer': developer,
+                    'link': link,
+                })
+            if items:
+                return items
+        except Exception as e:
+            print(f'App Store 순위 오류: {e}')
+    return []
 
 def fetch_steam_concurrent():
     """Steam 실시간 동시접속자 Top 10"""
