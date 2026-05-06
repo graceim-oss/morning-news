@@ -1,31 +1,37 @@
 {
-  "updated": "05:57:56",
+  "updated": "08:37:37",
   "stocks": {
     "wemade": {
       "price": "23,700",
-      "change": "700",
-      "ratio": "2.87",
-      "dir": "FALLING",
+      "change": "0",
+      "ratio": "0.00",
+      "dir": "STEADY",
       "isOpen": false,
-      "sign": "-"
+      "sign": ""
     },
     "wemade_max": {
       "price": "5,500",
-      "change": "260",
-      "ratio": "4.51",
-      "dir": "FALLING",
+      "change": "0",
+      "ratio": "0.00",
+      "dir": "STEADY",
       "isOpen": false,
-      "sign": "-"
+      "sign": ""
     },
     "wemix": {
-      "krw": 353.33,
-      "chg24h": -0.7656648209752911,
+      "krw": 353.23,
+      "chg24h": -1.3619040700798346,
       "dir": "FALLING",
       "sign": "-"
     }
   },
   "news": {
     "wemade": [
+      {
+        "title": "반등 동력 찾는 위메이드, 서브컬처 게임 '정조준' - 뉴스웨이",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE13NUpheE9VRDFTVmNvdFY2UGpFbDRuWWVFWnR2ZWUzLW1ZYkgta2VaZDBOZXNsNlJ2a2FkTlRkdUxDZmpGbmVZaHFlNzdKQWg4WXBGLWg1UzVxM0xiM1EwdEpFSU9TbGMycFE?oc=5",
+        "source": "뉴스웨이",
+        "published": "Wed, 06 May 2026 22:13:00 GMT"
+      },
       {
         "title": "3주년 맞은 위메이드맥스 '나이트 크로우', 7500억 매출 달성 - v.daum.net",
         "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1qY3JPWnR1S2FSY0FleWw0N1NaMzZLeUd3OHlYOTJDdjRXVVVIb2RJdjFCVGt4TW5ldXlyaENhUlJ1Zm5fZHFLTjN6ME5FNGs?oc=5",
@@ -63,6 +69,12 @@
         "published": "Wed, 06 May 2026 05:16:41 GMT"
       },
       {
+        "title": "위메이드커넥트, 신작 서브컬처 `메이크 드라마: 매드` 사전예약 - 디지털데일리",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9WclA0M2V3cjktbEpiUkgwV0NOOXc2ZVp0WE9wazVWRUNSNmNGVWVXQzZoblNLeXdDdE5PTXFSdnNTUnFqZHl4UkxUX0RSQXdmRVo2TlR5X3IzRm5ocnJ0WjVIU2w?oc=5",
+        "source": "디지털데일리",
+        "published": "Mon, 04 May 2026 05:54:11 GMT"
+      },
+      {
         "title": "위메이드 '미르의 전설3' 몽환서버 5주로 확대… 신규 아이템 '기령' 첫 공개 - ER 이코노믹리뷰",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBCNDRWZ3otRkp6ZzNXTlVvcGI2ZDM1LTZYMDFudjdnbmxiZlNPeVVxRnBEMVZJbjVaWGlCZ3lhVmhpdWFoZk4td043WC1GZW5RSlJKQVpIbTA0ZTBVcnIyVGdHdGo3UWhDbFNORg?oc=5",
         "source": "ER 이코노믹리뷰",
@@ -73,18 +85,6 @@
         "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1waUNUcjhWenBGQkFvVDI4Tlg2UjZvUl9UMm5aNFN2dnBacl9ycHg4VC1MUHZDaHlXZkVoNW9sdFpVazRaWGQ4TlhuTFNEQXdvdTZGTms5Wk5lZG5sNE1NMmhLQU5FSFctU1FTNjFIRmdMZlpCRUhwVll3?oc=5",
         "source": "로이슈",
         "published": "Wed, 06 May 2026 07:59:33 GMT"
-      },
-      {
-        "title": "[게임 게시판]컴투스·펄어비스·위메이드 - 비즈니스플러스",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBmMFVNR2RMQkFRaVg3WTBvRlRmNWJnVjVlazNCb0IxZ1lRb1I5RU1PVWZBcDl0aWktQ2tpUDFObUtVWUpUMTYzRHRFLXRnRVRPWEd6bThqenpXMzJXQXM4YW5waENjOXQ5QW5TTUhudw?oc=5",
-        "source": "비즈니스플러스",
-        "published": "Wed, 06 May 2026 05:37:34 GMT"
-      },
-      {
-        "title": "위메이드커넥트, 신작 서브컬처 `메이크 드라마: 매드` 사전예약 - 디지털데일리",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9WclA0M2V3cjktbEpiUkgwV0NOOXc2ZVp0WE9wazVWRUNSNmNGVWVXQzZoblNLeXdDdE5PTXFSdnNTUnFqZHl4UkxUX0RSQXdmRVo2TlR5X3IzRm5ocnJ0WjVIU2w?oc=5",
-        "source": "디지털데일리",
-        "published": "Mon, 04 May 2026 05:54:11 GMT"
       }
     ],
     "blockchain": [
@@ -95,16 +95,16 @@
         "published": "Wed, 06 May 2026 18:35:00 GMT"
       },
       {
-        "title": "코인 마켓워치 - 한국경제TV",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNU1FWU0lZLXcwSHpOQXJxaEdnanBsbzBmQkVaOHNzaGpsYmJnZFFFWnh3UHhnYWNvSDIya2t2dXJSWTkxRDlpRUVUdjBtUFJTQUNyQWhtRDFaQlBIbXQzYXlzM2JBaDZqQjBTckUyeGJTSkdZaElIVzhyNkpKcF9TWTQ5TEY1bWxITDBmUTBpUWtNTjFqWVBYenZHMjRtcEdCRGZJ?oc=5",
-        "source": "한국경제TV",
-        "published": "Wed, 06 May 2026 09:57:47 GMT"
+        "title": "[비즈 나우] 비트코인 안 판다던 스트래티지 \"매각 고려\" - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5uQUlxUi1fd1dtSTdxcVV2UjY5M0VERVg0RTV6TXRUaXlKSDRWQmdndl9qWXRoaFEtNlZZcy1VQUZidDhYYldkMWFLRHBLUEU?oc=5",
+        "source": "v.daum.net",
+        "published": "Wed, 06 May 2026 22:48:11 GMT"
       },
       {
-        "title": "비트코인, 美 클래리티 법안 통과 기대로 석달만에 8만1000달러 회복...투자 심리 살아날까? - 조선일보",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZWd1cGVOenIzVTBRT3Y3d2xzN3Qwb1EzWGtUTFpIZ1hra19LaXRRdkltalI4aTBBSlZuWHFycElVbnZSNXFyU1NtSko0S1M1U3RjZWhwRlZRa24tOTBWWkZSOURHWEZUcWMwTWtCR2FKZUl0Q1lnN3RybUo5NW1aUQ?oc=5",
-        "source": "조선일보",
-        "published": "Tue, 05 May 2026 23:20:20 GMT"
+        "title": "스트레티지의 비트코인 매각 옵션, '전략 변경' 아닌 '유연함'의 신호 - 조세일보",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1rQi1PNEJWUXpmczllbjJXYko3V09FOEI1SDB4YjFuLXNNVVNrNGJEejJuWGRqUnJ6cVdiSWp2NS1xeVN6U1VOWTRYalVOOWd6UXJ2Z29mem5HcDZiSndyMHREeVN5aUpMUzJGQ05hbw?oc=5",
+        "source": "조세일보",
+        "published": "Wed, 06 May 2026 22:00:10 GMT"
       },
       {
         "title": "비트코인 안판다던 스트래티지 \"매각 고려할 수 있어\" - 한국경제",
@@ -113,16 +113,16 @@
         "published": "Wed, 06 May 2026 12:00:49 GMT"
       },
       {
+        "title": "비트코인, 美 클래리티 법안 통과 기대로 석달만에 8만1000달러 회복...투자 심리 살아날까? - 조선일보",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZWd1cGVOenIzVTBRT3Y3d2xzN3Qwb1EzWGtUTFpIZ1hra19LaXRRdkltalI4aTBBSlZuWHFycElVbnZSNXFyU1NtSko0S1M1U3RjZWhwRlZRa24tOTBWWkZSOURHWEZUcWMwTWtCR2FKZUl0Q1lnN3RybUo5NW1aUQ?oc=5",
+        "source": "조선일보",
+        "published": "Tue, 05 May 2026 23:20:20 GMT"
+      },
+      {
         "title": "해외 코인송금 1000만원 넘으면 '의심거래'…주요국보다 센 규제 추진 - 뉴스1",
         "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBrLVhaUUxpbnQwSjlJazNmMHc1TkZLVHU5d0RVRHpJSVFNV1Bkc3RHTGZZUl92ZERMR3k4U3VTTW9MeVB4Z2RGaWY0cDU3VmpDNUdXalprOGVNRjdoQ0pxMlpjd3NGUQ?oc=5",
         "source": "뉴스1",
         "published": "Wed, 06 May 2026 20:45:09 GMT"
-      },
-      {
-        "title": "절대 안판다더니...'비트코인 전도사' 스트래티지가 변했다 - v.daum.net",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9yUk90SUl2X3ozajBMLVFacGxmVktzUzZLek5kUjdudnBCR01lWlM5eDFxUjYyQ2RVOWhnZnpRUmg3NzlOWkpUaUo3NnJGeFk?oc=5",
-        "source": "v.daum.net",
-        "published": "Wed, 06 May 2026 19:27:03 GMT"
       },
       {
         "title": "두나무, 자체 블록체인 '기와'로 금융 인프라 선점 전략 - 디일렉",
@@ -137,28 +137,34 @@
         "published": "Wed, 06 May 2026 08:31:35 GMT"
       },
       {
+        "title": "종전협상 타결 임박…비트코인 8만2000달러 돌파 - 마켓인",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB5M285Y1BBYVFTZldST2xib3ZKSWhtRlFIcThxWW84SXJWMk84MVFHTklGbjdyUVNwT2lyVXFONTMzN3RBSHk1cmZmU01PVTZXMERuX2Z4ZWRsdFlmcEt6U05PNmdFMUdwVmlCSlgzMU43Y0k?oc=5",
+        "source": "마켓인",
+        "published": "Wed, 06 May 2026 22:13:46 GMT"
+      },
+      {
         "title": "스테이블코인, 진짜 돈인가 상품권인가 - 미래한국",
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9OUVBtY1ZCakJmVEtPTU51TzhwQUh5YzBXSUsyeEw4dTdJWFBkeXBDd3ZZblNOMVh4T1p3SWRKOVZ3RDdxMkdLd0Q5T3FzSDJ6Qzd5RmZQYWhYRlJkUlpnNElCcTJIWjlLTjZobnNUcjExdw?oc=5",
         "source": "미래한국",
         "published": "Wed, 06 May 2026 11:43:57 GMT"
-      },
-      {
-        "title": "Coinbase Stock Reacts to Workforce Reduction as AI Acceleration Drives Company Changes - TIKR.com",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSWFvc1pYR2hHcGFIcTliVDdyOEYzSUNZT3RUU0RZd2N0Y3pJUmMwaDJfazJTSThYZF9YZFJDUTBPN082YTlNVHVFTjRvMWtFX3N2SDhtX081YXZwcUtVTXNDVS0yRGxmTm9rTXE5WVNIS1BPSWNCamluLTZTUld4WkM2cmVLX3hWanhwOEoxWjl5QWdBRmcxNlV0c3pEcnp3SjBOc29HbUFWaDdDdU9WSXJOSmpQWEtlRkw2Skw1VFA?oc=5",
-        "source": "TIKR.com",
-        "published": "Wed, 06 May 2026 14:02:41 GMT"
       }
     ],
     "marketing": [
       {
-        "title": "메타브랜딩, AI 시대 브랜드 재정의… “설득보다 중요한 건 판독과 신뢰” - 매드타임스",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9CcjBYRHczUnprcVV3QU01anBHY1dvejNHZjNjLW9MUnlyVG1hXzRwMWlxTzNOUUpzQ1B0TU5yUUlwek9pdkdDYlJRVGNvNEpkaVJWZGt6R1YxQlFVdGVuVmwxbThyU21rUkZkWg?oc=5",
-        "source": "매드타임스",
-        "published": "Wed, 06 May 2026 15:00:00 GMT"
+        "title": "'광고 몰아보기' 시대 열릴까?… 디즈니와 보험사의 파격 실험 \"15초 대신 콘텐츠 생애주기 노린다\" - 브랜드브리프",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8waVhNcG9RUmJuTkdIQUVUWkZFV1RqMVlJOTVFMlVXYW4wcjc3b0dHczdVd2R1RGlRSndreTZLU0VvLUlFVmFzX2FjNmszY3ZxSnExc3BoX1UtcG0tMTEwYURDUXRoWjVhLTlxTGRR?oc=5",
+        "source": "브랜드브리프",
+        "published": "Wed, 06 May 2026 23:00:00 GMT"
       },
       {
-        "title": "[해외 크리에이티브] 시바스 리갈, 샤를 르클레르와 ‘위스키 보드게임’ 캠페인 전개... 스포츠 마케팅 틀 깬다 - 매드타임스",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1sZHd1WTRfT2w4LVdNUkJGcnl6bjZhRDlHUjF4R3FqSktSRlBBNGVFTzFQanNLRGFqT0dFX0VlUzFpc182dnIyckktSXhxRFktcUZGZ1F0RXE5UWpjdkc5RzZmRC1PcXI2?oc=5",
+        "title": "스크럽대디는 왜 청소용품 광고에 임신 테스트기를 썼나 - 마케팅 - 정보공유 - 아이보스",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE91SG02TGZCcnlRSnVWa0JTZ1ZST29odzBnMWI5N0d1OGZ5U1JscnFFMVpBaVZ0bmdRZnJudURBXzlBYXZsd0MzUEFObDNQdXM?oc=5",
+        "source": "아이보스",
+        "published": "Wed, 06 May 2026 22:11:12 GMT"
+      },
+      {
+        "title": "메타브랜딩, AI 시대 브랜드 재정의… “설득보다 중요한 건 판독과 신뢰” - 매드타임스",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9CcjBYRHczUnprcVV3QU01anBHY1dvejNHZjNjLW9MUnlyVG1hXzRwMWlxTzNOUUpzQ1B0TU5yUUlwek9pdkdDYlJRVGNvNEpkaVJWZGt6R1YxQlFVdGVuVmwxbThyU21rUkZkWg?oc=5",
         "source": "매드타임스",
         "published": "Wed, 06 May 2026 15:00:00 GMT"
       },
@@ -167,6 +173,12 @@
         "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBZN3NVa01scTcwVlJ6aEpfWEVOXzR3ajh1cHRyM2xiSmFHMm1YdGhsOWZIOXVhSXRFVGpiU0VYckxqVDNEQ2hZQXB6dlczNTBTbGdyWmZNenJrbzNhMEZIWmstUE1uZw?oc=5",
         "source": "이로운넷",
         "published": "Wed, 06 May 2026 09:50:47 GMT"
+      },
+      {
+        "title": "엔씨, 로블록스 코리아와 마케팅 MOU 체결 - 인벤",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9Cd0pmRzZsbGtBeXN1ZWhMcG15OHNFMzNJUWRyQkUxOWJqS19hQ2prdTJ1Ym5tMm5HWGdvVkxQTHlNRktXbjhlY005VFBCblgxeE91SURibFJfUnRFbkQ1M0pEQWFqdHZ0NVE?oc=5",
+        "source": "인벤",
+        "published": "Wed, 06 May 2026 17:44:32 GMT"
       },
       {
         "title": "광고주협회, 광고·마케팅 전략 워크숍 개최...\"막막한 실무 고민, 한 방에 잡는다” - 반론보도닷컴",
@@ -193,18 +205,6 @@
         "published": "Wed, 06 May 2026 12:43:18 GMT"
       },
       {
-        "title": "빼빼로 '스트레이 키즈'와 계약 연장 - 보건신문",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE41RzUtNXkybVB3bjU0WjIxSFF1bnpscUJWdlFhZDhVa2psM1huMElrbE00djRLbVRWM040OGR0c3lKUzhNZkZuRmJZTzNwWlh2M3NyRnJTcG12V0dhenEwVVFxVQ?oc=5",
-        "source": "보건신문",
-        "published": "Wed, 06 May 2026 01:01:52 GMT"
-      },
-      {
-        "title": "넥사다이내믹스, 장근석 주연 ‘협반’ 메인 투자… K-푸드 커머스 영토 확장 - NBN미디어",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9tVVFidXk0ZzBTdUN4OVYyclBpTVNBU24zRUVVMXRONVlhbVBVQzJQT0VyOUxxUk5oSTFGWXNLVVB3TEx1YlJrak5ucjJDUEtWTzVqSDFWdURSaF9iUl9uRk1POTVrR3VQM0HSAWpBVV95cUxPbVVRYnV5NGcwU3VDeDlWMnJQaU1TQVNuM0VFVTF0TjVZYW1QVUMyUE9FcjlMcVJOaEkxRllzS1VQd0xMdWJSa2pObnIyQ1BLVk81akgxVnVEUmhfYlJfbkZNTzk1a0d1UDNB?oc=5",
-        "source": "NBN미디어",
-        "published": "Wed, 06 May 2026 06:22:29 GMT"
-      },
-      {
         "title": "하이트진로, ‘올뉴진로’ 리뉴얼 출시…맛·패키지 전면 개편 - 인사이트코리아",
         "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8ybk1TTENNdDE0RmhRZnJYUld2U1JESkcyNHZkd1RVTWJMekNnNk13UkdNeG5kclFsUWptZzdCRlNudnlDMFd0RmZrUTFLMWFpMGFfNkVfNUdsMmdKb1ZyT2JkUUxIaUdGbF9UU0QtUGRGeGQtU2dR0gF3QVVfeXFMTzJuTVNMQ010MTRGaFFmclhSV3ZTUkRKRzI0dmR3VFVNYkx6Q2c2TXdSR014bmRyUWxRam1nN0JGU252eUMwV3RGZmtRMUsxYWkwYV82RV81R2wyZ0pvVnJPYmRRTEhpR0ZsX1RTRC1QZEZ4ZC1TZ1E?oc=5",
         "source": "인사이트코리아",
@@ -216,86 +216,86 @@
   "trends": {
     "kr": [
       {
-        "title": "박민수",
-        "vol": "1000+"
+        "title": "오정태",
+        "vol": "100+"
       },
       {
-        "title": "챔스",
+        "title": "마르타 코스튜크",
+        "vol": "100+"
+      },
+      {
+        "title": "뉴토끼마나토끼",
+        "vol": "100+"
+      },
+      {
+        "title": "tsm",
+        "vol": "100+"
+      },
+      {
+        "title": "운세",
         "vol": "2000+"
       },
       {
-        "title": "머니투데이",
+        "title": "테니스",
         "vol": "200+"
       },
       {
-        "title": "킬리안 음바페",
+        "title": "현대자동차그룹",
         "vol": "500+"
       },
       {
-        "title": "황희찬",
-        "vol": "200+"
-      },
-      {
-        "title": "psg",
-        "vol": "500+"
-      },
-      {
-        "title": "바이에른 대 psg",
+        "title": "weather",
         "vol": "2000+"
       },
       {
-        "title": "뉴스 속보",
-        "vol": "500+"
+        "title": "smci",
+        "vol": "100+"
       },
       {
-        "title": "상속세",
-        "vol": "1000+"
-      },
-      {
-        "title": "이혜성",
+        "title": "아침마당",
         "vol": "100+"
       }
     ],
     "global": [
       {
-        "title": "nicolas jackson",
-        "vol": "500+"
-      },
-      {
-        "title": "the wire",
-        "vol": "500+"
-      },
-      {
-        "title": "braves - mariners",
+        "title": "sling tv",
         "vol": "1000+"
       },
       {
-        "title": "mark pope",
+        "title": "corey seager",
         "vol": "200+"
       },
       {
-        "title": "swatting incident",
+        "title": "michael j fox",
+        "vol": "500+"
+      },
+      {
+        "title": "billy napier",
         "vol": "200+"
       },
       {
-        "title": "earnings calendar",
-        "vol": "200+"
-      },
-      {
-        "title": "jean smart",
-        "vol": "200+"
-      },
-      {
-        "title": "dash stock",
+        "title": "where to watch knicks vs 76ers",
         "vol": "5000+"
       },
       {
-        "title": "shivon zilis",
+        "title": "nick kurtz",
         "vol": "500+"
       },
       {
-        "title": "axon stock",
-        "vol": "500+"
+        "title": "cole young",
+        "vol": "1000+"
+      },
+      {
+        "title": "beagles rescued",
+        "vol": "200+"
+      },
+      {
+        "title": "orioles - marlins",
+        "vol": "2000+"
+      },
+      {
+        "title": "mitchell robinson",
+        "vol": "2000+"
       }
     ]
   },
@@ -381,56 +381,56 @@
       },
       {
         "rank": 2,
-        "name": "발로란트",
-        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%eb%b0%9c%eb%a1%9c%eb%9e%80%ed%8a%b8",
-        "pct": ""
-      },
-      {
-        "rank": 3,
         "name": "리니지 클래식",
         "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%eb%a6%ac%eb%8b%88%ec%a7%80+%ed%81%b4%eb%9e%98%ec%8b%9d",
         "pct": ""
       },
       {
-        "rank": 4,
+        "rank": 3,
         "name": "배틀그라운드",
         "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%eb%b0%b0%ed%8b%80%ea%b7%b8%eb%9d%bc%ec%9a%b4%eb%93%9c",
         "pct": ""
       },
       {
-        "rank": 5,
-        "name": "FC온라인",
-        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=FC%ec%98%a8%eb%9d%bc%ec%9d%b8",
+        "rank": 4,
+        "name": "발로란트",
+        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%eb%b0%9c%eb%a1%9c%eb%9e%80%ed%8a%b8",
         "pct": ""
       },
       {
-        "rank": 6,
+        "rank": 5,
         "name": "오버워치",
         "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%ec%98%a4%eb%b2%84%ec%9b%8c%ec%b9%98",
         "pct": ""
       },
       {
-        "rank": 7,
+        "rank": 6,
         "name": "서든어택",
         "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%ec%84%9c%eb%93%a0%ec%96%b4%ed%83%9d",
         "pct": ""
       },
       {
+        "rank": 7,
+        "name": "FC온라인",
+        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=FC%ec%98%a8%eb%9d%bc%ec%9d%b8",
+        "pct": ""
+      },
+      {
         "rank": 8,
-        "name": "Roblox",
-        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=Roblox",
+        "name": "아이온2",
+        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%ec%95%84%ec%9d%b4%ec%98%a82",
         "pct": ""
       },
       {
         "rank": 9,
-        "name": "MapleStory Worlds",
-        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=MapleStory+Worlds",
+        "name": "로스트아크",
+        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%eb%a1%9c%ec%8a%a4%ed%8a%b8%ec%95%84%ed%81%ac",
         "pct": ""
       },
       {
         "rank": 10,
-        "name": "메이플 스토리",
-        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%eb%a9%94%ec%9d%b4%ed%94%8c+%ec%8a%a4%ed%86%a0%eb%a6%ac",
+        "name": "MapleStory Worlds",
+        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=MapleStory+Worlds",
         "pct": ""
       }
     ],
