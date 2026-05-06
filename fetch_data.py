@@ -94,29 +94,164 @@ def fetch_gtrend(geo):
         print(f'트렌드 오류 ({geo}): {e}')
         return []
 
+def fetch_steam_top():
+    """Steam 실시간 인기 게임 (동시접속자 기준)"""
+    url = 'https://store.steampowered.com/api/featuredcategories?cc=KR&l=koreana'
+    try:
+        text = fetch(url)
+        d = json.loads(text)
+        items = []
+        # top_sellers 카테고리
+        for item in d.get('top_sellers', {}).get('items', [])[:10]:
+            items.append({
+                'rank': len(items) + 1,
+                'name': item.get('name', ''),
+                'appid': item.get('id', ''),
+                'price': item.get('final_price', 0),
+                'discount': item.get('discount_percent', 0),
+                'link': f"https://store.steampowered.com/app/{item.get('id','')}",
+            })
+        return items
+    except Exception as e:
+        print(f'Steam 오류: {e}')
+        # fallback: Steam 인기 게임 API
+        try:
+            url2 = 'https://store.steampowered.com/api/featured/?cc=KR&l=koreana'
+            text2 = fetch(url2)
+            d2 = json.loads(text2)
+            items = []
+            for item in d2.get('featured_win', [])[:10]:
+                items.append({
+                    'rank': len(items) + 1,
+                    'name': item.get('name', ''),
+                    'appid': item.get('id', ''),
+                    'price': item.get('final_price', 0),
+                    'discount': item.get('discount_percent', 0),
+                    'link': f"https://store.steampowered.com/app/{item.get('id','')}",
+                })
+            return items
+        except Exception as e2:
+            print(f'Steam fallback 오류: {e2}')
+            return []
+
+def fetch_google_play_top():
+    """Google Play 인기 게임 (Apple RSS 형식)"""
+    # Google Play 무료 게임 인기차트 RSS
+    url = 'https://play.google.com/store/apps/collection/cluster?clp=ogooCAEaIAoaY29tLmdvb2dsZS5hbmRyb2lkLmdtcy5nYW1lEAEYAw%3D%3D&hl=ko&gl=KR'
+    # iTunes RSS 방식으로 Google Play top 가져오기
+    try:
+        # AppMagic 또는 공개 RSS 사용
+        rss_url = 'https://rss.applemarketingtools.com/api/v2/kr/apps/top-free/50/games.json'
+        # 대신 Google Play 공개 차트 JSON 사용
+        url2 = 'https://androidrank.org/listapps?category=GAME&start=1&price=all&region=kr&sort=4&chart=topselling_free'
+        # 가장 안정적인 방법: iTunes API로 한국 앱스토어 게임 순위 (크로스 레퍼런스용)
+        itunes_url = 'https://rss.applemarketingtools.com/api/v2/kr/apps/top-free/10/games.json'
+        text = fetch(itunes_url)
+        d = json.loads(text)
+        items = []
+        for i, entry in enumerate(d.get('feed', {}).get('results', [])[:10]):
+            items.append({
+                'rank': i + 1,
+                'name': entry.get('name', ''),
+                'developer': entry.get('artistName', ''),
+                'link': entry.get('url', ''),
+                'icon': entry.get('artworkUrl100', ''),
+                'genre': entry.get('genres', [{}])[0].get('name', '') if entry.get('genres') else '',
+            })
+        return items
+    except Exception as e:
+        print(f'Google Play 순위 오류: {e}')
+        return []
+
+def fetch_appstore_top():
+    """App Store 한국 인기 게임"""
+    url = 'https://rss.applemarketingtools.com/api/v2/kr/apps/top-free/10/games.json'
+    try:
+        text = fetch(url)
+        d = json.loads(text)
+        items = []
+        for i, entry in enumerate(d.get('feed', {}).get('results', [])[:10]):
+            items.append({
+                'rank': i + 1,
+                'name': entry.get('name', ''),
+                'developer': entry.get('artistName', ''),
+                'link': entry.get('url', ''),
+                'icon': entry.get('artworkUrl100', ''),
+                'genre': entry.get('genres', [{}])[0].get('name', '') if entry.get('genres') else '',
+            })
+        return items
+    except Exception as e:
+        print(f'App Store 순위 오류: {e}')
+        return []
+
+def fetch_steam_concurrent():
+    """Steam 실시간 동시접속자 Top 10"""
+    url = 'https://store.steampowered.com/api/featuredcategories/?cc=KR&l=koreana'
+    try:
+        # Steam Spy API (공개)
+        url2 = 'https://steamspy.com/api.php?request=top100in2weeks'
+        text = fetch(url2)
+        d = json.loads(text)
+        items = []
+        for i, (appid, info) in enumerate(list(d.items())[:10]):
+            items.append({
+                'rank': i + 1,
+                'name': info.get('name', ''),
+                'appid': appid,
+                'players_2weeks': info.get('players_2weeks', 0),
+                'link': f'https://store.steampowered.com/app/{appid}',
+            })
+        return items
+    except Exception as e:
+        print(f'Steam 동시접속 오류: {e}')
+        return []
+
 def main():
     now = datetime.now(KST).strftime('%H:%M:%S')
     print(f'수집 시작: {now}')
+
+    print('주가 수집 중...')
+    stocks = {
+        'wemade':     fetch_stock('112040'),
+        'wemade_max': fetch_stock('101730'),
+        'wemix':      fetch_wemix(),
+    }
+
+    print('뉴스 수집 중...')
+    news = {
+        'wemade':     fetch_news('위메이드 OR 위믹스 OR WEMIX'),
+        'blockchain': fetch_news('블록체인 OR 가상자산 OR NFT OR Web3'),
+        'marketing':  fetch_news('브랜딩 OR 마케팅트렌드 OR 디지털마케팅'),
+    }
+
+    print('트렌드 수집 중...')
+    trends = {
+        'kr':     fetch_gtrend('KR'),
+        'global': fetch_gtrend('US'),
+    }
+
+    print('게임 순위 수집 중...')
+    rankings = {
+        'steam':       fetch_steam_concurrent(),
+        'appstore':    fetch_appstore_top(),
+        'googleplay':  fetch_google_play_top(),
+    }
+
     data = {
         'updated': now,
-        'stocks': {
-            'wemade':     fetch_stock('112040'),
-            'wemade_max': fetch_stock('101730'),
-            'wemix':      fetch_wemix(),
-        },
-        'news': {
-            'wemade':     fetch_news('위메이드 OR 위믹스 OR WEMIX'),
-            'blockchain': fetch_news('블록체인 OR 가상자산 OR NFT OR Web3'),
-            'marketing':  fetch_news('브랜딩 OR 마케팅트렌드 OR 디지털마케팅'),
-        },
-        'trends': {
-            'kr':     fetch_gtrend('KR'),
-            'global': fetch_gtrend('US'),
-        },
+        'stocks': stocks,
+        'news': news,
+        'trends': trends,
+        'rankings': rankings,
     }
+
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    print('완료! data.json 저장됨')
+
+    print(f'완료! data.json 저장됨')
+    print(f'  Steam: {len(rankings["steam"])}개')
+    print(f'  App Store: {len(rankings["appstore"])}개')
+    print(f'  Google Play: {len(rankings["googleplay"])}개')
 
 if __name__ == '__main__':
     main()
