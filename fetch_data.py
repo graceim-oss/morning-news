@@ -203,11 +203,10 @@ def main():
         'gametrics':   results.get('gametrics', []),
         'gplay_kr':    results.get('gplay_kr', []),
         'appstore_kr': results.get('appstore_kr', []),
-        'appstore_kr': results.get('appstore_kr', []),
     }
+    data = {
         'updated': now,
         'stocks': stocks,
-        'news': news,
         'trends': trends,
         'rankings': rankings,
     }
