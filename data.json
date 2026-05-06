@@ -1,10 +1,10 @@
 {
-  "updated": "09:51:26",
+  "updated": "09:52:53",
   "stocks": {
     "wemade": {
-      "price": "23,850",
-      "change": "550",
-      "ratio": "2.25",
+      "price": "23,950",
+      "change": "450",
+      "ratio": "1.84",
       "dir": "FALLING",
       "isOpen": true,
       "sign": "-"
@@ -18,7 +18,10 @@
       "sign": "-"
     },
     "wemix": {
-      "err": "로드 실패"
+      "krw": 354.07,
+      "chg24h": -0.9197660749846459,
+      "dir": "FALLING",
+      "sign": "-"
     }
   },
   "news": {
@@ -28,6 +31,12 @@
         "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBaSVhpdjM0Z2JzWFBYY3JtdHU2cHNtWU9iM1BlYzJ2UnFJWG1hR0gtWVRUQXcwc1dZNEdXQ0M4RG04SDY2U2ZPbVc4WVFGVHJvWXExTFFQM3RxdkJnWFRsdDEtZHhNaHY1c1gwUVFNTDNDUDA?oc=5",
         "source": "디지털투데이",
         "published": "Tue, 05 May 2026 23:29:02 GMT"
+      },
+      {
+        "title": "블록체인 게임 해외 흥행…위메이드 그룹株 강세 [핫종목] - 뉴스1",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBiakVYZVgyLW5aVWVJdmhBb19IdklQZ1hjeXlkVGc5SWpwMmdDY0FKaExkUmpVZnhIYl9iazA5YmFNN0JwNXRITEJ6RE5qZzJQQy11TkZ0ZFVRUC1VVHpn?oc=5",
+        "source": "뉴스1",
+        "published": "Mon, 20 Apr 2026 07:00:00 GMT"
       },
       {
         "title": "[게임 브리핑] 위메이드커넥트, 서브컬처 신작 ‘메이크 드라마: MAD’ 사전예약 실시 - 워크투데이",
@@ -40,12 +49,6 @@
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9WclA0M2V3cjktbEpiUkgwV0NOOXc2ZVp0WE9wazVWRUNSNmNGVWVXQzZoblNLeXdDdE5PTXFSdnNTUnFqZHl4UkxUX0RSQXdmRVo2TlR5X3IzRm5ocnJ0WjVIU2w?oc=5",
         "source": "디지털데일리",
         "published": "Mon, 04 May 2026 05:54:11 GMT"
-      },
-      {
-        "title": "블록체인 게임 해외 흥행…위메이드 그룹株 강세 [핫종목] - 뉴스1",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBiakVYZVgyLW5aVWVJdmhBb19IdklQZ1hjeXlkVGc5SWpwMmdDY0FKaExkUmpVZnhIYl9iazA5YmFNN0JwNXRITEJ6RE5qZzJQQy11TkZ0ZFVRUC1VVHpn?oc=5",
-        "source": "뉴스1",
-        "published": "Mon, 20 Apr 2026 07:00:00 GMT"
       },
       {
         "title": "위메이드커넥트, 서브컬처 신작 ‘메이크 드라마: MAD’ 사전예약 실시 - 브릿지경제",
@@ -134,16 +137,16 @@
         "published": "Tue, 05 May 2026 15:32:59 GMT"
       },
       {
-        "title": "FIU 제재 줄줄이 법정행…가상자산 거래소 책임 범위 시험대 - 전자신문",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4xRnVOcmVoeVlFSnBpaVZ0bHFjeHFPZzMwZWRfeEpPMXJsck9yd0c2NjF6RnFqY3NFSEZNQUg0SG9GS2ZWTjFWOG4xTmR1Zw?oc=5",
-        "source": "전자신문",
-        "published": "Tue, 05 May 2026 05:00:00 GMT"
-      },
-      {
         "title": "美 가상자산 플랫폼 불리시, '6조' 들여 토큰증권 인프라 사업 진입 - 디지털애셋",
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBvazlSUGNodlctUEdqaEtKV1QzakpuQWpCaUJsZVFyemNMYmVISklxQy02a1o4MFFYUFQ0Y2hzdl9wenM5U0JjQlVJbUJ2VXA5S1FyVHlOQUhEMkhHbndYeVpFa0kwdU9ZcDdlQ3AwcGgzZw?oc=5",
         "source": "디지털애셋",
         "published": "Wed, 06 May 2026 00:45:00 GMT"
+      },
+      {
+        "title": "FIU 제재 줄줄이 법정행…가상자산 거래소 책임 범위 시험대 - 전자신문",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4xRnVOcmVoeVlFSnBpaVZ0bHFjeHFPZzMwZWRfeEpPMXJsck9yd0c2NjF6RnFqY3NFSEZNQUg0SG9GS2ZWTjFWOG4xTmR1Zw?oc=5",
+        "source": "전자신문",
+        "published": "Tue, 05 May 2026 05:00:00 GMT"
       }
     ],
     "marketing": [
@@ -170,12 +173,6 @@
         "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBVQlZ4LW9aaXJSeEtfazBROW9WcU12eUlZYm1DQVIyU0ZvWjNqOHdRYlpOcXgtcy1TWDdJaEdWVjZWZ0x0dmFXallWSTZ3OENWbVNRNUYxNWhpc055WmZBaGlmd2NyT2hoV2ZYR1hjcWU?oc=5",
         "source": "한국강사신문",
         "published": "Tue, 05 May 2026 23:00:00 GMT"
-      },
-      {
-        "title": "[피처링] 2026 인플루언서 마케팅 트렌드 리포트 : S.I.M.P.A.C.T - 아이보스",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBrTnlYYTFEck0xOXVsMGZIMUNjYW1VaXFIRW5OS2w3a21NeE1tYzN3NDJGS0NZNm5jRVVyTmRDYzBWeXZTTWJKZFdHZm82X0xlM2puVw?oc=5",
-        "source": "아이보스",
-        "published": "Mon, 04 May 2026 03:53:44 GMT"
       },
       {
         "title": "“닥터 브랜딩은 진료 철학의 회복… 황폐해진 의료 현장 다시 세우는 꿈” - v.daum.net",
@@ -206,6 +203,12 @@
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBBdXp3OEQwWUEyQU84SnBtTDQxR3ZvYWxBbTJCbGdGUl9zem8xYkFlMDRCOU55STlNV2x6dXowdXIwNUU0bnZmSmhWTVk2SW5y?oc=5",
         "source": "패션비즈",
         "published": "Sun, 03 May 2026 22:00:16 GMT"
+      },
+      {
+        "title": "트렌드 코리아 2026에서 찾은 마케팅 트렌드와 역량 - 오픈애즈",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB1Vm9kYS1GTmxsOVlzbE5ycFFoN19FbTFndElPQmxEYmFMZWIzQXlBTWZpUmRZcjJfVDc0d3draC00eE1xTFhNQ0IyMUVYeEFYamdEOW1VYkEzODFUUGdDQUxHeFZIT0J4?oc=5",
+        "source": "오픈애즈",
+        "published": "Fri, 24 Oct 2025 07:00:00 GMT"
       }
     ]
   },
