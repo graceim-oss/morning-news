@@ -1,25 +1,25 @@
 {
-  "updated": "10:12:02",
+  "updated": "10:24:43",
   "stocks": {
     "wemade": {
-      "price": "24,050",
-      "change": "350",
-      "ratio": "1.43",
+      "price": "23,900",
+      "change": "500",
+      "ratio": "2.05",
       "dir": "FALLING",
       "isOpen": true,
       "sign": "-"
     },
     "wemade_max": {
-      "price": "5,600",
-      "change": "160",
-      "ratio": "2.78",
+      "price": "5,590",
+      "change": "170",
+      "ratio": "2.95",
       "dir": "FALLING",
       "isOpen": true,
       "sign": "-"
     },
     "wemix": {
-      "krw": 353.94,
-      "chg24h": -0.9834021554926943,
+      "krw": 353.51,
+      "chg24h": -1.193726588680953,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -175,6 +175,12 @@
         "published": "Wed, 06 May 2026 00:23:41 GMT"
       },
       {
+        "title": "헬렌스타인, 냉감 중심 여름 전략… “프리미엄 수면 웰니스로 리브랜딩” - 한국섬유신문",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0wOTRzWUQwNkJybW95eVpwX2o2YVdYb291RDV0MEZWRlctWlNnNUx4YVRQSU1BRGEwX0hQN3BpZmtOdGExRjA1cEpCUEsyVzlxQ1JrNDRqZ0ZsS1dSSHZKczdJNjl6M3M?oc=5",
+        "source": "한국섬유신문",
+        "published": "Wed, 06 May 2026 01:16:00 GMT"
+      },
+      {
         "title": "[브랜딩연구소] 오늘의 인물: 정진 강사 “관계에서 상처받은 분들이 다시 사랑의 길을 걸어갈 수 있도록” - 한국강사신문",
         "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBVQlZ4LW9aaXJSeEtfazBROW9WcU12eUlZYm1DQVIyU0ZvWjNqOHdRYlpOcXgtcy1TWDdJaEdWVjZWZ0x0dmFXallWSTZ3OENWbVNRNUYxNWhpc055WmZBaGlmd2NyT2hoV2ZYR1hjcWU?oc=5",
         "source": "한국강사신문",
@@ -203,98 +209,92 @@
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5uWlE2NWlTX1RGVV95WXA5eXgtRi11dVhYa3NGYTJhYzhvTkdSOEtMaVBwSXRCY1YwYThINEloZUc4bEhJX0NIZ1RoN0NBX0Rvc01adUFmMWJFRTlXOEFmclJkQWJiZG1HOGd4bw?oc=5",
         "source": "브랜드뉴스",
         "published": "Mon, 04 May 2026 04:57:46 GMT"
-      },
-      {
-        "title": "리브랜딩 마친 ‘GLXY’ 어떻게 바뀌었나?... 뉴포티 라이프스타일 맞춰 - 패션비즈",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBBdXp3OEQwWUEyQU84SnBtTDQxR3ZvYWxBbTJCbGdGUl9zem8xYkFlMDRCOU55STlNV2x6dXowdXIwNUU0bnZmSmhWTVk2SW5y?oc=5",
-        "source": "패션비즈",
-        "published": "Sun, 03 May 2026 22:00:16 GMT"
       }
     ]
   },
   "trends": {
     "kr": [
       {
+        "title": "대한전선 주가",
+        "vol": "200+"
+      },
+      {
+        "title": "기업은행",
+        "vol": "500+"
+      },
+      {
+        "title": "대우건설 주가",
+        "vol": "200+"
+      },
+      {
+        "title": "오클라호마시티 대 la 레이커스",
+        "vol": "2000+"
+      },
+      {
+        "title": "cj그룹",
+        "vol": "200+"
+      },
+      {
         "title": "인플 루 언서",
         "vol": "20000+"
       },
       {
-        "title": "사이드카",
-        "vol": "10000+"
-      },
-      {
         "title": "삼성전자 주가",
-        "vol": "2000+"
-      },
-      {
-        "title": "sh",
-        "vol": "100+"
-      },
-      {
-        "title": "신종오 판사",
         "vol": "5000+"
       },
       {
-        "title": "삼성전자 주식",
-        "vol": "1000+"
+        "title": "인스타그램",
+        "vol": "5000+"
       },
       {
-        "title": "롯데홈쇼핑",
-        "vol": "100+"
-      },
-      {
-        "title": "긴축",
+        "title": "sh",
         "vol": "200+"
       },
       {
-        "title": "미래에셋증권",
-        "vol": "200+"
-      },
-      {
-        "title": "삼성증권",
-        "vol": "200+"
+        "title": "신종오 판사",
+        "vol": "10000+"
       }
     ],
     "global": [
       {
-        "title": "shai gilgeous-alexander",
+        "title": "steve hilton",
         "vol": "2000+"
       },
       {
-        "title": "pirates vs diamondbacks",
+        "title": "tom steyer",
         "vol": "1000+"
       },
       {
-        "title": "max strus",
-        "vol": "1000+"
-      },
-      {
-        "title": "braden shewmake",
-        "vol": "1000+"
-      },
-      {
-        "title": "chet holmgren",
-        "vol": "2000+"
-      },
-      {
-        "title": "apple ai settlement",
-        "vol": "1000+"
-      },
-      {
-        "title": "boca juniors",
-        "vol": "2000+"
-      },
-      {
-        "title": "isaiah hartenstein",
-        "vol": "1000+"
-      },
-      {
-        "title": "christian walker",
+        "title": "dancing with the stars",
         "vol": "500+"
       },
       {
-        "title": "nba mvp",
+        "title": "michael jordan",
         "vol": "1000+"
+      },
+      {
+        "title": "santos fc",
+        "vol": "1000+"
+      },
+      {
+        "title": "brandon marsh",
+        "vol": "500+"
+      },
+      {
+        "title": "cason wallace",
+        "vol": "500+"
+      },
+      {
+        "title": "luka doncic",
+        "vol": "10000+"
+      },
+      {
+        "title": "mgk",
+        "vol": "2000+"
+      },
+      {
+        "title": "duncan robinson",
+        "vol": "2000+"
       }
     ]
   },
