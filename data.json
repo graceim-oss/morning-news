@@ -1,5 +1,5 @@
 {
-  "updated": "18:19:28",
+  "updated": "18:38:50",
   "stocks": {
     "wemade": {
       "price": "23,700",
@@ -18,8 +18,8 @@
       "sign": "-"
     },
     "wemix": {
-      "krw": 350.99,
-      "chg24h": -1.2905648597587644,
+      "krw": 349.18,
+      "chg24h": -1.344100461481974,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -101,16 +101,22 @@
         "published": "Wed, 06 May 2026 08:02:45 GMT"
       },
       {
+        "title": "카카오페이 \"일상서 스테이블코인 송금·투자 가능하도록 할 것\" - 지디넷코리아",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBfVF9tRjdLdFBaUng1c3FyTHZzLUdRX3RCZjVjS0pfRkZyU2dqdGdRT3RUX0JFRjBsTDFpSmxTNHJtSkNjOE5PR3Y0R09Pa2tidE02WGNn?oc=5",
+        "source": "지디넷코리아",
+        "published": "Wed, 06 May 2026 08:31:35 GMT"
+      },
+      {
         "title": "비트코인, 美 클래리티 법안 통과 기대로 석달만에 8만1000달러 회복...투자 심리 살아날까? - 조선일보",
         "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZWd1cGVOenIzVTBRT3Y3d2xzN3Qwb1EzWGtUTFpIZ1hra19LaXRRdkltalI4aTBBSlZuWHFycElVbnZSNXFyU1NtSko0S1M1U3RjZWhwRlZRa24tOTBWWkZSOURHWEZUcWMwTWtCR2FKZUl0Q1lnN3RybUo5NW1aUQ?oc=5",
         "source": "조선일보",
         "published": "Tue, 05 May 2026 23:12:00 GMT"
       },
       {
-        "title": "카카오페이 \"일상서 스테이블코인 송금·투자 가능하도록 할 것\" - 지디넷코리아",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBfVF9tRjdLdFBaUng1c3FyTHZzLUdRX3RCZjVjS0pfRkZyU2dqdGdRT3RUX0JFRjBsTDFpSmxTNHJtSkNjOE5PR3Y0R09Pa2tidE02WGNn?oc=5",
-        "source": "지디넷코리아",
-        "published": "Wed, 06 May 2026 08:31:35 GMT"
+        "title": "방한 외국인, 환전 없이 가상자산으로 결제한다 - 전자신문",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9Sa1BGWW9ZS1ZmU0F5V3ZnaVhZZmJSdVc5VHhxcHNoWmVmcWVUbWRady0zbmNXN2ttUkpUaURldy1WZlVlUXF2cHQ2NDMtQQ?oc=5",
+        "source": "전자신문",
+        "published": "Wed, 06 May 2026 08:00:00 GMT"
       },
       {
         "title": "\"증권시장도 블록체인으로 간다\"…삼성SDS, 디지털 자산 인프라 선점 - 폴리뉴스 Polinews",
@@ -123,12 +129,6 @@
         "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XUlF1Z3pQcFByNUdDS2hvQmV2WWJwc2JmbnRLcm5YUDVDcjgyamZIRHRKUm8xdDM3M3BSMTlHOVgySk9xSkJQTEdlcXdUVE1LbWQtUDd3Z3VCQdIBVEFVX3lxTE11b3U4eDdiUnlPeFhaYzB3aWoxZ05FRVY3UVR6Q280UkdsOGllUXF3YWJkN2pDQnFiQWRKLVYxWnZtcVVUMlNsd1A0RFg3R0dOc1FQag?oc=5",
         "source": "한국경제",
         "published": "Wed, 06 May 2026 08:31:58 GMT"
-      },
-      {
-        "title": "삼성SDS, 예탁결제원 '토큰증권 플랫폼' 수주…디지털 자산 시장 공략 - 뷰어스",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4zZXZ2T2w4WXdVOGJPMkM5Y09oUkFJSFlkcDhVNXlvdjRsaEkyU3FJdERvdElNTTRBbFZ6RXJJSHllX1M4WDRVWkpiZkNEaklrMC15T0JxOHI?oc=5",
-        "source": "뷰어스",
-        "published": "Wed, 06 May 2026 02:28:30 GMT"
       },
       {
         "title": "미국, 스테이블코인 보상 기준 구체화…국내는 제자리걸음 - 뉴스토마토",
@@ -277,8 +277,20 @@
   "trends": {
     "kr": [
       {
-        "title": "비트코인",
+        "title": "박계범",
+        "vol": "2000+"
+      },
+      {
+        "title": "로스앤젤레스 다저스",
+        "vol": "2000+"
+      },
+      {
+        "title": "대한광통신",
         "vol": "1000+"
+      },
+      {
+        "title": "비트코인",
+        "vol": "2000+"
       },
       {
         "title": "재난지원금",
@@ -303,18 +315,6 @@
       {
         "title": "피고인",
         "vol": "500+"
-      },
-      {
-        "title": "두산퓨얼셀",
-        "vol": "200+"
-      },
-      {
-        "title": "해상 풍력 발전",
-        "vol": "500+"
-      },
-      {
-        "title": "신영철",
-        "vol": "100+"
       }
     ],
     "global": [
@@ -328,11 +328,7 @@
       },
       {
         "title": "费高云",
-        "vol": "200+"
-      },
-      {
-        "title": "how many episodes in the boys season 5",
-        "vol": "200+"
+        "vol": "500+"
       },
       {
         "title": "bobby wagner utah state speaker",
@@ -357,6 +353,10 @@
       {
         "title": "matt rife",
         "vol": "500+"
+      },
+      {
+        "title": "caro claire burke",
+        "vol": "200+"
       }
     ]
   },
