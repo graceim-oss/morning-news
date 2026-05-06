@@ -355,46 +355,8 @@
 /* ════════════════════════════════════════════════
    설정
    ════════════════════════════════════════════════ */
-const QUERIES = {
-  wemade:     '위메이드 OR 위믹스 OR WEMIX',
-  blockchain: '블록체인 OR 가상자산 OR NFT OR Web3',
-  marketing:  '브랜딩 OR 마케팅트렌드 OR 디지털마케팅',
-};
 
-/* ── CORS 프록시 (순서대로 폴백) ──
-   브라우저에서 Google/Bing RSS를 직접 호출하면 CORS로 막히는 경우가 많아서
-   여러 프록시를 순차적으로 시도하도록 구성합니다.
-*/
-const PROXIES = [
-  u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
-  u => `https://corsproxy.io/?${encodeURIComponent(u)}`,
-  u => `https://stock-proxy.graceim.workers.dev/?url=${encodeURIComponent(u)}`,
-];
-
-// 프록시 순서대로 시도, 성공한 텍스트 반환
-async function fetchViaProxy(url, expectJson=false) {
-  let lastErr;
-
-  for (const mkProxy of PROXIES) {
-    try {
-      const r = await fetch(mkProxy(url), {
-        signal: AbortSignal.timeout(12000),
-        cache: 'no-store'
-      });
-
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-
-      const text = await r.text();
-      if (!text || text.length < 10) throw new Error('empty response');
-
-      return expectJson ? JSON.parse(text) : text;
-    } catch(e) {
-      lastErr = e;
-    }
-  }
-
-  throw lastErr ?? new Error('all proxies failed');
-}
+const PROXY = u => `https://stock-proxy.graceim.workers.dev/?url=${encodeURIComponent(u)}`;
 
 /* ════════════════════════════════════════════════
    유틸
@@ -411,31 +373,8 @@ function relTime(s){
     return new Date(s).toLocaleDateString('ko-KR',{month:'numeric',day:'numeric'});
   }catch{return '';}
 }
-function stripTags(s){ return (s??'').replace(/<!\[CDATA\[|\]\]>/g,'').replace(/<[^>]+>/g,'').trim(); }
 function nowKST(){ return new Date().toLocaleTimeString('ko-KR',{timeZone:'Asia/Seoul',hour12:false}); }
-
-/* ── 텍스트 기반 RSS 파서 (DOMParser XML 대체) ── */
-function parseRSS(xmlText) {
-  // CDATA 처리 후 정규식으로 <item> 블록 추출
-  const text = xmlText.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, (_,c)=>c.replace(/</g,'&lt;').replace(/>/g,'&gt;'));
-  const itemRe = /<item[\s>]([\s\S]*?)<\/item>/gi;
-  const tagRe  = name => new RegExp(`<${name}[^>]*>([\\s\\S]*?)<\\/${name}>`, 'i');
-  const items  = [];
-  let m;
-  while ((m = itemRe.exec(text)) !== null) {
-    const blk = m[1];
-    const get  = name => { const t=tagRe(name).exec(blk); return t ? t[1].replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&amp;/g,'&').trim() : ''; };
-    // <link> 태그는 셀프클로징이거나 텍스트 사이 형식이 다양함
-    const linkM = /<link>([^<]+)<\/link>/.exec(blk) || /<link\s+href="([^"]+)"/.exec(blk);
-    items.push({
-      title:     stripTags(get('title')),
-      link:      linkM ? linkM[1].trim() : '',
-      source:    get('source') || get('News:Source') || get('dc:creator') || 'Bing News',
-      published: get('pubDate') || get('dc:date') || '',
-    });
-  }
-  return items;
-}
+function stripTags(s){ return (s??'').replace(/<!\[CDATA\[|\]\]>/g,'').replace(/<[^>]+>/g,'').trim(); }
 
 /* ── 시계 ── */
 (function tick(){
@@ -451,214 +390,150 @@ function gc(k,ttl){ const c=_C[k]; return c&&Date.now()-c.t<ttl*1000?c.d:null; }
 function sc(k,d){ _C[k]={d,t:Date.now()}; }
 
 /* ════════════════════════════════════════════════
-   주가 - 네이버 금융 (프록시) + CoinGecko (직접)
+   data.json 로드
    ════════════════════════════════════════════════ */
-async function loadTicker(force=false){
-  const cached=gc('ticker',60);
-  if(!force&&cached){ $('ticker').innerHTML=cached; return; }
+async function loadData() {
+  const r = await fetch(`data.json?t=${Date.now()}`);
+  if (!r.ok) throw new Error('data.json 로드 실패');
+  return r.json();
+}
 
-  async function getStock(code){
-    try{
-      const r=await fetch(`https://stock-proxy.graceim.workers.dev/?code=${code}`,
-        {signal:AbortSignal.timeout(10000)});
-      const d=await r.json();
-      if(!d||d.error) throw new Error(d?.error||'no data');
-      const price=Number((d.closePrice||'0').replace(/,/g,''));
-      const change=Number(d.compareToPreviousClosePrice||0);
-      const ratio=Math.abs(Number(d.fluctuationsRatio||0)).toFixed(2);
-      const dir=change>0?'RISING':change<0?'FALLING':'STEADY';
-      const isOpen=d.overMarketStatus==='OPEN'||d.marketStatus==='OPEN';
-      return{
-        price:price.toLocaleString('ko-KR'),
-        change:Math.abs(change).toLocaleString('ko-KR'),
-        ratio,dir,isOpen,
-        sign:dir==='RISING'?'+':dir==='FALLING'?'-':'',
-      };
-    }catch(e){return{err:'로드 실패'};}
-  }
-
-  async function getWemix(){
-    try{
-      // CoinGecko는 CORS 허용이라 직접 호출
-      const r=await fetch('https://api.coingecko.com/api/v3/simple/price?ids=wemix-token&vs_currencies=krw,usd&include_24hr_change=true',
-        {signal:AbortSignal.timeout(10000)});
-      const d=(await r.json())['wemix-token']??{};
-      const chg=d.krw_24h_change??0;
-      return{ krw:d.krw??0, chg24h:chg, dir:chg>=0?'RISING':'FALLING', sign:chg>=0?'+':'-' };
-    }catch(e){ return{err:'로드 실패'}; }
-  }
-
-  function stockCard(name,market,d,code){
-    const link=`https://finance.naver.com/item/main.naver?code=${code}`;
-    const err=!!d.err;
-    const cls=err?'fl':d.dir==='RISING'?'up':d.dir==='FALLING'?'dn':'fl';
-    const arrow=err?'':d.dir==='RISING'?'▲':d.dir==='FALLING'?'▼':'';
-    const chg=err?d.err:`${arrow} ${d.sign}${esc(d.change)} (${d.sign}${esc(d.ratio)}%)`;
-    const badge=err?`<span class="tk-pill pl-err">오류</span>`
+/* ════════════════════════════════════════════════
+   주가 렌더링
+   ════════════════════════════════════════════════ */
+function renderTicker(stocks) {
+  function stockCard(name, market, d, code) {
+    const link = `https://finance.naver.com/item/main.naver?code=${code}`;
+    const err = !!d.err;
+    const cls = err?'fl':d.dir==='RISING'?'up':d.dir==='FALLING'?'dn':'fl';
+    const arrow = err?'':d.dir==='RISING'?'▲':d.dir==='FALLING'?'▼':'';
+    const chg = err?d.err:`${arrow} ${d.sign}${esc(d.change)} (${d.sign}${esc(d.ratio)}%)`;
+    const badge = err?`<span class="tk-pill pl-err">오류</span>`
       :`<span class="tk-pill ${d.isOpen?'pl-live':'pl-cls'}">${d.isOpen?'LIVE':'장마감'}</span>`;
-    return`<a class="tk-item" href="${link}" target="_blank" rel="noopener">
+    return `<a class="tk-item" href="${link}" target="_blank" rel="noopener">
       <div class="tk-info">
         <div class="tk-label"><span class="tk-name">${name}</span><span class="tk-tag">${market}</span></div>
         <div class="tk-row"><span class="tk-price">${err?'—':'₩'+esc(d.price)}</span><span class="tk-chg ${cls}">${chg}</span></div>
       </div>${badge}</a>`;
   }
 
-  function wemixCard(d){
-    if(d.err) return`<div class="tk-item"><div class="tk-info"><div class="tk-label"><span class="tk-name">WEMIX</span><span class="tk-tag">CRYPTO</span></div><div class="tk-row"><span class="tk-price">—</span><span class="tk-chg fl">오류</span></div></div><span class="tk-pill pl-err">오류</span></div>`;
-    const cls=d.dir==='RISING'?'up':'dn';
-    const arrow=d.dir==='RISING'?'▲':'▼';
-    const krwFmt=Number(d.krw).toLocaleString('ko-KR',{minimumFractionDigits:2,maximumFractionDigits:2});
-    return`<a class="tk-item" href="https://www.coingecko.com/en/coins/wemix-token" target="_blank" rel="noopener">
+  function wemixCard(d) {
+    if (d.err) return `<div class="tk-item"><div class="tk-info"><div class="tk-label"><span class="tk-name">WEMIX</span><span class="tk-tag">CRYPTO</span></div><div class="tk-row"><span class="tk-price">—</span><span class="tk-chg fl">오류</span></div></div><span class="tk-pill pl-err">오류</span></div>`;
+    const cls = d.dir==='RISING'?'up':'dn';
+    const arrow = d.dir==='RISING'?'▲':'▼';
+    const krwFmt = Number(d.krw).toLocaleString('ko-KR',{minimumFractionDigits:2,maximumFractionDigits:2});
+    return `<a class="tk-item" href="https://www.coingecko.com/en/coins/wemix-token" target="_blank" rel="noopener">
       <div class="tk-info">
         <div class="tk-label"><span class="tk-name">WEMIX</span><span class="tk-tag">CRYPTO</span></div>
         <div class="tk-row"><span class="tk-price">₩${krwFmt}</span><span class="tk-chg ${cls}">${arrow} ${d.sign}${Math.abs(d.chg24h).toFixed(2)}% <span style="opacity:.4;font-size:8px">24h</span></span></div>
       </div><span class="tk-pill pl-live">LIVE</span></a>`;
   }
 
-  const [s1,s2,wx]=await Promise.all([getStock('112040'),getStock('101730'),getWemix()]);
-  const html=
-    stockCard('위메이드','KOSDAQ',s1,'112040')+
-    stockCard('위메이드맥스','KOSDAQ',s2,'233180')+
-    wemixCard(wx)+
+  const html =
+    stockCard('위메이드','KOSDAQ', stocks.wemade, '112040') +
+    stockCard('위메이드맥스','KOSDAQ', stocks.wemade_max, '101730') +
+    wemixCard(stocks.wemix) +
     `<span class="tk-upd">갱신 ${nowKST()}</span>`;
-  sc('ticker',html);
-  $('ticker').innerHTML=html;
+  $('ticker').innerHTML = html;
 }
 
 /* ════════════════════════════════════════════════
-   뉴스 - Google News RSS (텍스트 파싱)
+   뉴스 렌더링
    ════════════════════════════════════════════════ */
-async function loadNews(cat,force=false){
-  const KEY=`news_${cat}`;
-  const bodyEl=$(`body-${cat}`), updEl=$(`upd-${cat}`), pillsEl=$(`pills-${cat}`);
-  const cached=gc(KEY,1800);
-  if(!force&&cached){
-    bodyEl.innerHTML=renderNews(cached.articles);
-    updEl.textContent=cached.updated;
-    pillsEl.innerHTML='<span class="pll pll-g">구글</span>';
-    return;
-  }
-  bodyEl.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
-  try{
-    const rssUrl = `https://news.google.com/rss/search?q=${encodeURIComponent(QUERIES[cat])}&hl=ko&gl=KR&ceid=KR:ko`;
-    const xmlText = await fetchViaProxy(rssUrl);
-    const items = parseRSS(xmlText);
-    const articles = items.slice(0,14).map(it=>({...it, provider:'google', source: it.source || 'Google News'}));
-    if(!articles.length) throw new Error('기사 없음');
-    const updated=`${nowKST()} 기준`;
-    sc(KEY,{articles,updated});
-    bodyEl.innerHTML=renderNews(articles);
-    updEl.textContent=updated;
-    pillsEl.innerHTML='<span class="pll pll-g">구글</span>';
-  }catch(e){
-    bodyEl.innerHTML=`<div class="errbox">뉴스를 불러올 수 없습니다.<br><small style="color:var(--txt3)">${esc(String(e.message))}</small></div>`;
-  }
-}
-
-function renderNews(articles){
-  if(!articles?.length) return'<div class="errbox">기사가 없습니다.</div>';
-  return articles.map(a=>`
+function renderNews(articles) {
+  if (!articles?.length) return '<div class="errbox">기사가 없습니다.</div>';
+  return articles.map(a => `
     <div class="ni">
       <a href="${esc(a.link)}" target="_blank" rel="noopener noreferrer">${esc(a.title)}</a>
       <div class="ni-meta">
         <span class="ni-src">${esc(a.source)}</span>
         <span class="ni-time">${relTime(a.published)}</span>
-        <span class="ni-badge ${a.provider==='naver'?'nb-n':'nb-g'}">${a.provider==='naver'?'N':'G'}</span>
+        <span class="ni-badge nb-g">G</span>
       </div>
     </div>`).join('');
 }
 
+function renderNewsSection(news) {
+  ['wemade','blockchain','marketing'].forEach(cat => {
+    const bodyEl = $(`body-${cat}`);
+    const updEl = $(`upd-${cat}`);
+    const pillsEl = $(`pills-${cat}`);
+    const articles = news[cat] || [];
+    if (articles.length) {
+      bodyEl.innerHTML = renderNews(articles);
+      updEl.textContent = nowKST() + ' 기준';
+      if (pillsEl) pillsEl.innerHTML = '<span class="pll pll-g">구글</span>';
+    } else {
+      bodyEl.innerHTML = '<div class="errbox">뉴스를 불러올 수 없습니다.</div>';
+    }
+  });
+}
+
 /* ════════════════════════════════════════════════
-   구글 트렌드 (RSS 텍스트 파싱)
+   트렌드 렌더링
    ════════════════════════════════════════════════ */
-async function switchTrend(tab){
+function renderTrends(trends) {
+  function renderPane(items, paneId) {
+    const pane = $(paneId);
+    if (!items || !items.length) {
+      pane.innerHTML = '<div class="errbox">데이터 없음</div>';
+      return;
+    }
+    pane.innerHTML = '<div class="tg">' + items.map((it, i) => {
+      const rank = i+1, cls = rank===1?'r1':rank<=3?'r3':'';
+      const url = 'https://www.google.com/search?q=' + encodeURIComponent(it.title);
+      return '<a class="tr-link" href="'+url+'" target="_blank" rel="noopener">'
+        +'<div class="tr-item">'
+        +'<span class="tr-rank '+cls+'">'+rank+'</span>'
+        +'<span class="tr-kw">'+esc(it.title)+'</span>'
+        +(it.vol?'<span class="tr-vol">'+esc(it.vol)+'</span>':'')
+        +'</div></a>';
+    }).join('') + '</div>';
+  }
+  renderPane(trends.kr, 'pane-kr');
+  renderPane(trends.global, 'pane-global');
+  $('upd-gtrend').textContent = '갱신 ' + nowKST();
+}
+
+function switchTrend(tab){
   ['kr','global'].forEach(t=>{
     document.getElementById('tab-'+t).classList.toggle('active', t===tab);
     document.getElementById('pane-'+t).classList.toggle('active', t===tab);
   });
 }
 
-function renderTrendHtml(xmlText){
-  const items = parseRSS(xmlText);
-  if(!items.length) throw new Error('항목 없음');
-  const volRe = /<ht:approx_traffic>([^<]+)<\/ht:approx_traffic>/gi;
-  const vols=[]; let vm;
-  while((vm=volRe.exec(xmlText))!==null) vols.push(vm[1]);
-  return '<div class="tg">'+items.slice(0,20).map((it,i)=>{
-    const rank=i+1, cls=rank===1?'r1':rank<=3?'r3':'';
-    const url='https://www.google.com/search?q='+encodeURIComponent(it.title)+'&gl=us&hl=en';
-    return '<a class="tr-link" href="'+url+'" target="_blank" rel="noopener">'
-      +'<div class="tr-item">'
-      +'<span class="tr-rank '+cls+'">'+rank+'</span>'
-      +'<span class="tr-kw">'+esc(it.title)+'</span>'
-      +(vols[i]?'<span class="tr-vol">'+esc(vols[i])+'</span>':'')
-      +'</div></a>';
-  }).join('')+'</div>';
-}
-
-async function loadGTrend(force=false){
-  const updEl=$('upd-gtrend');
-
-  // 한국
-  const KEY_KR='gtrend_kr';
-  const paneKR=$('pane-kr');
-  const cachedKR=gc(KEY_KR,300);
-  if(!force&&cachedKR){ paneKR.innerHTML=cachedKR; }
-  else{
-    paneKR.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
-    try{
-      const xml=await fetchViaProxy('https://trends.google.co.kr/trending/rss?geo=KR');
-      const html=renderTrendHtml(xml);
-      sc(KEY_KR,html); paneKR.innerHTML=html;
-      updEl.textContent='갱신 '+nowKST();
-    }catch(e){ paneKR.innerHTML='<div class="errbox">'+esc(e.message)+'</div>'; }
-  }
-
-  // 글로벌 (미국 기준)
-  const KEY_GL='gtrend_global';
-  const paneGL=$('pane-global');
-  const cachedGL=gc(KEY_GL,300);
-  if(!force&&cachedGL){ paneGL.innerHTML=cachedGL; return; }
-  paneGL.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
-  try{
-    const xml=await fetchViaProxy('https://trends.google.com/trending/rss?geo=US');
-    const html=renderTrendHtml(xml);
-    sc(KEY_GL,html); paneGL.innerHTML=html;
-  }catch(e){ paneGL.innerHTML='<div class="errbox">'+esc(e.message)+'</div>'; }
-}
-
+/* ════════════════════════════════════════════════
+   나무위키 실검 (Workers 프록시)
+   ════════════════════════════════════════════════ */
 async function loadNamu(force=false){
   const KEY='namu';
   const bodyEl=$('body-namu'), updEl=$('upd-namu');
-  const cached=gc(KEY,60);
+  const cached=gc(KEY,120);
   if(!force&&cached){ bodyEl.innerHTML=cached; return; }
-  bodyEl.innerHTML='<div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div>';
   try{
     const r = await fetch('https://search.namu.wiki/api/ranking', {
-      signal: AbortSignal.timeout(10000),
+      signal: AbortSignal.timeout(8000),
       headers: {'Referer':'https://namu.wiki/', 'Origin':'https://namu.wiki'}
     });
     if(!r.ok) throw new Error('API '+r.status);
     const data = await r.json();
     const list = Array.isArray(data) ? data : (data.items || data.keywords || data.result || []);
     if(!list.length) throw new Error('데이터 없음');
-
     const out = '<div class="tg">' + list.slice(0,15).map((item,i)=>{
       const rank=i+1, cls=rank===1?'r1':rank<=3?'r3':'';
       const kw = typeof item==='string' ? item : (item.keyword||item.name||item.title||String(item));
-      const url = 'https://arca.live/b/namuhotnow?q='+encodeURIComponent(kw)+'&sort=date';
+      const url = 'https://namu.wiki/w/'+encodeURIComponent(kw);
       return '<a class="tr-link" href="'+esc(url)+'" target="_blank" rel="noopener">'
         +'<div class="tr-item">'
         +'<span class="tr-rank '+cls+'">'+rank+'</span>'
         +'<span class="tr-kw">'+esc(kw)+'</span>'
         +'</div></a>';
     }).join('') + '</div>';
-
     sc(KEY,out);
     bodyEl.innerHTML=out;
     updEl.textContent='갱신 '+nowKST();
   }catch(e){
-    bodyEl.innerHTML='<div class="errbox">실시간 검색어를 불러올 수 없습니다.<br><small style="color:var(--txt3)">'+esc(e.message)+'</small></div>';
+    bodyEl.innerHTML='<div class="errbox">실시간 검색어를 불러올 수 없습니다.</div>';
   }
 }
 
@@ -668,13 +543,14 @@ async function loadNamu(force=false){
 async function refreshAll(force=false){
   const btn=$('btn-ref'), icon=$('spin');
   btn.disabled=true; icon.classList.add('spinning');
-  loadTicker(force);
-  await Promise.all([
-    loadNews('wemade',force),
-    loadNews('blockchain',force),
-    loadNews('marketing',force),
-  ]);
-  await loadGTrend(force);
+  try {
+    const data = await loadData();
+    renderTicker(data.stocks);
+    renderNewsSection(data.news);
+    renderTrends(data.trends);
+  } catch(e) {
+    console.error('data.json 로드 실패:', e);
+  }
   await loadNamu(force);
   icon.classList.remove('spinning');
   btn.disabled=false;
@@ -682,10 +558,7 @@ async function refreshAll(force=false){
 
 /* ── 초기 로드 & 자동 갱신 ── */
 refreshAll(false);
-setInterval(()=>refreshAll(true),    30*60*1000); // 30분: 뉴스
-setInterval(()=>loadTicker(true),       60*1000); //  1분: 주가
-setInterval(()=>loadGTrend(true), 5*60*1000);   // 5분: 구글 트렌드
-setInterval(()=>loadNamu(true),   2*60*1000);   // 2분: 나무실검 // 5분: 트렌드
+setInterval(()=>refreshAll(true), 30*60*1000); // 30분마다   // 2분: 나무실검 // 5분: 트렌드
 </script>
 </body>
 </html>
