@@ -1,10 +1,10 @@
 {
-  "updated": "13:57:08",
+  "updated": "14:02:29",
   "stocks": {
     "wemade": {
-      "price": "23,750",
-      "change": "650",
-      "ratio": "2.66",
+      "price": "23,800",
+      "change": "600",
+      "ratio": "2.46",
       "dir": "FALLING",
       "isOpen": true,
       "sign": "-"
@@ -18,8 +18,8 @@
       "sign": "-"
     },
     "wemix": {
-      "krw": 352.44,
-      "chg24h": -1.2353918862243103,
+      "krw": 353.25,
+      "chg24h": -1.0369234449203881,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -152,7 +152,7 @@
     "marketing": [
       {
         "title": "군산시 청년뜰 창업가들 대상 ‘디지털 마케팅 지원사업’ 추진 - 전북도민일보",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMS13cklEVHhzUDQ2NW1qTEEtUGhMZS1na1FjeEtxNWJYSUhESU5xUVlYNVhqTXBrN2FjTzhkc2l4dGtTNElSX2dqNEhpb2tnajNKTnB2ckVweG13WW5ueWhqZEh2YnBOQjlmU1BKTFhwRDFqZVRyWC00LVVjRUpKRGVJeTZiU0U?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE55R3lFWlFNSVZzTWRxb3FZMk0wVFpneFZvUkYzalBJMVgwZThRbUNTTmhmRUxTYnNIb3BRN2tkT1VJRnZNVjhGRnVrVFFHMGpoU3NVOHZEaUpVcEoxSUVKODBoNkNoci1EVHc?oc=5",
         "source": "전북도민일보",
         "published": "Wed, 06 May 2026 04:16:42 GMT"
       },
@@ -371,171 +371,6 @@
         "link": "https://store.steampowered.com/app/550"
       }
     ],
-    "gplay_kr": [
-      {
-        "rank": 1,
-        "name": "승리의 여신: 니케",
-        "developer": "Level Infinite",
-        "appId": "com.proximabeta.nikke",
-        "score": 4.8,
-        "link": "https://play.google.com/store/apps/details?id=com.proximabeta.nikke"
-      },
-      {
-        "rank": 2,
-        "name": "리니지M",
-        "developer": "NC Corporation",
-        "appId": "com.ncsoft.lineagem19",
-        "score": 2.6,
-        "link": "https://play.google.com/store/apps/details?id=com.ncsoft.lineagem19"
-      },
-      {
-        "rank": 3,
-        "name": "메이플 키우기",
-        "developer": "NEXON Company",
-        "appId": "com.nexon.ma",
-        "score": 4.1,
-        "link": "https://play.google.com/store/apps/details?id=com.nexon.ma"
-      },
-      {
-        "rank": 4,
-        "name": "로블록스 (Roblox)",
-        "developer": "Roblox Corporation",
-        "appId": "com.roblox.client",
-        "score": 3.8,
-        "link": "https://play.google.com/store/apps/details?id=com.roblox.client"
-      },
-      {
-        "rank": 5,
-        "name": "WOS: 화이트아웃 서바이벌",
-        "developer": "Century Games PTE. LTD.",
-        "appId": "com.gof.global",
-        "score": 4.5,
-        "link": "https://play.google.com/store/apps/details?id=com.gof.global"
-      },
-      {
-        "rank": 6,
-        "name": "킹샷:Kingshot",
-        "developer": "Century Games PTE. LTD.",
-        "appId": "com.run.tower.defense",
-        "score": 4.6,
-        "link": "https://play.google.com/store/apps/details?id=com.run.tower.defense"
-      },
-      {
-        "rank": 7,
-        "name": "명조:워더링 웨이브 - 2주년 축제",
-        "developer": "HK KURO GAMES LIMITED",
-        "appId": "com.kurogame.wutheringwaves.global",
-        "score": 4.6,
-        "link": "https://play.google.com/store/apps/details?id=com.kurogame.wutheringwaves.global"
-      },
-      {
-        "rank": 8,
-        "name": "라스트 워: 서바이벌",
-        "developer": "FUNFLY PTE. LTD.",
-        "appId": "com.fun.lastwar.gp",
-        "score": 4.8,
-        "link": "https://play.google.com/store/apps/details?id=com.fun.lastwar.gp"
-      },
-      {
-        "rank": 9,
-        "name": "한게임포커 클래식 : 7포커 홀덤 섯다 훌라 슬롯",
-        "developer": "NHN Corp.",
-        "appId": "com.nhnent.pokerclassic",
-        "score": 4.5,
-        "link": "https://play.google.com/store/apps/details?id=com.nhnent.pokerclassic"
-      },
-      {
-        "rank": 10,
-        "name": "로얄 매치 Royal Match",
-        "developer": "Dream Games, Ltd.",
-        "appId": "com.dreamgames.royalmatch",
-        "score": 4.6,
-        "link": "https://play.google.com/store/apps/details?id=com.dreamgames.royalmatch"
-      }
-    ],
-    "gplay_global": [
-      {
-        "rank": 1,
-        "name": "MONOPOLY GO!",
-        "developer": "Scopely",
-        "appId": "com.scopely.monopolygo",
-        "score": 4.6,
-        "link": "https://play.google.com/store/apps/details?id=com.scopely.monopolygo"
-      },
-      {
-        "rank": 2,
-        "name": "Royal Match",
-        "developer": "Dream Games, Ltd.",
-        "appId": "com.dreamgames.royalmatch",
-        "score": 4.6,
-        "link": "https://play.google.com/store/apps/details?id=com.dreamgames.royalmatch"
-      },
-      {
-        "rank": 3,
-        "name": "Candy Crush Saga",
-        "developer": "King",
-        "appId": "com.king.candycrushsaga",
-        "score": 4.6,
-        "link": "https://play.google.com/store/apps/details?id=com.king.candycrushsaga"
-      },
-      {
-        "rank": 4,
-        "name": "Kingshot",
-        "developer": "Century Games PTE. LTD.",
-        "appId": "com.run.tower.defense",
-        "score": 4.3,
-        "link": "https://play.google.com/store/apps/details?id=com.run.tower.defense"
-      },
-      {
-        "rank": 5,
-        "name": "Roblox",
-        "developer": "Roblox Corporation",
-        "appId": "com.roblox.client",
-        "score": 4.2,
-        "link": "https://play.google.com/store/apps/details?id=com.roblox.client"
-      },
-      {
-        "rank": 6,
-        "name": "Gossip Harbor: Merge & Story",
-        "developer": "Microfun Limited",
-        "appId": "com.mergegames.gossipharbor",
-        "score": 4.3,
-        "link": "https://play.google.com/store/apps/details?id=com.mergegames.gossipharbor"
-      },
-      {
-        "rank": 7,
-        "name": "Last War:Survival Game",
-        "developer": "FUNFLY PTE. LTD.",
-        "appId": "com.fun.lastwar.gp",
-        "score": 4.7,
-        "link": "https://play.google.com/store/apps/details?id=com.fun.lastwar.gp"
-      },
-      {
-        "rank": 8,
-        "name": "Whiteout Survival",
-        "developer": "Century Games PTE. LTD.",
-        "appId": "com.gof.global",
-        "score": 4.1,
-        "link": "https://play.google.com/store/apps/details?id=com.gof.global"
-      },
-      {
-        "rank": 9,
-        "name": "Coin Master",
-        "developer": "Moon Active",
-        "appId": "com.moonactive.coinmaster",
-        "score": 4.8,
-        "link": "https://play.google.com/store/apps/details?id=com.moonactive.coinmaster"
-      },
-      {
-        "rank": 10,
-        "name": "Royal Kingdom",
-        "developer": "Dream Games, Ltd.",
-        "appId": "com.dreamgames.royalkingdom",
-        "score": 4.6,
-        "link": "https://play.google.com/store/apps/details?id=com.dreamgames.royalkingdom"
-      }
-    ],
-    "appstore_kr": [],
-    "appstore_global": []
+    "gamemeca": []
   }
 }
