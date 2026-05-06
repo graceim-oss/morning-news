@@ -2,6 +2,7 @@ import json, re, ssl
 from datetime import datetime, timezone, timedelta
 from urllib.request import urlopen, Request
 from urllib.parse import quote
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 KST = timezone(timedelta(hours=9))
 _CTX = ssl.create_default_context()
@@ -39,7 +40,7 @@ def fetch_news(query):
         xml = fetch(url)
         return parse_rss(xml)[:10]
     except Exception as e:
-        print('뉴스 오류 (' + query[:20] + '): ' + str(e))
+        print('뉴스 오류: ' + str(e))
         return []
 
 def fetch_stock(code):
@@ -72,12 +73,9 @@ def fetch_wemix():
         text = fetch(url)
         d = json.loads(text).get('wemix-token', {})
         chg = d.get('krw_24h_change', 0)
-        return {
-            'krw': d.get('krw', 0),
-            'chg24h': chg,
-            'dir': 'RISING' if chg >= 0 else 'FALLING',
-            'sign': '+' if chg >= 0 else '-',
-        }
+        return {'krw': d.get('krw', 0), 'chg24h': chg,
+                'dir': 'RISING' if chg >= 0 else 'FALLING',
+                'sign': '+' if chg >= 0 else '-'}
     except Exception as e:
         print('WEMIX 오류: ' + str(e))
         return {'err': '로드 실패'}
@@ -97,16 +95,13 @@ def fetch_gtrend(geo):
 def fetch_steam_top():
     try:
         text = fetch('https://steamspy.com/api.php?request=top100in2weeks', headers={
-            'User-Agent': 'Mozilla/5.0',
-            'Referer': 'https://steamspy.com/',
+            'User-Agent': 'Mozilla/5.0', 'Referer': 'https://steamspy.com/',
         })
         d = json.loads(text)
         items = []
         for i, (appid, info) in enumerate(list(d.items())[:10]):
             items.append({
-                'rank': i + 1,
-                'name': info.get('name', ''),
-                'appid': appid,
+                'rank': i + 1, 'name': info.get('name', ''), 'appid': appid,
                 'players_2weeks': info.get('players_2weeks', 0),
                 'link': 'https://store.steampowered.com/app/' + appid,
             })
@@ -115,39 +110,88 @@ def fetch_steam_top():
         print('Steam 오류: ' + str(e))
         return []
 
-def fetch_gamemeca_top():
+def fetch_gametrics_top():
     try:
         import requests as req
-        r = req.get('https://www.gamemeca.com/ranking.php', timeout=15, headers={
+        r = req.get('https://www.gametrics.com/rank/Rank02.aspx', timeout=15, headers={
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0.0.0',
-            'Accept': 'text/html,application/xhtml+xml',
-            'Accept-Language': 'ko-KR,ko;q=0.9',
-            'Referer': 'https://www.gamemeca.com/',
+            'Accept': 'text/html', 'Accept-Language': 'ko-KR,ko;q=0.9',
+            'Referer': 'https://www.gametrics.com/',
         })
         html = r.text
         items = []
         seen = set()
-
-        # 순위 + 게임명 패턴: <td>숫자</td> 다음에 gmview 링크
-        # 전체 HTML에서 순위와 gmview 링크를 동시에 찾기
-        # 패턴: | 숫자 | ... | [게임명](gmview링크)
-        # 순위와 게임명 각각 추출 후 매칭
-        all_ranks = re.findall(r'<td[^>]*>[ \t]*(\d+)[ \t]*(?:<span[^>]*>[^<]*</span>)?[ \t]*</td>', html)
-        all_games = re.findall(r'href="([^"]*rts=gmview[^"]*)"[^>]*>[ \t]*([^<\n]+?)[ \t]*</a>', html)
-        rank_game = [(all_ranks[i], g[0], g[1]) for i, g in enumerate(all_games) if i < len(all_ranks)]
-
-        for rank_str, link, name in rank_game:
-            rank = int(rank_str)
-            name = name.strip()
-            if name and name not in seen and 1 <= rank <= 20:
-                seen.add(name)
-                items.append({'rank': rank, 'name': name, 'link': link})
-
+        rows = re.findall(r'<tr[^>]*>([\s\S]*?)</tr>', html, re.I)
+        for row in rows:
+            rank_m = re.search(r'<td[^>]*>\s*(\d+)\s*</td>', row)
+            game_m = re.search(r'href="([^"]*GameInfo[^"]*)"[^>]*>([^<]+)</a>', row, re.I)
+            pct_m = re.search(r'(\d+\.\d+)%', row)
+            if rank_m and game_m:
+                rank = int(rank_m.group(1))
+                name = game_m.group(2).strip()
+                link = 'https://www.gametrics.com' + game_m.group(1) if game_m.group(1).startswith('/') else game_m.group(1)
+                pct = pct_m.group(1) if pct_m else ''
+                if name and name not in seen and 1 <= rank <= 20:
+                    seen.add(name)
+                    items.append({'rank': rank, 'name': name, 'link': link, 'pct': pct})
         items.sort(key=lambda x: x['rank'])
-        print('게임메카 순위 ' + str(len(items)) + '개 수집')
+        print('게임트릭스 순위 ' + str(len(items)) + '개 수집')
         return items[:20]
     except Exception as e:
-        print('게임메카 순위 오류: ' + str(e))
+        print('게임트릭스 순위 오류: ' + str(e))
+        return []
+
+def fetch_gplay_top(country='kr', lang='ko', chart='TOP_GROSSING'):
+    try:
+        from gplay_scraper import GPlayScraper
+        scraper = GPlayScraper()
+        result = scraper.list_get_fields(
+            collection=chart, category='GAME',
+            fields=['title', 'developer', 'appId', 'score'],
+            count=10, lang=lang, country=country
+        )
+        items = []
+        for i, item in enumerate(result or []):
+            items.append({
+                'rank': i + 1, 'name': item.get('title', ''),
+                'developer': item.get('developer', ''),
+                'link': 'https://play.google.com/store/apps/details?id=' + item.get('appId',''),
+            })
+        print('Google Play (' + country + ') ' + str(len(items)) + '개 수집')
+        return items
+    except Exception as e:
+        print('Google Play 순위 오류 (' + country + '): ' + str(e))
+        return []
+
+def fetch_appstore_top(country='kr'):
+    try:
+        import requests as req
+        urls = [
+            'https://rss.marketingtools.apple.com/api/v2/' + country + '/apps/top-grossing/10/games.json',
+            'https://rss.applemarketingtools.com/api/v2/' + country + '/apps/top-grossing/10/games.json',
+        ]
+        for url in urls:
+            try:
+                r = req.get(url, timeout=10, headers={'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json'})
+                if r.status_code != 200:
+                    continue
+                d = r.json()
+                results = d.get('feed', {}).get('results', [])
+                items = []
+                for i, entry in enumerate(results[:10]):
+                    name = entry.get('name', '')
+                    if name:
+                        items.append({'rank': i+1, 'name': name,
+                                     'developer': entry.get('artistName', ''),
+                                     'link': entry.get('url', '')})
+                if items:
+                    print('App Store (' + country + ') ' + str(len(items)) + '개 수집')
+                    return items
+            except Exception as e2:
+                print('App Store URL 오류: ' + str(e2))
+        return []
+    except Exception as e:
+        print('App Store 오류: ' + str(e))
         return []
 
 def main():
@@ -162,8 +206,6 @@ def main():
     }
 
     print('뉴스/트렌드/순위 병렬 수집 중...')
-    from concurrent.futures import ThreadPoolExecutor, as_completed
-
     tasks = {
         'news_wemade':       lambda: fetch_news('위메이드 OR 위믹스 OR WEMIX OR 레전드오브이미르 OR 나이트크로우'),
         'news_blockchain':   lambda: fetch_news('블록체인 OR 가상자산 OR NFT OR Web3 OR 코인 OR 스테이블코인'),
@@ -175,10 +217,10 @@ def main():
         'gametrics':         lambda: fetch_gametrics_top(),
         'gplay_kr':          lambda: fetch_gplay_top('kr', 'ko', 'TOP_GROSSING'),
         'appstore_kr':       lambda: fetch_appstore_top('kr'),
-        'appstore_kr':       lambda: fetch_appstore_top('kr'),
     }
+
     results = {}
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=10) as executor:
         future_map = {executor.submit(fn): key for key, fn in tasks.items()}
         for future in as_completed(future_map):
             key = future_map[future]
@@ -204,9 +246,11 @@ def main():
         'gplay_kr':    results.get('gplay_kr', []),
         'appstore_kr': results.get('appstore_kr', []),
     }
+
     data = {
         'updated': now,
         'stocks': stocks,
+        'news': news,
         'trends': trends,
         'rankings': rankings,
     }
