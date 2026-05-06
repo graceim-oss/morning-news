@@ -199,12 +199,12 @@ def main():
         'global': results.get('trend_global', []),
     }
     rankings = {
-    rankings = {
         'steam':       results.get('steam', []),
         'gametrics':   results.get('gametrics', []),
         'gplay_kr':    results.get('gplay_kr', []),
         'appstore_kr': results.get('appstore_kr', []),
-    data = {
+        'appstore_kr': results.get('appstore_kr', []),
+    }
         'updated': now,
         'stocks': stocks,
         'news': news,
