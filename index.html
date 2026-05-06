@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<link rel="prefetch" href="data.json"/>
   <title>위메이드 브랜드마케팅팀 인사이트</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
@@ -348,6 +347,49 @@
     </div>
 
   </div>
+
+  <!-- ── 게임 순위 ── -->
+  <div class="section-label">🎮 실시간 게임 순위</div>
+  <div class="grid-3">
+
+    <!-- Steam -->
+    <div class="card">
+      <div class="card-hd">
+        <div class="card-ttl">
+          <div class="card-ico ic-b">🖥️</div>
+          <div><h2>Steam</h2><div class="card-sub">최근 2주 인기 게임</div></div>
+        </div>
+        <div class="card-meta"><div class="card-upd" id="upd-steam">—</div></div>
+      </div>
+      <div class="trends-pane" id="body-steam"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
+    </div>
+
+    <!-- App Store -->
+    <div class="card">
+      <div class="card-hd">
+        <div class="card-ttl">
+          <div class="card-ico ic-w">🍎</div>
+          <div><h2>App Store</h2><div class="card-sub">한국 무료 게임 인기차트</div></div>
+        </div>
+        <div class="card-meta"><div class="card-upd" id="upd-appstore">—</div></div>
+      </div>
+      <div class="trends-pane" id="body-appstore"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
+    </div>
+
+    <!-- Google Play -->
+    <div class="card">
+      <div class="card-hd">
+        <div class="card-ttl">
+          <div class="card-ico ic-g">▶️</div>
+          <div><h2>Google Play</h2><div class="card-sub">한국 무료 게임 인기차트</div></div>
+        </div>
+        <div class="card-meta"><div class="card-upd" id="upd-googleplay">—</div></div>
+      </div>
+      <div class="trends-pane" id="body-googleplay"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
+    </div>
+
+  </div>
+
 </div>
 
 <footer>위메이드 Brand Marketing Team &nbsp;·&nbsp; 뉴스 30분 · 주가 1분 · 트렌드 5분 자동 갱신 &nbsp;·&nbsp; 데이터 출처: Google News · CoinGecko · Naver Finance</footer>
@@ -503,6 +545,52 @@ function switchTrend(tab){
   });
 }
 
+
+/* ════════════════════════════════════════════════
+   게임 순위 렌더링
+   ════════════════════════════════════════════════ */
+function renderRankings(rankings) {
+  function renderSteam(items, bodyId, updId) {
+    const bodyEl = $(bodyId), updEl = $(updId);
+    if (!items || !items.length) {
+      bodyEl.innerHTML = '<div class="errbox">데이터 없음</div>';
+      return;
+    }
+    bodyEl.innerHTML = '<div class="tg">' + items.map((it, i) => {
+      const rank = i+1, cls = rank===1?'r1':rank<=3?'r3':'';
+      return '<a class="tr-link" href="'+esc(it.link)+'" target="_blank" rel="noopener">'
+        +'<div class="tr-item">'
+        +'<span class="tr-rank '+cls+'">'+rank+'</span>'
+        +'<span class="tr-kw">'+esc(it.name)+'</span>'
+        +(it.players_2weeks?'<span class="tr-vol">'+Number(it.players_2weeks).toLocaleString()+'</span>':'')
+        +'</div></a>';
+    }).join('') + '</div>';
+    updEl.textContent = nowKST() + ' 기준';
+  }
+
+  function renderMobile(items, bodyId, updId) {
+    const bodyEl = $(bodyId), updEl = $(updId);
+    if (!items || !items.length) {
+      bodyEl.innerHTML = '<div class="errbox">데이터 없음</div>';
+      return;
+    }
+    bodyEl.innerHTML = '<div class="tg">' + items.map((it, i) => {
+      const rank = i+1, cls = rank===1?'r1':rank<=3?'r3':'';
+      return '<a class="tr-link" href="'+esc(it.link)+'" target="_blank" rel="noopener">'
+        +'<div class="tr-item">'
+        +'<span class="tr-rank '+cls+'">'+rank+'</span>'
+        +'<span class="tr-kw">'+esc(it.name)+'</span>'
+        +(it.developer?'<span class="tr-vol" style="font-size:8px">'+esc(it.developer)+'</span>':'')
+        +'</div></a>';
+    }).join('') + '</div>';
+    updEl.textContent = nowKST() + ' 기준';
+  }
+
+  renderSteam(rankings.steam, 'body-steam', 'upd-steam');
+  renderMobile(rankings.appstore, 'body-appstore', 'upd-appstore');
+  renderMobile(rankings.googleplay, 'body-googleplay', 'upd-googleplay');
+}
+
 /* ════════════════════════════════════════════════
    나무위키 실검 (Workers 프록시)
    ════════════════════════════════════════════════ */
@@ -549,6 +637,7 @@ async function refreshAll(force=false){
     renderTicker(data.stocks);
     renderNewsSection(data.news);
     renderTrends(data.trends);
+    if (data.rankings) renderRankings(data.rankings);
   } catch(e) {
     console.error('data.json 로드 실패:', e);
   }
