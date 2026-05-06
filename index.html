@@ -349,7 +349,7 @@
   </div>
 
   <!-- ── 게임 순위 ── -->
-  <div class="section-label">🎮 실시간 게임 순위</div>
+  <div class="section-label">🎮 게임 순위 — 국내</div>
   <div class="grid-3">
 
     <!-- Steam -->
@@ -364,28 +364,57 @@
       <div class="trends-pane" id="body-steam"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
     </div>
 
-    <!-- App Store -->
-    <div class="card">
-      <div class="card-hd">
-        <div class="card-ttl">
-          <div class="card-ico ic-w">🍎</div>
-          <div><h2>App Store</h2><div class="card-sub">한국 무료 게임 인기차트</div></div>
-        </div>
-        <div class="card-meta"><div class="card-upd" id="upd-appstore">—</div></div>
-      </div>
-      <div class="trends-pane" id="body-appstore"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
-    </div>
-
-    <!-- Google Play -->
+    <!-- Google Play KR -->
     <div class="card">
       <div class="card-hd">
         <div class="card-ttl">
           <div class="card-ico ic-g">▶️</div>
-          <div><h2>Google Play</h2><div class="card-sub">한국 무료 게임 인기차트</div></div>
+          <div><h2>Google Play KR</h2><div class="card-sub">한국 게임 매출 순위</div></div>
         </div>
-        <div class="card-meta"><div class="card-upd" id="upd-googleplay">—</div></div>
+        <div class="card-meta"><div class="card-upd" id="upd-gplay-kr">—</div></div>
       </div>
-      <div class="trends-pane" id="body-googleplay"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
+      <div class="trends-pane" id="body-gplay-kr"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
+    </div>
+
+    <!-- App Store KR -->
+    <div class="card">
+      <div class="card-hd">
+        <div class="card-ttl">
+          <div class="card-ico ic-w">🍎</div>
+          <div><h2>App Store KR</h2><div class="card-sub">한국 게임 인기차트</div></div>
+        </div>
+        <div class="card-meta"><div class="card-upd" id="upd-appstore-kr">—</div></div>
+      </div>
+      <div class="trends-pane" id="body-appstore-kr"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
+    </div>
+
+  </div>
+
+  <div class="section-label">🌍 게임 순위 — 글로벌</div>
+  <div class="grid-2">
+
+    <!-- Google Play Global -->
+    <div class="card">
+      <div class="card-hd">
+        <div class="card-ttl">
+          <div class="card-ico ic-g">▶️</div>
+          <div><h2>Google Play Global</h2><div class="card-sub">글로벌 게임 매출 순위</div></div>
+        </div>
+        <div class="card-meta"><div class="card-upd" id="upd-gplay-global">—</div></div>
+      </div>
+      <div class="trends-pane" id="body-gplay-global"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
+    </div>
+
+    <!-- App Store Global -->
+    <div class="card">
+      <div class="card-hd">
+        <div class="card-ttl">
+          <div class="card-ico ic-w">🍎</div>
+          <div><h2>App Store Global</h2><div class="card-sub">글로벌 게임 인기차트</div></div>
+        </div>
+        <div class="card-meta"><div class="card-upd" id="upd-appstore-global">—</div></div>
+      </div>
+      <div class="trends-pane" id="body-appstore-global"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
     </div>
 
   </div>
@@ -549,46 +578,32 @@ function switchTrend(tab){
 /* ════════════════════════════════════════════════
    게임 순위 렌더링
    ════════════════════════════════════════════════ */
+function renderRankList(items, bodyId, updId, volKey) {
+  const bodyEl = $(bodyId), updEl = $(updId);
+  if (!items || !items.length) {
+    bodyEl.innerHTML = '<div class="errbox">데이터 없음</div>';
+    return;
+  }
+  bodyEl.innerHTML = '<div class="tg">' + items.map((it, i) => {
+    const rank = i+1, cls = rank===1?'r1':rank<=3?'r3':'';
+    const vol = volKey && it[volKey] ? '<span class="tr-vol">'+esc(String(it[volKey]))+'</span>' : '';
+    const sub = it.developer ? '<span class="tr-vol" style="font-size:8px">'+esc(it.developer)+'</span>' : '';
+    return '<a class="tr-link" href="'+esc(it.link||'#')+'" target="_blank" rel="noopener">'
+      +'<div class="tr-item">'
+      +'<span class="tr-rank '+cls+'">'+rank+'</span>'
+      +'<span class="tr-kw">'+esc(it.name)+'</span>'
+      +(vol||sub)
+      +'</div></a>';
+  }).join('') + '</div>';
+  if (updEl) updEl.textContent = nowKST() + ' 기준';
+}
+
 function renderRankings(rankings) {
-  function renderSteam(items, bodyId, updId) {
-    const bodyEl = $(bodyId), updEl = $(updId);
-    if (!items || !items.length) {
-      bodyEl.innerHTML = '<div class="errbox">데이터 없음</div>';
-      return;
-    }
-    bodyEl.innerHTML = '<div class="tg">' + items.map((it, i) => {
-      const rank = i+1, cls = rank===1?'r1':rank<=3?'r3':'';
-      return '<a class="tr-link" href="'+esc(it.link)+'" target="_blank" rel="noopener">'
-        +'<div class="tr-item">'
-        +'<span class="tr-rank '+cls+'">'+rank+'</span>'
-        +'<span class="tr-kw">'+esc(it.name)+'</span>'
-        +(it.players_2weeks?'<span class="tr-vol">'+Number(it.players_2weeks).toLocaleString()+'</span>':'')
-        +'</div></a>';
-    }).join('') + '</div>';
-    updEl.textContent = nowKST() + ' 기준';
-  }
-
-  function renderMobile(items, bodyId, updId) {
-    const bodyEl = $(bodyId), updEl = $(updId);
-    if (!items || !items.length) {
-      bodyEl.innerHTML = '<div class="errbox">데이터 없음</div>';
-      return;
-    }
-    bodyEl.innerHTML = '<div class="tg">' + items.map((it, i) => {
-      const rank = i+1, cls = rank===1?'r1':rank<=3?'r3':'';
-      return '<a class="tr-link" href="'+esc(it.link)+'" target="_blank" rel="noopener">'
-        +'<div class="tr-item">'
-        +'<span class="tr-rank '+cls+'">'+rank+'</span>'
-        +'<span class="tr-kw">'+esc(it.name)+'</span>'
-        +(it.developer?'<span class="tr-vol" style="font-size:8px">'+esc(it.developer)+'</span>':'')
-        +'</div></a>';
-    }).join('') + '</div>';
-    updEl.textContent = nowKST() + ' 기준';
-  }
-
-  renderSteam(rankings.steam, 'body-steam', 'upd-steam');
-  renderMobile(rankings.appstore, 'body-appstore', 'upd-appstore');
-  renderMobile(rankings.googleplay, 'body-googleplay', 'upd-googleplay');
+  renderRankList(rankings.steam,           'body-steam',          'upd-steam',          null);
+  renderRankList(rankings.gplay_kr,        'body-gplay-kr',       'upd-gplay-kr',       null);
+  renderRankList(rankings.appstore_kr,     'body-appstore-kr',    'upd-appstore-kr',    null);
+  renderRankList(rankings.gplay_global,    'body-gplay-global',   'upd-gplay-global',   null);
+  renderRankList(rankings.appstore_global, 'body-appstore-global','upd-appstore-global',null);
 }
 
 /* ════════════════════════════════════════════════
