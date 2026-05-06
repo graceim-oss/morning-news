@@ -125,34 +125,27 @@ def fetch_gamemeca_top():
             'Accept-Language': 'ko-KR,ko;q=0.9',
             'Referer': 'https://www.gamemeca.com/',
         })
-        # 테이블에서 순위/게임명/링크 파싱
         items = []
-        # tr 태그 안에서 순위와 게임명 추출
-        rows = re.findall(r'<tr[^>]*>([\s\S]*?)<\/tr>', html, re.I)
-        for row in rows:
-            # 순위 숫자
-            rank_m = re.search(r'<td[^>]*>\s*(\d+)\s*(?:<[^>]+>)*\s*</td>', row)
-            # 게임명 링크
-            game_m = re.search(r'href="(https://www\.gamemeca\.com/game\.php\?rts=gmview[^"]+)"[^>]*>([^<]+)<', row)
-            if rank_m and game_m:
-                rank = int(rank_m.group(1))
-                if rank > 30:
-                    continue
-                name = game_m.group(2).strip()
-                link = game_m.group(1).strip()
-                if name and rank:
-                    items.append({'rank': rank, 'name': name, 'link': link})
-
-        # 중복 제거 및 정렬
         seen = set()
-        result = []
-        for item in sorted(items, key=lambda x: x['rank']):
-            if item['name'] not in seen and len(result) < 20:
-                seen.add(item['name'])
-                result.append(item)
+        # 게임명 링크 추출 (gmview 링크)
+        game_links = re.findall(
+            r'href="(https://www\.gamemeca\.com/game\.php\?rts=gmview[^"]+)"[^>]*>([^<
+]+?)</a>',
+            html
+        )
+        # 순위 숫자 추출
+        ranks = re.findall(r'<td[^>]*>\s*(\d+)\s*(?:<span[^>]*>[^<]*</span>)?\s*</td>', html)
 
-        print(f'게임메카 순위 {len(result)}개 수집')
-        return result
+        for i, (link, name) in enumerate(game_links):
+            name = name.strip()
+            rank = int(ranks[i]) if i < len(ranks) else i + 1
+            if name and name not in seen and rank <= 20:
+                seen.add(name)
+                items.append({'rank': rank, 'name': name, 'link': link})
+
+        items.sort(key=lambda x: x['rank'])
+        print(f'게임메카 순위 {len(items)}개 수집')
+        return items[:20]
     except Exception as e:
         print(f'게임메카 순위 오류: {e}')
         return []
