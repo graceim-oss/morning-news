@@ -117,30 +117,32 @@ def fetch_steam_top():
 
 def fetch_gamemeca_top():
     try:
-        html = fetch('https://www.gamemeca.com/ranking.php', headers={
+        import requests as req
+        r = req.get('https://www.gamemeca.com/ranking.php', timeout=15, headers={
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0.0.0',
             'Accept': 'text/html,application/xhtml+xml',
             'Accept-Language': 'ko-KR,ko;q=0.9',
             'Referer': 'https://www.gamemeca.com/',
         })
+        html = r.text
         items = []
         seen = set()
 
-        # 테이블 행 단위로 파싱
-        rows = re.findall(r'<tr[^>]*>([\s\S]*?)</tr>', html, re.I)
-        for row in rows:
-            # 순위 추출
-            rank_m = re.search(r'<td[^>]*>\s*(\d+)\s*(?:<span[^>]*>.*?</span>)?\s*</td>', row, re.I|re.S)
-            # 게임명 링크 추출
-            link_m = re.search(r'href="([^"]*rts=gmview[^"]*)"[^>]*>\s*([^<]+?)\s*</a>', row, re.I)
+        # 순위 + 게임명 패턴: <td>숫자</td> 다음에 gmview 링크
+        # 전체 HTML에서 순위와 gmview 링크를 동시에 찾기
+        # 패턴: | 숫자 | ... | [게임명](gmview링크)
+        rank_game = re.findall(
+            r'<td[^>]*>\s*(\d+)\s*(?:<span[^>]*>[^<]*</span>)?\s*</td>[\s\S]{1,500}?href="([^"]*rts=gmview[^"]*)"[^>]*>\s*([^<
+]+?)\s*</a>',
+            html
+        )
 
-            if rank_m and link_m:
-                rank = int(rank_m.group(1))
-                name = link_m.group(2).strip()
-                link = link_m.group(1).strip()
-                if name and name not in seen and 1 <= rank <= 20:
-                    seen.add(name)
-                    items.append({'rank': rank, 'name': name, 'link': link})
+        for rank_str, link, name in rank_game:
+            rank = int(rank_str)
+            name = name.strip()
+            if name and name not in seen and 1 <= rank <= 20:
+                seen.add(name)
+                items.append({'rank': rank, 'name': name, 'link': link})
 
         items.sort(key=lambda x: x['rank'])
         print('게임메카 순위 ' + str(len(items)) + '개 수집')
