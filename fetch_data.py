@@ -95,7 +95,7 @@ def fetch_gtrend(geo):
         return []
 
 def fetch_steam_top():
-    """Steam 인기 게임 (SteamSpy)"""
+    """Steam 인기 게임 (SteamSpy - 최근 2주 플레이어 기준)"""
     try:
         text = fetch('https://steamspy.com/api.php?request=top100in2weeks', headers={
             'User-Agent': 'Mozilla/5.0',
@@ -116,54 +116,45 @@ def fetch_steam_top():
         print(f'Steam 오류: {e}')
         return []
 
-def fetch_gplay_top(country='kr', lang='ko', chart='TOP_GROSSING'):
-    """Google Play 게임 순위 (gplay-scraper)"""
+def fetch_gamemeca_top():
+    """게임메카 인기 게임 순위 (국내 온라인/모바일 통합)"""
     try:
-        from gplay_scraper import GPlayScraper
-        scraper = GPlayScraper()
-        result = scraper.list_get_fields(
-            collection=chart,
-            category='GAME',
-            fields=['title', 'developer', 'appId', 'score'],
-            count=10,
-            lang=lang,
-            country=country
-        )
+        html = fetch('https://www.gamemeca.com/ranking.php', headers={
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0.0.0',
+            'Accept': 'text/html,application/xhtml+xml',
+            'Accept-Language': 'ko-KR,ko;q=0.9',
+            'Referer': 'https://www.gamemeca.com/',
+        })
+        # 테이블에서 순위/게임명/링크 파싱
         items = []
-        for i, item in enumerate(result or []):
-            items.append({
-                'rank': i + 1,
-                'name': item.get('title', ''),
-                'developer': item.get('developer', ''),
-                'appId': item.get('appId', ''),
-                'score': round(item.get('score', 0), 1),
-                'link': f"https://play.google.com/store/apps/details?id={item.get('appId','')}",
-            })
-        return items
-    except Exception as e:
-        print(f'Google Play 순위 오류 ({country}): {e}')
-        return []
+        # tr 태그 안에서 순위와 게임명 추출
+        rows = re.findall(r'<tr[^>]*>([\s\S]*?)<\/tr>', html, re.I)
+        for row in rows:
+            # 순위 숫자
+            rank_m = re.search(r'<td[^>]*>\s*(\d+)\s*(?:<[^>]+>)*\s*</td>', row)
+            # 게임명 링크
+            game_m = re.search(r'href="(https://www\.gamemeca\.com/game\.php\?rts=gmview[^"]+)"[^>]*>([^<]+)<', row)
+            if rank_m and game_m:
+                rank = int(rank_m.group(1))
+                if rank > 30:
+                    continue
+                name = game_m.group(2).strip()
+                link = game_m.group(1).strip()
+                if name and rank:
+                    items.append({'rank': rank, 'name': name, 'link': link})
 
-def fetch_appstore_top(country='kr', chart='topgrossing'):
-    """App Store 게임 순위 (app-store-scraper)"""
-    try:
-        from app_store_scraper import AppStore
-        # app-store-scraper로 top charts
-        import requests
-        url = f'https://rss.applemarketingtools.com/api/v2/{country}/apps/top-free/10/games.json'
-        r = requests.get(url, timeout=10)
-        d = r.json()
-        items = []
-        for i, entry in enumerate(d.get('feed', {}).get('results', [])[:10]):
-            items.append({
-                'rank': i + 1,
-                'name': entry.get('name', ''),
-                'developer': entry.get('artistName', ''),
-                'link': entry.get('url', ''),
-            })
-        return items
+        # 중복 제거 및 정렬
+        seen = set()
+        result = []
+        for item in sorted(items, key=lambda x: x['rank']):
+            if item['name'] not in seen and len(result) < 20:
+                seen.add(item['name'])
+                result.append(item)
+
+        print(f'게임메카 순위 {len(result)}개 수집')
+        return result
     except Exception as e:
-        print(f'App Store 순위 오류 ({country}): {e}')
+        print(f'게임메카 순위 오류: {e}')
         return []
 
 def main():
@@ -192,11 +183,8 @@ def main():
 
     print('게임 순위 수집 중...')
     rankings = {
-        'steam':           fetch_steam_top(),
-        'gplay_kr':        fetch_gplay_top('kr', 'ko', 'TOP_GROSSING'),
-        'gplay_global':    fetch_gplay_top('us', 'en', 'TOP_GROSSING'),
-        'appstore_kr':     fetch_appstore_top('kr'),
-        'appstore_global': fetch_appstore_top('us'),
+        'steam':     fetch_steam_top(),
+        'gamemeca':  fetch_gamemeca_top(),
     }
 
     data = {
@@ -211,8 +199,8 @@ def main():
         json.dump(data, f, ensure_ascii=False, indent=2)
 
     print(f'완료!')
-    for k, v in rankings.items():
-        print(f'  {k}: {len(v)}개')
+    print(f'  Steam: {len(rankings["steam"])}개')
+    print(f'  게임메카: {len(rankings["gamemeca"])}개')
 
 if __name__ == '__main__':
     main()
