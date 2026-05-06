@@ -1,25 +1,25 @@
 {
-  "updated": "14:26:04",
+  "updated": "14:33:20",
   "stocks": {
     "wemade": {
-      "price": "23,750",
-      "change": "650",
-      "ratio": "2.66",
+      "price": "23,700",
+      "change": "700",
+      "ratio": "2.87",
       "dir": "FALLING",
       "isOpen": true,
       "sign": "-"
     },
     "wemade_max": {
-      "price": "5,520",
-      "change": "240",
-      "ratio": "4.17",
+      "price": "5,530",
+      "change": "230",
+      "ratio": "3.99",
       "dir": "FALLING",
       "isOpen": true,
       "sign": "-"
     },
     "wemix": {
-      "krw": 353.48,
-      "chg24h": -1.024059243015491,
+      "krw": 353.56,
+      "chg24h": -1.081270643441645,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -131,12 +131,6 @@
         "published": "Wed, 06 May 2026 04:59:25 GMT"
       },
       {
-        "title": "Midnight (NIGHT) 가격, 차트, 시가총액 | 코인마켓캡 - CoinMarketCap",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5HbXVLbldwRWR6VWhCVmhnYXJJbll4NHBKektPNDYxYjdNSlg1eEFiR3pmNVdaNmNjNmxkM1ZVN1JEZTJPTWhTbllnY21pTVRwV2l1Vy10ZVVkcTh0YkJaZVlWbzRtSkhT?oc=5",
-        "source": "CoinMarketCap",
-        "published": "Wed, 06 May 2026 02:11:49 GMT"
-      },
-      {
         "title": "[단독]'청담동 주식부자' 주식·코인 전혀 없다…다 어디로? - 노컷뉴스",
         "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5zOXBxeWhCdEdnc2IzNFZjcWJaOVlXZmdBMXdSc0xaR1FvV1pjaHFTLXM3UEltdTcxN1F6VW9FTUhWbmFJMG9yMTZ4YmhDR2VfMXc?oc=5",
         "source": "노컷뉴스",
@@ -147,15 +141,15 @@
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5oZ2RvYU9EdkIzZkxrbUE3Rl9XNERmenBuVEdzUUVpaUZpY01CWE0yUHl4OXJleUVlRnpTVU1ZUk5xVlo0YnVPQTRhOXhGSXVlN295V0tjR3ZNbkk?oc=5",
         "source": "KBS 뉴스",
         "published": "Wed, 06 May 2026 03:22:00 GMT"
+      },
+      {
+        "title": "[07:49 가상자산] 비트코인, 클래리티 액트 통과 기대감에 상승 - 신아일보",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE85UzZUa2stQkJ6bHozTnJGb3gyVDRlMGJMZm1vYVZXcVlWVjhHdkEwSmdSb2dOYjZ4NFJSVGw0eHhyVDgxOEl1bFVaSzBGV3h4M3pEcGxtWkNMYlRQbTBQR1NBUWlwc1RGTDZvNjFLUm8?oc=5",
+        "source": "신아일보",
+        "published": "Tue, 05 May 2026 22:55:49 GMT"
       }
     ],
     "marketing": [
-      {
-        "title": "유니콘 스타트업의 결정적 순간 - 디자인플러스",
-        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5vanVKTXl6RExnakhsNmxyeUx0LXVjbUZCa0k0Xy1ZYUtxQmRNRl85blh0dlE5eGsyX1Zzams4WEZMQ1BuTjNJR204bkE?oc=5",
-        "source": "디자인플러스",
-        "published": "Tue, 30 Sep 2025 07:00:00 GMT"
-      },
       {
         "title": "2026년 1월 트렌드 미디어 리포트 - 오픈애즈",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBwaEVKUW12T1I1WjdQQXVwZHNiUTBVVVctTHJSQlEyNEFZOG96ZVlBNTU0SFNBSXNleFlwcWp4THdiMGlrNXNIUmhRM3Q0OTNVZzJuRHgwYWc0aDBERjdJT2U3Yk1ZLXU1?oc=5",
@@ -175,12 +169,6 @@
         "published": "Wed, 04 Jun 2025 07:00:00 GMT"
       },
       {
-        "title": "서기석 CMO는 누구인가? - 브런치",
-        "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9zWHdoekc1VmZreDVPbnQxZEVpVGtILW9kSTl0TmpjTlJHcXNEWHpQTFhSUmdTdlVaa09pMXV4NmhZZEpxVno4MEt3?oc=5",
-        "source": "브런치",
-        "published": "Wed, 03 Sep 2025 23:53:40 GMT"
-      },
-      {
         "title": "🎄 일 잘하는 브랜드의 연말 마케팅 성공사례.zip - 오픈애즈",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4wMlk1aXBReC0wYllWS1FyZTc5NUE5ZkFJU09ibkx6MllWdWZNc0RQQml4X09XNTE4U19wamdsSFdwRkdZNS14eXF2eWN6NHhkM2t4a2haV2FybGtpd0lLd3dSOFUtRUNk?oc=5",
         "source": "오픈애즈",
@@ -191,6 +179,12 @@
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAtd1VoSjJBNE4wSll0a0VYM3JTX2h3dWVhYzg3RXhoX0NacEpFTHJSRG5BQVlFZS1SVDBPSTMxNGNXREV2VjlHT21hNDFFSTBtZDBEZFZSdDgyMklHTnRPYkpvRzBhWHpUd1VsbnBB0gFyQVVfeXFMTVhpdmk4SHUzQk9fWmxMQ1BFdFZSM3F5TDIzT0t2Z2hjMFAyTlRaQ1d4OUl2N1JOeTBFOERnUVFZWkpERzlCc2tFNUd1LVZsdy05R1BFZmlDU3o5YktyQl8wa1J3aUNxN0xKSGFjUUpjakp3?oc=5",
         "source": "소비자평가",
         "published": "Mon, 06 Jan 2025 08:00:00 GMT"
+      },
+      {
+        "title": "유니콘 스타트업의 결정적 순간 - 디자인플러스",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5vanVKTXl6RExnakhsNmxyeUx0LXVjbUZCa0k0Xy1ZYUtxQmRNRl85blh0dlE5eGsyX1Zzams4WEZMQ1BuTjNJR204bkE?oc=5",
+        "source": "디자인플러스",
+        "published": "Tue, 30 Sep 2025 07:00:00 GMT"
       },
       {
         "title": "진짜 바이럴? 꾸미지 말고 소비자에 맡겨라!… 마케터들이 꼭 알아야 할 소셜미디어 전략 - 브랜드브리프",
@@ -209,6 +203,12 @@
         "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5jd29tYmNldzlRb2VlOERjS3Z3QWd6bUk3Zjh1c09XNTZzdzlFRC1zT1h5WVdSeWh6eEwyX1NCVVB2aXBaMEc5NA?oc=5",
         "source": "플래텀(Platum)",
         "published": "Wed, 11 Jan 2023 08:00:00 GMT"
+      },
+      {
+        "title": "관점 24 : 틱톡·토스·코카-콜라, 잘파 마케팅 트렌드를 말하다 - 롱블랙 LongBlack",
+        "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1jWG9uZU5jblRWbEdHYWlfamVBTVNLX004cXc0bkdRRkpmM3JhWC1xMVNoNUd5YWNUa05tNHRBRHp5MzQ?oc=5",
+        "source": "롱블랙 LongBlack",
+        "published": "Tue, 19 Dec 2023 08:00:00 GMT"
       }
     ],
     "brand_global": [
@@ -277,6 +277,22 @@
   "trends": {
     "kr": [
       {
+        "title": "에이 비엘 바이오",
+        "vol": "500+"
+      },
+      {
+        "title": "하하",
+        "vol": "200+"
+      },
+      {
+        "title": "풍력 발전",
+        "vol": "100+"
+      },
+      {
+        "title": "삼성물산",
+        "vol": "100+"
+      },
+      {
         "title": "지수",
         "vol": "2000+"
       },
@@ -299,22 +315,6 @@
       {
         "title": "키움 히어로즈",
         "vol": "200+"
-      },
-      {
-        "title": "양도소득세",
-        "vol": "500+"
-      },
-      {
-        "title": "2026 한일가왕전",
-        "vol": "200+"
-      },
-      {
-        "title": "이동 통신",
-        "vol": "200+"
-      },
-      {
-        "title": "효성중공업 주가",
-        "vol": "100+"
       }
     ],
     "global": [
@@ -323,15 +323,15 @@
         "vol": "200+"
       },
       {
+        "title": "meg stalter",
+        "vol": "500+"
+      },
+      {
         "title": "walt frazier",
         "vol": "500+"
       },
       {
         "title": "popeyes chicken wraps permanent menu",
-        "vol": "200+"
-      },
-      {
-        "title": "meg stalter",
         "vol": "200+"
       },
       {
@@ -348,7 +348,7 @@
       },
       {
         "title": "mariners game today",
-        "vol": "1000+"
+        "vol": "500+"
       },
       {
         "title": "eta aquarid meteor shower",
