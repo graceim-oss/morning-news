@@ -128,11 +128,8 @@ def fetch_gamemeca_top():
         items = []
         seen = set()
         # 게임명 링크 추출 (gmview 링크)
-        game_links = re.findall(
-            r'href="(https://www\.gamemeca\.com/game\.php\?rts=gmview[^"]+)"[^>]*>([^<
-]+?)</a>',
-            html
-        )
+        pattern = 'href="(https://www.gamemeca.com/game.php?rts=gmview[^"]+)"[^>]*>([^<]+?)</a>'
+        game_links = re.findall(pattern, html)
         # 순위 숫자 추출
         ranks = re.findall(r'<td[^>]*>\s*(\d+)\s*(?:<span[^>]*>[^<]*</span>)?\s*</td>', html)
 
@@ -163,9 +160,19 @@ def main():
 
     print('뉴스 수집 중...')
     news = {
-        'wemade':     fetch_news('위메이드 OR 위믹스 OR WEMIX'),
-        'blockchain': fetch_news('블록체인 OR 가상자산 OR NFT OR Web3'),
-        'marketing':  fetch_news('브랜딩 OR 마케팅트렌드 OR 디지털마케팅'),
+        'wemade':     fetch_news('위메이드 OR 위믹스 OR WEMIX OR "레전드 오브 이미르" OR "나이트 크로우"'),
+        'blockchain': fetch_news('블록체인 OR 가상자산 OR NFT OR Web3 OR 코인 OR 스테이블코인'),
+        'marketing':  fetch_news(
+            '토스 브랜딩 OR 카카오 브랜딩 OR 배달의민족 마케팅 OR 쿠팡 마케팅 OR '
+            '무신사 브랜딩 OR 올리브영 마케팅 OR 브랜드 리뉴얼 OR 브랜드 캠페인 OR '
+            '마케팅 인사이트 OR 디자인 트렌드 OR 패션 트렌드 OR SNS 마케팅 OR '
+            'MZ 마케팅 OR 퍼포먼스마케팅 OR 콘텐츠마케팅'
+        ),
+        'brand_global': fetch_news(
+            'brand strategy OR brand campaign OR brand design OR '
+            'marketing trend 2026 OR Nike campaign OR Apple marketing OR '
+            'global brand OR luxury brand OR brand identity'
+        ),
     }
 
     print('트렌드 수집 중...')
