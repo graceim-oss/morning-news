@@ -1,5 +1,5 @@
 {
-  "updated": "17:26:10",
+  "updated": "17:50:23",
   "stocks": {
     "wemade": {
       "price": "23,700",
@@ -18,8 +18,8 @@
       "sign": "-"
     },
     "wemix": {
-      "krw": 353.44,
-      "chg24h": -0.6238337279590248,
+      "krw": 352.76,
+      "chg24h": -0.7067797323360822,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -33,16 +33,16 @@
         "published": "Wed, 06 May 2026 02:36:27 GMT"
       },
       {
-        "title": "3주년 맞은 위메이드맥스 '나이트 크로우', 7500억 매출 달성 - v.daum.net",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1qY3JPWnR1S2FSY0FleWw0N1NaMzZLeUd3OHlYOTJDdjRXVVVIb2RJdjFCVGt4TW5ldXlyaENhUlJ1Zm5fZHFLTjN6ME5FNGs?oc=5",
-        "source": "v.daum.net",
-        "published": "Mon, 13 Apr 2026 07:00:00 GMT"
-      },
-      {
         "title": "위메이드 '미르의 전설3', 쾌속 성장 가능한 ‘2026 몽환서버’ 이벤트 실시 - 창업일보",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBJdkNoLXFlMnF2d1hyVmpLS0tuQU9VY1QyZTNQZmZEM1hpZHMtZ082YXplMzBUdFJyQUh2QW10dGllNTZMN1lsa1RUYkdHcENzWHBDYnhudmdsalZkbG1GeDRrYzBKbHBP?oc=5",
         "source": "창업일보",
         "published": "Wed, 06 May 2026 05:11:18 GMT"
+      },
+      {
+        "title": "3주년 맞은 위메이드맥스 '나이트 크로우', 7500억 매출 달성 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1qY3JPWnR1S2FSY0FleWw0N1NaMzZLeUd3OHlYOTJDdjRXVVVIb2RJdjFCVGt4TW5ldXlyaENhUlJ1Zm5fZHFLTjN6ME5FNGs?oc=5",
+        "source": "v.daum.net",
+        "published": "Mon, 13 Apr 2026 07:00:00 GMT"
       },
       {
         "title": "위메이드 '미르의 전설3' 몽환서버 5주로 확대… 신규 아이템 '기령' 첫 공개 - ER 이코노믹리뷰",
@@ -57,16 +57,16 @@
         "published": "Wed, 06 May 2026 05:37:34 GMT"
       },
       {
-        "title": "위메이드 '미르의 전설3', 고속 성장 지원 '2026 몽환서버' 이벤트 진행 - 게임포커스",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5aM1JuTVZtdm1nZTd6cmZHNjJ3TGl3YlA1SkMxd1JuSnBxSEN6U1Y2aXplbjRsNVJ5a3ctNWYtWmMycWlCSnY4WXN4MEt0QlZGYjRpMG5jbUtoN0lOS3lDVw?oc=5",
-        "source": "게임포커스",
-        "published": "Wed, 06 May 2026 06:22:22 GMT"
-      },
-      {
         "title": "위메이드 '미르의 전설3' '2026 몽환서버' 이벤트 실시 - 로이슈",
         "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1waUNUcjhWenBGQkFvVDI4Tlg2UjZvUl9UMm5aNFN2dnBacl9ycHg4VC1MUHZDaHlXZkVoNW9sdFpVazRaWGQ4TlhuTFNEQXdvdTZGTms5Wk5lZG5sNE1NMmhLQU5FSFctU1FTNjFIRmdMZlpCRUhwVll3?oc=5",
         "source": "로이슈",
         "published": "Wed, 06 May 2026 07:59:33 GMT"
+      },
+      {
+        "title": "위메이드 '미르의 전설3', 고속 성장 지원 '2026 몽환서버' 이벤트 진행 - 게임포커스",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5aM1JuTVZtdm1nZTd6cmZHNjJ3TGl3YlA1SkMxd1JuSnBxSEN6U1Y2aXplbjRsNVJ5a3ctNWYtWmMycWlCSnY4WXN4MEt0QlZGYjRpMG5jbUtoN0lOS3lDVw?oc=5",
+        "source": "게임포커스",
+        "published": "Wed, 06 May 2026 06:22:22 GMT"
       },
       {
         "title": "블록체인 게임 해외 흥행…위메이드 그룹株 강세 [핫종목] - 뉴스1",
@@ -95,6 +95,12 @@
         "published": "Wed, 06 May 2026 00:42:03 GMT"
       },
       {
+        "title": "두나무, 자체 블록체인 '기와'로 금융 인프라 선점 전략 - 디일렉",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE04REpTTlNVVnlVSXJPNGMyRllBMzI0VFJHVmkwMmxfY1FtM0c4eHVFM1NKdVFrUjlIN0pidzYweDc3NXZsV2lnNnRYbkNSSkNCZHNURUpQYlhUdUJrb1pJY2daQnkwQQ?oc=5",
+        "source": "디일렉",
+        "published": "Wed, 06 May 2026 08:02:45 GMT"
+      },
+      {
         "title": "BIS 연구진 \"스테이블코인 달러 패권 압도적…신흥국 통화 주권 잠식 우려\" - 조선일보",
         "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObFlmQ2QzOTlKX3lMVlJ1M2tETlFnQlZsa0RYRmVudXFrT3ZUaXQ4T0dFaUUtc25vTFBlYlp5ZkpvMTJPVWFidXBwNkRJUjctNEo2Yks4ZEF4Q2E5OEM4MDhYaVdURFZseGVGaFM2UmtmNWREcllzQ3BoZXJsVFV0eExGZ0dlVTR0YmZGM1NR?oc=5",
         "source": "조선일보",
@@ -107,16 +113,16 @@
         "published": "Wed, 06 May 2026 02:04:57 GMT"
       },
       {
-        "title": "두나무, 자체 블록체인 '기와'로 금융 인프라 선점 전략 - 디일렉",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE04REpTTlNVVnlVSXJPNGMyRllBMzI0VFJHVmkwMmxfY1FtM0c4eHVFM1NKdVFrUjlIN0pidzYweDc3NXZsV2lnNnRYbkNSSkNCZHNURUpQYlhUdUJrb1pJY2daQnkwQQ?oc=5",
-        "source": "디일렉",
-        "published": "Wed, 06 May 2026 08:02:45 GMT"
-      },
-      {
         "title": "\"증권시장도 블록체인으로 간다\"…삼성SDS, 디지털 자산 인프라 선점 - 폴리뉴스 Polinews",
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE54c25tbnNUSTZvRnFaRWlPbzBQODR2enNkdHdQMEdmbkxHYlZoMlFiUUQ3OWZ1LTdRXzg1eHBUTFJNNjRiQlV6WElYS1FoMWlaVVJRTzJ0ZlhWZWJTVjNLQUVIcDJuMnlXcWlGUENB0gFyQVVfeXFMTzN5X09YV0ZwMmg5NG1DbndFUjkyblJwdUg3TEg1Um5YTkJieG5BWDFGS1hmRUQ3OTdBODQwNVh2aHlFWmVUdERvNkFhRXZPTDVqbWg0Y1g2d3ZUWU1STnBoa0pNaWtnNXRuVklCaTZ3Qy1n?oc=5",
         "source": "폴리뉴스 Polinews",
         "published": "Wed, 06 May 2026 06:42:00 GMT"
+      },
+      {
+        "title": "비트코인 석 달만에 1억2000만원 넘어 - 한국경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XUlF1Z3pQcFByNUdDS2hvQmV2WWJwc2JmbnRLcm5YUDVDcjgyamZIRHRKUm8xdDM3M3BSMTlHOVgySk9xSkJQTEdlcXdUVE1LbWQtUDd3Z3VCQdIBVEFVX3lxTE11b3U4eDdiUnlPeFhaYzB3aWoxZ05FRVY3UVR6Q280UkdsOGllUXF3YWJkN2pDQnFiQWRKLVYxWnZtcVVUMlNsd1A0RFg3R0dOc1FQag?oc=5",
+        "source": "한국경제",
+        "published": "Wed, 06 May 2026 08:31:58 GMT"
       },
       {
         "title": "\"비트코인 무조건 보유\" 스트래티지가 변했다…필요시 매도 [비트코인 지금] - 아시아경제",
@@ -125,22 +131,16 @@
         "published": "Wed, 06 May 2026 05:43:58 GMT"
       },
       {
-        "title": "지난주 가상자산 투자상품 1.2억달러 유입…비트코인 8만달러[코인브리핑] - 뉴스1",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5jcTZtSXpVb1F0LWlST2hxSDVfa0VZcWlial8ySjFBSktTR1BGWFQ5c3o4U0toT2lWQU5CWWdIOTlrR3NSdkRuZnNPYUoza0xEYm0xTU9MZHpaWVBORjY1eW9wNWVhUQ?oc=5",
-        "source": "뉴스1",
-        "published": "Wed, 06 May 2026 01:08:02 GMT"
-      },
-      {
         "title": "미국, 스테이블코인 보상 기준 구체화…국내는 제자리걸음 - 뉴스토마토",
         "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3S3BrUGVJTEcweXJuLS0wbVhJNVZSU21MOFBpV29XNkJNZU1xajBQZzNleU1EdzVxSTU1UktDd2tpRHFMSkxHT1BSRTZJc3hwUXd4QzN6SmdoQ3JienVkNw?oc=5",
         "source": "뉴스토마토",
         "published": "Wed, 06 May 2026 07:05:30 GMT"
       },
       {
-        "title": "기관 자금 유입에 반등하는 비트코인…중동 리스크가 변수 - 한국경제",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4xU3NObWo1QVpFY3plNlF5R0JvdUVIelc4RE1RZHpkWU1xR2RScER3ZE1sa2treHM4cTRqMldaT3hVcDlmalV0ZkMweWMtUERYRGE3Sl9ramViZ9IBVEFVX3lxTE5XLThJeW1DSkFCVEt6T1hYTi1JSHIxVjdBSXd6M2R5UUVLLVl0TzlidXN2VXZxblZJb0w0NVl4clNXVDM2NUJJZ3hNOFhaaHYzck5FQQ?oc=5",
-        "source": "한국경제",
-        "published": "Wed, 06 May 2026 07:43:16 GMT"
+        "title": "지난주 가상자산 투자상품 1.2억달러 유입…비트코인 8만달러[코인브리핑] - 뉴스1",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5jcTZtSXpVb1F0LWlST2hxSDVfa0VZcWlial8ySjFBSktTR1BGWFQ5c3o4U0toT2lWQU5CWWdIOTlrR3NSdkRuZnNPYUoza0xEYm0xTU9MZHpaWVBORjY1eW9wNWVhUQ?oc=5",
+        "source": "뉴스1",
+        "published": "Wed, 06 May 2026 01:08:02 GMT"
       },
       {
         "title": "방한 외국인, 환전 없이 가상자산으로 결제한다 - 전자신문",
@@ -199,16 +199,16 @@
         "published": "Fri, 08 Aug 2025 07:00:00 GMT"
       },
       {
-        "title": "업무하다가 막힐 때 들여다보는 계정들 공유드려요 - 마케팅 - 정보공유 - 아이보스",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxd1Zxak1uWTJNZEhsNFZreTdjXzlWOERsNTNmNERLd3QwVDN5RmNCM2FoZ1hIaDNwLWZDNkR5MzFXZUZpblVtR2h5OE8tNGM?oc=5",
-        "source": "아이보스",
-        "published": "Mon, 13 Apr 2026 07:00:00 GMT"
-      },
-      {
         "title": "브랜딩 다음은 마케팅, 마케팅 전략으로 브랜드 포지셔닝에 성공하기 - 플래텀(Platum)",
         "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5jd29tYmNldzlRb2VlOERjS3Z3QWd6bUk3Zjh1c09XNTZzdzlFRC1zT1h5WVdSeWh6eEwyX1NCVVB2aXBaMEc5NA?oc=5",
         "source": "플래텀(Platum)",
         "published": "Wed, 11 Jan 2023 08:00:00 GMT"
+      },
+      {
+        "title": "업무하다가 막힐 때 들여다보는 계정들 공유드려요 - 마케팅 - 정보공유 - 아이보스",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxd1Zxak1uWTJNZEhsNFZreTdjXzlWOERsNTNmNERLd3QwVDN5RmNCM2FoZ1hIaDNwLWZDNkR5MzFXZUZpblVtR2h5OE8tNGM?oc=5",
+        "source": "아이보스",
+        "published": "Mon, 13 Apr 2026 07:00:00 GMT"
       }
     ],
     "brand_global": [
@@ -277,8 +277,24 @@
   "trends": {
     "kr": [
       {
-        "title": "계부",
+        "title": "피고인",
         "vol": "200+"
+      },
+      {
+        "title": "두산퓨얼셀",
+        "vol": "100+"
+      },
+      {
+        "title": "해상 풍력 발전",
+        "vol": "500+"
+      },
+      {
+        "title": "신영철",
+        "vol": "100+"
+      },
+      {
+        "title": "계부",
+        "vol": "500+"
       },
       {
         "title": "정현수",
@@ -289,38 +305,30 @@
         "vol": "100+"
       },
       {
-        "title": "뮤지컬",
-        "vol": "200+"
-      },
-      {
         "title": "뷰노",
         "vol": "100+"
       },
       {
+        "title": "뮤지컬",
+        "vol": "200+"
+      },
+      {
         "title": "의장",
         "vol": "100+"
-      },
-      {
-        "title": "테슬라 모델 3",
-        "vol": "500+"
-      },
-      {
-        "title": "프로젝트 프리덤",
-        "vol": "200+"
-      },
-      {
-        "title": "농지",
-        "vol": "5000+"
-      },
-      {
-        "title": "보스턴다이내믹스",
-        "vol": "200+"
       }
     ],
     "global": [
       {
-        "title": "eta aquarids meteor shower",
-        "vol": "2000+"
+        "title": "home prices",
+        "vol": "100+"
+      },
+      {
+        "title": "费高云",
+        "vol": "200+"
+      },
+      {
+        "title": "bobby wagner utah state speaker",
+        "vol": "20000+"
       },
       {
         "title": "max holloway",
@@ -335,12 +343,12 @@
         "vol": "100+"
       },
       {
-        "title": "iphone 16 pro",
-        "vol": "500+"
-      },
-      {
         "title": "matt rife",
         "vol": "200+"
+      },
+      {
+        "title": "iphone 16 pro",
+        "vol": "500+"
       },
       {
         "title": "caro claire burke",
@@ -349,14 +357,6 @@
       {
         "title": "oregon state baseball",
         "vol": "500+"
-      },
-      {
-        "title": "apple siri ai lawsuit settlement",
-        "vol": "2000+"
-      },
-      {
-        "title": "yosemite national park",
-        "vol": "200+"
       }
     ]
   },
@@ -558,6 +558,5 @@
       }
     ],
     "appstore_kr": []
-  },
-  "_v": 2
+  }
 }
