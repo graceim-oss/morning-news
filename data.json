@@ -1,5 +1,5 @@
 {
-  "updated": "14:13:23",
+  "updated": "14:19:17",
   "stocks": {
     "wemade": {
       "price": "23,750",
@@ -18,8 +18,8 @@
       "sign": "-"
     },
     "wemix": {
-      "krw": 352.95,
-      "chg24h": -1.0729321146683766,
+      "krw": 353.48,
+      "chg24h": -0.9467038148366722,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -37,6 +37,12 @@
         "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1qY3JPWnR1S2FSY0FleWw0N1NaMzZLeUd3OHlYOTJDdjRXVVVIb2RJdjFCVGt4TW5ldXlyaENhUlJ1Zm5fZHFLTjN6ME5FNGs?oc=5",
         "source": "v.daum.net",
         "published": "Mon, 13 Apr 2026 07:00:00 GMT"
+      },
+      {
+        "title": "위메이드 '미르의 전설3', 쾌속 성장 가능한 ‘2026 몽환서버’ 이벤트 실시 - 창업일보",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBJdkNoLXFlMnF2d1hyVmpLS0tuQU9VY1QyZTNQZmZEM1hpZHMtZ082YXplMzBUdFJyQUh2QW10dGllNTZMN1lsa1RUYkdHcENzWHBDYnhudmdsalZkbG1GeDRrYzBKbHBP?oc=5",
+        "source": "창업일보",
+        "published": "Wed, 06 May 2026 05:11:18 GMT"
       },
       {
         "title": "위메이드맥스 최대주주 위메이드, 위메이드맥스 주식등의 수 141만424주 감소…총 지분율 72.37% - 디지털투데이",
@@ -79,12 +85,6 @@
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9tUkkyaXNkMlhMNmdYMmtyYlhDWTI4dEJfcm1feGg3N19XcmlIdVViU1c4am11VFZQb2lXSE15Y3ptVXltWFpGZ09IbXc4QU1IckVEc3NaNjhLeHFFX0hBQS01N1JfeHJzcTZYNTZn?oc=5",
         "source": "더스쿠프",
         "published": "Wed, 11 Feb 2026 08:00:00 GMT"
-      },
-      {
-        "title": "위믹스 재단 공식 입장 발표, \"나이트크로우 2 연내 위믹스에서 블록체인으로 출시\" - 네이버 프리미엄콘텐츠",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQME93LXBqR3ZDUm1CUV8zTkhmZGUzRmZmX3VabFdLMTlpMTFGRW1yN2hIUzUwNUtUUE80Q3dhYUdDVGo1T2Y4cmtiMGNYUnUtWGxZOUVuSmpmNVJUWVhrVnNHZkt5dkp5dFNFbjlJOUFRMVlPU1NxajJXaG1RYVAxTTRfNA?oc=5",
-        "source": "네이버 프리미엄콘텐츠",
-        "published": "Sat, 02 May 2026 03:02:00 GMT"
       }
     ],
     "blockchain": [
@@ -205,10 +205,10 @@
         "published": "Thu, 02 Apr 2026 07:00:00 GMT"
       },
       {
-        "title": "[트렌드로 읽는 소비문화] 여전히 종이에 필기하시는 분 없나요 - mobiinside.co.kr",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE15RDVlMWh3dFZOUUl3bm1wWTJIa1d6dTY5QVk5QzBiN3FTYTlFcTQ0cXlNT2QwSVNna2tDMC1fRGxMbURIb2hRQ1drSWJNRmlIeWNaOWJXeGVOR2dLQWcwQVdIM2Nja2ltUjJF?oc=5",
-        "source": "mobiinside.co.kr",
-        "published": "Thu, 27 Feb 2025 08:00:00 GMT"
+        "title": "‘2026 서울 인디뷰티쇼’ 3월 26일 개막... 146개사 참여, B2B 프로그램 진행 - 코스인코리아닷컴",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE95amFkV0I1VC0wZ2lBSHpKTjhLOGRhTkZtQ1VaMWhsekpSWVV0dnUwdTBFWDBTR09HWWZhWXg5NGE4VlJMc3ItcG1fYXRmczBzWDJUaVNJNmU0aTZ0TDlsNWEwSQ?oc=5",
+        "source": "코스인코리아닷컴",
+        "published": "Mon, 23 Mar 2026 07:00:00 GMT"
       }
     ],
     "brand_global": [
@@ -280,7 +280,7 @@
       },
       {
         "title": "베이비붐",
-        "vol": "1000+"
+        "vol": "2000+"
       },
       {
         "title": "한온시스템",
