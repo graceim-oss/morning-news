@@ -214,7 +214,9 @@ def main():
 
     print('완료!')
     print('  Steam: ' + str(len(rankings['steam'])) + '개')
-    print('  게임메카: ' + str(len(rankings['gamemeca'])) + '개')
+    print('  게임트릭스: ' + str(len(rankings['gametrics'])) + '개')
+    print('  Google Play KR: ' + str(len(rankings['gplay_kr'])) + '개')
+    print('  App Store KR: ' + str(len(rankings['appstore_kr'])) + '개')
     print('  뉴스-마케팅: ' + str(len(news['marketing'])) + '개')
     print('  뉴스-글로벌브랜드: ' + str(len(news['brand_global'])) + '개')
 
