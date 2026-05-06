@@ -1,5 +1,5 @@
 {
-  "updated": "18:43:32",
+  "updated": "01:16:14",
   "stocks": {
     "wemade": {
       "price": "23,700",
@@ -18,14 +18,20 @@
       "sign": "-"
     },
     "wemix": {
-      "krw": 349.34,
-      "chg24h": -0.9607911388189712,
+      "krw": 350.37,
+      "chg24h": -0.9256425031735783,
       "dir": "FALLING",
       "sign": "-"
     }
   },
   "news": {
     "wemade": [
+      {
+        "title": "3주년 맞은 위메이드맥스 '나이트 크로우', 7500억 매출 달성 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1qY3JPWnR1S2FSY0FleWw0N1NaMzZLeUd3OHlYOTJDdjRXVVVIb2RJdjFCVGt4TW5ldXlyaENhUlJ1Zm5fZHFLTjN6ME5FNGs?oc=5",
+        "source": "v.daum.net",
+        "published": "Mon, 13 Apr 2026 07:00:00 GMT"
+      },
       {
         "title": "위메이드 미르의 전설3, '2026 몽환서버' 이벤트 진행 - 뉴스후플러스",
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB1OTI2WDktaGFqQjNjT0VKSjB6ZVEyZU9KZGtoNTJzNDdZUXBOcGdhM0wteTk0N2s3blpoOXhyUllBalVIVlR3NkFFWFBRWWhQTVNjWkFyZ2VHMHpwUGtlZFFNdXp1Qmw1cl9XWjhB?oc=5",
@@ -39,16 +45,16 @@
         "published": "Wed, 06 May 2026 02:36:27 GMT"
       },
       {
+        "title": "블록체인 게임 해외 흥행…위메이드 그룹株 강세 [핫종목] - 뉴스1",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBiakVYZVgyLW5aVWVJdmhBb19IdklQZ1hjeXlkVGc5SWpwMmdDY0FKaExkUmpVZnhIYl9iazA5YmFNN0JwNXRITEJ6RE5qZzJQQy11TkZ0ZFVRUC1VVHpn?oc=5",
+        "source": "뉴스1",
+        "published": "Mon, 20 Apr 2026 07:00:00 GMT"
+      },
+      {
         "title": "위메이드, ‘미르의 전설3’ 몽환서버 이벤트 진행 - 주간한국",
         "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB4NjRQRWt6VzdFWENCZkwtVWxKMnAyLWpaNjNmZnRHU3pHN3RmbDdKd1M1dG9jNktIUERfcWF0QUVyQjlFOGpKZUYxX1RMV0M2QWhhRVBwTmhtdlFjQWo2SXRjNVFWU2pfbFRmbjVkcEzSAXRBVV95cUxPcGVoX1VHUFBMUC00RDRHSVVfZnYxWktaNTZaaFcwYjRnQTVMa29IWmlpTVVSbEJSWF9QcU85YlFBbE1UWUZBU0w4Z1d2bHVCZ1hqN3VfWVFjSVpuaTR4MHpKOGJkWmdEV0VnMlYwT1c0OF9UWA?oc=5",
         "source": "주간한국",
         "published": "Wed, 06 May 2026 05:16:41 GMT"
-      },
-      {
-        "title": "3주년 맞은 위메이드맥스 '나이트 크로우', 7500억 매출 달성 - v.daum.net",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1qY3JPWnR1S2FSY0FleWw0N1NaMzZLeUd3OHlYOTJDdjRXVVVIb2RJdjFCVGt4TW5ldXlyaENhUlJ1Zm5fZHFLTjN6ME5FNGs?oc=5",
-        "source": "v.daum.net",
-        "published": "Mon, 13 Apr 2026 07:00:00 GMT"
       },
       {
         "title": "위메이드 '미르의 전설3', 쾌속 성장 가능한 ‘2026 몽환서버’ 이벤트 실시 - 창업일보",
@@ -75,24 +81,24 @@
         "published": "Wed, 06 May 2026 05:37:34 GMT"
       },
       {
-        "title": "블록체인 게임 해외 흥행…위메이드 그룹株 강세 [핫종목] - 뉴스1",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBiakVYZVgyLW5aVWVJdmhBb19IdklQZ1hjeXlkVGc5SWpwMmdDY0FKaExkUmpVZnhIYl9iazA5YmFNN0JwNXRITEJ6RE5qZzJQQy11TkZ0ZFVRUC1VVHpn?oc=5",
-        "source": "뉴스1",
-        "published": "Mon, 20 Apr 2026 07:00:00 GMT"
-      },
-      {
-        "title": "\"결국 승부구는 미르\" 위메이드 〈미르의전설3〉, 몽환서버 개막 - 글로벌E",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBFX2dMMllINVpSdU5EZDdQSGtNc2NoUmI4cWFqcHlwWG9vVXFWMUk4cTkxRVAtQ2Q4WndlRTRUaVNWRHV5THFfTlVlVFhNNHZQLWxUdnZ5RmI3b3RHN1c0WHAwS1VHVkhYd1dZ?oc=5",
-        "source": "글로벌E",
-        "published": "Wed, 06 May 2026 06:06:18 GMT"
+        "title": "위메이드맥스 최대주주 위메이드, 위메이드맥스 주식등의 수 141만424주 감소…총 지분율 72.37% - 디지털투데이",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBaSVhpdjM0Z2JzWFBYY3JtdHU2cHNtWU9iM1BlYzJ2UnFJWG1hR0gtWVRUQXcwc1dZNEdXQ0M4RG04SDY2U2ZPbVc4WVFGVHJvWXExTFFQM3RxdkJnWFRsdDEtZHhNaHY1c1gwUVFNTDNDUDA?oc=5",
+        "source": "디지털투데이",
+        "published": "Tue, 05 May 2026 23:29:02 GMT"
       }
     ],
     "blockchain": [
       {
-        "title": "떨어질 때마다 물 타던 ‘비트코인 대부’...18조 손실에 “잘못 생각했다” - v.daum.net",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBKZE5kamxBVGdjamJmeVBobUhHNkFPaWc2NDd4eERCYzdmblF4bEdfaVotQ2dPa0FMN1JGclFHeWJpTEcyQ2pZN2d1aGdfUWs?oc=5",
-        "source": "v.daum.net",
-        "published": "Wed, 06 May 2026 00:42:03 GMT"
+        "title": "코인 마켓워치 - 한국경제TV",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNU1FWU0lZLXcwSHpOQXJxaEdnanBsbzBmQkVaOHNzaGpsYmJnZFFFWnh3UHhnYWNvSDIya2t2dXJSWTkxRDlpRUVUdjBtUFJTQUNyQWhtRDFaQlBIbXQzYXlzM2JBaDZqQjBTckUyeGJTSkdZaElIVzhyNkpKcF9TWTQ5TEY1bWxITDBmUTBpUWtNTjFqWVBYenZHMjRtcEdCRGZJ?oc=5",
+        "source": "한국경제TV",
+        "published": "Wed, 06 May 2026 09:57:47 GMT"
+      },
+      {
+        "title": "비트코인 안판다던 스트래티지 \"매각 고려할 수 있어\" - 한국경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9LWVg4bDgyejhVQmZXLTF6TlZGT0dscHpDUXBZdEVFa2VpQ1ZzUWNlajJLV0RYbFc2enJGWi1JX3p2dmFhMWdtcjlhN0ExekFkY1NMUlZWTm1CZ9IBVEFVX3lxTE16ZTIxZ1NNYU1fS0FwTlJsS3ZwZlRfeVBoTXQxdTVzT1M5MFQyRE85V05iSjRxUlV6OXpVLU1GLVFQeGdFUTZTOEpZQnpmVU1ZbWpoeQ?oc=5",
+        "source": "한국경제",
+        "published": "Wed, 06 May 2026 12:00:49 GMT"
       },
       {
         "title": "두나무, 자체 블록체인 '기와'로 금융 인프라 선점 전략 - 디일렉",
@@ -107,10 +113,28 @@
         "published": "Wed, 06 May 2026 08:31:35 GMT"
       },
       {
-        "title": "비트코인, 美 클래리티 법안 통과 기대로 석달만에 8만1000달러 회복...투자 심리 살아날까? - 조선일보",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZWd1cGVOenIzVTBRT3Y3d2xzN3Qwb1EzWGtUTFpIZ1hra19LaXRRdkltalI4aTBBSlZuWHFycElVbnZSNXFyU1NtSko0S1M1U3RjZWhwRlZRa24tOTBWWkZSOURHWEZUcWMwTWtCR2FKZUl0Q1lnN3RybUo5NW1aUQ?oc=5",
+        "title": "스테이블코인, 진짜 돈인가 상품권인가 - 미래한국",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9OUVBtY1ZCakJmVEtPTU51TzhwQUh5YzBXSUsyeEw4dTdJWFBkeXBDd3ZZblNOMVh4T1p3SWRKOVZ3RDdxMkdLd0Q5T3FzSDJ6Qzd5RmZQYWhYRlJkUlpnNElCcTJIWjlLTjZobnNUcjExdw?oc=5",
+        "source": "미래한국",
+        "published": "Wed, 06 May 2026 11:43:57 GMT"
+      },
+      {
+        "title": "떨어질 때마다 물 타던 ‘비트코인 대부’...18조 손실에 “잘못 생각했다” - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBKZE5kamxBVGdjamJmeVBobUhHNkFPaWc2NDd4eERCYzdmblF4bEdfaVotQ2dPa0FMN1JGclFHeWJpTEcyQ2pZN2d1aGdfUWs?oc=5",
+        "source": "v.daum.net",
+        "published": "Wed, 06 May 2026 00:42:03 GMT"
+      },
+      {
+        "title": "Coinbase Stock Reacts to Workforce Reduction as AI Acceleration Drives Company Changes - TIKR.com",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSWFvc1pYR2hHcGFIcTliVDdyOEYzSUNZT3RUU0RZd2N0Y3pJUmMwaDJfazJTSThYZF9YZFJDUTBPN082YTlNVHVFTjRvMWtFX3N2SDhtX081YXZwcUtVTXNDVS0yRGxmTm9rTXE5WVNIS1BPSWNCamluLTZTUld4WkM2cmVLX3hWanhwOEoxWjl5QWdBRmcxNlV0c3pEcnp3SjBOc29HbUFWaDdDdU9WSXJOSmpQWEtlRkw2Skw1VFA?oc=5",
+        "source": "TIKR.com",
+        "published": "Wed, 06 May 2026 14:02:41 GMT"
+      },
+      {
+        "title": "BIS 연구진 \"스테이블코인 달러 패권 압도적…신흥국 통화 주권 잠식 우려\" - 조선일보",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObFlmQ2QzOTlKX3lMVlJ1M2tETlFnQlZsa0RYRmVudXFrT3ZUaXQ4T0dFaUUtc25vTFBlYlp5ZkpvMTJPVWFidXBwNkRJUjctNEo2Yks4ZEF4Q2E5OEM4MDhYaVdURFZseGVGaFM2UmtmNWREcllzQ3BoZXJsVFV0eExGZ0dlVTR0YmZGM1NR?oc=5",
         "source": "조선일보",
-        "published": "Tue, 05 May 2026 23:12:00 GMT"
+        "published": "Wed, 06 May 2026 00:15:26 GMT"
       },
       {
         "title": "방한 외국인, 환전 없이 가상자산으로 결제한다 - 전자신문",
@@ -123,38 +147,38 @@
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE54c25tbnNUSTZvRnFaRWlPbzBQODR2enNkdHdQMEdmbkxHYlZoMlFiUUQ3OWZ1LTdRXzg1eHBUTFJNNjRiQlV6WElYS1FoMWlaVVJRTzJ0ZlhWZWJTVjNLQUVIcDJuMnlXcWlGUENB0gFyQVVfeXFMTzN5X09YV0ZwMmg5NG1DbndFUjkyblJwdUg3TEg1Um5YTkJieG5BWDFGS1hmRUQ3OTdBODQwNVh2aHlFWmVUdERvNkFhRXZPTDVqbWg0Y1g2d3ZUWU1STnBoa0pNaWtnNXRuVklCaTZ3Qy1n?oc=5",
         "source": "폴리뉴스 Polinews",
         "published": "Wed, 06 May 2026 06:42:00 GMT"
-      },
-      {
-        "title": "비트코인 석 달만에 1억2000만원 넘어 - 한국경제",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XUlF1Z3pQcFByNUdDS2hvQmV2WWJwc2JmbnRLcm5YUDVDcjgyamZIRHRKUm8xdDM3M3BSMTlHOVgySk9xSkJQTEdlcXdUVE1LbWQtUDd3Z3VCQdIBVEFVX3lxTE11b3U4eDdiUnlPeFhaYzB3aWoxZ05FRVY3UVR6Q280UkdsOGllUXF3YWJkN2pDQnFiQWRKLVYxWnZtcVVUMlNsd1A0RFg3R0dOc1FQag?oc=5",
-        "source": "한국경제",
-        "published": "Wed, 06 May 2026 08:31:58 GMT"
-      },
-      {
-        "title": "미국, 스테이블코인 보상 기준 구체화…국내는 제자리걸음 - 뉴스토마토",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3S3BrUGVJTEcweXJuLS0wbVhJNVZSU21MOFBpV29XNkJNZU1xajBQZzNleU1EdzVxSTU1UktDd2tpRHFMSkxHT1BSRTZJc3hwUXd4QzN6SmdoQ3JienVkNw?oc=5",
-        "source": "뉴스토마토",
-        "published": "Wed, 06 May 2026 07:05:30 GMT"
-      },
-      {
-        "title": "\"비트코인 무조건 보유\" 스트래티지가 변했다…필요시 매도 [비트코인 지금] - 아시아경제",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1NmhWemZmRlB6YjFWT1I5T2tUVF9OZjhybkF5enhCNTlEX2lrMktpalEyRDNlYlJ1dUF6RHB2VWxmU3JRQ1pkcWdZcjJ6aUF1X3dFdDAxYnNJclFRajl2Rg?oc=5",
-        "source": "아시아경제",
-        "published": "Wed, 06 May 2026 05:43:58 GMT"
-      },
-      {
-        "title": "지난주 가상자산 투자상품 1.2억달러 유입…비트코인 8만달러[코인브리핑] - 뉴스1",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5jcTZtSXpVb1F0LWlST2hxSDVfa0VZcWlial8ySjFBSktTR1BGWFQ5c3o4U0toT2lWQU5CWWdIOTlrR3NSdkRuZnNPYUoza0xEYm0xTU9MZHpaWVBORjY1eW9wNWVhUQ?oc=5",
-        "source": "뉴스1",
-        "published": "Wed, 06 May 2026 01:08:02 GMT"
       }
     ],
     "marketing": [
+      {
+        "title": "메타브랜딩, AI 시대 브랜드 재정의… “설득보다 중요한 건 판독과 신뢰” - 매드타임스",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9CcjBYRHczUnprcVV3QU01anBHY1dvejNHZjNjLW9MUnlyVG1hXzRwMWlxTzNOUUpzQ1B0TU5yUUlwek9pdkdDYlJRVGNvNEpkaVJWZGt6R1YxQlFVdGVuVmwxbThyU21rUkZkWg?oc=5",
+        "source": "매드타임스",
+        "published": "Wed, 06 May 2026 15:00:00 GMT"
+      },
+      {
+        "title": "[해외 크리에이티브] 시바스 리갈, 샤를 르클레르와 ‘위스키 보드게임’ 캠페인 전개... 스포츠 마케팅 틀 깬다 - 매드타임스",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1sZHd1WTRfT2w4LVdNUkJGcnl6bjZhRDlHUjF4R3FqSktSRlBBNGVFTzFQanNLRGFqT0dFX0VlUzFpc182dnIyckktSXhxRFktcUZGZ1F0RXE5UWpjdkc5RzZmRC1PcXI2?oc=5",
+        "source": "매드타임스",
+        "published": "Wed, 06 May 2026 15:00:00 GMT"
+      },
+      {
+        "title": "영주시, 중소기업 온라인 판로 확대 지원…맞춤형 마케팅 패키지 추진 - 이로운넷",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBZN3NVa01scTcwVlJ6aEpfWEVOXzR3ajh1cHRyM2xiSmFHMm1YdGhsOWZIOXVhSXRFVGpiU0VYckxqVDNEQ2hZQXB6dlczNTBTbGdyWmZNenJrbzNhMEZIWmstUE1uZw?oc=5",
+        "source": "이로운넷",
+        "published": "Wed, 06 May 2026 09:50:47 GMT"
+      },
       {
         "title": "광고주협회, 광고·마케팅 전략 워크숍 개최...\"막막한 실무 고민, 한 방에 잡는다” - 반론보도닷컴",
         "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0ta2ZaZmNmU2c5SU9ubjJ1OENKVTM4WC1wTGRYTUtOazNuZW0wUXZMVHpxZWtGZ2ZTNW8zdldtRlBURkJFTnVGRUQtVHIzOWhacEZIdkFRbVRSN2tqMlZsTGpjb3RoNEdCcjRxRWJNWlHSAXBBVV95cUxNLWtmWmZjZlNnOUlPbm4ydThDSlUzOFgtcExkWE1LTmszbmVtMFF2TFR6cWVrRmdmUzVvM3ZXbUZQVEZCRU51RkVELVRyMzloWnBGSHZBUW1UUjdrajJWbExqY290aDRHQnI0cUViTVpR?oc=5",
         "source": "반론보도닷컴",
         "published": "Wed, 06 May 2026 02:05:00 GMT"
+      },
+      {
+        "title": "[Meta] 메타 운영 TIP 2026년 4월호 - 아이보스",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0taDFwbU4tTjVWMDlPZGpNdFA3YVlqTzlDVGdnYmtVOUpwRzBvZVNDbFBGSGxxMktlbFQ1bDZHdUxvWFAyaHJTYlBRRE9SUQ?oc=5",
+        "source": "아이보스",
+        "published": "Wed, 06 May 2026 05:16:53 GMT"
       },
       {
         "title": "'진로' 도수 낮춘 데 이어 패키지도 리뉴얼…최강록 셰프와 협업 - 연합뉴스",
@@ -169,46 +193,22 @@
         "published": "Wed, 06 May 2026 01:57:00 GMT"
       },
       {
-        "title": "넥사다이내믹스, 장근석 주연 ‘협반’ 메인 투자… K-푸드 커머스 영토 확장 - NBN미디어",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9tVVFidXk0ZzBTdUN4OVYyclBpTVNBU24zRUVVMXRONVlhbVBVQzJQT0VyOUxxUk5oSTFGWXNLVVB3TEx1YlJrak5ucjJDUEtWTzVqSDFWdURSaF9iUl9uRk1POTVrR3VQM0HSAWpBVV95cUxPbVVRYnV5NGcwU3VDeDlWMnJQaU1TQVNuM0VFVTF0TjVZYW1QVUMyUE9FcjlMcVJOaEkxRllzS1VQd0xMdWJSa2pObnIyQ1BLVk81akgxVnVEUmhfYlJfbkZNTzk1a0d1UDNB?oc=5",
-        "source": "NBN미디어",
-        "published": "Wed, 06 May 2026 06:22:29 GMT"
+        "title": "[에이전트틱 마케팅이란] 에이전트틱 마케팅 자동화를 통해 고객 유지와 수익성을 강화하는 방안을 제시했다. AI 에이전트가 마케팅의 전통적 캠페인을 넘어 자율적 의사결정을 주도하는 시대가 도래했다고 강조 - AI넷",
+        "link": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFBEUk9GNTlQODlTRF9RLUtOazV4T0JJRlc2WVJuV3MyUS1SUmVvMUI2VHBLeDIydWdhN1RPTEszamg?oc=5",
+        "source": "AI넷",
+        "published": "Wed, 06 May 2026 12:43:18 GMT"
       },
       {
-        "title": "하이트진로, ‘올뉴진로’ 리뉴얼 출시…두꺼비 키우고 한글 로고 입혔다 - 토요경제",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1adzJpSC1yeWl6QWdocy14NGt5Z1lRR0pBZ2NoVVBpYm1ncEVqSzlDSzgxS05xZmxrNC1od3F5Z1ZJUUpFMFZpalQzd1pCQ0hSZF9qQkNET3FzTTlUWFdCdtIBb0FVX3lxTE1OMkh5VkRzQnVacEFlakppY1VqLUVDZm9GSGF0TFdhWHJUbEZHd0NZN2tkTGdDS3VFU0lwUmNQaHNaUC04UnlUemZfMDBlWHJMX2xqTHBUc1VWaXZUS3NCWFJoV05TTlF2RUVSTHo2RQ?oc=5",
-        "source": "토요경제",
-        "published": "Wed, 06 May 2026 05:42:32 GMT"
-      },
-      {
-        "title": "하이트진로, ‘올뉴진로’ 리뉴얼 출시…맛·패키지 전면 개편 - 인사이트코리아",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8ybk1TTENNdDE0RmhRZnJYUld2U1JESkcyNHZkd1RVTWJMekNnNk13UkdNeG5kclFsUWptZzdCRlNudnlDMFd0RmZrUTFLMWFpMGFfNkVfNUdsMmdKb1ZyT2JkUUxIaUdGbF9UU0QtUGRGeGQtU2dR0gF3QVVfeXFMTzJuTVNMQ010MTRGaFFmclhSV3ZTUkRKRzI0dmR3VFVNYkx6Q2c2TXdSR014bmRyUWxRam1nN0JGU252eUMwV3RGZmtRMUsxYWkwYV82RV81R2wyZ0pvVnJPYmRRTEhpR0ZsX1RTRC1QZEZ4ZC1TZ1E?oc=5",
-        "source": "인사이트코리아",
-        "published": "Wed, 06 May 2026 01:52:41 GMT"
+        "title": "엔씨, 로블록스 코리아와 마케팅 MOU 체결 - 인벤",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBCZi0xVUx3bXEtY1d3cHZWRGJ4OGRUMTh2TXBJNTZIOC0wQVlxZzMyOHZmR2p5RVRRUk9ZYmtKdFhxMlV3elNVRmhoMVdNSmpDemNPNGJ2UHE5bGtoUTFaTldTdzA0LVYyWFQ4MGp5Z21LQmRj?oc=5",
+        "source": "인벤",
+        "published": "Wed, 06 May 2026 12:04:38 GMT"
       },
       {
         "title": "빼빼로 '스트레이 키즈'와 계약 연장 - 보건신문",
         "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE41RzUtNXkybVB3bjU0WjIxSFF1bnpscUJWdlFhZDhVa2psM1huMElrbE00djRLbVRWM040OGR0c3lKUzhNZkZuRmJZTzNwWlh2M3NyRnJTcG12V0dhenEwVVFxVQ?oc=5",
         "source": "보건신문",
         "published": "Wed, 06 May 2026 01:01:52 GMT"
-      },
-      {
-        "title": "넥사다이내믹스, 장근석 주연 '협반' 투자… 日 엔터 인프라와 시너지 기대 - 머니투데이 - 머니투데이",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9mbVBkVERyNFZiaVBZcW5uRWJfeEpSRXFBb0lJQlZ6OFFJcE9taWpub2xZQ1hLZUFoeDNLeDJpRlhUV3lOZTB4Ym56TnBaQWMzRTFaMHVLVVQtdThwRURKb3ZsWl9DWFZTdnlpVk930gFuQVVfeXFMT2ZtUGRURHI0VmJpUFlxbm5FYl94SlJFcUFvSUlCVno4UUlwT21pam5vbFlDWEtlQWh4M0t4MmlGWFRXeU5lMHhibnpOcFpBYzNFMVowdUtVVC11OHBFREpvdmxaX0NYVlN2eWlWT3c?oc=5",
-        "source": "머니투데이",
-        "published": "Wed, 06 May 2026 02:49:34 GMT"
-      },
-      {
-        "title": "명인제약 메이킨Q, 맞춤 마케팅·간편 복용법···남녀노소 모두 친숙 - 캠페인 인사이트",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE42RmhWUGVQT1NodXZFbTdOWTJkV2tvLXllb2dBVVdHNkhHWlZneUw4azVGTkp4UkkxRWlCMU1tZW0xdTdWcUR4dEJOa0VhRFlTdXBxLW8wRkd2S1ZJZ29ZQ3lqTXJURkg1RFF6THF1WkQxeS1k?oc=5",
-        "source": "캠페인 인사이트",
-        "published": "Tue, 05 May 2026 22:00:00 GMT"
-      },
-      {
-        "title": "이노션, ‘인도의 실리콘밸리’ 벵갈루루에 전략적 출범... 현지 시장서 고성장 산업군 공략 및 인도 전역 네트워크 확대 - 매드타임스",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE55b2s4cXIyM0hTVkZnOXljZWtaVkc4SlhkQjVOd0lfWDZya0lOUEo2U1NmZnNMZ3hPUVdyRTg5WjV3bVVIMzdEMTBsNW9jWlo3QzNheVRBVTRLaUZRUGdPUkRYMU9mNWtwbnZqcw?oc=5",
-        "source": "매드타임스",
-        "published": "Tue, 05 May 2026 23:13:13 GMT"
       }
     ],
     "brand_global": []
@@ -216,86 +216,86 @@
   "trends": {
     "kr": [
       {
-        "title": "필옵틱스",
+        "title": "근로기준법",
         "vol": "100+"
       },
       {
-        "title": "박계범",
-        "vol": "2000+"
-      },
-      {
-        "title": "로스앤젤레스 다저스",
-        "vol": "2000+"
-      },
-      {
-        "title": "대한광통신",
-        "vol": "1000+"
-      },
-      {
-        "title": "비트코인",
-        "vol": "2000+"
-      },
-      {
-        "title": "재난지원금",
-        "vol": "2000+"
-      },
-      {
-        "title": "코스피",
-        "vol": "20000+"
-      },
-      {
-        "title": "기안84",
-        "vol": "20000+"
-      },
-      {
-        "title": "전북 현대 모터스",
+        "title": "전소미",
         "vol": "500+"
       },
       {
-        "title": "에어로케이",
+        "title": "회사",
+        "vol": "1000+"
+      },
+      {
+        "title": "윤하",
+        "vol": "200+"
+      },
+      {
+        "title": "장한별",
         "vol": "100+"
+      },
+      {
+        "title": "srh vs pbks",
+        "vol": "500+"
+      },
+      {
+        "title": "판결",
+        "vol": "5000+"
+      },
+      {
+        "title": "남규리",
+        "vol": "500+"
+      },
+      {
+        "title": "lg전자",
+        "vol": "500+"
+      },
+      {
+        "title": "섬총각 영웅",
+        "vol": "200+"
       }
     ],
     "global": [
       {
-        "title": "jelena ostapenko",
-        "vol": "200+"
+        "title": "ionq",
+        "vol": "1000+"
       },
       {
-        "title": "axios",
-        "vol": "200+"
+        "title": "landman season 3 update",
+        "vol": "1000+"
       },
       {
-        "title": "chase elliott",
-        "vol": "200+"
+        "title": "when will gas prices go down?",
+        "vol": "1000+"
       },
       {
-        "title": "the supreme court of ohio",
-        "vol": "100+"
+        "title": "louise lucas",
+        "vol": "2000+"
       },
       {
-        "title": "latest iphone rumors",
-        "vol": "100+"
+        "title": "carlos correa",
+        "vol": "2000+"
       },
       {
-        "title": "alysha newman",
-        "vol": "200+"
-      },
-      {
-        "title": "home prices",
-        "vol": "100+"
-      },
-      {
-        "title": "费高云",
+        "title": "patrick kypson",
         "vol": "500+"
       },
       {
-        "title": "how many episodes in the boys season 5",
-        "vol": "200+"
+        "title": "grimes county",
+        "vol": "500+"
       },
       {
-        "title": "bobby wagner utah state speaker",
-        "vol": "20000+"
+        "title": "firehouse subs",
+        "vol": "2000+"
+      },
+      {
+        "title": "hayden panettiere",
+        "vol": "1000+"
+      },
+      {
+        "title": "semaglutide",
+        "vol": "500+"
       }
     ]
   },
@@ -491,9 +491,9 @@
       },
       {
         "rank": 10,
-        "name": "로얄 매치 Royal Match",
-        "developer": "Dream Games, Ltd.",
-        "link": "https://play.google.com/store/apps/details?id=com.dreamgames.royalmatch"
+        "name": "오딘: 발할라 라이징",
+        "developer": "Kakao Games Corp.",
+        "link": "https://play.google.com/store/apps/details?id=com.kakaogames.odin"
       }
     ],
     "appstore_kr": []
