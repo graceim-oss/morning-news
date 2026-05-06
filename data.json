@@ -1,25 +1,25 @@
 {
-  "updated": "13:48:00",
+  "updated": "13:57:08",
   "stocks": {
     "wemade": {
-      "price": "23,800",
-      "change": "600",
-      "ratio": "2.46",
+      "price": "23,750",
+      "change": "650",
+      "ratio": "2.66",
       "dir": "FALLING",
       "isOpen": true,
       "sign": "-"
     },
     "wemade_max": {
-      "price": "5,520",
-      "change": "240",
-      "ratio": "4.17",
+      "price": "5,510",
+      "change": "250",
+      "ratio": "4.34",
       "dir": "FALLING",
       "isOpen": true,
       "sign": "-"
     },
     "wemix": {
-      "krw": 352.42,
-      "chg24h": -1.122149199891683,
+      "krw": 352.44,
+      "chg24h": -1.2353918862243103,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -125,16 +125,16 @@
         "published": "Wed, 06 May 2026 02:39:38 GMT"
       },
       {
+        "title": "[박혜진의 블록체인 아카이브] 크립토 예측 시장, 민주주의의 적인가 보완재인가 - 오피니언뉴스",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9WWlpqZWd0eVdHZk1SamNfb1FiNFlOUlE3bTJtZE1mYXgxS3lZZjlSNFVURm9YVlJEZEdVdzF1VFpkLUFlWVROSlFJUll3OTFBanJCckkxMVg1SHQzUWVVVU12MHNQeXRyZW04NGZjN3NGdw?oc=5",
+        "source": "오피니언뉴스",
+        "published": "Wed, 06 May 2026 04:44:51 GMT"
+      },
+      {
         "title": "삼성SDS, 한국예탁결제원 토큰증권 플랫폼 수주…디지털 자산 인프라 본격 구축 - 테크월드",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9jY3BQbVM4YzYxY2Q4NklZMGJzOFFQUVl1clNFdHZveklLQXBwSXFkalR0b1paRU4tM0xGTG5HWUhPRFFTQzVhN2luTlBlSlhZcVBrVFlRcHIyTFJwODNwR3pTUE85TlV1?oc=5",
         "source": "테크월드",
         "published": "Wed, 06 May 2026 01:47:19 GMT"
-      },
-      {
-        "title": "[박혜진의 블록체인 아카이브] 크립토 예측 시장, 민주주의의 적인가 보완재인가 - 오피니언뉴스",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1GTWo3YnJ4UXdNbDNBNXh2UmpjWkJZNUhfc09kYVYwdjd3STIwY19UZUZoVWNDTlhQaVJObl9ub2tZWXUwMHRIYUMtZ21jaC1nalllVTFYYXhFOGlOajR5QUdrdkIzUDlsWUlXNUk0SzE?oc=5",
-        "source": "오피니언뉴스",
-        "published": "Wed, 06 May 2026 04:44:51 GMT"
       },
       {
         "title": "[강세 토픽] 디지털자산·블록체인 테마, 다날 +15.61%, 우리기술투자 +8.31% - 조선비즈 - Chosunbiz",
@@ -215,12 +215,24 @@
   "trends": {
     "kr": [
       {
+        "title": "이동 통신",
+        "vol": "100+"
+      },
+      {
+        "title": "효성중공업 주가",
+        "vol": "100+"
+      },
+      {
+        "title": "etf",
+        "vol": "100+"
+      },
+      {
         "title": "베이비붐",
         "vol": "1000+"
       },
       {
         "title": "한온시스템",
-        "vol": "100+"
+        "vol": "200+"
       },
       {
         "title": "에이비엘바이오",
@@ -241,24 +253,28 @@
       {
         "title": "이모티콘",
         "vol": "100+"
-      },
-      {
-        "title": "최명길",
-        "vol": "200+"
-      },
-      {
-        "title": "김민자",
-        "vol": "500+"
-      },
-      {
-        "title": "ive",
-        "vol": "200+"
       }
     ],
     "global": [
       {
+        "title": "samsung stock",
+        "vol": "200+"
+      },
+      {
+        "title": "heather watson",
+        "vol": "200+"
+      },
+      {
+        "title": "los angeles angels",
+        "vol": "200+"
+      },
+      {
         "title": "mariners game today",
         "vol": "1000+"
+      },
+      {
+        "title": "eta aquarid meteor shower",
+        "vol": "2000+"
       },
       {
         "title": "padres score",
@@ -278,22 +294,6 @@
       },
       {
         "title": "eiza gonzález",
-        "vol": "500+"
-      },
-      {
-        "title": "justin hartley",
-        "vol": "500+"
-      },
-      {
-        "title": "spacex launch",
-        "vol": "2000+"
-      },
-      {
-        "title": "star wars celebration 2027",
-        "vol": "200+"
-      },
-      {
-        "title": "la county fair",
         "vol": "500+"
       }
     ]
