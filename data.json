@@ -1,5 +1,5 @@
 {
-  "updated": "14:19:17",
+  "updated": "14:24:43",
   "stocks": {
     "wemade": {
       "price": "23,750",
@@ -10,16 +10,16 @@
       "sign": "-"
     },
     "wemade_max": {
-      "price": "5,510",
-      "change": "250",
-      "ratio": "4.34",
+      "price": "5,520",
+      "change": "240",
+      "ratio": "4.17",
       "dir": "FALLING",
       "isOpen": true,
       "sign": "-"
     },
     "wemix": {
-      "krw": 353.48,
-      "chg24h": -0.9467038148366722,
+      "krw": 353.24,
+      "chg24h": -1.0550389887061589,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -151,16 +151,28 @@
     ],
     "marketing": [
       {
-        "title": "업무하다가 막힐 때 들여다보는 계정들 공유드려요 - 마케팅 - 정보공유 - 아이보스",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxd1Zxak1uWTJNZEhsNFZreTdjXzlWOERsNTNmNERLd3QwVDN5RmNCM2FoZ1hIaDNwLWZDNkR5MzFXZUZpblVtR2h5OE8tNGM?oc=5",
-        "source": "아이보스",
-        "published": "Mon, 13 Apr 2026 07:00:00 GMT"
+        "title": "유니콘 스타트업의 결정적 순간 - 디자인플러스",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5vanVKTXl6RExnakhsNmxyeUx0LXVjbUZCa0k0Xy1ZYUtxQmRNRl85blh0dlE5eGsyX1Zzams4WEZMQ1BuTjNJR204bkE?oc=5",
+        "source": "디자인플러스",
+        "published": "Tue, 30 Sep 2025 07:00:00 GMT"
       },
       {
-        "title": "[IP마케팅] 시들지 않는 꽃, 사라지지 않는 시즌: 레고는 왜 ‘졸업식’을 노리는가 - kmjournal.net",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9qQ1pGbllUNTRUR2d6dE1DY214RkdZNVM5ZkUwVEFTenBtckczbzhXb200MTNWaUZIU2pDSWtoejRlRUUxd3hRU2p4T0l6OE5lbFJaeWpwWlM1UGJMZFA5NEVnajZCbS1raHc?oc=5",
-        "source": "kmjournal.net",
-        "published": "Sun, 15 Feb 2026 08:00:00 GMT"
+        "title": "2026년 1월 트렌드 미디어 리포트 - 오픈애즈",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBwaEVKUW12T1I1WjdQQXVwZHNiUTBVVVctTHJSQlEyNEFZOG96ZVlBNTU0SFNBSXNleFlwcWp4THdiMGlrNXNIUmhRM3Q0OTNVZzJuRHgwYWc0aDBERjdJT2U3Yk1ZLXU1?oc=5",
+        "source": "오픈애즈",
+        "published": "Wed, 07 Jan 2026 08:00:00 GMT"
+      },
+      {
+        "title": "[이슈콕!] 소마코가 전하는 9월의 마케팅 이슈 총정리 - 디지털 인사이트 DIGITAL iNSIGHT",
+        "link": "https://news.google.com/rss/articles/CBMitAJBVV95cUxNcHNoZTN2WXZxRzR3NGE5eENReElweHdnYVdOTlk5TVdsVkRjaDJBNm1PQU83QU5OdVktODdOekhoWkthMjVabjJxdmVlZENJX1VRSTNIdk5nMXZVRnV4c1Atb2FWdE83X0tLY1F2ejFTYjlXOXlpLUNobGxUSzhBUUtSOV9jSWlHNnZ2Q2xlRVc3UWN3YXRjQXJObUh4RlE4UFhSek9XNlEwMVUyOXNZcVNNTmRUR1JoNDBwQWJ4YkZTLWYxUzBUTWJvVFBNNXhJMHBJZTE4X3IybS1TNGRyY2pqZUZ1cnl1eGdMM0M4aHdBOFlSZENFLUNoSHI4TXExcW9jeWpsZU1xcjZMenFadkNkSXhJUWQ3cnluNUgyalNMbllOZWQ2VTV2RDdOVVpZeHRBcA?oc=5",
+        "source": "디지털 인사이트 DIGITAL iNSIGHT",
+        "published": "Wed, 01 Oct 2025 07:00:00 GMT"
+      },
+      {
+        "title": "[기묘한 커머스 이야기] 토스의 커머스, 정말 유난스러울까요? - mobiinside.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5QbkZiSUpjcllhaXdtZ0xsQlM5M2YtcDk2S1pKV0Q1MFJxbDFTb3NGYnVLaXdmQXM4N2E1bDRYX280bFl6dlBzejA4ZHhRcC1ERlhmWHpCb1F0c0VZcERzcGFscFE?oc=5",
+        "source": "mobiinside.co.kr",
+        "published": "Wed, 04 Jun 2025 07:00:00 GMT"
       },
       {
         "title": "서기석 CMO는 누구인가? - 브런치",
@@ -169,22 +181,10 @@
         "published": "Wed, 03 Sep 2025 23:53:40 GMT"
       },
       {
-        "title": "요즘 뜨는 영상 콘텐츠 : 팟캐스트 붐은 온다. - 오픈애즈",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9KdDdBVEhoSldjY010U0c2WFZzZGlDUXk1dnQ3VzhyWUxELXVXRU1RaHBoaUU3cTVpd3FTaC1mNVNjSXlrcXpsazZIVVdFLTNhMHoxczJHRjhOdTM2enVLSjZObGxQX2My?oc=5",
+        "title": "🎄 일 잘하는 브랜드의 연말 마케팅 성공사례.zip - 오픈애즈",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4wMlk1aXBReC0wYllWS1FyZTc5NUE5ZkFJU09ibkx6MllWdWZNc0RQQml4X09XNTE4U19wamdsSFdwRkdZNS14eXF2eWN6NHhkM2t4a2haV2FybGtpd0lLd3dSOFUtRUNk?oc=5",
         "source": "오픈애즈",
-        "published": "Thu, 12 Jun 2025 07:00:00 GMT"
-      },
-      {
-        "title": "[잇브랜딩] 브랜딩은 곧 매출이다: ‘성장 서사’로 퍼포먼스와 브랜드를 통합하는 법 - kmjournal.net",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE11RVhFRTVwbTcwSUxoMVVNam93MTFMeS03M0dLeEZGLXE5eTQwMXpjdlFqVTMxSWZ6RDRzQVFiNFN5ck9WOVo2aEUwSWJvTzhTU0FFNWt2Wk9tY3ZuM0hKWDRieWRZMGttVFE?oc=5",
-        "source": "kmjournal.net",
-        "published": "Thu, 11 Dec 2025 08:00:00 GMT"
-      },
-      {
-        "title": "기념일도 토스답게! 브랜딩 관점에서 본 ‘토스 10주년 팝업’ 리뷰 - 디지털 인사이트 DIGITAL iNSIGHT",
-        "link": "https://news.google.com/rss/articles/CBMiswJBVV95cUxQOEVRTmF6am9ld3lkWHViZDVILWJSbEVsRjlIXy1GbEtGYXRSc1B0S2ZqU3FPNkN1NF9ZdlZQWm5hbWJ3Y251ZV8xZjl4LTdwUEhOX1g0Y1hSUEticnBESGN0MUZMazZLcVJJQ1dpT3BQOWlWcHkzT0ZxV2hPRmJYM3FmTzQ2U21mVXlpdURMNkdSUGJjOXYzTXBrVU5BVTIyam1CX3E1OElBVExfTUZZbks0MHl3OGxIcDJXbUloSGZaUVpsbUltN0stMzBtSDQ4YTkzQmpYZjIwRU9OSGFZSEFGVVpiRmF4OHlMU1lqOXlWM1ZJVkpYaDhzNzAta0RiS2xGeEpDOUdwaUJOQmkydTZkaHFnckJvWnpmZnpBbi1ieDRNdjVRQXNmVkFnWkNxR1Rj?oc=5",
-        "source": "디지털 인사이트 DIGITAL iNSIGHT",
-        "published": "Wed, 19 Mar 2025 07:00:00 GMT"
+        "published": "Thu, 02 Oct 2025 07:00:00 GMT"
       },
       {
         "title": "유튜브 채널 ‘머니그라피’로 보는 토스의 브랜디드 콘텐츠 전략 - 소비자평가",
@@ -193,30 +193,54 @@
         "published": "Mon, 06 Jan 2025 08:00:00 GMT"
       },
       {
+        "title": "진짜 바이럴? 꾸미지 말고 소비자에 맡겨라!… 마케터들이 꼭 알아야 할 소셜미디어 전략 - 브랜드브리프",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBNbHVaN0pMb0JmYkNEM1Y1M09pV3dWXzBwWVhCTnJPTHo3WTB4anZvN0RZNDc4bGJtbXZKMkZ0cVRPQnM2TTk1Qmw4bUhoMDdiaGNlV0Q3NC1VZ0ZoTmhGMzNYOU02SFB1SUNBdXNn?oc=5",
+        "source": "브랜드브리프",
+        "published": "Fri, 08 Aug 2025 07:00:00 GMT"
+      },
+      {
+        "title": "업무하다가 막힐 때 들여다보는 계정들 공유드려요 - 마케팅 - 정보공유 - 아이보스",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxd1Zxak1uWTJNZEhsNFZreTdjXzlWOERsNTNmNERLd3QwVDN5RmNCM2FoZ1hIaDNwLWZDNkR5MzFXZUZpblVtR2h5OE8tNGM?oc=5",
+        "source": "아이보스",
+        "published": "Mon, 13 Apr 2026 07:00:00 GMT"
+      },
+      {
         "title": "브랜딩 다음은 마케팅, 마케팅 전략으로 브랜드 포지셔닝에 성공하기 - 플래텀(Platum)",
         "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5jd29tYmNldzlRb2VlOERjS3Z3QWd6bUk3Zjh1c09XNTZzdzlFRC1zT1h5WVdSeWh6eEwyX1NCVVB2aXBaMEc5NA?oc=5",
         "source": "플래텀(Platum)",
         "published": "Wed, 11 Jan 2023 08:00:00 GMT"
-      },
-      {
-        "title": "2026 불교박람회에서 본 브랜딩: 정반대 포지셔닝이 둘 다 먹히는 이유 - 뉴닉",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBwV29iZmR5dWlHTm4wVXZLNUZETVMyV0hhcHQ2MzgyMzFLdktxakpjVzg5OWMtbU9GcGI5Q0Y2VzA3UlVmSkduYXB1VHV1ekRldkwzMg?oc=5",
-        "source": "뉴닉",
-        "published": "Thu, 02 Apr 2026 07:00:00 GMT"
-      },
-      {
-        "title": "‘2026 서울 인디뷰티쇼’ 3월 26일 개막... 146개사 참여, B2B 프로그램 진행 - 코스인코리아닷컴",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE95amFkV0I1VC0wZ2lBSHpKTjhLOGRhTkZtQ1VaMWhsekpSWVV0dnUwdTBFWDBTR09HWWZhWXg5NGE4VlJMc3ItcG1fYXRmczBzWDJUaVNJNmU0aTZ0TDlsNWEwSQ?oc=5",
-        "source": "코스인코리아닷컴",
-        "published": "Mon, 23 Mar 2026 07:00:00 GMT"
       }
     ],
     "brand_global": [
+      {
+        "title": "신한은행 헤이영 캠퍼스 리브랜딩 - 브런치",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE42SnFTalFESVg2dHFPMWRoSU9oSVhQeFhDdWpnX0phMmhKTmk0R1Y3aDl5ZWhIWm9xQ1MtYmw5cFZ1MVF6Y2dmU0YwUTI?oc=5",
+        "source": "브런치",
+        "published": "Mon, 27 Apr 2026 04:41:53 GMT"
+      },
+      {
+        "title": "[Brand Insight] Daiso: From Korea’s “National Store” to a Global Brand - 천지일보",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBaTk9TTkpKclhhZzAtZEt5QUlVU3R2eEVqLWVwSVo0T0NhcmFnRFRta1ZDcTZOb1BSM0JtS3VEemhORU1QdEduTFkzRkN3U0pTMFp2NURpbzZteW5DcnREdU9PdGNtSUQ4dnc?oc=5",
+        "source": "천지일보",
+        "published": "Mon, 27 Apr 2026 22:00:00 GMT"
+      },
+      {
+        "title": "LG ELECTRONICS SHOWCASES AN EXPANDED BUILT-IN PORTFOLIO WITH SKS AND LG BUILT-IN LINEUPS AT EUROCUCINA 2026 - KIPOST",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1wY2ExR1l5Z0xtclJMdThYVU05dmxwOER4Ym9nU2ItWktTU0pOVGF5RVJIYnBMdUhIeU5fS2ZRbmt3R3RlSUtwdVY1NllCTTRDMXFFdlk0bTNYVUZuVEVRbkJiajZ3N0pL?oc=5",
+        "source": "KIPOST",
+        "published": "Tue, 21 Apr 2026 05:26:00 GMT"
+      },
       {
         "title": "2026 S/S Makeup Trends: Participatory Content on the Rise - 뷰티경제",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBHZVZKU3g1TXc4TWYtazR2UVlmYnUxV1g1MWJpOEI3Y2JleV9fWllCMWFFNXlaV2tQc1pCcWVTUU12QjN3cXRLcC1PMFlLRWZNZjRLaDdLZGswZllXNkZlWUtzeGtIMHpqbWc?oc=5",
         "source": "뷰티경제",
         "published": "Tue, 24 Mar 2026 07:00:00 GMT"
+      },
+      {
+        "title": "Immersive+ Forum 2026: Why Experience Is Becoming the Core of Fashion Retail Marketing - kmjournal.net",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBEOWhWeXk1UnZhWDlQUEcxMDZ2WVNud1FNUHVySXdNNjZTMTlkWThkSjdkc19BbmsyOHkwYmxOa2I4X3huNHlWSERObGdVVmpHcndWaVlrNkFXN1hISVM1dVozOVZ3b1hNRURB?oc=5",
+        "source": "kmjournal.net",
+        "published": "Mon, 13 Apr 2026 04:31:41 GMT"
       },
       {
         "title": "10km.ai Unveils GEMGEM AI Video Technology at CES 2026 - 더밀크 | The Miilk",
@@ -225,30 +249,48 @@
         "published": "Mon, 22 Sep 2025 07:00:00 GMT"
       },
       {
+        "title": "moev ranked No.1 in Qoo10 Japan’s Megawari Event, “Accelerating Its Growth in the Japanese Market” - 비욘드포스트",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBiYkU5SEx5ZWlWSndUdHVEaUdGQ05QMzhDWjN5SUNLU3RkYVFYWXJhOXBjNERtaDgzb3M2Rjd6Yl96WUZfVF95aTdEU241b3NVZTZBNTF4Y01WZTB0T1RCdnBwd3U0SU90TUFxbFoyQXF5cFZuUUdwUFVBOWY?oc=5",
+        "source": "비욘드포스트",
+        "published": "Mon, 24 Nov 2025 08:00:00 GMT"
+      },
+      {
+        "title": "Gentle Monster After Jennie: Can the Brand Turn Hype Into Real Profit? - kmjournal.net",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE00TlRmQmtocTBiUi1tdlBZWTVMUzZvNTB0ZnIwb1dickxLOHpOR3BaZFg3QVFqQ1l6Z2tGNzBkS2JEdDB6aDY5RjlrNndHTUJXTHpFOHk2emFXR0U2UEVOTnRMY2pXUlR2bGl3?oc=5",
+        "source": "kmjournal.net",
+        "published": "Wed, 08 Apr 2026 00:52:22 GMT"
+      },
+      {
+        "title": "Interview: How Matin Kim is turning K-fashion into global brand - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9JeFdKYm1NODJycnlDZ0oyX2VDbGpJTXNPVEtaSlhCVjNRaEZ2X1QxU3YzMkRaSnhNLXJVaWpScnBSZFBHckE?oc=5",
+        "source": "v.daum.net",
+        "published": "Mon, 19 May 2025 07:00:00 GMT"
+      },
+      {
         "title": "VDL Reveals the Key Makeup Trend for Spring 2026: Blusher Takes Center Stage - 뷰티경제",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5pdVpYUjdfbktVYk1FMlVoY1UzcFhmS2FnRThHeUZaRTJacjlsSll3bzlFeDVzN1BsbGVEa0k0NllYT0JJbXJiczZTSF94QVNDOUpZOUZ1RUlpdnZ5d0JPRW52bDdrX2JyQ2c?oc=5",
         "source": "뷰티경제",
         "published": "Sat, 21 Mar 2026 04:29:43 GMT"
-      },
-      {
-        "title": "“4 out of 10 people drink Jeju Samdasoo”… 40.4% market share in the bottled water market in the first quarter of 2025, overwhelmingly ranked 1st - 뉴스스페이스",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE16ZlNPLWNnakQxMUFhSGZPanVZb3pBbDFlRHdvbV9FNlNndG5NelNFN1ItbUlUc1JmZGJXMTZ4S3lRYjdFLTFPR0xJZXE3QnRPWHlPZm9USWxFcUEwbHdz?oc=5",
-        "source": "뉴스스페이스",
-        "published": "Sat, 03 May 2025 07:00:00 GMT"
-      },
-      {
-        "title": "Jin Ramen' Released with BTS' 'Jin' as Model... Otoki Co., Ltd. Launches Global Campaign with New Packaging - 뉴스스페이스",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE54WE40WXJnZkwtYUhCWVYwVG5iTWhtZ2pSOHZWazlyVk1RaGRLOWt1YlYwSkxISGZPMFR5RkdJb19SLTBnNDlBbEtBeFNNWmtxU1VUSUpteU1RY0tjU3hn?oc=5",
-        "source": "뉴스스페이스",
-        "published": "Wed, 26 Feb 2025 08:00:00 GMT"
       }
     ]
   },
   "trends": {
     "kr": [
       {
+        "title": "지수",
+        "vol": "2000+"
+      },
+      {
+        "title": "수익률",
+        "vol": "500+"
+      },
+      {
+        "title": "라이언 와이스",
+        "vol": "500+"
+      },
+      {
         "title": "사우디아라비아",
-        "vol": "200+"
+        "vol": "500+"
       },
       {
         "title": "teams",
@@ -256,7 +298,7 @@
       },
       {
         "title": "키움 히어로즈",
-        "vol": "100+"
+        "vol": "200+"
       },
       {
         "title": "양도소득세",
@@ -273,18 +315,6 @@
       {
         "title": "효성중공업 주가",
         "vol": "100+"
-      },
-      {
-        "title": "etf",
-        "vol": "100+"
-      },
-      {
-        "title": "베이비붐",
-        "vol": "2000+"
-      },
-      {
-        "title": "한온시스템",
-        "vol": "200+"
       }
     ],
     "global": [
@@ -295,6 +325,10 @@
       {
         "title": "walt frazier",
         "vol": "500+"
+      },
+      {
+        "title": "popeyes chicken wraps permanent menu",
+        "vol": "200+"
       },
       {
         "title": "meg stalter",
@@ -323,10 +357,6 @@
       {
         "title": "richard gere",
         "vol": "200+"
-      },
-      {
-        "title": "padres score",
-        "vol": "1000+"
       }
     ]
   },
