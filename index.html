@@ -367,34 +367,38 @@
   <div class="section-label">🎮 게임 순위</div>
   <div class="grid-2">
 
-    <!-- Steam -->
+    <!-- PC방 순위 (게임트릭스) -->
     <div class="card">
       <div class="card-hd">
         <div class="card-ttl">
           <div class="card-ico ic-b">🖥️</div>
-          <div><h2>Steam</h2><div class="card-sub">최근 2주 인기 게임</div></div>
+          <div><h2>PC방 순위</h2><div class="card-sub">게임트릭스 실시간</div></div>
         </div>
-        <div class="card-meta"><div class="card-upd" id="upd-steam">—</div></div>
+        <div class="card-meta"><div class="card-upd" id="upd-gametrics">—</div></div>
       </div>
-      <div class="trends-pane" id="body-steam"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
+      <div class="trends-pane" id="body-gametrics"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
     </div>
 
-    <!-- 게임메카 -->
+    <!-- 모바일 순위 (탭) -->
     <div class="card">
       <div class="card-hd">
         <div class="card-ttl">
-          <div class="card-ico ic-g">🏆</div>
-          <div><h2>게임메카 순위</h2><div class="card-sub">국내 온라인/모바일 통합</div></div>
+          <div class="card-ico ic-g">📱</div>
+          <div><h2>모바일 순위</h2><div class="card-sub">국내 게임 매출 순위</div></div>
         </div>
-        <div class="card-meta"><div class="card-upd" id="upd-gamemeca">—</div></div>
+        <div class="card-meta"><div class="card-upd" id="upd-mobile">—</div></div>
       </div>
-      <div class="trends-pane" id="body-gamemeca"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
+      <div style="display:flex;gap:6px;padding:0 16px 10px;">
+        <button onclick="switchMobile('gplay')" id="tab-gplay" style="font-size:11px;padding:4px 10px;border-radius:20px;border:1px solid #4f5bd5;background:#4f5bd5;color:#fff;cursor:pointer;">Android</button>
+        <button onclick="switchMobile('appstore')" id="tab-appstore" style="font-size:11px;padding:4px 10px;border-radius:20px;border:1px solid #ccc;background:#fff;color:#666;cursor:pointer;">iOS</button>
+      </div>
+      <div class="trends-pane" id="body-gplay" style="display:block"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
+      <div class="trends-pane" id="body-appstore" style="display:none"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
     </div>
 
   </div>
 
 </div>
-
 <footer>위메이드 Brand Marketing Team &nbsp;·&nbsp; 뉴스 30분 · 주가 1분 · 트렌드 5분 자동 갱신 &nbsp;·&nbsp; 데이터 출처: Google News · CoinGecko · Naver Finance</footer>
 
 <script>
@@ -500,7 +504,7 @@ function renderNews(articles) {
 }
 
 function renderNewsSection(news) {
-  ['wemade','blockchain','marketing','brand_global'].forEach(cat => {
+  ['wemade','blockchain','marketing'].forEach(cat => {
     const bodyEl = $(`body-${cat}`);
     const updEl = $(`upd-${cat}`);
     const pillsEl = $(`pills-${cat}`);
@@ -552,8 +556,9 @@ function switchTrend(tab){
 /* ════════════════════════════════════════════════
    게임 순위 렌더링
    ════════════════════════════════════════════════ */
-function renderRankList(items, bodyId, updId) {
+function renderRankList(items, bodyId, updId, showPct) {
   const bodyEl = $(bodyId), updEl = $(updId);
+  if (!bodyEl) return;
   if (!items || !items.length) {
     bodyEl.innerHTML = '<div class="errbox">데이터 없음</div>';
     return;
@@ -561,7 +566,8 @@ function renderRankList(items, bodyId, updId) {
   bodyEl.innerHTML = '<div class="tg">' + items.map((it, i) => {
     const rank = it.rank || i+1;
     const cls = rank===1?'r1':rank<=3?'r3':'';
-    const sub = it.players_2weeks ? '<span class="tr-vol">'+Number(it.players_2weeks).toLocaleString()+'명</span>' : '';
+    const sub = showPct && it.pct ? '<span class="tr-vol">'+it.pct+'%</span>'
+              : it.developer ? '<span class="tr-vol" style="font-size:8px">'+esc(it.developer)+'</span>' : '';
     return '<a class="tr-link" href="'+esc(it.link||'#')+'" target="_blank" rel="noopener">'
       +'<div class="tr-item">'
       +'<span class="tr-rank '+cls+'">'+rank+'</span>'
@@ -572,38 +578,24 @@ function renderRankList(items, bodyId, updId) {
   if (updEl) updEl.textContent = nowKST() + ' 기준';
 }
 
+function switchMobile(tab) {
+  ['gplay','appstore'].forEach(t => {
+    document.getElementById('tab-'+t).style.background = t===tab ? '#4f5bd5' : '#fff';
+    document.getElementById('tab-'+t).style.color = t===tab ? '#fff' : '#666';
+    document.getElementById('tab-'+t).style.borderColor = t===tab ? '#4f5bd5' : '#ccc';
+    document.getElementById('body-'+t).style.display = t===tab ? 'block' : 'none';
+  });
+}
+
 function renderRankings(rankings) {
-  renderRankList(rankings.steam,    'body-steam',    'upd-steam');
-  renderRankList(rankings.gamemeca, 'body-gamemeca', 'upd-gamemeca');
+  renderRankList(rankings.gametrics, 'body-gametrics', 'upd-gametrics', true);
+  renderRankList(rankings.gplay_kr,  'body-gplay',     'upd-mobile',    false);
+  renderRankList(rankings.appstore_kr,'body-appstore',  null,            false);
 }
 
 /* ════════════════════════════════════════════════
    전체 새로고침
    ════════════════════════════════════════════════ */
-async function loadNamu(force=false){
-  const bodyEl=$('body-namu'), updEl=$('upd-namu');
-  try{
-    const r = await fetch('https://search.namu.wiki/api/ranking', {
-      signal: AbortSignal.timeout(8000),
-      headers: {'Referer':'https://namu.wiki/', 'Origin':'https://namu.wiki'}
-    });
-    if(!r.ok) throw new Error('API '+r.status);
-    const data = await r.json();
-    const list = Array.isArray(data) ? data : (data.items || data.keywords || data.result || []);
-    if(!list.length) throw new Error('empty');
-    const out = '<div class="tg">' + list.slice(0,15).map((item,i)=>{
-      const rank=i+1, cls=rank===1?'r1':rank<=3?'r3':'';
-      const kw = typeof item==='string' ? item : (item.keyword||item.name||item.title||'');
-      const url = 'https://namu.wiki/w/'+encodeURIComponent(kw);
-      return '<a class="tr-link" href="'+url+'" target="_blank" rel="noopener"><div class="tr-item"><span class="tr-rank '+cls+'">'+rank+'</span><span class="tr-kw">'+kw+'</span></div></a>';
-    }).join('') + '</div>';
-    bodyEl.innerHTML=out;
-    if(updEl) updEl.textContent='갱신 '+new Date().toLocaleTimeString('ko-KR',{timeZone:'Asia/Seoul',hour12:false});
-  }catch(e){
-    bodyEl.innerHTML='<div class="errbox">실시간 검색어를 불러올 수 없습니다.</div>';
-  }
-}
-
 async function refreshAll(force=false){
   const btn=$('btn-ref'), icon=$('spin');
   btn.disabled=true; icon.classList.add('spinning');
