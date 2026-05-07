@@ -6,7 +6,8 @@ from datetime import datetime, timezone, timedelta
 from urllib.request import urlopen, Request
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-LOCAL_DATA = os.path.join(os.path.dirname(BASE_DIR), 'data.json')  # morning-news/data.json
+LOCAL_DATA = os.path.join(os.path.dirname(BASE_DIR), 'data.json')
+ARTICLES_FILE = os.path.join(BASE_DIR, 'articles', 'index.json')
 DATA_URL = "https://raw.githubusercontent.com/graceim-oss/morning-news/main/data.json"
 DASHBOARD_URL = "https://graceim-oss.github.io/morning-news/"
 KST = timezone(timedelta(hours=9))
@@ -23,7 +24,6 @@ def save_config(cfg):
 
 
 def fetch_remote_data():
-    # 로컬 data.json 우선 (fetch_data.py 실행 결과), 없으면 원격 GitHub
     if os.path.exists(LOCAL_DATA):
         try:
             with open(LOCAL_DATA, encoding='utf-8') as f:
@@ -53,42 +53,123 @@ def gemini_comment(api_key, prompt):
             except Exception as e:
                 print(f'Gemini 모델 실패 ({model_name}): {e}')
                 continue
-        print('Gemini: 사용 가능한 모델 없음, fallback으로 빈 코멘트 반환')
+        print('Gemini: 사용 가능한 모델 없음')
         return ''
     except Exception as e:
         print(f'Gemini 초기화 오류: {e}')
         return ''
 
 
+def _load_article_db():
+    if not os.path.exists(ARTICLES_FILE):
+        return {'articles': []}
+    with open(ARTICLES_FILE, encoding='utf-8') as f:
+        return json.load(f)
+
+
+def _save_article_db(db):
+    with open(ARTICLES_FILE, 'w', encoding='utf-8') as f:
+        json.dump(db, f, ensure_ascii=False, indent=2)
+
+
+def generate_content_from_articles(category, api_key):
+    """아티클 DB에서 카테고리 아티클을 선택해 Gemini로 뉴스레터 콘텐츠를 생성합니다."""
+    db = _load_article_db()
+    candidates = [a for a in db.get('articles', []) if a.get('category') == category]
+    if not candidates:
+        return []
+
+    # used_count 낮고 최신 등록 순
+    candidates.sort(key=lambda x: (x.get('used_count', 0), x.get('added_at', '') or ''))
+    selected = candidates[:2]
+
+    blocks = []
+    for i, art in enumerate(selected, 1):
+        blocks.append(
+            f"[원문 {i}]\n"
+            f"제목: {art.get('title', '')}\n"
+            f"출처: {art.get('source', '')}\n"
+            f"내용: {(art.get('full_text') or '')[:2000]}"
+        )
+
+    sources = ', '.join(a.get('source', '') for a in selected)
+
+    prompt = f"""당신은 위메이드 브랜드마케팅팀 콘텐츠 에디터입니다.
+
+[절대 규칙 - 반드시 준수]
+- 아래 원문에 없는 사실, 수치, 주장은 절대 사용 금지
+- 모든 내용은 원문에서만 근거를 찾을 것
+- 추측성 표현 금지 (예: ~할 것으로 보입니다, ~인 것 같습니다)
+- 과장 금지
+
+{chr(10).join(blocks)}
+
+[작성 요청]
+위 원문을 바탕으로 브랜드 마케터를 위한 뉴스레터 콘텐츠를 작성해주세요.
+
+구조:
+1. 제목: 호기심을 유발하는 질문형 제목 (원문 사실 기반)
+2. 도입: 원문의 핵심 현상을 일상적 언어로 (2문장)
+3. 핵심 인사이트: 원문의 주요 내용 (3문장, 수치/사례는 원문 그대로)
+4. 위메이드 적용: 게임 IP/크리에이터 마케팅 관점 연결 (2문장)
+5. 액션 포인트: 이번 주 실무 적용 한 줄
+
+형식:
+- 친근한 구어체, 이모지 2~3개, 400~500자
+- 소제목·번호 없이 자연스러운 단락으로 작성
+- 마크다운(*, **, #, _) 절대 사용 금지 — 일반 텍스트로만
+- 마지막에 "출처: {sources}" 반드시 포함"""
+
+    content = gemini_comment(api_key, prompt)
+    if not content:
+        return []
+
+    # 사용 통계 업데이트
+    try:
+        now_str = datetime.now(KST).strftime('%Y-%m-%d %H:%M')
+        used_ids = {a.get('id') for a in selected}
+        for art in db['articles']:
+            if art.get('id') in used_ids:
+                art['used_count'] = art.get('used_count', 0) + 1
+                art['last_used'] = now_str
+        _save_article_db(db)
+    except Exception as e:
+        print(f'아티클 사용통계 업데이트 오류: {e}')
+
+    return [{
+        'title': selected[0].get('title', ''),
+        'link': selected[0].get('url', ''),
+        'source': sources,
+        'image': selected[0].get('image', ''),
+        'published': selected[0].get('published', ''),
+        'tags': [],
+        'comment': content,
+        'from_articles': True,
+    }]
+
+
 def build_section1(data, api_key, note=''):
-    insights = data.get('insights', [])[:3]
-
-    # Fallback to marketing news if insights are empty
-    if not insights:
-        news = data.get('news', {})
-        marketing = news.get('marketing', [])[:2]
-        brand_global = news.get('brand_global', [])[:1]
-        for a in (marketing + brand_global)[:3]:
-            insights.append({
-                'title': a.get('title', ''),
-                'link': a.get('link', ''),
-                'source': a.get('source', 'Google News'),
-                'published': a.get('published', ''),
-                'image': '',
-                'description': '',
-                'tags': [],
-            })
-
     items = []
-    for insight in insights:
-        title = insight.get('title', '')
-        source = insight.get('source', 'Google News')
-        description = insight.get('description', '')
-        tags = insight.get('tags', [])
-        comment = ''
-        if api_key and title:
-            tags_str = ', '.join(tags) if tags else ''
-            prompt = f"""당신은 위메이드 브랜드마케팅팀 소속 시니어 마케터입니다.
+
+    # 1순위: 아티클 DB (브랜드인사이트 + 캠페인사례)
+    if api_key:
+        items += generate_content_from_articles('브랜드인사이트', api_key)
+        if len(items) < 2:
+            items += generate_content_from_articles('캠페인사례', api_key)
+        items = items[:3]
+
+    # 2순위: data.json insights (fetch_data.py 결과)
+    if not items:
+        insights = data.get('insights', [])[:3]
+        for insight in insights:
+            title = insight.get('title', '')
+            source = insight.get('source', 'Google News')
+            description = insight.get('description', '')
+            tags = insight.get('tags', [])
+            comment = ''
+            if api_key and title:
+                tags_str = ', '.join(tags) if tags else ''
+                prompt = f"""당신은 위메이드 브랜드마케팅팀 소속 시니어 마케터입니다.
 아래 아티클을 읽고 마케띵킹/큐레터 스타일의 인사이트 코멘트를 작성해주세요.
 
 작성 규칙:
@@ -98,23 +179,40 @@ def build_section1(data, api_key, note=''):
 - 소제목 없이 연속적인 단락으로
 - 400~500자 내외
 - 이모지 2~3개 자연스럽게 포함
+- 마크다운(*, **, #) 절대 사용 금지 — 일반 텍스트로만
 - 마지막 문장은 실무 활용 힌트로 마무리
 
 아티클 제목: {title}
 출처: {source}
 요약: {description}
 키워드: {tags_str}"""
-            comment = gemini_comment(api_key, prompt)
-        items.append({
-            'title': title,
-            'link': insight.get('link', ''),
-            'source': source,
-            'published': insight.get('published', ''),
-            'image': insight.get('image', ''),
-            'description': description,
-            'tags': tags,
-            'comment': comment,
-        })
+                comment = gemini_comment(api_key, prompt)
+            items.append({
+                'title': title,
+                'link': insight.get('link', ''),
+                'source': source,
+                'published': insight.get('published', ''),
+                'image': insight.get('image', ''),
+                'description': description,
+                'tags': tags,
+                'comment': comment,
+            })
+
+    # 3순위: 기존 marketing+brand_global 뉴스
+    if not items:
+        news = data.get('news', {})
+        for a in (news.get('marketing', [])[:2] + news.get('brand_global', [])[:1])[:3]:
+            items.append({
+                'title': a.get('title', ''),
+                'link': a.get('link', ''),
+                'source': a.get('source', 'Google News'),
+                'published': a.get('published', ''),
+                'image': '',
+                'description': '',
+                'tags': [],
+                'comment': '',
+            })
+
     return {'articles': items, 'note': note}
 
 
@@ -154,6 +252,21 @@ def build_section2(data, api_key, note=''):
 
 
 def build_section3(data, api_key, note=''):
+    articles_items = []
+
+    # 1순위: 아티클 DB (AI·IT 카테고리)
+    if api_key:
+        articles_items = generate_content_from_articles('AI·IT', api_key)
+
+    if articles_items:
+        return {
+            'articles': articles_items,
+            'comment': '',
+            'note': note,
+            'from_articles': True,
+        }
+
+    # 2순위: data.json aiit 뉴스 (기존 방식)
     aiit = data.get('news', {}).get('aiit', [])[:5]
     titles = [a.get('title', '') for a in aiit if a.get('title')][:3]
 
@@ -172,7 +285,7 @@ Trend A Word 스타일로 브랜드 마케터가 꼭 알아야 할 핵심을 작
 - 이모지 포함"""
         comment = gemini_comment(api_key, prompt)
 
-    return {'articles': aiit, 'comment': comment, 'note': note}
+    return {'articles': aiit, 'comment': comment, 'note': note, 'from_articles': False}
 
 
 def _fmt_stock(s):

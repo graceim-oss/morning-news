@@ -512,7 +512,8 @@
       {% endfor %}
     {% else %}
     <p style="color:#9CA3AF;text-align:center;padding:24px 0;font-size:14px;">
-      브랜드 인사이트 데이터를 불러오는 중입니다.
+      아티클을 등록해주세요.<br>
+      <small>관리자 페이지 → 아티클 관리에서 URL을 등록하면 AI가 자동으로 콘텐츠를 생성합니다.</small>
     </p>
     {% endif %}
 
@@ -626,20 +627,47 @@
     {% endif %}
 
     {% if section3.articles %}
-      {% for article in section3.articles %}
-      <div class="news-item">
-        <span class="news-source-badge">{{ article.source }}</span>
-        {% if article.link %}
-        <a href="{{ article.link }}" class="news-title" target="_blank">{{ article.title }}</a>
-        {% else %}
-        <span class="news-title">{{ article.title }}</span>
-        {% endif %}
-      </div>
-      {% endfor %}
+      {% if section3.from_articles %}
+        {% for article in section3.articles %}
+        <div class="article-card">
+          {% if article.image %}
+          <img src="{{ article.image }}" alt="" class="article-thumb">
+          {% endif %}
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="source-badge" style="background:#EEEEFF; color:#5C67F2;">{{ article.source }}</span>
+              {% if article.published %}<span class="article-date">{{ article.published }}</span>{% endif %}
+            </div>
+            {% if article.link %}
+            <a href="{{ article.link }}" class="article-title" style="color:#1a1f36;" target="_blank">{{ article.title }}</a>
+            {% else %}
+            <span class="article-title">{{ article.title }}</span>
+            {% endif %}
+            {% if article.comment %}
+            <div class="comment-box" style="border-left-color:#5C67F2; background:#F3F4FF;">{{ article.comment }}</div>
+            {% endif %}
+            {% if article.link %}
+            <a href="{{ article.link }}" class="read-link" style="color:#5C67F2;" target="_blank">원문 읽기</a>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      {% else %}
+        {% for article in section3.articles %}
+        <div class="news-item">
+          <span class="news-source-badge">{{ article.source }}</span>
+          {% if article.link %}
+          <a href="{{ article.link }}" class="news-title" target="_blank">{{ article.title }}</a>
+          {% else %}
+          <span class="news-title">{{ article.title }}</span>
+          {% endif %}
+        </div>
+        {% endfor %}
+      {% endif %}
     {% else %}
     <p style="color:#9CA3AF;text-align:center;padding:24px 0;font-size:14px;">
       AI/IT 뉴스 데이터가 없습니다.<br>
-      <small>fetch_data.py 업데이트 후 재실행해주세요.</small>
+      <small>아티클 관리에서 AI·IT 카테고리 아티클을 등록하거나 fetch_data.py를 실행해주세요.</small>
     </p>
     {% endif %}
 

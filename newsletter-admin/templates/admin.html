@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>뉴스레터 관리자 · 위메이드 브랜드마케팅팀</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1a1a2e;
+      --navy-dark: #12122a;
+      --gold: #e8c468;
+      --gold-light: #f5dfa0;
+    }
+    body { background: #f0f2f5; font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; }
+
+    /* Sidebar */
+    .sidebar {
+      width: 230px;
+      min-height: 100vh;
+      background: var(--navy);
+      position: fixed;
+      top: 0; left: 0;
+      z-index: 200;
+      display: flex;
+      flex-direction: column;
+    }
+    .sidebar-brand {
+      padding: 22px 18px 18px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .sidebar-brand .logo-text {
+      color: var(--gold);
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+    }
+    .sidebar-brand .logo-sub {
+      color: rgba(255,255,255,0.45);
+      font-size: 11px;
+      margin-top: 2px;
+    }
+    .sidebar-nav { padding: 12px 10px; flex: 1; }
+    .sidebar-nav .nav-item { margin-bottom: 2px; }
+    .sidebar-nav .nav-link {
+      color: rgba(255,255,255,0.65);
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .sidebar-nav .nav-link:hover { background: rgba(255,255,255,0.07); color: #fff; }
+    .sidebar-nav .nav-link.active { background: rgba(232,196,104,0.15); color: var(--gold); font-weight: 600; }
+    .sidebar-footer {
+      padding: 14px 18px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 11px;
+      color: rgba(255,255,255,0.3);
+    }
+
+    /* Main */
+    .main-content { margin-left: 230px; min-height: 100vh; padding: 28px 28px; }
+    .page-header { margin-bottom: 22px; }
+    .page-header h4 { font-size: 20px; font-weight: 700; color: #1a1a2e; margin: 0; }
+    .page-header .text-muted { font-size: 13px; }
+
+    /* Cards */
+    .card { border: none; border-radius: 12px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    .card-header { background: #fff; border-bottom: 1px solid #f0f0f0; font-size: 14px; font-weight: 600; color: #1a1a2e; border-radius: 12px 12px 0 0 !important; padding: 14px 18px; }
+    .card-body { padding: 18px; }
+
+    /* Stat cards */
+    .stat-card { border-radius: 12px; padding: 20px; color: #fff; }
+    .stat-card.navy { background: linear-gradient(135deg, var(--navy), #0f3460); }
+    .stat-card.gold { background: linear-gradient(135deg, #c9a227, #e8c468); color: var(--navy); }
+    .stat-card.teal { background: linear-gradient(135deg, #0d7377, #14a085); }
+    .stat-label { font-size: 11px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; opacity: 0.75; margin-bottom: 8px; }
+    .stat-value { font-size: 28px; font-weight: 800; line-height: 1; }
+    .stat-sub { font-size: 12px; opacity: 0.7; margin-top: 6px; }
+
+    /* Buttons */
+    .btn-wemade { background: var(--navy); color: #fff; border: none; font-weight: 600; }
+    .btn-wemade:hover { background: var(--navy-dark); color: #fff; }
+    .btn-gold { background: var(--gold); color: var(--navy); border: none; font-weight: 700; }
+    .btn-gold:hover { background: #d4aa50; color: var(--navy); }
+
+    /* Table */
+    .table th { font-size: 12px; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.5px; }
+    .table td { font-size: 14px; vertical-align: middle; }
+    .table-hover tbody tr:hover { background: #fafbff; }
+
+    /* Badge */
+    .badge-test { background: #6f42c1; }
+    .badge-send { background: #0d6efd; }
+
+    /* Next send */
+    .next-send-box {
+      background: linear-gradient(135deg, var(--navy), #0f3460);
+      border-radius: 12px;
+      padding: 20px 24px;
+      color: #fff;
+    }
+    .next-send-box .label { font-size: 11px; opacity: 0.6; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+    .next-send-box .value { font-size: 22px; font-weight: 700; color: var(--gold); }
+
+    /* Action buttons */
+    .action-grid { display: flex; gap: 10px; flex-wrap: wrap; }
+    .action-grid .btn { flex: 1; min-width: 140px; padding: 12px; font-size: 14px; }
+
+    /* Form */
+    .form-label { font-size: 13px; font-weight: 600; color: #444; margin-bottom: 5px; }
+    .form-control, .form-select { font-size: 14px; border-radius: 8px; border-color: #e0e0e0; }
+    .form-control:focus, .form-select:focus { border-color: var(--navy); box-shadow: 0 0 0 3px rgba(26,26,46,0.1); }
+    .form-text { font-size: 12px; color: #999; margin-top: 4px; }
+
+    /* Empty state */
+    .empty-state { text-align: center; padding: 40px; color: #aaa; }
+    .empty-state i { font-size: 36px; display: block; margin-bottom: 10px; }
+
+    /* Alert override */
+    .alert { border-radius: 10px; font-size: 14px; }
+
+    @media (max-width: 768px) {
+      .sidebar { transform: translateX(-100%); }
+      .main-content { margin-left: 0; padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <div class="sidebar-brand">
+    <div class="logo-text">📬 Newsletter</div>
+    <div class="logo-sub">위메이드 브랜드마케팅팀</div>
+  </div>
+  <nav class="sidebar-nav">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a href="/" class="nav-link {% if page == 'home' %}active{% endif %}">
+          <i class="bi bi-speedometer2"></i> 홈 대시보드
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/recipients" class="nav-link {% if page == 'recipients' %}active{% endif %}">
+          <i class="bi bi-people"></i> 수신자 관리
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/settings" class="nav-link {% if page == 'settings' %}active{% endif %}">
+          <i class="bi bi-gear"></i> 발송 설정
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/articles" class="nav-link {% if page == 'articles' %}active{% endif %}">
+          <i class="bi bi-newspaper"></i> 아티클 관리
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/content" class="nav-link {% if page == 'content' %}active{% endif %}">
+          <i class="bi bi-pencil-square"></i> 콘텐츠 편집
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/archive" class="nav-link {% if page == 'archive' %}active{% endif %}">
+          <i class="bi bi-archive"></i> 발송 아카이브
+        </a>
+      </li>
+      <li class="nav-item mt-2">
+        <a href="/preview" target="_blank" class="nav-link">
+          <i class="bi bi-eye"></i> 이메일 미리보기
+          <i class="bi bi-box-arrow-up-right ms-auto" style="font-size:10px;opacity:0.5;"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="sidebar-footer">
+    위메이드 브랜드마케팅팀<br>뉴스레터 관리 시스템
+  </div>
+</div>
+
+<!-- Main content -->
+<div class="main-content">
+
+  <!-- Flash messages -->
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      {% for category, message in messages %}
+        <div class="alert alert-{{ 'success' if category == 'success' else 'danger' }} alert-dismissible fade show" role="alert">
+          <i class="bi bi-{{ 'check-circle' if category == 'success' else 'exclamation-triangle' }}-fill me-2"></i>
+          {{ message }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+
+  <!-- ══════════════ HOME ══════════════ -->
+  {% if page == 'home' %}
+  <div class="page-header">
+    <h4><i class="bi bi-speedometer2 me-2"></i>홈 대시보드</h4>
+    <div class="text-muted mt-1">위메이드 브랜드마케팅팀 뉴스레터 관리 센터</div>
+  </div>
+
+  <!-- Stats row -->
+  <div class="row g-3 mb-4">
+    <div class="col-md-5">
+      <div class="next-send-box">
+        <div class="label"><i class="bi bi-clock me-1"></i>다음 발송 예정</div>
+        <div class="value">{{ next_send }}</div>
+      </div>
+    </div>
+    <div class="col-md-3 col-6">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
+          <div style="font-size:32px; font-weight:800; color:#1a1a2e;">{{ cfg.recipients|length }}</div>
+          <div style="font-size:12px; color:#888; margin-top:4px;">총 수신자 수</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-6">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
+          <div style="font-size:32px; font-weight:800; color:#1a1a2e;">{{ history|length }}</div>
+          <div style="font-size:12px; color:#888; margin-top:4px;">최근 발송 기록</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Action buttons -->
+  <div class="card mb-4">
+    <div class="card-header"><i class="bi bi-lightning-charge me-2"></i>빠른 실행</div>
+    <div class="card-body">
+      <div class="action-grid">
+        <form method="post" action="/send" onsubmit="return confirm('전체 수신자 {{ cfg.recipients|length }}명에게 발송하시겠습니까?\n(이 작업은 실제 이메일을 발송합니다)')">
+          <button type="submit" class="btn btn-gold w-100" {% if not cfg.recipients %}disabled title="수신자를 먼저 추가해주세요"{% endif %}>
+            <i class="bi bi-send-fill me-2"></i>즉시 전체 발송
+          </button>
+        </form>
+        <form method="post" action="/test-send">
+          <button type="submit" class="btn btn-wemade w-100" {% if not cfg.gmail_user %}disabled title="Gmail 계정을 먼저 설정해주세요"{% endif %}>
+            <i class="bi bi-send me-2"></i>테스트 발송 (본인)
+          </button>
+        </form>
+        <a href="/preview" target="_blank" class="btn btn-outline-secondary">
+          <i class="bi bi-eye me-2"></i>이메일 미리보기
+        </a>
+      </div>
+      {% if not cfg.gmail_user %}
+      <div class="mt-2 text-warning" style="font-size:12px;"><i class="bi bi-exclamation-triangle me-1"></i>Gmail 설정이 없습니다. <a href="/settings">발송 설정</a>에서 입력해주세요.</div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- History table -->
+  <div class="card">
+    <div class="card-header"><i class="bi bi-clock-history me-2"></i>최근 발송 이력</div>
+    {% if history %}
+    <div class="table-responsive">
+      <table class="table table-hover mb-0">
+        <thead class="table-light">
+          <tr>
+            <th>발송일시</th>
+            <th>유형</th>
+            <th>수신자</th>
+            <th>성공</th>
+            <th>실패</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for h in history %}
+          <tr>
+            <td>{{ h.date }}</td>
+            <td>
+              {% if h.is_test %}
+              <span class="badge badge-test">테스트</span>
+              {% else %}
+              <span class="badge badge-send">정규</span>
+              {% endif %}
+            </td>
+            <td>{{ h.recipients }}명</td>
+            <td><span class="badge bg-success">{{ h.success }}</span></td>
+            <td><span class="badge bg-{{ 'danger' if h.fail > 0 else 'secondary' }}">{{ h.fail }}</span></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="empty-state">
+      <i class="bi bi-inbox"></i>
+      발송 이력이 없습니다.
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- ══════════════ RECIPIENTS ══════════════ -->
+  {% elif page == 'recipients' %}
+  <div class="page-header">
+    <h4><i class="bi bi-people me-2"></i>수신자 관리</h4>
+    <div class="text-muted mt-1">현재 {{ cfg.recipients|length }}명의 수신자가 등록되어 있습니다</div>
+  </div>
+
+  <div class="card mb-4">
+    <div class="card-header"><i class="bi bi-person-plus me-2"></i>수신자 추가</div>
+    <div class="card-body">
+      <form method="post">
+        <input type="hidden" name="action" value="add">
+        <div class="row g-2 align-items-end">
+          <div class="col-md-4">
+            <label class="form-label">이름 <span class="text-muted">(선택)</span></label>
+            <input type="text" name="name" class="form-control" placeholder="예: 홍길동">
+          </div>
+          <div class="col-md-5">
+            <label class="form-label">이메일 주소 <span class="text-danger">*</span></label>
+            <input type="email" name="email" class="form-control" placeholder="example@wemadeplus.com" required>
+          </div>
+          <div class="col-md-3">
+            <button type="submit" class="btn btn-wemade w-100">
+              <i class="bi bi-plus-lg me-1"></i>추가
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><i class="bi bi-list-ul me-2"></i>수신자 목록</div>
+    {% if cfg.recipients %}
+    <div class="table-responsive">
+      <table class="table table-hover mb-0">
+        <thead class="table-light">
+          <tr>
+            <th style="width:50px">#</th>
+            <th>이름</th>
+            <th>이메일</th>
+            <th style="width:80px">삭제</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for r in cfg.recipients %}
+          <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ r.name if r.name else '—' }}</td>
+            <td>{{ r.email }}</td>
+            <td>
+              <form method="post" onsubmit="return confirm('{{ r.email }} 수신자를 삭제하시겠습니까?')">
+                <input type="hidden" name="action" value="delete">
+                <input type="hidden" name="index" value="{{ loop.index0 }}">
+                <button type="submit" class="btn btn-sm btn-outline-danger">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </form>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="empty-state">
+      <i class="bi bi-person-x"></i>
+      수신자가 없습니다. 위에서 추가해주세요.
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- ══════════════ SETTINGS ══════════════ -->
+  {% elif page == 'settings' %}
+  <div class="page-header">
+    <h4><i class="bi bi-gear me-2"></i>발송 설정</h4>
+    <div class="text-muted mt-1">Gmail 계정, 발송 시간, AI 설정을 관리합니다</div>
+  </div>
+
+  <form method="post">
+    <div class="card mb-4">
+      <div class="card-header"><i class="bi bi-calendar-week me-2"></i>발송 스케줄</div>
+      <div class="card-body">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label class="form-label">발송 요일</label>
+            <select name="day" class="form-select">
+              {% set days = [('monday','월요일'),('tuesday','화요일'),('wednesday','수요일'),('thursday','목요일'),('friday','금요일'),('saturday','토요일'),('sunday','일요일')] %}
+              {% for val, label in days %}
+              <option value="{{ val }}" {% if cfg.schedule.day == val %}selected{% endif %}>{{ label }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">발송 시 (0~23)</label>
+            <select name="hour" class="form-select">
+              {% for h in range(24) %}
+              <option value="{{ h }}" {% if cfg.schedule.hour == h %}selected{% endif %}>
+                {{ '%02d'|format(h) }}시
+              </option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">발송 분</label>
+            <select name="minute" class="form-select">
+              {% for m in [0, 10, 20, 30, 40, 50] %}
+              <option value="{{ m }}" {% if cfg.schedule.minute == m %}selected{% endif %}>
+                {{ '%02d'|format(m) }}분
+              </option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-header"><i class="bi bi-envelope me-2"></i>Gmail 설정</div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label class="form-label">Gmail 계정</label>
+          <input type="email" name="gmail_user" class="form-control" value="{{ cfg.gmail_user }}" placeholder="your@gmail.com">
+        </div>
+        <div class="mb-0">
+          <label class="form-label">Gmail 앱 비밀번호</label>
+          <input type="password" name="gmail_password" class="form-control" value="{{ cfg.gmail_password }}" placeholder="앱 비밀번호 16자리 (띄어쓰기 없이)">
+          <div class="form-text">
+            구글 계정 → 보안 → 2단계 인증 활성화 후 → 앱 비밀번호 생성
+            (<a href="https://myaccount.google.com/apppasswords" target="_blank">바로가기</a>)
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-header"><i class="bi bi-robot me-2"></i>Gemini AI 설정</div>
+      <div class="card-body">
+        <div class="mb-0">
+          <label class="form-label">Gemini API 키</label>
+          <input type="password" name="gemini_api_key" class="form-control" value="{{ cfg.gemini_api_key }}" placeholder="AIza...">
+          <div class="form-text">
+            Google AI Studio에서 무료 발급
+            (<a href="https://aistudio.google.com/app/apikey" target="_blank">바로가기</a>)
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-wemade px-4">
+      <i class="bi bi-save me-2"></i>설정 저장
+    </button>
+  </form>
+
+  <!-- ══════════════ CONTENT ══════════════ -->
+  {% elif page == 'content' %}
+  <div class="page-header">
+    <h4><i class="bi bi-pencil-square me-2"></i>콘텐츠 편집</h4>
+    <div class="text-muted mt-1">매주 직접 입력하는 콘텐츠를 편집합니다</div>
+  </div>
+
+  <form method="post">
+    <div class="card mb-4">
+      <div class="card-header"><i class="bi bi-chat-quote me-2"></i>에디터 한마디</div>
+      <div class="card-body">
+        <textarea name="editor_comment" class="form-control" rows="5"
+          placeholder="이번 주 에디터의 한마디를 입력해주세요. 뉴스레터 하단 '에디터 한마디' 섹션에 표시됩니다.">{{ cfg.editor_comment }}</textarea>
+        <div class="form-text">입력하지 않으면 해당 섹션이 숨겨집니다.</div>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-header"><i class="bi bi-globe me-2"></i>Section 2 · 지금 세상은 — 상단 메모</div>
+      <div class="card-body">
+        <textarea name="note_section2" class="form-control" rows="3"
+          placeholder="Section 2 상단에 추가할 수동 메모 (선택)">{{ cfg.manual_notes.section2 if cfg.manual_notes else '' }}</textarea>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-header"><i class="bi bi-cpu me-2"></i>Section 3 · AI/IT 소식 — 상단 메모</div>
+      <div class="card-body">
+        <textarea name="note_section3" class="form-control" rows="3"
+          placeholder="Section 3 상단에 추가할 수동 메모 (선택)">{{ cfg.manual_notes.section3 if cfg.manual_notes else '' }}</textarea>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-wemade px-4">
+      <i class="bi bi-save me-2"></i>저장
+    </button>
+  </form>
+
+  <!-- ══════════════ ARTICLES ══════════════ -->
+  {% elif page == 'articles' %}
+  <div class="page-header d-flex align-items-center justify-content-between">
+    <div>
+      <h4><i class="bi bi-newspaper me-2"></i>아티클 관리</h4>
+      <div class="text-muted mt-1">뉴스레터 콘텐츠 생성에 사용할 아티클을 등록·관리합니다 (총 {{ all_articles|length }}개)</div>
+    </div>
+  </div>
+
+  <!-- 등록 폼 -->
+  <div class="card mb-4">
+    <div class="card-header"><i class="bi bi-link-45deg me-2"></i>URL로 아티클 등록</div>
+    <div class="card-body">
+      <div class="row g-2 mb-3">
+        <div class="col">
+          <input type="url" id="crawlUrl" class="form-control" placeholder="https://... 크롤링할 아티클 URL을 입력하세요">
+        </div>
+        <div class="col-auto">
+          <button id="crawlBtn" class="btn btn-wemade" onclick="doCrawl()">
+            <span id="crawlBtnText"><i class="bi bi-cloud-download me-1"></i>크롤링</span>
+          </button>
+        </div>
+      </div>
+      <div id="crawlError" class="alert alert-danger py-2" style="display:none; font-size:13px;"></div>
+
+      <!-- 크롤링 미리보기 -->
+      <div id="crawlPreview" style="display:none;">
+        <hr class="my-3">
+        <div class="row g-3">
+          <div class="col-md-3" id="previewImgCol" style="display:none;">
+            <img id="previewImg" src="" alt="" class="img-fluid rounded" style="max-height:140px; object-fit:cover; width:100%;">
+          </div>
+          <div class="col">
+            <div class="fw-bold mb-1" id="previewTitle" style="font-size:15px;"></div>
+            <div class="text-muted mb-2" style="font-size:12px;" id="previewSource"></div>
+            <div id="previewText" style="font-size:13px; color:#555; max-height:80px; overflow:hidden; line-height:1.6;"></div>
+          </div>
+        </div>
+        <form method="post" action="/articles/save" class="mt-3">
+          <input type="hidden" id="articleDataInput" name="article_data">
+          <div class="row g-2 align-items-center">
+            <div class="col-auto">
+              <label class="form-label mb-0 me-1 fw-semibold" style="font-size:13px;">카테고리</label>
+            </div>
+            <div class="col-auto">
+              <select name="category" class="form-select form-select-sm" style="min-width:160px;">
+                <option value="브랜드인사이트">브랜드 인사이트</option>
+                <option value="AI·IT">AI · IT</option>
+                <option value="트렌드">트렌드</option>
+                <option value="캠페인사례">캠페인 사례</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-gold btn-sm px-3">
+                <i class="bi bi-save me-1"></i>저장
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 카테고리 필터 탭 -->
+  <div class="d-flex gap-2 mb-3 flex-wrap">
+    <a href="/articles" class="btn btn-sm {% if not cat_filter %}btn-wemade{% else %}btn-outline-secondary{% endif %}">전체 ({{ all_articles|length }})</a>
+    {% for cat in cats %}
+    <a href="/articles?cat={{ cat }}" class="btn btn-sm {% if cat_filter == cat %}btn-wemade{% else %}btn-outline-secondary{% endif %}">
+      {{ cat }} ({{ all_articles|selectattr('category','equalto',cat)|list|length }})
+    </a>
+    {% endfor %}
+  </div>
+
+  <!-- 아티클 카드 목록 -->
+  {% if articles %}
+  <div class="row g-3">
+    {% for art in articles %}
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100" style="border-radius:12px; overflow:hidden; cursor:pointer;"
+           onclick="showArticleModal({{ loop.index0 }})">
+        {% if art.image %}
+        <img src="{{ art.image }}" alt="" style="height:130px; object-fit:cover; width:100%;">
+        {% else %}
+        <div style="height:60px; background:linear-gradient(135deg,#1a1a2e,#0f3460); display:flex; align-items:center; justify-content:center;">
+          <i class="bi bi-file-text" style="font-size:24px; color:rgba(232,196,104,0.6);"></i>
+        </div>
+        {% endif %}
+        <div class="card-body p-3">
+          <div class="d-flex gap-1 mb-2 flex-wrap">
+            <span class="badge" style="background:{% if art.category == 'AI·IT' %}#5C67F2{% elif art.category == '캠페인사례' %}#00897B{% elif art.category == '트렌드' %}#E64A19{% else %}#1a1a2e{% endif %}; font-size:10px;">{{ art.category }}</span>
+            {% if art.used_count > 0 %}
+            <span class="badge bg-secondary" style="font-size:10px;">사용 {{ art.used_count }}회</span>
+            {% endif %}
+          </div>
+          <div class="fw-semibold mb-1" style="font-size:13px; line-height:1.5; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;">{{ art.title }}</div>
+          <div class="text-muted" style="font-size:11px;">{{ art.source }} · {{ art.added_at[:10] if art.added_at else '' }}</div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty-state card py-5">
+    <i class="bi bi-inbox text-muted" style="font-size:40px;"></i>
+    <div class="mt-2" style="font-size:14px; color:#aaa;">
+      {% if cat_filter %}{{ cat_filter }} 카테고리에 등록된 아티클이 없습니다.
+      {% else %}등록된 아티클이 없습니다. 위에서 URL을 입력해 크롤링해주세요.{% endif %}
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- 아티클 상세 모달 -->
+  <div class="modal fade" id="articleModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content" style="border-radius:14px;">
+        <div class="modal-header border-0 pb-1">
+          <div>
+            <span id="modalCategory" class="badge mb-1" style="font-size:11px;"></span>
+            <h5 class="modal-title fw-bold" id="modalTitle" style="font-size:16px; line-height:1.4;"></h5>
+            <div class="text-muted" id="modalMeta" style="font-size:12px;"></div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        {% if art is defined and art.image %}
+        <img id="modalImg" src="" alt="" style="max-height:220px; object-fit:cover; width:100%; display:none;">
+        {% else %}
+        <img id="modalImg" src="" alt="" style="max-height:220px; object-fit:cover; width:100%; display:none;">
+        {% endif %}
+        <div class="modal-body pt-2">
+          <div id="modalText" style="font-size:13.5px; line-height:1.9; color:#333; white-space:pre-wrap;"></div>
+        </div>
+        <div class="modal-footer border-0">
+          <a id="modalLink" href="#" target="_blank" class="btn btn-sm btn-outline-primary">
+            <i class="bi bi-box-arrow-up-right me-1"></i>원문 보기
+          </a>
+          <form method="post" action="/articles/delete" class="ms-auto" id="deleteForm">
+            <input type="hidden" name="article_id" id="deleteId">
+            <button type="submit" class="btn btn-sm btn-outline-danger"
+                    onclick="return confirm('이 아티클을 삭제하시겠습니까?')">
+              <i class="bi bi-trash me-1"></i>삭제
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════ ARCHIVE ══════════════ -->
+  {% elif page == 'archive' %}
+  <div class="page-header">
+    <h4><i class="bi bi-archive me-2"></i>발송 아카이브</h4>
+    <div class="text-muted mt-1">전체 뉴스레터 발송 이력을 확인합니다</div>
+  </div>
+  <div class="card">
+    <div class="card-header"><i class="bi bi-clock-history me-2"></i>전체 발송 이력 ({{ history|length }}건)</div>
+    {% if history %}
+    <div class="table-responsive">
+      <table class="table table-hover mb-0">
+        <thead class="table-light">
+          <tr><th>발송일시</th><th>유형</th><th>수신자</th><th>성공</th><th>실패</th></tr>
+        </thead>
+        <tbody>
+          {% for h in history %}
+          <tr>
+            <td>{{ h.date }}</td>
+            <td>
+              {% if h.is_test %}<span class="badge badge-test">테스트</span>
+              {% else %}<span class="badge badge-send">정규</span>{% endif %}
+            </td>
+            <td>{{ h.recipients }}명</td>
+            <td><span class="badge bg-success">{{ h.success }}</span></td>
+            <td><span class="badge bg-{{ 'danger' if h.fail > 0 else 'secondary' }}">{{ h.fail }}</span></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="empty-state"><i class="bi bi-inbox"></i>발송 이력이 없습니다.</div>
+    {% endif %}
+  </div>
+
+  {% endif %}
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// ── 아티클 크롤링 ──────────────────────────────────────────────
+let _crawledData = null;
+
+async function doCrawl() {
+  const url = document.getElementById('crawlUrl').value.trim();
+  if (!url) { alert('URL을 입력해주세요.'); return; }
+
+  const btn = document.getElementById('crawlBtn');
+  const btnText = document.getElementById('crawlBtnText');
+  const errBox = document.getElementById('crawlError');
+  const preview = document.getElementById('crawlPreview');
+
+  btn.disabled = true;
+  btnText.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span>크롤링 중...';
+  errBox.style.display = 'none';
+  preview.style.display = 'none';
+
+  try {
+    const res = await fetch('/articles/crawl', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({url}),
+    });
+    const data = await res.json();
+    if (!res.ok || data.error) throw new Error(data.error || '크롤링 실패');
+
+    _crawledData = data;
+    document.getElementById('previewTitle').textContent = data.title || '(제목 없음)';
+    document.getElementById('previewSource').textContent = (data.source || '') + (data.published ? ' · ' + data.published : '');
+    document.getElementById('previewText').textContent = (data.full_text || '').substring(0, 300) + '…';
+    document.getElementById('articleDataInput').value = JSON.stringify(data);
+
+    const imgCol = document.getElementById('previewImgCol');
+    const img = document.getElementById('previewImg');
+    if (data.image) {
+      img.src = data.image;
+      imgCol.style.display = '';
+    } else {
+      imgCol.style.display = 'none';
+    }
+    preview.style.display = '';
+  } catch(e) {
+    errBox.textContent = '크롤링 오류: ' + e.message;
+    errBox.style.display = '';
+  } finally {
+    btn.disabled = false;
+    btnText.innerHTML = '<i class="bi bi-cloud-download me-1"></i>크롤링';
+  }
+}
+
+// Enter key in URL input
+document.addEventListener('DOMContentLoaded', function() {
+  const inp = document.getElementById('crawlUrl');
+  if (inp) inp.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); doCrawl(); } });
+});
+
+// ── 아티클 상세 모달 ──────────────────────────────────────────
+const _articles = {{ articles | tojson if articles is defined else '[]' }};
+
+function showArticleModal(idx) {
+  const art = _articles[idx];
+  if (!art) return;
+  document.getElementById('modalTitle').textContent = art.title || '';
+  document.getElementById('modalMeta').textContent = (art.source || '') + ' · ' + (art.added_at || '') + (art.used_count ? ' · 사용 ' + art.used_count + '회' : '');
+  document.getElementById('modalText').textContent = art.full_text || '(본문 없음)';
+  document.getElementById('modalLink').href = art.url || '#';
+  document.getElementById('deleteId').value = art.id || '';
+
+  const catEl = document.getElementById('modalCategory');
+  const catColors = {'AI·IT':'#5C67F2','캠페인사례':'#00897B','트렌드':'#E64A19','브랜드인사이트':'#1a1a2e'};
+  catEl.textContent = art.category || '';
+  catEl.style.background = catColors[art.category] || '#888';
+
+  const img = document.getElementById('modalImg');
+  if (art.image) { img.src = art.image; img.style.display = ''; }
+  else { img.style.display = 'none'; }
+
+  new bootstrap.Modal(document.getElementById('articleModal')).show();
+}
+</script>
+</body>
+</html>
