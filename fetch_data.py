@@ -211,6 +211,7 @@ def main():
         'news_blockchain':   lambda: fetch_news('블록체인 OR 가상자산 OR NFT OR Web3 OR 코인 OR 스테이블코인'),
         'news_marketing':    lambda: fetch_news('토스 브랜딩 OR 카카오 마케팅 OR 배달의민족 브랜드 OR 쿠팡 마케팅 OR 무신사 브랜딩 OR 브랜드 캠페인 OR 마케팅 인사이트 OR 디자인 트렌드'),
         'news_brand_global': lambda: fetch_news('brand campaign OR brand strategy OR marketing trend 2026 OR brand design OR brand identity'),
+        'news_aiit':         lambda: fetch_news('ChatGPT OR Gemini OR 인공지능 OR AI 서비스 OR LLM OR IT 트렌드 when:3d'),
         'trend_kr':          lambda: fetch_gtrend('KR'),
         'trend_global':      lambda: fetch_gtrend('US'),
         'steam':             lambda: fetch_steam_top(),
@@ -235,6 +236,7 @@ def main():
         'blockchain':   results.get('news_blockchain', []),
         'marketing':    results.get('news_marketing', []),
         'brand_global': results.get('news_brand_global', []),
+        'aiit':         results.get('news_aiit', []),
     }
     trends = {
         'kr':     results.get('trend_kr', []),
@@ -265,6 +267,7 @@ def main():
     print('  App Store KR: ' + str(len(rankings['appstore_kr'])) + '개')
     print('  뉴스-마케팅: ' + str(len(news['marketing'])) + '개')
     print('  뉴스-글로벌브랜드: ' + str(len(news['brand_global'])) + '개')
+    print('  뉴스-AI/IT: ' + str(len(news['aiit'])) + '개')
 
 if __name__ == '__main__':
     main()
