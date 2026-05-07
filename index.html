@@ -354,7 +354,10 @@
       <div class="card-hd">
         <div class="card-ttl">
           <div class="card-ico ic-n">📖</div>
-          <div><h2>나무위키 실시간 검색어</h2><div class="card-sub">아르카 나무실검 최신순</div></div>
+          <div>
+            <h2><a href="https://arca.live/b/namuhotnow" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">커뮤니티 실시간 검색어</a></h2>
+            <div class="card-sub">자세한 내용은 해당 사이트 게시물에서 확인 가능합니다.</div>
+          </div>
         </div>
         <div class="card-meta"><div class="card-upd" id="upd-namu">—</div></div>
       </div>
@@ -372,11 +375,16 @@
       <div class="card-hd">
         <div class="card-ttl">
           <div class="card-ico ic-b">🖥️</div>
-          <div><h2>PC방 순위</h2><div class="card-sub">게임트릭스 실시간</div></div>
+          <div><h2>PC 게임 순위</h2><div class="card-sub">국내 PC방 · 스팀 글로벌</div></div>
         </div>
         <div class="card-meta"><div class="card-upd" id="upd-gametrics">—</div></div>
       </div>
-      <div class="trends-pane" id="body-gametrics"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
+      <div class="tab-bar">
+        <button class="tab-btn active" id="tab-pcbang" onclick="switchPC('pcbang')">🇰🇷 국내 PC게임</button>
+        <button class="tab-btn" id="tab-steam" onclick="switchPC('steam')">🌍 스팀 글로벌</button>
+      </div>
+      <div class="tab-pane active" id="pane-pcbang"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
+      <div class="tab-pane" id="pane-steam"><div class="sbox"><div class="ldr"></div><span>불러오는 중...</span></div></div>
     </div>
 
     <!-- 모바일 순위 (탭) -->
@@ -578,6 +586,15 @@ function renderRankList(items, bodyId, updId, showPct) {
   if (updEl) updEl.textContent = nowKST() + ' 기준';
 }
 
+function switchPC(tab) {
+  ['pcbang','steam'].forEach(t => {
+    const btn = document.getElementById('tab-'+t);
+    const pane = document.getElementById('pane-'+t);
+    if (btn) btn.classList.toggle('active', t===tab);
+    if (pane) pane.classList.toggle('active', t===tab);
+  });
+}
+
 function switchMobile(tab) {
   ['gplay','appstore'].forEach(t => {
     document.getElementById('tab-'+t).style.background = t===tab ? '#4f5bd5' : '#fff';
@@ -588,9 +605,24 @@ function switchMobile(tab) {
 }
 
 function renderRankings(rankings) {
-  renderRankList(rankings.gametrics, 'body-gametrics', 'upd-gametrics', true);
-  renderRankList(rankings.gplay_kr,  'body-gplay',     'upd-mobile',    false);
-  renderRankList(rankings.appstore_kr,'body-appstore',  null,            false);
+  renderRankList(rankings.gametrics, 'pane-pcbang', 'upd-gametrics', true);
+  renderSteam(rankings.steam);
+  renderRankList(rankings.gplay_kr,  'body-gplay',  'upd-mobile',   false);
+  renderRankList(rankings.appstore_kr,'body-appstore', null,         false);
+}
+
+function renderSteam(items) {
+  const pane = document.getElementById('pane-steam');
+  if (!pane) return;
+  if (!items || !items.length) { pane.innerHTML = '<div class="errbox">데이터 없음</div>'; return; }
+  pane.innerHTML = '<div class="tg">' + items.map((it, i) => {
+    const rank = it.rank || i+1;
+    const cls = rank===1?'r1':rank<=3?'r3':'';
+    const players = it.players_2weeks ? '<span class="tr-vol">'+Number(it.players_2weeks).toLocaleString()+'</span>' : '';
+    return '<a class="tr-link" href="'+esc(it.link||'#')+'" target="_blank" rel="noopener">'
+      +'<div class="tr-item"><span class="tr-rank '+cls+'">'+rank+'</span>'
+      +'<span class="tr-kw">'+esc(it.name)+'</span>'+players+'</div></a>';
+  }).join('') + '</div>';
 }
 
 /* ════════════════════════════════════════════════
@@ -610,7 +642,7 @@ async function loadNamu(force=false){
     const out = '<div class="tg">' + list.slice(0,15).map((item,i)=>{
       const rank=i+1, cls=rank===1?'r1':rank<=3?'r3':'';
       const kw = typeof item==='string' ? item : (item.keyword||item.name||item.title||'');
-      const url = 'https://namu.wiki/w/'+encodeURIComponent(kw);
+      const url = 'https://arca.live/b/namuhotnow?q='+encodeURIComponent(kw);
       return '<a class="tr-link" href="'+url+'" target="_blank" rel="noopener"><div class="tr-item"><span class="tr-rank '+cls+'">'+rank+'</span><span class="tr-kw">'+kw+'</span></div></a>';
     }).join('') + '</div>';
     bodyEl.innerHTML=out;
