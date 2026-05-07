@@ -220,6 +220,7 @@ def main():
         'news_blockchain':   lambda: fetch_news('블록체인 OR 가상자산 OR NFT OR Web3 OR 코인 OR 스테이블코인'),
         'news_marketing':    lambda: fetch_news('브랜드 마케팅 OR 브랜드 캠페인 OR 광고 캠페인 OR 마케팅 트렌드 OR 브랜드 전략 OR 콘텐츠 마케팅 OR SNS 마케팅 OR 인플루언서 마케팅 when:1d'),
         'news_brand_global': lambda: fetch_news_en('brand campaign 2026 OR global marketing trend OR brand identity OR viral campaign OR advertising design when:7d'),
+        'news_aiit':         lambda: fetch_news('ChatGPT OR Gemini OR 인공지능 OR AI 서비스 OR LLM OR IT 트렌드 when:3d'),
         'trend_kr':          lambda: fetch_gtrend('KR'),
         'trend_global':      lambda: fetch_gtrend('US'),
         'steam':             lambda: fetch_steam_top(),
