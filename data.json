@@ -1,31 +1,45 @@
 {
-  "updated": "13:24:34",
+  "updated": "18:45:53",
   "stocks": {
     "wemade": {
-      "price": "23,050",
-      "change": "650",
-      "ratio": "2.74",
+      "price": "22,900",
+      "change": "800",
+      "ratio": "3.38",
       "dir": "FALLING",
-      "isOpen": true,
+      "isOpen": false,
       "sign": "-"
     },
     "wemade_max": {
-      "price": "5,330",
-      "change": "170",
-      "ratio": "3.09",
+      "price": "5,270",
+      "change": "230",
+      "ratio": "4.18",
       "dir": "FALLING",
-      "isOpen": true,
+      "isOpen": false,
       "sign": "-"
     },
     "wemix": {
-      "krw": 358.58,
-      "chg24h": 1.5891774550302689,
+      "krw": 356.91,
+      "chg24h": 2.127279822806462,
       "dir": "RISING",
       "sign": "+"
     }
   },
   "news": {
     "wemade": [
+      {
+        "title": "위메이드, ‘미르4’ 2000일 기념 이벤트 - tgdaily.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE92aUVOaVVqT0NwUk1CbXpYNmhpMGVYUnN6ZkEtRkZsY2wwUjZneVZxMGpUSmt5d29fVWV3bjQ0R3M3WFU5bXVwSzF0eDQyUEVrdlh5aUxhNHlHRFFqNVQ5NnJqbkdXVjJ4Vlp0Vg?oc=5",
+        "source": "tgdaily.co.kr",
+        "published": "Thu, 07 May 2026 04:23:08 GMT",
+        "description": "위메이드, ‘미르4’ 2000일 기념 이벤트&nbsp;&nbsp;tgdaily.co.kr"
+      },
+      {
+        "title": "[게임버프] '넥슨·엔씨·위메이드' 주요 업데이트 - 현대경제신문",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5CekNKemtzQ2kybHE4TW9BN2pHc196ZU42dmJjUnMxUTRBNE53NnRwbzZZR2JtYmNyNkVfOWJGVFlYbXU4YnFvR1doTGJyUDRFRlJyaWxUbFNqSVF1NjJwVkYtUXQ2aDM50gFrQVVfeXFMTWRPRGpyZi1aQ3RNdnQ2SGN1MnZ3MzZXallRUXZBYm02UndkMXNNRTd4YkxGVW5sNmRkODBZRXBnemFoRVRkN04zU0drNWZvQjlYTzNRbGpNQWVJaUlSaE9jMGN6V044cUZKYkU?oc=5",
+        "source": "현대경제신문",
+        "published": "Thu, 07 May 2026 09:19:46 GMT",
+        "description": "[게임버프] '넥슨·엔씨·위메이드' 주요 업데이트&nbsp;&nbsp;현대경제신문"
+      },
       {
         "title": "위메이드 ‘미르4’, 서비스 2000일 기념 이벤트 진행 - 중소기업신문",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBkbzFqaUNHRU1pb3FZMXVhTk1jQThPeHJfUkNWNmZoRFZCMk9zNThFaWpxa0hPWmJSM0dUdF9YWTlIOXVKWGZNZVBER1hrYnM2VkxkMXMxVUlrWmRHOUZPWkY1bFFWN3Jjbkw1VQ?oc=5",
@@ -39,6 +53,13 @@
         "source": "아이뉴스24",
         "published": "Thu, 07 May 2026 02:51:22 GMT",
         "description": "위메이드, '미르4' 2000일 기념 대규모 이벤트 진행&nbsp;&nbsp;아이뉴스24"
+      },
+      {
+        "title": "미르4 서비스 2000일, 위메이드가 꺼낸 카드는? - ER 이코노믹리뷰",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB6NlFUQS1jOVcxaXQ3cGtleFZFUzVvTUROOFVMaW9icW5xZnhYcDIzVmRzclBSZGF5SG1tdTR3RnBRYUlqczk1M202UU0tM0J6bjFmSzh5SG9MSWFzdTNndTYwaWUwcXVLT1VmaQ?oc=5",
+        "source": "ER 이코노믹리뷰",
+        "published": "Thu, 07 May 2026 04:42:05 GMT",
+        "description": "미르4 서비스 2000일, 위메이드가 꺼낸 카드는?&nbsp;&nbsp;ER 이코노믹리뷰"
       },
       {
         "title": "위메이드, ‘미르4’ 2000일 기념 대규모 이벤트 개최…성장 특화 서버 ‘등용문’ 운영 - 뉴스퀘스트",
@@ -55,20 +76,6 @@
         "description": "3주년 맞은 위메이드맥스 '나이트 크로우', 7500억 매출 달성&nbsp;&nbsp;v.daum.net"
       },
       {
-        "title": "반등 동력 찾는 위메이드, 서브컬처 게임 '정조준' - 뉴스웨이",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE13NUpheE9VRDFTVmNvdFY2UGpFbDRuWWVFWnR2ZWUzLW1ZYkgta2VaZDBOZXNsNlJ2a2FkTlRkdUxDZmpGbmVZaHFlNzdKQWg4WXBGLWg1UzVxM0xiM1EwdEpFSU9TbGMycFE?oc=5",
-        "source": "뉴스웨이",
-        "published": "Wed, 06 May 2026 22:13:00 GMT",
-        "description": "반등 동력 찾는 위메이드, 서브컬처 게임 '정조준'&nbsp;&nbsp;뉴스웨이"
-      },
-      {
-        "title": "위메이드 ‘미르4’, 2000일 기념 대규모 이벤트…성장 특화 서버 ‘등용문’ 운영 - 더게이트",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1fWVFWbDh2SVpMWWlLemdmMVNVQ3FzeHNXY2E4NVhSUVRFOXppeXgwV2dyZWE3SjgwVEVhYjQtVUN0dU9Tb2pNNVhJb2JXVmJzSWduVXBPZ1U5UHV5M1VOVVFlV3ZvSGRi0gFsQVVfeXFMT2s0ZENVb0FZY3dROHp5bEJBbTN6WjhpMkJzM3dSeTI3WVRLc285a3BVcTIwc1VKX0hrMWdZOHhTLTJuVlVxWjVSM3FrVDM2Njl2TkZIYkREc1NSSTZpM283aTdkNHcwQy1NWFZa?oc=5",
-        "source": "더게이트",
-        "published": "Thu, 07 May 2026 03:31:54 GMT",
-        "description": "위메이드 ‘미르4’, 2000일 기념 대규모 이벤트…성장 특화 서버 ‘등용문’ 운영&nbsp;&nbsp;더게이트"
-      },
-      {
         "title": "블록체인 게임 해외 흥행…위메이드 그룹株 강세 [핫종목] - 뉴스1",
         "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBiakVYZVgyLW5aVWVJdmhBb19IdklQZ1hjeXlkVGc5SWpwMmdDY0FKaExkUmpVZnhIYl9iazA5YmFNN0JwNXRITEJ6RE5qZzJQQy11TkZ0ZFVRUC1VVHpn?oc=5",
         "source": "뉴스1",
@@ -76,41 +83,62 @@
         "description": "블록체인 게임 해외 흥행…위메이드 그룹株 강세 [핫종목]&nbsp;&nbsp;뉴스1"
       },
       {
-        "title": "위메이드 미르의 전설3, '2026 몽환서버' 이벤트 진행 - 뉴스후플러스",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB1OTI2WDktaGFqQjNjT0VKSjB6ZVEyZU9KZGtoNTJzNDdZUXBOcGdhM0wteTk0N2s3blpoOXhyUllBalVIVlR3NkFFWFBRWWhQTVNjWkFyZ2VHMHpwUGtlZFFNdXp1Qmw1cl9XWjhB?oc=5",
-        "source": "뉴스후플러스",
-        "published": "Wed, 06 May 2026 08:46:48 GMT",
-        "description": "위메이드 미르의 전설3, '2026 몽환서버' 이벤트 진행&nbsp;&nbsp;뉴스후플러스"
+        "title": "반등 동력 찾는 위메이드, 서브컬처 게임 '정조준' - 뉴스웨이",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE13NUpheE9VRDFTVmNvdFY2UGpFbDRuWWVFWnR2ZWUzLW1ZYkgta2VaZDBOZXNsNlJ2a2FkTlRkdUxDZmpGbmVZaHFlNzdKQWg4WXBGLWg1UzVxM0xiM1EwdEpFSU9TbGMycFE?oc=5",
+        "source": "뉴스웨이",
+        "published": "Wed, 06 May 2026 22:13:00 GMT",
+        "description": "반등 동력 찾는 위메이드, 서브컬처 게임 '정조준'&nbsp;&nbsp;뉴스웨이"
       },
       {
-        "title": "위메이드커넥트, 신작 서브컬처 `메이크 드라마: 매드` 사전예약 - 디지털데일리",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9WclA0M2V3cjktbEpiUkgwV0NOOXc2ZVp0WE9wazVWRUNSNmNGVWVXQzZoblNLeXdDdE5PTXFSdnNTUnFqZHl4UkxUX0RSQXdmRVo2TlR5X3IzRm5ocnJ0WjVIU2w?oc=5",
-        "source": "디지털데일리",
-        "published": "Mon, 04 May 2026 05:54:11 GMT",
-        "description": "위메이드커넥트, 신작 서브컬처 `메이크 드라마: 매드` 사전예약&nbsp;&nbsp;디지털데일리"
-      },
-      {
-        "title": "위메이드커넥트, 서브컬처 신작 ‘메이크 드라마: MAD’ 사전예약 실시 - 브릿지경제",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1zaXF5RHZqV0tQVGhpeU91WDJNTC13RVFmOUs2dzZVQm1DekRwSXRlYjBkZUwyclIyRnE5N3pNeFQ3ZU9mdVJabW5hMTl2dzFzdjI3MWFGUnBqUQ?oc=5",
-        "source": "브릿지경제",
-        "published": "Tue, 05 May 2026 00:28:00 GMT",
-        "description": "위메이드커넥트, 서브컬처 신작 ‘메이크 드라마: MAD’ 사전예약 실시&nbsp;&nbsp;브릿지경제"
+        "title": "위메이드 '미르4' 서비스 2000일 금자탑… 신규 서버 '등용문'으로 제2의 도약 - 창업일보",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBJRnBTa3k4anFBbUdIN3U1eWllcHFLVGJ0UEF1d2V6WWFjT1JuVzhidHFtNzk5bElnM0t4c044M0lVUzdSV2diZzZhN2xhYWxYN2o2cUw2aTYwWWlTNGtyd3p2aF90WjJa?oc=5",
+        "source": "창업일보",
+        "published": "Thu, 07 May 2026 05:24:24 GMT",
+        "description": "위메이드 '미르4' 서비스 2000일 금자탑… 신규 서버 '등용문'으로 제2의 도약&nbsp;&nbsp;창업일보"
       }
     ],
     "blockchain": [
       {
-        "title": "카이아, 아시아 스테이블코인 특화 펀드 출범 - 지디넷코리아",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBfd0xxR196M29NZUNWd2xJcVFPdlNiQW1mNU5kWHdpTV8waHVYMS1lZjJyblR4MTBQT0ItUUdUZWo2eHpFblA1VmdMSUc4Nk1GM0l4cU1R?oc=5",
-        "source": "지디넷코리아",
-        "published": "Thu, 07 May 2026 00:28:22 GMT",
-        "description": "카이아, 아시아 스테이블코인 특화 펀드 출범&nbsp;&nbsp;지디넷코리아"
+        "title": "일본의 스테이블코인 규제 프레임워크: 안정성과 혁신의 균형을 향한 선도적 입법 모델 - 법률신문",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9QT3dlc09DRjU0aUo4SXc0U0lTSlR0MFl4eW9vUVpCcXlJS2RXNWptaV9JRFJVTVIzcG42QzFLMTJ2S1lIT3MxbDZJUXM3bk9saUhRbWRrbjZtSl95eXVWZy0zLXVxV3ZKX3AwSS1B0gFyQVVfeXFMT3RoNVV2R3AwcmpocXRqVV9DOE0zR0hMVFF5OF9LdTJPVm4wRlRHVU5VdS00N1p3TDN1ZkFEUTBkZk1HLU91V3JUWV93LXpNWG42RG1TNE5jWmxTUHlpY3NmdG9qRkxuVENSQkxTWEZmMlJR?oc=5",
+        "source": "법률신문",
+        "published": "Thu, 07 May 2026 06:50:59 GMT",
+        "description": "일본의 스테이블코인 규제 프레임워크: 안정성과 혁신의 균형을 향한 선도적 입법 모델&nbsp;&nbsp;법률신문"
       },
       {
-        "title": "[비즈 나우] 비트코인 안 판다던 스트래티지 \"매각 고려\" - v.daum.net",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5uQUlxUi1fd1dtSTdxcVV2UjY5M0VERVg0RTV6TXRUaXlKSDRWQmdndl9qWXRoaFEtNlZZcy1VQUZidDhYYldkMWFLRHBLUEU?oc=5",
+        "title": "가상자산 투자자만 22% 세금?…과세 형평성 도마 - 전자신문",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0NU1zYnkxRVBkZUhrYXlLMFRNUnVyYlQtbW1odnFjM1Z4U0dxMGU2RGRLSWdtN19oSDZWenFyVDdDLXhlY1VLRmczRndxdw?oc=5",
+        "source": "전자신문",
+        "published": "Thu, 07 May 2026 07:28:49 GMT",
+        "description": "가상자산 투자자만 22% 세금?…과세 형평성 도마&nbsp;&nbsp;전자신문"
+      },
+      {
+        "title": "블록체인 게임, 규제 빗장에 해외로 - 뉴스토마토",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBtWXlTV3B3XzlKeGdxblRxRWM2bldFQ0lfZzRBS2RxSDVHdnlDZ2tRRHYzZEE4YlBmVWR0b21Zd0QxYU9nU1FqS0s5NVRkZi1McXRmWFBFS3hxZTU0Z1Ricw?oc=5",
+        "source": "뉴스토마토",
+        "published": "Thu, 07 May 2026 07:20:55 GMT",
+        "description": "블록체인 게임, 규제 빗장에 해외로&nbsp;&nbsp;뉴스토마토"
+      },
+      {
+        "title": "\"절대 안 판다더니\"…17조 까먹고 슬그머니 말 바꾼 '비트코인 큰손' - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBPYzZxWjd5WFl6T0ZhMk1uZk5UV0M5NVJ1aGdldkFaczd4NlQwcDBkMFNoM1RFNmUtUTlfMXpUYkNrVGtLS3c?oc=5",
         "source": "v.daum.net",
-        "published": "Wed, 06 May 2026 22:48:11 GMT",
-        "description": "[비즈 나우] 비트코인 안 판다던 스트래티지 \"매각 고려\"&nbsp;&nbsp;v.daum.net"
+        "published": "Wed, 06 May 2026 20:11:48 GMT",
+        "description": "\"절대 안 판다더니\"…17조 까먹고 슬그머니 말 바꾼 '비트코인 큰손'&nbsp;&nbsp;v.daum.net"
+      },
+      {
+        "title": "FIU, 가상자산 거래소 '법인 참여 확대' 준비 상황 파악 - BBS불교방송",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBJY2hRMVE5UHY5UkNnUEx2T3JnOTNVMHc5cldsV2xubEVWaWZ1MkZLeU81Qm02ZnNhRGpjaGdWUjE2Wm9zVFZSRFhHcVZCUUxoeDRaSUh1MjJCYVFGSm5DdGh3MjFXVEU3Qm1j?oc=5",
+        "source": "BBS불교방송",
+        "published": "Thu, 07 May 2026 08:38:12 GMT",
+        "description": "FIU, 가상자산 거래소 '법인 참여 확대' 준비 상황 파악&nbsp;&nbsp;BBS불교방송"
+      },
+      {
+        "title": "해시드 산하 해시드오픈파이낸스, '원화 스테이블코인 전용' 블록체인 공개 - 뉴스1",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1seDVBeklwdHBZbGVLNndhNXdlRlFOakJuWFNiTHBjdUR6VnJLRlM5dWVMODZkejdlWEZfeDh0Y1FUWEEydjFCU2ljVHFKUGNydWRCekhrQnpoNkZLdnZsT0xTWFB3UQ?oc=5",
+        "source": "뉴스1",
+        "published": "Thu, 07 May 2026 08:44:38 GMT",
+        "description": "해시드 산하 해시드오픈파이낸스, '원화 스테이블코인 전용' 블록체인 공개&nbsp;&nbsp;뉴스1"
       },
       {
         "title": "비트코인, 美 클래리티 법안 통과 기대로 석달만에 8만1000달러 회복...투자 심리 살아날까? - 조선일보",
@@ -120,69 +148,55 @@
         "description": "비트코인, 美 클래리티 법안 통과 기대로 석달만에 8만1000달러 회복...투자 심리 살아날까?&nbsp;&nbsp;조선일보"
       },
       {
-        "title": "비트코인, 8.1만달러 숨 고르기…\"5년 내 100만달러 가능\"[코인브리핑] - 뉴스1",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9nN0VzSUpuRG1iWDc3QkptMHY5dmZtWFFGZmhBRVM1RmlFeVpHTEg3dm5nVFYzODVWTnlsUkp0dzRGTmt1Zm91ZklVSFd5bTF6VEFjcUMyT2JZdU1OVGJqdnJ2SThGdw?oc=5",
-        "source": "뉴스1",
-        "published": "Thu, 07 May 2026 01:18:20 GMT",
-        "description": "비트코인, 8.1만달러 숨 고르기…\"5년 내 100만달러 가능\"[코인브리핑]&nbsp;&nbsp;뉴스1"
+        "title": "카이아, 아시아 스테이블코인 특화 펀드 출범 - 지디넷코리아",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBfd0xxR196M29NZUNWd2xJcVFPdlNiQW1mNU5kWHdpTV8waHVYMS1lZjJyblR4MTBQT0ItUUdUZWo2eHpFblA1VmdMSUc4Nk1GM0l4cU1R?oc=5",
+        "source": "지디넷코리아",
+        "published": "Thu, 07 May 2026 00:28:22 GMT",
+        "description": "카이아, 아시아 스테이블코인 특화 펀드 출범&nbsp;&nbsp;지디넷코리아"
       },
       {
-        "title": "스트레티지의 비트코인 매각 옵션, '전략 변경' 아닌 '유연함'의 신호 - 조세일보",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE80ZUcwMWxXdWlOaVYtVjJ4QUxjMDhTT3BLaHVfc0ViVC1fZEl2ZWxLTTIzSHRuY0dfRFhJcFgwZ0JjbTRuTEJ1OUQxVEh5cWNBMHZ1VTNGRV9uTFRrZW5N?oc=5",
-        "source": "조세일보",
-        "published": "Wed, 06 May 2026 22:00:10 GMT",
-        "description": "스트레티지의 비트코인 매각 옵션, '전략 변경' 아닌 '유연함'의 신호&nbsp;&nbsp;조세일보"
+        "title": "넥써스, 1분기 매출 76% 급증…AI·블록체인 사업 확장 - 연합뉴스 한민족센터",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5zX0ZZbGNBQ1BlLWRlSmVFLUhrNWxqYzZ1NzU4c1B0ZVlaQ0JlYmR0RWUwNHl0bzd2ZDNmM0JkSEFPT3VtZjVQQjZfdVBBWmplVHNWdEliREl6THZLZ2lTWXMtbnFWTGtGRVkyaVlTbFhBVml5?oc=5",
+        "source": "연합뉴스 한민족센터",
+        "published": "Thu, 07 May 2026 06:28:05 GMT",
+        "description": "넥써스, 1분기 매출 76% 급증…AI·블록체인 사업 확장&nbsp;&nbsp;연합뉴스 한민족센터"
       },
       {
-        "title": "원화 스테이블코인 경쟁 본격화…“승부처는 사용성” - 동아일보",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBYVWxwZzlXR1hYNjJhamhvVFhTUXVWY3dJbTZKWDhUbVFmTG1USXB1aWwyc0MySDdOeGhSVlpYQmp1bnJUVF9JRG5URUhUNWI4M3F6V1UyZUg0SDlFLW1rWTEyM2dWRG85ODR2RGp4VUxPNnNySmfSAWZBVV95cUxOQ1VISU45em1ZMEVxVW1GTXBlYkJoa091X1lRZnRXN05vWTVFTl9DNDVlQjJxNGJxajl1OW9vd1JzR2pCUm1hSF9EbjZxSGNSd3pmM2JROVFXT3QzZmpqSWx5R0ZqVGc?oc=5",
-        "source": "동아일보",
-        "published": "Thu, 07 May 2026 01:41:41 GMT",
-        "description": "원화 스테이블코인 경쟁 본격화…“승부처는 사용성”&nbsp;&nbsp;동아일보"
-      },
-      {
-        "title": "업비트, 온체인 데이터로 '저평가·고평가' 가상자산 가른다 - 전자신문",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBJYV9zaW9oWTFxb0I1OXVOemR2dllZXzRJRmQtdk5vQzhJSVA2T1ZTeVd0ZGZOdU1STTR5SWNGZFFnM1VSdjY3OXVneEp3UQ?oc=5",
-        "source": "전자신문",
-        "published": "Thu, 07 May 2026 01:36:57 GMT",
-        "description": "업비트, 온체인 데이터로 '저평가·고평가' 가상자산 가른다&nbsp;&nbsp;전자신문"
-      },
-      {
-        "title": "모건스탠리, 디지털자산 거래 플랫폼 출시…업계 최저수수료 파격 - 마켓인",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5INlZwcHFFdWdqZ0JoWWFvTWxiNk42ZU9LWngzN3lBOUliTnVRZGdKdVlkbExQUVAtenAtTGhfMWNSZ3hPdFVBUnVWYTNKZWRkNzRVNzZBcVp4Vm5GNC1RQnNuMWpXLVhja1I1bVV2Yktkazg?oc=5",
-        "source": "마켓인",
-        "published": "Thu, 07 May 2026 03:40:40 GMT",
-        "description": "모건스탠리, 디지털자산 거래 플랫폼 출시…업계 최저수수료 파격&nbsp;&nbsp;마켓인"
-      },
-      {
-        "title": "IMM인베스트먼트, PEF식 코인베펀드로 대형 투자 키운다 - 톱데일리",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8zWWQ5RjJDSkZDNF9oZXNjcGdLdzNPbmxTNkVsbkVpMUtMYnhlVlpvbl9nWUVaenUwZWVpQnBRcVpZeEN2aEZ0TkZidmJkQjdl?oc=5",
-        "source": "톱데일리",
-        "published": "Thu, 07 May 2026 02:07:00 GMT",
-        "description": "IMM인베스트먼트, PEF식 코인베펀드로 대형 투자 키운다&nbsp;&nbsp;톱데일리"
-      },
-      {
-        "title": "Midnight (NIGHT) 가격, 차트, 시가총액 | 코인마켓캡 - CoinMarketCap",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5HbXVLbldwRWR6VWhCVmhnYXJJbll4NHBKektPNDYxYjdNSlg1eEFiR3pmNVdaNmNjNmxkM1ZVN1JEZTJPTWhTbllnY21pTVRwV2l1Vy10ZVVkcTh0YkJaZVlWbzRtSkhT?oc=5",
-        "source": "CoinMarketCap",
-        "published": "Wed, 06 May 2026 23:10:51 GMT",
-        "description": "Midnight (NIGHT) 가격, 차트, 시가총액 | 코인마켓캡&nbsp;&nbsp;CoinMarketCap"
+        "title": "신한은행, 은행권 첫 ‘온체인 모니터링’ 구축…디지털자산 자금세탁 대응 강화 - 인더스트리뉴스",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5NZzNiOXJBMmw3NVNrWkZSYkZrLURrWHdOTE1FLWhVaElOWnlRaGpJdkFCNVdMSnc0c2JRcHIyRUpqUzctV0I3QXlIMFJOYktqN2R0eW92T3ZKQzk3UjhhTTNJVEFYTXhhRktTTmJac21rZw?oc=5",
+        "source": "인더스트리뉴스",
+        "published": "Thu, 07 May 2026 05:48:56 GMT",
+        "description": "신한은행, 은행권 첫 ‘온체인 모니터링’ 구축…디지털자산 자금세탁 대응 강화&nbsp;&nbsp;인더스트리뉴스"
       }
     ],
     "marketing": [
       {
+        "title": "진콘, 주성균 신임 대표 선임…인플루언서 지원 플랫폼 구축 등 사업확장 - 경향신문",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBGbms0bWlKX1FoVE1KTEpNQVFsem5xMjlfeGVBSC13NVpsQmZyb1B4V2ZDRHRXbEtyVWF3Z0tfR0J0OFV6bmh6dnEtSFZMQTJ1VlZDc0JVSG9RUdIBX0FVX3lxTE5ZTjR2WmhJQk8tdmVIaEZPc2x3ZHVncjJDUlpoWEpJWlBQbG1rR3loSWpHeEMxeDhReVlicXZGemJJNFhucGwxb1hvNDFhNkxWdkFFYnlndnhIQ2xMcWhV?oc=5",
+        "source": "경향신문",
+        "published": "Thu, 07 May 2026 07:03:00 GMT",
+        "description": "진콘, 주성균 신임 대표 선임…인플루언서 지원 플랫폼 구축 등 사업확장&nbsp;&nbsp;경향신문"
+      },
+      {
+        "title": "“마케팅 예산 60% 쏟아라” 글로벌 기업들이 ‘브랜딩’으로 돌아선 이유 - 디지털 인사이트 DIGITAL iNSIGHT",
+        "link": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPRFhXSUNXWkdhZGpza0pJTTdHcE9iM0ZLU290QjYteWlSSHVRMGdEM09oT0ZXMGhkUUJSenJ2QTJtQkx4MmEzR09EQWs4Yy1maVN6V1ZTZ2ViX184UzVFcUdvSkxhb1BwWmVEc1kzWUpmS2dRSTFxV3ZXeUhwSUJvQlJ5TWNRNkMzVGRUc0l4RzhzdDI5QURrTXdhUUotZldrYjRBcVpldTRRMkRGX1lnOTFMNFdadUhvTW5yeGdvUy1hbDdfYnpXUXZUa19zQzB1OHpLcWZaa2FfZEdhVUZjWUI3bWRoaDZhSHVBZGpPZXljaG5YTXl2Sk83cTQ3WjlHNGptX2xTV2gxc1RMQVczY1ZwLVVsd0RzbE5kSVVXMXB6LWJSWmpwN0dHU1FMcll2eFV3?oc=5",
+        "source": "디지털 인사이트 DIGITAL iNSIGHT",
+        "published": "Thu, 07 May 2026 08:01:49 GMT",
+        "description": "“마케팅 예산 60% 쏟아라” 글로벌 기업들이 ‘브랜딩’으로 돌아선 이유&nbsp;&nbsp;디지털 인사이트 DIGITAL iNSIGHT"
+      },
+      {
         "title": "구글코리아 윤구 사장 \"AI시대 마케팅 고객신뢰 설계가 중요\" - 연합뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1KMFRxSzM4cWhYb3R5dVdyeDVVY1Z3SzJGUVNSRkZxUE54SENBTV9PYW1rRnprV2M4UGs1SF9FNkdpSFZCSHJxbmZwS1FzREQzZVJFVUhhbVJ3LWfSAWBBVV95cUxQZTItNTllM3E0ODBaNzJMZkRuVEpPVFZFdEs4QnJETG0wVm1WOWtpTmgtaVkzcnpRMUtlcG44ZlFGYW1qam01bTI0ZjdtN0JhbTh0cWpkeEs5b196bWhQYXA?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlMi01OWUzcTQ4MFo3MkxmRG5USk9UVkV0SzhCckRMbTBWbVY5a2lOaC1pWTNyelExS2VwbjhmUUZhbWpqbTVtMjRmN203QmFtOHRxamR4SzlvX3ptaFBhcNIBYEFVX3lxTFBlMi01OWUzcTQ4MFo3MkxmRG5USk9UVkV0SzhCckRMbTBWbVY5a2lOaC1pWTNyelExS2VwbjhmUUZhbWpqbTVtMjRmN203QmFtOHRxamR4SzlvX3ptaFBhcA?oc=5",
         "source": "연합뉴스",
         "published": "Thu, 07 May 2026 03:10:40 GMT",
         "description": "구글코리아 윤구 사장 \"AI시대 마케팅 고객신뢰 설계가 중요\"&nbsp;&nbsp;연합뉴스"
       },
       {
-        "title": "'가족 체험'부터 '효 꾸러미'까지…보험업계, 가정의 달 '온기 마케팅' 확대 - 뉴스웍스",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1kSldPV01rSjZmV1FyOWJfSHpqN3lVN1hUTk1tOHpEbi1YRXc1RVlIdGJxMkFLeGJNNmllcEtsbjZPWEV0STRJc1p6ZWhjbl84TFI4aGEzYkJEamhRekE0YlZOV053S0MySzh4bnRPRDRUdVXSAXNBVV95cUxNZEpXT1dNa0o2ZldRcjliX0h6ajd5VTdYVE5NbTh6RG4tWEV3NUVZSHRicTJBS3hiTTZpZXBLbG42T1hFdEk0SXNaemVoY25fOExSOGhhM2JCRGpoUXpBNGJWTldOd0tDMks4eG50T0Q0VHVV?oc=5",
-        "source": "뉴스웍스",
-        "published": "Thu, 07 May 2026 01:04:37 GMT",
-        "description": "'가족 체험'부터 '효 꾸러미'까지…보험업계, 가정의 달 '온기 마케팅' 확대&nbsp;&nbsp;뉴스웍스"
+        "title": "카페24, 데이터 연계 마케팅 서비스 운영 확대…광고 효율·매출 지표 개선 - 신아일보",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB6NDZXQVFOM3V3Y0dFTGtQYkdlZmZjaFRMYlJfaG44Yl9wSEFxdFpqSFNKSmNTNjZvWUM4S1Q1Y29POWtrb0ttcjhNb0N0Q0FHanktV0hLb1dQZVBmWG9leGUyQUNTQm9KVC1BUVhEcC0?oc=5",
+        "source": "신아일보",
+        "published": "Thu, 07 May 2026 08:10:00 GMT",
+        "description": "카페24, 데이터 연계 마케팅 서비스 운영 확대…광고 효율·매출 지표 개선&nbsp;&nbsp;신아일보"
       },
       {
         "title": "‘포켓몬 런 2026’ 5,000명 몰렸다…일동후디스, 러닝 마케팅 강화 - 라이센스뉴스",
@@ -192,22 +206,15 @@
         "description": "‘포켓몬 런 2026’ 5,000명 몰렸다…일동후디스, 러닝 마케팅 강화&nbsp;&nbsp;라이센스뉴스"
       },
       {
-        "title": "'광고 몰아보기' 시대 열릴까?… 디즈니와 보험사의 파격 실험 \"15초 대신 콘텐츠 생애주기 노린다\" - 브랜드브리프",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8waVhNcG9RUmJuTkdIQUVUWkZFV1RqMVlJOTVFMlVXYW4wcjc3b0dHczdVd2R1RGlRSndreTZLU0VvLUlFVmFzX2FjNmszY3ZxSnExc3BoX1UtcG0tMTEwYURDUXRoWjVhLTlxTGRR?oc=5",
-        "source": "브랜드브리프",
-        "published": "Wed, 06 May 2026 23:00:00 GMT",
-        "description": "'광고 몰아보기' 시대 열릴까?… 디즈니와 보험사의 파격 실험 \"15초 대신 콘텐츠 생애주기 노린다\"&nbsp;&nbsp;브랜드브리프"
-      },
-      {
-        "title": "지금 준비 안 하면, 5월에 후회합니다 - 마케팅 - 정보공유 - 아이보스",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9YY2tTa0dhQUFLX1ZSNVBudV9wTnczNjdXdzh6aUU5Mjdsd3dzelA0ZkUzalJZQklROHkzUFB1RTNuN2tpMGdpOW5NMDAyX3c?oc=5",
-        "source": "아이보스",
-        "published": "Thu, 07 May 2026 00:23:50 GMT",
-        "description": "지금 준비 안 하면, 5월에 후회합니다 - 마케팅 - 정보공유&nbsp;&nbsp;아이보스"
+        "title": "'가족 체험'부터 '효 꾸러미'까지…보험업계, 가정의 달 '온기 마케팅' 확대 - 뉴스웍스",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1kSldPV01rSjZmV1FyOWJfSHpqN3lVN1hUTk1tOHpEbi1YRXc1RVlIdGJxMkFLeGJNNmllcEtsbjZPWEV0STRJc1p6ZWhjbl84TFI4aGEzYkJEamhRekE0YlZOV053S0MySzh4bnRPRDRUdVXSAXNBVV95cUxNZEpXT1dNa0o2ZldRcjliX0h6ajd5VTdYVE5NbTh6RG4tWEV3NUVZSHRicTJBS3hiTTZpZXBLbG42T1hFdEk0SXNaemVoY25fOExSOGhhM2JCRGpoUXpBNGJWTldOd0tDMks4eG50T0Q0VHVV?oc=5",
+        "source": "뉴스웍스",
+        "published": "Thu, 07 May 2026 01:04:37 GMT",
+        "description": "'가족 체험'부터 '효 꾸러미'까지…보험업계, 가정의 달 '온기 마케팅' 확대&nbsp;&nbsp;뉴스웍스"
       },
       {
         "title": "모비인사이드어워드 2026 수상 - 아워홈 - 브런치",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9OaEdjSlJxMGs5X1BlbmxEMWVUTW4yVU9qZUVwN2dyRlpGN0trTzU5eVEzTkxoV2JjTFNlRFl4bHozM2JxRlE?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBiT05Lb00tcERKZC1XQVUtU3BfT2dObFZvZnFvQm5hbERpUnBrUjBQUERzZ0g4QVhrb2xZN0NvbnRLelJ0VlUwZjNXX00zUQ?oc=5",
         "source": "브런치",
         "published": "Thu, 07 May 2026 02:09:57 GMT",
         "description": "모비인사이드어워드 2026 수상 - 아워홈&nbsp;&nbsp;브런치"
@@ -220,25 +227,18 @@
         "description": "디엠씨미디어 ‘디프레임’, 마케팅 실무진 ‘주목’&nbsp;&nbsp;IT조선"
       },
       {
-        "title": "글로벌인플루언서협회 진콘, 주성균 신임 대표 선임…\"규모 넘어 신뢰로\" 글로벌 확장 시동 - 네이트",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBsWUEyYkdGaDAtNVFyNWZjUXdnVFlWU1E4WWF0dmJRc2ZsdlM1YXV6M1ZUSjgtTTRKVHU1S094YTd5ejJXNmdGa1RxcGpnLXpCNkRR?oc=5",
-        "source": "네이트",
-        "published": "Thu, 07 May 2026 03:28:00 GMT",
-        "description": "글로벌인플루언서협회 진콘, 주성균 신임 대표 선임…\"규모 넘어 신뢰로\" 글로벌 확장 시동&nbsp;&nbsp;네이트"
+        "title": "스튜디오 톰보이, 2026 여름 컬렉션 출시 “남성 라인 성장세 힘입어 시즌 마케팅 본격화” - 신세계그룹 뉴스룸",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYXNzSUtwZEduYzQ0TzBjY2dkblk5OHdqa1piSDZ5OTV4ZjhPN1ZGNTNzZnQxd1VLRmtZbFFzZ0lxTmFiV09WdEpidmc3c3dxcnZ5Mzl1OGY5bXdhQTFuTWRJNkFYR21KN2ttZXNJbTZnVWdwRWtBMGphUVhla1hlS3JodzdYdlZQUWJVQnVR?oc=5",
+        "source": "신세계그룹 뉴스룸",
+        "published": "Thu, 07 May 2026 00:00:00 GMT",
+        "description": "스튜디오 톰보이, 2026 여름 컬렉션 출시 “남성 라인 성장세 힘입어 시즌 마케팅 본격화”&nbsp;&nbsp;신세계그룹 뉴스룸"
       },
       {
-        "title": "[더벨]넥사다이내믹스, 장근석 주연 K드라마 '협반' 투자 - 머니투데이 - 머니투데이",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB2VHhQUlBQSkxJM3Q1Q2pOWjlqR2ZRelFHTVhJYlJCZFVNSGo4OUh2SHEyMDVyS21jbnRMMEZTZE9wVm44Vzl3TVVOUzRrV1ltcDZJLXJET0NzZFA1ZWFqYjdxclVPVkJrU1ZTQ2ZB0gFuQVVfeXFMUHZUeFBSUFBKTEkzdDVDak5aOWpHZlF6UUdNWEliUkJkVU1Iajg5SHZIcTIwNXJLbWNudEwwRlNkT3BWbjhXOXdNVU5TNGtXWW1wNkktckRPQ3NkUDVlYWpiN3FyVU9WQmtTVlNDZkE?oc=5",
-        "source": "머니투데이",
-        "published": "Wed, 06 May 2026 22:46:36 GMT",
-        "description": "[더벨]넥사다이내믹스, 장근석 주연 K드라마 '협반' 투자 - 머니투데이&nbsp;&nbsp;머니투데이"
-      },
-      {
-        "title": "메타브랜딩, AI 시대 브랜드 재정의… “설득보다 중요한 건 판독과 신뢰” - 매드타임스",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9CcjBYRHczUnprcVV3QU01anBHY1dvejNHZjNjLW9MUnlyVG1hXzRwMWlxTzNOUUpzQ1B0TU5yUUlwek9pdkdDYlJRVGNvNEpkaVJWZGt6R1YxQlFVdGVuVmwxbThyU21rUkZkWg?oc=5",
-        "source": "매드타임스",
-        "published": "Wed, 06 May 2026 15:00:00 GMT",
-        "description": "메타브랜딩, AI 시대 브랜드 재정의… “설득보다 중요한 건 판독과 신뢰”&nbsp;&nbsp;매드타임스"
+        "title": "엔씨, 로블록스 코리아와 마케팅 MOU 체결 - 인벤",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9OLTlnTDJZZHRfYnpIQmVKcXJiaVJ1MVBZeGNpRGF6QnRCb1hQZE1aUWs2VnhlX3RsYmxfNWcwUDlpYmlWbmpVMHhQeWVOZVc3WmtHa21GNi1Ob2hjVGNvN3ZGTXN6UWcxS2tNY210RlBmdw?oc=5",
+        "source": "인벤",
+        "published": "Thu, 07 May 2026 02:40:43 GMT",
+        "description": "엔씨, 로블록스 코리아와 마케팅 MOU 체결&nbsp;&nbsp;인벤"
       }
     ],
     "brand_global": [
@@ -248,6 +248,20 @@
         "source": "PR Newswire",
         "published": "Mon, 04 May 2026 14:00:00 GMT",
         "description": "Bean Appétit! Jelly Belly® Evolves Brand Identity with New Campaign and Curated Collections&nbsp;&nbsp;PR Newswire"
+      },
+      {
+        "title": "Kohl's Shores Up Store Brands With New Campaign 03/03/2026 - MediaPost",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVTZUZjlxOXdDOEZ3SVZFQk92WmMwZmRiXzk2SF9TZ3RraTRzOGtYSHZKOS1kaDdzSjJ3WUUtb0pNZGJUbG9ZcTd1VUFJN2NHUmlKZmxfUl9UZGxMUjZMdW5DazFaLWtiUWozNUhoTnBZMDVOdVFwdVFFb0hJQ0FxdmZuNnZfN3BRVVkxUHJCZk5VS3UtOTRWdHZQQXRKYTUxM2FnNU93ajQ?oc=5",
+        "source": "MediaPost",
+        "published": "Thu, 07 May 2026 00:55:21 GMT",
+        "description": "Kohl's Shores Up Store Brands With New Campaign 03/03/2026&nbsp;&nbsp;MediaPost"
+      },
+      {
+        "title": "Claire’s marks next chapter with Gen Alpha-focused ASMR campaign - Marketing Dive",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeUgwRDFoLWd4ZkZZVkhGRHd1UUdNTHYtaFIzcmRRLW1uN0xmcUxLMUhTUl81ZS0wN3NHeUNMTjJaTmpHUnQ4RTFCeDBEQzIyaURmQmJ4djZFUV80LWMwOVhLNmRzN0xxZXJha3hSM0o1X1NrT2c3ek9vRHF2LUJ1VkpBTDF4UGxjZjFyN2cyeWdpTFFyV1lneWxFaTNZTVdoWVQxX3FBZzR4UQ?oc=5",
+        "source": "Marketing Dive",
+        "published": "Thu, 30 Apr 2026 13:37:30 GMT",
+        "description": "Claire’s marks next chapter with Gen Alpha-focused ASMR campaign&nbsp;&nbsp;Marketing Dive"
       },
       {
         "title": "The 2026 Creative 100 Rising Agency Talent: Social Natives With Bold Ideas - ADWEEK",
@@ -264,11 +278,11 @@
         "description": "Sharpened Brand Identities&nbsp;&nbsp;Trend Hunter"
       },
       {
-        "title": "10 creative campaigns to know about today - Ad Age",
-        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOTDQwVFV1YTJCWldjbFBIX29Cc0M4MTRiQm5yVXhXaTgwdzFEdHJuemp4a2pJMXFvMjZSVF95UXliX3dIbVYtQmx6Uk1vRXVqc2xpLV9BVm1QSFVHWUNucTV2RFFzclZXdlBSNDhmcnFDOHh4dFVMZzVEMGNRQWhkbE9EX0pid2pzUUhfN0dTODkyODJKNUcxWDgzRUNqakJlWmlSSmplU1hIOGxEWVRoanl2ME8zWktITF9pUUVrSEhQQnlaTzJxQmtGQXpQWV9I?oc=5",
-        "source": "Ad Age",
-        "published": "Thu, 30 Apr 2026 15:00:00 GMT",
-        "description": "10 creative campaigns to know about today&nbsp;&nbsp;Ad Age"
+        "title": "VML Vancouver Signals Brighter Kind of Banking with Bold Brand Identity for Vancity - Little Black Book | LBBOnline",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1yMm51emNNRHV4UGVvVlU4Y1FVT3hlTmhET1Y0d2JMTHhZeWJRZWlhaXJIS05WdVVPRVFSaTNxTlNRMzIwUDVhM1JEYWo3cXJwR1FvT19PTHlsYVlqbjM0dXhqc2VuSlRxdzE1cnlqbGI?oc=5",
+        "source": "Little Black Book | LBBOnline",
+        "published": "Wed, 06 May 2026 09:45:27 GMT",
+        "description": "VML Vancouver Signals Brighter Kind of Banking with Bold Brand Identity for Vancity&nbsp;&nbsp;Little Black Book | LBBOnline"
       },
       {
         "title": "The 15 best campaigns we saw in April - Famous Campaigns",
@@ -278,13 +292,6 @@
         "description": "The 15 best campaigns we saw in April&nbsp;&nbsp;Famous Campaigns"
       },
       {
-        "title": "VML Vancouver Signals Brighter Kind of Banking with Bold Brand Identity for Vancity - Little Black Book | LBBOnline",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1yMm51emNNRHV4UGVvVlU4Y1FVT3hlTmhET1Y0d2JMTHhZeWJRZWlhaXJIS05WdVVPRVFSaTNxTlNRMzIwUDVhM1JEYWo3cXJwR1FvT19PTHlsYVlqbjM0dXhqc2VuSlRxdzE1cnlqbGI?oc=5",
-        "source": "Little Black Book | LBBOnline",
-        "published": "Wed, 06 May 2026 09:45:27 GMT",
-        "description": "VML Vancouver Signals Brighter Kind of Banking with Bold Brand Identity for Vancity&nbsp;&nbsp;Little Black Book | LBBOnline"
-      },
-      {
         "title": "Pedigree Leans On Pet Owner Archives in Nostalgic Campaign - DesignRush",
         "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPaHFQQUVPX19qcWwyMVNVLUpLLUFmcTNDMV9GZ1U3RVhrT0RLSUlNaHdTRGNOMUowUXNqWGVFSWMzZ2ZoU1FiRGNXU3k4SDFReGg2ZVR4N05OREFXS3pVMkVDak5pVnNncTloLTNwNmRGazVOQVFJdm54NGtuRUxBNFJn?oc=5",
         "source": "DesignRush",
@@ -292,25 +299,18 @@
         "description": "Pedigree Leans On Pet Owner Archives in Nostalgic Campaign&nbsp;&nbsp;DesignRush"
       },
       {
+        "title": "Vinova Digital Presents Integrated SEO and Branding Framework for Businesses Seeking Digital Marketing Support - USA Today",
+        "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQajQ0aG9uNUUzSldNanZpXzZMbDVrMXo3UXItM05LSVNFUzdseGlSQmZzOHo5Y3lMYnBXQk9wdGVHY3BJSjBxa1I2TXFPZlBMUWJrRUxyYmdmcFpoYTRZZ3ZoQUlrcktzaGljRmR0N1c3S3BSOU1hTTVfeVRVbmVVM3NRV05MVWxGemJMSDZVQlItQ0xoZEhoQ0t5b0diM05naVJLXzdEZW9iQ1NWdEg5TXAwazNPN3FwVDNQRVRCYkoxMHVGQU42ZFdMOFMwYUtNTG5YYXI5MkdCWGU1OUhFMHRoM3RfLTRxOV9CSG5GR29EeDZt?oc=5",
+        "source": "USA Today",
+        "published": "Fri, 01 May 2026 19:03:09 GMT",
+        "description": "Vinova Digital Presents Integrated SEO and Branding Framework for Businesses Seeking Digital Marketing Support&nbsp;&nbsp;USA Today"
+      },
+      {
         "title": "R/GA marks nearly 50 years of creative work with launch of retrospective book “R/GA By Design - marketech apac",
         "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbDdlanI1aVdlYXVpTmNPZVQwaHMtazFUMTVnWlF4cVBncjlFNVVnS0dlUVhmUzJnUXkxVHpyUVNpbVYwazVxZ0xrUGFtTUU4dU53LXgxOHZVc0FZZEVCUE5BUWkzQVNzUGtxWkpnTHpDaFVZek9QdVNiVGVJcUM5a3F4N3JIWDhIUnB5WVZIM2Q3QVlDNm5fc2czSTRHdHBEN0hnN00wUnU0RnpNY1F1ZkhQSXM5dFZuVDJ0Mg?oc=5",
         "source": "marketech apac",
         "published": "Mon, 04 May 2026 12:00:40 GMT",
         "description": "R/GA marks nearly 50 years of creative work with launch of retrospective book “R/GA By Design&nbsp;&nbsp;marketech apac"
-      },
-      {
-        "title": "Pinterest's anti-scroll campaign is a bet on real life over likes - PPC Land",
-        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPQndURGg1eW45WG5Yb3ZEd202RkQ5UDQ4V0J6SmhQeFFMSVlJUmRqNzNlWFduVmVWcGNsRjNQYUtlUG42cUN4LV9zYk5BQkY3LTBzRG5ISG8wRnhKUzh2RHBYSndjT3NyaHZ3b3ZlNWRWQTUza1JhNnNqcDN3eEEyX3h6MFM4OWVtV2c?oc=5",
-        "source": "PPC Land",
-        "published": "Fri, 01 May 2026 07:00:00 GMT",
-        "description": "Pinterest's anti-scroll campaign is a bet on real life over likes&nbsp;&nbsp;PPC Land"
-      },
-      {
-        "title": "Bon o Bon Boosts Its Presence in the U.S. with A Campaign Inspired by the Argentine National Team - abasto.com",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQUzMxNWtMb3pKZENqM3RGeTBJUjVuMG9Hc0I3LWFKM0ItY0dMTmpXZ1NnclpEWk91WWdoS2VoMV8wT19SRlJ0TzhrRGtiUVAwUzFBYTNpbGFJUWJLSEVsRzhDcnlFeG1Ya2tWMGM0MHA2SkJPdlNiXzN4RzRvRk1ELVpGYmRfbkJxRGhnMTlCMDZyVlN4VmR3VGcyV253eE1OZUNmdnNqRjdWaGpYLXl0YktyRlg1Q1hDenVrMmRuRTEwVXhPMjBSX3dXVjd0QXQwRmdV?oc=5",
-        "source": "abasto.com",
-        "published": "Thu, 30 Apr 2026 20:01:36 GMT",
-        "description": "Bon o Bon Boosts Its Presence in the U.S. with A Campaign Inspired by the Argentine National Team&nbsp;&nbsp;abasto.com"
       }
     ],
     "aiit": [
@@ -320,6 +320,41 @@
         "source": "에이빙",
         "published": "Thu, 07 May 2026 02:40:52 GMT",
         "description": "아시아 최대 AI 비즈니스의 장 열렸다! 코엑스서 열린 ‘제9회 국제인공지능산업대전(AI EXPO KOREA 2026), ‘피지컬 AI’ 집중 조명한다!&nbsp;&nbsp;에이빙"
+      },
+      {
+        "title": "대동, 2030년 매출 3.59조 청사진…‘농업 피지컬 AI’ 기업 전환 - 로봇신문",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9oYTU1RU02cU5VdThOVFdISXVrTUtkNFZpQlBDX1E0ckNLUUtlR0JvdTRwV09kOVpCMWpHWnBmS0tfVGxxR2ZsSU9WSnBwY0hoTUN5Ny1BaVZRT3o4SVVMbjVNY3V1TlJWVExINg?oc=5",
+        "source": "로봇신문",
+        "published": "Thu, 07 May 2026 09:12:59 GMT",
+        "description": "대동, 2030년 매출 3.59조 청사진…‘농업 피지컬 AI’ 기업 전환&nbsp;&nbsp;로봇신문"
+      },
+      {
+        "title": "전북재활협회, ‘2026 전북특별자치도 장애청소년IT챌린지’ 참가자 모집 - 에이블뉴스",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFB5enZlWnhzTmZEQlRiQU5zMGRkb3hSSHd5U21QNWthX25heVdfVktGUl9fQWlaVlY0eVZxRkhLa3BsRG5WejRkUFZrVTY5MkZwQ09UbnVMeV9HeUZwaDhZRlA4RXhHeTA5UVpDTGxGdXdMd9IBckFVX3lxTFB5enZlWnhzTmZEQlRiQU5zMGRkb3hSSHd5U21QNWthX25heVdfVktGUl9fQWlaVlY0eVZxRkhLa3BsRG5WejRkUFZrVTY5MkZwQ09UbnVMeV9HeUZwaDhZRlA4RXhHeTA5UVpDTGxGdXdMdw?oc=5",
+        "source": "에이블뉴스",
+        "published": "Thu, 07 May 2026 06:42:44 GMT",
+        "description": "전북재활협회, ‘2026 전북특별자치도 장애청소년IT챌린지’ 참가자 모집&nbsp;&nbsp;에이블뉴스"
+      },
+      {
+        "title": "“AI로 여는 장애청소년의 꿈”... 2026 전북특별자치도 IT챌린지 개최 - 웰페어뉴스",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9xX3d2V2RKRlI1VEs1QVF1MXk5WUwtYkFEOFlqbWVpVmZxWGhEcHV0V1ZYbmVpdE00MWppUWlKTnppNDBFbUtoMFdsVUhGRk1KN0xrLTNxQTVXeDdCWGpCVUk5Y0FOOGlIOERwTjA5VQ?oc=5",
+        "source": "웰페어뉴스",
+        "published": "Thu, 07 May 2026 06:23:45 GMT",
+        "description": "“AI로 여는 장애청소년의 꿈”... 2026 전북특별자치도 IT챌린지 개최&nbsp;&nbsp;웰페어뉴스"
+      },
+      {
+        "title": "AI 서버가 삼킨 전력반도체… “주문해도 9개월 대기” 공급망 ‘병목’ 비상 - 조선비즈 - Chosunbiz",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVEVBRndPaDVOdmtBcThWQWxDSFVNTERmME50YnhKTS1LNk9wRjQ0R3N3UWN3NXFqYWpnSHFQNGphOGpKaTV6ZkRKRW5PR1MyYVhTSjdxSUF5VmJWaHF3SlRwQVFDZkllYThFbHZQRnI2NWZmblFZSTBEYnlmc0MzY1FB0gGWAUFVX3lxTFBMUFhLYkp6MlRYNmtGTFlyQmhnMUJZOFdYNFVZRERRajJHTFQtUkpQTEdxdGVsMnFSdkFWeDJEZEVTaUxCS3lkZmFOejdXS2dpWFAyX1llYzRnZHF2cmRGMEFJYUlzV1Z2MlUyR0tRd1VOOXFQM2xINnZlWWtjWk44NnE3OHlPU2VkaHRJaWtQZmN0UTJRUQ?oc=5",
+        "source": "Chosunbiz",
+        "published": "Thu, 07 May 2026 04:59:00 GMT",
+        "description": "AI 서버가 삼킨 전력반도체… “주문해도 9개월 대기” 공급망 ‘병목’ 비상 - 조선비즈&nbsp;&nbsp;Chosunbiz"
+      },
+      {
+        "title": "뉴엔AI, 구어체 특화 모델 ‘퀘타(Quetta)’로 맞춤형 시장 분석 제공 - 산업일보",
+        "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE8tUXpOekRNQS15QXFiMFZ1Z0s0STI1M0ZFdUJHaGJLMUlBYnRoUmZHdmd2TmFZR1lPSmRrOVIzeU1wUmdW?oc=5",
+        "source": "산업일보",
+        "published": "Thu, 07 May 2026 07:56:47 GMT",
+        "description": "뉴엔AI, 구어체 특화 모델 ‘퀘타(Quetta)’로 맞춤형 시장 분석 제공&nbsp;&nbsp;산업일보"
       },
       {
         "title": "마이크로소프트·아마존·구글·메타 투자 확대…AI 인프라 경쟁 본격화 - PRESS9",
@@ -336,18 +371,11 @@
         "description": "[HOT 산업 트렌드] 트립비토즈, 챗GPT 전용 앱 국내 1호 출시…“여행 계획도 AI와 대화로”&nbsp;&nbsp;비즈월드"
       },
       {
-        "title": "토마토시스템, 전 임직원 AI 유료 구독 지원…\"AI 내재화 완성할 것\" - 머니투데이 - 머니투데이",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5rcEZFT1BNaTFQbnFoQTlCcU85QUdlWFdHSVJIaGwtZWt4QU9pSHpqdXVTM1JHeUFLMml2a0Z2aXF1a2lTS2VmSjl4SmdxeHBTNGc1eXREVE1vTDB5RW13VEhHd0xpRDBKbXpPcGFR0gFuQVVfeXFMTmtwRkVPUE1pMVBucWhBOUJxTzlBR2VYV0dJUkhobC1la3hBT2lIemp1dVMzUkd5QUsyaXZrRnZpcXVraVNLZWZKOXhKZ3F4cFM0ZzV5dERUTW9MMHlFbXdUSEd3TGlEMEptek9wYVE?oc=5",
-        "source": "머니투데이",
-        "published": "Thu, 07 May 2026 00:41:35 GMT",
-        "description": "토마토시스템, 전 임직원 AI 유료 구독 지원…\"AI 내재화 완성할 것\" - 머니투데이&nbsp;&nbsp;머니투데이"
-      },
-      {
-        "title": "AI 서버가 삼킨 전력반도체… “주문해도 9개월 대기” 공급망 ‘병목’ 비상 - 조선비즈 - Chosunbiz",
-        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVEVBRndPaDVOdmtBcThWQWxDSFVNTERmME50YnhKTS1LNk9wRjQ0R3N3UWN3NXFqYWpnSHFQNGphOGpKaTV6ZkRKRW5PR1MyYVhTSjdxSUF5VmJWaHF3SlRwQVFDZkllYThFbHZQRnI2NWZmblFZSTBEYnlmc0MzY1FB0gGWAUFVX3lxTFBMUFhLYkp6MlRYNmtGTFlyQmhnMUJZOFdYNFVZRERRajJHTFQtUkpQTEdxdGVsMnFSdkFWeDJEZEVTaUxCS3lkZmFOejdXS2dpWFAyX1llYzRnZHF2cmRGMEFJYUlzV1Z2MlUyR0tRd1VOOXFQM2xINnZlWWtjWk44NnE3OHlPU2VkaHRJaWtQZmN0UTJRUQ?oc=5",
-        "source": "Chosunbiz",
-        "published": "Wed, 06 May 2026 21:04:39 GMT",
-        "description": "AI 서버가 삼킨 전력반도체… “주문해도 9개월 대기” 공급망 ‘병목’ 비상 - 조선비즈&nbsp;&nbsp;Chosunbiz"
+        "title": "[속보] 업스테이지, 포털 ‘다음’ 인수 최종 확정 - 헤럴드경제",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAwQmNyREdTYWU1akVITFFrN0ltNkNuVmVteDl3cHRaQVpqbnJlMGxOQ3J6RFFLcDRlT1JrMy01UFRGWmdHNDRrZ3JzOW0yMjktbTFkNmpR?oc=5",
+        "source": "헤럴드경제",
+        "published": "Wed, 06 May 2026 23:13:12 GMT",
+        "description": "[속보] 업스테이지, 포털 ‘다음’ 인수 최종 확정&nbsp;&nbsp;헤럴드경제"
       },
       {
         "title": "로봇산업진흥원, AI 트렌드 부응 조직 수술 - v.daum.net",
@@ -355,120 +383,92 @@
         "source": "v.daum.net",
         "published": "Wed, 06 May 2026 08:06:36 GMT",
         "description": "로봇산업진흥원, AI 트렌드 부응 조직 수술&nbsp;&nbsp;v.daum.net"
-      },
-      {
-        "title": "업스테이지, ‘다음’ 인수 확정…김성훈 대표 “새 AI 포털 시대 연다” - 헤럴드경제",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5hckQ2VUl4WlRQSC1EcVBNUkgyVWJ0VVNVZnB1OVU2WEswOHdnZlBTbkpINzU0NXA5OV9Hd1JTUndfRU9FYThraWtkLS1xaVY3aF83Z1JB?oc=5",
-        "source": "헤럴드경제",
-        "published": "Thu, 07 May 2026 00:09:04 GMT",
-        "description": "업스테이지, ‘다음’ 인수 확정…김성훈 대표 “새 AI 포털 시대 연다”&nbsp;&nbsp;헤럴드경제"
-      },
-      {
-        "title": "KTC, AI EXPO KOREA 2026 참가 - 전기신문",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1TaVRyM0VLTUZsek85c0hLUHhOeHhsWTVHYm9fZDkwOV8ydHk2U0RBRlphVGRSQ1pqRG84bGxHWXlKVGlaYU5mcWVodXBiNGJBMW54dTBxTzEwUFQzOTA1aFB5M1VucDg0Y3hqVXVLNEzSAXBBVV95cUxNU2lUcjNFS01GbHpPOXNIS1B4Tnh4bFk1R2JvX2Q5MDlfMnR5NlNEQUZaYVRkUkNaakRvOGxsR1l5SlRpWmFOZnFlaHVwYjRiQTFueHUwcU8xMFBUMzkwNWhQeTNVbnA4NGN4alV1SzRM?oc=5",
-        "source": "전기신문",
-        "published": "Wed, 06 May 2026 04:58:32 GMT",
-        "description": "KTC, AI EXPO KOREA 2026 참가&nbsp;&nbsp;전기신문"
-      },
-      {
-        "title": "[금융트렌드] AI가 결제까지 수행...‘에이전트 금융’ 시대 열린다 - fnnews1.com",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE81dUJRWlNOX0hUQVFubGtrTXpPcVhJd0VEVEY3ZXFZU3MzME9KX1p3S0VGUk80TjlwZDlta3loc0pSNTVlZHRjMXhDSldFcW9FZEtiTTJWX2w3Q1llQUVWRkRaNlJ5NmN5UVVpbzRR0gFuQVVfeXFMTzV1QlFaU05fSFRBUW5sa2tNek9xWEl3RURURjdlcVlTczMwT0pfWndLRUZSTzROOXBkOW1reWhzSlI1NWVkdGMxeENKV0Vxb0VkS2JNMlZfbDdDWWVBRVZGRFo2Unk2Y3lRVWlvNFE?oc=5",
-        "source": "fnnews1.com",
-        "published": "Wed, 06 May 2026 01:21:23 GMT",
-        "description": "[금융트렌드] AI가 결제까지 수행...‘에이전트 금융’ 시대 열린다&nbsp;&nbsp;fnnews1.com"
-      },
-      {
-        "title": "장기 AI 국가 전략 및 대응 방법 총정리 - 브런치",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1fVmFOWXFYUlBwa1RWNkg3MlZiNWNKSy1wcUc1Y05rNXNESlhSR1FQTjVQdmhNM2RZbk9maWpQUkNyY0ZVQVdNRmt0M3hYY0NCdFVZ?oc=5",
-        "source": "브런치",
-        "published": "Wed, 06 May 2026 14:51:27 GMT",
-        "description": "장기 AI 국가 전략 및 대응 방법 총정리&nbsp;&nbsp;브런치"
       }
     ]
   },
   "trends": {
     "kr": [
       {
-        "title": "장마",
+        "title": "방탄소년단",
         "vol": "1000+"
       },
       {
-        "title": "정수정",
-        "vol": "100+"
-      },
-      {
-        "title": "김도연",
-        "vol": "2000+"
-      },
-      {
-        "title": "이창호",
-        "vol": "100+"
-      },
-      {
-        "title": "현대차 채용",
-        "vol": "100+"
-      },
-      {
-        "title": "반려견",
-        "vol": "1000+"
-      },
-      {
-        "title": "에어로케이",
+        "title": "춘천시",
         "vol": "200+"
       },
       {
-        "title": "pga 투어",
+        "title": "nh투자증권",
+        "vol": "200+"
+      },
+      {
+        "title": "tsmc",
+        "vol": "5000+"
+      },
+      {
+        "title": "다이소",
+        "vol": "5000+"
+      },
+      {
+        "title": "이서진",
+        "vol": "10000+"
+      },
+      {
+        "title": "홈런",
+        "vol": "5000+"
+      },
+      {
+        "title": "아메리칸 비트코인",
+        "vol": "200+"
+      },
+      {
+        "title": "기은세",
         "vol": "100+"
       },
       {
-        "title": "서경덕",
-        "vol": "500+"
-      },
-      {
-        "title": "lg 유플러스",
-        "vol": "500+"
+        "title": "영재학교",
+        "vol": "100+"
       }
     ],
     "global": [
       {
-        "title": "gregory soto",
-        "vol": "200+"
+        "title": "frío",
+        "vol": "100+"
       },
       {
-        "title": "dean potter death",
-        "vol": "200+"
+        "title": "vrabel russini boat",
+        "vol": "100+"
       },
       {
-        "title": "la county fair",
-        "vol": "200+"
-      },
-      {
-        "title": "brendan fraser",
-        "vol": "500+"
-      },
-      {
-        "title": "jordan mclaughlin",
-        "vol": "500+"
-      },
-      {
-        "title": "leo carlsson",
+        "title": "primerica",
         "vol": "1000+"
       },
       {
-        "title": "톨루카 대 엘에이 fc",
+        "title": "sophie cunningham",
         "vol": "200+"
       },
       {
-        "title": "marcus semien",
-        "vol": "200+"
+        "title": "julianne hough",
+        "vol": "100+"
       },
       {
-        "title": "steve carell",
-        "vol": "1000+"
+        "title": "alianza atlético - américa",
+        "vol": "500+"
       },
       {
-        "title": "stephen colbert",
-        "vol": "2000+"
+        "title": "home prices",
+        "vol": "100+"
+      },
+      {
+        "title": "real estate market",
+        "vol": "100+"
+      },
+      {
+        "title": "giant squid western australia",
+        "vol": "20000+"
+      },
+      {
+        "title": "basketball fouls",
+        "vol": "10000+"
       }
     ]
   },
@@ -628,15 +628,15 @@
       },
       {
         "rank": 4,
-        "name": "메이플 키우기",
-        "developer": "NEXON Company",
-        "link": "https://play.google.com/store/apps/details?id=com.nexon.ma"
-      },
-      {
-        "rank": 5,
         "name": "WOS: 화이트아웃 서바이벌",
         "developer": "Century Games PTE. LTD.",
         "link": "https://play.google.com/store/apps/details?id=com.gof.global"
+      },
+      {
+        "rank": 5,
+        "name": "메이플 키우기",
+        "developer": "NEXON Company",
+        "link": "https://play.google.com/store/apps/details?id=com.nexon.ma"
       },
       {
         "rank": 6,
@@ -646,15 +646,15 @@
       },
       {
         "rank": 7,
-        "name": "명조:워더링 웨이브 - 2주년 축제",
-        "developer": "HK KURO GAMES LIMITED",
-        "link": "https://play.google.com/store/apps/details?id=com.kurogame.wutheringwaves.global"
-      },
-      {
-        "rank": 8,
         "name": "라스트 워: 서바이벌",
         "developer": "FUNFLY PTE. LTD.",
         "link": "https://play.google.com/store/apps/details?id=com.fun.lastwar.gp"
+      },
+      {
+        "rank": 8,
+        "name": "명조:워더링 웨이브 - 2주년 축제",
+        "developer": "HK KURO GAMES LIMITED",
+        "link": "https://play.google.com/store/apps/details?id=com.kurogame.wutheringwaves.global"
       },
       {
         "rank": 9,
