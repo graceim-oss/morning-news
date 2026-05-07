@@ -1,4 +1,4 @@
-import json, re, ssl
+import json, re, ssl, html as _html
 from datetime import datetime, timezone, timedelta
 from urllib.request import urlopen, Request
 from urllib.parse import quote
@@ -26,11 +26,14 @@ def parse_rss(xml):
             if not t: return ''
             return re.sub(r'<[^>]+>', '', t.group(1).replace('<![CDATA[','').replace(']]>','')).strip()
         lm = re.search(r'<link>([^<]+)<\/link>', blk)
+        raw_desc = get('description')
+        clean_desc = re.sub(r'<[^>]+>', '', _html.unescape(raw_desc)).strip() if raw_desc else ''
         items.append({
             'title': get('title'),
             'link': lm.group(1).strip() if lm else '',
             'source': get('source') or get('News:Source') or 'Google News',
             'published': get('pubDate') or '',
+            'description': clean_desc,
         })
     return items
 
@@ -203,6 +206,55 @@ def fetch_appstore_top(country='kr'):
         print('App Store 오류: ' + str(e))
         return []
 
+def _fetch_og(url):
+    # Google News redirect URLs can't be fetched for og tags
+    if not url or 'news.google.com' in url:
+        return '', ''
+    try:
+        html = fetch(url)
+        def og(prop):
+            m = re.search(r'property=["\']og:' + prop + r'["\']\s+content=["\']([^"\']+)', html, re.I)
+            if not m:
+                m = re.search(r'content=["\']([^"\']+)["\']\s+property=["\']og:' + prop + r'["\']', html, re.I)
+            return m.group(1).strip() if m else ''
+        return og('image'), og('description')
+    except Exception:
+        return '', ''
+
+def fetch_markethinking():
+    results = fetch_news('마케띵킹 마케팅 뉴스레터 아티클')
+    items = []
+    for r in results[:2]:
+        desc = r.get('description', '')
+        items.append({
+            'title': r.get('title', ''),
+            'link': r.get('link', ''),
+            'source': '마케띵킹',
+            'published': r.get('published', ''),
+            'image': '',
+            'description': desc,
+            'tags': [],
+        })
+    print('마케띵킹 ' + str(len(items)) + '개 수집')
+    return items
+
+def fetch_openads():
+    results = fetch_news('오픈애즈 마케팅 광고 트렌드')
+    items = []
+    for r in results[:3]:
+        desc = r.get('description', '')
+        items.append({
+            'title': r.get('title', ''),
+            'link': r.get('link', ''),
+            'source': '오픈애즈',
+            'published': r.get('published', ''),
+            'image': '',
+            'description': desc,
+            'tags': [],
+        })
+    print('오픈애즈 ' + str(len(items)) + '개 수집')
+    return items
+
 def main():
     now = datetime.now(KST).strftime('%H:%M:%S')
     print('수집 시작: ' + now)
@@ -214,19 +266,21 @@ def main():
         'wemix':      fetch_wemix(),
     }
 
-    print('뉴스/트렌드/순위 병렬 수집 중...')
+    print('뉴스/트렌드/순위/인사이트 병렬 수집 중...')
     tasks = {
-        'news_wemade':       lambda: fetch_news('위메이드 OR 위믹스 OR WEMIX OR 레전드오브이미르 OR 나이트크로우'),
-        'news_blockchain':   lambda: fetch_news('블록체인 OR 가상자산 OR NFT OR Web3 OR 코인 OR 스테이블코인'),
-        'news_marketing':    lambda: fetch_news('브랜드 마케팅 OR 브랜드 캠페인 OR 광고 캠페인 OR 마케팅 트렌드 OR 브랜드 전략 OR 콘텐츠 마케팅 OR SNS 마케팅 OR 인플루언서 마케팅 when:1d'),
-        'news_brand_global': lambda: fetch_news_en('brand campaign 2026 OR global marketing trend OR brand identity OR viral campaign OR advertising design when:7d'),
-        'news_aiit':         lambda: fetch_news('ChatGPT OR Gemini OR 인공지능 OR AI 서비스 OR LLM OR IT 트렌드 when:3d'),
-        'trend_kr':          lambda: fetch_gtrend('KR'),
-        'trend_global':      lambda: fetch_gtrend('US'),
-        'steam':             lambda: fetch_steam_top(),
-        'gametrics':         lambda: fetch_gametrics_top(),
-        'gplay_kr':          lambda: fetch_gplay_top('kr', 'ko', 'TOP_GROSSING'),
-        'appstore_kr':       lambda: fetch_appstore_top('kr'),
+        'news_wemade':         lambda: fetch_news('위메이드 OR 위믹스 OR WEMIX OR 레전드오브이미르 OR 나이트크로우'),
+        'news_blockchain':     lambda: fetch_news('블록체인 OR 가상자산 OR NFT OR Web3 OR 코인 OR 스테이블코인'),
+        'news_marketing':      lambda: fetch_news('브랜드 마케팅 OR 브랜드 캠페인 OR 광고 캠페인 OR 마케팅 트렌드 OR 브랜드 전략 OR 콘텐츠 마케팅 OR SNS 마케팅 OR 인플루언서 마케팅 when:1d'),
+        'news_brand_global':   lambda: fetch_news_en('brand campaign 2026 OR global marketing trend OR brand identity OR viral campaign OR advertising design when:7d'),
+        'news_aiit':           lambda: fetch_news('ChatGPT OR Gemini OR 인공지능 OR AI 서비스 OR LLM OR IT 트렌드 when:3d'),
+        'trend_kr':            lambda: fetch_gtrend('KR'),
+        'trend_global':        lambda: fetch_gtrend('US'),
+        'steam':               lambda: fetch_steam_top(),
+        'gametrics':           lambda: fetch_gametrics_top(),
+        'gplay_kr':            lambda: fetch_gplay_top('kr', 'ko', 'TOP_GROSSING'),
+        'appstore_kr':         lambda: fetch_appstore_top('kr'),
+        'insights_markethinking': lambda: fetch_markethinking(),
+        'insights_openads':    lambda: fetch_openads(),
     }
 
     results = {}
@@ -257,6 +311,7 @@ def main():
         'gplay_kr':    results.get('gplay_kr', []),
         'appstore_kr': results.get('appstore_kr', []),
     }
+    insights = results.get('insights_markethinking', []) + results.get('insights_openads', [])
 
     data = {
         'updated': now,
@@ -264,6 +319,7 @@ def main():
         'news': news,
         'trends': trends,
         'rankings': rankings,
+        'insights': insights,
     }
 
     with open('data.json', 'w', encoding='utf-8') as f:
@@ -277,6 +333,7 @@ def main():
     print('  뉴스-마케팅: ' + str(len(news['marketing'])) + '개')
     print('  뉴스-글로벌브랜드: ' + str(len(news['brand_global'])) + '개')
     print('  뉴스-AI/IT: ' + str(len(news['aiit'])) + '개')
+    print('  인사이트(마케띵킹+오픈애즈): ' + str(len(insights)) + '개')
 
 if __name__ == '__main__':
     main()

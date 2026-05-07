@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>위메이드 브랜드마케팅팀 위클리</title>
+<style>
+  /* ── Reset ── */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    margin: 0; padding: 0;
+    background: #ECEEF3;
+    font-family: 'Apple SD Gothic Neo', -apple-system, BlinkMacSystemFont,
+                 'Malgun Gothic', 'Noto Sans KR', 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #1a1f36;
+  }
+  a { text-decoration: none; }
+  img { border: 0; display: block; max-width: 100%; }
+
+  /* ── Wrapper ── */
+  .email-wrapper { background: #ECEEF3; padding: 28px 0 40px; }
+  .email-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 40px rgba(26,31,54,0.13);
+  }
+
+  /* ── Pre-header (invisible preview text) ── */
+  .preheader {
+    display: none; max-height: 0; overflow: hidden;
+    font-size: 0; line-height: 0; color: transparent;
+    mso-hide: all;
+  }
+
+  /* ═══════════════════════════════════
+     HEADER
+  ═══════════════════════════════════ */
+  .header {
+    background: #1a1f36;
+    padding: 44px 36px 38px;
+    text-align: center;
+  }
+  .header-eyebrow {
+    display: inline-block;
+    background: rgba(232,196,104,0.15);
+    border: 1px solid rgba(232,196,104,0.3);
+    color: #E8C468;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 5px 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.4px;
+    margin-bottom: 10px;
+  }
+  .header .subtitle {
+    color: rgba(255,255,255,0.5);
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  .header .dateline {
+    display: inline-block;
+    background: rgba(255,255,255,0.07);
+    color: rgba(255,255,255,0.4);
+    font-size: 11px;
+    padding: 5px 16px;
+    border-radius: 12px;
+    letter-spacing: 0.8px;
+  }
+
+  /* ═══════════════════════════════════
+     SECTION LAYOUT
+  ═══════════════════════════════════ */
+  .section       { padding: 34px 32px; background: #fff; }
+  .section-alt   { padding: 34px 32px; background: #F8F9FC; }
+  .divider       { height: 8px; background: #ECEEF3; }
+
+  /* Section header with left accent bar */
+  .section-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 26px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #ECECEC;
+  }
+  .accent-bar {
+    width: 4px;
+    min-height: 44px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .section-eyebrow {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    display: block;
+  }
+  .section-title {
+    font-size: 19px;
+    font-weight: 800;
+    color: #1a1f36;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  /* ═══════════════════════════════════
+     SECTION 1 · 브랜드 인사이트
+  ═══════════════════════════════════ */
+  .article-card {
+    background: #FAFAFA;
+    border: 1px solid #EFEFEF;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  .article-card:last-of-type { margin-bottom: 0; }
+
+  .article-thumb {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    background: #E5E7EB;
+  }
+
+  .article-body { padding: 18px 20px 20px; }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .source-badge {
+    display: inline-block;
+    background: #FFF3EE;
+    color: #E64A19;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px 9px;
+    border-radius: 5px;
+  }
+  .article-date {
+    font-size: 10px;
+    color: #B0B8C1;
+  }
+  .article-title {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1f36;
+    line-height: 1.65;
+    margin-bottom: 12px;
+  }
+  .article-title:hover { color: #FF6B35; }
+
+  .article-tags { margin: 0 0 14px; }
+  .article-tag {
+    display: inline-block;
+    background: #F0F1F6;
+    color: #6B7280;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+
+  /* Quote / comment box */
+  .comment-box {
+    border-left: 3px solid #FF6B35;
+    background: #FFF6F2;
+    border-radius: 0 10px 10px 0;
+    padding: 13px 15px;
+    font-size: 13.5px;
+    color: #444;
+    line-height: 1.85;
+    margin-bottom: 14px;
+  }
+  .read-link {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #FF6B35;
+  }
+  .read-link::after { content: ' →'; }
+
+  /* ═══════════════════════════════════
+     SECTION 2 · 지금 세상은
+  ═══════════════════════════════════ */
+
+  /* Trend keyword chips */
+  .trend-tags { margin: 14px 0 22px; line-height: 2.4; }
+  .trend-tag {
+    display: inline-block;
+    background: #F0FAF9;
+    color: #00897B;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 13px;
+    border-radius: 20px;
+    margin: 0 6px 6px 0;
+    border: 1px solid #B2DFDB;
+  }
+  .trend-tag-hot {
+    background: #FFF3EE;
+    color: #E64A19;
+    border-color: #FFCCBC;
+  }
+
+  /* Rank groups */
+  .rank-group { margin-bottom: 24px; }
+  .rank-group:last-child { margin-bottom: 0; }
+  .rank-group-title {
+    font-size: 11px;
+    font-weight: 800;
+    color: #9CA3AF;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #E0E0E0;
+    margin-bottom: 10px;
+  }
+  .rank-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 9px 0;
+    border-bottom: 1px solid #F4F4F6;
+  }
+  .rank-item:last-child { border-bottom: none; }
+  .rank-num {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #1a1f36;
+    color: #E8C468;
+    font-size: 11px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .rank-num.hot { background: #E64A19; color: #fff; }
+  .rank-name { flex: 1; font-size: 14px; color: #1a1f36; font-weight: 500; }
+  .rank-name a { color: #1a1f36; }
+  .rank-name a:hover { color: #00897B; }
+  .rank-meta { font-size: 11px; color: #B0B8C1; text-align: right; }
+
+  /* ═══════════════════════════════════
+     SECTION 3 · AI/IT
+  ═══════════════════════════════════ */
+  .news-item {
+    padding: 13px 0;
+    border-bottom: 1px solid #F0F1F6;
+  }
+  .news-item:last-child { border-bottom: none; }
+  .news-source-badge {
+    display: inline-block;
+    background: #EEEEFF;
+    color: #5C67F2;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+  .news-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1f36;
+    line-height: 1.6;
+  }
+  .news-title:hover { color: #5C67F2; }
+
+  /* ═══════════════════════════════════
+     CTA BUTTON
+  ═══════════════════════════════════ */
+  .cta-wrap { text-align: center; padding: 24px 0 4px; }
+  .cta-btn {
+    display: inline-block;
+    background: #1a1f36;
+    color: #E8C468;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 13px 30px;
+    border-radius: 30px;
+    letter-spacing: 0.3px;
+  }
+  .cta-btn:hover { background: #10162B; }
+
+  /* ═══════════════════════════════════
+     숫자 브리핑
+  ═══════════════════════════════════ */
+  .stocks-section { padding: 34px 32px; background: #F8F9FC; }
+  .stocks-grid {
+    display: flex;
+    gap: 12px;
+  }
+  .stock-card {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 14px;
+    padding: 18px 12px 16px;
+    text-align: center;
+    min-width: 0;
+  }
+  .stock-name {
+    font-size: 11px;
+    color: #9CA3AF;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  .stock-price {
+    font-size: 20px;
+    font-weight: 800;
+    color: #1a1f36;
+    line-height: 1.2;
+  }
+  .stock-price .unit { font-size: 12px; font-weight: 500; }
+  .stock-change {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 7px;
+    line-height: 1.5;
+  }
+  .rising  { color: #EF4444; }
+  .falling { color: #3B82F6; }
+  .steady  { color: #9CA3AF; }
+
+  /* ═══════════════════════════════════
+     에디터 한마디
+  ═══════════════════════════════════ */
+  .editor-section {
+    background: #1a1f36;
+    padding: 36px 32px;
+  }
+  .editor-eyebrow {
+    display: block;
+    font-size: 10px;
+    font-weight: 800;
+    color: #E8C468;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 16px;
+  }
+  .editor-quote {
+    font-size: 15px;
+    color: #E8EBEF;
+    line-height: 1.9;
+    white-space: pre-wrap;
+    font-weight: 400;
+  }
+  .editor-sig {
+    display: block;
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+    margin-top: 18px;
+  }
+
+  /* ═══════════════════════════════════
+     MANUAL NOTE
+  ═══════════════════════════════════ */
+  .manual-note {
+    background: #FFFBEA;
+    border: 1px solid #FDE68A;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 13px;
+    color: #6B7280;
+    margin-bottom: 22px;
+    line-height: 1.7;
+  }
+  .manual-note-label {
+    display: block;
+    font-size: 10px;
+    font-weight: 800;
+    color: #D97706;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
+
+  /* ═══════════════════════════════════
+     FOOTER
+  ═══════════════════════════════════ */
+  .footer {
+    background: #F8F9FC;
+    padding: 26px 32px;
+    text-align: center;
+    border-top: 1px solid #E5E7EB;
+  }
+  .footer p {
+    font-size: 11px;
+    color: #9CA3AF;
+    line-height: 1.8;
+    margin: 0;
+  }
+  .footer a { color: #9CA3AF; text-decoration: underline; }
+  .footer a:hover { color: #5C67F2; }
+
+  /* ═══════════════════════════════════
+     MOBILE
+  ═══════════════════════════════════ */
+  @media (max-width: 620px) {
+    .email-wrapper  { padding: 0; }
+    .email-container{ border-radius: 0; box-shadow: none; }
+    .header         { padding: 30px 20px; }
+    .header h1      { font-size: 21px; }
+    .section,
+    .section-alt,
+    .stocks-section,
+    .editor-section,
+    .footer         { padding: 24px 18px; }
+    .stocks-grid    { flex-direction: column; }
+    .stock-card     { min-width: 0; }
+    .article-body   { padding: 14px 14px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Pre-header -->
+<div class="preheader">위메이드 브랜드마케팅팀 위클리 — {{ date }}. 브랜드마케터를 위한 한 주의 인사이트를 전달합니다.</div>
+
+<div class="email-wrapper">
+<div class="email-container">
+
+  <!-- ══ HEADER ══════════════════════════════════════════ -->
+  <div class="header">
+    <div class="header-eyebrow">Wemade Brand Marketing Weekly</div>
+    <h1>위메이드 브랜드마케팅팀 위클리</h1>
+    <p class="subtitle">브랜드마케터를 위한 한 주의 인사이트</p>
+    <span class="dateline">{{ date }} 발행</span>
+  </div>
+
+  <!-- ══ SECTION 1 · 브랜드 인사이트 ══════════════════════ -->
+  <div class="section">
+    <div class="section-header">
+      <div class="accent-bar" style="background:#FF6B35;"></div>
+      <div>
+        <span class="section-eyebrow" style="color:#FF6B35;">Section 01</span>
+        <h2 class="section-title">브랜드 인사이트</h2>
+      </div>
+    </div>
+
+    {% if section1.note %}
+    <div class="manual-note">
+      <span class="manual-note-label">📌 에디터 메모</span>
+      {{ section1.note }}
+    </div>
+    {% endif %}
+
+    {% if section1.articles %}
+      {% for article in section1.articles %}
+      <div class="article-card">
+        {% if article.image %}
+        <img src="{{ article.image }}" alt="" class="article-thumb">
+        {% endif %}
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="source-badge">{{ article.source }}</span>
+            {% if article.published %}<span class="article-date">{{ article.published }}</span>{% endif %}
+          </div>
+          {% if article.link %}
+          <a href="{{ article.link }}" class="article-title" target="_blank">{{ article.title }}</a>
+          {% else %}
+          <span class="article-title">{{ article.title }}</span>
+          {% endif %}
+          {% if article.tags %}
+          <div class="article-tags">
+            {% for tag in article.tags %}<span class="article-tag"># {{ tag }}</span>{% endfor %}
+          </div>
+          {% endif %}
+          {% if article.comment %}
+          <div class="comment-box">{{ article.comment }}</div>
+          {% endif %}
+          {% if article.link %}
+          <a href="{{ article.link }}" class="read-link" target="_blank">원문 읽기</a>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    {% else %}
+    <p style="color:#9CA3AF;text-align:center;padding:24px 0;font-size:14px;">
+      브랜드 인사이트 데이터를 불러오는 중입니다.
+    </p>
+    {% endif %}
+
+    <div class="cta-wrap">
+      <a href="{{ dashboard_url }}" class="cta-btn">📊 대시보드 전체 보기</a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ══ SECTION 2 · 지금 세상은 ══════════════════════════ -->
+  <div class="section-alt">
+    <div class="section-header">
+      <div class="accent-bar" style="background:#00B4A6;"></div>
+      <div>
+        <span class="section-eyebrow" style="color:#00897B;">Section 02</span>
+        <h2 class="section-title">지금 세상은</h2>
+      </div>
+    </div>
+
+    {% if section2.note %}
+    <div class="manual-note">
+      <span class="manual-note-label">📌 에디터 메모</span>
+      {{ section2.note }}
+    </div>
+    {% endif %}
+
+    {% if section2.comment %}
+    <div class="comment-box" style="border-left-color:#00B4A6; background:#F0FAFA; margin-bottom:26px;">
+      {{ section2.comment }}
+    </div>
+    {% endif %}
+
+    <!-- Google Trends KR 키워드 태그 -->
+    {% if section2.trend_kr %}
+    <div class="rank-group">
+      <div class="rank-group-title">🔥 구글 트렌드 TOP5 (KR)</div>
+      <div class="trend-tags">
+        {% for trend in section2.trend_kr %}
+        <span class="trend-tag {% if loop.index <= 3 %}trend-tag-hot{% endif %}">
+          {{ loop.index }}. {{ trend.title }}
+          {%- if trend.vol %} <span style="opacity:0.55; font-size:11px;">{{ trend.vol }}</span>{% endif %}
+        </span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- Gametrics PC방 순위 -->
+    {% if section2.gametrics %}
+    <div class="rank-group">
+      <div class="rank-group-title">🎮 PC방 순위 (게임트릭스)</div>
+      {% for game in section2.gametrics %}
+      <div class="rank-item">
+        <span class="rank-num {% if loop.index <= 3 %}hot{% endif %}">{{ loop.index }}</span>
+        <span class="rank-name">
+          {% if game.link %}<a href="{{ game.link }}" target="_blank">{{ game.name }}</a>
+          {% else %}{{ game.name }}{% endif %}
+        </span>
+        {% if game.pct %}<span class="rank-meta">{{ game.pct }}%</span>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Google Play KR -->
+    {% if section2.gplay_kr %}
+    <div class="rank-group">
+      <div class="rank-group-title">📱 구글 플레이 인기 게임 (KR)</div>
+      {% for app in section2.gplay_kr %}
+      <div class="rank-item">
+        <span class="rank-num {% if loop.index <= 3 %}hot{% endif %}">{{ loop.index }}</span>
+        <span class="rank-name">
+          {% if app.link %}<a href="{{ app.link }}" target="_blank">{{ app.name }}</a>
+          {% else %}{{ app.name }}{% endif %}
+        </span>
+        {% if app.developer %}<span class="rank-meta">{{ app.developer }}</span>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="cta-wrap">
+      <a href="{{ dashboard_url }}" class="cta-btn">📊 전체 트렌드 보기</a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ══ SECTION 3 · AI/IT 소식 ═══════════════════════════ -->
+  <div class="section">
+    <div class="section-header">
+      <div class="accent-bar" style="background:#5C67F2;"></div>
+      <div>
+        <span class="section-eyebrow" style="color:#5C67F2;">Section 03</span>
+        <h2 class="section-title">AI / IT 소식</h2>
+      </div>
+    </div>
+
+    {% if section3.note %}
+    <div class="manual-note">
+      <span class="manual-note-label">📌 에디터 메모</span>
+      {{ section3.note }}
+    </div>
+    {% endif %}
+
+    {% if section3.comment %}
+    <div class="comment-box" style="border-left-color:#5C67F2; background:#F3F4FF; margin-bottom:24px;">
+      {{ section3.comment }}
+    </div>
+    {% endif %}
+
+    {% if section3.articles %}
+      {% for article in section3.articles %}
+      <div class="news-item">
+        <span class="news-source-badge">{{ article.source }}</span>
+        {% if article.link %}
+        <a href="{{ article.link }}" class="news-title" target="_blank">{{ article.title }}</a>
+        {% else %}
+        <span class="news-title">{{ article.title }}</span>
+        {% endif %}
+      </div>
+      {% endfor %}
+    {% else %}
+    <p style="color:#9CA3AF;text-align:center;padding:24px 0;font-size:14px;">
+      AI/IT 뉴스 데이터가 없습니다.<br>
+      <small>fetch_data.py 업데이트 후 재실행해주세요.</small>
+    </p>
+    {% endif %}
+
+    <div class="cta-wrap">
+      <a href="{{ dashboard_url }}" class="cta-btn">📊 AI/IT 뉴스 더 보기</a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ══ 숫자 브리핑 ══════════════════════════════════════ -->
+  <div class="stocks-section">
+    <div class="section-header">
+      <div class="accent-bar" style="background:#1a1f36;"></div>
+      <div>
+        <span class="section-eyebrow" style="color:#6B7280;">숫자 브리핑</span>
+        <h2 class="section-title">이 주의 숫자</h2>
+      </div>
+    </div>
+
+    <div class="stocks-grid">
+
+      <!-- 위메이드 -->
+      <div class="stock-card">
+        <div class="stock-name">위메이드<br>112040</div>
+        {% if stocks.wemade.error %}
+        <div class="stock-price">—</div>
+        <div class="stock-change steady">데이터 없음</div>
+        {% else %}
+        <div class="stock-price">
+          {{ stocks.wemade.price }}<span class="unit">원</span>
+        </div>
+        <div class="stock-change {{ stocks.wemade.dir }}">
+          {{ stocks.wemade.sign }}{{ stocks.wemade.change }}원<br>
+          ({{ stocks.wemade.sign }}{{ stocks.wemade.ratio }}%)
+        </div>
+        {% endif %}
+      </div>
+
+      <!-- 위메이드맥스 -->
+      <div class="stock-card">
+        <div class="stock-name">위메이드맥스<br>101730</div>
+        {% if stocks.wemade_max.error %}
+        <div class="stock-price">—</div>
+        <div class="stock-change steady">데이터 없음</div>
+        {% else %}
+        <div class="stock-price">
+          {{ stocks.wemade_max.price }}<span class="unit">원</span>
+        </div>
+        <div class="stock-change {{ stocks.wemade_max.dir }}">
+          {{ stocks.wemade_max.sign }}{{ stocks.wemade_max.change }}원<br>
+          ({{ stocks.wemade_max.sign }}{{ stocks.wemade_max.ratio }}%)
+        </div>
+        {% endif %}
+      </div>
+
+      <!-- WEMIX -->
+      <div class="stock-card">
+        <div class="stock-name">WEMIX<br>시세</div>
+        {% if stocks.wemix.error %}
+        <div class="stock-price">—</div>
+        <div class="stock-change steady">데이터 없음</div>
+        {% else %}
+        <div class="stock-price">
+          {{ stocks.wemix.krw }}<span class="unit">원</span>
+        </div>
+        <div class="stock-change {{ stocks.wemix.dir }}">
+          {{ stocks.wemix.sign }}{{ stocks.wemix.chg }}%<br>
+          <span style="font-size:10px; font-weight:400; color:#9CA3AF;">24h 변동</span>
+        </div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ 에디터 한마디 ════════════════════════════════════ -->
+  {% if editor_comment %}
+  <div class="editor-section">
+    <span class="editor-eyebrow">✍️ Editor's Note</span>
+    <div class="editor-quote">"{{ editor_comment }}"</div>
+    <span class="editor-sig">— 위메이드 브랜드마케팅팀</span>
+  </div>
+  {% endif %}
+
+  <!-- ══ FOOTER ════════════════════════════════════════════ -->
+  <div class="footer">
+    <p><strong style="color:#6B7280;">{{ date }}</strong> 발행 &nbsp;·&nbsp; 위메이드 브랜드마케팅팀</p>
+    <p style="margin-top:10px;">
+      <a href="{{ dashboard_url }}">📊 대시보드 바로가기</a>
+      &nbsp;&nbsp;·&nbsp;&nbsp;
+      <a href="mailto:graceim@wemadeplus.com?subject=뉴스레터 수신 거부">수신 거부</a>
+    </p>
+  </div>
+
+</div>
+</div>
+</body>
+</html>
