@@ -1,5 +1,5 @@
 {
-  "updated": "23:40:28",
+  "updated": "02:40:14",
   "stocks": {
     "wemade": {
       "price": "22,850",
@@ -18,10 +18,10 @@
       "sign": "-"
     },
     "wemix": {
-      "krw": 391.69,
-      "chg24h": 1.3136429735700335,
-      "dir": "RISING",
-      "sign": "+"
+      "krw": 388.77,
+      "chg24h": -0.17083390633516382,
+      "dir": "FALLING",
+      "sign": "-"
     }
   },
   "news": {
@@ -41,13 +41,6 @@
         "description": "상폐 코인 ‘위믹스’를 향한 질문… 고집인가 집착인가&nbsp;&nbsp;더스쿠프"
       },
       {
-        "title": "[IB토마토]장현국의 '크로쓰' 재도전…위믹스 악몽 지울 수 있나 - 뉴스토마토",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9uMG1ZZy1xZ3c2Zm5tOU41cElvbTFWREFKS1VqWUZpLWt5WHhRVkV3eFpVN0tRV0NCMWFmcjlFRnllRTZfeEd6cy13Um1yUUM1bl84TXpob2VEcGJXOExyWg?oc=5",
-        "source": "뉴스토마토",
-        "published": "Sun, 03 May 2026 21:00:00 GMT",
-        "description": "[IB토마토]장현국의 '크로쓰' 재도전…위믹스 악몽 지울 수 있나&nbsp;&nbsp;뉴스토마토"
-      },
-      {
         "title": "위메이드, 중간지주 빼고 '게임' 전면 배치 - 디일렉",
         "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0yZ0tvVUFMTUl4c3MxT2pUcXZlZEdUVzF5OHZuWi1KNkZUZ2NCYU5Ydk5OUDJyVkVOOU9XT3ZuRTNpMjMyTnhpbjF4M1JMX3E4NHFpQjdhU0RraVZkRFBMMTJaM2Frdw?oc=5",
         "source": "디일렉",
@@ -62,11 +55,11 @@
         "description": "[업뎃 뉴] 위메이드, ‘미르4’ 2000일 기념 이벤트…성장 특화 서버 ‘등용문’ 공개&nbsp;&nbsp;워크투데이"
       },
       {
-        "title": "위메이드커넥트, 서브컬처 신작 '메이크 드라마: MAD' 사전 등록 - 연합뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBmNHZJUzZ3dFJybFpONWFBYm1PX3NVcnlsLXRtUlNGcUpURW44THp3X3pQc1dHQ3I0NXo5UTEyaVdMajZZU0tyUVFzaGhiNEdsbWltNGo5TGZiYzTSAWBBVV95cUxONHVneDkyV0tNbl9mUDZkcWt3T3JqVDJsczRvM1V3MHJTdEw5UU9senZjNi1ySVBzS2oxTnRaYVVLRjFVZ29QNkx5OTFBblZxU1JXM3RZR0VxVk5aVy0zSGs?oc=5",
-        "source": "연합뉴스",
-        "published": "Mon, 04 May 2026 04:23:07 GMT",
-        "description": "위메이드커넥트, 서브컬처 신작 '메이크 드라마: MAD' 사전 등록&nbsp;&nbsp;연합뉴스"
+        "title": "[IB토마토]장현국의 '크로쓰' 재도전…위믹스 악몽 지울 수 있나 - 뉴스토마토",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9uMG1ZZy1xZ3c2Zm5tOU41cElvbTFWREFKS1VqWUZpLWt5WHhRVkV3eFpVN0tRV0NCMWFmcjlFRnllRTZfeEd6cy13Um1yUUM1bl84TXpob2VEcGJXOExyWg?oc=5",
+        "source": "뉴스토마토",
+        "published": "Sun, 03 May 2026 21:00:00 GMT",
+        "description": "[IB토마토]장현국의 '크로쓰' 재도전…위믹스 악몽 지울 수 있나&nbsp;&nbsp;뉴스토마토"
       },
       {
         "title": "위메이드맥스, '나이트 크로우' 글로벌 흥행에 장중 상한가 - TradingView",
@@ -76,6 +69,20 @@
         "description": "위메이드맥스, '나이트 크로우' 글로벌 흥행에 장중 상한가&nbsp;&nbsp;TradingView"
       },
       {
+        "title": "위메이드커넥트, 서브컬처 신작 '메이크 드라마: MAD' 사전 등록 - 연합뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBmNHZJUzZ3dFJybFpONWFBYm1PX3NVcnlsLXRtUlNGcUpURW44THp3X3pQc1dHQ3I0NXo5UTEyaVdMajZZU0tyUVFzaGhiNEdsbWltNGo5TGZiYzTSAWBBVV95cUxONHVneDkyV0tNbl9mUDZkcWt3T3JqVDJsczRvM1V3MHJTdEw5UU9senZjNi1ySVBzS2oxTnRaYVVLRjFVZ29QNkx5OTFBblZxU1JXM3RZR0VxVk5aVy0zSGs?oc=5",
+        "source": "연합뉴스",
+        "published": "Mon, 04 May 2026 04:23:07 GMT",
+        "description": "위메이드커넥트, 서브컬처 신작 '메이크 드라마: MAD' 사전 등록&nbsp;&nbsp;연합뉴스"
+      },
+      {
+        "title": "위메이드, '레전드 오브 이미르' 5월 대규모 업데이트 및 6월 이스포츠 대회 예고 - 지디넷코리아",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBSV3EzdTJCMkhQNTkwYUJyYzdfUzc2M3Y2Um9pbjRsYU1Cc05FVzBIRXB6Y3BKT1VGT0syb05qaGZ3R3VSRDl2cGRRY20tRlBYeWg5UWN3?oc=5",
+        "source": "지디넷코리아",
+        "published": "Tue, 28 Apr 2026 07:00:00 GMT",
+        "description": "위메이드, '레전드 오브 이미르' 5월 대규모 업데이트 및 6월 이스포츠 대회 예고&nbsp;&nbsp;지디넷코리아"
+      },
+      {
         "title": "K-게임, 1분기 실적 ‘양극화’… 펄어비스·엔씨 ‘날고’ vs 카겜·위메이드 ‘지고’ - CEO스코어데일리",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5yZVV3YUR6RmhIY3NKWTRrMmJ1RTc2M1lnQ2ZMT25LdXpGSS1aTEc2NU85ejV0WUhETi1BMnViajdMazNsUHRaSGlXYVVhUDhoTURvblUxUE1qVXdPSmNhd0xFUkhyaElL?oc=5",
         "source": "CEO스코어데일리",
@@ -83,18 +90,11 @@
         "description": "K-게임, 1분기 실적 ‘양극화’… 펄어비스·엔씨 ‘날고’ vs 카겜·위메이드 ‘지고’&nbsp;&nbsp;CEO스코어데일리"
       },
       {
-        "title": "위메이드 '나이트크로우', 3주년 기념 대규모 업데이트 사전예약 실시 - 지디넷코리아",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1IcTRBTmJTWUxTTm5GX0ZQTVpNN1ZJdFJUbUdfVGl5VURYelFXMVZqcHkyMDlRd0VwX3M4Q2hsejcyZmdKQnFmOUViQkk5eWJrQUMydW1n?oc=5",
-        "source": "지디넷코리아",
-        "published": "Thu, 16 Apr 2026 07:00:00 GMT",
-        "description": "위메이드 '나이트크로우', 3주년 기념 대규모 업데이트 사전예약 실시&nbsp;&nbsp;지디넷코리아"
-      },
-      {
-        "title": "위메이드맥스, 미소녀 RPG '메이크 드라마' 사전예약 시작 - newsis.com",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5JSGpnNTdMNjltTDE1elEteFk3M2drN0NaSnBlVUxYOXJ2Q2ZvTDVPWnJheW05ZzV5U2c3a1FLNVh0QTFzYzVUVzlWRzRLQ0VsaWNwV0RONmNpendicF91V9IBeEFVX3lxTE1qbVBfeE1iNy1EcURJT2xsM0FXOEw2YzBJY0VEQkt5cGc4ODlHYURlUDVGc3Bqa0FFMnhvQ2hEVEkzNlhwNVZNdVd0UEljRUhUMFN6MXNqOFhza2h2eERnX0lTVjc1WHRrNlNjczAtU01pdy1haDBBVA?oc=5",
-        "source": "newsis.com",
-        "published": "Mon, 04 May 2026 05:06:34 GMT",
-        "description": "위메이드맥스, 미소녀 RPG '메이크 드라마' 사전예약 시작&nbsp;&nbsp;newsis.com"
+        "title": "위메이드, 中 킹넷과 ‘미르2’ IP 로열티 미지급 분쟁 종결⋯ 화해금 430억원 수령 - 브릿지경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBaV1pmOHZETTYtbnBwNVFNbXFJeWR5ODl4Y3dLaUJhUDhfWDA4aHZqeVBfV19YYkM3MWNUY0xRblJmbWk4TzhUWjgySFFoVG0wcVFVZjRjQmR2QQ?oc=5",
+        "source": "브릿지경제",
+        "published": "Wed, 29 Apr 2026 04:07:00 GMT",
+        "description": "위메이드, 中 킹넷과 ‘미르2’ IP 로열티 미지급 분쟁 종결⋯ 화해금 430억원 수령&nbsp;&nbsp;브릿지경제"
       }
     ],
     "blockchain": [
@@ -113,32 +113,11 @@
         "description": "블록체인과 AI의 만남…디지털금융 새 길 찾다&nbsp;&nbsp;서울경제"
       },
       {
-        "title": "“코인 팔아 집 샀다”…30대, 103억 원어치 가장 많아 - 동아일보",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBNSkl2RVJQTkU3Zmx2TndFV3djY2hmbXp4bGNGQjBnN3JVR0s1REhzVUN3X1d3eWRfVU1obl9zcWRCNHhGY3U2WmJHWUZnaFpVYVEtbkVwanZ0WnloVmNZOG9DQ05RUlY3RzlJOEk4Y2JNQjlmR3fSAWZBVV95cUxQWnVCLTlxbmNOMFZxYmpSUHVXd1Rac0cyUjBiMDJCOS1ycDJsSmJldzRfMHhwT2M5Vzk0endLVXdJMC1TN05ld1p4QW1ZemtHam43Y0RFU25BX3BPcnd6am9uRWxuMEE?oc=5",
-        "source": "동아일보",
-        "published": "Sun, 10 May 2026 08:49:00 GMT",
-        "description": "“코인 팔아 집 샀다”…30대, 103억 원어치 가장 많아&nbsp;&nbsp;동아일보"
-      },
-      {
-        "title": "`코인 팔아서 아파트 샀어요`…`비트코인 개미` 30대, 부동산 `큰 손` 됐다 - 부산일보",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9lOXNjOWRnSXpKb3pRLWluLVZDdm9WaEhnYVc2Wmxncm40SEx3bEZnMlpYT1c0NXBJTFFlbGpYZDhsTFJVbEF0NkRlWjh4d3JQQVNrTXNiT0lwN3BPT1RkWXRmS3lfcXltWkNhMmVmUHhVdko1?oc=5",
-        "source": "부산일보",
-        "published": "Sun, 10 May 2026 02:33:05 GMT",
-        "description": "`코인 팔아서 아파트 샀어요`…`비트코인 개미` 30대, 부동산 `큰 손` 됐다&nbsp;&nbsp;부산일보"
-      },
-      {
-        "title": "8만달러 지키던 비트코인, 이란 리스크에 하락…온체인도 냉각 - 전자신문",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9nX0EtYmFHRHplcVNmc0xiUldvNVl1cm9Vei1jclR1My03LVF3UjFSdENhcDZyaEM0QTd4MUoyZHVXa3FEWFpJS3FwSlllQQ?oc=5",
-        "source": "전자신문",
-        "published": "Sun, 10 May 2026 02:30:00 GMT",
-        "description": "8만달러 지키던 비트코인, 이란 리스크에 하락…온체인도 냉각&nbsp;&nbsp;전자신문"
-      },
-      {
-        "title": "1000만원 코인 이동 전부 보고?…가상자산 업계 \"과잉규제\" - v.daum.net",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBYOTFPQi1ManBycFJ5YVpnMlA0ZGNISlphNE90YURNTHZxTTdfd0Z2VlNBS0hDeEQtNlhWa2RjZUtJQVZ0V0NLYS0taVZxR3c?oc=5",
-        "source": "v.daum.net",
-        "published": "Sun, 10 May 2026 06:25:38 GMT",
-        "description": "1000만원 코인 이동 전부 보고?…가상자산 업계 \"과잉규제\"&nbsp;&nbsp;v.daum.net"
+        "title": "북한, 지난해 가상자산 2조 털었다…역대 최대 해킹 - 연합뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9BeklReVhxMjVtaXROWDM4T0toN0lSQ3I0TUlhQklON2QtYlRxZnBTQURFSktsSV96elhLck9Yblh1eGFYNkhSV21yM01jeTk3Y25ONGM2alRqYUHSAWBBVV95cUxOdHdjWFNfVjQyQUpReHl0QXlMa2pYcV8waE5xbV81amxlcDhuN20tcU42bmptRzhlcVUzUUFOWnpDUG1Udm4tRXJfdUs0cmNwOW13c2lXQ1ZfdXVtTUZ5bms?oc=5",
+        "source": "연합뉴스",
+        "published": "Sun, 10 May 2026 09:18:19 GMT",
+        "description": "북한, 지난해 가상자산 2조 털었다…역대 최대 해킹&nbsp;&nbsp;연합뉴스"
       },
       {
         "title": "[Weekly Coin] 반등 성공한 비트코인···불확실성 '여전' - 시사저널e",
@@ -148,11 +127,32 @@
         "description": "[Weekly Coin] 반등 성공한 비트코인···불확실성 '여전'&nbsp;&nbsp;시사저널e"
       },
       {
-        "title": "북한, 지난해 가상자산 2조 털었다…역대 최대 해킹 - 연합뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9BeklReVhxMjVtaXROWDM4T0toN0lSQ3I0TUlhQklON2QtYlRxZnBTQURFSktsSV96elhLck9Yblh1eGFYNkhSV21yM01jeTk3Y25ONGM2alRqYUHSAWBBVV95cUxOdHdjWFNfVjQyQUpReHl0QXlMa2pYcV8waE5xbV81amxlcDhuN20tcU42bmptRzhlcVUzUUFOWnpDUG1Udm4tRXJfdUs0cmNwOW13c2lXQ1ZfdXVtTUZ5bms?oc=5",
-        "source": "연합뉴스",
-        "published": "Sun, 10 May 2026 09:18:19 GMT",
-        "description": "북한, 지난해 가상자산 2조 털었다…역대 최대 해킹&nbsp;&nbsp;연합뉴스"
+        "title": "`코인 팔아서 아파트 샀어요`…`비트코인 개미` 30대, 부동산 `큰 손` 됐다 - 부산일보",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9lOXNjOWRnSXpKb3pRLWluLVZDdm9WaEhnYVc2Wmxncm40SEx3bEZnMlpYT1c0NXBJTFFlbGpYZDhsTFJVbEF0NkRlWjh4d3JQQVNrTXNiT0lwN3BPT1RkWXRmS3lfcXltWkNhMmVmUHhVdko1?oc=5",
+        "source": "부산일보",
+        "published": "Sun, 10 May 2026 02:33:05 GMT",
+        "description": "`코인 팔아서 아파트 샀어요`…`비트코인 개미` 30대, 부동산 `큰 손` 됐다&nbsp;&nbsp;부산일보"
+      },
+      {
+        "title": "1000만원 코인 이동 전부 보고?…가상자산 업계 \"과잉규제\" - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBYOTFPQi1ManBycFJ5YVpnMlA0ZGNISlphNE90YURNTHZxTTdfd0Z2VlNBS0hDeEQtNlhWa2RjZUtJQVZ0V0NLYS0taVZxR3c?oc=5",
+        "source": "v.daum.net",
+        "published": "Sun, 10 May 2026 06:25:38 GMT",
+        "description": "1000만원 코인 이동 전부 보고?…가상자산 업계 \"과잉규제\"&nbsp;&nbsp;v.daum.net"
+      },
+      {
+        "title": "“코인 팔아 집 샀다”…30대, 103억 원어치 가장 많아 - 동아일보",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBNSkl2RVJQTkU3Zmx2TndFV3djY2hmbXp4bGNGQjBnN3JVR0s1REhzVUN3X1d3eWRfVU1obl9zcWRCNHhGY3U2WmJHWUZnaFpVYVEtbkVwanZ0WnloVmNZOG9DQ05RUlY3RzlJOEk4Y2JNQjlmR3fSAWZBVV95cUxQWnVCLTlxbmNOMFZxYmpSUHVXd1Rac0cyUjBiMDJCOS1ycDJsSmJldzRfMHhwT2M5Vzk0endLVXdJMC1TN05ld1p4QW1ZemtHam43Y0RFU25BX3BPcnd6am9uRWxuMEE?oc=5",
+        "source": "동아일보",
+        "published": "Sun, 10 May 2026 08:49:00 GMT",
+        "description": "“코인 팔아 집 샀다”…30대, 103억 원어치 가장 많아&nbsp;&nbsp;동아일보"
+      },
+      {
+        "title": "8만달러 지키던 비트코인, 이란 리스크에 하락…온체인도 냉각 - 전자신문",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9nX0EtYmFHRHplcVNmc0xiUldvNVl1cm9Vei1jclR1My03LVF3UjFSdENhcDZyaEM0QTd4MUoyZHVXa3FEWFpJS3FwSlllQQ?oc=5",
+        "source": "전자신문",
+        "published": "Sun, 10 May 2026 02:30:00 GMT",
+        "description": "8만달러 지키던 비트코인, 이란 리스크에 하락…온체인도 냉각&nbsp;&nbsp;전자신문"
       },
       {
         "title": "“코인 103억 어치 팔아 내 집 마련”…요즘 30대 집 사는 방법 - 중앙일보",
@@ -162,20 +162,20 @@
         "description": "“코인 103억 어치 팔아 내 집 마련”…요즘 30대 집 사는 방법&nbsp;&nbsp;중앙일보"
       },
       {
-        "title": "“코인 팔아 집 샀다”…30대 비중 최대 - 매일경제",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ta3dUZXhodUNVeEhMNnRUOXZsSm1Cd1pyQTZVeDNpWmlpVFBZZG1VZ21MMXdDNnE0bTh4dzNPUXJ5ckZEUWVYeDh5NWd1RW14X2V0S195RG4?oc=5",
-        "source": "매일경제",
-        "published": "Sun, 10 May 2026 04:02:03 GMT",
-        "description": "“코인 팔아 집 샀다”…30대 비중 최대&nbsp;&nbsp;매일경제"
+        "title": "비트코인 8만달러선 지켰지만…샌티먼트, 암호화폐 강세론 과열 경고 - 디지털투데이",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE13U3JfWmwxdE9pbU93T1VvRkQxamNSMjNQUjNDOEZfdU03Z2xJcmFhM2c5cWw4bERyWmc0aWFtdlViRTVHcklWUHZxc0dveVVSS1dybm5mb3NXcGMyR1Bqc3hRNWd2bVRldS14VjhVZUQyVkk?oc=5",
+        "source": "디지털투데이",
+        "published": "Sun, 10 May 2026 15:01:00 GMT",
+        "description": "비트코인 8만달러선 지켰지만…샌티먼트, 암호화폐 강세론 과열 경고&nbsp;&nbsp;디지털투데이"
       }
     ],
     "marketing": [
       {
-        "title": "“재미보다 불쾌감” 반응… 페리카나 ‘불륜 소재’ AI 광고 논란 - 천지일보",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5nVmRlZGdyZnFEc3JmSXR2Nk9BZTlMWkNCRzFERjlXcXJWRFp0OVdSRmEtUjRad25HWnVQR3loQmJfOXdKOTIyTkM2Z1k1VWxOYjlVN2N0ZzZDQ3U2LTI3QzVoczVxa0h1RHc?oc=5",
-        "source": "천지일보",
-        "published": "Sun, 10 May 2026 11:16:40 GMT",
-        "description": "“재미보다 불쾌감” 반응… 페리카나 ‘불륜 소재’ AI 광고 논란&nbsp;&nbsp;천지일보"
+        "title": "AI 검색 시작은 사용자 질문과 답변 선택으로 이어지는 구조 - 한국AI부동산신문",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5XRktSTUtOc2hvcFR4dG9KNUd4OGlfLXNDS29HVm1pR0lta3VzME1vd2JrU2pzbmxseGtDUkVhaElOZGtSb1hkaTNlUFA?oc=5",
+        "source": "한국AI부동산신문",
+        "published": "Sun, 10 May 2026 15:27:27 GMT",
+        "description": "AI 검색 시작은 사용자 질문과 답변 선택으로 이어지는 구조&nbsp;&nbsp;한국AI부동산신문"
       },
       {
         "title": "세계인 간식 떠오른 빼빼로… 연매출 1조 브랜드 꿈 영근다 [K푸드, 글로벌 푸드로] - 파이낸셜뉴스",
@@ -185,6 +185,13 @@
         "description": "세계인 간식 떠오른 빼빼로… 연매출 1조 브랜드 꿈 영근다 [K푸드, 글로벌 푸드로]&nbsp;&nbsp;파이낸셜뉴스"
       },
       {
+        "title": "“재미보다 불쾌감” 반응… 페리카나 ‘불륜 소재’ AI 광고 논란 - 천지일보",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5nVmRlZGdyZnFEc3JmSXR2Nk9BZTlMWkNCRzFERjlXcXJWRFp0OVdSRmEtUjRad25HWnVQR3loQmJfOXdKOTIyTkM2Z1k1VWxOYjlVN2N0ZzZDQ3U2LTI3QzVoczVxa0h1RHc?oc=5",
+        "source": "천지일보",
+        "published": "Sun, 10 May 2026 11:16:40 GMT",
+        "description": "“재미보다 불쾌감” 반응… 페리카나 ‘불륜 소재’ AI 광고 논란&nbsp;&nbsp;천지일보"
+      },
+      {
         "title": "[그때 그 광고]커피 시장 뜨겁게 달군 '카제인나트륨' 논란 - v.daum.net",
         "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBEOWpVanYwN29fMTZvM3NiWm1tV1BiTnNwVjJURmk4MDBnME5JQzBLclZPQWRKaGgtaDVfVHF1cXRSU3p4ZXBLdHctSmtpMzA?oc=5",
         "source": "v.daum.net",
@@ -192,18 +199,18 @@
         "description": "[그때 그 광고]커피 시장 뜨겁게 달군 '카제인나트륨' 논란&nbsp;&nbsp;v.daum.net"
       },
       {
-        "title": "페리카나 AI 광고 삭제, 불륜 소재 논란에 검수 책임 도마 - 비건뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE51WEx2SkVHRHRYSHQyeWlYeFlfTXZKU0hfNlU3VHd6aWNuaTZhZUdfRzBpa2ZWcXFRcDVzby0wSTZlY3pVZ0cyekc0VXZuck13SVExcDhQUnFndTJwRTJBY2ZjWTJ4Zw?oc=5",
-        "source": "비건뉴스",
-        "published": "Sun, 10 May 2026 12:18:54 GMT",
-        "description": "페리카나 AI 광고 삭제, 불륜 소재 논란에 검수 책임 도마&nbsp;&nbsp;비건뉴스"
-      },
-      {
         "title": "낫띵베럴, 포켓몬 협업 팝업존 운영…홍대·성수에서 체험 마케팅 진행 - 에너지경제신문",
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBLcFhuQ2tralpHUG9XREZyNXZjTWhxSlBmdGc4WHZrcmNiUEhQcWtNTm1TUmVSS3JOQzJHSjZyQXRiQ21aRVdfRG5sWm52eFo0MHlyYmdwTXlpdmc?oc=5",
         "source": "에너지경제신문",
         "published": "Sun, 10 May 2026 05:08:06 GMT",
         "description": "낫띵베럴, 포켓몬 협업 팝업존 운영…홍대·성수에서 체험 마케팅 진행&nbsp;&nbsp;에너지경제신문"
+      },
+      {
+        "title": "페리카나 AI 광고 삭제, 불륜 소재 논란에 검수 책임 도마 - 비건뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE51WEx2SkVHRHRYSHQyeWlYeFlfTXZKU0hfNlU3VHd6aWNuaTZhZUdfRzBpa2ZWcXFRcDVzby0wSTZlY3pVZ0cyekc0VXZuck13SVExcDhQUnFndTJwRTJBY2ZjWTJ4Zw?oc=5",
+        "source": "비건뉴스",
+        "published": "Sun, 10 May 2026 12:18:54 GMT",
+        "description": "페리카나 AI 광고 삭제, 불륜 소재 논란에 검수 책임 도마&nbsp;&nbsp;비건뉴스"
       },
       {
         "title": "KT, 여의도 ‘나는 솔로런’서 체험형 부스 운영...5000명 러너 공략 - 중앙이코노미뉴스",
@@ -227,18 +234,11 @@
         "description": "광고는 ‘클릭’을 만들고, 공감은 ‘팬’을 만든다&nbsp;&nbsp;브런치"
       },
       {
-        "title": "\"치킨·커피 브랜드가 콘서트를?\"…팬덤 마케팅 강화 - 아이뉴스24",
-        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1sc191VlZpZS13MVNCQ3dRVURTb1VIanJudnNleWlYZ0tNYnVwWDg3WTZ6SktwOHlhcU82Z2FrYjdsazNyQkhRLUdYOXg?oc=5",
-        "source": "아이뉴스24",
-        "published": "Sun, 10 May 2026 00:04:56 GMT",
-        "description": "\"치킨·커피 브랜드가 콘서트를?\"…팬덤 마케팅 강화&nbsp;&nbsp;아이뉴스24"
-      },
-      {
-        "title": "“AI가 만들지 않았습니다”가 새 마케팅 전략이 됐다… 브랜드들이 다시 사람을 전면에 세우는 이유 - 매드타임스",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1BZHcyTnBDakJVWnhQQ0M3eERIVzlDNE4zVzJSZ29CN29Mb3poTTNYXzNZQVZobWplU01OUWd5Mllna1dPamxmUlRReHIyQlY5VVVGOEJfNG1SeUpNWjZJd3R1d1h2TkN1dERiRw?oc=5",
-        "source": "매드타임스",
-        "published": "Sat, 09 May 2026 15:00:00 GMT",
-        "description": "“AI가 만들지 않았습니다”가 새 마케팅 전략이 됐다… 브랜드들이 다시 사람을 전면에 세우는 이유&nbsp;&nbsp;매드타임스"
+        "title": "블랙야크, 바다로 간 히말라얀 정신…제주 해녀를 ‘숨은 영웅’으로 - 아시아투데이",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5pMEZ1Wjg1STM4Smw2MW5qVW1HYXZidGhtd29qVlhpbWpIanlQRU5oSi1QLTVVZkQ2OGoyZEJES2RkQTBYZ0Y2VXBHVkpqQnUxMjZicjlGcTN0OF9rM3dPSTJfYkl2MV9LcWtMaktR?oc=5",
+        "source": "아시아투데이",
+        "published": "Sun, 10 May 2026 01:29:20 GMT",
+        "description": "블랙야크, 바다로 간 히말라얀 정신…제주 해녀를 ‘숨은 영웅’으로&nbsp;&nbsp;아시아투데이"
       }
     ],
     "brand_global": [
@@ -285,18 +285,18 @@
         "description": "Sharpened Brand Identities : Lacoste rebrand&nbsp;&nbsp;Trend Hunter"
       },
       {
+        "title": "Gen Z marketing campaign examples with insights - ContentGrip",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9sOWdNYlBwbGtTTUJvSGJ6SzhrV3dYSTE0UkhjUGN4M294aTctQTRfeUZ3a1lBZ1ZHcXBBaGxkUGstWFk2OVNDV2pWeHpkMmlwV0ZBUGhiTTYwUFZ0RjM3SU4xTDRMaEE2NWZ1Y2F6V2w?oc=5",
+        "source": "ContentGrip",
+        "published": "Mon, 04 May 2026 07:00:00 GMT",
+        "description": "Gen Z marketing campaign examples with insights&nbsp;&nbsp;ContentGrip"
+      },
+      {
         "title": "R/GA marks nearly 50 years of creative work with launch of retrospective book “R/GA By Design - marketech apac",
         "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbDdlanI1aVdlYXVpTmNPZVQwaHMtazFUMTVnWlF4cVBncjlFNVVnS0dlUVhmUzJnUXkxVHpyUVNpbVYwazVxZ0xrUGFtTUU4dU53LXgxOHZVc0FZZEVCUE5BUWkzQVNzUGtxWkpnTHpDaFVZek9QdVNiVGVJcUM5a3F4N3JIWDhIUnB5WVZIM2Q3QVlDNm5fc2czSTRHdHBEN0hnN00wUnU0RnpNY1F1ZkhQSXM5dFZuVDJ0Mg?oc=5",
         "source": "marketech apac",
         "published": "Mon, 04 May 2026 04:47:31 GMT",
         "description": "R/GA marks nearly 50 years of creative work with launch of retrospective book “R/GA By Design&nbsp;&nbsp;marketech apac"
-      },
-      {
-        "title": "The best wallpaper design platforms for marketers and small business owners in 2026 - AZ Big Media",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMGw3X0I0YmI3UFRrZkRPMG5PRF8zaWhZMjRqVEotRF9MdDVXWW9mNXVNQ1hmZlJsZDRmMW00VWdMcXl3TEw4Wk0tXzd2UDFvNWJCSGtVVEN4eFc1VjNoaW8zM3R2Ry04WHR3Z3I5aHpZNnZTUlZWS0VHQTFyYkhOaGY4NG41MElKZm9HbkVHLU56VDRIZXdMeGFaQVRkclFDRmkyLTJGd1BPYm5fMVJ0elUyTS0ydjg?oc=5",
-        "source": "AZ Big Media",
-        "published": "Wed, 06 May 2026 12:12:10 GMT",
-        "description": "The best wallpaper design platforms for marketers and small business owners in 2026&nbsp;&nbsp;AZ Big Media"
       },
       {
         "title": "Top Mobile Advertising Companies (2021) - Business of Apps",
@@ -314,6 +314,13 @@
       }
     ],
     "aiit": [
+      {
+        "title": "[5/6] AI and DATA Trend - 브런치",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5mUXpmTDMxSzBWbm5naDNjWjByVXAtZnRQS1BMVmVXWmJjTHIxN202eXNtZE4tOEVVNlYxWGJLNlhFTDhjT2c?oc=5",
+        "source": "브런치",
+        "published": "Sun, 10 May 2026 08:40:38 GMT",
+        "description": "[5/6] AI and DATA Trend&nbsp;&nbsp;브런치"
+      },
       {
         "title": "'가정의달' 트렌드 바꾼 AI…용돈아닌 '이것' 선물 - newsis.com",
         "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAzak5fSjFlQUpsd2FPZmwzT2REMXZJUGgzWGwzNjczazgtVGZGUEVQckFnZzlsUVN3enYwbm8xMDdWZmlxd2JKYTVtdWhYRk9xSjNURjJFTkNhc1hkS1liS2g4eEprc1k1R09LVm1HaTFJdGNWUzVvMNIBeEFVX3lxTFAzak5fSjFlQUpsd2FPZmwzT2REMXZJUGgzWGwzNjczazgtVGZGUEVQckFnZzlsUVN3enYwbm8xMDdWZmlxd2JKYTVtdWhYRk9xSjNURjJFTkNhc1hkS1liS2g4eEprc1k1R09LVm1HaTFJdGNWUzVvMA?oc=5",
@@ -371,13 +378,6 @@
         "description": "[AI 트렌드] AI, 공급망의 ‘두뇌’가 되다…수동 운영에서 자율 의사결정 시대로&nbsp;&nbsp;AI라이프경제"
       },
       {
-        "title": "장기 AI 국가 전략 및 대응 방법 총정리 - 브런치",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1fVmFOWXFYUlBwa1RWNkg3MlZiNWNKSy1wcUc1Y05rNXNESlhSR1FQTjVQdmhNM2RZbk9maWpQUkNyY0ZVQVdNRmt0M3hYY0NCdFVZ?oc=5",
-        "source": "브런치",
-        "published": "Sat, 09 May 2026 17:41:35 GMT",
-        "description": "장기 AI 국가 전략 및 대응 방법 총정리&nbsp;&nbsp;브런치"
-      },
-      {
         "title": "뉴엔AI, 도메인 특화 AI 데이터 분석 플랫폼 2종 공개​ - AI타임스",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA2U1VMOElGclVlclRVRGZpSkdSX29aRzRlQkZTdlpIaEliUFRwMW1VWlYxNDNVODJuSnRUcjBjckMxeWdVeC1qX0dOUmEzdGNRbUNpakNLNXRNVEVnYllOWFV1MnR3TThEQ1E?oc=5",
         "source": "AI타임스",
@@ -389,85 +389,85 @@
   "trends": {
     "kr": [
       {
-        "title": "아스날 웨스트햄",
-        "vol": "100+"
-      },
-      {
-        "title": "burnley vs aston villa",
-        "vol": "200+"
-      },
-      {
-        "title": "공명",
-        "vol": "100+"
-      },
-      {
-        "title": "urvil patel",
-        "vol": "500+"
-      },
-      {
-        "title": "보안",
-        "vol": "500+"
-      },
-      {
-        "title": "비",
-        "vol": "100+"
-      },
-      {
-        "title": "서인국",
-        "vol": "200+"
-      },
-      {
-        "title": "크리스털 팰리스 대 에버턴",
+        "title": "아스날",
         "vol": "2000+"
       },
       {
-        "title": "패션",
+        "title": "아스널",
+        "vol": "1000+"
+      },
+      {
+        "title": "고소",
         "vol": "500+"
       },
       {
-        "title": "윤태호",
+        "title": "나홍진",
+        "vol": "1000+"
+      },
+      {
+        "title": "west ham đấu với arsenal",
+        "vol": "200+"
+      },
+      {
+        "title": "뉴캐슬",
         "vol": "100+"
+      },
+      {
+        "title": "west ham vs arsenal",
+        "vol": "1000+"
+      },
+      {
+        "title": "웨스트 햄 대 아스널",
+        "vol": "20000+"
+      },
+      {
+        "title": "mi vs rcb",
+        "vol": "500+"
+      },
+      {
+        "title": "과천시",
+        "vol": "200+"
       }
     ],
     "global": [
       {
-        "title": "barca vs",
+        "title": "pl table",
+        "vol": "10000+"
+      },
+      {
+        "title": "krunal pandya",
         "vol": "200+"
       },
       {
-        "title": "wes moore",
+        "title": "mateus fernandes",
         "vol": "200+"
       },
       {
-        "title": "alexandra eala",
+        "title": "watkins glen nascar",
+        "vol": "2000+"
+      },
+      {
+        "title": "buc-ee&apos;s",
+        "vol": "200+"
+      },
+      {
+        "title": "iga świątek",
         "vol": "500+"
       },
       {
-        "title": "only murders in the building",
+        "title": "philadelphia eagles",
         "vol": "500+"
       },
       {
-        "title": "rcd mallorca vs villarreal cf standings",
+        "title": "prem",
         "vol": "500+"
       },
       {
-        "title": "grizzly bear",
+        "title": "tom brady mother&apos;s day tribute",
         "vol": "200+"
       },
       {
-        "title": "dewald brevis",
-        "vol": "200+"
-      },
-      {
-        "title": "steve martin",
-        "vol": "200+"
-      },
-      {
-        "title": "bulgaria",
-        "vol": "200+"
-      },
-      {
-        "title": "images",
+        "title": "centerpoint outage",
         "vol": "200+"
       }
     ]
