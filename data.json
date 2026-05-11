@@ -1,5 +1,5 @@
 {
-  "updated": "10:28:08",
+  "updated": "10:33:30",
   "news": {
     "wemade": [
       {
@@ -305,6 +305,13 @@
         "description": "GS25가 혜자도시락을 부활시킨 이유 - 마케팅 - 정보공유&nbsp;&nbsp;아이보스"
       },
       {
+        "title": "W컨셉 이지은號 출항, 패션 본원적 경쟁력 강화 시동 - 패션포스트",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9pTWpndlJCclRvUDFVM3hhSGk5U21ZRUpISnQ2emNXVVB5dzlhRFJUSEhRM3ZWSXhUOWNXdWFRXzQweUdoRUVzWk1uTTdFY1d0SkV2dEVnX1c5VG9iWmRJX0t0REFlanZPTEcwaTVGQk9IQjNQQVE?oc=5",
+        "source": "패션포스트",
+        "published": "Wed, 06 May 2026 23:24:49 GMT",
+        "description": "W컨셉 이지은號 출항, 패션 본원적 경쟁력 강화 시동&nbsp;&nbsp;패션포스트"
+      },
+      {
         "title": "[모빌리티 인사이트] 'BYD 다음은 지커' 中 전기차, 이제 가격 아닌 브랜드 전쟁 - 다나와 자동차",
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kb1Z0RjlrWDZqQVF5RENVLXdicXpNZ1ZibTRuQXA3RVdjdk5OSG9GMG1Lc0YxQThNME9fMlNVb2t5VEg4WVl6TXVVWF92MDZubUJlNEkwVGNiYlc2TGZWbGp2NEtXSHhUVDhDWGJ0bUZkQQ?oc=5",
         "source": "다나와 자동차",
@@ -317,13 +324,6 @@
         "source": "v.daum.net",
         "published": "Sun, 10 May 2026 09:41:18 GMT",
         "description": "세계인 간식 떠오른 빼빼로… 연매출 1조 브랜드 꿈 영근다 [K푸드, 글로벌 푸드로]&nbsp;&nbsp;v.daum.net"
-      },
-      {
-        "title": "[유통] 브랜드 경험 강화에 친환경 소비 확산까지…유통가, 라이프스타일 마케팅 경쟁 본격화 - 코리아포스트 한글판",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9vYlNnVkVLc0taYVVBXzg1eXBpX1lFRk94MExmNmJWV3A1eDFvNWpJVEx3ZFhWMUVpY0FpSnREYVhwbS1hdkYzOUtQY3ZKWnllRWhla2ZfNmVQZXF4T3BCZl9PdW1Kd3hsSFpTRURR?oc=5",
-        "source": "코리아포스트 한글판",
-        "published": "Sun, 10 May 2026 21:58:12 GMT",
-        "description": "[유통] 브랜드 경험 강화에 친환경 소비 확산까지…유통가, 라이프스타일 마케팅 경쟁 본격화&nbsp;&nbsp;코리아포스트 한글판"
       }
     ],
     "brand_global": [
@@ -463,11 +463,11 @@
         "description": "SK쉴더스, '생성형 AI 활용 보안 역량 강화' 교육 프로그램 운영&nbsp;&nbsp;뉴스핌"
       },
       {
-        "title": "제이엘케이, 의료영상 기반 멀티모달 LLM 플랫폼 'JOOMED' 공개 - 네이트",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0wZHZNNEY1SlpfMjJOLXkzQ2QyTHp1YlB1S1NCQVJkZTlQcktYX1VJaXZKd2h2TGRDTjc0R2Q3RmRfcmNCb0dyRmF5Y0NHdnhlVm5R?oc=5",
-        "source": "네이트",
-        "published": "Mon, 11 May 2026 00:47:00 GMT",
-        "description": "제이엘케이, 의료영상 기반 멀티모달 LLM 플랫폼 'JOOMED' 공개&nbsp;&nbsp;네이트"
+        "title": "SK쉴더스, 생성형 AI 기반 보안 실무 교육 운영 - 데이터넷",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBuU1pWVTVkWDhqUjlYdTRCRlVfRy1nb1l1Umx2cnY4SE9WZHRQd1M5SEQ4UjBVR1pvdjB1d3BselplX1B6T1ptWTEwQjltcmc3M2RnQTZMSF9uRmlmbDFYSktjQzE1TXJXMklV?oc=5",
+        "source": "데이터넷",
+        "published": "Mon, 11 May 2026 01:20:04 GMT",
+        "description": "SK쉴더스, 생성형 AI 기반 보안 실무 교육 운영&nbsp;&nbsp;데이터넷"
       }
     ],
     "s3_game": [
@@ -507,18 +507,25 @@
         "description": "네오위즈, 1분기 영업익 32%↓…'P의 거짓' 차기작 등 개발 가속&nbsp;&nbsp;네이트"
       },
       {
-        "title": "오늘자 브랜드컵 일기 - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTHgtN3dITGVPMlBxMms0VTYyRUlBMnVaV3B3WTJNekM3eEhsSVlua0JmSE56ZnJpYV9GNWUzR0tYblZmYWcyTFJjZ2lMalRYVmdRSWVacTdwUV8tTE43b1M4SlBGa3FqSHItdjEzUnYyNV9VRlM2bFFGbEw5T3VwM3E1cFE1RTQ?oc=5",
-        "source": "게임메카",
-        "published": "Sun, 10 May 2026 17:13:28 GMT",
-        "description": "오늘자 브랜드컵 일기&nbsp;&nbsp;게임메카"
-      },
-      {
         "title": "네오위즈, 1분기 영업익 70억원…전년 比 32%↓ - 뉴스핌",
         "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5QMTdpNUt0cHJZdDJyMkVkVHNrQnF0cFNTVExYQU5xT1JZdXdxay1hU0N3Q3Q3ZHpGUkp2RzN0RVV1dWc5QWdpS1Y4dnJlZFVCcFlmeThuWUwtOVFO?oc=5",
         "source": "뉴스핌",
         "published": "Mon, 11 May 2026 00:20:00 GMT",
         "description": "네오위즈, 1분기 영업익 70억원…전년 比 32%↓&nbsp;&nbsp;뉴스핌"
+      },
+      {
+        "title": "한빛소프트 투자분석 2026. 05. 10 - 주달",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5pcVpaT09nekJ4Vl91VDJsQUV5SmM5NnhqY0U5dkc5YzZkdTZRUUlKcFBFcFRzZ0Rpdlk0SWVCbWtoV1ZfRWZja2Etay14aUR2dWFTWWVheU5fUzQxNGI5R2tuZWcyZkpzcXY2bFlNcjBUOVk?oc=5",
+        "source": "주달",
+        "published": "Sun, 10 May 2026 10:06:13 GMT",
+        "description": "한빛소프트 투자분석 2026. 05. 10&nbsp;&nbsp;주달"
+      },
+      {
+        "title": "[리뷰] 프래그마타 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE13OE5wQzJqZTR2azducmY5NE1MT3U3a3oyQlV3cjFkUG1yNVJrMUo2dkJzam4tQ0NJNlRJbmtPemU0WGN2TWpJM050ZGs1Tk43Rkp0eTVmTkZTNEZEZjNCRUNGWWY3Y1dLOTQ0cFZreEdQSThuTlZlZW1TUQ?oc=5",
+        "source": "게임메카",
+        "published": "Sun, 10 May 2026 10:01:38 GMT",
+        "description": "[리뷰] 프래그마타&nbsp;&nbsp;게임메카"
       },
       {
         "title": "“홍대 지고 성수 뜬다” 게임 마케팅 중심지 이동 - IT조선",
@@ -533,13 +540,6 @@
         "source": "tgdaily.co.kr",
         "published": "Sat, 09 May 2026 04:41:38 GMT",
         "description": "'원신' 새 버전 ... 이번엔 새 캐릭터로 승부수&nbsp;&nbsp;tgdaily.co.kr"
-      },
-      {
-        "title": "XR·AI 올라탄 한빛소프트…글로벌 콘텐츠 플랫폼 꿈꾼다 - 핀포인트뉴스",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9hTWZoYkxGSkxhT2w4b1BDdDhNVm9nZ21BVlZzTHhIZkZLaDZlaDJWWjh6V2ZmUFZQZlVONm9JRC1iZG9zMVJPdWlRZmtybS1kZFFVMUE3VmVKTHoya3l5bFI4QlJfWWtMR1NZMUNwTVY2TlJkZXBV0gF3QVVfeXFMT2FNZmhiTEZKTGFPbDhvUEN0OE1Wb2dnbUFWVnNMeEhmRktoNmVoMlZaOHpXZmZQVlBmVU42b0lELWJkb3MxUk91aVFma3JtLWRkUVUxQTdWZUpMejJreXlsUjhCUl9Za0xHU1kxQ3BNVjZOUmRlcFU?oc=5",
-        "source": "핀포인트뉴스",
-        "published": "Sat, 09 May 2026 02:58:14 GMT",
-        "description": "XR·AI 올라탄 한빛소프트…글로벌 콘텐츠 플랫폼 꿈꾼다&nbsp;&nbsp;핀포인트뉴스"
       }
     ],
     "s3_wemade": [
@@ -586,18 +586,18 @@
         "description": "위메이드커넥트 신작 '메이크 드라마 MAD' 일러스타 페스 출격&nbsp;&nbsp;ER 이코노믹리뷰"
       },
       {
-        "title": "위메이드커넥트 신작 '메이크 드라마: MAD', 일러스타 페스 참가 - 네이트",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9vZWJETXptUGpzSDJvSG5MVnV4YTczTGZ0bkZtOFo4RlN6S0pBS0hGdkMyS0VaVk8zeV9PcDhYSXh3TTF3SFpYeUFueEJzZklrd29JMHBIS3Bkc0JlQk8yUXNEb3Y1VUpNcmJpSjNzLWp0SlI4Rjc2Tw?oc=5",
-        "source": "네이트",
-        "published": "Mon, 11 May 2026 00:18:00 GMT",
-        "description": "위메이드커넥트 신작 '메이크 드라마: MAD', 일러스타 페스 참가&nbsp;&nbsp;네이트"
-      },
-      {
         "title": "서브컬처 ‘메이크 드라마: MAD’ 5월 일러스타 페스 참가 - 게임메카",
         "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1USXBLNDZMc1JWSDlzX0Nsd19VM1hCZWhURGp0MEx3NW9aS2NyZUgtVDk1LVhhbjlYSXRHNXdsemI5dzVReGhxajdkdGVKUVRfVmZETlBQZWHSAVtBVV95cUxQcmxPbGxJT2VEeFhhcGZHQzdoVTVKcm50bGM3MU11R1BmeWVDRjJLNUt0RFpneGNNZmZvdE1DSThYczBxTUZKcmQ3U1VzazdCUUtPMW9hQU81LW1J?oc=5",
         "source": "게임메카",
         "published": "Mon, 11 May 2026 00:41:52 GMT",
         "description": "서브컬처 ‘메이크 드라마: MAD’ 5월 일러스타 페스 참가&nbsp;&nbsp;게임메카"
+      },
+      {
+        "title": "위메이드커넥트 신작 '메이크 드라마: MAD', 일러스타 페스 참가 - 네이트",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1kUlpzSmJrLVZSRkxxcW5Rc1loVWU4enhzZ3EtUmQteTVMS2JNcHpWTnhrM1Nsek5MRTV4ODlvMDFfb0VId2R0OTU3QjhDUEN6WlpR?oc=5",
+        "source": "네이트",
+        "published": "Mon, 11 May 2026 00:18:00 GMT",
+        "description": "위메이드커넥트 신작 '메이크 드라마: MAD', 일러스타 페스 참가&nbsp;&nbsp;네이트"
       },
       {
         "title": "위메이드 투자분석 2026. 05. 10 - 주달",
@@ -607,11 +607,11 @@
         "description": "위메이드 투자분석 2026. 05. 10&nbsp;&nbsp;주달"
       },
       {
-        "title": "[업뎃 뉴] 위메이드, ‘미르4’ 2000일 기념 이벤트…성장 특화 서버 ‘등용문’ 공개 - 워크투데이",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0xaDNxSnNtYW5SbE9yQjBGNnk2dGdkYXU0cHVBeG4tRDBnWV82QkZ0ekZsb3l3bVROREZrSXhzT0pXVEJUbC1XQ3Q1am0wcmgwN2l2QVZTdFhVNnliNUE2eDdFMzgzV3FuT2VqUQ?oc=5",
-        "source": "워크투데이",
-        "published": "Sat, 09 May 2026 06:46:48 GMT",
-        "description": "[업뎃 뉴] 위메이드, ‘미르4’ 2000일 기념 이벤트…성장 특화 서버 ‘등용문’ 공개&nbsp;&nbsp;워크투데이"
+        "title": "위메이드 ‘미르M’ 중국 정식 출시…미르 신화 재현 [쿠키 게임] - 쿠키뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE52MXpGZ1BoUEtIaWFFVUFMRkltS0J6VnI5MUkwVEptajRYS0QwaUxfQ2dlWndEMUFfam5HX1NqQjYxSC1NdzFjT3JfU1NMcUFfeVU3T2tQb0NFOERVeXJRaS1tVQ?oc=5",
+        "source": "쿠키뉴스",
+        "published": "Sun, 10 May 2026 10:14:53 GMT",
+        "description": "위메이드 ‘미르M’ 중국 정식 출시…미르 신화 재현 [쿠키 게임]&nbsp;&nbsp;쿠키뉴스"
       }
     ],
     "s3_blockchain": [
@@ -649,13 +649,6 @@
         "source": "CoinDesk",
         "published": "Sat, 09 May 2026 21:03:29 GMT",
         "description": "암호화폐 지갑이 AI 에이전트를 위해 재구축되고 있다고 Trust Wallet 및 Mesh 경영진이 Consensus Miami에서 밝혔습니다&nbsp;&nbsp;CoinDesk"
-      },
-      {
-        "title": "GameFi平台Digital Entertainment Asset完成1000万美元融资，LDA Capital参投 - PANews",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBtMV9lbldwaV9TM3RKS0VpRzNiVnpVWXRqYTRJNkUzYXFsbVR2NUthQzZjX2MwaEMzSWdQNWg4T1NPU3dmVkpQZmNOWUlyZXZrTlZxQkpaN3J4QQ?oc=5",
-        "source": "PANews",
-        "published": "Sat, 09 May 2026 10:39:00 GMT",
-        "description": "GameFi平台Digital Entertainment Asset完成1000万美元融资，LDA Capital参投&nbsp;&nbsp;PANews"
       },
       {
         "title": "Odaily 8 주년 특집｜ From 8 to ♾️ - odaily.news",
@@ -803,8 +796,8 @@
       "sign": "-"
     },
     "wemix": {
-      "krw": 392.6,
-      "chg24h": 0.13863387470436125,
+      "krw": 393.11,
+      "chg24h": 0.2664287888264024,
       "dir": "RISING",
       "sign": "+"
     }
