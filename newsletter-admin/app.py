@@ -1,11 +1,18 @@
 import json
 import os
+import re as _re
+import time as _time
+import hashlib
+import subprocess
+import shutil
 from datetime import datetime, timezone, timedelta
 
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 from apscheduler.schedulers.background import BackgroundScheduler
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_JSON_PATH = os.path.join(os.path.dirname(BASE_DIR), 'data.json')
+_INSIGHT_CACHE = {}
 HISTORY_FILE = os.path.join(BASE_DIR, 'history.json')
 ARTICLES_DIR = os.path.join(BASE_DIR, 'articles')
 ARTICLES_FILE = os.path.join(ARTICLES_DIR, 'index.json')
@@ -83,7 +90,7 @@ def scheduled_send():
     with app.app_context():
         try:
             from newsletter import build_newsletter_data, send_newsletter
-            data = build_newsletter_data()
+            data = build_newsletter_data(is_send=True)
             html = render_template('email.html', **data)
             result = send_newsletter(html)
             add_history(result)
@@ -129,17 +136,95 @@ def get_next_send(sched):
     return f"{nxt.strftime('%Y-%m-%d')} ({day_names[nxt.weekday()]}) {nxt.strftime('%H:%M')}"
 
 
+# ── AI analyze helper ────────────────────────────────────────────────────────
+
+def _claude_analyze(title, source, description):
+    claude_bin = shutil.which('claude')
+    if not claude_bin:
+        return None
+    prompt = (
+        f"다음 뉴스 기사를 읽고 마케터 관점의 핵심 시사점을 2~3문장으로 요약해줘.\n\n"
+        f"제목: {title}\n"
+        f"출처: {source}\n"
+        f"내용: {description[:800]}\n\n"
+        f"작성 기준:\n"
+        f"- 위메이드 브랜드마케팅팀 팀원 대상\n"
+        f"- 브랜드 전략·게임 IP 마케팅·캠페인 기획에 적용 가능한 인사이트\n"
+        f"- 2~3문장, 친근한 구어체, 이모지 없이\n"
+        f"- 반드시 JSON 형식으로만 답변: {{\"insight\": \"...\", \"keywords\": [\"키워드1\", \"키워드2\", \"키워드3\"]}}"
+    )
+    try:
+        result = subprocess.run(
+            [claude_bin, '-p', prompt],
+            capture_output=True, text=True, timeout=45,
+        )
+        text = result.stdout.strip()
+        m = _re.search(r'\{[\s\S]*\}', text)
+        if m:
+            return json.loads(m.group(0))
+    except Exception as e:
+        print(f'Claude 분석 오류: {e}')
+    return None
+
+
+# ── dashboard API ─────────────────────────────────────────────────────────────
+
+@app.route('/api/dashboard')
+def api_dashboard():
+    try:
+        if not os.path.exists(DATA_JSON_PATH):
+            return jsonify({'error': 'data.json 없음 — fetch_data.py를 먼저 실행해주세요.'}), 404
+        with open(DATA_JSON_PATH, encoding='utf-8') as f:
+            data = json.load(f)
+        has_ai = bool(shutil.which('claude'))
+        return jsonify({
+            'updated': data.get('updated', ''),
+            'sections': data.get('sections', {}),
+            'has_ai': has_ai,
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/api/analyze', methods=['POST'])
+def api_analyze():
+    body = request.get_json() or {}
+    title = body.get('title', '')
+    source = body.get('source', '')
+    description = body.get('description', '')
+
+    cache_key = hashlib.md5((title + source).encode()).hexdigest()
+    if cache_key in _INSIGHT_CACHE:
+        cached = _INSIGHT_CACHE[cache_key]
+        if _time.time() - cached['ts'] < 3600:
+            return jsonify(cached['data'])
+
+    result = _claude_analyze(title, source, description)
+    if result:
+        _INSIGHT_CACHE[cache_key] = {'data': result, 'ts': _time.time()}
+        return jsonify(result)
+    return jsonify({'error': 'AI 분석 실패'}), 500
+
+
 # ── routes ────────────────────────────────────────────────────────────────────
 
 @app.route('/')
 def index():
     cfg = load_config()
     history = load_history()
+    from newsletter import load_rotation, get_next_source, SOURCE_LABELS, SOURCE_TYPES
+    rotation = load_rotation()
+    next_source = get_next_source(rotation)
     return render_template('admin.html',
         page='home',
         cfg=cfg,
         history=history[:10],
         next_send=get_next_send(cfg.get('schedule', {})),
+        rotation=rotation,
+        next_source=next_source,
+        next_source_label=SOURCE_LABELS.get(next_source, next_source),
+        source_labels=SOURCE_LABELS,
+        source_types=SOURCE_TYPES,
     )
 
 
@@ -174,7 +259,6 @@ def settings():
     if request.method == 'POST':
         cfg['gmail_user'] = request.form.get('gmail_user', '').strip()
         cfg['gmail_password'] = request.form.get('gmail_password', '').strip()
-        cfg['gemini_api_key'] = request.form.get('gemini_api_key', '').strip()
         cfg['schedule']['day'] = request.form.get('day', 'monday')
         cfg['schedule']['hour'] = int(request.form.get('hour', 9))
         cfg['schedule']['minute'] = int(request.form.get('minute', 0))
@@ -214,7 +298,7 @@ def preview():
 def send_all():
     try:
         from newsletter import build_newsletter_data, send_newsletter
-        data = build_newsletter_data()
+        data = build_newsletter_data(is_send=True)
         html = render_template('email.html', **data)
         result = send_newsletter(html)
         add_history(result)
@@ -241,6 +325,76 @@ def test_send():
     except Exception as e:
         flash(f'테스트 발송 오류: {e}', 'error')
     return redirect(url_for('index'))
+
+
+# ── source rotation ──────────────────────────────────────────────────────────
+
+@app.route('/set-source', methods=['POST'])
+def set_source():
+    source = request.form.get('source', '').strip()
+    from newsletter import load_rotation, save_rotation, SOURCE_LABELS
+    rotation = load_rotation()
+    order = rotation.get('rotation_order', [])
+    if source not in order:
+        flash('잘못된 소스입니다.', 'error')
+        return redirect(url_for('index'))
+    # active sources only
+    sources = rotation.get('sources', {})
+    active = [s for s in order if sources.get(s, {}).get('enabled', True)]
+    if source not in active:
+        flash('비활성화된 소스는 지정할 수 없습니다.', 'error')
+        return redirect(url_for('index'))
+    idx = active.index(source)
+    prev_idx = (idx - 1) % len(active)
+    rotation['last_source'] = active[prev_idx]
+    save_rotation(rotation)
+    label = SOURCE_LABELS.get(source, source)
+    flash(f'다음 발송 소스가 "{label}"로 설정되었습니다.', 'success')
+    return redirect(url_for('index'))
+
+
+@app.route('/toggle-source', methods=['POST'])
+def toggle_source():
+    source = request.form.get('source', '').strip()
+    from newsletter import load_rotation, save_rotation, SOURCE_LABELS
+    rotation = load_rotation()
+    if source not in rotation.get('rotation_order', []):
+        flash('잘못된 소스입니다.', 'error')
+        return redirect(url_for('index'))
+    src_data = rotation['sources'].get(source, {})
+    currently_enabled = src_data.get('enabled', True)
+    src_data['enabled'] = not currently_enabled
+    rotation['sources'][source] = src_data
+    label = SOURCE_LABELS.get(source, source)
+    if src_data['enabled']:
+        flash(f'"{label}" 소스가 활성화되었습니다.', 'success')
+    else:
+        flash(f'"{label}" 소스가 비활성화되었습니다.', 'success')
+    save_rotation(rotation)
+    return redirect(url_for('index'))
+
+
+@app.route('/test-fetch', methods=['POST'])
+def test_fetch():
+    source = request.form.get('source', '').strip()
+    from newsletter import (load_rotation, SOURCE_LABELS, _fetch_article_for_source)
+    rotation = load_rotation()
+    if source not in rotation.get('sources', {}):
+        return jsonify({'success': False, 'error': '유효하지 않은 소스입니다.'})
+    try:
+        result = _fetch_article_for_source(source)
+        if result:
+            return jsonify({
+                'success': True,
+                'title':   result.get('title', ''),
+                'source':  SOURCE_LABELS.get(source, source),
+                'link':    result.get('link', ''),
+                'image':   result.get('image', ''),
+                'preview': result.get('full_text', '')[:300],
+            })
+        return jsonify({'success': False, 'error': '수집된 콘텐츠가 없습니다. (중복 또는 접근 실패)'})
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)})
 
 
 # ── articles ──────────────────────────────────────────────────────────────────

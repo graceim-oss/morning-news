@@ -128,6 +128,52 @@
       .sidebar { transform: translateX(-100%); }
       .main-content { margin-left: 0; padding: 16px; }
     }
+
+    /* ── Insight dashboard ── */
+    .insight-card {
+      background: #fff; border-radius: 12px; padding: 16px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+      height: 100%; display: flex; flex-direction: column;
+    }
+    .source-badge {
+      font-size: 10px; font-weight: 700; background: #e8f0ff; color: #1a5cc8;
+      border-radius: 4px; padding: 2px 8px; white-space: nowrap;
+      max-width: 160px; overflow: hidden; text-overflow: ellipsis;
+    }
+    .summary-area {
+      font-size: 14px; font-weight: 600; color: #1a1a2e; line-height: 1.6;
+      text-decoration: none; display: block; margin: 6px 0 4px;
+    }
+    .summary-area:hover { color: #0f3460; text-decoration: underline; }
+    .insight-box {
+      background: #f8f9ff; border-left: 3px solid #5C67F2;
+      border-radius: 0 8px 8px 0; padding: 10px 12px;
+      margin-top: auto; padding-top: 10px;
+    }
+    .insight-label {
+      font-size: 9px; font-weight: 800; letter-spacing: 0.8px;
+      text-transform: uppercase; color: #5C67F2; margin-bottom: 4px;
+    }
+    .insight-text { font-size: 12.5px; color: #333; line-height: 1.7; }
+    .tag-pill {
+      font-size: 10px; background: #eef; color: #5C67F2;
+      border-radius: 4px; padding: 2px 7px;
+    }
+    .kw-pill {
+      font-size: 11px; background: rgba(232,196,104,0.15); color: #c9a227;
+      border-radius: 4px; padding: 3px 10px; font-weight: 600;
+    }
+    .ai-loading-anim {
+      font-size: 11px; color: #aaa; display: flex; align-items: center; gap: 4px;
+    }
+    .ai-dot {
+      width: 4px; height: 4px; background: #bbb; border-radius: 50%;
+      animation: dot-blink 1.2s infinite;
+    }
+    .ai-dot:nth-child(2) { animation-delay: 0.2s; }
+    .ai-dot:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes dot-blink { 0%,80%,100%{opacity:0.2} 40%{opacity:1} }
+    .ip-btn.active, .ip-btn.btn-wemade { font-weight: 700; }
   </style>
 </head>
 <body>
@@ -201,102 +247,82 @@
 
   <!-- ══════════════ HOME ══════════════ -->
   {% if page == 'home' %}
-  <div class="page-header">
-    <h4><i class="bi bi-speedometer2 me-2"></i>홈 대시보드</h4>
-    <div class="text-muted mt-1">위메이드 브랜드마케팅팀 뉴스레터 관리 센터</div>
-  </div>
-
-  <!-- Stats row -->
-  <div class="row g-3 mb-4">
-    <div class="col-md-5">
-      <div class="next-send-box">
-        <div class="label"><i class="bi bi-clock me-1"></i>다음 발송 예정</div>
-        <div class="value">{{ next_send }}</div>
-      </div>
+  <!-- Header row -->
+  <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+    <div>
+      <h4 style="font-size:20px;font-weight:700;color:#1a1a2e;margin:0;"><i class="bi bi-grid-1x2 me-2"></i>인사이트 대시보드</h4>
+      <div class="text-muted mt-1" style="font-size:13px;">위메이드 브랜드마케팅팀 · <span id="updatedAt">데이터 로드 중...</span></div>
     </div>
-    <div class="col-md-3 col-6">
-      <div class="card h-100">
-        <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
-          <div style="font-size:32px; font-weight:800; color:#1a1a2e;">{{ cfg.recipients|length }}</div>
-          <div style="font-size:12px; color:#888; margin-top:4px;">총 수신자 수</div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-6">
-      <div class="card h-100">
-        <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
-          <div style="font-size:32px; font-weight:800; color:#1a1a2e;">{{ history|length }}</div>
-          <div style="font-size:12px; color:#888; margin-top:4px;">최근 발송 기록</div>
-        </div>
-      </div>
+    <div class="d-flex gap-2 flex-wrap align-items-center">
+      <a href="/preview" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="bi bi-eye me-1"></i>미리보기</a>
+      <form method="post" action="/test-send" class="d-inline">
+        <button type="submit" class="btn btn-sm btn-wemade" {% if not cfg.gmail_user %}disabled title="Gmail 설정 필요"{% endif %}>
+          <i class="bi bi-send me-1"></i>테스트 발송
+        </button>
+      </form>
+      <form method="post" action="/send" class="d-inline"
+            onsubmit="return confirm('전체 수신자 {{ cfg.recipients|length }}명에게 발송하시겠습니까?')">
+        <button type="submit" class="btn btn-sm btn-gold" {% if not cfg.recipients %}disabled title="수신자 없음"{% endif %}>
+          <i class="bi bi-send-fill me-1"></i>전체 발송
+        </button>
+      </form>
+      <button class="btn btn-sm btn-outline-primary" onclick="refreshDashboard()">
+        <i class="bi bi-arrow-clockwise me-1"></i>새로고침
+      </button>
     </div>
   </div>
 
-  <!-- Action buttons -->
-  <div class="card mb-4">
-    <div class="card-header"><i class="bi bi-lightning-charge me-2"></i>빠른 실행</div>
-    <div class="card-body">
-      <div class="action-grid">
-        <form method="post" action="/send" onsubmit="return confirm('전체 수신자 {{ cfg.recipients|length }}명에게 발송하시겠습니까?\n(이 작업은 실제 이메일을 발송합니다)')">
-          <button type="submit" class="btn btn-gold w-100" {% if not cfg.recipients %}disabled title="수신자를 먼저 추가해주세요"{% endif %}>
-            <i class="bi bi-send-fill me-2"></i>즉시 전체 발송
-          </button>
-        </form>
-        <form method="post" action="/test-send">
-          <button type="submit" class="btn btn-wemade w-100" {% if not cfg.gmail_user %}disabled title="Gmail 계정을 먼저 설정해주세요"{% endif %}>
-            <i class="bi bi-send me-2"></i>테스트 발송 (본인)
-          </button>
-        </form>
-        <a href="/preview" target="_blank" class="btn btn-outline-secondary">
-          <i class="bi bi-eye me-2"></i>이메일 미리보기
-        </a>
-      </div>
-      {% if not cfg.gmail_user %}
-      <div class="mt-2 text-warning" style="font-size:12px;"><i class="bi bi-exclamation-triangle me-1"></i>Gmail 설정이 없습니다. <a href="/settings">발송 설정</a>에서 입력해주세요.</div>
-      {% endif %}
+  <!-- Keywords banner -->
+  <div id="kw-banner" class="mb-3" style="display:none;">
+    <div style="background:#1a1a2e;border-radius:10px;padding:10px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+      <span style="font-size:10px;font-weight:800;color:rgba(232,196,104,0.8);text-transform:uppercase;letter-spacing:0.8px;white-space:nowrap;">주요 키워드</span>
+      <div id="kw-pills" style="display:flex;gap:6px;flex-wrap:wrap;"></div>
     </div>
   </div>
 
-  <!-- History table -->
-  <div class="card">
-    <div class="card-header"><i class="bi bi-clock-history me-2"></i>최근 발송 이력</div>
-    {% if history %}
-    <div class="table-responsive">
-      <table class="table table-hover mb-0">
-        <thead class="table-light">
-          <tr>
-            <th>발송일시</th>
-            <th>유형</th>
-            <th>수신자</th>
-            <th>성공</th>
-            <th>실패</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for h in history %}
-          <tr>
-            <td>{{ h.date }}</td>
-            <td>
-              {% if h.is_test %}
-              <span class="badge badge-test">테스트</span>
-              {% else %}
-              <span class="badge badge-send">정규</span>
-              {% endif %}
-            </td>
-            <td>{{ h.recipients }}명</td>
-            <td><span class="badge bg-success">{{ h.success }}</span></td>
-            <td><span class="badge bg-{{ 'danger' if h.fail > 0 else 'secondary' }}">{{ h.fail }}</span></td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+  <!-- Section tabs -->
+  <ul class="nav nav-pills mb-3 flex-wrap" id="sectionTabs" style="gap:6px;">
+    <li class="nav-item">
+      <button class="nav-link active" onclick="switchSection(1,this)">🎮 글로벌 게임 트렌드</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" onclick="switchSection(2,this)">🛍️ 유통·소비 트렌드</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" onclick="switchSection(3,this)">📱 넥스트젠 세대</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" onclick="switchSection(4,this)">🏢 자사 IP &amp; 브랜드</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" onclick="switchSection(5,this)">📣 마케팅 트렌드</button>
+    </li>
+  </ul>
+
+  <!-- Section panes -->
+  <div id="sec-1" class="sec-pane"></div>
+  <div id="sec-2" class="sec-pane" style="display:none;"></div>
+  <div id="sec-3" class="sec-pane" style="display:none;"></div>
+
+  <div id="sec-4" class="sec-pane" style="display:none;">
+    <div class="d-flex gap-2 mb-3 flex-wrap">
+      <button class="btn btn-sm btn-wemade ip-btn" data-ip="lygl" onclick="switchIP('lygl',this)">⚔️ LYGL</button>
+      <button class="btn btn-sm btn-outline-secondary ip-btn" data-ip="ncgl" onclick="switchIP('ncgl',this)">🌙 NCGL</button>
+      <button class="btn btn-sm btn-outline-secondary ip-btn" data-ip="fbjp" onclick="switchIP('fbjp',this)">⚾ FBJP</button>
+      <button class="btn btn-sm btn-outline-secondary ip-btn" data-ip="wemade" onclick="switchIP('wemade',this)">🏢 위메이드</button>
     </div>
-    {% else %}
-    <div class="empty-state">
-      <i class="bi bi-inbox"></i>
-      발송 이력이 없습니다.
-    </div>
-    {% endif %}
+    <div id="ip-lygl" class="ip-pane"></div>
+    <div id="ip-ncgl" class="ip-pane" style="display:none;"></div>
+    <div id="ip-fbjp" class="ip-pane" style="display:none;"></div>
+    <div id="ip-wemade" class="ip-pane" style="display:none;"></div>
+  </div>
+
+  <div id="sec-5" class="sec-pane" style="display:none;"></div>
+
+  <!-- Loading state -->
+  <div id="dashLoading" class="text-center py-5">
+    <div class="spinner-border text-secondary mb-3" style="width:2rem;height:2rem;"></div>
+    <div class="text-muted" style="font-size:14px;">인사이트 데이터를 불러오는 중...</div>
   </div>
 
   <!-- ══════════════ RECIPIENTS ══════════════ -->
@@ -435,15 +461,12 @@
     </div>
 
     <div class="card mb-4">
-      <div class="card-header"><i class="bi bi-robot me-2"></i>Gemini AI 설정</div>
+      <div class="card-header"><i class="bi bi-robot me-2"></i>Claude AI 설정</div>
       <div class="card-body">
-        <div class="mb-0">
-          <label class="form-label">Gemini API 키</label>
-          <input type="password" name="gemini_api_key" class="form-control" value="{{ cfg.gemini_api_key }}" placeholder="AIza...">
-          <div class="form-text">
-            Google AI Studio에서 무료 발급
-            (<a href="https://aistudio.google.com/app/apikey" target="_blank">바로가기</a>)
-          </div>
+        <div class="alert alert-info py-2 mb-0" style="font-size:13px;">
+          <i class="bi bi-info-circle me-1"></i>
+          Claude AI는 <code>ANTHROPIC_API_KEY</code> 환경변수를 자동으로 참조합니다.<br>
+          서버 실행 전 터미널에서 <code>export ANTHROPIC_API_KEY=sk-ant-...</code> 로 설정해주세요.
         </div>
       </div>
     </div>
@@ -471,18 +494,19 @@
     </div>
 
     <div class="card mb-4">
-      <div class="card-header"><i class="bi bi-globe me-2"></i>Section 2 · 지금 세상은 — 상단 메모</div>
+      <div class="card-header"><i class="bi bi-cpu me-2"></i>Section 3 · AI/게임/위메이드/블록체인 — 상단 메모</div>
       <div class="card-body">
-        <textarea name="note_section2" class="form-control" rows="3"
-          placeholder="Section 2 상단에 추가할 수동 메모 (선택)">{{ cfg.manual_notes.section2 if cfg.manual_notes else '' }}</textarea>
+        <textarea name="note_section3" class="form-control" rows="3"
+          placeholder="Section 3 상단에 추가할 수동 메모 (선택)">{{ cfg.manual_notes.section3 if cfg.manual_notes else '' }}</textarea>
+        <div class="form-text">카테고리는 날짜 기준으로 자동 순환됩니다 (AI → 게임 → 위메이드 → 블록체인)</div>
       </div>
     </div>
 
     <div class="card mb-4">
-      <div class="card-header"><i class="bi bi-cpu me-2"></i>Section 3 · AI/IT 소식 — 상단 메모</div>
+      <div class="card-header"><i class="bi bi-globe me-2"></i>Section 2 · 지금 세상은 — 상단 메모</div>
       <div class="card-body">
-        <textarea name="note_section3" class="form-control" rows="3"
-          placeholder="Section 3 상단에 추가할 수동 메모 (선택)">{{ cfg.manual_notes.section3 if cfg.manual_notes else '' }}</textarea>
+        <textarea name="note_section2" class="form-control" rows="3"
+          placeholder="Section 2 상단에 추가할 수동 메모 (선택)">{{ cfg.manual_notes.section2 if cfg.manual_notes else '' }}</textarea>
       </div>
     </div>
 
@@ -496,7 +520,7 @@
   <div class="page-header d-flex align-items-center justify-content-between">
     <div>
       <h4><i class="bi bi-newspaper me-2"></i>아티클 관리</h4>
-      <div class="text-muted mt-1">뉴스레터 콘텐츠 생성에 사용할 아티클을 등록·관리합니다 (총 {{ all_articles|length }}개)</div>
+      <div class="text-muted mt-1">특별히 다루고 싶은 아티클을 직접 등록할 수 있습니다. 등록된 아티클은 자동 소스(마케띵킹·큐레터·오픈애즈·Brand News)가 모두 실패할 때 사용됩니다. (총 {{ all_articles|length }}개)</div>
     </div>
   </div>
 
@@ -679,6 +703,56 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
+// ── 소스 수집 테스트 ──────────────────────────────────────────
+async function doTestFetch() {
+  const source = document.getElementById('sourceSelect').value;
+  const resultDiv = document.getElementById('fetchResult');
+  const btn = document.getElementById('testFetchBtn');
+  if (!source) return;
+
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span>수집 중...';
+  resultDiv.innerHTML = '<div class="text-muted mt-2" style="font-size:13px;"><i class="bi bi-hourglass-split me-1"></i>수집 중입니다. 잠시 기다려주세요...</div>';
+
+  try {
+    const resp = await fetch('/test-fetch', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      body: 'source=' + encodeURIComponent(source),
+    });
+    const data = await resp.json();
+
+    if (data.success) {
+      resultDiv.innerHTML = `
+        <div class="mt-3 p-3 rounded" style="background:#f0faf8; border:1px solid #b2dfdb;">
+          <div class="d-flex gap-2 align-items-start">
+            ${data.image ? `<img src="${data.image}" style="width:80px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;" onerror="this.style.display='none'">` : ''}
+            <div style="min-width:0;">
+              <div class="badge mb-1" style="background:#00897b; font-size:10px;">${data.source}</div>
+              <div style="font-size:14px; font-weight:700; line-height:1.5; margin-bottom:4px; word-break:break-word;">${data.title}</div>
+              <div style="font-size:11px; color:#888; margin-bottom:6px; word-break:break-all;">
+                <a href="${data.link}" target="_blank" style="color:#00897b;">${data.link.substring(0,60)}...</a>
+              </div>
+              <div style="font-size:12px; color:#555; line-height:1.6; max-height:60px; overflow:hidden;">${data.preview}</div>
+            </div>
+          </div>
+          <div class="mt-2" style="font-size:11px; color:#4caf50;"><i class="bi bi-check-circle-fill me-1"></i>수집 성공 — 실제 발송 시 Claude가 인사이트를 작성합니다.</div>
+        </div>`;
+    } else {
+      resultDiv.innerHTML = `
+        <div class="mt-3 p-3 rounded" style="background:#fff8e1; border:1px solid #ffe082;">
+          <i class="bi bi-exclamation-triangle me-1" style="color:#f59e0b;"></i>
+          <span style="font-size:13px; color:#92400e;">${data.error}</span>
+        </div>`;
+    }
+  } catch(e) {
+    resultDiv.innerHTML = `<div class="alert alert-danger mt-2 py-2 small">오류: ${e.message}</div>`;
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '<i class="bi bi-play-circle me-1"></i>지금 수집 테스트';
+  }
+}
+
 // ── 아티클 크롤링 ──────────────────────────────────────────────
 let _crawledData = null;
 
@@ -758,6 +832,202 @@ function showArticleModal(idx) {
 
   new bootstrap.Modal(document.getElementById('articleModal')).show();
 }
+
+// ── 인사이트 대시보드 ──────────────────────────────────────────
+(function() {
+  function esc(s) {
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  const _queue = [];
+  let _analyzing = false;
+
+  function renderCard(item, cardId) {
+    const title = esc(item.title || '(제목 없음)');
+    const source = esc(item.source || '');
+    const link = esc(item.link || '#');
+    const desc = esc((item.description || '').substring(0, 130));
+    const pub = esc((item.published || '').substring(0, 16));
+    return `
+      <div class="insight-card" id="${cardId}">
+        <div class="d-flex align-items-center justify-content-between gap-2">
+          <span class="source-badge">${source}</span>
+          ${pub ? `<span style="font-size:10px;color:#aaa;white-space:nowrap;">${pub}</span>` : ''}
+        </div>
+        <a class="summary-area" href="${link}" target="_blank">${title}</a>
+        ${desc ? `<p style="font-size:12px;color:#666;margin:0 0 8px;line-height:1.6;">${desc}</p>` : ''}
+        <div class="insight-box" id="${cardId}-ai">
+          <div class="ai-loading-anim">
+            <span class="ai-dot"></span><span class="ai-dot"></span><span class="ai-dot"></span>
+            <span style="margin-left:4px;">AI 분석 중...</span>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  function renderPane(paneEl, items, prefix) {
+    if (!paneEl) return;
+    if (!items || !items.length) {
+      paneEl.innerHTML = '<div class="card py-4 text-center text-muted" style="font-size:13px;"><i class="bi bi-inbox" style="font-size:28px;display:block;margin-bottom:8px;"></i>수집된 데이터가 없습니다.</div>';
+      return;
+    }
+    let html = '<div class="row g-3">';
+    items.forEach(function(item, idx) {
+      const cardId = prefix + '-' + idx;
+      html += '<div class="col-md-6 col-lg-4">' + renderCard(item, cardId) + '</div>';
+      _queue.push({cardId, item});
+    });
+    html += '</div>';
+    paneEl.innerHTML = html;
+  }
+
+  function renderSection(n, items) {
+    renderPane(document.getElementById('sec-' + n), items, 's' + n);
+  }
+
+  function renderSection4(s4) {
+    ['lygl','ncgl','fbjp','wemade'].forEach(function(ip) {
+      renderPane(document.getElementById('ip-' + ip), (s4 || {})[ip] || [], 's4-' + ip);
+    });
+  }
+
+  function renderKeywords(sections) {
+    const allItems = [];
+    ['s1','s2','s3','s5'].forEach(function(k) {
+      if (Array.isArray(sections[k])) allItems.push.apply(allItems, sections[k]);
+    });
+    if (sections.s4) {
+      Object.values(sections.s4).forEach(function(arr) {
+        if (Array.isArray(arr)) allItems.push.apply(allItems, arr);
+      });
+    }
+    const freq = {};
+    const stopwords = new Set(['있는','있다','하는','하고','이번','이후','위한','통해','대한','관련','위해','것으로','했다','한다','된다','된다고','밝혔다','발표','이를','수','및','등','더','도','를','은','이','의','에','게임','뉴스','the','and','for','with','this']);
+    allItems.forEach(function(item) {
+      (item.title || '').split(/[\s,·|]+/).forEach(function(w) {
+        w = w.replace(/[^\w가-힣]/g, '').trim();
+        if (w.length >= 2 && !stopwords.has(w)) freq[w] = (freq[w] || 0) + 1;
+      });
+    });
+    const top = Object.entries(freq).sort(function(a,b){return b[1]-a[1];}).slice(0, 14).map(function(e){return e[0];});
+    if (!top.length) return;
+    const pills = document.getElementById('kw-pills');
+    if (pills) pills.innerHTML = top.map(function(w){ return '<span class="kw-pill">' + esc(w) + '</span>'; }).join('');
+    const banner = document.getElementById('kw-banner');
+    if (banner) banner.style.display = '';
+  }
+
+  async function processQueue(hasAI) {
+    if (_analyzing) return;
+    _analyzing = true;
+    if (!hasAI) {
+      while (_queue.length) {
+        const {cardId} = _queue.shift();
+        const el = document.getElementById(cardId + '-ai');
+        if (el) el.style.display = 'none';
+      }
+      _analyzing = false;
+      return;
+    }
+    while (_queue.length) {
+      const {cardId, item} = _queue.shift();
+      const aiEl = document.getElementById(cardId + '-ai');
+      if (!aiEl) continue;
+      try {
+        const resp = await fetch('/api/analyze', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            title: item.title || '',
+            source: item.source || '',
+            description: item.description || '',
+          }),
+        });
+        const data = await resp.json();
+        if (data.insight) {
+          let kws = '';
+          if (data.keywords && data.keywords.length) {
+            kws = '<div style="margin-top:6px;display:flex;gap:4px;flex-wrap:wrap;">' +
+              data.keywords.map(function(k){ return '<span class="tag-pill">' + esc(k) + '</span>'; }).join('') +
+              '</div>';
+          }
+          aiEl.innerHTML = '<div class="insight-label">AI 시사점</div><div class="insight-text">' + esc(data.insight) + '</div>' + kws;
+        } else {
+          aiEl.style.display = 'none';
+        }
+      } catch(e) {
+        if (aiEl) aiEl.style.display = 'none';
+      }
+    }
+    _analyzing = false;
+  }
+
+  async function initDashboard() {
+    const loading = document.getElementById('dashLoading');
+    try {
+      const resp = await fetch('/api/dashboard');
+      const data = await resp.json();
+      if (data.error) throw new Error(data.error);
+
+      if (loading) loading.style.display = 'none';
+
+      const sec = data.sections || {};
+      renderSection(1, sec.s1 || []);
+      renderSection(2, sec.s2 || []);
+      renderSection(3, sec.s3 || []);
+      renderSection4(sec.s4 || {});
+      renderSection(5, sec.s5 || []);
+      renderKeywords(sec);
+
+      const upEl = document.getElementById('updatedAt');
+      if (upEl) upEl.textContent = data.updated ? '업데이트: ' + data.updated : '';
+
+      processQueue(!!data.has_ai);
+    } catch(e) {
+      if (loading) loading.innerHTML =
+        '<div class="alert alert-warning py-2 mx-auto" style="max-width:440px;font-size:13px;">' +
+        '<i class="bi bi-exclamation-triangle me-1"></i>데이터 로드 실패: ' + esc(e.message) +
+        '<br><small class="text-muted">fetch_data.py를 먼저 실행해주세요.</small></div>';
+    }
+  }
+
+  window.switchSection = function(n, el) {
+    document.querySelectorAll('.sec-pane').forEach(function(p){ p.style.display = 'none'; });
+    document.querySelectorAll('#sectionTabs .nav-link').forEach(function(b){ b.classList.remove('active'); });
+    const pane = document.getElementById('sec-' + n);
+    if (pane) pane.style.display = '';
+    if (el) el.classList.add('active');
+  };
+
+  window.switchIP = function(ip, el) {
+    document.querySelectorAll('.ip-pane').forEach(function(p){ p.style.display = 'none'; });
+    document.querySelectorAll('.ip-btn').forEach(function(b){
+      b.classList.remove('btn-wemade','active');
+      b.classList.add('btn-outline-secondary');
+    });
+    const pane = document.getElementById('ip-' + ip);
+    if (pane) pane.style.display = '';
+    if (el) { el.classList.remove('btn-outline-secondary'); el.classList.add('btn-wemade','active'); }
+  };
+
+  window.refreshDashboard = function() {
+    _queue.length = 0;
+    _analyzing = false;
+    ['1','2','3','5'].forEach(function(n){
+      const p = document.getElementById('sec-' + n);
+      if (p) p.innerHTML = '';
+    });
+    ['lygl','ncgl','fbjp','wemade'].forEach(function(ip){
+      const p = document.getElementById('ip-' + ip);
+      if (p) p.innerHTML = '';
+    });
+    const loading = document.getElementById('dashLoading');
+    if (loading) { loading.innerHTML = '<div class="spinner-border text-secondary mb-3" style="width:2rem;height:2rem;"></div><div class="text-muted" style="font-size:14px;">인사이트 데이터를 불러오는 중...</div>'; loading.style.display = ''; }
+    initDashboard();
+  };
+
+  if (document.getElementById('dashLoading')) initDashboard();
+})();
 </script>
 </body>
 </html>

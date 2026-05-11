@@ -102,6 +102,72 @@ def fetch_s3_blockchain():
     print('S3-블록체인 ' + str(len(items)) + '개 수집')
     return items
 
+def _dedup(items):
+    seen = set()
+    result = []
+    for item in items:
+        key = item.get('link', '') or item.get('title', '')
+        if key and key not in seen:
+            seen.add(key)
+            result.append(item)
+    return result
+
+# ── Dashboard 5-section 소스 ──────────────────────────────────────────────────
+
+def fetch_s1_game_trend():
+    ko = fetch_news('게임 트렌드 OR 글로벌 게임 마케팅 OR 라이브서비스 운영 when:7d')
+    en = fetch_news_en('game industry trend OR live service game OR gaming content creator 2026 when:7d')
+    items = _dedup(ko + en)[:5]
+    print('S1-게임트렌드 ' + str(len(items)) + '개 수집')
+    return items
+
+def fetch_s2_consumer():
+    ko = fetch_news('MZ세대 소비 OR 굿즈 OR 팬덤 소비 OR 캐릭터 콜라보 when:7d')
+    en = fetch_news_en('gen z consumer trend OR fandom merch OR brand collaboration 2026 when:7d')
+    items = _dedup(ko + en)[:5]
+    print('S2-소비트렌드 ' + str(len(items)) + '개 수집')
+    return items
+
+def fetch_s3_nextgen():
+    ko = fetch_news('알파세대 OR Z세대 SNS OR 숏폼 트렌드 OR 밈 when:7d')
+    en = fetch_news_en('alpha generation OR gen z platform OR shortform content trend 2026 when:7d')
+    items = _dedup(ko + en)[:5]
+    print('S3-넥스트젠 ' + str(len(items)) + '개 수집')
+    return items
+
+def fetch_s4_lygl():
+    items = fetch_news('레전드오브이미르 OR Legend of YMIR when:7d')
+    if not items:
+        items = fetch_news_en('Legend of YMIR game when:14d')
+    print('S4-LYGL ' + str(len(items)) + '개 수집')
+    return items[:5]
+
+def fetch_s4_ncgl():
+    items = fetch_news('나이트크로우 OR Night Crows when:7d')
+    if not items:
+        items = fetch_news_en('Night Crows game when:14d')
+    print('S4-NCGL ' + str(len(items)) + '개 수집')
+    return items[:5]
+
+def fetch_s4_fbjp():
+    items = fetch_news('Baseball9 OR 파이널베이스볼 when:14d')
+    if not items:
+        items = fetch_news_en('Baseball9 mobile game when:14d')
+    print('S4-FBJP ' + str(len(items)) + '개 수집')
+    return items[:5]
+
+def fetch_s4_wemade():
+    items = fetch_news('Wemade OR 위메이드 OR WEMIX when:7d')
+    print('S4-위메이드 ' + str(len(items)) + '개 수집')
+    return items[:5]
+
+def fetch_s5_marketing():
+    ko = fetch_news('브랜드 캠페인 OR 숏폼 마케팅 OR UGC OR AI 마케팅 when:7d')
+    en = fetch_news_en('brand campaign case OR UGC marketing OR AI marketing 2026 when:7d')
+    items = _dedup(ko + en)[:5]
+    print('S5-마케팅트렌드 ' + str(len(items)) + '개 수집')
+    return items
+
 def fetch_stock(code):
     url = 'https://m.stock.naver.com/api/stock/' + code + '/basic'
     try:
@@ -245,6 +311,15 @@ def main():
         'stock_112040':       lambda: fetch_stock('112040'),
         'stock_101730':       lambda: fetch_stock('101730'),
         'wemix':              lambda: fetch_wemix(),
+        # Dashboard 5-section
+        'sec_s1':             lambda: fetch_s1_game_trend(),
+        'sec_s2':             lambda: fetch_s2_consumer(),
+        'sec_s3':             lambda: fetch_s3_nextgen(),
+        'sec_s4_lygl':        lambda: fetch_s4_lygl(),
+        'sec_s4_ncgl':        lambda: fetch_s4_ncgl(),
+        'sec_s4_fbjp':        lambda: fetch_s4_fbjp(),
+        'sec_s4_wemade':      lambda: fetch_s4_wemade(),
+        'sec_s5':             lambda: fetch_s5_marketing(),
     }
 
     results = {}
@@ -282,11 +357,25 @@ def main():
         'wemix':      results.get('wemix', {'err': '로드 실패'}),
     }
 
+    sections = {
+        's1':  results.get('sec_s1', []),
+        's2':  results.get('sec_s2', []),
+        's3':  results.get('sec_s3', []),
+        's4': {
+            'lygl':   results.get('sec_s4_lygl', []),
+            'ncgl':   results.get('sec_s4_ncgl', []),
+            'fbjp':   results.get('sec_s4_fbjp', []),
+            'wemade': results.get('sec_s4_wemade', []),
+        },
+        's5':  results.get('sec_s5', []),
+    }
+
     data = {
         'updated': now,
         'news': news,
         'rankings': rankings,
         'stocks': stocks,
+        'sections': sections,
     }
 
     with open('data.json', 'w', encoding='utf-8') as f:
@@ -301,6 +390,14 @@ def main():
     print('  위메이드 주가: ' + str(stocks['wemade']))
     print('  위메이드맥스 주가: ' + str(stocks['wemade_max']))
     print('  WEMIX: ' + str(stocks['wemix']))
+    print('  S1-게임트렌드: ' + str(len(sections['s1'])) + '개')
+    print('  S2-소비트렌드: ' + str(len(sections['s2'])) + '개')
+    print('  S3-넥스트젠: ' + str(len(sections['s3'])) + '개')
+    print('  S4-LYGL: ' + str(len(sections['s4']['lygl'])) + '개')
+    print('  S4-NCGL: ' + str(len(sections['s4']['ncgl'])) + '개')
+    print('  S4-FBJP: ' + str(len(sections['s4']['fbjp'])) + '개')
+    print('  S4-위메이드: ' + str(len(sections['s4']['wemade'])) + '개')
+    print('  S5-마케팅: ' + str(len(sections['s5'])) + '개')
 
 if __name__ == '__main__':
     main()
