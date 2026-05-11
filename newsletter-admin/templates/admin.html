@@ -207,6 +207,11 @@
         </a>
       </li>
       <li class="nav-item">
+        <a href="/sources" class="nav-link {% if page == 'sources' %}active{% endif %}">
+          <i class="bi bi-sliders"></i> 뉴스 소스 관리
+        </a>
+      </li>
+      <li class="nav-item">
         <a href="/content" class="nav-link {% if page == 'content' %}active{% endif %}">
           <i class="bi bi-pencil-square"></i> 콘텐츠 편집
         </a>
@@ -662,6 +667,24 @@
     </div>
   </div>
 
+  <!-- ══════════════ SOURCES ══════════════ -->
+  {% elif page == 'sources' %}
+  <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+    <div>
+      <h4 style="font-size:20px;font-weight:700;color:#1a1a2e;margin:0;"><i class="bi bi-sliders me-2"></i>뉴스 소스 관리</h4>
+      <div class="text-muted mt-1" style="font-size:13px;">섹션별 검색 쿼리와 활성화 여부를 관리합니다</div>
+    </div>
+    <button class="btn btn-sm btn-gold" onclick="saveSources()">
+      <i class="bi bi-save me-1"></i>저장
+    </button>
+  </div>
+  <div id="src-alert" class="mb-3" style="display:none;"></div>
+  <div id="src-loading" class="text-center py-5">
+    <div class="spinner-border text-secondary" style="width:1.5rem;height:1.5rem;"></div>
+    <div class="text-muted mt-2" style="font-size:13px;">로드 중...</div>
+  </div>
+  <div id="src-cards"></div>
+
   <!-- ══════════════ ARCHIVE ══════════════ -->
   {% elif page == 'archive' %}
   <div class="page-header">
@@ -839,55 +862,60 @@ function showArticleModal(idx) {
     return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
-  const _queue = [];
-  let _analyzing = false;
-
-  function renderCard(item, cardId) {
+  function renderCard(item) {
     const title = esc(item.title || '(제목 없음)');
     const source = esc(item.source || '');
     const link = esc(item.link || '#');
     const desc = esc((item.description || '').substring(0, 130));
     const pub = esc((item.published || '').substring(0, 16));
     return `
-      <div class="insight-card" id="${cardId}">
+      <div class="insight-card">
         <div class="d-flex align-items-center justify-content-between gap-2">
           <span class="source-badge">${source}</span>
           ${pub ? `<span style="font-size:10px;color:#aaa;white-space:nowrap;">${pub}</span>` : ''}
         </div>
         <a class="summary-area" href="${link}" target="_blank">${title}</a>
-        ${desc ? `<p style="font-size:12px;color:#666;margin:0 0 8px;line-height:1.6;">${desc}</p>` : ''}
-        <div class="insight-box" id="${cardId}-ai">
-          <div class="ai-loading-anim">
-            <span class="ai-dot"></span><span class="ai-dot"></span><span class="ai-dot"></span>
-            <span style="margin-left:4px;">AI 분석 중...</span>
-          </div>
-        </div>
+        ${desc ? `<p style="font-size:12px;color:#666;margin:0;line-height:1.6;">${desc}</p>` : ''}
       </div>`;
   }
 
-  function renderPane(paneEl, items, prefix) {
+  function renderGenBlock(gen) {
+    if (!gen || !gen.headline) return '';
+    return `
+      <div class="insight-box mb-3" style="border-left-color:#e8c468;background:#fffbf0;">
+        <div class="insight-label" style="color:#c9a227;">AI 섹션 인사이트</div>
+        <div style="font-size:14px;font-weight:700;color:#1a1a2e;margin-bottom:4px;">${esc(gen.headline)}</div>
+        <div class="insight-text">${esc(gen.body || '')}</div>
+        ${gen.point ? `<div style="margin-top:6px;font-size:12px;font-weight:600;color:#5C67F2;">→ ${esc(gen.point)}</div>` : ''}
+      </div>`;
+  }
+
+  function renderPane(paneEl, items, gen) {
     if (!paneEl) return;
     if (!items || !items.length) {
       paneEl.innerHTML = '<div class="card py-4 text-center text-muted" style="font-size:13px;"><i class="bi bi-inbox" style="font-size:28px;display:block;margin-bottom:8px;"></i>수집된 데이터가 없습니다.</div>';
       return;
     }
-    let html = '<div class="row g-3">';
-    items.forEach(function(item, idx) {
-      const cardId = prefix + '-' + idx;
-      html += '<div class="col-md-6 col-lg-4">' + renderCard(item, cardId) + '</div>';
-      _queue.push({cardId, item});
+    let html = renderGenBlock(gen);
+    html += '<div class="row g-3">';
+    items.forEach(function(item) {
+      html += '<div class="col-md-6 col-lg-4">' + renderCard(item) + '</div>';
     });
     html += '</div>';
     paneEl.innerHTML = html;
   }
 
-  function renderSection(n, items) {
-    renderPane(document.getElementById('sec-' + n), items, 's' + n);
+  function renderSection(n, items, gen) {
+    renderPane(document.getElementById('sec-' + n), items, gen);
   }
 
-  function renderSection4(s4) {
+  function renderSection4(s4, genContent) {
     ['lygl','ncgl','fbjp','wemade'].forEach(function(ip) {
-      renderPane(document.getElementById('ip-' + ip), (s4 || {})[ip] || [], 's4-' + ip);
+      renderPane(
+        document.getElementById('ip-' + ip),
+        (s4 || {})[ip] || [],
+        (genContent || {})['s4_' + ip]
+      );
     });
   }
 
@@ -917,51 +945,6 @@ function showArticleModal(idx) {
     if (banner) banner.style.display = '';
   }
 
-  async function processQueue(hasAI) {
-    if (_analyzing) return;
-    _analyzing = true;
-    if (!hasAI) {
-      while (_queue.length) {
-        const {cardId} = _queue.shift();
-        const el = document.getElementById(cardId + '-ai');
-        if (el) el.style.display = 'none';
-      }
-      _analyzing = false;
-      return;
-    }
-    while (_queue.length) {
-      const {cardId, item} = _queue.shift();
-      const aiEl = document.getElementById(cardId + '-ai');
-      if (!aiEl) continue;
-      try {
-        const resp = await fetch('/api/analyze', {
-          method: 'POST',
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify({
-            title: item.title || '',
-            source: item.source || '',
-            description: item.description || '',
-          }),
-        });
-        const data = await resp.json();
-        if (data.insight) {
-          let kws = '';
-          if (data.keywords && data.keywords.length) {
-            kws = '<div style="margin-top:6px;display:flex;gap:4px;flex-wrap:wrap;">' +
-              data.keywords.map(function(k){ return '<span class="tag-pill">' + esc(k) + '</span>'; }).join('') +
-              '</div>';
-          }
-          aiEl.innerHTML = '<div class="insight-label">AI 시사점</div><div class="insight-text">' + esc(data.insight) + '</div>' + kws;
-        } else {
-          aiEl.style.display = 'none';
-        }
-      } catch(e) {
-        if (aiEl) aiEl.style.display = 'none';
-      }
-    }
-    _analyzing = false;
-  }
-
   async function initDashboard() {
     const loading = document.getElementById('dashLoading');
     try {
@@ -972,17 +955,16 @@ function showArticleModal(idx) {
       if (loading) loading.style.display = 'none';
 
       const sec = data.sections || {};
-      renderSection(1, sec.s1 || []);
-      renderSection(2, sec.s2 || []);
-      renderSection(3, sec.s3 || []);
-      renderSection4(sec.s4 || {});
-      renderSection(5, sec.s5 || []);
+      const gen = data.generated_content || {};
+      renderSection(1, sec.s1 || [], gen.s1);
+      renderSection(2, sec.s2 || [], gen.s2);
+      renderSection(3, sec.s3 || [], gen.s3);
+      renderSection4(sec.s4 || {}, gen);
+      renderSection(5, sec.s5 || [], gen.s5);
       renderKeywords(sec);
 
       const upEl = document.getElementById('updatedAt');
       if (upEl) upEl.textContent = data.updated ? '업데이트: ' + data.updated : '';
-
-      processQueue(!!data.has_ai);
     } catch(e) {
       if (loading) loading.innerHTML =
         '<div class="alert alert-warning py-2 mx-auto" style="max-width:440px;font-size:13px;">' +
@@ -1011,8 +993,6 @@ function showArticleModal(idx) {
   };
 
   window.refreshDashboard = function() {
-    _queue.length = 0;
-    _analyzing = false;
     ['1','2','3','5'].forEach(function(n){
       const p = document.getElementById('sec-' + n);
       if (p) p.innerHTML = '';
@@ -1027,6 +1007,148 @@ function showArticleModal(idx) {
   };
 
   if (document.getElementById('dashLoading')) initDashboard();
+})();
+
+// ── 뉴스 소스 관리 ─────────────────────────────────────────────
+(function() {
+  if (!document.getElementById('src-cards')) return;
+
+  let _sourcesData = null;
+
+  function esc(s) {
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function showAlert(msg, type) {
+    const el = document.getElementById('src-alert');
+    el.className = 'alert alert-' + (type === 'ok' ? 'success' : 'danger') + ' alert-dismissible fade show';
+    el.innerHTML = msg + '<button type="button" class="btn-close" data-bs-dismiss="alert"></button>';
+    el.style.display = '';
+  }
+
+  function renderSources(data) {
+    _sourcesData = data;
+    const sections = data.sections || {};
+    const container = document.getElementById('src-cards');
+    const S4_LABEL = '자사 IP &amp; 브랜드';
+
+    // Group s4 sub-sections together
+    const groups = [];
+    const s4kids = [];
+    Object.entries(sections).forEach(function([id, cfg]) {
+      if (cfg.parent === 's4') s4kids.push({id, cfg});
+      else groups.push({id, cfg, isGroup: false});
+    });
+    if (s4kids.length) {
+      const idx = groups.findIndex(function(g){ return g.id === 's4'; });
+      const s4group = {id: 's4', label: S4_LABEL, isGroup: true, kids: s4kids};
+      if (idx >= 0) groups.splice(idx, 1, s4group);
+      else groups.push(s4group);
+    }
+
+    let html = '';
+    groups.forEach(function(g) {
+      if (g.isGroup) {
+        html += `<div class="card mb-3"><div class="card-header d-flex align-items-center gap-2"><i class="bi bi-collection me-1"></i>${S4_LABEL}</div><div class="card-body p-2">`;
+        g.kids.forEach(function(k) {
+          html += renderSecCard(k.id, k.cfg);
+        });
+        html += '</div></div>';
+      } else {
+        html += renderSecCard(g.id, g.cfg);
+      }
+    });
+    container.innerHTML = html;
+  }
+
+  function renderSecCard(id, cfg) {
+    const enabled = cfg.enabled !== false;
+    const queries = cfg.queries || [];
+    let qRows = queries.map(function(q, qi) {
+      const qEnabled = q.enabled !== false;
+      return `
+        <div class="d-flex align-items-start gap-2 mb-2 ps-1">
+          <input type="checkbox" class="form-check-input mt-1 flex-shrink-0" data-sec="${id}" data-qi="${qi}" data-field="enabled" ${qEnabled ? 'checked' : ''}>
+          <span class="badge bg-secondary me-1 flex-shrink-0" style="font-size:9px;padding:3px 6px;">${esc(q.lang || 'ko')}</span>
+          <input type="text" class="form-control form-control-sm" style="font-size:12px;" value="${esc(q.q || '')}" data-sec="${id}" data-qi="${qi}" data-field="q">
+        </div>`;
+    }).join('');
+    return `
+      <div class="card mb-2" style="border:1px solid #e8e8e8;">
+        <div class="card-body py-3 px-3">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <div class="form-check form-switch mb-0">
+              <input class="form-check-input" type="checkbox" role="switch" data-sec="${id}" data-field="section-enabled" ${enabled ? 'checked' : ''} id="sw-${id}">
+              <label class="form-check-label fw-600" for="sw-${id}" style="font-size:14px;font-weight:600;">${esc(cfg.label || id)}</label>
+            </div>
+            <code style="font-size:11px;color:#aaa;">${esc(id)}</code>
+          </div>
+          <div style="${enabled ? '' : 'opacity:0.4;pointer-events:none;'}">
+            ${qRows}
+          </div>
+        </div>
+      </div>`;
+  }
+
+  document.addEventListener('change', function(e) {
+    const el = e.target;
+    const sec = el.dataset.sec;
+    const field = el.dataset.field;
+    if (!sec || !field || !_sourcesData) return;
+    const sections = _sourcesData.sections;
+
+    if (field === 'section-enabled') {
+      sections[sec].enabled = el.checked;
+      // toggle opacity of query rows
+      const card = el.closest('.card-body');
+      if (card) {
+        const qBlock = card.querySelector('div[style]');
+        if (qBlock) qBlock.style.opacity = el.checked ? '' : '0.4';
+        if (qBlock) qBlock.style.pointerEvents = el.checked ? '' : 'none';
+      }
+    } else if (field === 'enabled') {
+      const qi = parseInt(el.dataset.qi);
+      sections[sec].queries[qi].enabled = el.checked;
+    }
+  });
+
+  document.addEventListener('input', function(e) {
+    const el = e.target;
+    const sec = el.dataset.sec;
+    const field = el.dataset.field;
+    if (!sec || field !== 'q' || !_sourcesData) return;
+    const qi = parseInt(el.dataset.qi);
+    _sourcesData.sections[sec].queries[qi].q = el.value;
+  });
+
+  window.saveSources = async function() {
+    if (!_sourcesData) return;
+    try {
+      const resp = await fetch('/api/sources', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(_sourcesData),
+      });
+      const result = await resp.json();
+      if (result.ok) showAlert('<i class="bi bi-check-circle-fill me-1"></i>저장 완료', 'ok');
+      else showAlert('저장 실패: ' + (result.error || ''), 'err');
+    } catch(e) {
+      showAlert('저장 오류: ' + e.message, 'err');
+    }
+  };
+
+  (async function() {
+    const loading = document.getElementById('src-loading');
+    try {
+      const resp = await fetch('/api/sources');
+      const data = await resp.json();
+      if (data.error) throw new Error(data.error);
+      if (loading) loading.style.display = 'none';
+      renderSources(data);
+    } catch(e) {
+      if (loading) loading.innerHTML = '<div class="alert alert-warning" style="font-size:13px;">' + e.message + '</div>';
+    }
+  })();
 })();
 </script>
 </body>

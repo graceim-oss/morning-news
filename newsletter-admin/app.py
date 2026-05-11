@@ -12,6 +12,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_JSON_PATH = os.path.join(os.path.dirname(BASE_DIR), 'data.json')
+SOURCES_FILE = os.path.join(BASE_DIR, 'sources.json')
 _INSIGHT_CACHE = {}
 HISTORY_FILE = os.path.join(BASE_DIR, 'history.json')
 ARTICLES_DIR = os.path.join(BASE_DIR, 'articles')
@@ -180,8 +181,33 @@ def api_dashboard():
         return jsonify({
             'updated': data.get('updated', ''),
             'sections': data.get('sections', {}),
+            'generated_content': data.get('generated_content', {}),
             'has_ai': has_ai,
         })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/api/sources', methods=['GET'])
+def api_sources_get():
+    try:
+        if not os.path.exists(SOURCES_FILE):
+            return jsonify({'error': 'sources.json 없음'}), 404
+        with open(SOURCES_FILE, encoding='utf-8') as f:
+            return jsonify(json.load(f))
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/api/sources', methods=['POST'])
+def api_sources_post():
+    try:
+        body = request.get_json(force=True, silent=True)
+        if not body or 'sections' not in body:
+            return jsonify({'error': 'sections 키가 필요합니다.'}), 400
+        with open(SOURCES_FILE, 'w', encoding='utf-8') as f:
+            json.dump(body, f, ensure_ascii=False, indent=2)
+        return jsonify({'ok': True})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
@@ -463,6 +489,11 @@ def articles_delete():
         save_articles(data)
         flash('아티클이 삭제되었습니다.', 'success')
     return redirect(url_for('articles_page'))
+
+
+@app.route('/sources')
+def sources_page():
+    return render_template('admin.html', page='sources')
 
 
 @app.route('/archive')

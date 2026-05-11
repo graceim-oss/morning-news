@@ -1,0 +1,131 @@
+{
+  "sections": {
+    "s1": {
+      "label": "글로벌 게임 트렌드",
+      "enabled": true,
+      "queries": [
+        {
+          "lang": "ko",
+          "q": "게임 트렌드 OR 글로벌 게임 마케팅 OR 라이브서비스 운영 when:7d",
+          "enabled": true
+        },
+        {
+          "lang": "en",
+          "q": "game industry trend OR live service game OR gaming content creator 2026 when:7d",
+          "enabled": true
+        }
+      ]
+    },
+    "s2": {
+      "label": "유통·소비 트렌드",
+      "enabled": true,
+      "queries": [
+        {
+          "lang": "ko",
+          "q": "MZ세대 소비 OR 굿즈 OR 팬덤 소비 OR 캐릭터 콜라보 when:7d",
+          "enabled": true
+        },
+        {
+          "lang": "en",
+          "q": "gen z consumer trend OR fandom merch OR brand collaboration 2026 when:7d",
+          "enabled": true
+        }
+      ]
+    },
+    "s3": {
+      "label": "넥스트젠 세대",
+      "enabled": true,
+      "queries": [
+        {
+          "lang": "ko",
+          "q": "알파세대 OR Z세대 SNS OR 숏폼 트렌드 OR 밈 when:7d",
+          "enabled": true
+        },
+        {
+          "lang": "en",
+          "q": "alpha generation OR gen z platform OR shortform content trend 2026 when:7d",
+          "enabled": true
+        }
+      ]
+    },
+    "s4_lygl": {
+      "label": "LYGL",
+      "parent": "s4",
+      "enabled": true,
+      "queries": [
+        {
+          "lang": "ko",
+          "q": "레전드오브이미르 OR Legend of YMIR when:7d",
+          "enabled": true
+        },
+        {
+          "lang": "en",
+          "q": "Legend of YMIR game when:14d",
+          "enabled": true
+        }
+      ]
+    },
+    "s4_ncgl": {
+      "label": "NCGL",
+      "parent": "s4",
+      "enabled": true,
+      "queries": [
+        {
+          "lang": "ko",
+          "q": "나이트크로우 OR Night Crows when:7d",
+          "enabled": true
+        },
+        {
+          "lang": "en",
+          "q": "Night Crows game when:14d",
+          "enabled": true
+        }
+      ]
+    },
+    "s4_fbjp": {
+      "label": "FBJP",
+      "parent": "s4",
+      "enabled": false,
+      "queries": [
+        {
+          "lang": "ko",
+          "q": "Baseball9 OR 파이널베이스볼 when:14d",
+          "enabled": true
+        },
+        {
+          "lang": "en",
+          "q": "Baseball9 mobile game when:14d",
+          "enabled": true
+        }
+      ]
+    },
+    "s4_wemade": {
+      "label": "위메이드",
+      "parent": "s4",
+      "enabled": true,
+      "queries": [
+        {
+          "lang": "ko",
+          "q": "Wemade OR 위메이드 OR WEMIX when:7d",
+          "enabled": true
+        }
+      ]
+    },
+    "s5": {
+      "label": "마케팅 트렌드",
+      "enabled": true,
+      "queries": [
+        {
+          "lang": "ko",
+          "q": "브랜드 캠페인 OR 숏폼 마케팅 OR UGC OR AI 마케팅 when:7d",
+          "enabled": true
+        },
+        {
+          "lang": "en",
+          "q": "brand campaign case OR UGC marketing OR AI marketing 2026 when:7d",
+          "enabled": true
+        }
+      ]
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import json, re, ssl, html as _html
+import json, re, ssl, html as _html, os
 from datetime import datetime, timezone, timedelta
 from urllib.request import urlopen, Request
 from urllib.parse import quote
@@ -6,6 +6,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 KST = timezone(timedelta(hours=9))
 _CTX = ssl.create_default_context()
+_BASE = os.path.dirname(os.path.abspath(__file__))
+SOURCES_FILE = os.path.join(_BASE, 'newsletter-admin', 'sources.json')
+PENDING_FILE = os.path.join(_BASE, 'pending_articles.json')
 _CTX.check_hostname = False
 _CTX.verify_mode = ssl.CERT_NONE
 
@@ -110,6 +113,30 @@ def _dedup(items):
         if key and key not in seen:
             seen.add(key)
             result.append(item)
+    return result
+
+def load_sources():
+    try:
+        with open(SOURCES_FILE, encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        print('WARNING: sources.json 로드 실패 - ' + str(e))
+        return None
+
+def fetch_section_generic(sec_id, queries):
+    all_items = []
+    for q in queries:
+        if not q.get('enabled', True):
+            continue
+        lang = q.get('lang', 'ko')
+        query_str = q.get('q', '')
+        items = fetch_news_en(query_str) if lang == 'en' else fetch_news(query_str)
+        all_items.extend(items)
+    result = _dedup(all_items)[:5]
+    if not result:
+        print('WARNING: ' + sec_id + ' 수집 결과 0건')
+    else:
+        print(sec_id + ' ' + str(len(result)) + '개 수집')
     return result
 
 # ── Dashboard 5-section 소스 ──────────────────────────────────────────────────
@@ -293,6 +320,9 @@ def main():
     now = datetime.now(KST).strftime('%H:%M:%S')
     print('수집 시작: ' + now)
 
+    sources = load_sources()
+    src_sections = sources.get('sections', {}) if sources else {}
+
     print('뉴스/AI/IT 병렬 수집 중...')
     tasks = {
         'news_wemade':        lambda: fetch_news('위메이드 OR 위믹스 OR WEMIX OR 레전드오브이미르 OR 나이트크로우'),
@@ -311,16 +341,26 @@ def main():
         'stock_112040':       lambda: fetch_stock('112040'),
         'stock_101730':       lambda: fetch_stock('101730'),
         'wemix':              lambda: fetch_wemix(),
-        # Dashboard 5-section
-        'sec_s1':             lambda: fetch_s1_game_trend(),
-        'sec_s2':             lambda: fetch_s2_consumer(),
-        'sec_s3':             lambda: fetch_s3_nextgen(),
-        'sec_s4_lygl':        lambda: fetch_s4_lygl(),
-        'sec_s4_ncgl':        lambda: fetch_s4_ncgl(),
-        'sec_s4_fbjp':        lambda: fetch_s4_fbjp(),
-        'sec_s4_wemade':      lambda: fetch_s4_wemade(),
-        'sec_s5':             lambda: fetch_s5_marketing(),
     }
+
+    # Dashboard sections: driven by sources.json when available
+    if src_sections:
+        for sec_id, sec_cfg in src_sections.items():
+            if not sec_cfg.get('enabled', True):
+                continue
+            queries = sec_cfg.get('queries', [])
+            tasks['sec_' + sec_id] = (lambda sid=sec_id, qs=queries: fetch_section_generic(sid, qs))
+    else:
+        tasks.update({
+            'sec_s1':        lambda: fetch_s1_game_trend(),
+            'sec_s2':        lambda: fetch_s2_consumer(),
+            'sec_s3':        lambda: fetch_s3_nextgen(),
+            'sec_s4_lygl':   lambda: fetch_s4_lygl(),
+            'sec_s4_ncgl':   lambda: fetch_s4_ncgl(),
+            'sec_s4_fbjp':   lambda: fetch_s4_fbjp(),
+            'sec_s4_wemade': lambda: fetch_s4_wemade(),
+            'sec_s5':        lambda: fetch_s5_marketing(),
+        })
 
     results = {}
     with ThreadPoolExecutor(max_workers=8) as executor:
@@ -357,18 +397,32 @@ def main():
         'wemix':      results.get('wemix', {'err': '로드 실패'}),
     }
 
+    # Build flat s4_* sub-map from results
+    s4_map = {}
+    for key, val in results.items():
+        if key.startswith('sec_s4_'):
+            sub = key[len('sec_s4_'):]
+            s4_map[sub] = val
+
     sections = {
-        's1':  results.get('sec_s1', []),
-        's2':  results.get('sec_s2', []),
-        's3':  results.get('sec_s3', []),
-        's4': {
-            'lygl':   results.get('sec_s4_lygl', []),
-            'ncgl':   results.get('sec_s4_ncgl', []),
-            'fbjp':   results.get('sec_s4_fbjp', []),
-            'wemade': results.get('sec_s4_wemade', []),
-        },
-        's5':  results.get('sec_s5', []),
+        's1': results.get('sec_s1', []),
+        's2': results.get('sec_s2', []),
+        's3': results.get('sec_s3', []),
+        's4': s4_map,
+        's5': results.get('sec_s5', []),
     }
+
+    # Write pending_articles.json (flat keys, 1-2 articles per section)
+    pending = {}
+    for key, items in results.items():
+        if key.startswith('sec_'):
+            sec_id = key[4:]  # strip 'sec_'
+            pending[sec_id] = items[:2]
+            if not items:
+                print('WARNING: ' + sec_id + ' pending 0건 — 뉴스레터 콘텐츠 생성 불가')
+    with open(PENDING_FILE, 'w', encoding='utf-8') as f:
+        json.dump(pending, f, ensure_ascii=False, indent=2)
+    print('pending_articles.json 저장 (' + str(len(pending)) + '개 섹션)')
 
     data = {
         'updated': now,
@@ -378,7 +432,7 @@ def main():
         'sections': sections,
     }
 
-    with open('data.json', 'w', encoding='utf-8') as f:
+    with open(os.path.join(_BASE, 'data.json'), 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
     print('완료!')
@@ -390,14 +444,12 @@ def main():
     print('  위메이드 주가: ' + str(stocks['wemade']))
     print('  위메이드맥스 주가: ' + str(stocks['wemade_max']))
     print('  WEMIX: ' + str(stocks['wemix']))
-    print('  S1-게임트렌드: ' + str(len(sections['s1'])) + '개')
-    print('  S2-소비트렌드: ' + str(len(sections['s2'])) + '개')
-    print('  S3-넥스트젠: ' + str(len(sections['s3'])) + '개')
-    print('  S4-LYGL: ' + str(len(sections['s4']['lygl'])) + '개')
-    print('  S4-NCGL: ' + str(len(sections['s4']['ncgl'])) + '개')
-    print('  S4-FBJP: ' + str(len(sections['s4']['fbjp'])) + '개')
-    print('  S4-위메이드: ' + str(len(sections['s4']['wemade'])) + '개')
-    print('  S5-마케팅: ' + str(len(sections['s5'])) + '개')
+    print('  S1: ' + str(len(sections['s1'])) + '개')
+    print('  S2: ' + str(len(sections['s2'])) + '개')
+    print('  S3: ' + str(len(sections['s3'])) + '개')
+    for sub, items in sorted(sections['s4'].items()):
+        print('  S4-' + sub + ': ' + str(len(items)) + '개')
+    print('  S5: ' + str(len(sections['s5'])) + '개')
 
 if __name__ == '__main__':
     main()
