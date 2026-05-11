@@ -437,8 +437,9 @@ function stripTags(s){ return (s??'').replace(/<!\[CDATA\[|\]\]>/g,'').replace(/
 /* ── 시계 ── */
 (function tick(){
   const kst={timeZone:'Asia/Seoul'};
-  $('hd-clock').textContent = new Date().toLocaleTimeString('ko-KR',{...kst,hour12:false});
-  $('hd-date').textContent  = new Date().toLocaleDateString('ko-KR',{...kst,year:'numeric',month:'long',day:'numeric',weekday:'long'});
+  const cl=$('hd-clock'), dt=$('hd-date');
+  if(cl) cl.textContent = new Date().toLocaleTimeString('ko-KR',{...kst,hour12:false});
+  if(dt) dt.textContent = new Date().toLocaleDateString('ko-KR',{...kst,year:'numeric',month:'long',day:'numeric',weekday:'long'});
   setTimeout(tick,1000);
 })();
 
@@ -517,10 +518,11 @@ function renderNewsSection(news) {
     const bodyEl = $(`body-${cat}`);
     const updEl = $(`upd-${cat}`);
     const pillsEl = $(`pills-${cat}`);
+    if (!bodyEl) return;
     const articles = news[cat] || [];
     if (articles.length) {
       bodyEl.innerHTML = renderNews(articles);
-      updEl.textContent = nowKST() + ' 기준';
+      if (updEl) updEl.textContent = nowKST() + ' 기준';
       if (pillsEl) pillsEl.innerHTML = '<span class="pll pll-g">구글</span>';
     } else {
       bodyEl.innerHTML = '<div class="errbox">뉴스를 불러올 수 없습니다.</div>';
@@ -534,6 +536,7 @@ function renderNewsSection(news) {
 function renderTrends(trends) {
   function renderPane(items, paneId) {
     const pane = $(paneId);
+    if (!pane) return;
     if (!items || !items.length) {
       pane.innerHTML = '<div class="errbox">데이터 없음</div>';
       return;
@@ -551,7 +554,8 @@ function renderTrends(trends) {
   }
   renderPane(trends.kr, 'pane-kr');
   renderPane(trends.global, 'pane-global');
-  $('upd-gtrend').textContent = '갱신 ' + nowKST();
+  const gtrend = $('upd-gtrend');
+  if (gtrend) gtrend.textContent = '갱신 ' + nowKST();
 }
 
 function switchTrend(tab){
