@@ -243,6 +243,7 @@ def main():
         'gplay_kr':           lambda: fetch_gplay_top('kr', 'ko', 'TOP_GROSSING'),
         'appstore_kr':        lambda: fetch_appstore_top('kr'),
         'stock_112040':       lambda: fetch_stock('112040'),
+        'stock_101730':       lambda: fetch_stock('101730'),
         'wemix':              lambda: fetch_wemix(),
     }
 
@@ -276,8 +277,9 @@ def main():
     }
 
     stocks = {
-        'wemade':  results.get('stock_112040', {'err': '로드 실패'}),
-        'wemix':   results.get('wemix', {'err': '로드 실패'}),
+        'wemade':     results.get('stock_112040', {'err': '로드 실패'}),
+        'wemade_max': results.get('stock_101730', {'err': '로드 실패'}),
+        'wemix':      results.get('wemix', {'err': '로드 실패'}),
     }
 
     data = {
@@ -297,6 +299,7 @@ def main():
     print('  Google Play KR: ' + str(len(rankings['gplay_kr'])) + '개')
     print('  App Store KR: ' + str(len(rankings['appstore_kr'])) + '개')
     print('  위메이드 주가: ' + str(stocks['wemade']))
+    print('  위메이드맥스 주가: ' + str(stocks['wemade_max']))
     print('  WEMIX: ' + str(stocks['wemix']))
 
 if __name__ == '__main__':

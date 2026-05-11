@@ -461,6 +461,7 @@ async function loadData() {
    ════════════════════════════════════════════════ */
 function renderTicker(stocks) {
   function stockCard(name, market, d, code) {
+    if (!d) return '';
     const link = `https://finance.naver.com/item/main.naver?code=${code}`;
     const err = !!d.err;
     const cls = err?'fl':d.dir==='RISING'?'up':d.dir==='FALLING'?'dn':'fl';
@@ -657,10 +658,10 @@ async function refreshAll(force=false){
   btn.disabled=true; icon.classList.add('spinning');
   try {
     const data = await loadData();
-    renderTicker(data.stocks);
-    renderNewsSection(data.news);
-    renderTrends(data.trends);
-    if (data.rankings) renderRankings(data.rankings);
+    try { renderTicker(data.stocks || {}); } catch(e) { console.warn('ticker 오류:', e); }
+    try { renderNewsSection(data.news || {}); } catch(e) { console.warn('뉴스 오류:', e); }
+    try { if (data.trends) renderTrends(data.trends); } catch(e) { console.warn('트렌드 오류:', e); }
+    try { if (data.rankings) renderRankings(data.rankings); } catch(e) { console.warn('순위 오류:', e); }
   } catch(e) {
     console.error('data.json 로드 실패:', e);
   }
