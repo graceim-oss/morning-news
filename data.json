@@ -1,5 +1,5 @@
 {
-  "updated": "16:31:22",
+  "updated": "18:29:06",
   "news": {
     "wemade": [
       {
@@ -15,6 +15,13 @@
         "source": "지디넷코리아",
         "published": "Sat, 25 Jul 2026 01:16:12 GMT",
         "description": "'6천만 IP의 힘'…위메이드맥스 '윈드러너 키우기', 한국·대만 양대 마켓 1위&nbsp;&nbsp;지디넷코리아"
+      },
+      {
+        "title": "위메이드맥스 ‘윈드러너 키우기’, 출시 4일만에 양대마켓 인기 1위 - 파이낸셜투데이",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjaUt2UVdyUmZtNFhQcUs0aFNoeDFWMHFHWmJqa25iV1FCbHByeW5QQ05fMnhRS2xIdzlJZXRCLWJKMmg5NlJPWWM0TGJycl9iN2doR2p2bmZacmxLQUMwMGJyQzJpSC1Sb1HSAW5BVV95cUxOSXJpQU1QYmNwbmdBaWEycFBCWGRvU0xjZHVqelpnekpNQ2hwcHVHZVhIelVkclZnLXZJbmt3MGY2SklDZXhZZ3Z6WWJ4MGdKd2VfVHdZZnBjUFFCVmU2MkZYaHpNNlYzNzVZRGlFdw?oc=5",
+        "source": "파이낸셜투데이",
+        "published": "Sat, 25 Jul 2026 08:32:36 GMT",
+        "description": "위메이드맥스 ‘윈드러너 키우기’, 출시 4일만에 양대마켓 인기 1위&nbsp;&nbsp;파이낸셜투데이"
       },
       {
         "title": "美 크라켄 입성한 위믹스…커지는 실행력 '공백' - 딜사이트",
@@ -64,13 +71,6 @@
         "source": "디일렉",
         "published": "Tue, 21 Jul 2026 07:18:40 GMT",
         "description": "위메이드맥스, 방치형 신작 ‘윈드러너 키우기’ 한국·대만 출시&nbsp;&nbsp;디일렉"
-      },
-      {
-        "title": "위메이드플레이 ‘애니팡2’, 엔드 콘텐츠 5억 플레이 돌파… 10년 묵은 ‘집토끼’ 저력 - 비즈트리뷴",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBOVDlNN2haVkp4YlMyTk14ZEV5TkZ4TG5POGRseEppYTU0Q2VwVUtub0ZPOXFQU1hUVzUtQU9Zc2liTUtGWW9IVTFmZm93aEt6ekFkXzRjN2tlQ01ha0xveGpuQlA1NWFyT2xtaWtEU0w?oc=5",
-        "source": "비즈트리뷴",
-        "published": "Fri, 24 Jul 2026 12:41:43 GMT",
-        "description": "위메이드플레이 ‘애니팡2’, 엔드 콘텐츠 5억 플레이 돌파… 10년 묵은 ‘집토끼’ 저력&nbsp;&nbsp;비즈트리뷴"
       }
     ],
     "blockchain": [
@@ -96,18 +96,18 @@
         "description": "가상자산 가치, 시가총액만 보면 오판…FDV 함께 봐야 [e가상자산]&nbsp;&nbsp;v.daum.net"
       },
       {
+        "title": "코인보다 더 흔들린 코스피…10일 연속 사이드카의 진실 - ebn.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9Pb3kwam5aMzNDRVFSSGcyeUpGU0RJTENoaVE5cE1mQ2VGeVAyWmM5TmtOOFFkQnlKVFJkUVVva0tWZlg2WGtVSkFmX3MzbmhUR1ctUW5qQVBTaXlYNXJNbzQ0a0ZNNkUt?oc=5",
+        "source": "ebn.co.kr",
+        "published": "Sat, 25 Jul 2026 08:11:38 GMT",
+        "description": "코인보다 더 흔들린 코스피…10일 연속 사이드카의 진실&nbsp;&nbsp;ebn.co.kr"
+      },
+      {
         "title": "\"비트코인, 양자컴퓨터에 대응 어려워...카르다노가 대안\" - 블루밍비트",
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBDZWJDRjFzaU5tMnBpRnAzel9KWVZJaG9tSFZhTnVYT0hJc0cxSDRDNnR3TWl5aFZpM2oxRDFQYlNteEtmOW94ZzVwbVVlek5s?oc=5",
         "source": "블루밍비트",
         "published": "Fri, 24 Jul 2026 23:04:48 GMT",
         "description": "\"비트코인, 양자컴퓨터에 대응 어려워...카르다노가 대안\"&nbsp;&nbsp;블루밍비트"
-      },
-      {
-        "title": "비트코인 9400만원선… 美 클래리티법 불확실성에 약세 [주간코인시황] - IT조선",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1qbEF5Q1ZNVEJ1Ump5UFNETExsRzFPRUx1WDdyTHpWU3M1RXVKM0FUal9VQ1RiUFZBUEpxSnhZUGpJUE1tLXNRUG0tcGFZeExVV2k0WVdITFlaZXFKOFNKUjc0S3VYTzdhOUFyRU1fenLSAXRBVV95cUxPQ0J4XzI2a1ByWERfZjJqTWs4OTdJbWJIUHotakVkN1FoSkhialp1bm1SX2NYWDNmUTQzVFkzZTJvQ2YxSU5NYjZsMTlNSW5MdktRTUx6c0hkRTloUjN1TVViN3c1VkZ6WjBKTWt5X2RrZXpfVg?oc=5",
-        "source": "IT조선",
-        "published": "Fri, 24 Jul 2026 21:20:00 GMT",
-        "description": "비트코인 9400만원선… 美 클래리티법 불확실성에 약세 [주간코인시황]&nbsp;&nbsp;IT조선"
       },
       {
         "title": "[재산공개] 가상자산 최대 보유 1.1억원…대부분 수백만원대 - 연합뉴스",
@@ -117,25 +117,18 @@
         "description": "[재산공개] 가상자산 최대 보유 1.1억원…대부분 수백만원대&nbsp;&nbsp;연합뉴스"
       },
       {
-        "title": "\"기관 자금 유입에 밈코인 소외…DOGE·SHIB 시총 3년래 최저\" - TradingView",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1IUzFFbGhpOXRvaVBlaFZsbWNtS05oanRWOVZta19iUW45MXlYNElXQmI0bHdUX0pha08wbGhLalhzM0huMXB6QURfNG5pcm1teHl1aDJxU1hFM2laM0ZGQi1rN3E2bUhYeDV5bQ?oc=5",
-        "source": "TradingView",
-        "published": "Fri, 24 Jul 2026 12:04:21 GMT",
-        "description": "\"기관 자금 유입에 밈코인 소외…DOGE·SHIB 시총 3년래 최저\"&nbsp;&nbsp;TradingView"
+        "title": "비트코인 9400만원선… 美 클래리티법 불확실성에 약세 [주간코인시황] - IT조선",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1qbEF5Q1ZNVEJ1Ump5UFNETExsRzFPRUx1WDdyTHpWU3M1RXVKM0FUal9VQ1RiUFZBUEpxSnhZUGpJUE1tLXNRUG0tcGFZeExVV2k0WVdITFlaZXFKOFNKUjc0S3VYTzdhOUFyRU1fenLSAXRBVV95cUxPQ0J4XzI2a1ByWERfZjJqTWs4OTdJbWJIUHotakVkN1FoSkhialp1bm1SX2NYWDNmUTQzVFkzZTJvQ2YxSU5NYjZsMTlNSW5MdktRTUx6c0hkRTloUjN1TVViN3c1VkZ6WjBKTWt5X2RrZXpfVg?oc=5",
+        "source": "IT조선",
+        "published": "Fri, 24 Jul 2026 21:20:00 GMT",
+        "description": "비트코인 9400만원선… 美 클래리티법 불확실성에 약세 [주간코인시황]&nbsp;&nbsp;IT조선"
       },
       {
-        "title": "중동발 전쟁악재 반복…비트코인 6만6000달러 반납 - 머니투데이 - 머니투데이",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8tVXdCcHRKOExTcmhpc2NmZXk5M2NsVmVoTWFIekJqZV9hQnlCeVJieWpyWXE4YmhCd29yeC1rOEt6cFhTZlVvS0tNbVRoNGEtYVRHWDk4R3ZvTHVXYUJlMG5HTHpZR25j0gFuQVVfeXFMUHE4cldxQWI2Y3ZPd0huQjl0c0JhYlNVc1pwRU9UR3JCZ2s1NWNfQnBKVk5YSmdReEt6ajVDZ29qM1hFQThPTUNkLTNpMmNUVjF4bXg5N2VYa0FFUkdhVzN3MExfdlJkWDJRV09MaXc?oc=5",
-        "source": "머니투데이",
-        "published": "Fri, 24 Jul 2026 12:48:19 GMT",
-        "description": "중동발 전쟁악재 반복…비트코인 6만6000달러 반납 - 머니투데이&nbsp;&nbsp;머니투데이"
-      },
-      {
-        "title": "\"큰손이 '3조원' 베팅\"…비트코인 상승장 다시 시작될까 - 뉴시스",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA4OEtTS2hUQWgtQ3hkak9STnFLUHN6Vl9WZm1hODh0MW1UNC13dVZXdUZtZ09tTHdVZ3Z3T2JpNHZLYi10aVlLLVYxcHRJTDFDUENHTjViNUhKZmZjUjhhbdIBeEFVX3lxTE1aY0dYU0ktMUhPVFRrMFpTT0JhRkktVGtONEZFbWplc1lOMnpBZWk2QlQyZ1VfSkdnMV84emhVSFZ1VVRvOTQxN3hRUnhTY1Rhd3NYMWF2YjhLUEk1VTFVNWVTVl9CSGdYdjU5OVRpV3lxajZfVTFaRg?oc=5",
-        "source": "뉴시스",
-        "published": "Sat, 25 Jul 2026 00:05:00 GMT",
-        "description": "\"큰손이 '3조원' 베팅\"…비트코인 상승장 다시 시작될까&nbsp;&nbsp;뉴시스"
+        "title": "블록체인, 신뢰의 끈 - KDI 경제교육·정보센터",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOYVhMTnc0RWZwVktyenBaa0VhSmFUN2ViaUdkVll6Q2NORjBaSzhNY2EyM1V2eHdCNkphYl9BM1l1dG0zZmZNR3dleFlNU1FXZWtRbGdDNTM5ZTI3RGE4Ql8yVFlabHJvSFBRQklfbU9kdjJCT0loUkpWdmRuaWNDQg?oc=5",
+        "source": "KDI 경제교육·정보센터",
+        "published": "Fri, 24 Jul 2026 07:03:38 GMT",
+        "description": "블록체인, 신뢰의 끈&nbsp;&nbsp;KDI 경제교육·정보센터"
       },
       {
         "title": "카카오·토스, 美 서클과 원화 스테이블코인 협력 - 연합뉴스TV",
@@ -143,6 +136,13 @@
         "source": "연합뉴스TV",
         "published": "Thu, 23 Jul 2026 07:33:00 GMT",
         "description": "카카오·토스, 美 서클과 원화 스테이블코인 협력&nbsp;&nbsp;연합뉴스TV"
+      },
+      {
+        "title": "\"기관 자금 유입에 밈코인 소외…DOGE·SHIB 시총 3년래 최저\" - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1IUzFFbGhpOXRvaVBlaFZsbWNtS05oanRWOVZta19iUW45MXlYNElXQmI0bHdUX0pha08wbGhLalhzM0huMXB6QURfNG5pcm1teHl1aDJxU1hFM2laM0ZGQi1rN3E2bUhYeDV5bQ?oc=5",
+        "source": "TradingView",
+        "published": "Fri, 24 Jul 2026 12:04:21 GMT",
+        "description": "\"기관 자금 유입에 밈코인 소외…DOGE·SHIB 시총 3년래 최저\"&nbsp;&nbsp;TradingView"
       }
     ],
     "aiit": [
@@ -407,6 +407,13 @@
         "description": "춘천 남이섬, 생성형 AI 영상 공모전…여름 관광 콘텐츠 발굴&nbsp;&nbsp;연합뉴스"
       },
       {
+        "title": "생성형 AI, 국내 절반 이상 이용 경험 있어 - nhk.or.jp",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE05bjRkZzBQX0hnNjk2REcyMFJGUl9COUFpNUFrTW1RaXFueC1zbngtNEk4QTRpRHljM3hlVVJKbmRBa3gtUXdpaDNoOEUtdVY3WFRrWDluV2ppYl9PVVh5dTRR?oc=5",
+        "source": "nhk.or.jp",
+        "published": "Sat, 25 Jul 2026 07:08:37 GMT",
+        "description": "생성형 AI, 국내 절반 이상 이용 경험 있어&nbsp;&nbsp;nhk.or.jp"
+      },
+      {
         "title": "[속보] 젠슨황 \"'코리아AI' 구축협력…대한민국 LLM 개발계획도\" - 연합뉴스 한민족센터",
         "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBvSU1kWDU4T2hqVktzVk92Nm1iWDZfUi1rMVN0a1FCeTFBMmVYMUhPaWJhdXEtVTNmeFRMekkxdGNoR0U1bGhiZDBrcjhHN0NheXVaVlFSdFU4UjdpWUdFWjJlbEViZmFON18xdTR2aVg4U1Rh?oc=5",
         "source": "연합뉴스 한민족센터",
@@ -428,6 +435,13 @@
         "description": "[속보] 젠슨 황 “코리아AI' 구축 협력…한국 LLM 개발”&nbsp;&nbsp;bntnews.co.kr"
       },
       {
+        "title": "OpenAI는 ChatGPT Health 기능을 미국 내 모든 사용자에게 제공할 예정입니다. - Vietnam.vn",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZHhLRXpCbkNzRHNOVWNmdkV6TnhnVTUzNS1Uc0xyZGpSbThqN3pZTDI3Z00zUFBSNWRaTkFaSzhSS05qMlJlR3hRcXEtamdKTmxCVHFKZFRwcGVPYUJBaUxmcXAyMXVWY2ZqWUxhT0Q3bHFzLW10RW1ZVWlTajN2MmNXNEdVdFVYeFgxVE1ZN2kyNEtfc0lSQU9Xdw?oc=5",
+        "source": "Vietnam.vn",
+        "published": "Sat, 25 Jul 2026 07:49:55 GMT",
+        "description": "OpenAI는 ChatGPT Health 기능을 미국 내 모든 사용자에게 제공할 예정입니다.&nbsp;&nbsp;Vietnam.vn"
+      },
+      {
         "title": "딥노이드, 멀티모달 LLM 기반 의료영상 판독 기술 특허 획득 - IT비즈뉴스",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE92cUdOVUpZbEcydDB3VnZZWTliUTA4SG1nakZQNkRRMXNSdXZIcjUtaW1NOFQ1WUE4cXhRM2hlSmEzUkVEc2J4MWZDSnRadjhINzNFclB6OTYxNk1iVWxWeXBia1g5VEVUVk4yOQ?oc=5",
         "source": "IT비즈뉴스",
@@ -442,13 +456,6 @@
         "description": "LLM 시대 숨은 수혜주…아크릴, AI 인프라 경쟁력 부각&nbsp;&nbsp;핀포인트뉴스"
       },
       {
-        "title": "[OECD] “대학생 생성형 AI 사용 보편화…대학 정책은 못 따라가” - 교육플러스",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9lejg3NHlMX3oySnpkbUpiNmhoM25PazRId1p1ZEotYUxUaU84anRrUWh1WlNnVFZockF1d2g5bjRxQkNJODd3VjZpaTJXRk5LVnlJRWxjdzM4Z2R0MS1JNEJwck5CRmc?oc=5",
-        "source": "교육플러스",
-        "published": "Fri, 24 Jul 2026 13:19:35 GMT",
-        "description": "[OECD] “대학생 생성형 AI 사용 보편화…대학 정책은 못 따라가”&nbsp;&nbsp;교육플러스"
-      },
-      {
         "title": "대전시교육청, 교원 AI 영상 제작 역량 키운다 '생성형 AI 활용 단편영화 직무연수' 운영 - 한국강사신문",
         "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1pbDkwZnhYcVg3OTUtQXhKVTBFUWdFLUhVRUQ3YU5ic05pOFpqNEp0TS1kQ3JlaklPbldVQkhuS1lxb0JHLWxjWFhmZGVwTTB2RjEta3ZnaWNlUTVMek03eGVIUVpoVTRJVWJ4NWhITG0?oc=5",
         "source": "한국강사신문",
@@ -456,21 +463,21 @@
         "description": "대전시교육청, 교원 AI 영상 제작 역량 키운다 '생성형 AI 활용 단편영화 직무연수' 운영&nbsp;&nbsp;한국강사신문"
       },
       {
-        "title": "[속보]젠슨 황 \"한국 위한 LLM 개발…엔비디아 AI 연구원 韓 이주\" - 뉴스1",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9reG1QanUzeGo4Rm9zNEpMS3dxX1h6SGw4TjhCVzRDNzZ5UjZGUW5mdWtvaVhES0cwaUluSURJWmFfcjNiMWxsZG9TVHlReVVMR2R6SWU5YlJBTWc?oc=5",
-        "source": "뉴스1",
-        "published": "Fri, 24 Jul 2026 23:41:34 GMT",
-        "description": "[속보]젠슨 황 \"한국 위한 LLM 개발…엔비디아 AI 연구원 韓 이주\"&nbsp;&nbsp;뉴스1"
-      },
-      {
-        "title": "[샌프란 AI써밋] 젠슨황 \"대한민국 위한 LLM 개발하겠다\" - 포쓰저널",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBCeE5JVkJESVZPbzBMbWRyZmFXLVB5TUlyU1c1NE8xVEd0Q3V4am9xbVgwdVpodW1Cdm1MWl93VmlwUGhkYlI0YU95c05iLWxVSTExTGRiWUhZZktMS0JTekVaSDQ?oc=5",
-        "source": "포쓰저널",
-        "published": "Sat, 25 Jul 2026 01:00:34 GMT",
-        "description": "[샌프란 AI써밋] 젠슨황 \"대한민국 위한 LLM 개발하겠다\"&nbsp;&nbsp;포쓰저널"
+        "title": "[OECD] “대학생 생성형 AI 사용 보편화…대학 정책은 못 따라가” - 교육플러스",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9lejg3NHlMX3oySnpkbUpiNmhoM25PazRId1p1ZEotYUxUaU84anRrUWh1WlNnVFZockF1d2g5bjRxQkNJODd3VjZpaTJXRk5LVnlJRWxjdzM4Z2R0MS1JNEJwck5CRmc?oc=5",
+        "source": "교육플러스",
+        "published": "Fri, 24 Jul 2026 13:19:35 GMT",
+        "description": "[OECD] “대학생 생성형 AI 사용 보편화…대학 정책은 못 따라가”&nbsp;&nbsp;교육플러스"
       }
     ],
     "s3_game": [
+      {
+        "title": "쇼와 아메리칸 스토리 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ONXZUYmEyUURKZ3dHMzR6ZEc4eGFEQXBrX1pWZ2ZaU2kzUUdMbUdXSFpnRzRxSFZCb3R4ekJsWVlpSmVDNDhvT3NPT2QtZTh2eWhMRUd0OTRORW9RZzNCNUYxYlo1aEkzSkE?oc=5",
+        "source": "게임메카",
+        "published": "Sat, 25 Jul 2026 05:15:47 GMT",
+        "description": "쇼와 아메리칸 스토리&nbsp;&nbsp;게임메카"
+      },
       {
         "title": "엔씨 모바일 게임 '아이온 클래식' 中 외자판호 발급 - v.daum.net",
         "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE53ZDBOZkwxb0huMmVZUlI5UFI2bWJpMWUzUVhUTVRvSGkwSjRvQmhGcHV3Tk9lT0ZTS2tkUmE2bm5oMEdBQlNUbkVsTWh2U2NQVVR1Sw?oc=5",
@@ -491,13 +498,6 @@
         "source": "토요경제",
         "published": "Fri, 24 Jul 2026 05:15:19 GMT",
         "description": "삼성 ‘갤럭시 폴더블폰’ 출시 맞춰…넥슨·넷마블, 인기 게임 IP 총출동&nbsp;&nbsp;토요경제"
-      },
-      {
-        "title": "누적 조회 10억…'샹그릴라 프론티어' 모바일 게임, 티저 사이트 오픈 - 콕스뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9SZC1CdnlaN1FFUUpPQ3lLaHdLSGdOOE9nMFR3dUkwbjRtRnFwdnlFWE1oTGtIT3Q4VjVRUkJWV2pIS1I1UjFuNWFFb2VXdWZDTWV6VTA2UDBaRHR1ODFyMFllSHB6TkhxTXc?oc=5",
-        "source": "콕스뉴스",
-        "published": "Thu, 23 Jul 2026 09:24:25 GMT",
-        "description": "누적 조회 10억…'샹그릴라 프론티어' 모바일 게임, 티저 사이트 오픈&nbsp;&nbsp;콕스뉴스"
       },
       {
         "title": "[주간 게임 순위] 넷마블 '솔' 구글 1위 질주…스팀 차트 뒤흔든 신작 '드래곤소드' - 팝콘뉴스",
@@ -535,11 +535,11 @@
         "description": "홀로라이브 첫 공식 스마트폰 게임 '홀로라이브 드림즈' 전 세계 동시 출시&nbsp;&nbsp;톱셀럽뉴스"
       },
       {
-        "title": "카발레드 이번에 업뎃한게 - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQYmJlbW43R1FsUzlkeldwLWJzTnhWbGExcnVRTUY4WXhERVNLMFZiNlBMbjFUUnh0YzVtVUFEVEZ3cnJqbHlTcjlsY3dxVGVudFJQanlfa2pCZ1V3Z004eEJ2VkhDem5oRUF4eTI2dlVFWnoyUHVmRTN1MHlscXBneFJxejRfdlpWSEJOakdDM3lybURRS3c?oc=5",
-        "source": "게임메카",
-        "published": "Thu, 23 Jul 2026 23:40:01 GMT",
-        "description": "카발레드 이번에 업뎃한게&nbsp;&nbsp;게임메카"
+        "title": "모바일게 시장 국산 RPG·외산 전략 강세 - 더게임스",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE54WHdKWm1hZndzWWF4RkMzb0RRVDc4eHZQQUhGR3RtaDRndC03X2tFck54UGljRDZHbUdwUlVXNmtJczFUc3J5T3A5VnF2NkQ1emt4VVBhNDc3cmhCZ3V6TUtzdHIzZ0ZnNkZ5Rg?oc=5",
+        "source": "더게임스",
+        "published": "Fri, 24 Jul 2026 00:50:24 GMT",
+        "description": "모바일게 시장 국산 RPG·외산 전략 강세&nbsp;&nbsp;더게임스"
       }
     ],
     "s3_wemade": [
@@ -549,6 +549,13 @@
         "source": "전자신문",
         "published": "Sat, 25 Jul 2026 04:03:15 GMT",
         "description": "위메이드맥스, '윈드러너 키우기' 국내 양대 마켓 인기 1위 달성&nbsp;&nbsp;전자신문"
+      },
+      {
+        "title": "위메이드맥스 ‘윈드러너 키우기’, 출시 4일만에 양대마켓 인기 1위 - 파이낸셜투데이",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjaUt2UVdyUmZtNFhQcUs0aFNoeDFWMHFHWmJqa25iV1FCbHByeW5QQ05fMnhRS2xIdzlJZXRCLWJKMmg5NlJPWWM0TGJycl9iN2doR2p2bmZacmxLQUMwMGJyQzJpSC1Sb1HSAW5BVV95cUxOSXJpQU1QYmNwbmdBaWEycFBCWGRvU0xjZHVqelpnekpNQ2hwcHVHZVhIelVkclZnLXZJbmt3MGY2SklDZXhZZ3Z6WWJ4MGdKd2VfVHdZZnBjUFFCVmU2MkZYaHpNNlYzNzVZRGlFdw?oc=5",
+        "source": "파이낸셜투데이",
+        "published": "Sat, 25 Jul 2026 08:32:36 GMT",
+        "description": "위메이드맥스 ‘윈드러너 키우기’, 출시 4일만에 양대마켓 인기 1위&nbsp;&nbsp;파이낸셜투데이"
       },
       {
         "title": "'6천만 IP의 힘'…위메이드맥스 '윈드러너 키우기', 한국·대만 양대 마켓 1위 - 지디넷코리아",
@@ -587,7 +594,7 @@
       },
       {
         "title": "위메이드플레이 ‘애니팡2’, 엔드 콘텐츠 5억 플레이 돌파… 10년 묵은 ‘집토끼’ 저력 - 비즈트리뷴",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBOVDlNN2haVkp4YlMyTk14ZEV5TkZ4TG5POGRseEppYTU0Q2VwVUtub0ZPOXFQU1hUVzUtQU9Zc2liTUtGWW9IVTFmZm93aEt6ekFkXzRjN2tlQ01ha0xveGpuQlA1NWFyT2xtaWtEU0w?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeXBNNm1Vb2JxbTYzX2lwTHI4S3J1OFBKS0lCT0ZFdl9ZeE1ndVh1V1dkaE1NeE85TWx3aDNTXzJCQXIxWDBEQzBiZS0xUGxxQmpMamJEVzRHT29DWjVCSU5EaXB0V1BGNHY5a1FUZ1lrTE5ubFBSU1NZbmpjSWRmLUJ6Y3N4X2xkc1dqYjNxY3pRc1NSTGJBNQ?oc=5",
         "source": "비즈트리뷴",
         "published": "Fri, 24 Jul 2026 12:41:43 GMT",
         "description": "위메이드플레이 ‘애니팡2’, 엔드 콘텐츠 5억 플레이 돌파… 10년 묵은 ‘집토끼’ 저력&nbsp;&nbsp;비즈트리뷴"
@@ -605,13 +612,6 @@
         "source": "NSP통신",
         "published": "Fri, 24 Jul 2026 05:25:44 GMT",
         "description": "위메이드플레이, 애니팡2 엔드 콘텐츠 5억 건 돌파&nbsp;&nbsp;NSP통신"
-      },
-      {
-        "title": "위메이드플레이 '애니팡2', 엔드 콘텐츠 누적 플레이 5억건 돌파 - 아시아에이",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBvSWYxNUI3RXBxUzYzVXhUbWxvZ1ptVVh6ZUhxeVNuSFdvQjRiTW5RdWM2bWNJYXN5T2tRaUU4ZndYTGJBYy1JSDFQU25OQ0x6YndHcWU5dE4yV3o1amliNHBVdFlfT2NUVnfSAW5BVV95cUxQWTFrOTBNMWowUGdraWNKUENiVzFvREZVcFVBUjdJWUZSQW5GSlY2bmpreWpVaTFtTUpvWHo2b3lQcFNMVkNZMjduU0F4cXBUbEpFMWtIS3dOVW8yOHZITGQ3TlNFa0dIZlhMeTdkZw?oc=5",
-        "source": "아시아에이",
-        "published": "Fri, 24 Jul 2026 02:53:05 GMT",
-        "description": "위메이드플레이 '애니팡2', 엔드 콘텐츠 누적 플레이 5억건 돌파&nbsp;&nbsp;아시아에이"
       }
     ],
     "s3_blockchain": [
@@ -658,18 +658,18 @@
         "description": "컴투스, 내달 7일 신작 MMORPG ‘제우스: 오만의 신’ 쇼케이스 개최&nbsp;&nbsp;데일리포스트"
       },
       {
+        "title": "암호화폐 인프라 기반 국제 송금: 8570억 달러의 기회 - HackerNoon",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRS1PVnl2aW9aSmhkUlh0eVhDNVdtSkZVLVZYMU1PNGU2dDBCUWFlYnZxYnQzaXJsYk9VVVlMWHhKRi13NGNuazBTZG1IWFduY2NBNGk2cVd6anBDZi01Zy1NLTBJeGNNSHM0S1ZfMm1OVVE5Q2o4b3U5M3BFbWFRUGxjejVtd3lRUHBLWW0yU3ZfWUZCcWRqM1pUVEZKVFhNYjBSMHBadTRXZw?oc=5",
+        "source": "HackerNoon",
+        "published": "Fri, 24 Jul 2026 15:28:11 GMT",
+        "description": "암호화폐 인프라 기반 국제 송금: 8570억 달러의 기회&nbsp;&nbsp;HackerNoon"
+      },
+      {
         "title": "넥써쓰 SLG 신작 '프로스트 킹덤' 출시 - 게임와이",
         "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAzZGFvcF85c0dmLVlmU1FiZ2J4UVc2V1NheEstQW5NSk90MWo1QXlwU00tYjExd0pVcFdtTE9ONnR2c2ZCWm42ejRIVEdTSTJUaFI0eHdBbGZpWFQ0aXdDRTFxUlZjQdIBakFVX3lxTE5sSVJyNk9XbXV5TmVUdUI3UmNSSUlJbGFtcDdIOGc5UUpWeTdZWG1xNm9ZbWdzRHZoZ0dLR1VIRmNjcUNEeDhuWVdXeEx4VElqT3JJMDBZU0hTVUFBV3hNNE5TbGJHRkN0OUE?oc=5",
         "source": "게임와이",
         "published": "Fri, 24 Jul 2026 02:14:57 GMT",
         "description": "넥써쓰 SLG 신작 '프로스트 킹덤' 출시&nbsp;&nbsp;게임와이"
-      },
-      {
-        "title": "원스토어와 첫 리워드 연동…넥써쓰 '프로스트 킹덤' 흥행 시험대 - 네이트",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9LTTRGTDFhaGJqUHZ5cWd4c1NyU25xSmVZSFdRMlFjX3JIUEpYUFlTUEo4SnptMmVCNU1KSkFydmMwaWJhZEhESlBLSjRyYm41Z2Fv?oc=5",
-        "source": "네이트",
-        "published": "Fri, 24 Jul 2026 09:32:00 GMT",
-        "description": "원스토어와 첫 리워드 연동…넥써쓰 '프로스트 킹덤' 흥행 시험대&nbsp;&nbsp;네이트"
       },
       {
         "title": "넥써쓰, 첫 단독 퍼블리싱 '프로스트 킹덤' 출격...게임·토큰·크리에이터 연결하는 '웹3' 생태계 가동 - 테크M",
@@ -832,8 +832,8 @@
       "sign": "-"
     },
     "wemix": {
-      "krw": 342.24,
-      "chg24h": -0.8301034725836969,
+      "krw": 342.77,
+      "chg24h": -0.7076125735808219,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -855,18 +855,18 @@
         "description": "인디게임 글로벌 퍼블리싱 키운다…레드브릭하우스, 카카오벤처스 등 투자 유치&nbsp;&nbsp;디지털데일리"
       },
       {
+        "title": "일 매출 200만에서 2억...액션핏의 글로벌 모바일 시장 생존 공식 - 플레이포럼",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBEaDBHRmRiT1o4cEpsRHFCSnVqZGtSM2dualdiVVpOcm1scEcxVC0tazFfcW9fTktfd2FuTTlTU3VmcnpGa2VfOUhHMTFKa0V1Q3hldkFkcEtKaUJsTGpXVWJCV3dOOW5MY2tDQg?oc=5",
+        "source": "플레이포럼",
+        "published": "Tue, 21 Jul 2026 06:03:13 GMT",
+        "description": "일 매출 200만에서 2억...액션핏의 글로벌 모바일 시장 생존 공식&nbsp;&nbsp;플레이포럼"
+      },
+      {
         "title": "게임업계, 8월 獨게임스컴 집결…글로벌 흥행경쟁 막올랐다 - 서울이코노미뉴스",
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5GTUFMRG53QkNuU1ZuTktpa3d3RWF3NXBEeG1YS055ckJIVkhKWFlkV2hOVjBab3d1a0wyTm5xMTZCWmZEM2x4elhEY1dBS0tBVGszRmhoOVNIR3hyZ2ZvUkxvc3d4RFVrZTdBa0J3?oc=5",
         "source": "서울이코노미뉴스",
         "published": "Thu, 23 Jul 2026 02:54:59 GMT",
         "description": "게임업계, 8월 獨게임스컴 집결…글로벌 흥행경쟁 막올랐다&nbsp;&nbsp;서울이코노미뉴스"
-      },
-      {
-        "title": "[중국 비즈니스 트렌드&amp;동향] 단말·자산·시스템, 중국이 게임의 규칙을 다시 쓴다 - 플래텀(Platum)",
-        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1nNU8yRTBPejRZTTJueW9VM2E4WXRiaE1oS21MNXpGX1AzbUdIbGd0OTBoYW9KMzVERWxrVnZDWkdtcDlWWUNrVg?oc=5",
-        "source": "플래텀(Platum)",
-        "published": "Mon, 20 Jul 2026 23:01:00 GMT",
-        "description": "[중국 비즈니스 트렌드&동향] 단말·자산·시스템, 중국이 게임의 규칙을 다시 쓴다&nbsp;&nbsp;플래텀(Platum)"
       },
       {
         "title": "‘붉은사막’에 달라진 K-게임 위상 … 펄어비스, 日을 붉게 물들이다 - 뉴데일리",
@@ -997,11 +997,11 @@
           "description": "9200억원에 떠난 창업자…위메이드 매각이 던진 한국 게임산업의 질문&nbsp;&nbsp;스포츠조선"
         },
         {
-          "title": "위메이드맥스, '윈드러너 키우기' 국내 양대 마켓 인기 1위 달성 - 전자신문",
-          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9KUGNaSHpDV1JQNjVZaGZvZVZWR0pObWJUOF9Sazk5dzFRYlRGWVF3RGt0X200VDUzZlVTcm5RUlVLU2h5MWdQWGJTdmZBQQ?oc=5",
-          "source": "전자신문",
-          "published": "Sat, 25 Jul 2026 04:03:15 GMT",
-          "description": "위메이드맥스, '윈드러너 키우기' 국내 양대 마켓 인기 1위 달성&nbsp;&nbsp;전자신문"
+          "title": "'6천만 IP의 힘'…위메이드맥스 '윈드러너 키우기', 한국·대만 양대 마켓 1위 - 지디넷코리아",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE96UWxhZU5QMHl6N1FfeVFQWWZYVVRrVERET2JpakhEOXhibkpvUGl5N09PV25SWTZsRFJGckRkSlJWdHRNYUs2ZHlRcmItSldKVWNicDRR?oc=5",
+          "source": "지디넷코리아",
+          "published": "Sat, 25 Jul 2026 01:16:12 GMT",
+          "description": "'6천만 IP의 힘'…위메이드맥스 '윈드러너 키우기', 한국·대만 양대 마켓 1위&nbsp;&nbsp;지디넷코리아"
         }
       ],
       "ncgl": [
