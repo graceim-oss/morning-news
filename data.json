@@ -1,7 +1,14 @@
 {
-  "updated": "01:49:34",
+  "updated": "02:55:12",
   "news": {
     "wemade": [
+      {
+        "title": "위믹스, WEMIX3.0 보안 사고 조사…스마트 컨트랙트 소유권 침해 가능성 - IT타임스",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1jQnc2Rk40UkhxYk5aSVUzbU9jWmJzbEpIQUkyc2dUTDJ2TVVGeEpnNEhMM3lEU05adzBuSjI5NjZaM04zRmNzUHVtYTMwS0NZR3F4M25JYlBob3RfZDlrRXhRSm1NQXVP?oc=5",
+        "source": "IT타임스",
+        "published": "Sun, 26 Jul 2026 16:36:29 GMT",
+        "description": "위믹스, WEMIX3.0 보안 사고 조사…스마트 컨트랙트 소유권 침해 가능성&nbsp;&nbsp;IT타임스"
+      },
       {
         "title": "[겜플] 아듀, 위메이드 - 머니투데이 - 머니투데이",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBkM3c0dHVYZGFsWEw5a1hnM2VCMjV5S1N1cUFJeGRWT0xQRjhMOXJCekxjMEwwNFk0N3ZEdjltaTN2aUZIdElLUVNwZVcwdmk0VjEzeDI0eDZSRnRjZjJjdmhQbTgxSGfSAWxBVV95cUxQNXc5MzByYTVlMXZpdWJKdW13MTFuZmh5cGZhZUI5a1B5WG43My12TXlwVmhwR2FDWlpLN0NZdWltTlppSE9oY2Rwc3gyenpNQWdKSFByYllNYkpWTlktSFpsQzRVUVR2TXkxdFk?oc=5",
@@ -64,13 +71,6 @@
         "source": "edaily.co.kr",
         "published": "Wed, 15 Jul 2026 02:41:21 GMT",
         "description": "위메이드, '스테이블넷 월렛 버전 2' 공개&nbsp;&nbsp;edaily.co.kr"
-      },
-      {
-        "title": "위메이드맥스 ‘윈드러너 키우기’, 출시 4일만에 양대마켓 인기 1위 - 파이낸셜투데이",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjaUt2UVdyUmZtNFhQcUs0aFNoeDFWMHFHWmJqa25iV1FCbHByeW5QQ05fMnhRS2xIdzlJZXRCLWJKMmg5NlJPWWM0TGJycl9iN2doR2p2bmZacmxLQUMwMGJyQzJpSC1Sb1HSAW5BVV95cUxOSXJpQU1QYmNwbmdBaWEycFBCWGRvU0xjZHVqelpnekpNQ2hwcHVHZVhIelVkclZnLXZJbmt3MGY2SklDZXhZZ3Z6WWJ4MGdKd2VfVHdZZnBjUFFCVmU2MkZYaHpNNlYzNzVZRGlFdw?oc=5",
-        "source": "파이낸셜투데이",
-        "published": "Sat, 25 Jul 2026 08:32:36 GMT",
-        "description": "위메이드맥스 ‘윈드러너 키우기’, 출시 4일만에 양대마켓 인기 1위&nbsp;&nbsp;파이낸셜투데이"
       }
     ],
     "blockchain": [
@@ -131,11 +131,11 @@
         "description": "“금융업ㆍ가상자산시장 경계 무너진다”…글로벌 시장, ‘슈퍼앱’ 경쟁 본격화&nbsp;&nbsp;대한경제"
       },
       {
-        "title": "국민은행, JP모건과 협력… 블록체인 기반 수출입 기업결제 지원 - 조선비즈 - Chosunbiz",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQY0VKUEVfZjkwOExZeXl2TmIwRktEczdhbWt2bmhZT0xrTTJrNDdrVUhDV3hrLVR1SHRoQWhUNUFUVnYyRHdEVFFRNHFCbHphdk9YazJBWnZzTEtiSUJ6YWhfUEs5c3BYcUZQdXpXZWp1WDFYcWNfSU9lOW9leG1qRtIBlAFBVV95cUxQVDlHTDF2eVV6eFE5TWVqcHkxX3lJNkc3cUd4SDRoamQ4Z01jVFZNbExqc2ZkZFdfeE9TcEhRNXVXekpTc2hWMWxnamVfQUtfSVQ0TGYwdUJpeUJqTHlCcFVmanY3bHNUWXpBYkZWUWd1ci1SR0wxM2kxczY5NHc4UjJKWVNCTVNiVnZaRHpBV0FJeXFD?oc=5",
-        "source": "Chosunbiz",
-        "published": "Sun, 26 Jul 2026 04:18:00 GMT",
-        "description": "국민은행, JP모건과 협력… 블록체인 기반 수출입 기업결제 지원 - 조선비즈&nbsp;&nbsp;Chosunbiz"
+        "title": "블록체인, 신뢰의 끈 - KDI 경제교육·정보센터",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPRWhma1ZCLXREWjNsSEFmb09PYWUwTVVPRk10Q3JCcS13ZVUtZ3pyZ3BnVGpPQmhGZ3liX0YtZE1RZGhBWHh2bHJKdE5jcHZZOWpyRFhSNEQyaEVRdG11OEoyQWxvSEZ5VW1BWFRyU19ZTGJweWR0VzdnaDlUNmFKYzRCeElJR0VrT2t6S3VBUnpPM2NsTnhRVg?oc=5",
+        "source": "KDI 경제교육·정보센터",
+        "published": "Fri, 24 Jul 2026 07:09:34 GMT",
+        "description": "블록체인, 신뢰의 끈&nbsp;&nbsp;KDI 경제교육·정보센터"
       },
       {
         "title": "코빗 품은 미래에셋·코인원 올라탄 한투…증권사 STO 선점전 - 한국경제",
@@ -166,6 +166,20 @@
         "source": "IT조선",
         "published": "Thu, 23 Jul 2026 21:00:00 GMT",
         "description": "﻿54GB 모델을 브라우저 탭 하나에 접어 넣다﻿ [정원훈의 AI 트렌드]&nbsp;&nbsp;IT조선"
+      },
+      {
+        "title": "AI가 만든 티를 없애는 랜딩페이지 디자인 꿀팁! - 브런치",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBKRVF2a21FMG5zNk1BeW01NFVHekJ0emtPc2k3VEh6R1dyTW40Q2N4cnVQN3ZCUER1TG0xSEI1T2VCLXNQNFE?oc=5",
+        "source": "브런치",
+        "published": "Sun, 26 Jul 2026 03:38:43 GMT",
+        "description": "AI가 만든 티를 없애는 랜딩페이지 디자인 꿀팁!&nbsp;&nbsp;브런치"
+      },
+      {
+        "title": "[인공지능 시대의 디자인] 오픈AI는 왜 키보드를 디자인 했을까? - mobiinside.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQM0I4WUg0bVlXY05KYnN5ZHdTWEkyMEd5SGhLN29CU0tHM0lKLUUtb3k3Rmxfek1SYmJaXy1saXJCbjNxVHk1SzBmQ2RjR0hNWmdvY3hMWV8tdzRKQ1lrWmdHSFVtZGhUaWV0R0ltb1p6RXpBOG10M2MwaEdEQVEzRjdfZHR0aW9I?oc=5",
+        "source": "mobiinside.co.kr",
+        "published": "Fri, 24 Jul 2026 10:40:55 GMT",
+        "description": "[인공지능 시대의 디자인] 오픈AI는 왜 키보드를 디자인 했을까?&nbsp;&nbsp;mobiinside.co.kr"
       },
       {
         "title": "구독 다이어트 시대…OTT는 끊고, AI는 남겼다 [비크닉] - 중앙일보",
@@ -201,20 +215,6 @@
         "source": "AI타임스",
         "published": "Sat, 25 Jul 2026 06:49:39 GMT",
         "description": "[AI 이슈 트렌드] 쿠팡 화재·삼전닉스 레버리지 논란...BTS 월드컵·영화 '호프'도 눈길&nbsp;&nbsp;AI타임스"
-      },
-      {
-        "title": "앱스토어의 Vibe 코딩 트렌드: AI 기반 프로그래밍과 애플의 검열 문제. - Vietnam.vn",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOY3FJNUVJZTZBc1ZXWGxpa2ZaRlppRmdHTW5mT0Y0VUlHTWxBdU1oenVoOG8tQ0gxQVRjUlFoemlFaW9UOHpIUmpESVVpbWFEeWl2WHhldmZheEFkemZMNkpEQkhCVTVELTRudS1aWU5mUi1WWDQtY1VZZm5XMElVYVFIUmpGcEViVWJCN1dsMEoxbGM2S21GVmd3ZG5ENFJ5MElpM3hJdVN0R2lrb29hZ2VB?oc=5",
-        "source": "Vietnam.vn",
-        "published": "Fri, 24 Jul 2026 06:47:27 GMT",
-        "description": "앱스토어의 Vibe 코딩 트렌드: AI 기반 프로그래밍과 애플의 검열 문제.&nbsp;&nbsp;Vietnam.vn"
-      },
-      {
-        "title": "유전 알고리즘 룰렛 휠 코드 : 새로운 트렌드와 발전 방향 - 톱 5 비교 - les24heures.fr",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8wbExjTDBJV3NqcGp5Mi14S05SYlpCVTFoM1dBVkRiT25ka1RYRVJDWnZRQTUyWDF5S093QmJfZEhRWkV4ODJ6bmZuWnhGYW10SDlpaVlwLXFKN2Q0bFN5blM4UmNLRG9F?oc=5",
-        "source": "les24heures.fr",
-        "published": "Fri, 24 Jul 2026 21:03:46 GMT",
-        "description": "유전 알고리즘 룰렛 휠 코드 : 새로운 트렌드와 발전 방향 - 톱 5 비교&nbsp;&nbsp;les24heures.fr"
       }
     ],
     "clipping": [
@@ -291,18 +291,18 @@
         "description": "[여가 브리핑] 에어비앤비가 말하는 ‘완벽하지 않은 여행’이란?&nbsp;&nbsp;mobiinside.co.kr"
       },
       {
-        "title": "“전통시장부터 샤오홍슈까지” 퍼뮤니케이션, 전 채널 아우르는 종합 광고사로 급부상 - 뉴스로드",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9HTkpES0k1MWdQdWxsQ2NNM3lxd1lTVEhPb2taWF94eW9JMXB2enp4TVc4XzNJdk5RYnY3YWF1RU9USWpBMTdTckRsbEZnMUJXOW5EbWlpN0Z3aTlRRjhYTkRQWHRMTlpxdnIyT3piUdIBb0FVX3lxTE9HTkpES0k1MWdQdWxsQ2NNM3lxd1lTVEhPb2taWF94eW9JMXB2enp4TVc4XzNJdk5RYnY3YWF1RU9USWpBMTdTckRsbEZnMUJXOW5EbWlpN0Z3aTlRRjhYTkRQWHRMTlpxdnIyT3piUQ?oc=5",
-        "source": "뉴스로드",
-        "published": "Fri, 24 Jul 2026 06:39:13 GMT",
-        "description": "“전통시장부터 샤오홍슈까지” 퍼뮤니케이션, 전 채널 아우르는 종합 광고사로 급부상&nbsp;&nbsp;뉴스로드"
-      },
-      {
         "title": "'동원 효자' 美 스타키스트, 브랜드 리뉴얼 착수…톰브라스와 파트너십 - 더구루",
         "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5KVGVsODdqLWhyY3RkdGJxXzBpdVo2Y1N5Qm9YV25PS1NYSEQ0dUNoeFRIaEdYdG55a0ZDcDRXQW1VelJCVTBmelZwSHI4d2x6a05lY2xDc29IUjRwRWI3aTFyQ3JkQQ?oc=5",
         "source": "더구루",
         "published": "Fri, 24 Jul 2026 00:17:13 GMT",
         "description": "'동원 효자' 美 스타키스트, 브랜드 리뉴얼 착수…톰브라스와 파트너십&nbsp;&nbsp;더구루"
+      },
+      {
+        "title": "“전통시장부터 샤오홍슈까지” 퍼뮤니케이션, 전 채널 아우르는 종합 광고사로 급부상 - 뉴스로드",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1vLUY3ZXhJWlJ0cWFNQU5tbEc0WGVnay0yaENKMVh0UEVhUnhIYnRvT3d1dmFScTd1a3drc2w3Y3ZYLUtaSDR0Tk80OG5NZWpIQm1fczZOSEUxOVBWV0N1QlNOMHZXbDYwd0cw0gFvQVVfeXFMT0dOSkRLSTUxZ1B1bGxDY00zeXF3WVNUSE9va1pYX3h5b0kxcHZ6enhNVzhfM0l2TlFidjdhYXVFT1RJakExN1NyRGxsRmcxQlc5bkRtaWk3RndpOVFGOFhORFBYdExOWnF2cjJPemJR?oc=5",
+        "source": "뉴스로드",
+        "published": "Fri, 24 Jul 2026 05:39:09 GMT",
+        "description": "“전통시장부터 샤오홍슈까지” 퍼뮤니케이션, 전 채널 아우르는 종합 광고사로 급부상&nbsp;&nbsp;뉴스로드"
       },
       {
         "title": "퍼뮤니케이션, 디지털 마케팅부터 샤오홍슈 마케팅까지 사업 영역 운영 - 메가경제",
@@ -333,6 +333,13 @@
         "source": "Marketing Dive",
         "published": "Wed, 22 Jul 2026 14:43:53 GMT",
         "description": "Hanes embraces risqué marketing in creative shakeup for basics brand&nbsp;&nbsp;Marketing Dive"
+      },
+      {
+        "title": "Quench Wins AOR For Home Run Inn, Preps Marketing Campaign 07/21/2026 - MediaPost",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZ0dROEFqdU5Va2lVY0RzcFh3bzU2ZDNjYUhBdlJfU01uTmRkdnQzVTE5Y05hZl9qSUpwQ003M3J1MTRCXzlfUUxQbjJFYUN6blFwWmxHUU5nenRhdnViTUo4TEp0SXZRczJzMEs4VWhVX0tYRVpybkFyc1pLY082MFVaUjZfM2RWQVVuMTdqSFJKVDJLUG5BRjQ3M1FYNU5sV2pjblJMblQxOUx1MnlnMFNBSTFKYzVRWjVXRVN0aw?oc=5",
+        "source": "MediaPost",
+        "published": "Mon, 20 Jul 2026 17:11:08 GMT",
+        "description": "Quench Wins AOR For Home Run Inn, Preps Marketing Campaign 07/21/2026&nbsp;&nbsp;MediaPost"
       },
       {
         "title": "Grading 6 purpose marketing ads—expert weighs in on Claude, Polaroid and more - Ad Age",
@@ -389,13 +396,6 @@
         "source": "Storyboard18",
         "published": "Mon, 20 Jul 2026 03:21:01 GMT",
         "description": "AI-powered in-house marketing teams gain ground as companies seek speed and cost efficiencies&nbsp;&nbsp;Storyboard18"
-      },
-      {
-        "title": "The latest AI-powered martech news and releases - MarTech",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBra2tjM1Z6R0tQZmxSUHdPTFNsNlczNWdlUjRLVFFMUEtBMHlTSnJxTnJ5dUNPMFNFeXFzdkxDV25pX0l1eWp3bXJSOTZyRzlORm9CaU05S25iMVUzdVMxTHZzeGc5eFNOTDVHRHpxZVkwY09hWEtn?oc=5",
-        "source": "MarTech",
-        "published": "Thu, 23 Jul 2026 07:00:00 GMT",
-        "description": "The latest AI-powered martech news and releases&nbsp;&nbsp;MarTech"
       }
     ],
     "s3_ai": [
@@ -479,11 +479,25 @@
         "description": "모바일 게임과 도박에 빠진 우리 자녀가 위험하다&nbsp;&nbsp;홍성신문"
       },
       {
+        "title": "Atari, Universal과 10개 게임 IP 영화화 계약 체결 - games.gg",
+        "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPdUhLM09iVzdUd3BDRWhuWkUySjN0UTVWdnVrZTlhUG9OTUY4XzBocXlQX3ZlNldSakRnbzRiVDlfZ05tQ2dRZDREZXZlUlFCV00tN0IyLTFpcld1bUFQekJLaklyRDNjUGVTMnV3b0hPWE9OVnJUa2lFeUw5blJsZ0FlLWRMNktmRXkyLXBqeDlRT18wTEsxRlBoZG81S1MwWGEyd2g2d3RzUER4aVB0TTJ4amI5UDNlanpNcDNTcmdmUmpEWEVjaFJ3bV9USzU2SmRaTC11UjR2UFNkUUY2aWNyNFI?oc=5",
+        "source": "games.gg",
+        "published": "Sun, 26 Jul 2026 16:03:55 GMT",
+        "description": "Atari, Universal과 10개 게임 IP 영화화 계약 체결&nbsp;&nbsp;games.gg"
+      },
+      {
         "title": "\"폴더블과 게임 IP의 역대급 만남\"…게이머 팬심 사로잡는다 - 네이트",
         "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBCbHkyY2JBRE5COTFOV3Jkd0U5NFlmV1hDNGJ5WUVKQTJQam8yVnZ6Q1l6WUNJeUxaRDd1dE9GSFdyU2VXdlpNS3UzTE5WN3J0c2Rfc2JtcGxKSmRSakdicA?oc=5",
         "source": "네이트",
         "published": "Sun, 26 Jul 2026 05:36:00 GMT",
         "description": "\"폴더블과 게임 IP의 역대급 만남\"…게이머 팬심 사로잡는다&nbsp;&nbsp;네이트"
+      },
+      {
+        "title": "광고없는 모바일게임 을 통한 성공 전략: 실제 사례와 결과 - 업계 전문가들의 조언 - les24heures.fr",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5pY1JMM0NpZDBYMUQtZW9iMG03TTNRbEgtTFRWTEhDSjNpMGRuMlB5VHcwc3V6d1IybFdHYmY0dktsMmdfTlZFY0lmckx0ZHdTWnRZMjh1aUczVWh1Wm45Qm9LcVRBZw?oc=5",
+        "source": "les24heures.fr",
+        "published": "Sat, 25 Jul 2026 17:38:56 GMT",
+        "description": "광고없는 모바일게임 을 통한 성공 전략: 실제 사례와 결과 - 업계 전문가들의 조언&nbsp;&nbsp;les24heures.fr"
       },
       {
         "title": "\"폴더블과 게임 IP의 역대급 만남\"… 게이머 팬심 사로잡는다 - edaily.co.kr",
@@ -493,22 +507,8 @@
         "description": "\"폴더블과 게임 IP의 역대급 만남\"… 게이머 팬심 사로잡는다&nbsp;&nbsp;edaily.co.kr"
       },
       {
-        "title": "中서 활로 찾는 엔씨…‘아이온 모바일’까지 판호 9개 확보 - 서울경제TV",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBLWHp3MTlfdTY4VzVmRk11OHVfckxDblMtZVZwTWotRE5uRGJkNUZLcmpia0JmTGFSUDNrQUt3azR0ZkMwb3ZTNTFqQ1lDVDRVYmZZUTNFT25pODJVMGh1ZTVzRnA?oc=5",
-        "source": "서울경제TV",
-        "published": "Sat, 25 Jul 2026 23:00:12 GMT",
-        "description": "中서 활로 찾는 엔씨…‘아이온 모바일’까지 판호 9개 확보&nbsp;&nbsp;서울경제TV"
-      },
-      {
-        "title": "토토 다이아 산업에서의 역할: 현재와 미래의 중요성 - 성공을 위한 로드맵 - les24heures.fr",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE40Wl9TZkZUYjMzYkhHYXlXUU1qVG94SU1TTnNoY19hREgwcmNRNjZVOXVlU2FTNG1Jb2FTSUtxX1FiUjNMYTM5VkFkSkFwUjZfRFFFWkQ0THd0bkhVbTdSNjk1NTN6RGFv?oc=5",
-        "source": "les24heures.fr",
-        "published": "Sun, 26 Jul 2026 00:37:46 GMT",
-        "description": "토토 다이아 산업에서의 역할: 현재와 미래의 중요성 - 성공을 위한 로드맵&nbsp;&nbsp;les24heures.fr"
-      },
-      {
         "title": "NBA 로고·실명까지... 그라비티 농구 카드게임 CBT - 게임와이",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1KTmdKX2RQSWpBZ3NmZE1VRGJPbUhORHhSN181VEwtMHF4QkNQUWtDaXF0a2VBS3JXNm5EdGdac0FneWxDcVFwMGNXQThjcWJOcENIMGhsRjE3UUNDNkdSQkExdGlCRTTSAWpBVV95cUxQQlZWSXlBU3J1U3pXV0JoQS1peFh5LV9nYmpyNEpPQnpVbDkwNXFCVzZxSWFIaXlhQ1M5QUwybnNITUZyc0tUZVNzZEFIYVlPYjFMWFpjZkZwQ1Zad3UyU3c0cGtWVDN4UC13?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5GQ2xQM2E5dXJUZTNCdXotYkhMcmRkbWh4d24ydTFvYzlKem54cmMydG9Jc1VQSThEZGptZGFqRUx0THkyMkJsMkZULUEyaWxnMWViQjZmMFpKRTNqQkZwbTFWX0JDQdIBakFVX3lxTFBCVlZJeUFTcnVTeldXQmhBLWl4WHktX2dianI0Sk9CelVsOTA1cUJXNnFJYUhpeWFDUzlBTDJuc0hNRnJzS1RlU3NkQUhhWU9iMUxYWmNmRnBDVlp3dTJTdzRwa1ZUM3hQLXc?oc=5",
         "source": "게임와이",
         "published": "Sun, 26 Jul 2026 10:32:39 GMT",
         "description": "NBA 로고·실명까지... 그라비티 농구 카드게임 CBT&nbsp;&nbsp;게임와이"
@@ -535,11 +535,11 @@
         "description": "게임 캐릭터 입은 삼성 '폴드·플립8'…팬덤 잡고 갤럭시 경험 넓힌다&nbsp;&nbsp;뷰어스"
       },
       {
-        "title": "플레이위드 투자분석 2026. 07. 25 - 주달",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1fUm1BcjU5eXZscWFFMjd1ZXdQMERvYk8wM0pqMzhHOWlXOFpoSHk0ak54MndhVlpodVRXeGlkOWFmcE92d2RFWjA1RGUyVUsxX3hvaHRTVFVRZmVuRHkxVklBaTVqbWJnSzlIanRtZS1lMlk?oc=5",
-        "source": "주달",
-        "published": "Sat, 25 Jul 2026 11:44:02 GMT",
-        "description": "플레이위드 투자분석 2026. 07. 25&nbsp;&nbsp;주달"
+        "title": "NFT 게임 의 최고 선택: 2026년 톱 10 비교 분석 - 실전 사례 분석 - les24heures.fr",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBzVVVYTFlOdXVob19kMTZiZUVWajJ5WjJsaENmTXkxMXI0OHRIaDIxY1VMamNYLXFhVlZOZFRSMmlKTm9nMExxUVlZeTFIQ3lCVENFMGRzSWE3dURTMzR4clo5bjdFZw?oc=5",
+        "source": "les24heures.fr",
+        "published": "Sat, 25 Jul 2026 23:17:15 GMT",
+        "description": "NFT 게임 의 최고 선택: 2026년 톱 10 비교 분석 - 실전 사례 분석&nbsp;&nbsp;les24heures.fr"
       }
     ],
     "s3_wemade": [
@@ -549,6 +549,13 @@
         "source": "머니투데이",
         "published": "Fri, 24 Jul 2026 23:00:00 GMT",
         "description": "[겜플] 아듀, 위메이드 - 머니투데이&nbsp;&nbsp;머니투데이"
+      },
+      {
+        "title": "위믹스, WEMIX3.0 보안 사고 조사…스마트 컨트랙트 소유권 침해 가능성 - IT타임스",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1jQnc2Rk40UkhxYk5aSVUzbU9jWmJzbEpIQUkyc2dUTDJ2TVVGeEpnNEhMM3lEU05adzBuSjI5NjZaM04zRmNzUHVtYTMwS0NZR3F4M25JYlBob3RfZDlrRXhRSm1NQXVP?oc=5",
+        "source": "IT타임스",
+        "published": "Sun, 26 Jul 2026 16:36:29 GMT",
+        "description": "위믹스, WEMIX3.0 보안 사고 조사…스마트 컨트랙트 소유권 침해 가능성&nbsp;&nbsp;IT타임스"
       },
       {
         "title": "'6천만 IP의 힘'…위메이드맥스 '윈드러너 키우기', 한국·대만 양대 마켓 1위 - 지디넷코리아",
@@ -605,23 +612,9 @@
         "source": "주달",
         "published": "Sat, 25 Jul 2026 14:40:58 GMT",
         "description": "위메이드 투자분석 2026. 07. 25&nbsp;&nbsp;주달"
-      },
-      {
-        "title": "위메이드맥스 '윈드러너 키우기' 인기 1위 - 더게임스",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8tUlJFb0pibnpxVC10U0tmaFZiR29WclBnaDRQTXJ4aVFCREdIY0FCYUlUNngzWFFnT2NXQWItWmF0bkFxQlIwNS1pS0h0NHBDUFo3RERGdUZZc29oZk5oeTQxUTZKUzRyMFltMw?oc=5",
-        "source": "더게임스",
-        "published": "Sat, 25 Jul 2026 06:25:13 GMT",
-        "description": "위메이드맥스 '윈드러너 키우기' 인기 1위&nbsp;&nbsp;더게임스"
       }
     ],
     "s3_blockchain": [
-      {
-        "title": "NFT 게임 의 최고 선택: 2026년 톱 10 비교 분석 - 실전 사례 분석 - les24heures.fr",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBzVVVYTFlOdXVob19kMTZiZUVWajJ5WjJsaENmTXkxMXI0OHRIaDIxY1VMamNYLXFhVlZOZFRSMmlKTm9nMExxUVlZeTFIQ3lCVENFMGRzSWE3dURTMzR4clo5bjdFZw?oc=5",
-        "source": "les24heures.fr",
-        "published": "Sat, 25 Jul 2026 23:17:15 GMT",
-        "description": "NFT 게임 의 최고 선택: 2026년 톱 10 비교 분석 - 실전 사례 분석&nbsp;&nbsp;les24heures.fr"
-      },
       {
         "title": "왜 대부분의 웹3 커뮤니티는 붕괴되도록 설계되었을까요? - HackerNoon",
         "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNlJPQUVucTEydWpNOExObDYtdDlyQzVQbVBPU1dkUEhLalZBSTRScVhoVUpKeVFrb3A2Z09JOUxYWGdxeEw4OFZvT2FSVzg5OFhNYnNMTk5SOXFLREhObmN6RWdnRjZGaWVlUGZjZnhYd2pLWE9FLUdXeENYcFVPYkNiUXI?oc=5",
@@ -637,18 +630,18 @@
         "description": "제로 지식 KYC 인증을 위한 최고의 Web3 신원 프로토콜 10선&nbsp;&nbsp;FinanceFeeds"
       },
       {
-        "title": "CertiK ‘Intel3D’ 보고서 발표… 렌치 공격 피해 약 12배 증가하고 ‘운영 보안’이 새로운 핵심 방어 요소로 부상 - 글로벌 비즈 뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5MdnhVOUY1Rjlxb1lQdnp1ZXBMdXJrR25fR2dUY2ZMQWh6eDdwYy1GSlRXX3dUMi1oOXFLM0djUUhQcVNnQjdrNGNiLVdHdXo5NTl2TkI3RjJQOVhfeVVVUmRnQTU5dV9z0gFoQVVfeXFMTkx2eFU5RjVGOXFvWVB2enVlcEx1cmtHbl9HZ1RjZkxBaHp4N3BjLUZKVFdfd1QyLWg5cUszR2NRSFBxU2dCN2s0Y2ItV0d1ejk1OXZOQjdGMlA5WF95VVVSZGdBNTl1X3M?oc=5",
-        "source": "글로벌 비즈 뉴스",
-        "published": "Sun, 26 Jul 2026 06:06:01 GMT",
-        "description": "CertiK ‘Intel3D’ 보고서 발표… 렌치 공격 피해 약 12배 증가하고 ‘운영 보안’이 새로운 핵심 방어 요소로 부상&nbsp;&nbsp;글로벌 비즈 뉴스"
-      },
-      {
         "title": "블록체인 게임 전망 에 대한 궁금증을 해소하는 완벽한 가이드 - 최신 트렌드 - centrserdce.ru",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5yUTBBU1ViOGtlU3FGVEF4WFdxbkpIVGhzSXZkem83bU5qNUR6RkExaGZMYkZfLW0yemJ1OUdGMHNSbkprRDViYjJ2bGZ1V1loZThIMzZBN0NxVkl4R1pWdGlUZlU?oc=5",
         "source": "centrserdce.ru",
         "published": "Fri, 24 Jul 2026 20:36:19 GMT",
         "description": "블록체인 게임 전망 에 대한 궁금증을 해소하는 완벽한 가이드 - 최신 트렌드&nbsp;&nbsp;centrserdce.ru"
+      },
+      {
+        "title": "CertiK ‘Intel3D’ 보고서 발표… 렌치 공격 피해 약 12배 증가하고 ‘운영 보안’이 새로운 핵심 방어 요소로 부상 - 글로벌 비즈 뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5MdnhVOUY1Rjlxb1lQdnp1ZXBMdXJrR25fR2dUY2ZMQWh6eDdwYy1GSlRXX3dUMi1oOXFLM0djUUhQcVNnQjdrNGNiLVdHdXo5NTl2TkI3RjJQOVhfeVVVUmRnQTU5dV9z0gFoQVVfeXFMTkx2eFU5RjVGOXFvWVB2enVlcEx1cmtHbl9HZ1RjZkxBaHp4N3BjLUZKVFdfd1QyLWg5cUszR2NRSFBxU2dCN2s0Y2ItV0d1ejk1OXZOQjdGMlA5WF95VVVSZGdBNTl1X3M?oc=5",
+        "source": "글로벌 비즈 뉴스",
+        "published": "Sun, 26 Jul 2026 06:06:01 GMT",
+        "description": "CertiK ‘Intel3D’ 보고서 발표… 렌치 공격 피해 약 12배 증가하고 ‘운영 보안’이 새로운 핵심 방어 요소로 부상&nbsp;&nbsp;글로벌 비즈 뉴스"
       },
       {
         "title": "NFT 게임 학습을 위한 최고의 자료와 도구 - 스텝 바이 스텝 가이드 - zolotnit.ru",
@@ -775,15 +768,15 @@
       },
       {
         "rank": 7,
-        "name": "리니지M",
-        "developer": "NC Corporation",
-        "link": "https://play.google.com/store/apps/details?id=com.ncsoft.lineagem19"
-      },
-      {
-        "rank": 8,
         "name": "로얄 매치 Royal Match",
         "developer": "Dream Games, Ltd.",
         "link": "https://play.google.com/store/apps/details?id=com.dreamgames.royalmatch"
+      },
+      {
+        "rank": 8,
+        "name": "리니지M",
+        "developer": "NC Corporation",
+        "link": "https://play.google.com/store/apps/details?id=com.ncsoft.lineagem19"
       },
       {
         "rank": 9,
@@ -793,9 +786,9 @@
       },
       {
         "rank": 10,
-        "name": "라스트 워: 서바이벌",
-        "developer": "FUNFLY PTE. LTD.",
-        "link": "https://play.google.com/store/apps/details?id=com.fun.lastwar.gp"
+        "name": "로블록스 (Roblox)",
+        "developer": "Roblox Corporation",
+        "link": "https://play.google.com/store/apps/details?id=com.roblox.client"
       }
     ],
     "appstore_kr": []
@@ -818,8 +811,8 @@
       "sign": "-"
     },
     "wemix": {
-      "krw": 320.77,
-      "chg24h": -5.32262921240004,
+      "krw": 324.75,
+      "chg24h": -4.141526475075552,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -938,13 +931,6 @@
     ],
     "s4": {
       "lygl": [
-        {
-          "title": "레전드 오브 이미르, 4월 7일 스팀 정식 출시 - 인벤",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1HZE9UUnAzb1dDZE1hdWJQOW5ZSWN5OWRrdDNncG5EaXVKaDBMZ3JhS283Wl9IVnBPTm5WemRLb29iQXEtanRKdHpuR1pRUjNoOV8yT21YUXVqdTBHNXNFa2FmUENkTWlGWnc?oc=5",
-          "source": "인벤",
-          "published": "Tue, 21 Jul 2026 22:02:17 GMT",
-          "description": "레전드 오브 이미르, 4월 7일 스팀 정식 출시&nbsp;&nbsp;인벤"
-        },
         {
           "title": "JUST IN: WEMIX security vulnerability suspected to have cost - KuCoin",
           "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9rc0xTRGhDVmhaVDFpZVVWWFlvYlE2bzYzRkV0SU82N2sxUE5ncFVDSC1BeDJWNUtkZERFa00wOVp5dTRuRmE1Z1lnWFVtb1FFLW1Eb0dFaWdOOUNmU29iU3ZLUEV5RkdhdjFkYVVULUlfZ0tT?oc=5",
