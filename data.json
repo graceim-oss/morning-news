@@ -1,5 +1,5 @@
 {
-  "updated": "02:55:12",
+  "updated": "03:58:01",
   "news": {
     "wemade": [
       {
@@ -24,13 +24,6 @@
         "description": "美 크라켄 입성한 위믹스…커지는 실행력 '공백'&nbsp;&nbsp;딜사이트"
       },
       {
-        "title": "위메이드맥스 ‘윈드러너 키우기’, 국내 양대마켓 인기 1위 - 매경 게임진",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE45d1VwdkRYUzVmamhET3BReFlKMXlxUXhMTGUxbldCaHNYRjhoRFNPY1ZpWUpLYzhXX3VXUGh4WEJnZF9KT3NmWW9ZaUZBdW1p?oc=5",
-        "source": "매경 게임진",
-        "published": "Sun, 26 Jul 2026 07:02:16 GMT",
-        "description": "위메이드맥스 ‘윈드러너 키우기’, 국내 양대마켓 인기 1위&nbsp;&nbsp;매경 게임진"
-      },
-      {
         "title": "위메이드 품은 네오펄스… 아픈 손가락 ‘위믹스’ 살릴까 - IT조선",
         "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4yMlZjbDhHZUt4OWNuNkJPbmNrZy03OEhvZ2l2cmQ2MXNfN05ER3hCeFRXOU5ZZ19Sbk5MRENjalFRc1NobkZ5UnZsem9hSDAzREhjbFZJdVJGTDhKblFCSkZvVG1QcUpVUkVKSjk2LWfSAXRBVV95cUxNTWdkaHpETFlFQXRqV3BQS0E4SWpVTW1pcUpnZVc5WFFjX2tYWjE4MHlWLXkwYnRUOFdlRy1VOXlUQktfLWk3THNnLTJpR2l0eVFXN3VJSzU1LWhsYmRrTjVVMDZOUkZzVjhtS0hwRXVZUGJkeg?oc=5",
         "source": "IT조선",
@@ -43,6 +36,13 @@
         "source": "뉴데일리",
         "published": "Thu, 09 Jul 2026 07:00:00 GMT",
         "description": "'위메이드 매각' 박관호 회장이 밝히지 않은 세 가지는?&nbsp;&nbsp;뉴데일리"
+      },
+      {
+        "title": "위메이드맥스 ‘윈드러너 키우기’, 국내 양대마켓 인기 1위 - 매경 게임진",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE45d1VwdkRYUzVmamhET3BReFlKMXlxUXhMTGUxbldCaHNYRjhoRFNPY1ZpWUpLYzhXX3VXUGh4WEJnZF9KT3NmWW9ZaUZBdW1p?oc=5",
+        "source": "매경 게임진",
+        "published": "Sun, 26 Jul 2026 07:02:16 GMT",
+        "description": "위메이드맥스 ‘윈드러너 키우기’, 국내 양대마켓 인기 1위&nbsp;&nbsp;매경 게임진"
       },
       {
         "title": "'6천만 IP의 힘'…위메이드맥스 '윈드러너 키우기', 한국·대만 양대 마켓 1위 - 지디넷코리아",
@@ -400,6 +400,13 @@
     ],
     "s3_ai": [
       {
+        "title": "딥노이드, 멀티모달 LLM 활용 의료 영상 판독 특허 확보 'M4CXR' 고도화 박차 - 의학신문",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5PU3BfdU16NnBJWVNUay1TU1hvWG9GdzZsQnJvNXhsQ2M0bGRFcElKMUR5VWFWamtrVGE3LWc1aTQ5MWFZd2V6VkduT0FKbFBNdDFqcHYwb2F1QXRqdFF6SExJRWpybFpYTTVR?oc=5",
+        "source": "의학신문",
+        "published": "Sun, 26 Jul 2026 12:11:07 GMT",
+        "description": "딥노이드, 멀티모달 LLM 활용 의료 영상 판독 특허 확보 'M4CXR' 고도화 박차&nbsp;&nbsp;의학신문"
+      },
+      {
         "title": "엔비디아, LLM 배포 가속 '모델익스프레스' 발표...\"서버 대기 8분에서 1분대로 단축\" - AI타임스",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9oT2dqeUl5T2VFUFpRRzlXNktvaFVXbHpERWVWcU40dkptd3hCZWJlSF9QMzZqZXVDMERxX3ZMWmExZGh5b29UWks0VTBnMlNaUFBGOWlWR1NPNHVOQWFIMnNrNHBlbmJ0NFE?oc=5",
         "source": "AI타임스",
@@ -412,13 +419,6 @@
         "source": "트래블데일리",
         "published": "Sun, 26 Jul 2026 12:14:05 GMT",
         "description": "남이섬, 생성형 AI 광고 숏폼 공모전 개최&nbsp;&nbsp;트래블데일리"
-      },
-      {
-        "title": "딥노이드, 멀티모달 LLM 활용 의료 영상 판독 특허 확보 'M4CXR' 고도화 박차 - 의학신문",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1FNHIwdl80am9faVlnZkVTMFp5TUNWdnlSZG9zaWE1RGhXZzRVX2NqVTZzMFFJb0tUWHUzaFpIM25FYU5aTU51MW9wcEdQaG42VE9tSHpTcWVTZ0tNekczdUJtZGtFQmtDZEE?oc=5",
-        "source": "의학신문",
-        "published": "Sun, 26 Jul 2026 12:11:07 GMT",
-        "description": "딥노이드, 멀티모달 LLM 활용 의료 영상 판독 특허 확보 'M4CXR' 고도화 박차&nbsp;&nbsp;의학신문"
       },
       {
         "title": "구미시, 생성형 AI 탑재한 ‘미래형 전문 농업인’ 24명 배출 - 영남경제",
@@ -435,11 +435,11 @@
         "description": "에이전트 AI 시대, LLM 경쟁의 기준이 바뀐다…'성능'보다 '토큰 효율성'&nbsp;&nbsp;메트로신문"
       },
       {
-        "title": "청주대, 생성형 AI 기술 등 최신 동향 공유 - 충청매일",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1maGdHRUhVSFJPV3NuZUlCYUtwRUo2V3hPWnBLQ3RnUzdmUk5OblZWTVBoV3lVWVQzMGhHcmFrUmNlSXRKOGxqV1RCUVBKczZUbWhRR1h3MUNKNThONmhUTDAyRmdLUElYTHc?oc=5",
-        "source": "충청매일",
-        "published": "Sun, 26 Jul 2026 09:25:07 GMT",
-        "description": "청주대, 생성형 AI 기술 등 최신 동향 공유&nbsp;&nbsp;충청매일"
+        "title": "치과의사 업무보조수단은 생성형 AI - 치과신문",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4wQWIybzh3WDEwNXdHU3UyRjZtT05FMUdQUTlvZTFUMjFlRXpmbFJLUXJMeU4wTTJ1MEVoYVJhcmQ4c0x4RVF5dG5oempPMnZnS1hvMzkyUExJMUhmRWxrZnhYUEJGQQ?oc=5",
+        "source": "치과신문",
+        "published": "Sun, 26 Jul 2026 02:57:29 GMT",
+        "description": "치과의사 업무보조수단은 생성형 AI&nbsp;&nbsp;치과신문"
       },
       {
         "title": "SKT, 스타트업에 `A.X K1` API 지원…AI 서비스 개발 돕는다 - 디지털데일리",
@@ -449,18 +449,18 @@
         "description": "SKT, 스타트업에 `A.X K1` API 지원…AI 서비스 개발 돕는다&nbsp;&nbsp;디지털데일리"
       },
       {
-        "title": "치과의사 업무보조수단은 생성형 AI - 치과신문",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4wQWIybzh3WDEwNXdHU3UyRjZtT05FMUdQUTlvZTFUMjFlRXpmbFJLUXJMeU4wTTJ1MEVoYVJhcmQ4c0x4RVF5dG5oempPMnZnS1hvMzkyUExJMUhmRWxrZnhYUEJGQQ?oc=5",
-        "source": "치과신문",
-        "published": "Sun, 26 Jul 2026 02:57:29 GMT",
-        "description": "치과의사 업무보조수단은 생성형 AI&nbsp;&nbsp;치과신문"
+        "title": "청주대, 생성형 AI 기술 등 최신 동향 공유 - 충청매일",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1maGdHRUhVSFJPV3NuZUlCYUtwRUo2V3hPWnBLQ3RnUzdmUk5OblZWTVBoV3lVWVQzMGhHcmFrUmNlSXRKOGxqV1RCUVBKczZUbWhRR1h3MUNKNThONmhUTDAyRmdLUElYTHc?oc=5",
+        "source": "충청매일",
+        "published": "Sun, 26 Jul 2026 09:25:07 GMT",
+        "description": "청주대, 생성형 AI 기술 등 최신 동향 공유&nbsp;&nbsp;충청매일"
       },
       {
-        "title": "제주동부소방서, 생성형 AI로 소방행정 효율 높인다 - 제민일보",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5mOU1JS1BNLUh1SUQ1bmFYMnFGcjY3NkJiMTFONFFSVTh3cFZfbUg2Y2dfekNSZGVaVmhUVnQxQ1J5R01QZjBOWHJ1WEFBSkk1OVRKeVIxZURaWkNZdjBqdC14NDNwQQ?oc=5",
-        "source": "제민일보",
-        "published": "Sun, 26 Jul 2026 06:44:56 GMT",
-        "description": "제주동부소방서, 생성형 AI로 소방행정 효율 높인다&nbsp;&nbsp;제민일보"
+        "title": "성균관대, 서울시민 대상 생성형 AI 전문가 과정 개최…103명 참여 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1TZDI1bFQtR1VoREpqNzZzYzItMkZTV3lyYXdweGJCZG9zQjh2eVhNMC1HXy1FRW0xNHllVjJfVHJtT09ES1EwNng4MA?oc=5",
+        "source": "v.daum.net",
+        "published": "Sun, 26 Jul 2026 05:26:51 GMT",
+        "description": "성균관대, 서울시민 대상 생성형 AI 전문가 과정 개최…103명 참여&nbsp;&nbsp;v.daum.net"
       },
       {
         "title": "춘천 남이섬, ‘생성형 AI’ 활용 남이섬 영상 광고 숏폼 공모전 개최 - 강원도민일보",
@@ -472,18 +472,18 @@
     ],
     "s3_game": [
       {
-        "title": "모바일 게임과 도박에 빠진 우리 자녀가 위험하다 - 홍성신문",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9wYl95TFRQeXZkaUxvOUZiR0dmTGl4bzVMWkg4UXpxcFhBYjBKX3B2ZGRwcE5RNlNlUWZuUWJIUDktd3Q2a3VkOVdXcTY0NTJ4a3V0SlB1LTdVRTk2ZFB2Z1pJRUE1ZVZSa01z?oc=5",
-        "source": "홍성신문",
-        "published": "Sat, 25 Jul 2026 22:41:59 GMT",
-        "description": "모바일 게임과 도박에 빠진 우리 자녀가 위험하다&nbsp;&nbsp;홍성신문"
-      },
-      {
         "title": "Atari, Universal과 10개 게임 IP 영화화 계약 체결 - games.gg",
         "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPdUhLM09iVzdUd3BDRWhuWkUySjN0UTVWdnVrZTlhUG9OTUY4XzBocXlQX3ZlNldSakRnbzRiVDlfZ05tQ2dRZDREZXZlUlFCV00tN0IyLTFpcld1bUFQekJLaklyRDNjUGVTMnV3b0hPWE9OVnJUa2lFeUw5blJsZ0FlLWRMNktmRXkyLXBqeDlRT18wTEsxRlBoZG81S1MwWGEyd2g2d3RzUER4aVB0TTJ4amI5UDNlanpNcDNTcmdmUmpEWEVjaFJ3bV9USzU2SmRaTC11UjR2UFNkUUY2aWNyNFI?oc=5",
         "source": "games.gg",
         "published": "Sun, 26 Jul 2026 16:03:55 GMT",
         "description": "Atari, Universal과 10개 게임 IP 영화화 계약 체결&nbsp;&nbsp;games.gg"
+      },
+      {
+        "title": "모바일 게임과 도박에 빠진 우리 자녀가 위험하다 - 홍성신문",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9wYl95TFRQeXZkaUxvOUZiR0dmTGl4bzVMWkg4UXpxcFhBYjBKX3B2ZGRwcE5RNlNlUWZuUWJIUDktd3Q2a3VkOVdXcTY0NTJ4a3V0SlB1LTdVRTk2ZFB2Z1pJRUE1ZVZSa01z?oc=5",
+        "source": "홍성신문",
+        "published": "Sat, 25 Jul 2026 22:41:59 GMT",
+        "description": "모바일 게임과 도박에 빠진 우리 자녀가 위험하다&nbsp;&nbsp;홍성신문"
       },
       {
         "title": "\"폴더블과 게임 IP의 역대급 만남\"…게이머 팬심 사로잡는다 - 네이트",
@@ -615,6 +615,13 @@
       }
     ],
     "s3_blockchain": [
+      {
+        "title": "NFT 게임 의 최고 선택: 2026년 톱 10 비교 분석 - 실전 사례 분석 - les24heures.fr",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBzVVVYTFlOdXVob19kMTZiZUVWajJ5WjJsaENmTXkxMXI0OHRIaDIxY1VMamNYLXFhVlZOZFRSMmlKTm9nMExxUVlZeTFIQ3lCVENFMGRzSWE3dURTMzR4clo5bjdFZw?oc=5",
+        "source": "les24heures.fr",
+        "published": "Sat, 25 Jul 2026 23:17:15 GMT",
+        "description": "NFT 게임 의 최고 선택: 2026년 톱 10 비교 분석 - 실전 사례 분석&nbsp;&nbsp;les24heures.fr"
+      },
       {
         "title": "왜 대부분의 웹3 커뮤니티는 붕괴되도록 설계되었을까요? - HackerNoon",
         "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNlJPQUVucTEydWpNOExObDYtdDlyQzVQbVBPU1dkUEhLalZBSTRScVhoVUpKeVFrb3A2Z09JOUxYWGdxeEw4OFZvT2FSVzg5OFhNYnNMTk5SOXFLREhObmN6RWdnRjZGaWVlUGZjZnhYd2pLWE9FLUdXeENYcFVPYkNiUXI?oc=5",
@@ -811,8 +818,8 @@
       "sign": "-"
     },
     "wemix": {
-      "krw": 324.75,
-      "chg24h": -4.141526475075552,
+      "krw": 318.83,
+      "chg24h": -6.320461545718363,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -1051,11 +1058,11 @@
         "description": "[7월 24일 인더스트리 마케팅 레이더] 리뷰 신뢰부터 AI 검색, 숏폼 커머스까지…마케팅 채널 재편 압력 커진다&nbsp;&nbsp;산업종합저널"
       },
       {
-        "title": "라스트 마일: 훌륭한 퍼스트 파티 데이터가 여전히 훌륭한 마케팅으로 이어지지 않는 이유 - Databricks",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOWTZ4b3J6U2plSkpXd0QtaGMtbDE1bUtFVHpJUmpuQUJRMUx5YTJCTmV6MDNkaWVwNVdPVmh4LWY0SE9pR3AxVV9DMllzdXhfQkRjMWF4TXVhX0pwRzE0WmZ5M2tQM1ZyRXNDaGlVbWFzX1hBSmdyX2Ezb1V0eUQzeG5adw?oc=5",
-        "source": "Databricks",
-        "published": "Tue, 21 Jul 2026 07:00:00 GMT",
-        "description": "라스트 마일: 훌륭한 퍼스트 파티 데이터가 여전히 훌륭한 마케팅으로 이어지지 않는 이유&nbsp;&nbsp;Databricks"
+        "title": "'조회수 360만' 롯데웰푸드, 인도서 마케팅 대박…초코파이 확 키운다 - 더구루",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5oNWtyWnVESC0za1kyZTRiOXdNMTRlTlUtTzBNMnNpMWUxTGI3My1FUjRIS3d2ZHd4Y0tDYkFwcWRpMlZFOUoxbjJibmZNNEJGZV9ZUW9uTlhRSUQ3bVphVERhMA?oc=5",
+        "source": "더구루",
+        "published": "Fri, 24 Jul 2026 01:54:20 GMT",
+        "description": "'조회수 360만' 롯데웰푸드, 인도서 마케팅 대박…초코파이 확 키운다&nbsp;&nbsp;더구루"
       }
     ]
   }
