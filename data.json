@@ -1,5 +1,5 @@
 {
-  "updated": "00:21:47",
+  "updated": "00:53:39",
   "news": {
     "wemade": [
       {
@@ -10,11 +10,11 @@
         "description": "[주간 게임 워치] 위메이드, '미르4' 글로벌 서비스 5주년 헌정 영상 공개&nbsp;&nbsp;굿모닝경제"
       },
       {
-        "title": "[게임사 정보보호 경쟁력] 보안 강화에도 또 뚫린 위믹스…'반쪽 공시'의 사각지대 - 딜사이트",
+        "title": "[게임사 정보보호 경쟁력] 보안 강화에도 또 뚫린 위믹스…'반쪽 공시'의 사각지대 - dealsite.co.kr",
         "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0ydUw0MlgwckhKMlFMdFgyel94bDZuMUtJT0JXYmRlUjhkLUZmZnhKUGxpNjVhNlFGYWRUU1JCOU45TmNZc1U4bFYxaXVRcW8?oc=5",
-        "source": "딜사이트",
+        "source": "dealsite.co.kr",
         "published": "Thu, 06 Aug 2026 21:31:11 GMT",
-        "description": "[게임사 정보보호 경쟁력] 보안 강화에도 또 뚫린 위믹스…'반쪽 공시'의 사각지대&nbsp;&nbsp;딜사이트"
+        "description": "[게임사 정보보호 경쟁력] 보안 강화에도 또 뚫린 위믹스…'반쪽 공시'의 사각지대&nbsp;&nbsp;dealsite.co.kr"
       },
       {
         "title": "위메이드, '미르4' 글로벌 서비스 5주년 기념 이용자 헌정 영상 공개 - 전자신문",
@@ -66,11 +66,11 @@
         "description": "'미르4' 글로벌 5주년…위메이드, 헌정 뮤직비디오 공개&nbsp;&nbsp;데일리안"
       },
       {
-        "title": "위메이드, 미르4 글로벌 서비스 5주년 기념 헌정 영상 공개 - 베타뉴스",
+        "title": "위메이드, 미르4 글로벌 서비스 5주년 기념 헌정 영상 공개 - betanews.net",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5NbWpobGtkbDF0czRJX290NDVWWjhMT243b1BfUndMOEZsYk0yRUVwOW1YUnAxam5jeHgtc0tlUm1FbWN3RHp1SFp6dHBDX3NIWXZ0M1F3OEF5VHF3ZDVxOTRFZ2M?oc=5",
-        "source": "베타뉴스",
+        "source": "betanews.net",
         "published": "Thu, 06 Aug 2026 00:11:58 GMT",
-        "description": "위메이드, 미르4 글로벌 서비스 5주년 기념 헌정 영상 공개&nbsp;&nbsp;베타뉴스"
+        "description": "위메이드, 미르4 글로벌 서비스 5주년 기념 헌정 영상 공개&nbsp;&nbsp;betanews.net"
       }
     ],
     "blockchain": [
@@ -96,6 +96,13 @@
         "description": "비트코인, 새로운 보안 위협 속 $65,000 향해 상승&nbsp;&nbsp;Investing.com 한국어"
       },
       {
+        "title": "'코인으로 사고파는 주식' 열풍…진짜 돈 버는 곳은 [주末머니] - 아시아경제",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5telpRbHRZTlhEZjlsTmRpVXdkT2RqaThJRElFeUZtVk0zMXE1OTJOY1NGQlNvbWlmWmlnSUQyVFM3bUJtZUNqRUxGLS10Tlp0Wnp2TUNJeDJxa0Z6M2tERA?oc=5",
+        "source": "아시아경제",
+        "published": "Sat, 08 Aug 2026 02:21:00 GMT",
+        "description": "'코인으로 사고파는 주식' 열풍…진짜 돈 버는 곳은 [주末머니]&nbsp;&nbsp;아시아경제"
+      },
+      {
         "title": "상승 동력 부재에…비트코인 6만4000달러 박스권 형성 - MTN 머니투데이방송",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAwZ002YUZMSmxpbk1ZalZLY0RabDJMUWFNR3hpVXF6c3dfYkhkZUlWSzBNTGV3aUJVdndiNnFFY0NpM3hQUzlhdXVfSTIxUktOVzNSS2VVbHZsVGtJd081M0hmdVU?oc=5",
         "source": "MTN 머니투데이방송",
@@ -103,18 +110,25 @@
         "description": "상승 동력 부재에…비트코인 6만4000달러 박스권 형성&nbsp;&nbsp;MTN 머니투데이방송"
       },
       {
-        "title": "ETF에 도지코인 포함한 티로우프라이스 \"밈코인도 투자 대상\" - 블루밍비트",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBSUnRjdjNmR3NudlRaZGdzakZZeS10b0pPYWNoWU1XY1RVQnpPNHdPOTlCN2hORFNmcDJqemZUYzhnX3pTYTZlQW00NG83TnJh?oc=5",
-        "source": "블루밍비트",
-        "published": "Sat, 08 Aug 2026 13:36:04 GMT",
-        "description": "ETF에 도지코인 포함한 티로우프라이스 \"밈코인도 투자 대상\"&nbsp;&nbsp;블루밍비트"
-      },
-      {
         "title": "비트코인 \"악재 다 쏟아졌다\"… 8월 상원 표결 분수령 - 글로벌이코노믹",
         "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONnpfcnBHdUhKV3FYZEk2dk51RU1UYk8tcF9qTHk1VnFaVzNhdEJIU0hHelpoQ193Ym82NTB0N0Q0TkxrX2ZlcWFWam5VZlQxOXEtX1BNMHhueU5sUUlCckRoUDhOb1FPaGVwNVBIZ2xWVld3Y3NRVlVya245VjAtWnZFbWtES0Y5?oc=5",
         "source": "글로벌이코노믹",
         "published": "Wed, 05 Aug 2026 22:37:22 GMT",
         "description": "비트코인 \"악재 다 쏟아졌다\"… 8월 상원 표결 분수령&nbsp;&nbsp;글로벌이코노믹"
+      },
+      {
+        "title": "美 ‘고용 쇼크’에 금리 인상론 후퇴…비트코인 6만5000달러 회복 [주간 블록체인] - 디지털데일리",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5IZE03SVFLVGJrV241M3I5MGtZUVRkNmlOU3k0dXNTSUs3NUlvV1hZaHBPS1dlenBNTExyalpVbXBzcWVRNEtVcWstRmdiQkRtZldGeUhwZG45UVF1NGpvbnZXOG8?oc=5",
+        "source": "디지털데일리",
+        "published": "Sat, 08 Aug 2026 03:40:19 GMT",
+        "description": "美 ‘고용 쇼크’에 금리 인상론 후퇴…비트코인 6만5000달러 회복 [주간 블록체인]&nbsp;&nbsp;디지털데일리"
+      },
+      {
+        "title": "ETF에 도지코인 포함한 티로우프라이스 \"밈코인도 투자 대상\" - 블루밍비트",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBSUnRjdjNmR3NudlRaZGdzakZZeS10b0pPYWNoWU1XY1RVQnpPNHdPOTlCN2hORFNmcDJqemZUYzhnX3pTYTZlQW00NG83TnJh?oc=5",
+        "source": "블루밍비트",
+        "published": "Sat, 08 Aug 2026 13:36:04 GMT",
+        "description": "ETF에 도지코인 포함한 티로우프라이스 \"밈코인도 투자 대상\"&nbsp;&nbsp;블루밍비트"
       },
       {
         "title": "서클은 왜 블록체인까지 만들었을까 [도예리의 디지털자산 노트] - 서울경제",
@@ -129,20 +143,6 @@
         "source": "더코리아",
         "published": "Sat, 08 Aug 2026 13:06:00 GMT",
         "description": "부산 해운대구, 체납자 가상자산 체납처분 전자관리시스템 도입 > 뉴스&nbsp;&nbsp;더코리아"
-      },
-      {
-        "title": "美 ‘고용 쇼크’에 금리 인상론 후퇴…비트코인 6만5000달러 회복 [주간 블록체인] - 디지털데일리",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5IZE03SVFLVGJrV241M3I5MGtZUVRkNmlOU3k0dXNTSUs3NUlvV1hZaHBPS1dlenBNTExyalpVbXBzcWVRNEtVcWstRmdiQkRtZldGeUhwZG45UVF1NGpvbnZXOG8?oc=5",
-        "source": "디지털데일리",
-        "published": "Sat, 08 Aug 2026 03:40:19 GMT",
-        "description": "美 ‘고용 쇼크’에 금리 인상론 후퇴…비트코인 6만5000달러 회복 [주간 블록체인]&nbsp;&nbsp;디지털데일리"
-      },
-      {
-        "title": "트럼프 “중국이 AI·가상자산 추월하는 꼴 못봐…내달 시진핑과 담판” - 전자신문",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA5NlpEbVFkXzZhZ1ZqYlR6VDNXSy1xVUlSR3c3RzZUZF8tYWN1VVJDUl9Qdnh2MDUzSFBPd2tVMkpmVFQxRGhNRU42TjVFUQ?oc=5",
-        "source": "전자신문",
-        "published": "Fri, 07 Aug 2026 23:26:33 GMT",
-        "description": "트럼프 “중국이 AI·가상자산 추월하는 꼴 못봐…내달 시진핑과 담판”&nbsp;&nbsp;전자신문"
       }
     ],
     "aiit": [
@@ -182,11 +182,11 @@
         "description": "[AI 트렌드] \"AI가 인재까지 빨아들인다\"…항공우주업계가 젊은 엔지니어를 잃는 이유&nbsp;&nbsp;AI라이프경제"
       },
       {
-        "title": "TRF'26 APAC: AI는 단순한 트렌드를 넘어 효율성 개선 과제로 변모하고 있습니다. - Vietnam.vn",
+        "title": "TRF'26 APAC: AI는 단순한 트렌드를 넘어 효율성 개선 과제로 변모하고 있습니다. - vietnam.vn",
         "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOYm1rOGszQ3RkSXI3UUtCMWU4RWZsNkxZREZoLUVEak93anFtYUVQWE45Njd0RElzcWZKTmo4UENmanV4U01nWUJyLXpXbEZBRENqNW56UG45LTZxb2Y5bXhVbTBJa1VNZzRCX2cyZkRMZXVMRTZ6c2otamdpWTVHUnh4YzlCR1Q3Qk9sT0xhYmR2U0I1SEpn?oc=5",
-        "source": "Vietnam.vn",
+        "source": "vietnam.vn",
         "published": "Fri, 07 Aug 2026 17:12:32 GMT",
-        "description": "TRF'26 APAC: AI는 단순한 트렌드를 넘어 효율성 개선 과제로 변모하고 있습니다.&nbsp;&nbsp;Vietnam.vn"
+        "description": "TRF'26 APAC: AI는 단순한 트렌드를 넘어 효율성 개선 과제로 변모하고 있습니다.&nbsp;&nbsp;vietnam.vn"
       },
       {
         "title": "「AI는 브랜드를 어떻게 바꾸는가」 ④ - 브랜드뉴스",
@@ -226,18 +226,18 @@
         "description": "[MAX Summit 2026] AI 이후 마케팅을 묻다, 사진으로 보는 맥스서밋 DAY1&nbsp;&nbsp;mobiinside.co.kr"
       },
       {
+        "title": "\"좋아요 수만으로는 부족하다\" 칸타, 크리에이터 마케팅 효과성 분석 보고서 발간 - madtimes.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5QMlhpcXVycU1YcUZPa3dXdWhrVW5lT2NkaDlVRmZMSDgzaUp1YjVXWFlwZXkyWHpTY1RpZVhOLW1tTGhfV21CQW1wZUhjdXhvZWVkZ3poenJ1N0d1bVhrUXBaNUNsNkVQY3VQcA?oc=5",
+        "source": "madtimes.co.kr",
+        "published": "Fri, 07 Aug 2026 06:28:00 GMT",
+        "description": "\"좋아요 수만으로는 부족하다\" 칸타, 크리에이터 마케팅 효과성 분석 보고서 발간&nbsp;&nbsp;madtimes.co.kr"
+      },
+      {
         "title": "엑스플러스,‘놈놈놈쇼’ 투자·아워리 공식 협찬…콘텐츠 마케팅 확대 - 매일경제 마켓",
         "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE16VVpmRVFieXZXUElmcEFmUVhkNG5YaWs2YUZBS0VLVWpZNmJZaWNDbjZjR3hrbDBqemhUSVdLaUhmaDA3Rl9mbXk5ZUhocU85MlE?oc=5",
         "source": "매일경제 마켓",
         "published": "Wed, 05 Aug 2026 05:01:01 GMT",
         "description": "엑스플러스,‘놈놈놈쇼’ 투자·아워리 공식 협찬…콘텐츠 마케팅 확대&nbsp;&nbsp;매일경제 마켓"
-      },
-      {
-        "title": "\"좋아요 수만으로는 부족하다\" 칸타, 크리에이터 마케팅 효과성 분석 보고서 발간 - 매드타임스",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5QMlhpcXVycU1YcUZPa3dXdWhrVW5lT2NkaDlVRmZMSDgzaUp1YjVXWFlwZXkyWHpTY1RpZVhOLW1tTGhfV21CQW1wZUhjdXhvZWVkZ3poenJ1N0d1bVhrUXBaNUNsNkVQY3VQcA?oc=5",
-        "source": "매드타임스",
-        "published": "Fri, 07 Aug 2026 06:28:00 GMT",
-        "description": "\"좋아요 수만으로는 부족하다\" 칸타, 크리에이터 마케팅 효과성 분석 보고서 발간&nbsp;&nbsp;매드타임스"
       },
       {
         "title": "카페24, 이커머스 브랜드 대상 ‘마케팅 플레이북 2026’ 개최…데이터 활용 전략 공유 - 신아일보",
@@ -270,11 +270,11 @@
         "description": "[MAX Summit 2026] AI 이후 마케팅을 묻다, 사진으로 보는 맥스서밋 DAY1&nbsp;&nbsp;mobiinside.co.kr"
       },
       {
-        "title": "[인터뷰] \"글로벌 디지털 마케팅에는 하나의 성공 공식이 없습니다\" 권무성 알레프 한국 지사장 - 매드타임스",
+        "title": "[인터뷰] \"글로벌 디지털 마케팅에는 하나의 성공 공식이 없습니다\" 권무성 알레프 한국 지사장 - madtimes.co.kr",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9hRzg0d05qM3NRU0k3T1BUV2hnNWkxa3hacUJOM2dmNWFBSVhJRk1OSV9Oa0o4SmJNLTFoTzFOaHBfTFd3NnF0Mko0YWlOemJobFFkV0ZYelBLclFtcFpoZ0JTODRDZDI2T01JaQ?oc=5",
-        "source": "매드타임스",
+        "source": "madtimes.co.kr",
         "published": "Thu, 06 Aug 2026 15:00:00 GMT",
-        "description": "[인터뷰] \"글로벌 디지털 마케팅에는 하나의 성공 공식이 없습니다\" 권무성 알레프 한국 지사장&nbsp;&nbsp;매드타임스"
+        "description": "[인터뷰] \"글로벌 디지털 마케팅에는 하나의 성공 공식이 없습니다\" 권무성 알레프 한국 지사장&nbsp;&nbsp;madtimes.co.kr"
       },
       {
         "title": "유튜브 판매전략 알고싶어?…카페24, '마케팅 플레이북 2026' 개최 - v.daum.net",
@@ -414,13 +414,6 @@
         "description": "김재원 의원, 생성형 AI 시대 창작자 권리 보호 위한 국회 토론회 개최&nbsp;&nbsp;시사뉴스"
       },
       {
-        "title": "\"내 분신이 '19금 대사' 읽더라\"…日유명 성우들, 생성형 AI 무단 복제에 '분통' - 아시아경제",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1hR3RaeDRfV2NobGRQR0g5eUxnUGduRklWMXc2Nzl3WmNaOHJtT2JubXlDc0NFckNkY2kzUnlwb2owcUh3RXhZT1ZnSGxINVpSZm01NTYtYlIzQUFuWGhIRA?oc=5",
-        "source": "아시아경제",
-        "published": "Sat, 08 Aug 2026 06:52:28 GMT",
-        "description": "\"내 분신이 '19금 대사' 읽더라\"…日유명 성우들, 생성형 AI 무단 복제에 '분통'&nbsp;&nbsp;아시아경제"
-      },
-      {
         "title": "음저협, 국회서 '생성형 AI 시대 음악 창작자 보호' 정책 토론회 10일 개최 - 비욘드포스트",
         "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE13b2N1eEI5cDlrdFVjbEJCU1huWkhWSk94em5fbmxMM0tkbTl0RktpaDV3NzAyUUVSS3EwWWd1VjkyNWZpc1RGZUdmV2JTV0VuVzZBRjZOOHhXa1F0Ym1GcU5DOW1XOWx4NVduSDJrank0Sk9tRW1tNjllVEk?oc=5",
         "source": "비욘드포스트",
@@ -442,18 +435,25 @@
         "description": "한국앤컴퍼니그룹, 생성형 AI 도입 가속도 '조현범 혁신 DNA' 이식&nbsp;&nbsp;블로터"
       },
       {
-        "title": "ChatGPT는 곧 사용자들에게 무제한 무료 채팅 서비스를 제공할 예정입니다. - Vietnam.vn",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWi1sS1gyNkE2QlJoTUxwWjdIaHpBenFkVVctemZKM2pCczBCMzRQd0d2MXNSeVdibk1kcDEzc1kxNnJ0dGdsMGJwSXJnM0k5OTVncFAzRW1OOGl2bXRIZWN1YU4zVGgxVlR0em1sYU5fTUx6TW8tQmI3T0FiN29kTDNidjJRdVFtTXphNnhsMXk?oc=5",
-        "source": "Vietnam.vn",
-        "published": "Sat, 08 Aug 2026 09:58:21 GMT",
-        "description": "ChatGPT는 곧 사용자들에게 무제한 무료 채팅 서비스를 제공할 예정입니다.&nbsp;&nbsp;Vietnam.vn"
-      },
-      {
         "title": "전남정보문화산업진흥원, 생성형 AI 기반 콘텐츠 제작 전문인력 본격 양성 - 전자신문",
         "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5iNEx2aTlGT2lPX21nOWtkX1VJN2p1by05OFI5dXZQWV9ESFoxWEZVWTZSVFhVeEVRSlpMVTRXcU9ickJuVU4yTzhJTEthQQ?oc=5",
         "source": "전자신문",
         "published": "Sat, 08 Aug 2026 00:30:00 GMT",
         "description": "전남정보문화산업진흥원, 생성형 AI 기반 콘텐츠 제작 전문인력 본격 양성&nbsp;&nbsp;전자신문"
+      },
+      {
+        "title": "ChatGPT는 곧 사용자들에게 무제한 무료 채팅 서비스를 제공할 예정입니다. - vietnam.vn",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWi1sS1gyNkE2QlJoTUxwWjdIaHpBenFkVVctemZKM2pCczBCMzRQd0d2MXNSeVdibk1kcDEzc1kxNnJ0dGdsMGJwSXJnM0k5OTVncFAzRW1OOGl2bXRIZWN1YU4zVGgxVlR0em1sYU5fTUx6TW8tQmI3T0FiN29kTDNidjJRdVFtTXphNnhsMXk?oc=5",
+        "source": "vietnam.vn",
+        "published": "Sat, 08 Aug 2026 09:58:21 GMT",
+        "description": "ChatGPT는 곧 사용자들에게 무제한 무료 채팅 서비스를 제공할 예정입니다.&nbsp;&nbsp;vietnam.vn"
+      },
+      {
+        "title": "\"내 분신이 '19금 대사' 읽더라\"…日유명 성우들, 생성형 AI 무단 복제에 '분통' - 아시아경제",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1hR3RaeDRfV2NobGRQR0g5eUxnUGduRklWMXc2Nzl3WmNaOHJtT2JubXlDc0NFckNkY2kzUnlwb2owcUh3RXhZT1ZnSGxINVpSZm01NTYtYlIzQUFuWGhIRA?oc=5",
+        "source": "아시아경제",
+        "published": "Sat, 08 Aug 2026 06:52:28 GMT",
+        "description": "\"내 분신이 '19금 대사' 읽더라\"…日유명 성우들, 생성형 AI 무단 복제에 '분통'&nbsp;&nbsp;아시아경제"
       },
       {
         "title": "생성형 AI 면접, 기업은 무엇을 묻나 - 얼리어답터뉴스",
@@ -479,11 +479,11 @@
         "description": "뜨거운 여름밤 달군 '차이나조이 2026'...글로벌 게임 트렌드 한눈에-Xinhua&nbsp;&nbsp;신화망"
       },
       {
-        "title": "장현국의 원스토어, 모바일 게임의 '스팀' 첫 발…AI 창작 게임 전문관 오픈 - 라이센스뉴스",
+        "title": "장현국의 원스토어, 모바일 게임의 '스팀' 첫 발…AI 창작 게임 전문관 오픈 - lcnews.co.kr",
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE83QmtzOTM3dldUM3hWNmhtSERzRmpoajJ2UXVFWmtDeXRacGdaNVVQNVYteU5aNlpQbERPb1FyMmg4YWgxaEhSMUFhQUxlR00yaU1ObUc2endvTDV6VjlFZ0dVcVZXY0pFZlV3?oc=5",
-        "source": "라이센스뉴스",
+        "source": "lcnews.co.kr",
         "published": "Fri, 07 Aug 2026 01:11:32 GMT",
-        "description": "장현국의 원스토어, 모바일 게임의 '스팀' 첫 발…AI 창작 게임 전문관 오픈&nbsp;&nbsp;라이센스뉴스"
+        "description": "장현국의 원스토어, 모바일 게임의 '스팀' 첫 발…AI 창작 게임 전문관 오픈&nbsp;&nbsp;lcnews.co.kr"
       },
       {
         "title": "[주간 게임 순위] '솔: 인챈트' 구글 매출 1위 사수… 스팀 '에이펙스' 정상 등극 - 팝콘뉴스",
@@ -565,18 +565,18 @@
         "description": "〈프리프유니버스〉 5년차 최고 실적 달성···FWC로 역주행 흥행&nbsp;&nbsp;글로벌E"
       },
       {
-        "title": "내실 다진 위메이드플레이, 1분기 매출 324억원, 영업익 34억원 기록 - 쿠키뉴스",
+        "title": "내실 다진 위메이드플레이, 1분기 매출 324억원, 영업익 34억원 기록 - kukinews.com",
         "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA3a29EbVZmaTVlc3hXQmo0WWRVbkJNLTQ0OHdHX3FrYnhnVEpqVTBVNks4YnFJUjVCQm9xdHpwOXVpU21OMEp0MjlScEZWelp2bmZ2Z0xBZWJkWlJaRG9nZkNuVQ?oc=5",
-        "source": "쿠키뉴스",
+        "source": "kukinews.com",
         "published": "Fri, 07 Aug 2026 04:20:02 GMT",
-        "description": "내실 다진 위메이드플레이, 1분기 매출 324억원, 영업익 34억원 기록&nbsp;&nbsp;쿠키뉴스"
+        "description": "내실 다진 위메이드플레이, 1분기 매출 324억원, 영업익 34억원 기록&nbsp;&nbsp;kukinews.com"
       },
       {
-        "title": "[게임사 정보보호 경쟁력] 보안 강화에도 또 뚫린 위믹스…'반쪽 공시'의 사각지대 - 딜사이트",
+        "title": "[게임사 정보보호 경쟁력] 보안 강화에도 또 뚫린 위믹스…'반쪽 공시'의 사각지대 - dealsite.co.kr",
         "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0ydUw0MlgwckhKMlFMdFgyel94bDZuMUtJT0JXYmRlUjhkLUZmZnhKUGxpNjVhNlFGYWRUU1JCOU45TmNZc1U4bFYxaXVRcW8?oc=5",
-        "source": "딜사이트",
+        "source": "dealsite.co.kr",
         "published": "Thu, 06 Aug 2026 21:31:11 GMT",
-        "description": "[게임사 정보보호 경쟁력] 보안 강화에도 또 뚫린 위믹스…'반쪽 공시'의 사각지대&nbsp;&nbsp;딜사이트"
+        "description": "[게임사 정보보호 경쟁력] 보안 강화에도 또 뚫린 위믹스…'반쪽 공시'의 사각지대&nbsp;&nbsp;dealsite.co.kr"
       },
       {
         "title": "[속보] 네이버, 2분기 영업익 5203억원…전년비 0.2% 감소 - 데일리안",
@@ -832,8 +832,8 @@
       "sign": "-"
     },
     "wemix": {
-      "krw": 283.47,
-      "chg24h": 0.17527746659724353,
+      "krw": 284.09,
+      "chg24h": 0.05645034658422947,
       "dir": "RISING",
       "sign": "+"
     }
@@ -943,11 +943,11 @@
         "description": "\"AI 시대엔 일부러 불편하게\"… 폴더폰·디카·유선이어폰 다시 찾는 Z세대&nbsp;&nbsp;조선일보"
       },
       {
-        "title": "[Buzz Buzz] SNS 이용은 M세대, 헤비 유저는 Z세대 - 매일경제",
+        "title": "[Buzz Buzz] SNS 이용은 M세대, 헤비 유저는 Z세대 - mk.co.kr",
         "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ZMHJiZlVJQjJIMHprVWFWdENVRXpDUGRoZzU0RjFhZWtSVmxUaDFHRDkxdlQtVDVCSXVzdDdYSGM0QXVMYkJCaDZqSG4tR1NrLWRqYg?oc=5",
-        "source": "매일경제",
+        "source": "mk.co.kr",
         "published": "Tue, 04 Aug 2026 10:09:51 GMT",
-        "description": "[Buzz Buzz] SNS 이용은 M세대, 헤비 유저는 Z세대&nbsp;&nbsp;매일경제"
+        "description": "[Buzz Buzz] SNS 이용은 M세대, 헤비 유저는 Z세대&nbsp;&nbsp;mk.co.kr"
       }
     ],
     "s4": {
@@ -960,50 +960,13 @@
           "description": "Blockchain gaming weekly roundup: 17th July&nbsp;&nbsp;BlockchainGamerBiz"
         }
       ],
-      "wemade": [
-        {
-          "title": "[비즈톡톡] 또 뚫린 위메이드 위믹스… 국내 게임사 코인 사업성 ‘시험대’ - 조선비즈 - Chosunbiz",
-          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQOVJwZDBYTlFPUV96X1RaYmxUR2swRmNsel84VmRtaHFkNUxabDJYTWhtN0lYek9QZTJEcDAtU2FrcTA2ZEkwSEw4VFFhZkV6OXRraVdYbl9BaTRsZWNVX0xVZ0staU5rMG1BMVl0eU5vSW85ODdDSFhwcUxzbVZvQ0JB0gGWAUFVX3lxTFA2SGJSNTNHWWx1akR1RmJacExyMDZicGhVbkN3Z2FNVmduQnExd2lCVDNjVFRVenhqVVVZUnpiYkVOVjdYSHJYcmxLVGRueFlPZjZhVlV1MDVDTzF6b3czY3BFUzFaT1o2OUwwaUlDV29sX0NxMm5sdVNwdGcxNjJwTENrTHcwWDFaVXlOYmdjWnlGNHJ0dw?oc=5",
-          "source": "Chosunbiz",
-          "published": "Sat, 01 Aug 2026 21:00:00 GMT",
-          "description": "[비즈톡톡] 또 뚫린 위메이드 위믹스… 국내 게임사 코인 사업성 ‘시험대’ - 조선비즈&nbsp;&nbsp;Chosunbiz"
-        },
-        {
-          "title": "위메이드, '미르4' 글로벌 서비스 5주년 기념 이용자 헌정 영상 공개 - 전자신문",
-          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5SRHoya3dpeU5lMmFqaVlXWjlkTExzME5heWtuYmpQdDZ3QU5nTmYyVWdRT1hvc3p3R2ZMTThuSy0tazNsbFk4cVhWN05zUQ?oc=5",
-          "source": "전자신문",
-          "published": "Thu, 06 Aug 2026 02:16:36 GMT",
-          "description": "위메이드, '미르4' 글로벌 서비스 5주년 기념 이용자 헌정 영상 공개&nbsp;&nbsp;전자신문"
-        },
-        {
-          "title": "위메이드 ‘미르4’ 글로벌 5주년 헌정 영상 공개 - 중소기업신문",
-          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE95TGJ0UzJWb2VadmlKaldCdzM3bWtJcXhkbGZzWTZSeWZCeG15emV4R05kQ2ttWFpfa2E2aWhyTVQ5NjRlZGdmd0IxVnZfcHJIbnVzc3NxS3dSRTdpa2g3aWg3X3VVSXk0MnBialVR?oc=5",
-          "source": "중소기업신문",
-          "published": "Thu, 06 Aug 2026 04:01:51 GMT",
-          "description": "위메이드 ‘미르4’ 글로벌 5주년 헌정 영상 공개&nbsp;&nbsp;중소기업신문"
-        },
-        {
-          "title": "위메이드, '미르4' 글로벌 서비스 5주년 헌정 영상 공개 - v.daum.net",
-          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBUYkNEMjhxQmpUb0lXSWNKR05aaXJta0V0STJYYml6YlpBNTI1WXlqeWhYUHNZWXpnZVFTSGRUWmpfYTlLNWhzdS1Od3UwVzA?oc=5",
-          "source": "v.daum.net",
-          "published": "Thu, 06 Aug 2026 00:38:49 GMT",
-          "description": "위메이드, '미르4' 글로벌 서비스 5주년 헌정 영상 공개&nbsp;&nbsp;v.daum.net"
-        },
-        {
-          "title": "[주간 게임 워치] 위메이드, '미르4' 글로벌 서비스 5주년 헌정 영상 공개 - 굿모닝경제",
-          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE01V093REY3SDd0T1Jua0hiS0ctNzFNLTFQek5xb2xmT1RfdTI3Zl9iY25qZ19GVUtNS2RWVzREOElJQ3FPWTQxdlN1dV9iTjY5TjV0LXNmNHpTcWQ1azhSNUMzYVNxMkxXVHhPdA?oc=5",
-          "source": "굿모닝경제",
-          "published": "Fri, 07 Aug 2026 21:30:00 GMT",
-          "description": "[주간 게임 워치] 위메이드, '미르4' 글로벌 서비스 5주년 헌정 영상 공개&nbsp;&nbsp;굿모닝경제"
-        }
-      ],
       "ncgl": [
         {
-          "title": "위메이드, ‘나이트 크로우’ IP 신작 공식 명칭 ‘나이트 크로우W’로 확정 [쿠키 게임] - 쿠키뉴스",
+          "title": "위메이드, ‘나이트 크로우’ IP 신작 공식 명칭 ‘나이트 크로우W’로 확정 [쿠키 게임] - kukinews.com",
           "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5aV0JWQy00LTJpRFUxa0ZvTDBadGxMb0FKYmxYOHl1RHdmdlZ0UkRWYnlRc3ItS3pDd1RyQlFUaG9OUjMzY1BuM29rRUJyWllaY2YtWm42cVk4VnFpNjdNek9Law?oc=5",
-          "source": "쿠키뉴스",
+          "source": "kukinews.com",
           "published": "Wed, 05 Aug 2026 05:35:01 GMT",
-          "description": "위메이드, ‘나이트 크로우’ IP 신작 공식 명칭 ‘나이트 크로우W’로 확정 [쿠키 게임]&nbsp;&nbsp;쿠키뉴스"
+          "description": "위메이드, ‘나이트 크로우’ IP 신작 공식 명칭 ‘나이트 크로우W’로 확정 [쿠키 게임]&nbsp;&nbsp;kukinews.com"
         },
         {
           "title": "Gray and Reese lead the Dream past the Wings, 82-81 - The Washington Post",
@@ -1032,6 +995,43 @@
           "source": "afl.com.au",
           "published": "Fri, 07 Aug 2026 17:13:00 GMT",
           "description": "'Adds some class to the night': Cool Crow delivers timely blow&nbsp;&nbsp;afl.com.au"
+        }
+      ],
+      "wemade": [
+        {
+          "title": "[비즈톡톡] 또 뚫린 위메이드 위믹스… 국내 게임사 코인 사업성 ‘시험대’ - 조선비즈 - Chosunbiz",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQOVJwZDBYTlFPUV96X1RaYmxUR2swRmNsel84VmRtaHFkNUxabDJYTWhtN0lYek9QZTJEcDAtU2FrcTA2ZEkwSEw4VFFhZkV6OXRraVdYbl9BaTRsZWNVX0xVZ0staU5rMG1BMVl0eU5vSW85ODdDSFhwcUxzbVZvQ0JB0gGWAUFVX3lxTFA2SGJSNTNHWWx1akR1RmJacExyMDZicGhVbkN3Z2FNVmduQnExd2lCVDNjVFRVenhqVVVZUnpiYkVOVjdYSHJYcmxLVGRueFlPZjZhVlV1MDVDTzF6b3czY3BFUzFaT1o2OUwwaUlDV29sX0NxMm5sdVNwdGcxNjJwTENrTHcwWDFaVXlOYmdjWnlGNHJ0dw?oc=5",
+          "source": "Chosunbiz",
+          "published": "Sat, 01 Aug 2026 21:00:00 GMT",
+          "description": "[비즈톡톡] 또 뚫린 위메이드 위믹스… 국내 게임사 코인 사업성 ‘시험대’ - 조선비즈&nbsp;&nbsp;Chosunbiz"
+        },
+        {
+          "title": "위메이드, '미르4' 글로벌 서비스 5주년 기념 이용자 헌정 영상 공개 - 전자신문",
+          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5SRHoya3dpeU5lMmFqaVlXWjlkTExzME5heWtuYmpQdDZ3QU5nTmYyVWdRT1hvc3p3R2ZMTThuSy0tazNsbFk4cVhWN05zUQ?oc=5",
+          "source": "전자신문",
+          "published": "Thu, 06 Aug 2026 02:16:36 GMT",
+          "description": "위메이드, '미르4' 글로벌 서비스 5주년 기념 이용자 헌정 영상 공개&nbsp;&nbsp;전자신문"
+        },
+        {
+          "title": "위메이드 ‘미르4’ 글로벌 5주년 헌정 영상 공개 - 중소기업신문",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE95TGJ0UzJWb2VadmlKaldCdzM3bWtJcXhkbGZzWTZSeWZCeG15emV4R05kQ2ttWFpfa2E2aWhyTVQ5NjRlZGdmd0IxVnZfcHJIbnVzc3NxS3dSRTdpa2g3aWg3X3VVSXk0MnBialVR?oc=5",
+          "source": "중소기업신문",
+          "published": "Thu, 06 Aug 2026 04:01:51 GMT",
+          "description": "위메이드 ‘미르4’ 글로벌 5주년 헌정 영상 공개&nbsp;&nbsp;중소기업신문"
+        },
+        {
+          "title": "위메이드, '미르4' 글로벌 서비스 5주년 헌정 영상 공개 - v.daum.net",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1EVS1wSFhBR2pESUhGZlo5S1ZQQ00zcC1ncEtub2JGOWZDQ1BjRXZzYzVwLV9PWFcwakZWSnN6UHVRRjhsXy1aMzU5dWY2X2RnSDdFaQ?oc=5",
+          "source": "v.daum.net",
+          "published": "Thu, 06 Aug 2026 00:38:49 GMT",
+          "description": "위메이드, '미르4' 글로벌 서비스 5주년 헌정 영상 공개&nbsp;&nbsp;v.daum.net"
+        },
+        {
+          "title": "[주간 게임 워치] 위메이드, '미르4' 글로벌 서비스 5주년 헌정 영상 공개 - 굿모닝경제",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE01V093REY3SDd0T1Jua0hiS0ctNzFNLTFQek5xb2xmT1RfdTI3Zl9iY25qZ19GVUtNS2RWVzREOElJQ3FPWTQxdlN1dV9iTjY5TjV0LXNmNHpTcWQ1azhSNUMzYVNxMkxXVHhPdA?oc=5",
+          "source": "굿모닝경제",
+          "published": "Fri, 07 Aug 2026 21:30:00 GMT",
+          "description": "[주간 게임 워치] 위메이드, '미르4' 글로벌 서비스 5주년 헌정 영상 공개&nbsp;&nbsp;굿모닝경제"
         }
       ]
     },
