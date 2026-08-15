@@ -1,5 +1,5 @@
 {
-  "updated": "22:49:10",
+  "updated": "23:13:06",
   "news": {
     "wemade": [
       {
@@ -10,11 +10,11 @@
         "description": "'일회성 매출' 빠지자 적자전환…위메이드, 신작에 반등 건다 : 네이버 블로그&nbsp;&nbsp;Naver Blog"
       },
       {
-        "title": "스테이블넷 구축한 위메이드…금융사 확보 '숙제' - 뉴스토마토",
+        "title": "스테이블넷 구축한 위메이드…금융사 확보 '숙제' - newstomato.com",
         "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1lWjVmaU16ZjYwWnRSb1cwTmdWcGlsMEdwZGt2dVVCNTk2VFBNVlZjNDdmOURfdEFLcC1WNzl6NUFwQi1tWUhIeDJxcC1xUm9rNjJnYnZTekp4SEVpcFY4WQ?oc=5",
-        "source": "뉴스토마토",
+        "source": "newstomato.com",
         "published": "Fri, 14 Aug 2026 09:30:55 GMT",
-        "description": "스테이블넷 구축한 위메이드…금융사 확보 '숙제'&nbsp;&nbsp;뉴스토마토"
+        "description": "스테이블넷 구축한 위메이드…금융사 확보 '숙제'&nbsp;&nbsp;newstomato.com"
       },
       {
         "title": "위메이드, 2분기 영업손실 210억원…전년比 적자 폭 축소 - 디일렉",
@@ -75,6 +75,13 @@
     ],
     "blockchain": [
       {
+        "title": "비트코인, 매도 압력에 $63,000 선 유지 - Investing.com 한국어",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBjZE9DbXIyUjZVdzlXME5CM1BybWVTbzB5Qjk5Vzl6YkdLekpvblh2MEswOF9UZzBKU25obVZpbUVNOWRhUnpRM3FEOElCTGRmb0hqVTU2ZUE3cmQ5ak1jcHRLeWhBNno1STVhVHo1Z2tPaHM?oc=5",
+        "source": "Investing.com 한국어",
+        "published": "Sat, 15 Aug 2026 09:41:00 GMT",
+        "description": "비트코인, 매도 압력에 $63,000 선 유지&nbsp;&nbsp;Investing.com 한국어"
+      },
+      {
         "title": "\"코인 투자자가 만만하냐\" 부글…2030 분노한 이유 - 한국경제",
         "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5RUmpiT0w0cFF6N1pscWVVcGVEVW04ZzlDWll2c1Jsd2ZXcm91OWF3VE9mOHJ3cTE4cjFwZndPZy14djRwT1hpczFrQUsxUlMwOXoxam05TTJ5Zw?oc=5",
         "source": "한국경제",
@@ -96,25 +103,11 @@
         "description": "거래 마른 코인시장, 물가·유가 하락에도 '무덤덤'&nbsp;&nbsp;비즈워치"
       },
       {
-        "title": "비트코인, 매도 압력에 $63,000 선 유지 - Investing.com 한국어",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBjZE9DbXIyUjZVdzlXME5CM1BybWVTbzB5Qjk5Vzl6YkdLekpvblh2MEswOF9UZzBKU25obVZpbUVNOWRhUnpRM3FEOElCTGRmb0hqVTU2ZUE3cmQ5ak1jcHRLeWhBNno1STVhVHo1Z2tPaHM?oc=5",
-        "source": "Investing.com 한국어",
-        "published": "Sat, 15 Aug 2026 09:41:00 GMT",
-        "description": "비트코인, 매도 압력에 $63,000 선 유지&nbsp;&nbsp;Investing.com 한국어"
-      },
-      {
         "title": "\"알트코인은 죽었다…비트코인 대체 불가능\" - bloomingbit.io",
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9NMnJTeGdlWFNGQXQ1dndZbTRsMWhvTHZXS01ZQnNfeGtQOTh0elllV2hwNlo3bjhfTURObm5MVi03RTBLR3Y1aFVzSXdhdnFr?oc=5",
         "source": "bloomingbit.io",
         "published": "Sat, 15 Aug 2026 13:15:33 GMT",
         "description": "\"알트코인은 죽었다…비트코인 대체 불가능\"&nbsp;&nbsp;bloomingbit.io"
-      },
-      {
-        "title": "전통 금융권의 허가형 블록체인 집착은 ‘밑바닥으로의 경쟁’이라고 이테리얼라이즈 CEO 비벡 라만이 경고하다 - CoinDesk",
-        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPNDdGMFI2a0NPbUJHMVA3aHp4Z3FSc1dWUlctUmtqd1JqOXZ5eldXSUI2SVlNOHlKSTVXakJDbEF3S0N5cVVYQ2pLXy1aTXdsRzhmQUpKcU9BTkZHZlM2VVhDMzk4YXJ6eDFSWkgwVzBGSEQxcXQyWnU4cG1VRGNUVzE2OUpKUXRlXzJqUmh4R3hDSzYxYjVHNExBZ1h4V1JXWWctWEI3RThxVkFaT19YQXBIMEtiZGFwa1g5NjlWbXV0Wng5MlFCNkZocDZaSTg4d1dSVlpOUENxdmhS?oc=5",
-        "source": "CoinDesk",
-        "published": "Sat, 15 Aug 2026 12:00:00 GMT",
-        "description": "전통 금융권의 허가형 블록체인 집착은 ‘밑바닥으로의 경쟁’이라고 이테리얼라이즈 CEO 비벡 라만이 경고하다&nbsp;&nbsp;CoinDesk"
       },
       {
         "title": "[Why] 배송 다음은 결제… 쿠팡이 스테이블코인에 꽂힌 이유 - 조선비즈 - Chosunbiz",
@@ -124,13 +117,6 @@
         "description": "[Why] 배송 다음은 결제… 쿠팡이 스테이블코인에 꽂힌 이유 - 조선비즈&nbsp;&nbsp;Chosunbiz"
       },
       {
-        "title": "업비트·빗썸 위탁 코인 수 늘었는데…평가액은 반년 만에 26조↓ - v.daum.net",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9EUmFDMWhVYURsUUxxM2oyeF9oS1pUa29uUUowV0FWbDJwQ0gta3liU0dCa3kzS2pEMmZLLVhnOXh1Y21aYThTcHFnRnZ5Rzg?oc=5",
-        "source": "v.daum.net",
-        "published": "Sat, 15 Aug 2026 01:44:50 GMT",
-        "description": "업비트·빗썸 위탁 코인 수 늘었는데…평가액은 반년 만에 26조↓&nbsp;&nbsp;v.daum.net"
-      },
-      {
         "title": "가상자산 시장의 투명성 강화를 위한 「특정금융정보법 시행령」 개정안 국무회의 의결 - 법률신문",
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1BVXA3X2JvR2tnSXJ5Q1RLMkc2cEdiZWE0R1BwSklOOG41YldaYTlDcEEzd3VTMGViN005YWduSURFeGlndEFBbm1jSmV4cjhkTjk0TjRNVXdYV2dWcDNYZXdJVGlSb0ExejRWemVnemlxZ9IBckFVX3lxTE1BVXA3X2JvR2tnSXJ5Q1RLMkc2cEdiZWE0R1BwSklOOG41YldaYTlDcEEzd3VTMGViN005YWduSURFeGlndEFBbm1jSmV4cjhkTjk0TjRNVXdYV2dWcDNYZXdJVGlSb0ExejRWemVnemlxZw?oc=5",
         "source": "법률신문",
@@ -138,20 +124,34 @@
         "description": "가상자산 시장의 투명성 강화를 위한 「특정금융정보법 시행령」 개정안 국무회의 의결&nbsp;&nbsp;법률신문"
       },
       {
+        "title": "[D-BIZ Economy Insight] 화폐의 본질을 향한 침묵의 고집...파이 코인(Pi Network)이 던지는 질문 - 데일리비즈온",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5LTV9zYVYtbVNvcDBkUmFzNUxsZ3o0cWt3YjgxRnQtR3dEbl9oMWNBZWIyZS1NWmhyVVRSX21WRWhSZzFfVGhsVXFTTklpUm9VcU5ETlF5c0YwVjljNF94Q2lwVDdHa1BHVy1HZA?oc=5",
+        "source": "데일리비즈온",
+        "published": "Sat, 15 Aug 2026 12:50:22 GMT",
+        "description": "[D-BIZ Economy Insight] 화폐의 본질을 향한 침묵의 고집...파이 코인(Pi Network)이 던지는 질문&nbsp;&nbsp;데일리비즈온"
+      },
+      {
         "title": "[주간코인뉴스] 비트코인 6만 5362달러 뒤 횡보…ETF 3억 2900만 달러 순유출 - 자본시장뉴스",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBNbHJ4NDM3cjFNVE9PWDN6MXc2c2lzOFhuNEVuQ1ZibExncldUc1dfbDR6aklRcmVNcU5zWnpGZW0zeE00Z1c3eDBQVGhMTEppRnl1eWpCWkVLak02TENfRzM5VndwOXc?oc=5",
         "source": "자본시장뉴스",
         "published": "Sat, 15 Aug 2026 02:45:00 GMT",
         "description": "[주간코인뉴스] 비트코인 6만 5362달러 뒤 횡보…ETF 3억 2900만 달러 순유출&nbsp;&nbsp;자본시장뉴스"
+      },
+      {
+        "title": "내년부터 가상자산 '쪼개기 송금' 차단…'트래블룰' 전체로 확대 - 대한민국 정책브리핑",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPd2QxR3RYS0h2SXNVZ3VXR2tZUUxBX0tPdlFPcnprWHJMRHFHSW04cjdQemo2MV90TXFnUWJsdndKLVJkbWFXR2FUak9wVTg0LUUtWmZXTDBBUG56WEVWLXJ1U0pqNXZPLWRScWN3N3F0Vk9XaEtlT041TE52U3prcW1LdlZXM09lSkE?oc=5",
+        "source": "대한민국 정책브리핑",
+        "published": "Tue, 11 Aug 2026 14:15:26 GMT",
+        "description": "내년부터 가상자산 '쪼개기 송금' 차단…'트래블룰' 전체로 확대&nbsp;&nbsp;대한민국 정책브리핑"
       }
     ],
     "aiit": [
       {
-        "title": "[AI 이슈트렌드] 황정민 스토킹 공판 논란 속 8·13 부동산 대책·민주당 경선 주목 - AI타임스",
+        "title": "[AI 이슈트렌드] 황정민 스토킹 공판 논란 속 8·13 부동산 대책·민주당 경선 주목 - aitimes.com",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5NNnl5bjcyZ2RwMDlhUmg3SkpOcy1nNmhYOWRtNkd2ZmZlOElDZDUwbjhISUpNdE13WE0yV3N0MkVHY3FGa2YtcWRuY3BaWEVWVUhhQzc3SF9sbWJuSmdpVmRGcmFaUEUySmc?oc=5",
-        "source": "AI타임스",
+        "source": "aitimes.com",
         "published": "Sat, 15 Aug 2026 05:27:39 GMT",
-        "description": "[AI 이슈트렌드] 황정민 스토킹 공판 논란 속 8·13 부동산 대책·민주당 경선 주목&nbsp;&nbsp;AI타임스"
+        "description": "[AI 이슈트렌드] 황정민 스토킹 공판 논란 속 8·13 부동산 대책·민주당 경선 주목&nbsp;&nbsp;aitimes.com"
       },
       {
         "title": "[AI로보틱스 트렌드 바로읽기] LLM? RAG? — 피지컬 AI 시대를 이해하는 필수 AI 용어 가이드 - mobiinside.co.kr",
@@ -210,11 +210,11 @@
         "description": "인공지능 기반 얼굴 바꾸기 트렌드로 인한 개인정보 유출 위험에 주의하세요.&nbsp;&nbsp;Vietnam.vn"
       },
       {
-        "title": "대한항공, 생성형 AI·클라우드 기반 정비결함 분석 시스템 도입 - 연합뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE94Q0t1MHpUb01tcllnQW8xLXA5R201QVhHOWRiZWN4V3hQcnVFQUhvLXREVU9obThEUHlzMXRTSnM2bGhsUEstdmp5Z0ZVbUQtcXRuaWVwNzRDSVg0T0wzNdIBYEFVX3lxTE94Q0t1MHpUb01tcllnQW8xLXA5R201QVhHOWRiZWN4V3hQcnVFQUhvLXREVU9obThEUHlzMXRTSnM2bGhsUEstdmp5Z0ZVbUQtcXRuaWVwNzRDSVg0T0wzNQ?oc=5",
-        "source": "연합뉴스",
-        "published": "Fri, 14 Aug 2026 00:12:14 GMT",
-        "description": "대한항공, 생성형 AI·클라우드 기반 정비결함 분석 시스템 도입&nbsp;&nbsp;연합뉴스"
+        "title": "케이디엠텍, WAVE 2026서 AI 구매 플랫폼 '자재톡'... \"구매 트렌드 만든다\" - kr.aving.net",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBRZzdsQ2JOMWR6VUZEZDNEdzFFYVJMajFEVnNSRFRIZEhyLVUxTzVJWFN2QW1kV0dEWUVsWUJYcDVKUi16ZnZvdW9fUVdjT25yZzBLM0RObmFNMXVwX3R1anpUc3JpeVE?oc=5",
+        "source": "kr.aving.net",
+        "published": "Fri, 14 Aug 2026 00:22:26 GMT",
+        "description": "케이디엠텍, WAVE 2026서 AI 구매 플랫폼 '자재톡'... \"구매 트렌드 만든다\"&nbsp;&nbsp;kr.aving.net"
       }
     ],
     "clipping": [
@@ -270,11 +270,11 @@
         "description": "AI 검색에서 브랜드효과는 어떻게 측정해야하나! - IAB가 제시한 GEO효과측정 지표&nbsp;&nbsp;오픈애즈"
       },
       {
-        "title": "“광고회사 없이도 광고 만든다” 광고업계 생존전략? AI에 물어봐라 - 매일경제",
+        "title": "“광고회사 없이도 광고 만든다” 광고업계 생존전략? AI에 물어봐라 - mk.co.kr",
         "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE56dkcxSmV4ZEs5TjZSY1ZhMkRkRE1YRHg1TXoxVG1WTzBjbWxCSW1weHlxMUd3ZlhKMjhKNWhOUFR3Y1VqclFKanFqRDkwU2d3RkphSjRB?oc=5",
-        "source": "매일경제",
+        "source": "mk.co.kr",
         "published": "Mon, 10 Aug 2026 02:23:31 GMT",
-        "description": "“광고회사 없이도 광고 만든다” 광고업계 생존전략? AI에 물어봐라&nbsp;&nbsp;매일경제"
+        "description": "“광고회사 없이도 광고 만든다” 광고업계 생존전략? AI에 물어봐라&nbsp;&nbsp;mk.co.kr"
       },
       {
         "title": "40도 폭염에는 이런 마케팅 해야 하는구나 이주의 일 잘한 브랜드 5 - 캐릿 Careet",
@@ -349,11 +349,11 @@
         "description": "Rhode, Coach and Dove are 2026 Glossy Pop Awards finalists&nbsp;&nbsp;glossy.co"
       },
       {
-        "title": "Gap Launches \"Denim On Your Own,\" a Fall 2026 Campaign Starring Malcolm Todd and Inde Navarrette - Gap Inc.",
+        "title": "Gap Launches \"Denim On Your Own,\" a Fall 2026 Campaign Starring Malcolm Todd and Inde Navarrette - gapinc.com",
         "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRTYtTndDbUE3Y3ZNWjZKNldFa1hMYUV2Yy1jeFVGU3dLNnJfM0o2dWFfMmxqYW5jM1Y3NmNoWVY2dnJUNDJUZEluTVhXa2VVYkdsWmVyTjRhMGFOcFJBMzdETE51U0oxV005MGpmamYzV2ZsdXNYNENQSjBUYWpXNFJHMnR4RXhJVWIxNzdOcU1OTjlGNnQxY2pJTzY?oc=5",
-        "source": "Gap Inc.",
+        "source": "gapinc.com",
         "published": "Tue, 11 Aug 2026 13:40:59 GMT",
-        "description": "Gap Launches \"Denim On Your Own,\" a Fall 2026 Campaign Starring Malcolm Todd and Inde Navarrette&nbsp;&nbsp;Gap Inc."
+        "description": "Gap Launches \"Denim On Your Own,\" a Fall 2026 Campaign Starring Malcolm Todd and Inde Navarrette&nbsp;&nbsp;gapinc.com"
       },
       {
         "title": "2026 Marketing Leader: Peter Giorgi - HousingWire",
@@ -514,11 +514,18 @@
         "description": "애니메이션 업계의 베테랑 게이브 스와르가 'Boxoom'이라는 재미있는 신작 모바일 게임을 소개합니다.&nbsp;&nbsp;Animation Magazine"
       },
       {
-        "title": "모바일 게임 시장은 하락세입니다. 비게임 및 AI 애플리케이션이 성장을 견인하고 있습니다. Letem svetem Applem - letemsvetemapplem.eu",
+        "title": "모바일 게임 시장은 하락세입니다. 비게임 및 AI 애플리케이션이 성장을 견인하고 있습니다. Letem svetem Applem - Letem světem Applem",
         "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNWVJmWEV0aGxxMTlLWUNGbGFHOTMxOFItOGhtaFlTVjB0NGJRY0tac3pMZjNEVkRfeGlvMEdtejBRS3N3UXRvNnJjV1o5YUhBUVY0RUhiS2NmcDBVQlZ5ajNkWkE5QjdwV1BROFVHWmJicTJMWjZ2Y251RFItSjVZVk9yallBeVhIVjZRdWZncGdIYUZJMndqZklIUUFCZHZmTDNPS2c2VlRHZG9zdEhUc2p4dFNPXzF1RlVPaDZqdlFTR0N4eHZpVkZfNUdEZEtsM3ZUMUl4bmZGVFRfUkxpNGVsYw?oc=5",
-        "source": "letemsvetemapplem.eu",
+        "source": "Letem světem Applem",
         "published": "Thu, 13 Aug 2026 19:03:44 GMT",
-        "description": "모바일 게임 시장은 하락세입니다. 비게임 및 AI 애플리케이션이 성장을 견인하고 있습니다. Letem svetem Applem&nbsp;&nbsp;letemsvetemapplem.eu"
+        "description": "모바일 게임 시장은 하락세입니다. 비게임 및 AI 애플리케이션이 성장을 견인하고 있습니다. Letem svetem Applem&nbsp;&nbsp;Letem světem Applem"
+      },
+      {
+        "title": "[모바일게임] 3D운전교실! 고속도로 시험 100점 골드!!!! 장내기능 &amp; 도로주행 면허도 땄어요!! Chyler Leigh (8OKE4ULbXE) - Mshale",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4tNlJnbGFhVGR3RG9seEJOeHFnTHo4Rm0xSDc2LWxIQjZNR2x6TmYyM1BNcHA1Qng2QXRZVnpYcnplNzFubkFaVTJoaWh2TERqamNZbWVxdkZGc0k?oc=5",
+        "source": "Mshale",
+        "published": "Fri, 14 Aug 2026 20:38:25 GMT",
+        "description": "[모바일게임] 3D운전교실! 고속도로 시험 100점 골드!!!! 장내기능 & 도로주행 면허도 땄어요!! Chyler Leigh (8OKE4ULbXE)&nbsp;&nbsp;Mshale"
       },
       {
         "title": "방치형 게임 캣 히어로 신규 성장 콘텐츠 가디언 업데이트 공략 - gamemeca.com",
@@ -533,13 +540,6 @@
         "source": "Naver Blog",
         "published": "Thu, 13 Aug 2026 15:15:42 GMT",
         "description": "'리니지 클래식' 흥행에 엔씨 2분기 매출 두 배 '껑충' : 네이버 블로그&nbsp;&nbsp;Naver Blog"
-      },
-      {
-        "title": "게임업계 광복절 이벤트 ‘풍성’ - 더게임스",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5GSjRodzdWVzBQVG1ZR20wcU55eURtcWJfcHE4S3VfVWRHTk9Na2NHazk1SW84bjduaTAzRUR4OEhYVzBEa2dNT0w1em9SbHJLX1dTYVRPa2I1Yk5NNHZha3VlNUJqWUxLbjM5eg?oc=5",
-        "source": "더게임스",
-        "published": "Sat, 15 Aug 2026 03:01:05 GMT",
-        "description": "게임업계 광복절 이벤트 ‘풍성’&nbsp;&nbsp;더게임스"
       }
     ],
     "s3_wemade": [
@@ -551,11 +551,11 @@
         "description": "'일회성 매출' 빠지자 적자전환…위메이드, 신작에 반등 건다 : 네이버 블로그&nbsp;&nbsp;Naver Blog"
       },
       {
-        "title": "스테이블넷 구축한 위메이드…금융사 확보 '숙제' - 뉴스토마토",
+        "title": "스테이블넷 구축한 위메이드…금융사 확보 '숙제' - newstomato.com",
         "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1lWjVmaU16ZjYwWnRSb1cwTmdWcGlsMEdwZGt2dVVCNTk2VFBNVlZjNDdmOURfdEFLcC1WNzl6NUFwQi1tWUhIeDJxcC1xUm9rNjJnYnZTekp4SEVpcFY4WQ?oc=5",
-        "source": "뉴스토마토",
+        "source": "newstomato.com",
         "published": "Fri, 14 Aug 2026 09:30:55 GMT",
-        "description": "스테이블넷 구축한 위메이드…금융사 확보 '숙제'&nbsp;&nbsp;뉴스토마토"
+        "description": "스테이블넷 구축한 위메이드…금융사 확보 '숙제'&nbsp;&nbsp;newstomato.com"
       },
       {
         "title": "WEMIX (WEMIX) 오늘의 가격 | 실시간 시장 동향 및 분석 - CoinEx",
@@ -600,11 +600,11 @@
         "description": "위메이드맥스 투자사 레드브릭하우스, BIC 2026 참가…‘보이드 다이버’ 공개&nbsp;&nbsp;워크투데이"
       },
       {
-        "title": "위메이드플레이, ‘애니팡2’ 와다다곰 이벤트 발표…하와이 테마 적용 - newsquest.co.kr",
+        "title": "위메이드플레이, ‘애니팡2’ 와다다곰 이벤트 발표…하와이 테마 적용 - 뉴스퀘스트",
         "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE54bjZrX1d4aTd5NVZiZDFZZ21fdjJjSGN6aFBlcGQ5bWRJTVJNOWJuMzZaQmQ2djZRVjFIbXRkWE1zMnhrOVh1RHBpekllaEJXel9HRDB6cGJUX1hXMEl5VkFwM3cwVWFWTXd4N2lMUXNnaEnSAXNBVV95cUxOeG42a19XeGk3eTVWYmQxWWdtX3YyY0hjemhQZXBkOW1kSU1STTlibjM2WkJkNnY2UVYxSG10ZFhNczJ4azlYdURwaXpJZWhCV3pfR0QwenBiVF9YVzBJeVZBcDN3MFVhVk13eDdpTFFzZ2hJ?oc=5",
-        "source": "newsquest.co.kr",
+        "source": "뉴스퀘스트",
         "published": "Fri, 14 Aug 2026 00:39:08 GMT",
-        "description": "위메이드플레이, ‘애니팡2’ 와다다곰 이벤트 발표…하와이 테마 적용&nbsp;&nbsp;newsquest.co.kr"
+        "description": "위메이드플레이, ‘애니팡2’ 와다다곰 이벤트 발표…하와이 테마 적용&nbsp;&nbsp;뉴스퀘스트"
       },
       {
         "title": "위메이드플레이 ‘애니팡2’, 와다다곰과 여름 협업…IP 프로젝트 마무리 - 직썰",
@@ -679,11 +679,11 @@
         "description": "암호화폐 산업 일일 관찰: 한국 BC 신용카드가 Coinbase와 협력하여 PoC...｜암호화 산업, 한국&nbsp;&nbsp;链捕手ChainCatcher"
       },
       {
-        "title": "AI 에이전트가 Web3 도구 활용의 가파른 학습 곡선을 어떻게 완화하고 있는지 - Bitcoin News",
+        "title": "AI 에이전트가 Web3 도구 활용의 가파른 학습 곡선을 어떻게 완화하고 있는지 - news.bitcoin.com",
         "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNzM1YmNPbll2aHViV2ZSdTRucHNkd1JvOGZfUkxFQ2UzZDV6REpkMXR4TmlfSHFuV29xcVF4VlljUVlmdl9lbk0yQTdZcGJxQjhQMUlqVG8xSDRuSWNMNFJpSmF3aXQ2cG5VcmxtN1p0S3FOam1adWJ3WnpCSzVVRzZhNVNPREJiWWlKcW1WeVVsZmo0aFdld09fREhQZTF0MlhONDJObjc5am5oVVJSeFoxLTVZMUU5M2dCQUdkaGFRRXNsYVVkM3ljZmM0QQ?oc=5",
-        "source": "Bitcoin News",
+        "source": "news.bitcoin.com",
         "published": "Sat, 15 Aug 2026 10:03:00 GMT",
-        "description": "AI 에이전트가 Web3 도구 활용의 가파른 학습 곡선을 어떻게 완화하고 있는지&nbsp;&nbsp;Bitcoin News"
+        "description": "AI 에이전트가 Web3 도구 활용의 가파른 학습 곡선을 어떻게 완화하고 있는지&nbsp;&nbsp;news.bitcoin.com"
       }
     ]
   },
@@ -832,10 +832,10 @@
       "sign": "+"
     },
     "wemix": {
-      "krw": 277.71,
-      "chg24h": 0.4369836837203975,
-      "dir": "RISING",
-      "sign": "+"
+      "krw": 277.02,
+      "chg24h": -0.4688740579369751,
+      "dir": "FALLING",
+      "sign": "-"
     }
   },
   "sections": {
@@ -870,7 +870,7 @@
       },
       {
         "title": "게임업계, 신작 출시·대형 업데이트·글로벌 행사로 하반기 접점 확대 - 팝콘뉴스",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1zRUYxY3FSaVpvVGNmbkY5cWNDNU5wZmNSZWdKRDRRX3FvVUxmUGFDWktYVjZjY1VKclN4YkxTcTJ3NE4wVGFjUUFtMlJfR1BNRUk3MG9Nck0xU0laTXc1azlWQlhSQWlNQmc1YmtRb9IBckFVX3lxTE5tOE54b2hYVXhSalZicC1sb2V1V1Z1aVhSSmlCTmFvMEFXQ21BOThQOTN0RjFTcERndlNFRXA0NUNfRVpxcEhTcTMxbl9Hc29nQTBLOGppT0xlal9BcnU4aXRIM29PekxhbE9jd2FmckVfdw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5HWWxTN19nZFROQXBEeElEQmRIN0E4REo2SUdhZ0JLYU5fMUlaWkRUZjhSSndBa180eHhoVVg2WUNvWkFMbFBadGJDNEpmbHhYZG8zTVNoSEJBeV85eFhqZk5HWXJKZ0tzRlh6Q1hB0gFyQVVfeXFMTm04TnhvaFhVeFJqVmJwLWxvZXVXVnVpWFJKaUJOYW8wQVdDbUE5OFA5M3RGMVNwRGd2U0VFcDQ1Q19FWnFwSFNxMzFuX0dzb2dBMEs4amlPTGVqX0FydThpdEgzb096TGFsT2N3YWZyRV93?oc=5",
         "source": "팝콘뉴스",
         "published": "Thu, 13 Aug 2026 05:25:53 GMT",
         "description": "게임업계, 신작 출시·대형 업데이트·글로벌 행사로 하반기 접점 확대&nbsp;&nbsp;팝콘뉴스"
@@ -960,11 +960,11 @@
           "description": "Wemade Q2 operating loss 21 billion won narrows from year earlier&nbsp;&nbsp;디지털투데이"
         },
         {
-          "title": "Sword Master Story tier list of every character [August 2026] - pocketgamer.com",
+          "title": "Sword Master Story tier list of every character [August 2026] - Pocket Gamer",
           "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9MSlNlT2JjYWlYX3diNWpnbzBEbUZOYVdHTTJFVG42ZGpkWUE1bWxsbG9pTjdLMG9nbUhyTzdNOWJpanJGVXpEdEN1QzFVSzVlejR3SmtxUlFXalBEakRtZEt1LU13MTg?oc=5",
-          "source": "pocketgamer.com",
+          "source": "Pocket Gamer",
           "published": "Fri, 07 Aug 2026 04:15:00 GMT",
-          "description": "Sword Master Story tier list of every character [August 2026]&nbsp;&nbsp;pocketgamer.com"
+          "description": "Sword Master Story tier list of every character [August 2026]&nbsp;&nbsp;Pocket Gamer"
         }
       ],
       "wemade": [
@@ -990,11 +990,11 @@
           "description": "위메이드, 2분기 실적 공개 앞두고 장초반 급등 - 머니투데이&nbsp;&nbsp;머니투데이"
         },
         {
-          "title": "경영권 교체 앞둔 위메이드…실적 부진에 컨콜도 '패싱' - 뉴스토마토",
+          "title": "경영권 교체 앞둔 위메이드…실적 부진에 컨콜도 '패싱' - newstomato.com",
           "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9SLUtBc2Q1WVJIU0NwUzlJQ29UcXpXVGJ1cXFWTzNrZzRnaWtfWnlVWkdNYW9mMDRwMEhxVkRwQ2Y5bUY3X3R3ZFNCdU5fRVduc3R3VnNhelhDdUZLdjBtWA?oc=5",
-          "source": "뉴스토마토",
+          "source": "newstomato.com",
           "published": "Wed, 12 Aug 2026 08:13:44 GMT",
-          "description": "경영권 교체 앞둔 위메이드…실적 부진에 컨콜도 '패싱'&nbsp;&nbsp;뉴스토마토"
+          "description": "경영권 교체 앞둔 위메이드…실적 부진에 컨콜도 '패싱'&nbsp;&nbsp;newstomato.com"
         },
         {
           "title": "[애프터마켓 리뷰] 위메이드맥스 상한가…'윈드러너 키우기' 흥행 - v.daum.net",
