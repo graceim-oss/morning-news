@@ -1,5 +1,5 @@
 {
-  "updated": "07:17:26",
+  "updated": "07:51:32",
   "news": {
     "wemade": [
       {
@@ -131,11 +131,11 @@
         "description": "[D-BIZ 암호화폐 뉴스] \"예금도 블록체인으로\"…토큰화 예금, 허가형 틀 안에서 확산&nbsp;&nbsp;데일리비즈온"
       },
       {
-        "title": "비트코인, 7만달러 터치…국채 바이백·클래리티 입법 기대 - 연합인포맥스",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5TMlU1eDRKaXVEUi1FXzR5N0lYc3NJSUowZmh3UjFtM3o0SElGT192LU82ZktDTU9QUVZidjN0YVIzcm1tUUZHX3RvbFRnMDNLdnlRc3MzTThOUi13SVQycWgzSkx6Z280Y2J2ZlphSUo?oc=5",
+        "title": "'하나금융·SKT 주주' 비트고코리아, 가상자산사업자 신고 수리 - 연합인포맥스",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9PSTdROG9qd05pSHlqQm9kLXdtMTZoUEtia3psUHhsejdXbjJqb01ZODNkSnZtS2xYeTJvV3FRUWJWX0pLY0ZrYjF0TGVYTjN2emlQUjlhWFdyYjZVX045TzNFeWE5TnI4MVZZQl9IdFQ?oc=5",
         "source": "연합인포맥스",
-        "published": "Thu, 20 Aug 2026 05:11:00 GMT",
-        "description": "비트코인, 7만달러 터치…국채 바이백·클래리티 입법 기대&nbsp;&nbsp;연합인포맥스"
+        "published": "Thu, 20 Aug 2026 09:09:18 GMT",
+        "description": "'하나금융·SKT 주주' 비트고코리아, 가상자산사업자 신고 수리&nbsp;&nbsp;연합인포맥스"
       },
       {
         "title": "“석달만에 온 구조대, 그 정체는 대통령”…비트코인 7만달러에 육박 - 매일경제",
@@ -146,6 +146,13 @@
       }
     ],
     "aiit": [
+      {
+        "title": "﻿AI 유통 계층의 부상 ﻿[정원훈의 AI 트렌드] - IT조선",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9KSE5Ta0xTNW9sVkFXYkJtQUgzeGtNMUlKc0tEQ0k4bnRlUF9GR09xTlpKZEp5OTN6RE9LQlN6dVdKWDVLdzNnWmhxMTBiOHFNUlRjSTFDUHpwbHNjTjFfVFpycnRVUi0tTFBXM25QbVLSAXRBVV95cUxOSUNUTE5ZS3NJNVVFelkwdWVKVVBoV3p6NFBjQ3VkZTJ0ZDBsdkk3MnhFaEV3R2NzbG83eE5XaXFiTWJ1ZEN4ekpNVEFnMVp2bXJiVjhZcHJodTNxOFBXRzY5TDFYRXdodVE4VEREQ3FGblA1Uw?oc=5",
+        "source": "IT조선",
+        "published": "Thu, 20 Aug 2026 21:00:26 GMT",
+        "description": "﻿AI 유통 계층의 부상 ﻿[정원훈의 AI 트렌드]&nbsp;&nbsp;IT조선"
+      },
       {
         "title": "[IT 트렌드 바로읽기] AI 시대의 숏폼 콘텐츠 변화 - mobiinside.co.kr",
         "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBLRlpVZElicGVPcFpoN2pIYlN6TGlRdDZJTXRkRlAybFhLbDVvU0VtZXNNSVphekFDRDlUeldmU25ubXpMMlhwQUJ4RDFLVUNUaTU0dzZ2YkZLWEVqZDNHbDhsbHU0VE5pMXpzNVRYdVY5NXhsQlRF?oc=5",
@@ -208,13 +215,6 @@
         "source": "에이빙",
         "published": "Thu, 20 Aug 2026 06:08:23 GMT",
         "description": "전기차 충전, 이제 ‘기다림’도 서비스로… 채비, EV트렌드코리아서 '바로채비'·'채비스테이' 선보인다&nbsp;&nbsp;에이빙"
-      },
-      {
-        "title": "액체냉각, AI인프라 표준되나…트렌드포스 “올해 비중 과반 돌파할 듯” - IT비즈뉴스",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9sVldEUHp3TFNMZTBKRXNRdzRRWmhfTmxRb3FwWmpZc0gxZG92Rm5WbWxyaW9lSUxHT0p1NjlNVlQzNmFXRVdZbldOUXYtNU1rQTlyRGVPRXZTM1AzQlRhaTdOVG5uWktyUlBjcg?oc=5",
-        "source": "IT비즈뉴스",
-        "published": "Wed, 19 Aug 2026 05:27:00 GMT",
-        "description": "액체냉각, AI인프라 표준되나…트렌드포스 “올해 비중 과반 돌파할 듯”&nbsp;&nbsp;IT비즈뉴스"
       }
     ],
     "clipping": [
@@ -414,11 +414,25 @@
         "description": "구글, Antigravity 코딩 에이전트를 Gemini Enterprise에 번들 제공&nbsp;&nbsp;Investing.com 한국어"
       },
       {
+        "title": "와이즈스톤, LLM·생성형 AI 검증 리드할 ‘AI 테스트 아키텍트’ 양성 나서 - 인공지능신문",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qVEtvall5Z09PUlR4UF81elVBRXNQc1RVUUd0RDN2N0otM3Zxb25TRjdoc0RkQUMtZFhVb1FSWENyWFctV01rcWJMdWQ1YkQtOW04OGI3U1ZQdURRMU5SZHpPVUlrZkE?oc=5",
+        "source": "인공지능신문",
+        "published": "Wed, 19 Aug 2026 23:35:16 GMT",
+        "description": "와이즈스톤, LLM·생성형 AI 검증 리드할 ‘AI 테스트 아키텍트’ 양성 나서&nbsp;&nbsp;인공지능신문"
+      },
+      {
         "title": "\"코드 작성 넘어 보안문서 파악까지\"…생성형 AI, 소프트웨어 보안 기여 본격화 - 더나은미래",
         "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBfV183bU9fcFdjT2ZLSkxEbWs4bkMyS3pzX1FNdk1RUUJqN1dSVUl2VzJQSDZ4QkREbUxjdHVxVTJ6T2lPNzFqQmFQYXdWcVNzUGc?oc=5",
         "source": "더나은미래",
         "published": "Thu, 20 Aug 2026 08:00:00 GMT",
         "description": "\"코드 작성 넘어 보안문서 파악까지\"…생성형 AI, 소프트웨어 보안 기여 본격화&nbsp;&nbsp;더나은미래"
+      },
+      {
+        "title": "모비데이즈, 불스원 'ChatGPT 광고' 도입 지원…AI 기반 광고 채널 확대 - 한국경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE81eDV1NmwzZXphTERQZHdQOUpyRVVwV05nNndLYVFFd2R5NnRLOUdJWWo3VUpwV1dkY3lWS3lIUWRhMi1yNmlHUGwwNkhJY0l4SGh1akJjXzdsQQ?oc=5",
+        "source": "한국경제",
+        "published": "Thu, 20 Aug 2026 05:02:23 GMT",
+        "description": "모비데이즈, 불스원 'ChatGPT 광고' 도입 지원…AI 기반 광고 채널 확대&nbsp;&nbsp;한국경제"
       },
       {
         "title": "두산로보틱스, 생성형 AI '클로드' 도입…로봇 R&amp;D 속도전 - 지디넷코리아",
@@ -428,18 +442,18 @@
         "description": "두산로보틱스, 생성형 AI '클로드' 도입…로봇 R&D 속도전&nbsp;&nbsp;지디넷코리아"
       },
       {
+        "title": "생성형 AI, 국민 서비스로 넓힌다… 제논, '제나' 기반 '모두의 AI' 구축 사업 참여 - 에이빙",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5mbkJFSkFsVktCQU1QaWxzQWVkemFVb3h5Ylg2bzdDX3NFRHVGbWRmYlBBZndoOC1vb19idWtVTUw5NkUyOFlUMkVqRXZsTV9YX0RUbDVQM0gxUk14TWd0cjFCX3lFd3B5dWgw0gFrQVVfeXFMTmZuQkVKQWxWS0JBTVBpbHNBZWR6YVVveHliWDZvN0Nfc0VEdUZtZGZiUEFmd2g4LW9vX2J1a1VNTDk2RTI4WVQyRWpFdmxNX1hfRFRsNVAzSDFSTXhNZ3RyMUJfeUV3cHl1aDA?oc=5",
+        "source": "에이빙",
+        "published": "Thu, 20 Aug 2026 06:08:18 GMT",
+        "description": "생성형 AI, 국민 서비스로 넓힌다… 제논, '제나' 기반 '모두의 AI' 구축 사업 참여&nbsp;&nbsp;에이빙"
+      },
+      {
         "title": "취약계층·농어촌 고교생 12만명에 생성형 AI…뒤에는 95억원 공공계약 - 조달경제신문",
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ZY1FfS0tkTkZXamVVNVZRbzBvenZEMENLM01KV2dtQUNlSE5nZDRncWc4MU1OVjRDNUx3MHU0VU45MXRoZ0FnOVJSb2NxU0xWcURsZ29WWkVwd1lGTnJ1Qm9oVk9hUDFPRFpNNm9B?oc=5",
         "source": "조달경제신문",
         "published": "Thu, 20 Aug 2026 06:38:22 GMT",
         "description": "취약계층·농어촌 고교생 12만명에 생성형 AI…뒤에는 95억원 공공계약&nbsp;&nbsp;조달경제신문"
-      },
-      {
-        "title": "와이즈스톤, LLM·생성형 AI 검증 리드할 ‘AI 테스트 아키텍트’ 양성 나서 - 인공지능신문",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qVEtvall5Z09PUlR4UF81elVBRXNQc1RVUUd0RDN2N0otM3Zxb25TRjdoc0RkQUMtZFhVb1FSWENyWFctV01rcWJMdWQ1YkQtOW04OGI3U1ZQdURRMU5SZHpPVUlrZkE?oc=5",
-        "source": "인공지능신문",
-        "published": "Wed, 19 Aug 2026 23:35:16 GMT",
-        "description": "와이즈스톤, LLM·생성형 AI 검증 리드할 ‘AI 테스트 아키텍트’ 양성 나서&nbsp;&nbsp;인공지능신문"
       },
       {
         "title": "조폐공사, 생성형 AI 업무혁신 경진대회… 37개 팀 참여 - 천지일보",
@@ -449,25 +463,11 @@
         "description": "조폐공사, 생성형 AI 업무혁신 경진대회… 37개 팀 참여&nbsp;&nbsp;천지일보"
       },
       {
-        "title": "인천항만공사, 인공지능(AI) 전환을 위해 생성형 AI 실전 적용 - 쉬핑뉴스넷",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBER3M1SnowbU5BbXY3UFR4Sm1DaHVrbDRzS3d1bG5WT1pvMmNJT0gxVnEwSDZZdXBMR1dNYzJ4YThyX1hsb0Voc25RZlduM1ltZTRMUWZtNHE0Rlg1ZjFzdXR4OUVFdUdMZ1dkX00xSHdlWEE?oc=5",
-        "source": "쉬핑뉴스넷",
-        "published": "Thu, 20 Aug 2026 07:51:39 GMT",
-        "description": "인천항만공사, 인공지능(AI) 전환을 위해 생성형 AI 실전 적용&nbsp;&nbsp;쉬핑뉴스넷"
-      },
-      {
-        "title": "취약계층·농어촌 고교생 12만 명에게 '유료 AI 서비스' 제공 - 대한민국 정책브리핑",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1DdVRqdFRhbHZUZVZfZjdHZDZVUTBzLUJ5Z1ZRZWp0d1QwNVljaTgtSUpYS0ZWQUVEMmU2N184MGYxbkdFU0F4Q3BSdkRjSW5ENXNRNG81WTlRU29pa1pPMjdST1dBdEJwTkwwYQ?oc=5",
-        "source": "대한민국 정책브리핑",
-        "published": "Wed, 19 Aug 2026 08:04:12 GMT",
-        "description": "취약계층·농어촌 고교생 12만 명에게 '유료 AI 서비스' 제공&nbsp;&nbsp;대한민국 정책브리핑"
-      },
-      {
-        "title": "[AI칼럼] AI를 배우는 60대가 달라진다 - 생성형 AI 시대, 시니어에게 필요한 새로운 공부 - 한국공공정책신문",
-        "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBBd0l0UVRDUlpTZ1FRWFBKVDhPTVk1d19XbU1OREFIbjE1ZC1RcG0wY2ZWSWhLbWhZYTZBWXd0aXNTS28?oc=5",
-        "source": "한국공공정책신문",
+        "title": "[AI칼럼] AI를 배우는 60대가 달라진다 - 생성형 AI 시대, 시니어에게 필요한 새로운 공부 - 얼리어답터뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5HWU0wODFFbGxWNjFLWlhNTEhvdUluRjJ2d2ZTSk5uMHBWUFU0Mm9KTzh0NGtfSTFsM0tVRjdTaGVORVZEc1ozMg?oc=5",
+        "source": "얼리어답터뉴스",
         "published": "Thu, 20 Aug 2026 20:55:59 GMT",
-        "description": "[AI칼럼] AI를 배우는 60대가 달라진다 - 생성형 AI 시대, 시니어에게 필요한 새로운 공부&nbsp;&nbsp;한국공공정책신문"
+        "description": "[AI칼럼] AI를 배우는 60대가 달라진다 - 생성형 AI 시대, 시니어에게 필요한 새로운 공부&nbsp;&nbsp;얼리어답터뉴스"
       }
     ],
     "s3_game": [
@@ -486,6 +486,13 @@
         "description": "강율빈 넵튠 대표, 인도 광고 생태계에 '게임 마케팅' 가능성 알린다&nbsp;&nbsp;테크M"
       },
       {
+        "title": "마브렉스, 웹3 모바일 게임 ‘픽셀 테이머즈’ 글로벌 출시 - 한국NGO신문",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4xaGthS0dpNzRDYktYcmFEdGY5REZ4NHExOXB3LVBmdkd3dkw5eDNRUzhPNmNEN2lsekJNT2VnQUpmZF8zVVZvVDM2UXJLVEJzNUNndGdJbEJLbm42YzVuRXNaclpjRTdk?oc=5",
+        "source": "한국NGO신문",
+        "published": "Thu, 20 Aug 2026 00:53:40 GMT",
+        "description": "마브렉스, 웹3 모바일 게임 ‘픽셀 테이머즈’ 글로벌 출시&nbsp;&nbsp;한국NGO신문"
+      },
+      {
         "title": "에픽세븐 8주년 쇼케이스 영상 예고가 장수 모바일 게임 시장에 던진 의미는? - 창업일보",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94SS1ZRkFqMjdoX2FLYmJkdkJpQUhYVzBXczZtdWIxQlVpRTdLam1STEMyWnppVi1pNHFjMzl2Sjg3QTZOSU8tbHo0R3ozdnVJV1pqU041dk9ydGtrd19wU3VYRS00Znl5?oc=5",
         "source": "창업일보",
@@ -500,13 +507,6 @@
         "description": "넷마블, 모바일 게임 3종 대규모 업데이트…\"장기 흥행작 경쟁력 강화\"&nbsp;&nbsp;청년일보"
       },
       {
-        "title": "HK이노엔 헛개수, 모바일 게임 '리니지2M'과 협업 이벤트 진행 - 팜뉴스",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA0Ul9rN3ZGbkJMSGxSdXIzNzZReXoycXBXRFhLTzhYeG1MX0RvQndvcHpZOVM2RWp2UzFuYnY0T2pKXzROdDJWTUpOaFFZN0dCMzNzNW91ZFpZMUJGWTBCWk1aNk9ZN3Q5RnZ5Qw?oc=5",
-        "source": "팜뉴스",
-        "published": "Thu, 20 Aug 2026 01:07:32 GMT",
-        "description": "HK이노엔 헛개수, 모바일 게임 '리니지2M'과 협업 이벤트 진행&nbsp;&nbsp;팜뉴스"
-      },
-      {
         "title": "HK이노엔 헛개수, 모바일 게임 ‘리니지2M’과 콜라보 - 중소기업신문",
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1GRnZrWUdjUlFIUW9DOFU0WEZLMlpwNk56RmxhcHF1UW0wWnFyVW5xeDlGdkdkcFhJX1BDQURhUjRaUG95UHdCRENueG40Vmx4aHlFaG9vbXlpVGFXSHlQVUhZRkdvT3A4Njk2b0NR?oc=5",
         "source": "중소기업신문",
@@ -514,18 +514,18 @@
         "description": "HK이노엔 헛개수, 모바일 게임 ‘리니지2M’과 콜라보&nbsp;&nbsp;중소기업신문"
       },
       {
-        "title": "마브렉스, 웹3 모바일 게임 ‘픽셀 테이머즈’ 글로벌 출시 - 한국NGO신문",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4xaGthS0dpNzRDYktYcmFEdGY5REZ4NHExOXB3LVBmdkd3dkw5eDNRUzhPNmNEN2lsekJNT2VnQUpmZF8zVVZvVDM2UXJLVEJzNUNndGdJbEJLbm42YzVuRXNaclpjRTdk?oc=5",
-        "source": "한국NGO신문",
-        "published": "Thu, 20 Aug 2026 00:53:40 GMT",
-        "description": "마브렉스, 웹3 모바일 게임 ‘픽셀 테이머즈’ 글로벌 출시&nbsp;&nbsp;한국NGO신문"
-      },
-      {
         "title": "HK이노엔 헛개수, 모바일 게임 '리니지2M' 콜라보 - 뉴스포스트",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA5d0RXM1FBbTJ3SHFTQURmTVdsZnJiQWdLSEJRSGVKOTRRTTFuTG9TVHJwSlJic25RSXh4Y043SWVGQWoyOGZlRVpOWnZ4RjdoTU5LNXFZbUZvdDZQbS1oX3FncHBIX2hCN3c?oc=5",
         "source": "뉴스포스트",
         "published": "Thu, 20 Aug 2026 04:14:58 GMT",
         "description": "HK이노엔 헛개수, 모바일 게임 '리니지2M' 콜라보&nbsp;&nbsp;뉴스포스트"
+      },
+      {
+        "title": "HK이노엔 헛개수, 모바일 게임 '리니지2M'과 협업 이벤트 진행 - 팜뉴스",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA0Ul9rN3ZGbkJMSGxSdXIzNzZReXoycXBXRFhLTzhYeG1MX0RvQndvcHpZOVM2RWp2UzFuYnY0T2pKXzROdDJWTUpOaFFZN0dCMzNzNW91ZFpZMUJGWTBCWk1aNk9ZN3Q5RnZ5Qw?oc=5",
+        "source": "팜뉴스",
+        "published": "Thu, 20 Aug 2026 01:07:32 GMT",
+        "description": "HK이노엔 헛개수, 모바일 게임 '리니지2M'과 협업 이벤트 진행&nbsp;&nbsp;팜뉴스"
       },
       {
         "title": "컬러톤즈 새빛, '와일드 리프트' 신규 스킨 테마 OST '헤일로' 참여 - 머니투데이 - 머니투데이",
@@ -658,18 +658,18 @@
         "description": "Web3 게임 분석 | 암호화폐 토큰&nbsp;&nbsp;games.gg"
       },
       {
-        "title": "웹3 열기 식어도 투자 계속…넷마블 마브렉스, '게임·IP'로 승부수 - 테크M",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1BY0NrQnR0bzJjNUZjSHNwanRzQ0F4aE9YYVRrcm1ad3ctYmR4Y0xvazhQZmNyZTh1ZlowLWFwODlBSjY5d0o2MFlOVklCTzY0eWY1eXQ3WGxYZW5WWFNSNTctUjZOd9IBakFVX3lxTE9FdWU1dDJiVWRDem15aFBCa3hVb2NLcmhVS0xuLURLSTVESU5KVTByRW52a2RJemFYb1lKbGhJMkM5cHNESVJldzZnTTZMSk1xdXc5TjE0QWYwWmlNcUFYaF84Y3ctYnYtbVE?oc=5",
-        "source": "테크M",
-        "published": "Thu, 20 Aug 2026 01:55:09 GMT",
-        "description": "웹3 열기 식어도 투자 계속…넷마블 마브렉스, '게임·IP'로 승부수&nbsp;&nbsp;테크M"
-      },
-      {
         "title": "Optimism이 자금을 지원하는 팀의 결정적인 투표가 사용자들로부터 4,900만 달러 상당의 OP 토큰을 이동시켰습니다 - CoinDesk",
         "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxObExHVEtkejhncWVlaU1pcS1YLXl6RHRxWjhXWW9vQVpaZGFldXZrTC1hU0wtb0RxOXVaQUZPbEs1QzNfTjExcDFvM0VESWxMcDRNa3JuaFRaODJOdTFsZlhiS3gycVdIMkhnY1h5eGFFZkZOWl94aGYxOVpVcjdsRjhIeVBPUks4bGFMS0Y5X05wNndkdnEzOHJhQ1B6YjdRR2xQLTlqYUZYUy1vRV9BMTZwSnk4dGlhcWdadXRUQ0tJTThhSGl5WFhn?oc=5",
         "source": "CoinDesk",
         "published": "Thu, 20 Aug 2026 12:00:25 GMT",
         "description": "Optimism이 자금을 지원하는 팀의 결정적인 투표가 사용자들로부터 4,900만 달러 상당의 OP 토큰을 이동시켰습니다&nbsp;&nbsp;CoinDesk"
+      },
+      {
+        "title": "웹3 열기 식어도 투자 계속…넷마블 마브렉스, '게임·IP'로 승부수 - 테크M",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1BY0NrQnR0bzJjNUZjSHNwanRzQ0F4aE9YYVRrcm1ad3ctYmR4Y0xvazhQZmNyZTh1ZlowLWFwODlBSjY5d0o2MFlOVklCTzY0eWY1eXQ3WGxYZW5WWFNSNTctUjZOd9IBakFVX3lxTE9FdWU1dDJiVWRDem15aFBCa3hVb2NLcmhVS0xuLURLSTVESU5KVTByRW52a2RJemFYb1lKbGhJMkM5cHNESVJldzZnTTZMSk1xdXc5TjE0QWYwWmlNcUFYaF84Y3ctYnYtbVE?oc=5",
+        "source": "테크M",
+        "published": "Thu, 20 Aug 2026 01:55:09 GMT",
+        "description": "웹3 열기 식어도 투자 계속…넷마블 마브렉스, '게임·IP'로 승부수&nbsp;&nbsp;테크M"
       },
       {
         "title": "마인페이, TMO·댐댐과 손잡고 교통·생활결제 인프라 강화 - 헤럴드경제",
@@ -832,8 +832,8 @@
       "sign": "+"
     },
     "wemix": {
-      "krw": 273.33,
-      "chg24h": 1.189935918108729,
+      "krw": 273.96,
+      "chg24h": 1.715708832189282,
       "dir": "RISING",
       "sign": "+"
     }
@@ -951,6 +951,43 @@
       }
     ],
     "s4": {
+      "lygl": [
+        {
+          "title": "Legend of Ymir Updates Seasonal 3v3 PvP Arena Ranked Match - Inven Global",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTTRaRlJ3YTgwOGk1SXNqWkZIYzd4aWx0MW5EOXh2di05S0I3X0FHajZkVU5DWG8wSXByZ1FXRDFNbHNjMnNqc25XT3V1NlI3VzR6UkdVaHlid3hXVE0taFU1UE5kdVI0djQtMC14Q3N1dDFVUkY4V25jRlNyWDFLV3J5c0hkdTExbDlrVlVYVXVXUGt3aFE2THJGdFl2bHZRQ2xr?oc=5",
+          "source": "Inven Global",
+          "published": "Thu, 20 Aug 2026 05:14:17 GMT",
+          "description": "Legend of Ymir Updates Seasonal 3v3 PvP Arena Ranked Match&nbsp;&nbsp;Inven Global"
+        },
+        {
+          "title": "3v3 Battles, Legend of Ymir Introduces 'Arena Ranking Battle' - 게임메카",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1pdi1hNWgwTXV5NHpQd2Uzb090aG81ZUVHWGhoamRwMGxMZjNqUDZ6WWtTb3ZNd3R5UHc2QThaRUJnQU1SVGhfVWFrVzh3czgzUTlkOU53WmJPcnZH?oc=5",
+          "source": "게임메카",
+          "published": "Thu, 20 Aug 2026 08:17:14 GMT",
+          "description": "3v3 Battles, Legend of Ymir Introduces 'Arena Ranking Battle'&nbsp;&nbsp;게임메카"
+        },
+        {
+          "title": "Blockchain gaming weekly roundup: 7th August - BlockchainGamerBiz",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcnZxalphN0RuVnpkM2U3eTlpSFFKTnhwVnAtUm1FTzFvVHI3NDI5OHBZR2c1U3NqV0E2ekp5SjlEUGN1NXc1VUFpMkxQNm03bWVQRzJlYmZ5M01MWjI2X2NPTHM3TGd2bHYwdGw0SENYLVFWYlFfYWJaTXJwQURDVHFYZk5IdnlOOGZ0a2xzekgzdzhLYTdxOHd2UWEwazlGLVdoVFppZ2_SAa4BQVVfeXFMTXNXdy0xQjBjZFNHZzhYNDhKWW1TNDRlME0wdC14cXdPZjJlWVp4aElmQmxJS1RRNy1RTlZUcXgwZDQ4cUtIMldsUTBmZ1RJaFowWUEyUG1SYU9CRlh1UGllRzdvNFUtSjkxVDZtOG1OUEczNjZTOThGSXZ4NEdzOW95a3psQ1VUMUt3MkhUS29QUEhESXZYcWpqQzBoZzB3R0x6V3ZNTDlHUWI3czBR?oc=5",
+          "source": "BlockchainGamerBiz",
+          "published": "Fri, 07 Aug 2026 07:00:00 GMT",
+          "description": "Blockchain gaming weekly roundup: 7th August&nbsp;&nbsp;BlockchainGamerBiz"
+        },
+        {
+          "title": "Wemade Q2 operating loss 21 billion won narrows from year earlier - 디지털투데이",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPc25FLWNESUktblA4SFQ2bkhlUlJUM3BQOWhSV1FHdGdkT0tyWTZWVEZvcmNRUi1LUzNfY0dsb1N2NEh4S1I1NFB0Tmw3dXhkQWVqYlFFM3BPSE9qWk9qRVpGVklHSzFhcnNzUXV6ajhoYVQzNEVmMXZlY1ZYUzNERDNVU0dpVWJscFp6NG1ORFVyakptelUtTHFhbG1pWkJwa19OSHVfdjJLeFpGYWlr?oc=5",
+          "source": "디지털투데이",
+          "published": "Wed, 12 Aug 2026 08:31:56 GMT",
+          "description": "Wemade Q2 operating loss 21 billion won narrows from year earlier&nbsp;&nbsp;디지털투데이"
+        },
+        {
+          "title": "Class Reboot and Balance Adjustments: Night Crows Second Half Roadmap - 게임메카",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9iNEZibUpHT3hUZno1SWZfdVdOVTk5Sjh1THY5MWdOczZYNXVUZ3dlalhGbnRJMmd1bDJrZ2JyQjV0V3Z1X0Fsc296UkRaTm1ncUpVMWdpb0RYQQ?oc=5",
+          "source": "게임메카",
+          "published": "Thu, 20 Aug 2026 08:38:14 GMT",
+          "description": "Class Reboot and Balance Adjustments: Night Crows Second Half Roadmap&nbsp;&nbsp;게임메카"
+        }
+      ],
       "wemade": [
         {
           "title": "뿔난 위메이드 주주…“새 주인 실체 불분명” 금감원에 민원 제기 - 디일렉",
@@ -986,43 +1023,6 @@
           "source": "뉴스토마토",
           "published": "Fri, 14 Aug 2026 09:30:55 GMT",
           "description": "스테이블넷 구축한 위메이드…금융사 확보 '숙제'&nbsp;&nbsp;뉴스토마토"
-        }
-      ],
-      "lygl": [
-        {
-          "title": "Legend of Ymir Updates Seasonal 3v3 PvP Arena Ranked Match - Inven Global",
-          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTTRaRlJ3YTgwOGk1SXNqWkZIYzd4aWx0MW5EOXh2di05S0I3X0FHajZkVU5DWG8wSXByZ1FXRDFNbHNjMnNqc25XT3V1NlI3VzR6UkdVaHlid3hXVE0taFU1UE5kdVI0djQtMC14Q3N1dDFVUkY4V25jRlNyWDFLV3J5c0hkdTExbDlrVlVYVXVXUGt3aFE2THJGdFl2bHZRQ2xr?oc=5",
-          "source": "Inven Global",
-          "published": "Thu, 20 Aug 2026 05:14:17 GMT",
-          "description": "Legend of Ymir Updates Seasonal 3v3 PvP Arena Ranked Match&nbsp;&nbsp;Inven Global"
-        },
-        {
-          "title": "3v3 Battles, Legend of Ymir Introduces 'Arena Ranking Battle' - 게임메카",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBHWDZSMFJuUXJSakhQZkFqV0dsbWxVNlZBdUdiWGpKUTZkWXdkbEZ6bnhlb1VGTXlsWm9jbDJQRmQ0RDAta0lveUZQYUwyNzRIRHJTUnlPZjVqUQ?oc=5",
-          "source": "게임메카",
-          "published": "Thu, 20 Aug 2026 08:17:14 GMT",
-          "description": "3v3 Battles, Legend of Ymir Introduces 'Arena Ranking Battle'&nbsp;&nbsp;게임메카"
-        },
-        {
-          "title": "Blockchain gaming weekly roundup: 7th August - BlockchainGamerBiz",
-          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcnZxalphN0RuVnpkM2U3eTlpSFFKTnhwVnAtUm1FTzFvVHI3NDI5OHBZR2c1U3NqV0E2ekp5SjlEUGN1NXc1VUFpMkxQNm03bWVQRzJlYmZ5M01MWjI2X2NPTHM3TGd2bHYwdGw0SENYLVFWYlFfYWJaTXJwQURDVHFYZk5IdnlOOGZ0a2xzekgzdzhLYTdxOHd2UWEwazlGLVdoVFppZ2_SAa4BQVVfeXFMTXNXdy0xQjBjZFNHZzhYNDhKWW1TNDRlME0wdC14cXdPZjJlWVp4aElmQmxJS1RRNy1RTlZUcXgwZDQ4cUtIMldsUTBmZ1RJaFowWUEyUG1SYU9CRlh1UGllRzdvNFUtSjkxVDZtOG1OUEczNjZTOThGSXZ4NEdzOW95a3psQ1VUMUt3MkhUS29QUEhESXZYcWpqQzBoZzB3R0x6V3ZNTDlHUWI3czBR?oc=5",
-          "source": "BlockchainGamerBiz",
-          "published": "Fri, 07 Aug 2026 07:00:00 GMT",
-          "description": "Blockchain gaming weekly roundup: 7th August&nbsp;&nbsp;BlockchainGamerBiz"
-        },
-        {
-          "title": "Wemade Q2 operating loss 21 billion won narrows from year earlier - 디지털투데이",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPc25FLWNESUktblA4SFQ2bkhlUlJUM3BQOWhSV1FHdGdkT0tyWTZWVEZvcmNRUi1LUzNfY0dsb1N2NEh4S1I1NFB0Tmw3dXhkQWVqYlFFM3BPSE9qWk9qRVpGVklHSzFhcnNzUXV6ajhoYVQzNEVmMXZlY1ZYUzNERDNVU0dpVWJscFp6NG1ORFVyakptelUtTHFhbG1pWkJwa19OSHVfdjJLeFpGYWlr?oc=5",
-          "source": "디지털투데이",
-          "published": "Wed, 12 Aug 2026 08:31:56 GMT",
-          "description": "Wemade Q2 operating loss 21 billion won narrows from year earlier&nbsp;&nbsp;디지털투데이"
-        },
-        {
-          "title": "Class Reboot and Balance Adjustments: Night Crows Second Half Roadmap - 게임메카",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9iNEZibUpHT3hUZno1SWZfdVdOVTk5Sjh1THY5MWdOczZYNXVUZ3dlalhGbnRJMmd1bDJrZ2JyQjV0V3Z1X0Fsc296UkRaTm1ncUpVMWdpb0RYQQ?oc=5",
-          "source": "게임메카",
-          "published": "Thu, 20 Aug 2026 08:38:14 GMT",
-          "description": "Class Reboot and Balance Adjustments: Night Crows Second Half Roadmap&nbsp;&nbsp;게임메카"
         }
       ],
       "ncgl": [
