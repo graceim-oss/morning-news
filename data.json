@@ -1,5 +1,5 @@
 {
-  "updated": "01:23:35",
+  "updated": "01:58:53",
   "news": {
     "wemade": [],
     "blockchain": [],
@@ -157,10 +157,10 @@
       "sign": "-"
     },
     "wemix": {
-      "krw": 270.69,
-      "chg24h": -0.242793851916655,
-      "dir": "FALLING",
-      "sign": "-"
+      "krw": 270.51,
+      "chg24h": 0.23799348629512207,
+      "dir": "RISING",
+      "sign": "+"
     }
   },
   "sections": {
@@ -169,8 +169,8 @@
     "s3": [],
     "s4": {
       "wemade": [],
-      "ncgl": [],
-      "lygl": []
+      "lygl": [],
+      "ncgl": []
     },
     "s5": []
   }
