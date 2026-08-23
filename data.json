@@ -1,5 +1,5 @@
 {
-  "updated": "07:44:58",
+  "updated": "08:12:00",
   "news": {
     "wemade": [
       {
@@ -75,13 +75,6 @@
     ],
     "blockchain": [
       {
-        "title": "업비트·빗썸 늘리고 코인원·코빗 줄이고…엇갈린 상장 전략 - 비즈워치",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0yWklSRk9QUTBnckk4OE55RlV3RWhfa3E1cW02SFliRFFPV21wLVV1NHVRNzJaOHl0c3pXOWRZeEhfUXV2T2tEaXlOVlRDZFdaWm4wWkpDRlN5eGhrSU1sVm1SR3NxdEdOMHc?oc=5",
-        "source": "비즈워치",
-        "published": "Sun, 23 Aug 2026 22:40:03 GMT",
-        "description": "업비트·빗썸 늘리고 코인원·코빗 줄이고…엇갈린 상장 전략&nbsp;&nbsp;비즈워치"
-      },
-      {
         "title": "거래량 ‘0’ 코인마켓 거래소… VASP에 기대 명맥만 유지 - IT조선",
         "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE82R2toVkMxc1VUZ25qNlBJdTQtY3JST3lUZkpoVkNNZUw0R3BQYVNYUjl5bGRsVVU4WElwbTZSbVVnNDUyZ2dTZG5yMFc4QkVpN1JCWjNWc3BKOHBUdXd6Q21DVTN3aWdGNjg0SzE5QknSAXRBVV95cUxObm9BbDByajlfSHYxV0JWUUFrTlpqTWlhRTB2Rl9sTHpOeG05Ny1ITnNCdjRNTWd1S2ZvX2pVbVVTVGd6QzRrMGlEYXAwZVN5ZWlqT2JxNUIyUzBNb3pMdmZxTHlDS0x1cmVHNW4yc2JkZGw3Rg?oc=5",
         "source": "IT조선",
@@ -115,6 +108,13 @@
         "source": "연합뉴스",
         "published": "Thu, 20 Aug 2026 17:58:35 GMT",
         "description": "비트코인, 규제완화법 청신호에 7만불 돌파…역대2위 공매도청산&nbsp;&nbsp;연합뉴스"
+      },
+      {
+        "title": "업비트·빗썸 늘리고 코인원·코빗 줄이고…엇갈린 상장 전략 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBNeWtfN3pTeWtpUkhzSnhTRm9OY3ZINHBSMVRsRFpVa0tURWk3QmZ3cFh4cGNOMktkZ3g1MEFna3F0akR2NVU0alMwcjRnSjg?oc=5",
+        "source": "v.daum.net",
+        "published": "Sun, 23 Aug 2026 22:41:07 GMT",
+        "description": "업비트·빗썸 늘리고 코인원·코빗 줄이고…엇갈린 상장 전략&nbsp;&nbsp;v.daum.net"
       },
       {
         "title": "비트코인 7년 만에 과열 신호… 13억 달러 청산에 7만달러 경고 - 글로벌이코노믹",
@@ -175,13 +175,6 @@
         "description": "[AI 이슈트렌드] 집중호우 피해·민주당 전당대회 주목…증권가는 '대형 주주환원' 화제&nbsp;&nbsp;AI타임스"
       },
       {
-        "title": "[이미루의 트렌드 세일즈] AI 미팅 어시스턴트 - 한국강사신문",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE50Mk40cFdOeHVKMEl0anFheTFvWGNkUFRuZ2drNVVEWXUxdkNHWnljVlQzaUpvaEQxcXFud0M1SFE5Q0NabTVOTy1mTjNrVm9BZzFlVF9qVEZqaTNvd1pneWdTYWIzenlueUxzUmNiZ2w?oc=5",
-        "source": "한국강사신문",
-        "published": "Sun, 23 Aug 2026 02:10:00 GMT",
-        "description": "[이미루의 트렌드 세일즈] AI 미팅 어시스턴트&nbsp;&nbsp;한국강사신문"
-      },
-      {
         "title": "[트렌드 포커스] 지방대 판도 바꿀까…‘AI’에 전공 더한 AI 특화교육으로 차별화 - 시사캐스트",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE15dXJuNG9tajFvU1hwcHFqOVdkZ0pISjNPOVlNNXJHbFZJbl9CTzV1eF9lVTZ4UW5vckpZRVVzVGJXSVA3Ykh6SW1ubE1KWGNZdTZMdGl3bWNOOXhCbFN0LVY1OVoyNmc?oc=5",
         "source": "시사캐스트",
@@ -189,11 +182,25 @@
         "description": "[트렌드 포커스] 지방대 판도 바꿀까…‘AI’에 전공 더한 AI 특화교육으로 차별화&nbsp;&nbsp;시사캐스트"
       },
       {
+        "title": "[이미루의 트렌드 세일즈] AI 미팅 어시스턴트 - 한국강사신문",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE50Mk40cFdOeHVKMEl0anFheTFvWGNkUFRuZ2drNVVEWXUxdkNHWnljVlQzaUpvaEQxcXFud0M1SFE5Q0NabTVOTy1mTjNrVm9BZzFlVF9qVEZqaTNvd1pneWdTYWIzenlueUxzUmNiZ2w?oc=5",
+        "source": "한국강사신문",
+        "published": "Sun, 23 Aug 2026 02:10:00 GMT",
+        "description": "[이미루의 트렌드 세일즈] AI 미팅 어시스턴트&nbsp;&nbsp;한국강사신문"
+      },
+      {
         "title": "“AI로 만들고 알고리즘으로 산다”…KT, Z세대가 뽑은 2026 트렌드 5 공개 - 더퍼블릭",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5lWGpWZ2dqZ2RRSGNZTkxMSGxrR0tZVDJ4M196SzdUQUQ2aDl0dElLVVdJVUg5Q3NNbEhfUHNZU1dSOGo5cHluU2FDWngzSlFVYU0xbWFOVFlncVdHNG1ETmFfQVdvTFNWY2toTjh1Y9IBb0FVX3lxTE5lWGpWZ2dqZ2RRSGNZTkxMSGxrR0tZVDJ4M196SzdUQUQ2aDl0dElLVVdJVUg5Q3NNbEhfUHNZU1dSOGo5cHluU2FDWngzSlFVYU0xbWFOVFlncVdHNG1ETmFfQVdvTFNWY2toTjh1Yw?oc=5",
         "source": "더퍼블릭",
         "published": "Sun, 23 Aug 2026 00:23:26 GMT",
         "description": "“AI로 만들고 알고리즘으로 산다”…KT, Z세대가 뽑은 2026 트렌드 5 공개&nbsp;&nbsp;더퍼블릭"
+      },
+      {
+        "title": "AI와 AI가 충돌하는 시대, 철학이 다시 떠오르는 이유 - 한국경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5pZEN5MUJTYWlYLWhNMFN5bVlDbzAtc2Jpa1BGWjVaNGxqdzBnS0tfdWY0ZEtVWkNHb0NjNWl1VndoNWZpbWI4Rm9YazlINDlRRG5SSVptZ0VwQQ?oc=5",
+        "source": "한국경제",
+        "published": "Sun, 23 Aug 2026 07:13:28 GMT",
+        "description": "AI와 AI가 충돌하는 시대, 철학이 다시 떠오르는 이유&nbsp;&nbsp;한국경제"
       },
       {
         "title": "Z세대가 꼽은 올해의 5대 트렌드...“취향으로 만나고 AI로 만든다” - 반론보도닷컴",
@@ -208,13 +215,6 @@
         "source": "프라임경제",
         "published": "Fri, 21 Aug 2026 08:40:53 GMT",
         "description": "젠데스크코리아 \"AI로 CS 단순업무 자동화…상담사는 고가치 업무 집중\"&nbsp;&nbsp;프라임경제"
-      },
-      {
-        "title": "【AI 시대 소비 트렌드】 (7) 관광 소비는 검색 코스에서 AI 설계 코스로 이동한다 - 브랜드뉴스",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9nYlFpcWtEQ21XS2YwbjMyNGQ1bHVuREgwYm1qN3dHQVFVNjRhM3JuejdfbUQxUXI3MlJZcF82QnVIZms3ZTJja0Y3QmQxVlVlV3MzMVgxTktfcENHR24wbUQ0M084VXNWaS15VQ?oc=5",
-        "source": "브랜드뉴스",
-        "published": "Sat, 22 Aug 2026 12:34:32 GMT",
-        "description": "【AI 시대 소비 트렌드】 (7) 관광 소비는 검색 코스에서 AI 설계 코스로 이동한다&nbsp;&nbsp;브랜드뉴스"
       }
     ],
     "clipping": [
@@ -401,9 +401,9 @@
     "s3_ai": [
       {
         "title": "통신사 AI 서비스 늘수록 소외되는 노인들 [통신 소외 고령층①] - IT조선",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE93MmkxNlFhNHFHTFowWlZFQmRDblJZTlpDQXk1RmZ4Y3dUUEhWdFZJVEQ2UmtLc1hDc3VqRy13SkRaOHBuZEo3QWZwSDdhbFFfSUpFNG1MaEk1VFBabjMtS3NNRVhSWkgwSF9scGx2M1VseUhl0gF0QVVfeXFMT3cyaTE2UWE0cUdMWjBaVkVCZENuUllOWkNBeTVGZnhjd1RQSFZ0VklURDZSa0tzWENzdWpHLXdKRFo4cG5kSjdBZnBIN2FsUV9JSkU0bUxoSTVUUFpuMy1Lc01FWFJaSDBIX2xwbHYzVWx5SGU?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE04OWVWMXJJUV9ZS0c2ekNOd2ZtMUdLWDV6MF9lWXJxNC04cEpTOFU0bkRLZ0xaektQdWVzZ3NaMF96YnRwalVOYUxCM3NySjNCMEhfWFA4WUVSTUhBbHNWS0g4S2dmaDRBNWlvSFpERXXSAXRBVV95cUxPdzJpMTZRYTRxR0xaMFpWRUJkQ25SWU5aQ0F5NUZmeGN3VFBIVnRWSVRENlJrS3NYQ3N1akctd0pEWjhwbmRKN0FmcEg3YWxRX0lKRTRtTGhJNVRQWm4zLUtzTUVYUlpIMEhfbHBsdjNVbHlIZQ?oc=5",
         "source": "IT조선",
-        "published": "Sun, 23 Aug 2026 21:13:01 GMT",
+        "published": "Sun, 23 Aug 2026 21:00:00 GMT",
         "description": "통신사 AI 서비스 늘수록 소외되는 노인들 [통신 소외 고령층①]&nbsp;&nbsp;IT조선"
       },
       {
@@ -412,6 +412,13 @@
         "source": "헬로디디",
         "published": "Sun, 23 Aug 2026 08:00:00 GMT",
         "description": "[차이나 급보] 중국 AI 서비스 가성비의 의혹&nbsp;&nbsp;헬로디디"
+      },
+      {
+        "title": "소셜앤비즈, 프로젝트형 생성형AI 교육 결실, ‘배움’ 넘어 출판·브랜딩으로…『시간이 써 내려간 나』 시화집 출간 - 파이낸스투데이",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5vNWcwZGZDVU1WOXYzMjhQYU4zUU5KdlpZREN5bkNhSExYWWhGbmNRVGhFanpmc2ZTV2V4ZU9CbmhvYkNoa0lXU2E2ZVp2clFka29rOUJRTC1zMEs5cVlqbXY5bVF0SFhBdEVnUA?oc=5",
+        "source": "파이낸스투데이",
+        "published": "Sun, 23 Aug 2026 22:56:56 GMT",
+        "description": "소셜앤비즈, 프로젝트형 생성형AI 교육 결실, ‘배움’ 넘어 출판·브랜딩으로…『시간이 써 내려간 나』 시화집 출간&nbsp;&nbsp;파이낸스투데이"
       },
       {
         "title": "“AI 서비스 1강 도약”… 기업 쪼갠 카카오 - 세계일보",
@@ -428,18 +435,18 @@
         "description": "강원도립대학교, 강원권 교육기관 종사자 대상 ‘생성형 AI 활용 역량강화 워크숍’ 개최&nbsp;&nbsp;검경일보"
       },
       {
-        "title": "돌아온 Gemini 학생 1년 무료! 받았던 분도 주목 - 브런치",
-        "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1mT0txR3ZOVDBqaEZqMzBNZlFybDlSRFF2Q2tyUWlZWFFMcmZENksyRVNUV1FmbWU0S3BKMGVpdGhlUVU?oc=5",
-        "source": "브런치",
-        "published": "Sun, 23 Aug 2026 09:33:22 GMT",
-        "description": "돌아온 Gemini 학생 1년 무료! 받았던 분도 주목&nbsp;&nbsp;브런치"
-      },
-      {
         "title": "한국정보공학, 폐쇄망 전용 생성형 AI 플랫폼 'HARO.Assistant 1.0' 출시 - 네이트",
         "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE91Qm9RLUJBVVMxOGQ5Z3lZWE1fUFQxM2gwQVNPOEYwZmZpRXFxdVphVVdhQ2E4M1hrX196ZlFXZV9QR29jYkZRUU1VMklkd1lUV0hr?oc=5",
         "source": "네이트",
         "published": "Sun, 23 Aug 2026 22:31:00 GMT",
         "description": "한국정보공학, 폐쇄망 전용 생성형 AI 플랫폼 'HARO.Assistant 1.0' 출시&nbsp;&nbsp;네이트"
+      },
+      {
+        "title": "돌아온 Gemini 학생 1년 무료! 받았던 분도 주목 - 브런치",
+        "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1mT0txR3ZOVDBqaEZqMzBNZlFybDlSRFF2Q2tyUWlZWFFMcmZENksyRVNUV1FmbWU0S3BKMGVpdGhlUVU?oc=5",
+        "source": "브런치",
+        "published": "Sun, 23 Aug 2026 09:33:22 GMT",
+        "description": "돌아온 Gemini 학생 1년 무료! 받았던 분도 주목&nbsp;&nbsp;브런치"
       },
       {
         "title": "\"LLM보다 하네스가 핵심\"…엔비디아 AVO, 장기 에이전트 가능성 입증 - AI타임스",
@@ -461,13 +468,6 @@
         "source": "simplywall.st",
         "published": "Sun, 23 Aug 2026 06:13:42 GMT",
         "description": "AI 인프라 수요에 주목할 생성형 AI 주식 3선&nbsp;&nbsp;simplywall.st"
-      },
-      {
-        "title": "‘AI 편향’ 보도 4년 새 4배… 생성형 AI 시대, ‘편견 없는 AI’ 만들려면 - 여성신문",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5VT2JpYTdlbGlfSGJ2WG51VWNIZGlDV2JuZ0QtRzFlVHZkNEtUUEtlaklsS1hkRzBCZDVoMGczMXMyaEdkOHFseHp6TzMwMzNXcGdQN1YyekFjVlR6TFVsMFJtYjh3N1pvd0dfWlJBa9IBc0FVX3lxTE04a3VtQ3hRaGdyMTMxcWd4VHF0WWZ4ZUdtR3htTUw3aDFnT0gzMDZSMmlmSzl4TUhhbGw4bFZHNGNuSGYtTzVPMGttN3ZqTEJoSXRnT2Y4ME9YQmtaX2NHUmhSWFFYYmRDNUNpTnVKTGpUZVE?oc=5",
-        "source": "여성신문",
-        "published": "Sun, 23 Aug 2026 06:28:51 GMT",
-        "description": "‘AI 편향’ 보도 4년 새 4배… 생성형 AI 시대, ‘편견 없는 AI’ 만들려면&nbsp;&nbsp;여성신문"
       }
     ],
     "s3_game": [
@@ -493,53 +493,53 @@
         "description": "[크립토리뷰] 마브렉스, 웹3 모바일 게임 '픽셀 테이머즈' 글로벌 출시(8월3주차)&nbsp;&nbsp;더구루"
       },
       {
-        "title": "요즘 드래곤을 만나다 할만하네 ㅋㅋㅋ - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOa3VNVDJQY1RJVWhqUGNSXzVFYUdCRGFZa3RMYXAwZlJ4RlJVSmlMd1F1SlVWRlB6THFBSU01dXdFZXdpakZhVFZjWTdlYjFWZWFqV2w4RGtfNHo1QlhnM1RGMkFNeUNLcXpXQzgyb2ZBdFdPdEtDT01LVjhoU1NUdUFfSF9UWlRpZWxHY0s2VjJVME1B?oc=5",
+        "title": "퀴즈 장르 모바일게임 출시임박 플레이 이미지 공개 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNV3ZoOFd2YUx3Z1pmV2ZtdDRfRHB3Qy0yUGdrWE03VGsyY3VuNlRCQS1FN1cycnZTZWFKTkpmcE1WZUtUOWhuanVBNE5IdlFlamNiV0dsbUNlbTFtcVRuRUJmSGNveXVWWHdGR1Nlc3lWakRiNV91eHl1bE1uMTVaZXlOWFFFcDVDdHpocVE3c19OSVJ4?oc=5",
         "source": "게임메카",
-        "published": "Sun, 23 Aug 2026 03:26:37 GMT",
-        "description": "요즘 드래곤을 만나다 할만하네 ㅋㅋㅋ&nbsp;&nbsp;게임메카"
+        "published": "Sun, 23 Aug 2026 05:59:00 GMT",
+        "description": "퀴즈 장르 모바일게임 출시임박 플레이 이미지 공개&nbsp;&nbsp;게임메카"
       },
       {
-        "title": "올해는 수작이 많이나오네요 - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOY2VKNWZseVA5MU1XSXV6dDBjaXhuT2pQWDl0YjlmS1JBVENOT3VlNDUxZXQ2Z3pOQlhaQlkwMVFDWlM1Y1FxY2tqRm0zempDQXg1VkpyV1A2bHVfdTUxd3dSYkhrWVBrV2p3MU1oR2lhNTBRd0djZHBGOHZSTUNMMWlXeUNkSXFjUS13OEVzQko2LTNZVE13?oc=5",
+        "title": "도전 나도 미소기생! - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSmJINGdzNnJnbm1lZWxwZ0k5TGo1TmlhZ0hQQWxkRlFtSkplSU15NGNtN0RLQkZJR3hyakM4ajkxcnc1aVhHRGxJUUl6ZFJRbjRqenkwc0NMN2tuUVVkcUdSWWxxS001bXh3QXpGNlZzdGlqNnVfM2Z3b3BuNjZoQkpYemExanU5YlFHNEZaYV85UQ?oc=5",
         "source": "게임메카",
-        "published": "Sat, 22 Aug 2026 22:18:37 GMT",
-        "description": "올해는 수작이 많이나오네요&nbsp;&nbsp;게임메카"
+        "published": "Sun, 23 Aug 2026 09:59:36 GMT",
+        "description": "도전 나도 미소기생!&nbsp;&nbsp;게임메카"
       },
       {
-        "title": "오블리비언 도미노 - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONG1uMC1CSS1LeTBLWXFKZ2hKSERIOURjVExFa1FuWGJFanB6QkdYZjV1M2MzZDVxTllZdlkybUNGdEQ3S1Zxd2FuVjUwb00teml6bnhMa01LcVN2NV9MZl9rTHRmdzFjb2dWMHl5UEx2VlRyQUdGN0hvQTNRRlVHdzhwZEMwdnQzcUhlXy00M29vZw?oc=5",
+        "title": "드래곤볼Z 스톱모션 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE13QllEYTA0aVJhNTZWQ3pfRExieFJxV3RDNXR1NENrWWNSSWFTRTJPMG1xUXJJQlBUdlR5dUxvU1lhcVctLW1MMUVuM2hSbmVFQzd0cEdxa0xOb296Sjd3WXM1VlR6a3drRnZxMm1kUFo0a3pPcnVJSQ?oc=5",
         "source": "게임메카",
-        "published": "Sun, 23 Aug 2026 02:32:54 GMT",
-        "description": "오블리비언 도미노&nbsp;&nbsp;게임메카"
+        "published": "Sun, 23 Aug 2026 11:03:45 GMT",
+        "description": "드래곤볼Z 스톱모션&nbsp;&nbsp;게임메카"
       },
       {
-        "title": "여름용 사제폭탄 제조기 - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSTg1ZV9IVzBCSDVRdXdtZVV0UUpadFdaazBsQ1RldGpWU3BXaFc2WFJFMmFaUkd6bzJGcjNHVURlNEJhSXh4ZzU0Q3JyWlBHZzk1YXUyQlVLZXJCbzBiNUk0c3lFR241a3d0aGVTRnJ2VzNOWWMtSFZQUVVyODl6clFXUEdoZ21SUEZFZ01DR0U3QQ?oc=5",
+        "title": "신규 복귀 이벤트 및 던전 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbmpEbTFQR1RGdHJ5VzhIUzVYQUNjbVpXYWNQRl9kbmtNNEgxNmxtWWVrU0dDRHNBSVBwQUpORF96MWJyY3pYYzVfUFhoOXpfLWtRVmJsNTd4bUN6VnZ3M1ZxRGM0eW8ybkVJLU9mb0gtd0UtajFTajJLOVB5UFp6ODFjR2hIaE1qSDV0SnlvTTBBcVB0RzdB?oc=5",
         "source": "게임메카",
-        "published": "Sun, 23 Aug 2026 03:17:25 GMT",
-        "description": "여름용 사제폭탄 제조기&nbsp;&nbsp;게임메카"
+        "published": "Sun, 23 Aug 2026 06:41:35 GMT",
+        "description": "신규 복귀 이벤트 및 던전&nbsp;&nbsp;게임메카"
       },
       {
-        "title": "흔한 모바일 게임 이벤트들.jyp - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZjlQX3YtZmNicE9WSE5idEQzTFdaLU5JcC1zUGtaVVMxX09VdV9GMUFQek0zbU9XbDdMb1UzNGUxSG04RGFoS1RWTEZwRzVsYUd3a0NkWFF5U0RPU1k3TV9GNkNzUHZhZEMwVURMNnFZTkZxQnRPLUhFZnBzM3Y5Ni01WC1sMWdUVnY5QnFQYVlvYUZp?oc=5",
+        "title": "대륙의 동상 스케일 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdGF2b1A1YURZTXBEREtrQVp5UVJ1SUtnajloblc4SEFFb1drdXRVMVdmSjlBQmRMZVNpODB6QmxHWE9sQWFUNnFaOU1rejZKRmRpQjdxejVpTU9oUVA0ZDRPMVZuNUZnVVZ3YkE2SlhlUHNCT18zaXJlOWRVaWZNcm9NbjdRWnlPNkhCSksyWk1QUlc0ejJB?oc=5",
         "source": "게임메카",
-        "published": "Sat, 22 Aug 2026 06:23:01 GMT",
-        "description": "흔한 모바일 게임 이벤트들.jyp&nbsp;&nbsp;게임메카"
+        "published": "Sun, 23 Aug 2026 05:45:53 GMT",
+        "description": "대륙의 동상 스케일&nbsp;&nbsp;게임메카"
       },
       {
-        "title": "트로피코 5 플레이영상 - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQa21pdUdZeERFX1ctai1pWmV5OHZienpSNFVfUnhLTm5Mb01ZYUJWdFhBb3llTzVnMUtrUDk5cUFhT2JXdGZSSkNqVXRUS0ZULUF5MmVXYTBkTzY1QmkzaE5BVERqei02NlVfcnZ6Z0hmYlluV3M0dkRFcklOS1E2V3NHVzJyNDNrRzlsUXJZUzBHQQ?oc=5",
+        "title": "맛있는 소리 지글지글 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNNWx1WnRXRWQ1ZldqdUdPM3lVeXZRV3BoNV83aG9QNzdlbXVhUGExS1dLRlNYR3lyNjBxSVUzQ1I5VHRoZGlMUjVocm9kTmZxSTQ5YmVVeTRfd0RfdUdLUnh4VVd5ZlVFNTNGdngxcjh1aWhyNEd0REN0OVYtdjJ5NTl1YW9Nd1AtcDZ4UjNpMjFVZw?oc=5",
         "source": "게임메카",
-        "published": "Sun, 23 Aug 2026 00:20:06 GMT",
-        "description": "트로피코 5 플레이영상&nbsp;&nbsp;게임메카"
+        "published": "Sun, 23 Aug 2026 08:41:24 GMT",
+        "description": "맛있는 소리 지글지글&nbsp;&nbsp;게임메카"
       },
       {
-        "title": "맞추기 힘든 야바위 - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNaDBYZHdfNHhUdUFfanZtaUJVNm15bUo0LWZuaUxoMGRROTYyc1BDZ1RGTlR5N0tKSmRjS2w2UmlQOFY2dnVJS191Zk05MHRBR0RtTnJVMGVUMjVMbG5XMWxTbHFoaTZKN2RfZG43amlYOXI3ZE5lU0M1bWVuMGdqRHQ5Zmw0OHd2dXJPdmNGRE44QQ?oc=5",
+        "title": "컨트롤 한국어판 프리오더 트레일러 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVzF1dmxSVkhyaF9FNDE2MWlTYzdlYldUazVfb1JkN0Q3dWpaQ0FfYmNGWDFBekg5R3J6OERqTDZuZXlJblZRSlA5RnJYU05kOFVxTXMyMHBxRG9WZHctZEYyRGxfenlDazdiNEJuMmtMWmw1b3BTNzFianV3bmUzYmhXRG5xM1o0TDZtdVFBRDlMbElz?oc=5",
         "source": "게임메카",
-        "published": "Sun, 23 Aug 2026 02:26:33 GMT",
-        "description": "맞추기 힘든 야바위&nbsp;&nbsp;게임메카"
+        "published": "Sun, 23 Aug 2026 06:44:51 GMT",
+        "description": "컨트롤 한국어판 프리오더 트레일러&nbsp;&nbsp;게임메카"
       }
     ],
     "s3_wemade": [
@@ -623,18 +623,18 @@
         "description": "Web3 게임 분석 | 암호화폐 토큰&nbsp;&nbsp;games.gg"
       },
       {
-        "title": "MEXC 추천 게임 박스 플레이 방법: 먼저 박스를 열고 친구를 초대하세요. 양쪽 모두 선물 보너스를 획득할 수 있습니다. - HackerNoon",
-        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZFhIWEtjaWdHZk9ZM3F3X0FCVXN1MUFrb0h2cTFyQVFKZ0ZSOUR1a2cwc0czMm5HUkhjYUVfdThVX3lFQ0RNeTZyZ0hHeTROT0p4clI5OWlhM2Z5aUxzMzkxTzJIZVVyaWpCVVRaeWZhbTdFZmVHeTJRU1dkY2FLSDk2LTlHR0JBZTZZWTc1RW44UXlRdkFpbjVwOTluZmhCY0l1d19kXzlBSG1uc2ZGdmE4djQ4ano0QUZCak9JQmRnZw?oc=5",
-        "source": "HackerNoon",
-        "published": "Sun, 23 Aug 2026 06:14:21 GMT",
-        "description": "MEXC 추천 게임 박스 플레이 방법: 먼저 박스를 열고 친구를 초대하세요. 양쪽 모두 선물 보너스를 획득할 수 있습니다.&nbsp;&nbsp;HackerNoon"
-      },
-      {
         "title": "암호화폐 프로젝트를 위한 최고의 Web3 마케팅 에이전시: 2026년 15대 추천 - FinanceFeeds",
         "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB4b1lFVExOUnVQMk9TRGUtWDN0X3NzZGI4eXZNSVdUanZKeGthQmZnQzhmV3JBeDJRaF9OMHJXNzVtYXpXcFBWSUM4cklEZFJXWjR4aHdYNVJFTzFUN0ptTzZubzJicTZXSVNVY3NFdUs1SEhOZ3c?oc=5",
         "source": "FinanceFeeds",
         "published": "Sat, 22 Aug 2026 09:54:15 GMT",
         "description": "암호화폐 프로젝트를 위한 최고의 Web3 마케팅 에이전시: 2026년 15대 추천&nbsp;&nbsp;FinanceFeeds"
+      },
+      {
+        "title": "MEXC 추천 게임 박스 플레이 방법: 먼저 박스를 열고 친구를 초대하세요. 양쪽 모두 선물 보너스를 획득할 수 있습니다. - HackerNoon",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZFhIWEtjaWdHZk9ZM3F3X0FCVXN1MUFrb0h2cTFyQVFKZ0ZSOUR1a2cwc0czMm5HUkhjYUVfdThVX3lFQ0RNeTZyZ0hHeTROT0p4clI5OWlhM2Z5aUxzMzkxTzJIZVVyaWpCVVRaeWZhbTdFZmVHeTJRU1dkY2FLSDk2LTlHR0JBZTZZWTc1RW44UXlRdkFpbjVwOTluZmhCY0l1d19kXzlBSG1uc2ZGdmE4djQ4ano0QUZCak9JQmRnZw?oc=5",
+        "source": "HackerNoon",
+        "published": "Sun, 23 Aug 2026 06:14:21 GMT",
+        "description": "MEXC 추천 게임 박스 플레이 방법: 먼저 박스를 열고 친구를 초대하세요. 양쪽 모두 선물 보너스를 획득할 수 있습니다.&nbsp;&nbsp;HackerNoon"
       },
       {
         "title": "컴투스 투자분석 2026. 08. 22 - 주달",
@@ -789,23 +789,23 @@
   "stocks": {
     "wemade": {
       "price": "15,380",
-      "change": "710",
-      "ratio": "4.41",
-      "dir": "FALLING",
+      "change": "0",
+      "ratio": "0.00",
+      "dir": "STEADY",
       "isOpen": false,
-      "sign": "-"
+      "sign": ""
     },
     "wemade_max": {
       "price": "4,550",
-      "change": "300",
-      "ratio": "6.19",
-      "dir": "FALLING",
+      "change": "0",
+      "ratio": "0.00",
+      "dir": "STEADY",
       "isOpen": false,
-      "sign": "-"
+      "sign": ""
     },
     "wemix": {
-      "krw": 271.75,
-      "chg24h": 0.7262209796419813,
+      "krw": 271.81,
+      "chg24h": 0.6945414410591458,
       "dir": "RISING",
       "sign": "+"
     }
