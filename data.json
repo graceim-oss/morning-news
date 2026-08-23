@@ -1,5 +1,5 @@
 {
-  "updated": "21:20:35",
+  "updated": "22:08:21",
   "news": {
     "wemade": [
       {
@@ -24,6 +24,13 @@
         "description": "위메이드, '나이트 크로우' 하반기 로드맵 공개&nbsp;&nbsp;녹색경제신문"
       },
       {
+        "title": "나이트 크로우', 2026년 하반기 업데이트 로드맵 공개…신규 독립 서버 예고 - 네이트",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1Pck14S0xvV3hPVTRCbnBOZFhQZVV0NXB1SGhzbFM3MFI5SDczTEZoa0FySlUtbllTMmRERzZzTlRHdWdxUUxHdWZwQ2VoOFdjVXdERXFlZEZOMUU4?oc=5",
+        "source": "네이트",
+        "published": "Sun, 23 Aug 2026 13:01:00 GMT",
+        "description": "나이트 크로우', 2026년 하반기 업데이트 로드맵 공개…신규 독립 서버 예고&nbsp;&nbsp;네이트"
+      },
+      {
         "title": "위메이드 '컨퍼런스콜 패싱'에 불통 논란 - IT조선",
         "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB6dVJkS3ZpOHc5OUIyOU1kVWV4eUhzZU94am43QlpRc3Axbzdnb1NITkV1Z2dibWRNaUg5STFqVU5PZFIzNEFTMXZ1R1F1SmtfMkE2SVQ4VVVOMXVYalJPTFRKVlZPSS0xNFE2LXZrUGTSAXRBVV95cUxQNjdGdkNfNkxEOTE0bUY1SlRSeEtNYlkzYl9KY01aSTZiU19udGU3MWlIdVpMOENKTmxQczhFd1E5ajUtSzlCOVVKcWhvdnVwZ05NaXVvM2xlc2dzemt1Ni1oWDk0cGhzbXBCR3BsZDFVUTN5ag?oc=5",
         "source": "IT조선",
@@ -38,13 +45,6 @@
         "description": "위메이드맥스, InvestingPro 적정가치 시그널 후 60% 급등 By Investing.com&nbsp;&nbsp;Investing.com 한국어"
       },
       {
-        "title": "위메이드 '나이트 크로우', 하반기 대규모 개편…신규 서버·싱글 플레이 추가 - 한국경제",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBHRk80OTZRRHZ3OTJOVlBCamozcXI2RThVMllCUlBNSEtyR0lrNHMwdlg0YWJrLWIzT0Vfd0lKSlk4eDFoOTBRZXRUeEgwTVkxbXRHTHpOUDhBUQ?oc=5",
-        "source": "한국경제",
-        "published": "Thu, 20 Aug 2026 06:49:53 GMT",
-        "description": "위메이드 '나이트 크로우', 하반기 대규모 개편…신규 서버·싱글 플레이 추가&nbsp;&nbsp;한국경제"
-      },
-      {
         "title": "‘나이트 크로우’ 하반기 이렇게 바뀐다…신규 서버도 오픈 [오늘의 게임 업데이트] - 서울경제",
         "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1hVFZVTWMyanhEOG9uZ2dwUGNpSGVnV3phWlZOZEFyVldvcjJBUkUyUk85TUZQSkcxYjQzalBHenRQWlVvdWphNURsRlVaNGFUaWc?oc=5",
         "source": "서울경제",
@@ -52,25 +52,25 @@
         "description": "‘나이트 크로우’ 하반기 이렇게 바뀐다…신규 서버도 오픈 [오늘의 게임 업데이트]&nbsp;&nbsp;서울경제"
       },
       {
+        "title": "위메이드, MMORPG '나이트 크로우' 하반기 로드맵 공개 - 아이뉴스24",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5jX09YdEEyaTI3eGZUeHR3bkJLS2l5Ym9TbW5ydFliT3NXT0kyMGwwZ1h0Y1ZrMm40ZG9iZFBaMEJXRHIycWRqLVFwZw?oc=5",
+        "source": "아이뉴스24",
+        "published": "Thu, 20 Aug 2026 06:12:26 GMT",
+        "description": "위메이드, MMORPG '나이트 크로우' 하반기 로드맵 공개&nbsp;&nbsp;아이뉴스24"
+      },
+      {
+        "title": "위메이드 나이트 크로우, 하반기 업데이트 로드맵 공개 - NSP통신",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE13Mk5nQy1vVGdHLVJyLTV5eWh6ak1rOTVMUUhBSGE1SnZiS3dodDhUS0JHaFpocVlnRXpGUm5zQk1wbXZ2dzFYc21xUlhOWFBuVGxONmFXSEgyWGt0OXB5ZA?oc=5",
+        "source": "NSP통신",
+        "published": "Thu, 20 Aug 2026 08:26:39 GMT",
+        "description": "위메이드 나이트 크로우, 하반기 업데이트 로드맵 공개&nbsp;&nbsp;NSP통신"
+      },
+      {
         "title": "10여 종 신작 쏟아낸다…위메이드맥스, 'IP 다각화'로 성장 드라이브 - 지디넷코리아",
         "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBXV0VyU0cxbHR2NHdrZVZlcjZrR0FCWEJDbXA1ZmhmdUhaVWlRa0xjdHRFTFFMNXJvS3ZLdEZUWjF5UmFJWFUwbFRwaVFaMmh3aUV5dlVB?oc=5",
         "source": "지디넷코리아",
         "published": "Tue, 18 Aug 2026 01:41:22 GMT",
         "description": "10여 종 신작 쏟아낸다…위메이드맥스, 'IP 다각화'로 성장 드라이브&nbsp;&nbsp;지디넷코리아"
-      },
-      {
-        "title": "비용 줄여 버티는 위메이드…길어지는 '신작 공백' - 딜사이트",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE8tYjBuRUhCTWhEcVZZYWh0akpaVEhzMHo0NGp2RTNXTVp2Wm1nbGpGekFxaExqZnhiTm5WdGxKZ285S0pwRWt2Y0NUZ2xDZkk?oc=5",
-        "source": "딜사이트",
-        "published": "Mon, 17 Aug 2026 22:47:32 GMT",
-        "description": "비용 줄여 버티는 위메이드…길어지는 '신작 공백'&nbsp;&nbsp;딜사이트"
-      },
-      {
-        "title": "[오늘의 IR] HEM파마·실리콘투·위메이드맥스 등 - 이투데이",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA5MDBFbG1UbVhicW1xeHgzQk9hQTB5TjkxVTFmMG1zZkU5UnVKeGxEM2tDWUYzQ29EcXFWOEZFbUF0OXFKN1lsUElKS3dmcF9KZ3NPZA?oc=5",
-        "source": "이투데이",
-        "published": "Wed, 19 Aug 2026 22:20:00 GMT",
-        "description": "[오늘의 IR] HEM파마·실리콘투·위메이드맥스 등&nbsp;&nbsp;이투데이"
       }
     ],
     "blockchain": [
@@ -96,13 +96,6 @@
         "description": "XRP, 비트코인·이더리움 제치고 급등 – 랠리를 이끄는 진짜 원인은?&nbsp;&nbsp;Investing.com 한국어"
       },
       {
-        "title": "코인베이스 비트코인 역프리미엄 97일째…역대 최장 기록 - 블루밍비트",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5ETlBkUmlLQk5ydEMxUXgzalQtNklmd0hGeUFMUXVWVDhIbHlBRG9BSTRacDdEeFBOZm55YUJlc2E0SktMTmltUmNRWmpoTVVC?oc=5",
-        "source": "블루밍비트",
-        "published": "Sun, 23 Aug 2026 04:41:12 GMT",
-        "description": "코인베이스 비트코인 역프리미엄 97일째…역대 최장 기록&nbsp;&nbsp;블루밍비트"
-      },
-      {
         "title": "비트코인, 규제완화법 청신호에 7만불 돌파…역대2위 공매도청산 - 연합뉴스",
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBKMWExYnU5ajJuYko3bU8wazZJRGMtcEJZQmk0YTN3eERGcFhkTDc4NTdpMkZhMmM0X29TMmZfcV81QnpoMXpKOXZONU1xbkxCMGdpb245aTQzQXPSAWBBVV95cUxPbHRxTU5wdHM5eUlrY21FQ1duUndEeFJweWdWRjA3Y21WdXlYYmJMeTZENXRuY2pwT3VZMS1NTmVQbHl0WnFjc0cxTFgzc1hNTDZ5ZlA0alU5ZTVzSV80UkI?oc=5",
         "source": "연합뉴스",
@@ -124,6 +117,13 @@
         "description": "법인 가상자산 계정 6600개 육박했는데…투자 막혀 99% '개점휴업'&nbsp;&nbsp;뉴스1"
       },
       {
+        "title": "코인베이스 비트코인 역프리미엄 97일째…역대 최장 기록 - 블루밍비트",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5ETlBkUmlLQk5ydEMxUXgzalQtNklmd0hGeUFMUXVWVDhIbHlBRG9BSTRacDdEeFBOZm55YUJlc2E0SktMTmltUmNRWmpoTVVC?oc=5",
+        "source": "블루밍비트",
+        "published": "Sun, 23 Aug 2026 04:41:12 GMT",
+        "description": "코인베이스 비트코인 역프리미엄 97일째…역대 최장 기록&nbsp;&nbsp;블루밍비트"
+      },
+      {
         "title": "비트코인, 10주 박스권 돌파…일주일 새 20% 급등 - v.daum.net",
         "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1JTHp0a08wZnIyOFlWYjdzSkM1Z0RFRm1rNWJIbG1DS2xQVl94SVhUNG1vdmx5eEo5OVRRbUpvQkI5OGM4VVZVQWtFQVpqdlE?oc=5",
         "source": "v.daum.net",
@@ -131,11 +131,11 @@
         "description": "비트코인, 10주 박스권 돌파…일주일 새 20% 급등&nbsp;&nbsp;v.daum.net"
       },
       {
-        "title": "금·은·비트코인 ‘급등’…미 재정 불안에 달러·국채 시장 흔들려 - 한겨레",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBOMEVpejF6V2NXaW5KdXJMc2p5YTVneU85YW1WMUhiS3pqcHV5TEVuM1k4SXZuQVk4eFhUWGcyYXUzcG9OTVhEa2d6MlRmYnRBclY4VnFESEVDQUt6c25fcGRodTJwckpSYkxqTVdJYlZjQQ?oc=5",
-        "source": "한겨레",
-        "published": "Sun, 23 Aug 2026 07:42:00 GMT",
-        "description": "금·은·비트코인 ‘급등’…미 재정 불안에 달러·국채 시장 흔들려&nbsp;&nbsp;한겨레"
+        "title": "비트코인, 5개월만의 급등으로 7만달러 회복...이유 살펴보니[엠블록레터] - 매일경제 마켓",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9aLVRidXY3R3BfRHU0Nkx0VjIyRzVoNy12UDVaZHg5Z2NZZFZGTDcySFZBM2xCT05DWVhjSnYwWUZvb2Q5MENQVmRwakcyZ0JZOUE?oc=5",
+        "source": "매일경제 마켓",
+        "published": "Fri, 21 Aug 2026 06:01:32 GMT",
+        "description": "비트코인, 5개월만의 급등으로 7만달러 회복...이유 살펴보니[엠블록레터]&nbsp;&nbsp;매일경제 마켓"
       },
       {
         "title": "체크온체인 \"비트코인, 약세장 막바지…4년 주기설 회의적\" - 머니투데이 - 머니투데이",
@@ -147,11 +147,11 @@
     ],
     "aiit": [
       {
-        "title": "[AI 이슈트렌드] 집중호우 피해·민주당 전당대회 주목…증권가는 '대형 주주환원' 화제 - AI타임스",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5zTlBYQ25FWmVFS2p6aVF6dzRZTHZ0SEktaTR0NFBEbERIaU0yUDdZdUlQSDNIS3Z2ZG5abmhvdElmQ0J4dGt4Y3RTejBidTM3Q3JOVzRELUk4eGxHbFNyanRKcmJEZTU2NGc?oc=5",
-        "source": "AI타임스",
-        "published": "Sat, 22 Aug 2026 16:36:58 GMT",
-        "description": "[AI 이슈트렌드] 집중호우 피해·민주당 전당대회 주목…증권가는 '대형 주주환원' 화제&nbsp;&nbsp;AI타임스"
+        "title": "[이미루의 트렌드 세일즈] AI 미팅 어시스턴트 - 한국강사신문",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE50Mk40cFdOeHVKMEl0anFheTFvWGNkUFRuZ2drNVVEWXUxdkNHWnljVlQzaUpvaEQxcXFud0M1SFE5Q0NabTVOTy1mTjNrVm9BZzFlVF9qVEZqaTNvd1pneWdTYWIzenlueUxzUmNiZ2w?oc=5",
+        "source": "한국강사신문",
+        "published": "Sun, 23 Aug 2026 02:10:00 GMT",
+        "description": "[이미루의 트렌드 세일즈] AI 미팅 어시스턴트&nbsp;&nbsp;한국강사신문"
       },
       {
         "title": "“AI로 만들고 알고리즘으로 산다”…KT, Z세대가 뽑은 2026 트렌드 5 공개 - 더퍼블릭",
@@ -161,11 +161,11 @@
         "description": "“AI로 만들고 알고리즘으로 산다”…KT, Z세대가 뽑은 2026 트렌드 5 공개&nbsp;&nbsp;더퍼블릭"
       },
       {
-        "title": "[이미루의 트렌드 세일즈] AI 미팅 어시스턴트 - 한국강사신문",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE50Mk40cFdOeHVKMEl0anFheTFvWGNkUFRuZ2drNVVEWXUxdkNHWnljVlQzaUpvaEQxcXFud0M1SFE5Q0NabTVOTy1mTjNrVm9BZzFlVF9qVEZqaTNvd1pneWdTYWIzenlueUxzUmNiZ2w?oc=5",
-        "source": "한국강사신문",
-        "published": "Sun, 23 Aug 2026 02:10:00 GMT",
-        "description": "[이미루의 트렌드 세일즈] AI 미팅 어시스턴트&nbsp;&nbsp;한국강사신문"
+        "title": "[AI 이슈트렌드] 집중호우 피해·민주당 전당대회 주목…증권가는 '대형 주주환원' 화제 - AI타임스",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5zTlBYQ25FWmVFS2p6aVF6dzRZTHZ0SEktaTR0NFBEbERIaU0yUDdZdUlQSDNIS3Z2ZG5abmhvdElmQ0J4dGt4Y3RTejBidTM3Q3JOVzRELUk4eGxHbFNyanRKcmJEZTU2NGc?oc=5",
+        "source": "AI타임스",
+        "published": "Sat, 22 Aug 2026 16:36:58 GMT",
+        "description": "[AI 이슈트렌드] 집중호우 피해·민주당 전당대회 주목…증권가는 '대형 주주환원' 화제&nbsp;&nbsp;AI타임스"
       },
       {
         "title": "투모로 로보틱스, AWS 피지컬 AI 프론티어 1기 선정 - 로봇신문",
@@ -203,18 +203,18 @@
         "description": "Z세대가 꼽은 올해의 5대 트렌드...“취향으로 만나고 AI로 만든다”&nbsp;&nbsp;반론보도닷컴"
       },
       {
-        "title": "【AI 시대 소비 트렌드】 (7) 관광 소비는 검색 코스에서 AI 설계 코스로 이동한다 - 브랜드뉴스",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9nYlFpcWtEQ21XS2YwbjMyNGQ1bHVuREgwYm1qN3dHQVFVNjRhM3JuejdfbUQxUXI3MlJZcF82QnVIZms3ZTJja0Y3QmQxVlVlV3MzMVgxTktfcENHR24wbUQ0M084VXNWaS15VQ?oc=5",
-        "source": "브랜드뉴스",
-        "published": "Sat, 22 Aug 2026 12:34:32 GMT",
-        "description": "【AI 시대 소비 트렌드】 (7) 관광 소비는 검색 코스에서 AI 설계 코스로 이동한다&nbsp;&nbsp;브랜드뉴스"
-      },
-      {
         "title": "젠데스크코리아 \"AI로 CS 단순업무 자동화…상담사는 고가치 업무 집중\" - 프라임경제",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBCRUhZc0E2THptOThhSVJNQ0VkUWFzaHN4bVZVeUN3WC1RMmVieEt2S1NpaHh4dUdPX2lnZlQ3X2VkaS0zaHFHZmhXaHRJRnFsSnN0SUxxb1oyelNXX0Z4c1pkclNyY19RYnA1WQ?oc=5",
         "source": "프라임경제",
         "published": "Fri, 21 Aug 2026 08:40:53 GMT",
         "description": "젠데스크코리아 \"AI로 CS 단순업무 자동화…상담사는 고가치 업무 집중\"&nbsp;&nbsp;프라임경제"
+      },
+      {
+        "title": "【AI 시대 소비 트렌드】 (7) 관광 소비는 검색 코스에서 AI 설계 코스로 이동한다 - 브랜드뉴스",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9nYlFpcWtEQ21XS2YwbjMyNGQ1bHVuREgwYm1qN3dHQVFVNjRhM3JuejdfbUQxUXI3MlJZcF82QnVIZms3ZTJja0Y3QmQxVlVlV3MzMVgxTktfcENHR24wbUQ0M084VXNWaS15VQ?oc=5",
+        "source": "브랜드뉴스",
+        "published": "Sat, 22 Aug 2026 12:34:32 GMT",
+        "description": "【AI 시대 소비 트렌드】 (7) 관광 소비는 검색 코스에서 AI 설계 코스로 이동한다&nbsp;&nbsp;브랜드뉴스"
       }
     ],
     "clipping": [
@@ -349,6 +349,13 @@
         "description": "Tracking ad agency account reviews—the latest on brand creative, media and more&nbsp;&nbsp;Ad Age"
       },
       {
+        "title": "10 Gen Z Marketing Makeovers, And Whether They're Working - ADWEEK",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTWFTR1JIQlJNejI4R2NlNHdWZnBKemRKNzBhaGZKem00Rmg0MFNGSzRTSWJlQ1Q4MUhXTXRyTS1mVlRUOFZDcmhJNXJaNU9vazZEVlczaC1CRUxMNDdiWnFyTXRrd21rdVVXVmJBUU1lTVVvc1FCLVVHcklCckZidzhfaWtBbVlHZ1hSX05WMkJzWXBkMllQV3JtNA?oc=5",
+        "source": "ADWEEK",
+        "published": "Mon, 17 Aug 2026 10:13:40 GMT",
+        "description": "10 Gen Z Marketing Makeovers, And Whether They're Working&nbsp;&nbsp;ADWEEK"
+      },
+      {
         "title": "Timelaps Uses AI to Reinvent Brand Tracking - Hypepotamus",
         "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1qazI0cFFCZ3B2TjB0aHBMWnZIelFORDVqRVF6ZHJXY3E3aWI0Qm5XbnpxTGxPekUyTml3V2FIeVhwUGZzMzBDNHNvZzE3Zm5sYWlKMkVWc0lKWVM2ejVXWlUtY2xuZw?oc=5",
         "source": "Hypepotamus",
@@ -389,13 +396,6 @@
         "source": "Gap Inc.",
         "published": "Tue, 18 Aug 2026 15:16:30 GMT",
         "description": "Gap Launches \"Denim On Your Own,\" a Fall 2026 Campaign Starring Malcolm Todd and Inde Navarrette&nbsp;&nbsp;Gap Inc."
-      },
-      {
-        "title": "ACASIS Launches 818 Brand Day Campaign: 18 Years of Productivity - markets.businessinsider.com",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQcUN1T2dRVndIMTIwS0ptWXUtaWhHY2ZoTHBTbE1jeGhJYUpkLUFva0ZQZngtaFlMaWxIaEF0WVN6eFhjYk0xNGxrSWxIcnRwVXNYN2xlUEZmMUpDTWdMYUtxSC14YWJHTXpLSF9WdHo5YTJ2SGFjRERnOUZyQUJhbFBxR2Z2UzhKczI3ZWk1TjFPYm5yYXZlY0ZCazVVSXdYdFJmbGlEcHBmYTNtZGRKX19ZbHlhaGpLMmlSdFBGZw?oc=5",
-        "source": "markets.businessinsider.com",
-        "published": "Tue, 18 Aug 2026 17:07:10 GMT",
-        "description": "ACASIS Launches 818 Brand Day Campaign: 18 Years of Productivity&nbsp;&nbsp;markets.businessinsider.com"
       }
     ],
     "s3_ai": [
@@ -486,11 +486,11 @@
         "description": "HK이노엔 헛개수, 인기 모바일 게임 ‘리니지2M’과 콜라보 이벤트&nbsp;&nbsp;한국의약통신"
       },
       {
-        "title": "대륙의 동상 스케일 - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdGF2b1A1YURZTXBEREtrQVp5UVJ1SUtnajloblc4SEFFb1drdXRVMVdmSjlBQmRMZVNpODB6QmxHWE9sQWFUNnFaOU1rejZKRmRpQjdxejVpTU9oUVA0ZDRPMVZuNUZnVVZ3YkE2SlhlUHNCT18zaXJlOWRVaWZNcm9NbjdRWnlPNkhCSksyWk1QUlc0ejJB?oc=5",
+        "title": "퀴즈 장르 모바일게임 출시임박 플레이 이미지 공개 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNV3ZoOFd2YUx3Z1pmV2ZtdDRfRHB3Qy0yUGdrWE03VGsyY3VuNlRCQS1FN1cycnZTZWFKTkpmcE1WZUtUOWhuanVBNE5IdlFlamNiV0dsbUNlbTFtcVRuRUJmSGNveXVWWHdGR1Nlc3lWakRiNV91eHl1bE1uMTVaZXlOWFFFcDVDdHpocVE3c19OSVJ4?oc=5",
         "source": "게임메카",
-        "published": "Sun, 23 Aug 2026 05:45:53 GMT",
-        "description": "대륙의 동상 스케일&nbsp;&nbsp;게임메카"
+        "published": "Sun, 23 Aug 2026 05:59:00 GMT",
+        "description": "퀴즈 장르 모바일게임 출시임박 플레이 이미지 공개&nbsp;&nbsp;게임메카"
       },
       {
         "title": "[키워드로 보는 장외주식] 엔드림 - 프리스탁뉴스",
@@ -500,25 +500,11 @@
         "description": "[키워드로 보는 장외주식] 엔드림&nbsp;&nbsp;프리스탁뉴스"
       },
       {
-        "title": "올해는 수작이 많이나오네요 - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOY2VKNWZseVA5MU1XSXV6dDBjaXhuT2pQWDl0YjlmS1JBVENOT3VlNDUxZXQ2Z3pOQlhaQlkwMVFDWlM1Y1FxY2tqRm0zempDQXg1VkpyV1A2bHVfdTUxd3dSYkhrWVBrV2p3MU1oR2lhNTBRd0djZHBGOHZSTUNMMWlXeUNkSXFjUS13OEVzQko2LTNZVE13?oc=5",
+        "title": "대륙의 동상 스케일 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdGF2b1A1YURZTXBEREtrQVp5UVJ1SUtnajloblc4SEFFb1drdXRVMVdmSjlBQmRMZVNpODB6QmxHWE9sQWFUNnFaOU1rejZKRmRpQjdxejVpTU9oUVA0ZDRPMVZuNUZnVVZ3YkE2SlhlUHNCT18zaXJlOWRVaWZNcm9NbjdRWnlPNkhCSksyWk1QUlc0ejJB?oc=5",
         "source": "게임메카",
-        "published": "Sat, 22 Aug 2026 22:18:37 GMT",
-        "description": "올해는 수작이 많이나오네요&nbsp;&nbsp;게임메카"
-      },
-      {
-        "title": "요즘 드래곤을 만나다 할만하네 ㅋㅋㅋ - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOa3VNVDJQY1RJVWhqUGNSXzVFYUdCRGFZa3RMYXAwZlJ4RlJVSmlMd1F1SlVWRlB6THFBSU01dXdFZXdpakZhVFZjWTdlYjFWZWFqV2w4RGtfNHo1QlhnM1RGMkFNeUNLcXpXQzgyb2ZBdFdPdEtDT01LVjhoU1NUdUFfSF9UWlRpZWxHY0s2VjJVME1B?oc=5",
-        "source": "게임메카",
-        "published": "Sun, 23 Aug 2026 03:26:37 GMT",
-        "description": "요즘 드래곤을 만나다 할만하네 ㅋㅋㅋ&nbsp;&nbsp;게임메카"
-      },
-      {
-        "title": "지브리 테마파크 - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWEZGTzdNM0ktQ1VQRHYweUpGbWhSc2E2WDZKbVNzOUFfZDB6aE50VzdtOGlvSFM4UTdJMEtJN3BkT09jQUNuekk3LUxacUp5cHg0cHBaNVk5eDFSOWpCalNoMlh3S3NEUzNWeTVoZVppZWtZc2tIejdHc0NuRy1HNWhxcXFDakw0aHFoOGItQ0dMci1H?oc=5",
-        "source": "게임메카",
-        "published": "Sun, 23 Aug 2026 04:33:52 GMT",
-        "description": "지브리 테마파크&nbsp;&nbsp;게임메카"
+        "published": "Sun, 23 Aug 2026 05:45:53 GMT",
+        "description": "대륙의 동상 스케일&nbsp;&nbsp;게임메카"
       },
       {
         "title": "빵야 - 게임메카",
@@ -528,21 +514,42 @@
         "description": "빵야&nbsp;&nbsp;게임메카"
       },
       {
-        "title": "거상 이벤트 막판 스퍼드 - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZ281TFVZU0M2N3V6bzktOUZqa2ZnWWVfZFJQWmprSGhvU05WTFFSMXdLNTVYdGhXZzVVZjR4Vy1NVFY3R2Vid3NmUDZwRnVYNkFVVU9XSzZJV3VNbnVRcnI0UGFfalNJaDN4LVVkRm9acE42bGhyb011QmJMWnM1VXRJd1Y5VDA0cEM4OGlIVnR3Uy05QnFR?oc=5",
+        "title": "런닝머신 만렙 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQX1ZrRUplbGdZaFhEbEdCNVZaZV9BUnQ0NlZHdExTcGF1V0M4MWJHcDZMM19VU1dMMXFKSEdWOEpDc2dSZVZaRGJfR3BkYVFTMkR3Y2Y4bExRX0tvY2FZanJWN2xlUW9ZajY2ZEhOSnNHaExJX1cwbExHNHhhNWREV1JsbmNSLVZJZHhfWkVGVy13S0Fuajkw?oc=5",
         "source": "게임메카",
-        "published": "Sun, 23 Aug 2026 02:46:07 GMT",
-        "description": "거상 이벤트 막판 스퍼드&nbsp;&nbsp;게임메카"
+        "published": "Sun, 23 Aug 2026 04:19:56 GMT",
+        "description": "런닝머신 만렙&nbsp;&nbsp;게임메카"
       },
       {
-        "title": "하리 귀요미송 - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPamJXeVlueFRsYzViM1E1c2tNSzNCVFFVMmcyX2s5b281NVgzamF3SlRZQ1p2MFJSQlVocW1wc0I3TXFBNGk5ZmlrV291cU9mTXo4Z0xNLUVwbHZHMkVQNkNDTnROMUxYaThCU3ZtX0dLU29DZzluSDBvazV0NWI3Q0d1ZTRWb1Y3VGZUcnd3ZmNsUQ?oc=5",
+        "title": "싱크로율 100% - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONVljM3prUnBMU3dVem1GT3NNNlg1M2FMOXJqc1F3WHdPVXIwZmNxSXplNnJLY1dmVGVRakZBYk43WUpYb2d6Q0x5OVdVc080eENiWkt2LXRlMXl3UmY5STl2OTJndUIzNHBTOEI4Rm9qeTBsMi11aUtTckVSQ2ZFUE9NV1Q0V3Z5TXRpYU1VYWRvNGJGSE1F?oc=5",
         "source": "게임메카",
-        "published": "Sun, 23 Aug 2026 03:52:43 GMT",
-        "description": "하리 귀요미송&nbsp;&nbsp;게임메카"
+        "published": "Sun, 23 Aug 2026 02:08:14 GMT",
+        "description": "싱크로율 100%&nbsp;&nbsp;게임메카"
+      },
+      {
+        "title": "아시아 엄마들의 잔소리 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPVFltNlBhc3hINFYwVUM5cHpaRVA5UGJNVkMybFBneGdVLTlnNXJKSi1udG0xS1FnOWZ2SERfY1VyNTRUWGJsZFcxTDdKenBPelZOUFJBY19rY29QU05PLWkycERjWUxGa0hvblJiVXhWdXY2N1FJdk8yLUdqaF9tSnZVNnF6bFJNUzIxaTlNdmRLQQ?oc=5",
+        "source": "게임메카",
+        "published": "Sun, 23 Aug 2026 05:36:33 GMT",
+        "description": "아시아 엄마들의 잔소리&nbsp;&nbsp;게임메카"
+      },
+      {
+        "title": "달마과장 애니메이션 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOUHlkU0dlVkQ0MWxTY2FOeFZfOVVCZXZJZ3o3M3BDRDJQS1JZNVFlWXFwRjVJeGdBYmVyRlg1NzhESTVnNl9ST0FLY2RTU3RIaHQ5WDZBaEV0MUNacXY2eHF1cGhOR1dvLUlvaXJ0MG1XVlJUWko1V2JlWm5lUmVHOE5md2FyNmcxNlVtMzBVbjZ0dw?oc=5",
+        "source": "게임메카",
+        "published": "Sun, 23 Aug 2026 00:23:47 GMT",
+        "description": "달마과장 애니메이션&nbsp;&nbsp;게임메카"
       }
     ],
     "s3_wemade": [
+      {
+        "title": "나이트 크로우', 2026년 하반기 업데이트 로드맵 공개…신규 독립 서버 예고 - 네이트",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1Pck14S0xvV3hPVTRCbnBOZFhQZVV0NXB1SGhzbFM3MFI5SDczTEZoa0FySlUtbllTMmRERzZzTlRHdWdxUUxHdWZwQ2VoOFdjVXdERXFlZEZOMUU4?oc=5",
+        "source": "네이트",
+        "published": "Sun, 23 Aug 2026 13:01:00 GMT",
+        "description": "나이트 크로우', 2026년 하반기 업데이트 로드맵 공개…신규 독립 서버 예고&nbsp;&nbsp;네이트"
+      },
       {
         "title": "위메이드 투자분석 2026. 08. 22 - 주달",
         "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0zM0h2Zlp1TFBqWUlwMWtGX1B2eVFjQWZlNFNKNFZ4UlRJV01vZ25SaVR3ZGtleEtnR0RWMk9OMTd4R3c5RDdicGVyWExQSGJWNG53VGU1Y0w2UGlQcURvZ0gzbFJGY0tPOGVQRjlyZ2h6ck0?oc=5",
@@ -556,20 +563,6 @@
         "source": "OSEN",
         "published": "Fri, 21 Aug 2026 13:57:00 GMT",
         "description": "‘레전드 오브 이미르’, 시즌제 3대3 PvP ‘결투장 랭킹전’ 업데이트&nbsp;&nbsp;OSEN"
-      },
-      {
-        "title": "[겜별사] 방치형은 보는 맛…눈길 사로잡는 '윈드러너 키우기' - inews24.com",
-        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE96WG9uMXNjUXFrRGhPSUtYRm5hX3pvMWlCVXZmOTdMQnpmVVFDMTZCdzJ1S3FweEdwQm5GYlFfWS1GRjZKdzBFdGl3WQ?oc=5",
-        "source": "inews24.com",
-        "published": "Fri, 21 Aug 2026 22:20:31 GMT",
-        "description": "[겜별사] 방치형은 보는 맛…눈길 사로잡는 '윈드러너 키우기'&nbsp;&nbsp;inews24.com"
-      },
-      {
-        "title": "“다작보다 장수”…게임업계, 하반기 ‘라이브서비스·글로벌’ 투트랙 - 미디어펜",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1pNjVuZEppd1A0MEE0WUF4a1RLaGh4RW9LemF4T2VFQnhicmFQLWlvaU9fZ2hIYjY3dDF3cDNDRC11ZlFCalRGanQ1czkyOGJZTU9TT9IBWEFVX3lxTFBJck05SlJydXVvM2J0dFVRbk4zdE0wcWEzTHBCU1pqQTkxZmJ6ZkQ2cFFvZHp4YW5nMG9YdDNKVUlZcVpqbWF2UXRjSmI5cHpMNHZ1eUJNbmE?oc=5",
-        "source": "미디어펜",
-        "published": "Sat, 22 Aug 2026 00:57:41 GMT",
-        "description": "“다작보다 장수”…게임업계, 하반기 ‘라이브서비스·글로벌’ 투트랙&nbsp;&nbsp;미디어펜"
       }
     ],
     "s3_blockchain": [
@@ -616,11 +609,11 @@
         "description": "Web3 Growth Agent (wga.xyz) 가격 내역 및 과거 데이터&nbsp;&nbsp;CoinMarketCap"
       },
       {
-        "title": "아이티센글로벌 투자분석 2026. 08. 22 - 주달",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBDbG00N1BQSTRBREttNHNJWFB3RG5RR20xSGJDQ3hmUkhkSGVFQlhxT2ZVcDkzVTIzSWo3OS16Y3UyZV9OV3NUaEh2UU8xTFFOak1vX0U1MHQ5ZXdLdTNiM2duSjdGOFR5N1BXMVJpUVB4N1k?oc=5",
+        "title": "컴투스 투자분석 2026. 08. 22 - 주달",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBJUXZaTDNheUlzejFGeWxkWlloMGRnNWM0cEQ2Q2RxbDhXYXVrMEpyb0tSS3V5QTk0eUlKSEROVzNiblR6ZEZ2OURWNEhFbUpxT2U4NDZDRFc4bDRHS0VLSWFKeXBZd1d4QzM2MTU4ZllVam8?oc=5",
         "source": "주달",
-        "published": "Sat, 22 Aug 2026 11:47:50 GMT",
-        "description": "아이티센글로벌 투자분석 2026. 08. 22&nbsp;&nbsp;주달"
+        "published": "Sat, 22 Aug 2026 09:45:29 GMT",
+        "description": "컴투스 투자분석 2026. 08. 22&nbsp;&nbsp;주달"
       },
       {
         "title": "NHN KCP, 라인 넥스트와 디지털지갑 연동… 6500만 해외 이용자 국내 여행·역직구 물꼬 튼다 - koreasprint.com",
@@ -790,8 +783,8 @@
       "sign": "-"
     },
     "wemix": {
-      "krw": 269.81,
-      "chg24h": -0.45832662882139985,
+      "krw": 270.45,
+      "chg24h": -0.2317134764855793,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -992,6 +985,13 @@
           "description": "Wemade Unveils Major Update Roadmap for 'Night Crows' in Second Half of 2026&nbsp;&nbsp;Inven Global"
         },
         {
+          "title": "Wemade Swings to Q2 Operating Loss of ₩21 Billion in Final Report Card Under Park Kwan-ho - finance.biggo.com",
+          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBTU1JOd0FVajYzQ0VWWGdVUjhwdkd5TWFpbDJkSDhsVEx6a1R3YTZwSkRyREptV1dTWGpKVEl6NnN5aXNiX05KcHhqakRqcVQwc1lMdzVlTExWTWlZdmhmRWpCUXNGQnVRRFVxOUFXZlpnOFhzOFE?oc=5",
+          "source": "finance.biggo.com",
+          "published": "Wed, 12 Aug 2026 07:00:00 GMT",
+          "description": "Wemade Swings to Q2 Operating Loss of ₩21 Billion in Final Report Card Under Park Kwan-ho&nbsp;&nbsp;finance.biggo.com"
+        },
+        {
           "title": "Class Reboot and Balance Adjustments: Night Crows Second Half Roadmap - 게임메카",
           "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9aVFNDNHdZQ3FYdENId1IyaENBUGw0eVFQWnphdkF3U183aG5Rem1ubnVlZHVQczZZU0ZNbnphSDNtWkUzX1gwMEQ4aVo0SHJkVzBqWEdHSFV0WmJC?oc=5",
           "source": "게임메카",
@@ -999,18 +999,11 @@
           "description": "Class Reboot and Balance Adjustments: Night Crows Second Half Roadmap&nbsp;&nbsp;게임메카"
         },
         {
-          "title": "Wildcard woes: Why the Crows are walking a tightrope - ABC News &amp; Headlines – Australian Broadcasting Corporation",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPTkZNeHhPUFRBRVRqU0JIbEJNaFo0MHQ2NHc4eDlveXJzTklZOXhLZGEyRDMyN0loTGVGalhCMVk4Z2JjRFNyZ29VYm9iaHlSVVFBbFgtck1LYXVWVUMwX0h3anpBVnpJTV9IeWVWNmcxOC1EYjFaLW83eC0xSG1ySnE4aXF3S3ZKeEtPTGNLZm5TWGg4RWZXUVRGOUZyRmxpU0pFVUMyOEVtLVlI?oc=5",
-          "source": "ABC News &amp; Headlines – Australian Broadcasting Corporation",
-          "published": "Fri, 21 Aug 2026 21:48:08 GMT",
-          "description": "Wildcard woes: Why the Crows are walking a tightrope&nbsp;&nbsp;ABC News & Headlines – Australian Broadcasting Corporation"
-        },
-        {
-          "title": "Wemade Narrows Q2 Operating Loss to 21 Billion Won...Aims for Rebound with New Titles - 아시아경제",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4zYXlucTVpV19XbkgtT2MtVU11Q1dyUU1yRkFfV3Z6dDRza0t2eWVaT00ya2d5UXR6b1FjdllNdDQ0dmlBRUlfMVhnYTBPb214R3YtRmpyQzBjRURmUWJEYnlsa0M?oc=5",
-          "source": "아시아경제",
-          "published": "Wed, 12 Aug 2026 09:24:36 GMT",
-          "description": "Wemade Narrows Q2 Operating Loss to 21 Billion Won...Aims for Rebound with New Titles&nbsp;&nbsp;아시아경제"
+          "title": "Wemade Max narrows Q2 loss as game metrics rise and China push begins - CHOSUNBIZ - Chosunbiz",
+          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5ZSElQMnBVcW1TWndxVkNXcWNtQmJHemFuRnNYdDBXRmttNjZldVRRSU14OThwb21XNnExRHBJQVo5OXVkWTZzRjIxc05lek5ZREpCWEVhQ19oRFpPMm01bS03ZHZHTkU2OUhRTWhTYnlHT043dGdLeE9n0gGOAUFVX3lxTFBhSm13VlFnNmVtc1dyWHkyd1lGMlZRczdBX3JYYVI4WU1iR2ZOb1FIY0F4UGRvSmNPV2VuVzVYel8yNnRmZ194MkNnc3RGQXNmX2tuOUFpN2prajJfLWQ4MGJ6N0RNem5QRkF4UVJPV2d4SDhxR1BSSERXRUxFdDdDcUVPLWhQZWlfOFVVTlE?oc=5",
+          "source": "Chosunbiz",
+          "published": "Wed, 12 Aug 2026 07:00:00 GMT",
+          "description": "Wemade Max narrows Q2 loss as game metrics rise and China push begins - CHOSUNBIZ&nbsp;&nbsp;Chosunbiz"
         }
       ]
     },
