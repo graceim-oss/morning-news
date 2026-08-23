@@ -1,5 +1,5 @@
 {
-  "updated": "13:58:48",
+  "updated": "14:29:32",
   "news": {
     "wemade": [
       {
@@ -103,18 +103,18 @@
         "description": "비트코인, 다시 불붙나…\"2027년 15만달러 간다\"&nbsp;&nbsp;연합인포맥스"
       },
       {
-        "title": "“비트코인 8만달러 눈앞”…3년 만에 최대 주간 상승 [주간 블록체인] - 디지털데일리",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4xem5zSm9uX1l2MHgzLUlvUXNvVmJEa0M1LWZ2TmxxX3NVNEhGdFZxSC1Ta3JoZ2VkWnFCMzNfUXc2aTlIVExfRHZSX0xCRGdIS2lKRk5lUVk4X21OZmpLbUJDeEE?oc=5",
-        "source": "디지털데일리",
-        "published": "Sun, 23 Aug 2026 03:30:47 GMT",
-        "description": "“비트코인 8만달러 눈앞”…3년 만에 최대 주간 상승 [주간 블록체인]&nbsp;&nbsp;디지털데일리"
-      },
-      {
         "title": "코인베이스 비트코인 역프리미엄 97일째…역대 최장 기록 - 블루밍비트",
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5ETlBkUmlLQk5ydEMxUXgzalQtNklmd0hGeUFMUXVWVDhIbHlBRG9BSTRacDdEeFBOZm55YUJlc2E0SktMTmltUmNRWmpoTVVC?oc=5",
         "source": "블루밍비트",
         "published": "Sun, 23 Aug 2026 04:41:12 GMT",
         "description": "코인베이스 비트코인 역프리미엄 97일째…역대 최장 기록&nbsp;&nbsp;블루밍비트"
+      },
+      {
+        "title": "“비트코인 8만달러 눈앞”…3년 만에 최대 주간 상승 [주간 블록체인] - 디지털데일리",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4xem5zSm9uX1l2MHgzLUlvUXNvVmJEa0M1LWZ2TmxxX3NVNEhGdFZxSC1Ta3JoZ2VkWnFCMzNfUXc2aTlIVExfRHZSX0xCRGdIS2lKRk5lUVk4X21OZmpLbUJDeEE?oc=5",
+        "source": "디지털데일리",
+        "published": "Sun, 23 Aug 2026 03:30:47 GMT",
+        "description": "“비트코인 8만달러 눈앞”…3년 만에 최대 주간 상승 [주간 블록체인]&nbsp;&nbsp;디지털데일리"
       },
       {
         "title": "비트고, 韓 직접 진출…법인 디지털자산 시장 선점 나선다 - 서울경제TV",
@@ -138,11 +138,11 @@
         "description": "비트코인, 5개월만의 급등으로 7만달러 회복...이유 살펴보니[엠블록레터]&nbsp;&nbsp;매일경제 마켓"
       },
       {
-        "title": "보험도 ‘디지털자산’ 시대 준비…생보는 결제혁신, 손보는 수탁리스크 보장 - 브릿지경제",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBiY0dqLUJMT3p0ZkFTNzMxYmsyTHRPSUxyY3BXajUzZ3NkaklfSTNVc1VOVmFrSW1mNHRiNERCejc0WGsyVTBOS3Q4UDd1aVAtOWN5RXNsUlA1dw?oc=5",
-        "source": "브릿지경제",
-        "published": "Sun, 23 Aug 2026 04:17:00 GMT",
-        "description": "보험도 ‘디지털자산’ 시대 준비…생보는 결제혁신, 손보는 수탁리스크 보장&nbsp;&nbsp;브릿지경제"
+        "title": "[윤유미의 돈 되는 뒷담화] 비트코인 10억 간다고? 미국은 왜 갑자기 친절해졌을까 - 지이코노미",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9UVFp0SUMtQkpad01oTHJMZ1FNWHNGUFdGRUl6WWZsMjlCVDV2aDc1T0hjd2dFRl93MHQtejhBMVJtYUl2YTcxWmZJQ2RFUGM5ckpSWkxOSEQ4MzlPUlhKLTgzYmEwYkE?oc=5",
+        "source": "지이코노미",
+        "published": "Sat, 22 Aug 2026 22:44:00 GMT",
+        "description": "[윤유미의 돈 되는 뒷담화] 비트코인 10억 간다고? 미국은 왜 갑자기 친절해졌을까&nbsp;&nbsp;지이코노미"
       }
     ],
     "aiit": [
@@ -338,7 +338,7 @@
         "title": "Xero Taps Argonaut For Global Brand Campaign 08/21/2026 - MediaPost",
         "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcmVHLVNkMGxOTV9VWkxJQjZ1aG1xTE12UEpTUnU0eFFHTkpFZXBzTzlRbGh2STZDazhQRnJacTdwZUVybmY3UUZsZHNjSFdYanJoMnNiRUNnS1k1cG9qeXFOWEEwTWJEZUJqV1phLVRoNmEwRTBsUTVPTHAwaE9nTVhzY2xWYUFldWl3T0pRS2NQX1pqUnJPLVNCYlVKc0UwZndPV0NlMUhsUENQTTd6OUVjcno5elMzclE?oc=5",
         "source": "MediaPost",
-        "published": "Fri, 21 Aug 2026 18:33:45 GMT",
+        "published": "Fri, 21 Aug 2026 00:42:13 GMT",
         "description": "Xero Taps Argonaut For Global Brand Campaign 08/21/2026&nbsp;&nbsp;MediaPost"
       },
       {
@@ -486,18 +486,11 @@
         "description": "HK이노엔 헛개수, 인기 모바일 게임 ‘리니지2M’과 콜라보 이벤트&nbsp;&nbsp;한국의약통신"
       },
       {
-        "title": "청소년 게임중독 막는법 - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMEJJaGU4N3pvRjNyOUZPeUY0eWFpMXB0NDBjbjFyTEJnTlBVNTNUb0FGYkhWZ1pESHVuT2R6bTNXcGVKekpod2cwRU5VdjQyb3J2bUdIX1RjOG5lcnQzekduQUtGOVl3czdKbXNTbEJYWmlZZTlQTFVaVTlLdUFOZFFVYVM3c2xfdmFLS1BBaVZNb1Vp?oc=5",
+        "title": "신혼부부의 현실적인 대화 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNHhHZENlZWV3M0ZPUmMtaUE2R0Vza0c5MFpVeW5LR1c1bjhVU0U1RzViOEpSTzIzWkRUU2hnN1hOcFg4bnZmRzNWa05yZEdjbTVZU2h0M3ZEMXQyeC1LRGhEYzVTWTVlSl82NnBUazU2THdkVU1zRWphSlRlbHdfYVdpeTlDekd4VF9DWnhaUmdYQQ?oc=5",
         "source": "게임메카",
-        "published": "Sat, 22 Aug 2026 23:33:46 GMT",
-        "description": "청소년 게임중독 막는법&nbsp;&nbsp;게임메카"
-      },
-      {
-        "title": "제주삼다수, e스포츠 국가대표 공식 파트너로…아시안게임 마케팅 강화 - 더퍼스트미디어",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xMWpnX3oyc05meDBIMTc5UjVUek5LX2ZFZExjdmdjdWF3bHNyd0Q2NERsV2xaSTFhejBTR3BIUVNpWUVKaVhKbzhPa3plS3dZaHJWMlVvV1dOcFpGUW95bnBZSTltY3I2Qm5XNzBSQ3FkeHo20gF0QVVfeXFMTTExamdfejJzTmZ4MEgxNzlSNVR6TktfZkVkTGN2Z2N1YXdsc3J3RDY0RGxXbFpJMWF6MFNHcEhRU2lZRUppWEpvOE9remVLd1loclYyVW9XV05wWkZRb3lucFlJOW1jcjZCblc3MFJDcWR4ejY?oc=5",
-        "source": "더퍼스트미디어",
-        "published": "Fri, 21 Aug 2026 05:26:19 GMT",
-        "description": "제주삼다수, e스포츠 국가대표 공식 파트너로…아시안게임 마케팅 강화&nbsp;&nbsp;더퍼스트미디어"
+        "published": "Sun, 23 Aug 2026 00:54:48 GMT",
+        "description": "신혼부부의 현실적인 대화&nbsp;&nbsp;게임메카"
       },
       {
         "title": "[키워드로 보는 장외주식] 엔드림 - 프리스탁뉴스",
@@ -514,18 +507,32 @@
         "description": "게임빌, 신개념 모바일게임 ‘문질러’ 출시&nbsp;&nbsp;전자신문"
       },
       {
-        "title": "러시아 대테러 진압 모의 훈련 - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSUVwUkRhUzNhNnAwal9fX1VNWUx0VlNoNFdnaDRsYUU4UGNHN3NuYndjYmlEQWY4SF94emdKaVFoaWF4aFBmTC1Dc0tBWC1QYTZNU0RLY1lLc2NCTDBWRHY3QlRJUmFXTngzSTJmb1VmNjduSTBfZmk1MEpxMWZMUHFVQ1dGdkhvRmVmN1lpbC1DSDJLMGIw?oc=5",
+        "title": "섬이었던 잠실 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOR1RrNXZSZFZhRENVVjVNT3dxWmp6NkRkbk1XWFZEb0daVzdaZkJIS0l1am5BUnFFVHlCb2x2UkhJSUdUUFI0REcwU1FSeHFkT2tUWnVNYk5TTGkzMERLdlJqRjFSdUFtYjRPeEp5SzZ6WDNHSEQtM28wbTVoLXdPcUpOWnY5R2psTW12NVBSUEZHXzAw?oc=5",
         "source": "게임메카",
-        "published": "Sat, 22 Aug 2026 22:34:03 GMT",
-        "description": "러시아 대테러 진압 모의 훈련&nbsp;&nbsp;게임메카"
+        "published": "Sat, 22 Aug 2026 23:33:23 GMT",
+        "description": "섬이었던 잠실&nbsp;&nbsp;게임메카"
       },
       {
-        "title": "가위바위보 - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNbFhuTFRueWRHcUJoRWQ3U3RfalBnOFR2bTc5enZFN0xOQ0xYUEhmZ3RYbjlreDBNWUtYSHpGR3VtQUFEUHRJNVBRYlZTUU5MQlU0aWVNYm9fUnJMd2pnUzVWU2JrR3g4eXNKSEVIU0ZYRVE0YmVHU2hrY250OHNFZFVsTG9GdE5WajBOOExrUXRRc1VC?oc=5",
+        "title": "어느 보도블록 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSlNyb09UbWdCdUFYUzJUSmpoRGxnSHlxLUJiVEN4ZmJ3bVZna04xc1JvN1ZFQXFSM25jSTJXNTdVRWZqYmxNclQ4MlUyRllEN1pZdFVSZWtfd29WRno4UFZxS09WaGpIdktraGZTMks0ek9Wdy1aS1RIYjBGb2lKb2ZEdnI2dUg0VzV6dWNRUFMxWjEz?oc=5",
         "source": "게임메카",
-        "published": "Sat, 22 Aug 2026 19:07:44 GMT",
-        "description": "가위바위보&nbsp;&nbsp;게임메카"
+        "published": "Sat, 22 Aug 2026 23:46:57 GMT",
+        "description": "어느 보도블록&nbsp;&nbsp;게임메카"
+      },
+      {
+        "title": "청소년 게임중독 막는법 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMEJJaGU4N3pvRjNyOUZPeUY0eWFpMXB0NDBjbjFyTEJnTlBVNTNUb0FGYkhWZ1pESHVuT2R6bTNXcGVKekpod2cwRU5VdjQyb3J2bUdIX1RjOG5lcnQzekduQUtGOVl3czdKbXNTbEJYWmlZZTlQTFVaVTlLdUFOZFFVYVM3c2xfdmFLS1BBaVZNb1Vp?oc=5",
+        "source": "게임메카",
+        "published": "Sat, 22 Aug 2026 23:33:46 GMT",
+        "description": "청소년 게임중독 막는법&nbsp;&nbsp;게임메카"
+      },
+      {
+        "title": "키보드 키 뽑기 달인 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPZy16VFFmeFd5NDFTNGN0S0ZXRFYtM0JjOXZyMnYwVWJLOGU3M3RjbHdJVU1yM3dlbkhlS3ByeUk2S2xvWmRHLW5nVGRzRXVjZlhqWms5eXJmQzlYQ3pCVVU5dVN1dURPMHVlWVNKckY0T2Y5T2xiTHpuc190eTEzeU51TDZGMXQ4VlRhYlRHdm9DM1ZJ?oc=5",
+        "source": "게임메카",
+        "published": "Sat, 22 Aug 2026 18:22:44 GMT",
+        "description": "키보드 키 뽑기 달인&nbsp;&nbsp;게임메카"
       },
       {
         "title": "현란한 테크닉 - 게임메카",
@@ -533,13 +540,6 @@
         "source": "게임메카",
         "published": "Sat, 22 Aug 2026 15:40:01 GMT",
         "description": "현란한 테크닉&nbsp;&nbsp;게임메카"
-      },
-      {
-        "title": "레이지 2 황무지 수퍼히어로 - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZlhLS0hZZllfaG4xWGE3aWstUmN6RTlRQ0ZPOUpGem5kSEhDVEtsT18yelFhbUJxZV9fNjVyNkFnR3RvLWR0ODNpYTZQbzd3cDZpanRUZEtpWHlRSWNDZllvLU81M2tsRFJBaGwwcUVWYnhNU0FKRVpJYWl4dGJUY002V2RURWM1YWVIN25fMmxRbm1Y?oc=5",
-        "source": "게임메카",
-        "published": "Sat, 22 Aug 2026 15:25:12 GMT",
-        "description": "레이지 2 황무지 수퍼히어로&nbsp;&nbsp;게임메카"
       }
     ],
     "s3_wemade": [
@@ -570,13 +570,6 @@
         "source": "한국면세뉴스",
         "published": "Fri, 21 Aug 2026 05:51:37 GMT",
         "description": "[오늘의 겜업] 넥슨·스마일게이트·엔씨·넷마블·위메이드...서사·기술·성장체계 새 단장&nbsp;&nbsp;한국면세뉴스"
-      },
-      {
-        "title": "“다작보다 장수”…게임업계, 하반기 ‘라이브서비스·글로벌’ 투트랙 - 미디어펜",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1pNjVuZEppd1A0MEE0WUF4a1RLaGh4RW9LemF4T2VFQnhicmFQLWlvaU9fZ2hIYjY3dDF3cDNDRC11ZlFCalRGanQ1czkyOGJZTU9TT9IBWEFVX3lxTFBJck05SlJydXVvM2J0dFVRbk4zdE0wcWEzTHBCU1pqQTkxZmJ6ZkQ2cFFvZHp4YW5nMG9YdDNKVUlZcVpqbWF2UXRjSmI5cHpMNHZ1eUJNbmE?oc=5",
-        "source": "미디어펜",
-        "published": "Sat, 22 Aug 2026 00:57:41 GMT",
-        "description": "“다작보다 장수”…게임업계, 하반기 ‘라이브서비스·글로벌’ 투트랙&nbsp;&nbsp;미디어펜"
       }
     ],
     "s3_blockchain": [
@@ -616,13 +609,6 @@
         "description": "Web3 Growth Agent (wga.xyz) 가격 내역 및 과거 데이터&nbsp;&nbsp;CoinMarketCap"
       },
       {
-        "title": "컴투스 투자분석 2026. 08. 22 - 주달",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBJUXZaTDNheUlzejFGeWxkWlloMGRnNWM0cEQ2Q2RxbDhXYXVrMEpyb0tSS3V5QTk0eUlKSEROVzNiblR6ZEZ2OURWNEhFbUpxT2U4NDZDRFc4bDRHS0VLSWFKeXBZd1d4QzM2MTU4ZllVam8?oc=5",
-        "source": "주달",
-        "published": "Sat, 22 Aug 2026 09:45:29 GMT",
-        "description": "컴투스 투자분석 2026. 08. 22&nbsp;&nbsp;주달"
-      },
-      {
         "title": "넷마블 ‘아스달 연대기’, 시즌2 앞둔 ‘뉴월드’ 사전등록 개시…“성장의 재미 강화” - 데일리포스트",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBGNnV4dktmZmp3NXFCNm55d1gweEpQcGNaMFVuVUZheVFWQ2ZUeW1pcmZNUFEtWmtObEZjRE9iamR5NlJXeWRqdzNGd1BzQk85WTFrZHJPUE1MeWJjYnZVRGhSVy03Y1A0QU5IRUlBWdIBc0FVX3lxTE5ENm40ZUZmSkRjbGJOcFhOeGw5UHZNeGlFNEpQUkVmSmx1VjV6Nks4blpnWmlSa3ZKcW1SaTB4WXVIaUw0LW1Za01BS2JicGJVdDFscHBtcmxrLWRSdENnUkVDWURLdXJ4VDF6bWpXdDdwQ0E?oc=5",
         "source": "데일리포스트",
@@ -649,6 +635,13 @@
         "source": "HackerNoon",
         "published": "Fri, 21 Aug 2026 07:00:00 GMT",
         "description": "플로우라, 이더리움의 블록 빌딩 시장을 솔라나로 가져오는 오픈 오더플로우 경매를 출시하다&nbsp;&nbsp;HackerNoon"
+      },
+      {
+        "title": "텔레그램 미니앱 수익화용 TON 런치패드 5선 - FinanceFeeds",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1iaFpQT2QzeEt5dkNSTnBYcjlZWWwtYXpRYjRmTFNuM3hGcTIwcldxUkJyNzVGMV80ejNRNGhZa1RDNkZaVUt6UzhUZ1FrZldEc0FUSEhOLXVjNlVVZlllbDM4MUdqNWs?oc=5",
+        "source": "FinanceFeeds",
+        "published": "Sat, 22 Aug 2026 12:56:45 GMT",
+        "description": "텔레그램 미니앱 수익화용 TON 런치패드 5선&nbsp;&nbsp;FinanceFeeds"
       }
     ]
   },
@@ -797,8 +790,8 @@
       "sign": "-"
     },
     "wemix": {
-      "krw": 268.0,
-      "chg24h": -2.087482810579484,
+      "krw": 268.05,
+      "chg24h": -1.2552574086556378,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -830,7 +823,7 @@
         "title": "넥슨, 2500억 투자로 미래 성장판 연다…게임 스타트업과 ‘동반성장’ : 네이버 블로그 - Naver Blog",
         "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNa2N6ck1ReXlocXBZYWVEODFqQW9yYnBQdkR4QmdpbUYzNktJbU9FeFl5WXVaaFlWOG9hME9BSDVaMkFjNHVfQ0lNRmRPZDMtX0N5TEhMS2swdkhibk5pX2xibVp4cmExUlJNTFkyTkhZOWZGV3RDajI0dEgxYTFwWVZ5Q19SNUlVNUpyQVU2RQ?oc=5",
         "source": "Naver Blog",
-        "published": "Sat, 22 Aug 2026 21:51:28 GMT",
+        "published": "Sat, 22 Aug 2026 21:51:20 GMT",
         "description": "넥슨, 2500억 투자로 미래 성장판 연다…게임 스타트업과 ‘동반성장’ : 네이버 블로그&nbsp;&nbsp;Naver Blog"
       },
       {
@@ -1006,18 +999,18 @@
           "description": "Class Reboot and Balance Adjustments: Night Crows Second Half Roadmap&nbsp;&nbsp;게임메카"
         },
         {
+          "title": "Crows lock in top six with big win over Giants - afl.com.au",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMlA0aUFkNVowMnA3WmE5TG9malNCSGxTZndrdGxIUXdRbFl1MzRlVl9oMGdIcEJBUlFtV292WGZLT3dHODhMVEo4V0kzM05GR01lRVllZ1hMQkppcVZPUjJzVjN1dDR0d1NGZXJhbTk0NGJGN3hIamM1Zk1fbmVtb25GdXV1Q3BGam1sdG5va3JVVXF6cklhTC0zWQ?oc=5",
+          "source": "afl.com.au",
+          "published": "Sat, 22 Aug 2026 13:00:00 GMT",
+          "description": "Crows lock in top six with big win over Giants&nbsp;&nbsp;afl.com.au"
+        },
+        {
           "title": "Wildcard woes: Why the Crows are walking a tightrope - ABC News &amp; Headlines – Australian Broadcasting Corporation",
           "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPTkZNeHhPUFRBRVRqU0JIbEJNaFo0MHQ2NHc4eDlveXJzTklZOXhLZGEyRDMyN0loTGVGalhCMVk4Z2JjRFNyZ29VYm9iaHlSVVFBbFgtck1LYXVWVUMwX0h3anpBVnpJTV9IeWVWNmcxOC1EYjFaLW83eC0xSG1ySnE4aXF3S3ZKeEtPTGNLZm5TWGg4RWZXUVRGOUZyRmxpU0pFVUMyOEVtLVlI?oc=5",
           "source": "ABC News &amp; Headlines – Australian Broadcasting Corporation",
           "published": "Fri, 21 Aug 2026 21:48:08 GMT",
           "description": "Wildcard woes: Why the Crows are walking a tightrope&nbsp;&nbsp;ABC News & Headlines – Australian Broadcasting Corporation"
-        },
-        {
-          "title": "Wemade Narrows Q2 Operating Loss to 21 Billion Won...Aims for Rebound with New Titles - 아시아경제",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4zYXlucTVpV19XbkgtT2MtVU11Q1dyUU1yRkFfV3Z6dDRza0t2eWVaT00ya2d5UXR6b1FjdllNdDQ0dmlBRUlfMVhnYTBPb214R3YtRmpyQzBjRURmUWJEYnlsa0M?oc=5",
-          "source": "아시아경제",
-          "published": "Wed, 12 Aug 2026 09:24:36 GMT",
-          "description": "Wemade Narrows Q2 Operating Loss to 21 Billion Won...Aims for Rebound with New Titles&nbsp;&nbsp;아시아경제"
         }
       ]
     },
