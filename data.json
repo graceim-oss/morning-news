@@ -1,16 +1,194 @@
 {
-  "updated": "22:41:05",
+  "updated": "02:23:22",
   "news": {
     "wemade": [],
     "blockchain": [],
     "aiit": [],
-    "clipping": [],
+    "clipping": [
+      {
+        "title": "How to build a brand newsletter in 2026 - Marketing Brew",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNanBaYWRiM2dwa2NqSGlFWTVJVUNXaFpDc0dkbnc1TVhjZVl2cG5jMmdJU01wQkE5V3ZjRUJSSXZXV0JGN2pETUxBdllhRThreDBVUURncWx1Q1pkODBsY0ZUb1dVa0x6eXRNUkVKQ2IxaUYyR2F1eklTZHd0MWU5VGYzcw?oc=5",
+        "source": "Marketing Brew",
+        "published": "Wed, 02 Sep 2026 20:50:04 GMT",
+        "description": "How to build a brand newsletter in 2026&nbsp;&nbsp;Marketing Brew"
+      },
+      {
+        "title": "7 Best Meta Ads Agencies for DTC Brands in 2026 - technology.org",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1wRWFReTdoRnYzck14LTNHMEdZTi1JajVkOXZ5WG1YWUo2M0gtblRBNWdEVk9RRXFfU203WVhNV1BtalV1TmFUdTFBOUx1ZHJTVjVqTEVhMmIydVQ1MWZEWXN3T3N0dExESmgyRzE3MlVEbGVtOWp5YWFNbTU?oc=5",
+        "source": "technology.org",
+        "published": "Tue, 01 Sep 2026 15:42:23 GMT",
+        "description": "7 Best Meta Ads Agencies for DTC Brands in 2026&nbsp;&nbsp;technology.org"
+      },
+      {
+        "title": "Amazon Ads 'Back-To-College' Spans Digital, Physical 08/31/2026 - MediaPost",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOYnRINWV3VklHSk54MFNUdWd4ZEVmRFFhV3hlTU96SzlfcS1xckdqLWJHTnFfRXB3clhqUFBTX2RhNnlINXRzNDRZMHBkNS10Y0dNV3JybnhwTHNWa1ZYR3gzbjZiR25pY1BkRU1aVkJYSElMTm1WY0xHYUQ1NFIyWEQzVTR0VmJuV1pXSDJVSEZCcDBRYmJQYUdITUZIMkFqdkpfOGZOcFhiVEV5REdIS2kteE1LYkdFbGVMTzNB?oc=5",
+        "source": "MediaPost",
+        "published": "Tue, 01 Sep 2026 04:23:47 GMT",
+        "description": "Amazon Ads 'Back-To-College' Spans Digital, Physical 08/31/2026&nbsp;&nbsp;MediaPost"
+      },
+      {
+        "title": "Beauty Ad Intelligence 2026: What Made a Beauty Ad Last in H1 2026 - BeautyMatter",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5FX0YxNkxFaUNGLWRLOWxCVGJnLVp0WDF6elVBRzRzdHhKMGJlQXJYNDRzUldmal92Q3BzRnpaZ3RYLU85aVRySjJSUjdYNDhkNkt0UmJJNW1KaGl1bFRucDE0S253X0ZRMGJELU1DYw?oc=5",
+        "source": "BeautyMatter",
+        "published": "Fri, 28 Aug 2026 00:19:46 GMT",
+        "description": "Beauty Ad Intelligence 2026: What Made a Beauty Ad Last in H1 2026&nbsp;&nbsp;BeautyMatter"
+      },
+      {
+        "title": "Social Ads (2026) - Business of Apps",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4zT01jelVUN29kQ01IYlhIRUFDZnFrZ1BWeTNkU0JEdExTTENTM3RQN0JrejZ6OGp5aGxKMDZkZFN3N1Q5S3RSaUJTWDdhVmFLMUhhXw?oc=5",
+        "source": "Business of Apps",
+        "published": "Fri, 28 Aug 2026 07:00:00 GMT",
+        "description": "Social Ads (2026)&nbsp;&nbsp;Business of Apps"
+      }
+    ],
     "marketing": [],
     "brand_global": [],
     "s3_ai": [],
-    "s3_game": [],
+    "s3_game": [
+      {
+        "title": "[게임 레이더] 컴투스·넷마블·넥슨, 자사 모바일 게임 신규 콘텐츠 대거 업데이트 - 더밸류뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBZd0hHWWJSMUdtN3VtdUN1RW1vZk9NZFFIdDZIUkp1RndKdVpITlF1QzdMZDZVWTMzSTVPRm1fZmtVakdzS2t1d1lKazRKa3YwNVlxYw?oc=5",
+        "source": "더밸류뉴스",
+        "published": "Thu, 03 Sep 2026 07:21:31 GMT",
+        "description": "[게임 레이더] 컴투스·넷마블·넥슨, 자사 모바일 게임 신규 콘텐츠 대거 업데이트&nbsp;&nbsp;더밸류뉴스"
+      },
+      {
+        "title": "하반기 모바일 게임판 흔들 신작 4종, 뭐가 다른가 - 게임뷰",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5SZ3g2U25sV3V3THRURjlBb1pBd3c5eXBoU2VrVHk3LVhHUi1DTEdqYzliWW5wZkV5R3dXNk1tR3NFQ3hiWmppVEdvb0tnWEcxc1AxdVFDcTlfUVhJNk5Pd3ZpZk5VN0lRemc?oc=5",
+        "source": "게임뷰",
+        "published": "Thu, 03 Sep 2026 08:54:23 GMT",
+        "description": "하반기 모바일 게임판 흔들 신작 4종, 뭐가 다른가&nbsp;&nbsp;게임뷰"
+      },
+      {
+        "title": "HK이노엔, 새싹보리·컨디션에 게임 IP 입혔다…컴투스 ‘제우스’와 협업 - 메디코파마",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5aNkI4VmsyQmZ0ZWhjcEJvMU1uZUF0ZEpHZ042M2ZJalp3TWs2bW5uWXRVYUxWSUNsdGx5V3J5R2hjV0huSkZXS1ItQ3B6VGJTb0JRZVRRQ2l6cnA3bUpScEw1ZjVXdDZPa2tPdV9WY0cwUQ?oc=5",
+        "source": "메디코파마",
+        "published": "Wed, 02 Sep 2026 03:33:31 GMT",
+        "description": "HK이노엔, 새싹보리·컨디션에 게임 IP 입혔다…컴투스 ‘제우스’와 협업&nbsp;&nbsp;메디코파마"
+      },
+      {
+        "title": "‘씰 온라인’ IP 모바일 게임, 중국 판호 획득… 4분기 중국 서비스 추진 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1LYlZaOVVtbmRTRFBHdXEza0ItZXRQYmlQdWJ5bGxHcklMdE1Jdnd4WTlwOW56UXFzWTVxYXAwNTIyblRheXc?oc=5",
+        "source": "v.daum.net",
+        "published": "Wed, 02 Sep 2026 07:01:10 GMT",
+        "description": "‘씰 온라인’ IP 모바일 게임, 중국 판호 획득… 4분기 중국 서비스 추진&nbsp;&nbsp;v.daum.net"
+      },
+      {
+        "title": "게임협단체, 구글에 인앱결제 손해배상안 즉시 제시 촉구 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1pR2VvVjVqOENhT0VtNWhwVE5qc083MU0wTm1KRE1ncFQ4eDhUcWNNT2dxbDdpOGg3c1dqS3NCRXBLTXVxSmJ1enNhQ253MW9rWDFZem9ueELSAVtBVV95cUxOYjBKc2x3eTRLVWlRQWtqSmZnR3lEMl9ZZ2NxN1E1Z0xyZ2VQLW44WnA0UkFBSC1IUF9rUG1EVFRzMFRkV19SREdPTVE4QWM3Y2xtNzV3dWJXRDBJ?oc=5",
+        "source": "게임메카",
+        "published": "Thu, 03 Sep 2026 04:11:45 GMT",
+        "description": "게임협단체, 구글에 인앱결제 손해배상안 즉시 제시 촉구&nbsp;&nbsp;게임메카"
+      },
+      {
+        "title": "HK이노엔, 모바일 게임 '제우스: 오만의 신'과 제휴 이벤트 - 팜뉴스",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBhZ1JsM2ZPVTVXbGNFVDZpdUYxU2t5Yml5Nl9GNUV4R2tSczFaZnJzVUVldHltWmc4anVnZTJWbWFEeEN3SVY3Mk5OeV9IQjEyRjQ4THFnMG50ak4wblRobC14aWtPRUtEN3Z0UA?oc=5",
+        "source": "팜뉴스",
+        "published": "Wed, 02 Sep 2026 00:36:18 GMT",
+        "description": "HK이노엔, 모바일 게임 '제우스: 오만의 신'과 제휴 이벤트&nbsp;&nbsp;팜뉴스"
+      },
+      {
+        "title": "편의점 넘어 외식까지… 게임IP 협업 확대하는 유통업계 - 시사위크",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB6WmFHbGNJT3l3cWwwLTRKVmZvSmZrbmhlZmJvVXBaWkl5VEVRdXYzMzZIOTAwaVBrMVZSTjM4eHphcm1ueGNTdFVyN1RCM2Y2cFkxbnk3eDZpQTJWY0FKUndJeTBfN2xDNm9SM2d1ONIBb0FVX3lxTFB6WmFHbGNJT3l3cWwwLTRKVmZvSmZrbmhlZmJvVXBaWkl5VEVRdXYzMzZIOTAwaVBrMVZSTjM4eHphcm1ueGNTdFVyN1RCM2Y2cFkxbnk3eDZpQTJWY0FKUndJeTBfN2xDNm9SM2d1OA?oc=5",
+        "source": "시사위크",
+        "published": "Wed, 02 Sep 2026 07:41:13 GMT",
+        "description": "편의점 넘어 외식까지… 게임IP 협업 확대하는 유통업계&nbsp;&nbsp;시사위크"
+      },
+      {
+        "title": "Razer, 주머니에 쏙 들어가는 폴더블 모바일 게임 컨트롤러 ‘Prio’ 출시 - Hypebeast.KR",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONUxJYUdHT0d3U1F4VUNLdjRZSlEzNEUzelhueXVtRC1FSkJIVDJkemRNWTc5SlNGang3a0d3SzRGc0pTbkpfNlRVdzBreDB3RFh5VXdSOVdiN0Y2U2FseFFWbFdNSFN5Uk4tdHF1NXVXLUZnVXpVdE1hSzEwNG1IUlBSbXVvZWtpbFY5NzFn?oc=5",
+        "source": "Hypebeast.KR",
+        "published": "Wed, 02 Sep 2026 07:56:26 GMT",
+        "description": "Razer, 주머니에 쏙 들어가는 폴더블 모바일 게임 컨트롤러 ‘Prio’ 출시&nbsp;&nbsp;Hypebeast.KR"
+      },
+      {
+        "title": "모바일 게임 ‘팰월드 온라인’ 사전예약 진행…韓 첫 서비스 진행 - 매경 게임진",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1XdHFuVWJMalpRMmJQeFU1REctVHBCTlIxalotQXowWC00cVF4bUpHRml6N1ZRTndRNlpTNnhrVzVSazEzYl9sRkEtWDd6WFU?oc=5",
+        "source": "매경 게임진",
+        "published": "Wed, 02 Sep 2026 01:44:09 GMT",
+        "description": "모바일 게임 ‘팰월드 온라인’ 사전예약 진행…韓 첫 서비스 진행&nbsp;&nbsp;매경 게임진"
+      },
+      {
+        "title": "[멀티] EA SPORTS FC27, 예약판매 일정 - 게임메카",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1VV2FHR3BneTlrTDg2cnEteEE1b0RheVNCSlJTRzZDVGQyZnNDM3A5MVhMeG8zMEx2OTFCRGJCQlQxb29zbWVSN2NOZHpCMmtrTHJiSVFiX2V6NVVpeVVtQy02Ri1WWmtmRUg2OUVSNnVuS1ZIZWlwMQ?oc=5",
+        "source": "게임메카",
+        "published": "Thu, 03 Sep 2026 14:43:04 GMT",
+        "description": "[멀티] EA SPORTS FC27, 예약판매 일정&nbsp;&nbsp;게임메카"
+      }
+    ],
     "s3_wemade": [],
-    "s3_blockchain": []
+    "s3_blockchain": [
+      {
+        "title": "넥스블록, 루트데이터와 Web3 데이터 협력 MOU 체결 - 이투데이",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5CaEFvNFpYRWdkeEZkaS00WTZINVVNNFFxS1hRSHcwZE5naUUzb0JBb1E3VXE2MWJqZUY1NXhBR2pBQ3kxSElzYjE4QzI3RUUyVUFBUw?oc=5",
+        "source": "이투데이",
+        "published": "Wed, 02 Sep 2026 03:00:00 GMT",
+        "description": "넥스블록, 루트데이터와 Web3 데이터 협력 MOU 체결&nbsp;&nbsp;이투데이"
+      },
+      {
+        "title": "KuCoin Web3 Wallet, 인텐트 스왑과 리밋 오더 기능 추가 - FinanceFeeds",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBmWllTaDRabWhUZW5QckJaQXVCazVfVWVBWU9KRkV2U1k4U1UzNDY3c19UZWpITTlwVXlOU1ZqSW55MG5IbmtxNFAwUXVTXzVzUnd4NWJhV1hUNDBCX1dWNTdfTFNLTDNRdjl1OWNuRG9vREVVZEMwTDk0RkNKQQ?oc=5",
+        "source": "FinanceFeeds",
+        "published": "Wed, 02 Sep 2026 18:28:06 GMT",
+        "description": "KuCoin Web3 Wallet, 인텐트 스왑과 리밋 오더 기능 추가&nbsp;&nbsp;FinanceFeeds"
+      },
+      {
+        "title": "NHN플레이아트, TGS 2026 출격…신작 포함 7종 타이틀 공개 - 데일리포스트",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE53WFQxMHg1WHBQck5OYzZ5UDFkWUVtQzdrbGo2WFNyYXZRQ1J0aVVuQVFHYjBYMkJFWmF3VVJvajdLZzRKaEtnR2hqb1o3a2JsOWNLVkI3Q1hITVNaTGNqTHZpM3VOZDgtaFVrZl9YZ9IBc0FVX3lxTE12Q3lGRThvZVM3QlhRNm51cmdXa1h3aU1Najl3YWRiZ0NkckVkc0U1UURuM0J6RS01OHN4czB0WnAyTl93OGFDX1VMLW5telRwTHNPaEd6aWY1amg5Tjd6Yzl3WmJrWEtJVlZ2THQ2amd4c3M?oc=5",
+        "source": "데일리포스트",
+        "published": "Wed, 02 Sep 2026 13:50:24 GMT",
+        "description": "NHN플레이아트, TGS 2026 출격…신작 포함 7종 타이틀 공개&nbsp;&nbsp;데일리포스트"
+      },
+      {
+        "title": "월스트리트 금융 전문가 Jay J. Yu, ‘Wathing Coin’ 글로벌 전략 자문 참여 - knpp.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5ZdVIya0xyTjZIWEtPeVRURzEweFNTU0diM3JkWFJtTDRzOFBPRzZKUnU4VXNJX0U2N1JuQWxQN1Axblk?oc=5",
+        "source": "knpp.co.kr",
+        "published": "Wed, 02 Sep 2026 13:18:06 GMT",
+        "description": "월스트리트 금융 전문가 Jay J. Yu, ‘Wathing Coin’ 글로벌 전략 자문 참여&nbsp;&nbsp;knpp.co.kr"
+      },
+      {
+        "title": "etaxkorea - 조세금융신문",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBuMlN5Y1NfUTRTdDY1bGJnb1d6T011YzUwUWdkckVlbzVzTnBGYUF5eFVzdk5rRkNZU0V0bjcwdzl4LWxUam8xUHNGcTJQLWtZZVVWRVctTkVTN241bXJwbg?oc=5",
+        "source": "조세금융신문",
+        "published": "Wed, 02 Sep 2026 01:27:51 GMT",
+        "description": "etaxkorea&nbsp;&nbsp;조세금융신문"
+      },
+      {
+        "title": "글로벌 확장 'ONE'…넥써쓰, 게임·AI·블록체인 연결 시험대 - 네이트",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1IZ3RQZ1NWRldMQkpVcjlBVXc3a0tuV3duUVVCUDE2VUFVZng4dUZXYmVzLWNDdEJydGJ4RTVHZmFQWkVZcHVxekVFSnAwc3ZzWHVSSUR1ankweVFlaXB5cg?oc=5",
+        "source": "네이트",
+        "published": "Tue, 01 Sep 2026 22:31:00 GMT",
+        "description": "글로벌 확장 'ONE'…넥써쓰, 게임·AI·블록체인 연결 시험대&nbsp;&nbsp;네이트"
+      },
+      {
+        "title": "ETHShanghai 2026, 9월 개막: '이더리움의 르네상스' 시작 - PANews",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8ySmFhWjVZcGlwY1MyVzJ4Y0tGbFFXVE94RXFQUXdtTlBEMG0tNmE2bkd0dHdKNEtBb0M0NE9JdE00eUZTekFsYXR3TnNKcVNjcmIxTUJqVy1pVHVaaEJxczdwRzh5dllNUkRLU3BzOXNEbkRja3BRMklYVTQ4aEE?oc=5",
+        "source": "PANews",
+        "published": "Wed, 02 Sep 2026 16:00:00 GMT",
+        "description": "ETHShanghai 2026, 9월 개막: '이더리움의 르네상스' 시작&nbsp;&nbsp;PANews"
+      },
+      {
+        "title": "블록체인 게임 플랫폼 한눈에 보는 정리 노트 - https://www.zolotnit.ru/",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPOXpYdndHZ3FQNWxtQnlURHVjYW5oUm5GR2FxVnRFSWI2YmNZRmtDdGFUUVZQWklHcDNaazhMQTU2Rk9CT0xnencxQ3p2R05RZHhJc1liT0JnQUxULTRoeUlSWkpNTUlHX3Ixd0dPazFfOG4xZ3dCbGQyVzFqV0I1YTNyM2FrNEE0dkE4VEtJMzdPV3ZVTXkySjJCSjdRWGZNa0V4Y0JabXY3U3NJNGNVTmFSUlk?oc=5",
+        "source": "https://www.zolotnit.ru/",
+        "published": "Wed, 02 Sep 2026 12:10:22 GMT",
+        "description": "블록체인 게임 플랫폼 한눈에 보는 정리 노트&nbsp;&nbsp;https://www.zolotnit.ru/"
+      },
+      {
+        "title": "CrowdStrike SafeMind 공개…공격·방어 AI 반복 훈련 - quasa.io",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSS1nbTVPb2JsZWVOT05LVXVzaFJicTFDaG1iZkhfOXdzRkVLd0c0dWxEQXFEdkVQQkw0cWsxQmwtRDVXZ1RhdUpFY3UzWkpMSTljS1J5UkpTV2ZkUThQa3ZYQWRROE52blhmbHphVDNkYjFOSHVyVTM0SktJUkwtM2RBT255dkZyOWctWUluYUNPM2ZaUHdMYUMwcmVBR05qeUE?oc=5",
+        "source": "quasa.io",
+        "published": "Thu, 03 Sep 2026 09:00:00 GMT",
+        "description": "CrowdStrike SafeMind 공개…공격·방어 AI 반복 훈련&nbsp;&nbsp;quasa.io"
+      },
+      {
+        "title": "NVIDIA 2분기 매출 962억 달러, 공급 제약이 성장 제한 - quasa.io",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNV2dwdS00NzhlRWMwX01tSllpaC01MFhDcEZuUUNUYVgwYzNYMnRIdzFhekR1Z2dPV2VIdGFPRGU5bG9UMUpoNEJCblhtcVQ5U3FpX2lGZGNhclg3MjIxTmRXWGZKRUZEaThhMVgtZU5PQ3BlYlZGLWdDU0luLWF6NG84bngwZkN3ZFZ0NjJyT2dTeDNTLUdoSlF2REtKamhrRE9Z?oc=5",
+        "source": "quasa.io",
+        "published": "Wed, 02 Sep 2026 22:00:00 GMT",
+        "description": "NVIDIA 2분기 매출 962억 달러, 공급 제약이 성장 제한&nbsp;&nbsp;quasa.io"
+      }
+    ]
   },
   "rankings": {
     "gametrics": [
@@ -114,15 +292,15 @@
       },
       {
         "rank": 7,
-        "name": "로블록스 (Roblox)",
-        "developer": "Roblox Corporation",
-        "link": "https://play.google.com/store/apps/details?id=com.roblox.client"
-      },
-      {
-        "rank": 8,
         "name": "메이플 키우기",
         "developer": "NEXON Company",
         "link": "https://play.google.com/store/apps/details?id=com.nexon.ma"
+      },
+      {
+        "rank": 8,
+        "name": "로블록스 (Roblox)",
+        "developer": "Roblox Corporation",
+        "link": "https://play.google.com/store/apps/details?id=com.roblox.client"
       },
       {
         "rank": 9,
@@ -157,21 +335,165 @@
       "sign": "-"
     },
     "wemix": {
-      "krw": 269.75,
-      "chg24h": -1.1176057777912898,
+      "krw": 268.37,
+      "chg24h": -0.8838756872284704,
       "dir": "FALLING",
       "sign": "-"
     }
   },
   "sections": {
-    "s1": [],
+    "s1": [
+      {
+        "title": "State of Play &amp; State of Play Japan return on September 3 - PlayStation.Blog",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOT2ZjRHBhYktNQzR4TUhNTHJ4OTZPYmVTR0NKbkRyZXBERDAta2hiSTRsLTNRUWEwS19HTWdacGdoNDhFMlVac1phYTRteFQ4TmhNVU9HSFBrUkVOMnM4akdoV2VpMnNiM1Y4MWtRZVl5LVVUYkw3Sk1kVS1YdzNETjVlczVDUHJVR2E2WVFZZ1AxS0ZmcE83ZW1mQ2U?oc=5",
+        "source": "PlayStation.Blog",
+        "published": "Mon, 31 Aug 2026 12:00:10 GMT",
+        "description": "State of Play & State of Play Japan return on September 3&nbsp;&nbsp;PlayStation.Blog"
+      },
+      {
+        "title": "How Capcom Cracked the Code of Game Development - The Ringer",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUFA2dVBYYkJnU3lUYUk0U0F2WmRPUkVrSWg0Zzd2QTBSZVBhd0VuUW5xU2JrTXdjbVA5R3hzaGoyTnFkSXc3Y0FCdFZYVmU0Ql9ZUFhsZzAxd01DaG05Uk5OTVZ0SWhiZVJaZDJTUkNpXzlRQjdRbmQ0dGdRNmtqTXMxNlNkc1FJNjh4a1JyVlRsZmlCdGc1ZlhDc216cGgyV01YNUpQLUg2eGR2NVZaV3ZRLUg3UFVwYjZLT1hQM1NlT1dZQVNF?oc=5",
+        "source": "The Ringer",
+        "published": "Thu, 03 Sep 2026 10:20:00 GMT",
+        "description": "How Capcom Cracked the Code of Game Development&nbsp;&nbsp;The Ringer"
+      },
+      {
+        "title": "Sony Launches Live TV on PS5: 100+ Free Channels [2026] - tech-insider.org",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE10LUc1dG5QeEdJbWo4N0RYbmE4YTBoV3RNUDZiMkZiQmxGamVoY2poWjc0VW5nTk02Mzc3OW5seUZETWVSVGJUM3VIamV1WV84Q0kxb0Z6M0V6VWYteWtlVzFtei1HWkJHQ3BXNVl3?oc=5",
+        "source": "tech-insider.org",
+        "published": "Tue, 01 Sep 2026 12:11:17 GMT",
+        "description": "Sony Launches Live TV on PS5: 100+ Free Channels [2026]&nbsp;&nbsp;tech-insider.org"
+      },
+      {
+        "title": "Game Performance Analytics Market Outlook 2026-2030 - Featuring Profiles of Microsoft, Google, and Amazon Web Services - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQODcxbkFnZk1CbjZtQmRVZ1FwcTBQTG1kNWlfQlV0bnNRQnlaSG55YUp1VVYzTVVIMERkR2NzcTVQN2haN2JIOWEtQnJZOGt3dDVBOThERVg1WGJidTdBWWRDRTA5Q2NtOGZONkQ5THdZYW4xQ25rUmRWVkdWdHJqeWI2WllGczluMkNkaUtXeTJrdjlSOXVDcmc4X2tGVHhCNWRYWg?oc=5",
+        "source": "Yahoo Finance",
+        "published": "Tue, 01 Sep 2026 08:20:00 GMT",
+        "description": "Game Performance Analytics Market Outlook 2026-2030 - Featuring Profiles of Microsoft, Google, and Amazon Web Services&nbsp;&nbsp;Yahoo Finance"
+      },
+      {
+        "title": "Kid-Rated Mobile Games Use Addictive Design to Keep Players Hooked - bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZ01VVkhZeUFWSmFvY1BHMDVyY3Bsa1p3TjZLMzNUQUVuUnlUUG5jQk03aENNdmNkUm1DMjBHQnpjcWxIcjdNSWptMnZlZktfa3VCbzBDUXhId19hZFRoaWcxZmxKeWk5cjdtaTBFSmlWWGFIMVJKLUt2Z1NtalhPV3pn?oc=5",
+        "source": "bloomberg.com",
+        "published": "Fri, 28 Aug 2026 15:00:00 GMT",
+        "description": "Kid-Rated Mobile Games Use Addictive Design to Keep Players Hooked&nbsp;&nbsp;bloomberg.com"
+      }
+    ],
     "s2": [],
-    "s3": [],
+    "s3": [
+      {
+        "title": "공감 가서 더 재밌는 Z세대 콘텐츠 - v.daum.net",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5MZmJRUWRLOFluYkZjZFcxVFdmaFJpSTFxU0UxeXdzSlhjR3ZJaUZXYlIwVW9HUzREcVBCLXRUNVhFZTB5ZHdLckJnMmpkd00?oc=5",
+        "source": "v.daum.net",
+        "published": "Tue, 01 Sep 2026 22:02:00 GMT",
+        "description": "공감 가서 더 재밌는 Z세대 콘텐츠&nbsp;&nbsp;v.daum.net"
+      },
+      {
+        "title": "이마트24, 대학생 서포터즈 5기 출범…Z세대 아이디어 상품에 반영 - 스마트경제",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBKS2g5a1A5V2dGNFZCRmRWcEZWSVlVVFB1a2VBVkZQdEY3czlYX09Qck5kODJiWWd6RnBYTTA0czcyWnNnTExqVGF2emVjNHdDUjVHVVRib2VOT1gtQ1ZZWV9LMHBaQ2VnSEY0UEgxdw?oc=5",
+        "source": "스마트경제",
+        "published": "Sun, 30 Aug 2026 01:10:00 GMT",
+        "description": "이마트24, 대학생 서포터즈 5기 출범…Z세대 아이디어 상품에 반영&nbsp;&nbsp;스마트경제"
+      },
+      {
+        "title": "\"나 이번 달 돈 없어, 다음에 보자\"…요즘 Z세대가 약속 거절하는 법[세계는Z금] - 네이트",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1QLUhxclhPMzNVdk1LajhjdWtva1pTMnktb2hSSjN0aFNaYllZQmQ2YnRkWEZ5TmRiOHJrU3FkenJ3bFJ1MVgzaE1qZWRPWGUzV0Uw?oc=5",
+        "source": "네이트",
+        "published": "Fri, 28 Aug 2026 22:32:00 GMT",
+        "description": "\"나 이번 달 돈 없어, 다음에 보자\"…요즘 Z세대가 약속 거절하는 법[세계는Z금]&nbsp;&nbsp;네이트"
+      },
+      {
+        "title": "\"충전 안 해도 되잖아\" - mindgil.com",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA1b2VRY1A1WWs2cWRVeWhWOEx2UFFFWE4wdVg0X1JqeVM3MEZYTlY3bmM5WWU1aHBGTTc2eE1sekVrTzFXQUsxVTVIM2F6M2VFWHY1Z3IzLV9sUTRDNGtrckF6Q2c5ckJMakE?oc=5",
+        "source": "mindgil.com",
+        "published": "Fri, 28 Aug 2026 20:50:00 GMT",
+        "description": "\"충전 안 해도 되잖아\"&nbsp;&nbsp;mindgil.com"
+      },
+      {
+        "title": "이탈리아 Z세대 대세 브랜드 ‘섭듀드’…무신사 입점 - 패션포스트",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQblhYdUtXRFJZRlR2czM2S0NWdkpOVkxjZWVUVHJKenNBYllRYnVWdmhRT3p0NzNxZ0p3Y1l1cU04T29nNVZHX091M0J6Wk16OEVLUzg3cVJSYWNVbUt0V2p0cHhXSFBBbnMzZzZRck5ROGxURU80RjZaMGlnR1ZIc1IzQXY5a3Z3ejA2QlZSLWFuM083dFJUU0dnRU9yNjNiVVcweEJnNkNaNVZXZlY3ZU5HaFIyUzExSXR1SnBxMHoyYngwYWFxc2RKUWlodw?oc=5",
+        "source": "패션포스트",
+        "published": "Sat, 29 Aug 2026 12:55:22 GMT",
+        "description": "이탈리아 Z세대 대세 브랜드 ‘섭듀드’…무신사 입점&nbsp;&nbsp;패션포스트"
+      }
+    ],
     "s4": {
-      "wemade": [],
       "lygl": [],
-      "ncgl": []
+      "wemade": [],
+      "ncgl": [
+        {
+          "title": "WEMADE Launches Global Pre-Registration for Web3 Roguelike Defense Game Hellsquad Rrrush!: Stone Rush - markets.businessinsider.com",
+          "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPd2VUZ0dfa0NMRzZnS2w4Rl82VXZJU2t2V1E4QXVJaXlWc0gzeFBwaXlsV2ZzSjZkUmQ2b2FWY1JNbWlrRTNTeXEtNW5qZWNPUFQ4RHBvRDE2Rk81azJFdU1QYkFhMEJqV0l1cDZhWERBM3oxaTZFR2JzTFhnLWl0UXFrLVRnaHp6SVBpQ1FZOUlwSjB1TFBlZS0ydEg4bndaNHFiMDM1SE5CVV9JNWROYnZLRGZUaTItajlJQTNZWGczcGFyMGpMa0JzdEFxU2sxamhXem1TbmZyOTY1X1dHWnpRdVBDbzVPVGUwd1A2OA?oc=5",
+          "source": "markets.businessinsider.com",
+          "published": "Thu, 27 Aug 2026 09:18:52 GMT",
+          "description": "WEMADE Launches Global Pre-Registration for Web3 Roguelike Defense Game Hellsquad Rrrush!: Stone Rush&nbsp;&nbsp;markets.businessinsider.com"
+        },
+        {
+          "title": "GIANTS Season Ends with Loss to Crows - gwsgiants.com.au",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORzdOajVXUnExMjJBeDVSbzI5bVBoYkJ2cXZXQWlfOXlPZWFfTTQ4R2FFWmh1cTBsMVFSd0I0RXUyeTlqUkdrd25EaUQ5SGk3TW9WWUFBOGZKWlhiMlU2WFFuOW1Yd1ppN0R4S1hNRTk3aG1pZ0JqVWRtMHhTazB4Y0V5VHhaZw?oc=5",
+          "source": "gwsgiants.com.au",
+          "published": "Sat, 22 Aug 2026 07:00:00 GMT",
+          "description": "GIANTS Season Ends with Loss to Crows&nbsp;&nbsp;gwsgiants.com.au"
+        },
+        {
+          "title": "‘Do it for Papou’: 97-year-old Crows fan’s grand final wish - Adelaide Now",
+          "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxObVgtQ3Atc0kwRGM2SjhYRnBUSmJCdnZfWC1XR1Ezc1VsbExmZWstTGtUU3d3QXc0RE9fMU0zRDFDTGgzUVVnNTMtYjdZWWpjTlVHM0lfUGthWXdxV2U0Yk1xOFJhSHJfQkxPV29MUGpuZDVXMlMtSFFLb0hfdzQzZWdoRF9wX0pnMklkOHozeEpPYWY1R2ZHREcyd24tWUJjNmVIUFJjdEh6dFhJVzlkRDVaak1ETlpSNnJwRVUwV3Z5QXRjQjRDN2JCc0RRQjQtNXBLZUdXMnhaVzkxaXNqQjdWYzlpODF6SG5wQ0l3QmowZ0poWVFWQkh6RlJTaWJXRWhRYy04TmFIRllhWDlFQQ?oc=5",
+          "source": "Adelaide Now",
+          "published": "Thu, 03 Sep 2026 13:06:27 GMT",
+          "description": "‘Do it for Papou’: 97-year-old Crows fan’s grand final wish&nbsp;&nbsp;Adelaide Now"
+        },
+        {
+          "title": "stars on finals collision course - The SE Voice",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5VNTJLLS0xaFdyb29BY29fUGlVMV83c3I2WWJsTTVXdmdzeEE0TVJHcEdNRk42aWg2N2RBNVViY2N4b3FjNGFGenV4N3hOd3dLNGRYVlZId2gwczl6Rm5BWjljMTM3UkE?oc=5",
+          "source": "The SE Voice",
+          "published": "Wed, 26 Aug 2026 15:27:00 GMT",
+          "description": "stars on finals collision course&nbsp;&nbsp;The SE Voice"
+        },
+        {
+          "title": "‘Expect him to be’: Crows speak out after bombshell claim coach will be sacked if they lose final - Fox Sports",
+          "link": "https://news.google.com/rss/articles/CBMirAJBVV95cUxQWHk1U0JFV1I3cFpBaEtkbHF5RVNkMExQcDNLcWQwamp6WEowenctVXVVN25QOUNuM3BJYlBUTGUyWDlraDJnMlExZXZfM0xkMDBKaW9OV1ZXeWRHMEFuVVpOa2NnRXh1ekprOTl5dlZWTDRlTHYtcWZ0SFlXQ091T1VUdGtMNHhNakdmVWJIaHJ5T1BFMG9tYTRlbGpMdDdydllQT2tfM3Q2a3BRS0xQYS1Bb1RiRGJwbUItaGpMT0NGLW9iZWJNVGdfTEdiSzRCT1ZvclFfeHdEUkw2WHNKcENrNVNuNmVOYldDVFdYTU9hSFNMUFJ1VF90a19zanJkNnlpWWZqN2k0QTZOanRUSmxrQlk3ZEdqRkNyeGlyRmFkOEdJemRHUW1vVG7SAawCQVVfeXFMUFh5NVNCRVdSN3BaQWhLZGxxeUVTZDBMUHAzS3FkMGpqelhKMHp3LVV1VTduUDlDbjNwSWJQVExlMlg5a2gyZzJRMWV2XzNMZDAwSmlvTldWV3lkRzBBblVaTmtjZ0V4dXpKazk5eXZWVkw0ZUx2LXFmdEhZV0NPdU9VVHRrTDR4TWpHZlViSGhyeU9QRTBvbWE0ZWxqTHQ3cnZZUE9rXzN0NmtwUUtMUGEtQW9UYkRicG1CLWhqTE9DRi1vYmViTVRnX0xHYks0Qk9Wb3JRX3h3RFJMNlhzSnBDazVTbjZlTmJXQ1RXWE1PYUhTTFBSdVRfdGtfc2pyZDZ5aVlmajdpNEE2Tmp0VEpsa0JZN2RHakZDcnhpckZhZDhHSXpkR1Ftb1Ru?oc=5",
+          "source": "Fox Sports",
+          "published": "Tue, 01 Sep 2026 07:34:25 GMT",
+          "description": "‘Expect him to be’: Crows speak out after bombshell claim coach will be sacked if they lose final&nbsp;&nbsp;Fox Sports"
+        }
+      ]
     },
-    "s5": []
+    "s5": [
+      {
+        "title": "CU, 리센느와 브랜드 캠페인 전개…전국 1만8천여 점포서 마케팅 - 청년일보",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9hMmk0ZGhrcGI2YUctZnFDZFRnVmFjeG44TllXZzZ4UkNTRXlqZFM1NUhOcWFsZ09SWmpCallOb0pDdzI2aUFZOHdCRFE1Ty1UVnFBdllEUGRpRGdoTkxPRm14RGs5bVk?oc=5",
+        "source": "청년일보",
+        "published": "Mon, 31 Aug 2026 23:41:25 GMT",
+        "description": "CU, 리센느와 브랜드 캠페인 전개…전국 1만8천여 점포서 마케팅&nbsp;&nbsp;청년일보"
+      },
+      {
+        "title": "티머니 '모두의 티머니' 캠페인, 에피어워드 코리아 동상 - 전자신문",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1tR0hKd3E5RHQ4VGhEb3luYU1kS2hINEFDNnJHRnF4QlpoWDNXNE5RaWRSNlBGWVJfZmxMcEl0ZDI3NjRzMk5pTkU2ZFk5dw?oc=5",
+        "source": "전자신문",
+        "published": "Mon, 31 Aug 2026 06:36:14 GMT",
+        "description": "티머니 '모두의 티머니' 캠페인, 에피어워드 코리아 동상&nbsp;&nbsp;전자신문"
+      },
+      {
+        "title": "CU, 리센느와 브랜드 캠페인…이달 협업상품 출시 - yna.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBxaEZxVEVQLTl4WGVIWkxlN1ZMNWd3bGQ3NER1MnFrNmk5NVV3ZU9OUjhhcXN3ajY3bkZmdGxsc1Z1bFYzMlh3NnExejBtdTFwXzVzZkRzWUw4Qm_SAWBBVV95cUxOdjJQbHg1WEpNazkzS0NjX0NjaGZiMkhJN2tRbmJKX1J4SURWNUN6dENybDE5TTEtT2JoRkNNYlJYd1oySDdTb19mODI3ZU52SHNLMXFBSGF3MWFSOVJXaXk?oc=5",
+        "source": "yna.co.kr",
+        "published": "Mon, 31 Aug 2026 23:56:55 GMT",
+        "description": "CU, 리센느와 브랜드 캠페인…이달 협업상품 출시&nbsp;&nbsp;yna.co.kr"
+      },
+      {
+        "title": "CU, 리센느와 ‘일상의 모든 Scene, CU’ 브랜드 캠페인 펼쳐 - 한국경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA3dllaeWt3WVNMZXBWRlVKcHYxTGZIT3diUUFhR2NZYzd0U3VBTEMxQ0pRdU5rdEppMF8wcF9OUUdoZHp2YUswYmliU2FxTTVSZ3U2R05RN3ZFZw?oc=5",
+        "source": "한국경제",
+        "published": "Mon, 31 Aug 2026 21:01:42 GMT",
+        "description": "CU, 리센느와 ‘일상의 모든 Scene, CU’ 브랜드 캠페인 펼쳐&nbsp;&nbsp;한국경제"
+      },
+      {
+        "title": "브랜드 줄 세우는 넷플릭스만의 '협업 성공 방식'은? … 딥 차브리아 넷플릭스 APAC 크리에이티브 리드 - 브랜드브리프",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLTnY3ZXBSUlBpWE8tZnBmaE03TUpDUWIydkxqeUdQdUhYQ3h3VmJBZGNQQ2g1dlQ0blZ4Rks0LThuRmVSTWhnOTlORlV1NGlIcGZ0Ql9YalJReGZ2MFV3QS16cXZ4WmdKWHpYN0tIdw?oc=5",
+        "source": "브랜드브리프",
+        "published": "Sun, 30 Aug 2026 23:00:00 GMT",
+        "description": "브랜드 줄 세우는 넷플릭스만의 '협업 성공 방식'은? … 딥 차브리아 넷플릭스 APAC 크리에이티브 리드&nbsp;&nbsp;브랜드브리프"
+      }
+    ]
   }
 }
