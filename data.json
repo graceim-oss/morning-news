@@ -1,5 +1,5 @@
 {
-  "updated": "22:22:01",
+  "updated": "01:32:24",
   "news": {
     "wemade": [
       {
@@ -75,6 +75,27 @@
     ],
     "blockchain": [
       {
+        "title": "아서 헤이즈 \"오픈AI·앤트로픽 가치 없어…AI 버블 커질수록 비트코인 오른다\" - 블루밍비트",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1KMGlkMlp5NkhzV1BsWTdTNXVLNEJnUzVxTk05U3l3TzF3YUg0UGYxR3A1dHhqNnMyV3lpVUxsMzlsSHFZcXVlVjJqUnl3Wm9T?oc=5",
+        "source": "블루밍비트",
+        "published": "Sat, 17 Oct 2026 11:19:49 GMT",
+        "description": "아서 헤이즈 \"오픈AI·앤트로픽 가치 없어…AI 버블 커질수록 비트코인 오른다\"&nbsp;&nbsp;블루밍비트"
+      },
+      {
+        "title": "손실 봤는데 세금까지…코인 과세 논란에 여야 “미루자” - 중앙일보",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBVYmRlX0xKUG5nc1VUaE5MRDRQbHVVV1AyRVBXMldkSU5PN21jUHRuNWpiMUNQMHpoM0dVZkYyandKdTd0dzVKNmVMQ0tpUWxIN3NsOVpB?oc=5",
+        "source": "중앙일보",
+        "published": "Thu, 15 Oct 2026 15:02:00 GMT",
+        "description": "손실 봤는데 세금까지…코인 과세 논란에 여야 “미루자”&nbsp;&nbsp;중앙일보"
+      },
+      {
+        "title": "[경제밥도둑]코인으로 돈 벌면 세금, 석 달 앞으로…해외·개인거래 ‘사각지대’ 없애라 - 경향신문",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9OUEpnMEVEUTd2dVpIR0pTNUJMX2sxTFZ1b3pzemEyYnVPam9XMXRnRXc2MHFhbk9HS0xqSkk3WExQRlJOZHZMMjdUbkJlNzZJTU1YX2tYRXY3d9IBX0FVX3lxTE1wVHRlaTJVeWVFSV9qc0xyREJwdGNzVDY1QVFoUWpabC1idU9TTjFUODhnMVhWc0JGd0VfT3g2U0U3YUVxclFQWUcxMUotMVNETE8zVXlrZy1wZVpJRDIw?oc=5",
+        "source": "경향신문",
+        "published": "Tue, 13 Oct 2026 21:00:00 GMT",
+        "description": "[경제밥도둑]코인으로 돈 벌면 세금, 석 달 앞으로…해외·개인거래 ‘사각지대’ 없애라&nbsp;&nbsp;경향신문"
+      },
+      {
         "title": "코스피 꺾이자…해외 코인거래소 '큰손' 90% 이상 반등 베팅 - 연합뉴스",
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1rY2I0VWZuR2wtcTAtalNwOWFGc1ZHY25Rd3ZwX3k2WDVsMlJQM1RWc0lnSlBrYUJHT3hLZXlNdzNDRTV0ZHZadkVXbVBwY2NBaXRyNHJxeDI1QXc?oc=5",
         "source": "연합뉴스",
@@ -96,25 +117,11 @@
         "description": "비트코인, ETF 자금 유출 부담 속 $81,000 위에서 유지&nbsp;&nbsp;Investing.com 한국어"
       },
       {
-        "title": "손실 봤는데 세금까지…코인 과세 논란에 여야 “미루자” - 중앙일보",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBVYmRlX0xKUG5nc1VUaE5MRDRQbHVVV1AyRVBXMldkSU5PN21jUHRuNWpiMUNQMHpoM0dVZkYyandKdTd0dzVKNmVMQ0tpUWxIN3NsOVpB?oc=5",
-        "source": "중앙일보",
-        "published": "Thu, 15 Oct 2026 15:02:00 GMT",
-        "description": "손실 봤는데 세금까지…코인 과세 논란에 여야 “미루자”&nbsp;&nbsp;중앙일보"
-      },
-      {
-        "title": "[경제밥도둑]코인으로 돈 벌면 세금, 석 달 앞으로…해외·개인거래 ‘사각지대’ 없애라 - 경향신문",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9OUEpnMEVEUTd2dVpIR0pTNUJMX2sxTFZ1b3pzemEyYnVPam9XMXRnRXc2MHFhbk9HS0xqSkk3WExQRlJOZHZMMjdUbkJlNzZJTU1YX2tYRXY3d9IBX0FVX3lxTE1wVHRlaTJVeWVFSV9qc0xyREJwdGNzVDY1QVFoUWpabC1idU9TTjFUODhnMVhWc0JGd0VfT3g2U0U3YUVxclFQWUcxMUotMVNETE8zVXlrZy1wZVpJRDIw?oc=5",
-        "source": "경향신문",
-        "published": "Tue, 13 Oct 2026 21:00:00 GMT",
-        "description": "[경제밥도둑]코인으로 돈 벌면 세금, 석 달 앞으로…해외·개인거래 ‘사각지대’ 없애라&nbsp;&nbsp;경향신문"
-      },
-      {
-        "title": "인도네시아 장관 \"이슬람 율법의 가상자산 금지, 바뀔 수 있어\" - 블루밍비트",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5tckZJZVpQT1ZNd3FWazRfTGZORTh1M0VfenlmRmpaWmQyX1Ezb2RCY0NvOTMzVC0zWHhITnpHaTJRMVRLVGtOZVkzNFVqdUg2?oc=5",
-        "source": "블루밍비트",
-        "published": "Sat, 17 Oct 2026 07:09:43 GMT",
-        "description": "인도네시아 장관 \"이슬람 율법의 가상자산 금지, 바뀔 수 있어\"&nbsp;&nbsp;블루밍비트"
+        "title": "[D-BIZ 암호화폐 뉴스] “블록체인, 마침내 존재 이유 찾았다”… 실물자산(RWA) 토큰화 붐과 수혜 지형도 - 데일리비즈온",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBic3RYVlJpekFoOFM1X0xHekRYanZWZ0N3Q2o2Tmo4STlSNVZvb3g1b21ZNklnNnE0OTU5RzlqUnMzS3FjSXo2TWljVTJ5LWFzVlpBR0pQWXIyRmFkZlR1NHkxZW1DaDJsdlpIcQ?oc=5",
+        "source": "데일리비즈온",
+        "published": "Sat, 17 Oct 2026 16:22:29 GMT",
+        "description": "[D-BIZ 암호화폐 뉴스] “블록체인, 마침내 존재 이유 찾았다”… 실물자산(RWA) 토큰화 붐과 수혜 지형도&nbsp;&nbsp;데일리비즈온"
       },
       {
         "title": "비트코인, 美 물가·국채금리 등 악재 겹쳐…ETF 자금도 이탈 - 비즈워치",
@@ -124,25 +131,18 @@
         "description": "비트코인, 美 물가·국채금리 등 악재 겹쳐…ETF 자금도 이탈&nbsp;&nbsp;비즈워치"
       },
       {
+        "title": "\"주식은 안 내는데 코인은 왜?\"…2030 분노 키운 가상자산 과세 형평성 논란 - 뉴시스",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5FdW5pZ1VrcXV3YlpKZU85TnBHOEkxWkpFc2hIY3hyeFdZeGNrRGNZLTcyeXljOEJ1VjQ3NmQwQjU4NE42amRBRjBEOG1YdmRmZERkWXBKZVBCMUVmX2s2T9IBeEFVX3lxTE45UF9XQS0wdWtoUWIxLUVNX3JfU0NIQlVaT0sxeTNuYWlVTlBaNzV0MC1LOHFTOU9YanZGb1BCZnNDY3ZPZGI0QVJFVWdiRUpDdFNPMWdISTU4c2Z1NnhqMEU0dl9walAxMUJxa2JrV2FIcW5SLWVuQg?oc=5",
+        "source": "뉴시스",
+        "published": "Sat, 17 Oct 2026 15:00:00 GMT",
+        "description": "\"주식은 안 내는데 코인은 왜?\"…2030 분노 키운 가상자산 과세 형평성 논란&nbsp;&nbsp;뉴시스"
+      },
+      {
         "title": "비트웨이(BTW) 3월 0.008달러에서 10월 2달러대로, 잠든 비트코인을 깨우는 비트코인 금융 대장주의 모든 것 - 네이버 프리미엄콘텐츠",
         "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQ0NRcVcteVZzRnFwMTRKZG54R2wxcUlXVmlOZVZPMWtncWFRWGowbllFV2gtQkVkb0pWMWc0ck1aZUQ2NUVaRFptZDAyWnhLVE0xeVk4YUJENkEzcnYtT1RVSmRQUXR2S1VMWWFsLWJ3OF9XVEFwRVlqbDZLZmJwczJialBxRVFDRlh3Nw?oc=5",
         "source": "네이버 프리미엄콘텐츠",
         "published": "Sat, 17 Oct 2026 12:05:00 GMT",
         "description": "비트웨이(BTW) 3월 0.008달러에서 10월 2달러대로, 잠든 비트코인을 깨우는 비트코인 금융 대장주의 모든 것&nbsp;&nbsp;네이버 프리미엄콘텐츠"
-      },
-      {
-        "title": "\"스테이블코인 송금 비용, 기존 송금보다 84% 저렴\" - 디지털투데이",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9sZTYyRktnZnptNGRmOG0zeXBiQ2Q3S1RPd0NPSnlJOW9uVlptTTMydTlHaUZoOEVCbVotWTRPck1sTTdvOUdhNjdlMS1jSTdUWXk0MExxTktTT0lzTW54VlN6YzBCYjdkMHZ2Qzc1TEhaNUU?oc=5",
-        "source": "디지털투데이",
-        "published": "Sat, 17 Oct 2026 06:40:32 GMT",
-        "description": "\"스테이블코인 송금 비용, 기존 송금보다 84% 저렴\"&nbsp;&nbsp;디지털투데이"
-      },
-      {
-        "title": "도지코인(DOGE) 2.33% 하락 0.0804달러…자금 유출 부담 - 코인리더스",
-        "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5qTGt3MUdXcEdoc25vNTdXSUJqamcwV01fNHhkcUJJc0dWa21KYVA4a3FvMldPb244WG10cUxoSjFOakJkdEhyTHRR?oc=5",
-        "source": "코인리더스",
-        "published": "Sat, 17 Oct 2026 06:02:31 GMT",
-        "description": "도지코인(DOGE) 2.33% 하락 0.0804달러…자금 유출 부담&nbsp;&nbsp;코인리더스"
       }
     ],
     "aiit": [
@@ -162,7 +162,7 @@
       },
       {
         "title": "[미래 헬스케어 트렌드] 딥노이드 최우식 대표 “의료AI, ‘찾아주는 AI’ 넘어 ‘일하는 AI’로” - MEDI:GATE NEWS",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9ZQjhXNjVRSGJLZVAzNVVxaDA0VGxySzhuMWpyTGQxMGRSN1NlWVoxV1hIY2xJNk14aVA0ZWZETWtBV2RtQk1WRW9RcHhxQ1J3cDNrZHJWYw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFByOFYyalJfWW42aDFiNy1jbW5tNFJfcndSTlRHbGNVQlExSEdiNlpiWEZncFBqU2VweWg2QWh3WHFWQnZXT3R5THBlOVhZcGlSQmc?oc=5",
         "source": "MEDI:GATE NEWS",
         "published": "Sat, 17 Oct 2026 02:02:00 GMT",
         "description": "[미래 헬스케어 트렌드] 딥노이드 최우식 대표 “의료AI, ‘찾아주는 AI’ 넘어 ‘일하는 AI’로”&nbsp;&nbsp;MEDI:GATE NEWS"
@@ -189,18 +189,18 @@
         "description": "[AI신간] 노벨문학상에 서점가 들썩…앤 카슨 작품 4권 베스트셀러 진입&nbsp;&nbsp;뉴스핌"
       },
       {
+        "title": "인공지능을 이용해 1980년대로 돌아가는 \"시간 여행\" 트렌드를 악용해 생체 정보를 수집하는 사기에 주의하세요. - Vietnam.vn",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQnJxYmVJQ25pc0VCRkRBRklWaGFXNjU3cHdfZVZHWDI1TVR1NzNYT3JzczY1UkpGN01RX184X3BrenhuVy1rWVdHaFNDdzFwekVRVTJINmxxTDcxUlI3WG9MOGdXQ291aGVtaGN1V0RKWklPcXVLbm1YbmNxYjBxSFdDYTZvTnhaY0RyOXZLTmx3YllROU96MTZfaWtUZDlzTnM1Y1Z5MGUxNVZmeUhyMHVRUTl1R0tpUnc?oc=5",
+        "source": "Vietnam.vn",
+        "published": "Sat, 17 Oct 2026 04:43:20 GMT",
+        "description": "인공지능을 이용해 1980년대로 돌아가는 \"시간 여행\" 트렌드를 악용해 생체 정보를 수집하는 사기에 주의하세요.&nbsp;&nbsp;Vietnam.vn"
+      },
+      {
         "title": "하나증권 \"피지컬 AI가 ‘AI 거품론' 구원투수로 등장\" - 로봇신문",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE85bnNyUGdaeUJxek5JZ2w3dm9rYVJKWExSV2h5V3NrMklXTjBhRGVvRTlvSVg1SWU5dWZHSlJmem1vN2xUV01wVzVvNWlEWm5LS2pKdzFIX3V0QTJyNFY3eGhURHF6NUFIY3diQg?oc=5",
         "source": "로봇신문",
         "published": "Fri, 16 Oct 2026 02:29:35 GMT",
         "description": "하나증권 \"피지컬 AI가 ‘AI 거품론' 구원투수로 등장\"&nbsp;&nbsp;로봇신문"
-      },
-      {
-        "title": "이커머스 트렌드 2027, AI 시대 팔리는 쇼핑몰은? - 브런치",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB5MzJCTHp4VlJFc01pMnhBRHlHZ1llT01jRDEzS1JWajZUR2twajhxSFdqYXRrN0Z4MVViTnpuUW5jZDBhZWJYY05LZ1JMSU0?oc=5",
-        "source": "브런치",
-        "published": "Fri, 16 Oct 2026 16:14:43 GMT",
-        "description": "이커머스 트렌드 2027, AI 시대 팔리는 쇼핑몰은?&nbsp;&nbsp;브런치"
       },
       {
         "title": "바나나토토 디시 : 학습 전략과 자원 - 최신 트렌드 - Calgary Roughnecks",
@@ -210,11 +210,11 @@
         "description": "바나나토토 디시 : 학습 전략과 자원 - 최신 트렌드&nbsp;&nbsp;Calgary Roughnecks"
       },
       {
-        "title": "CES 2027 “AI, 가능성에서 실제 성과로”…CTA, 서울서 핵심 트렌드 공개 - www.cio.com",
-        "link": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxOVnJfblRoRnRqT3FieFJfNDZheVRpNUF2VzJzcGNHcndEM3RPelJtNjA4Q3VQdG1HWFYyWnNhbkp6Vk9SQmRSdGgwWUExSndMQ1hka25xSUlEMkM5c3Rhelp3Ui1IVWhoNktXOHVRQTlWOXlpc3JxbzNiTDlqN0NjWk1sakdiejk2TFJFWmVLTkxSQzNaWkdTZTFMWGlBSWlZVHA4eExBQy00dXppdjNYQUxJNy1wTFhaZVlLcjB0U0FsREw0YWpGai0zTUFFUFVSaUoyZ3pxaXNFMzdCQTJaZ09IU3NzdjdtVnFyOXhZUVFiNHV6R2xwTXl1X3NxM0twZndqcUtvOVkwZFRnZ3FsYU0zYlVnSXc0bmYtVC1hWTFUN2lBYWtqdUp0ZDVGMFY1ancxRzhtdldVRTg?oc=5",
-        "source": "www.cio.com",
-        "published": "Wed, 14 Oct 2026 14:51:19 GMT",
-        "description": "CES 2027 “AI, 가능성에서 실제 성과로”…CTA, 서울서 핵심 트렌드 공개&nbsp;&nbsp;www.cio.com"
+        "title": "이커머스 트렌드 2027, AI 시대 팔리는 쇼핑몰은? - 브런치",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB5MzJCTHp4VlJFc01pMnhBRHlHZ1llT01jRDEzS1JWajZUR2twajhxSFdqYXRrN0Z4MVViTnpuUW5jZDBhZWJYY05LZ1JMSU0?oc=5",
+        "source": "브런치",
+        "published": "Fri, 16 Oct 2026 16:14:43 GMT",
+        "description": "이커머스 트렌드 2027, AI 시대 팔리는 쇼핑몰은?&nbsp;&nbsp;브런치"
       }
     ],
     "clipping": [
@@ -280,7 +280,7 @@
         "title": "무신사, 소상공인 성장 파트너 ‘2026 소담상회 소담클래스’ 본격 가동 ··· - 패션포스트",
         "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE13cmcyU3hnazE2TkVTZFNoc05hVEJDQ0MwU09hYWgwclpubkdtZzJzTVUyaElOcEhDSklZdkZYc21IcEdneE1SdEdsdmk5ejZDUkFJZ0tKQmJzQkZoejQzVzUxZWZGbENnOUJBemhrRzdnUUl1RldVbXNB?oc=5",
         "source": "패션포스트",
-        "published": "Thu, 15 Oct 2026 21:54:56 GMT",
+        "published": "Fri, 16 Oct 2026 13:19:25 GMT",
         "description": "무신사, 소상공인 성장 파트너 ‘2026 소담상회 소담클래스’ 본격 가동 ···&nbsp;&nbsp;패션포스트"
       },
       {
@@ -328,13 +328,6 @@
     ],
     "brand_global": [
       {
-        "title": "Intern Insight: Mansi Santosh Tikam - New York Institute of Technology",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8wREVYN2xxRmZaVzlTbFZqSFp2X3ltYVFLRUFyWTZUQWFKLUlUTjlqTTJpSXFUMXQzb25rYUEzblBtNWg3QkRReDRQNHB5OVhNRXV5SjFCTlN0MkFzU2RxRzQyQjBSamkyNEwwN19BZzBPdE9LNXFkNlp3?oc=5",
-        "source": "New York Institute of Technology",
-        "published": "Wed, 14 Oct 2026 14:30:50 GMT",
-        "description": "Intern Insight: Mansi Santosh Tikam&nbsp;&nbsp;New York Institute of Technology"
-      },
-      {
         "title": "AI tools for marketing—how Chime brings research, creative and media in-house - Ad Age",
         "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZmljNm9UOWRwcTMtaDJiLU92cXRvbWJTM2ZzR1JqSHZKWHZMUTQzWjhLaVZ3RkgzeFluYzE4dTRlTmhDOTdhN3hreGFrYmVIalNIZzlFWlRqbm1samhIdGl6Z3FGOU1ETkliYjdXaGs3NzlvZ0VsUHYxOXpuMjNFNjJvMDVJdGNHOTFN?oc=5",
         "source": "Ad Age",
@@ -363,6 +356,13 @@
         "description": "How Lamar Jackson's Heisman season made Louisville a national brand | Exclusive&nbsp;&nbsp;The Courier-Journal"
       },
       {
+        "title": "Fastlane Launches AI Marketing Platform That Researches, Creates and Runs Campaigns End to End - GlobeNewswire",
+        "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQaG9HcmZ6Rl83a0cwVGYyam1fb0VrRWdLcFF4WEFGSlBIeGprOUp4UXFBUHFZRmtjd3phVkF2TjlFZkVOR2F0b25ZNHdBQTBFM09zQnQwZGtzVF9oZ0N0bFRCWGhackJpamZEYU9sNWZFT1habElzc19WbHlobG5sSVZrb2NUQ3ZZVGZxcGpucDdzWnlxbWtLMU9oY1g4SU1MWEdsYWR4NVo5OVdoeDFRMVB0bmVfZVJ6anY1TU1lOF9RbURmNFBLdjAzNlN5SldMenp1c3J2ZlY5YkFnRm0tbFBUUE1nRThqMXNMeXFVV2x3S1JoLVI5WA?oc=5",
+        "source": "GlobeNewswire",
+        "published": "Wed, 14 Oct 2026 04:01:00 GMT",
+        "description": "Fastlane Launches AI Marketing Platform That Researches, Creates and Runs Campaigns End to End&nbsp;&nbsp;GlobeNewswire"
+      },
+      {
         "title": "2026 Marketing Leader: Nolan Carleton - HousingWire",
         "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUXdrN0V5bkRYbjlnVlNKZHlhbEVzSl9NLUlYZHBfS2FfZnQtSUE3R29JTndyT0MxcUE5WkpWLUk3c1hqMFBkbnBHZWZpSmp2OFZBODFobTQ2QXlRY2VuQVZOZDBPX21MQlg4bWlfeWkzRmdFOHphSV91b2l3aHl2S3RQOGhZcWM?oc=5",
         "source": "HousingWire",
@@ -384,18 +384,18 @@
         "description": "FlyteVu Launches Marketing Campaign for Ashley Starring the Brand’s First Chief Mood Officer, Teddy Swims&nbsp;&nbsp;Marketing Communication News"
       },
       {
-        "title": "Fastlane Launches AI Marketing Platform That Researches, Creates and Runs Campaigns End to End - GlobeNewswire",
-        "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNZDZFVXpaV1FyOHIzOGhLSEVOc2V3NDR4aGh5QXNtaXRia1NGZFJpRlhIUmk1NXNSVWdnLTNLMTA1d1IybGdwQnRadzBMNWpweW10LWFCcmVSRHhWR3hzOU9VWWhVMEN2d2NuMGFYS3N4U3pTeS1YcmZrTEVfeUxURXZHak93TTlHd3U5Q085UnZmYnFNMURzM3BKNnBZR0NISjdvZUM3MHRFaUtmTWw5VVZTSTc1T3laSDcyZDhZQWV3OXZGVWZ0TjF2WWlaVW9SUjZnQjFjSGc5S19CVTJOQkZnX0hQa2htczRTTjlmcEt0cVlBUUdwRk9LZWg?oc=5",
-        "source": "GlobeNewswire",
-        "published": "Wed, 14 Oct 2026 04:01:00 GMT",
-        "description": "Fastlane Launches AI Marketing Platform That Researches, Creates and Runs Campaigns End to End&nbsp;&nbsp;GlobeNewswire"
-      },
-      {
         "title": "[Marketing Week] Bob Koigi: Social ads shift to sales - https://marketingreport.one/",
         "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNTU4tbWd4VTVGQk5NWHlDdU9hcmdiUVpsUjhZY2ZQeUVQOTJlUGVWVkJBZzJwdklhMXpucEhoRGtrSWg5TUZwQVdSUVpRakd6Vi1jbFR0dExrTzUyNi1fNUV4TVo5dWEya2VHN0ROVEVoUDRiaFdFWFJIX3B6SDh2QjhlRC1LXzBZREZFZ0Iwc0N0UQ?oc=5",
         "source": "https://marketingreport.one/",
         "published": "Fri, 16 Oct 2026 10:00:32 GMT",
         "description": "[Marketing Week] Bob Koigi: Social ads shift to sales&nbsp;&nbsp;https://marketingreport.one/"
+      },
+      {
+        "title": "Meta introduces new brand advertising formats across Facebook and Instagram - Search Engine Land",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVEZJc3RGUTEybERydUp1MkZSUVdydG82V05fYVVoQVFLaWROaDYtTWxkR2JVaWtPODNfLWRWOU1vNUZGRVlLV3lxTVZSMDdxNG1VYm41OWZKTWM2X2wzTlI2NExhU0lCOTRRd3ZpVzQ0NklZOXdxQy1rMnZTQnZmNHViUGdLOU5KYzk2TVNSYUNrX3MwdFp0Qk4zOHZINFBidlFHR1YybHFRektMbXJQdQ?oc=5",
+        "source": "Search Engine Land",
+        "published": "Thu, 15 Oct 2026 15:33:52 GMT",
+        "description": "Meta introduces new brand advertising formats across Facebook and Instagram&nbsp;&nbsp;Search Engine Land"
       }
     ],
     "s3_ai": [
@@ -403,8 +403,15 @@
         "title": "제미나이 4 아르곤: 가장 까다로운 난제를 해결하도록 설계된 모델 - blog.google",
         "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE51czdyblRzU3U2a2lYWTQyQXhPYjJCTmxWVjE2RS13NVlySzBZQ0VVRjRVSkFLYVZKZTlJLWZfSmxlT3g3TFRNS09KRE1waEhKd1lCSWI3TWo5OUxXRFBlVU9EdUlEU3d3VjFfR21ySjVCZlNpbFEyTFlR?oc=5",
         "source": "blog.google",
-        "published": "Sat, 17 Oct 2026 09:14:46 GMT",
+        "published": "Sat, 17 Oct 2026 15:20:27 GMT",
         "description": "제미나이 4 아르곤: 가장 까다로운 난제를 해결하도록 설계된 모델&nbsp;&nbsp;blog.google"
+      },
+      {
+        "title": "구미상공회의소, 생성형 AI 실무 활용 교육 개최 - 구미일보",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5tZDF3c3I5S2doUklnTEkwY24tVVUzTUJyZkNLN3JKVkwzX2hDUEQ2aWItT01GbmtENVNCQmIxaGZpbzhnQXBrUnF2TFRCZFBZcXhmaXBvLXVOTkRS?oc=5",
+        "source": "구미일보",
+        "published": "Sat, 17 Oct 2026 13:56:43 GMT",
+        "description": "구미상공회의소, 생성형 AI 실무 활용 교육 개최&nbsp;&nbsp;구미일보"
       },
       {
         "title": "AI 코딩도 LLM만으론 부족…레플릿, ‘결정론적 시뮬레이터’로 검증 - AI타임스",
@@ -421,18 +428,11 @@
         "description": "구미상공회의소, 기업 임직원 대상 생성형 AI 실무 활용 교육&nbsp;&nbsp;매일일보"
       },
       {
-        "title": "구미상공회의소, 생성형 AI 실무 활용 교육 개최 - 경북도민일보",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9oZ0RXWWhhRWhLZUNHay1fVGpzeEZwbVpOR2NiMzFfWDB2Q01zLVBtbWdrZ3dNWDk4YTk4dDBUdHJnUGdWc3BQam5TekZtOTFhZzFYVUR0UGFnbUZOVnh3dEJsRUV4NTNkZkE?oc=5",
-        "source": "경북도민일보",
-        "published": "Sat, 17 Oct 2026 07:40:18 GMT",
-        "description": "구미상공회의소, 생성형 AI 실무 활용 교육 개최&nbsp;&nbsp;경북도민일보"
-      },
-      {
-        "title": "\"아기 아닌데…\" AI 서비스, 복실복실 귀여운 캐릭터 입고 정보수집 - 머니투데이 - 머니투데이",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ld3dqV3hueUZMeHlfUFFNV1ItLTI1OC02ODFWRDVrYlBNd3MzdVNsWVpDaTE0cEtlTWZzNzd5b0w4NHFOM1lodHZOckZmcW5MczBEN1p6N0VOY2xUandmU3N1VFRsUkM30gFuQVVfeXFMTXBMcVdXSjVzVFBTZ2xzQUJNeDZ6cmdlVGlqTlNPVndnUlFucTRHbFpqR2ZVSnFzdHZoR2RHeHVWT3E4WEpwd3RhcVBLQzhBTEpiYktQeVAzVEFvbVpGRmJ5azctc2c5MlE3U2llUEE?oc=5",
-        "source": "머니투데이",
-        "published": "Fri, 16 Oct 2026 21:35:00 GMT",
-        "description": "\"아기 아닌데…\" AI 서비스, 복실복실 귀여운 캐릭터 입고 정보수집 - 머니투데이&nbsp;&nbsp;머니투데이"
+        "title": "[윤진섭 비평관점] ChatGpT와 함께 하는 윤진섭의 비평실험 - 아트코리아방송",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Qb2NzenE0MDU4N0xYeUtMZVF0SHNRZ3lTUEt6V0liTUkwa0NieTB2UG1jNkJBeTg2RDFMWGlxYnduZmNXWFZhUnEzbDQzNW9ZSUpKV1dzbnluTEs2REFwSm5OM0Y1bGdYeUx5Rkl3?oc=5",
+        "source": "아트코리아방송",
+        "published": "Sat, 17 Oct 2026 14:31:36 GMT",
+        "description": "[윤진섭 비평관점] ChatGpT와 함께 하는 윤진섭의 비평실험&nbsp;&nbsp;아트코리아방송"
       },
       {
         "title": "생성형 AI의 시장 잠식, 저작권 침해로 볼 수 있나 - https://www.2news.co.kr/",
@@ -449,6 +449,13 @@
         "description": "EU, 연구현장 생성형 AI 지침 대폭 개정…에이전트·동료평가까지 규율&nbsp;&nbsp;데일리환경"
       },
       {
+        "title": "\"아기 아닌데…\" AI 서비스, 복실복실 귀여운 캐릭터 입고 정보수집 - 머니투데이 - 머니투데이",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ld3dqV3hueUZMeHlfUFFNV1ItLTI1OC02ODFWRDVrYlBNd3MzdVNsWVpDaTE0cEtlTWZzNzd5b0w4NHFOM1lodHZOckZmcW5MczBEN1p6N0VOY2xUandmU3N1VFRsUkM30gFuQVVfeXFMTXBMcVdXSjVzVFBTZ2xzQUJNeDZ6cmdlVGlqTlNPVndnUlFucTRHbFpqR2ZVSnFzdHZoR2RHeHVWT3E4WEpwd3RhcVBLQzhBTEpiYktQeVAzVEFvbVpGRmJ5azctc2c5MlE3U2llUEE?oc=5",
+        "source": "머니투데이",
+        "published": "Fri, 16 Oct 2026 21:35:00 GMT",
+        "description": "\"아기 아닌데…\" AI 서비스, 복실복실 귀여운 캐릭터 입고 정보수집 - 머니투데이&nbsp;&nbsp;머니투데이"
+      },
+      {
         "title": "롯데백화점의 생성형 AI 기반 파트너 제안 채널 ‘AI 비즈센터’ 구축기 - Amazon Web Services (AWS)",
         "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA2TG1nbkpVRHFEUDhWZFQ4aE9ZdkNVdl9WdUdGdGFQWkUyX09va1laWHd6ZFdWUFBBcjlOT1VhMUNocnFKd0FKWTBaeVlieWx0TlFhUnlSaGpOeWtRWFpxbEFzbnZ4OXFTaEJVTWFBUHdMdy1xM2N0ZklvSlNYd3c?oc=5",
         "source": "Amazon Web Services (AWS)",
@@ -461,13 +468,6 @@
         "source": "미디어디펜스",
         "published": "Fri, 16 Oct 2026 21:40:52 GMT",
         "description": "구미상의, 생성형 AI 실무교육 개최…지역기업 업무 혁신·생산성 향상 지원&nbsp;&nbsp;미디어디펜스"
-      },
-      {
-        "title": "예보, 생성형 AI 도입 본격화…대국민 서비스 늘린다 - 주간한국",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1JWlNMZFBhOWN2VmdOVklITXNpMmFKMnMwTHM3NGtkRWc0SDJaTXhReGpfVjY2UTA1TGQ5UFllQXZ4RFJ6dVoteDZUNmJvaFFzX1FGaUdIWF91SGhpV1FNUUMzbk8wNDFFUEczbmNhTXgtaTl30gF0QVVfeXFMTUlaU0xkUGE5Y3ZWZ05WSUhNc2kyYUoyczBMczc0a2RFZzRIMlpNeFF4al9WNjZRMDVMZDlQWWVBdnhEUnp1Wi14NlQ2Ym9oUXNfUUZpR0hYX3VIaGlXUU1RQzNuTzA0MUVQRzNuY2FNeC1pOXc?oc=5",
-        "source": "주간한국",
-        "published": "Fri, 16 Oct 2026 10:52:45 GMT",
-        "description": "예보, 생성형 AI 도입 본격화…대국민 서비스 늘린다&nbsp;&nbsp;주간한국"
       }
     ],
     "s3_game": [
@@ -507,6 +507,13 @@
         "description": "자극적인 연출과 별개로 읽는 재밌는 모바일 게임 결과 수치&nbsp;&nbsp;Calgary Roughnecks"
       },
       {
+        "title": "승리 조합은 어떻게 표시될까? 모바일 게임 환불 결과 화면 - Calgary Roughnecks",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUF9kb1VsOWg3R3lsM1VJRGZvUVFnTnhTQ3pzMU02UDBsbnFMbURUalZTeVhfeUxSWFhVM28xTTEtQ0JoaE1GS3pFYWJ5SHFhYWI0VlphM3F0MDFCNzhmeDhfMGRwMEYtMlVFaEo2Q2RiMVNMQ3M1T0pBakpqVXFlRGV6RlZvYXBqSXVHcWxPZw?oc=5",
+        "source": "Calgary Roughnecks",
+        "published": "Sat, 17 Oct 2026 07:20:23 GMT",
+        "description": "승리 조합은 어떻게 표시될까? 모바일 게임 환불 결과 화면&nbsp;&nbsp;Calgary Roughnecks"
+      },
+      {
         "title": "게임 내 설명을 기준으로 다시 읽는 데이터 필요 없는 모바일 게임 - Calgary Roughnecks",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1melp6QjQ0b3JqaDZBX2FBeFBRZDVXWFVEVnVQcHkwOEZIQmVRb0Jrc2kyV2JBbHpjTHJnYjFHRmZUbWFfQ0Zid1FrZUdzLTZya1VhNTFjQ2JIQlRKT2hsVUp0SFVoY20wV1lmbk9IZw?oc=5",
         "source": "Calgary Roughnecks",
@@ -528,18 +535,11 @@
         "description": "순서대로 따라 읽는 바카라 모바일 게임 한 판 설명&nbsp;&nbsp;Calgary Roughnecks"
       },
       {
-        "title": "게임 기록 메뉴가 제공되는지 확인하는 모바일 신규게임 - Calgary Roughnecks",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQa2F6WWVHUC1YVk9Pc01LejB4VlR4N2U3ejlhWHNhd29ZdXUwRHZxWWdha3VMWl8tbGlyUUo1LTdlZDlZbm5XVi10clJtRmlnQklBLVRuc1FMVnJ6WWpDUlRQYmJiOElORmcwRnVrTkU2Unc5Um9WLUZ3TkdPaUo5VEttWVpIc1VPZjV6RG54d0J2alFrdGZfa3R5UnRuQk9tZ1lKaWVIQ0dfYk0xNVQ1Z2c3dk1hM3BLU0tWRk9rSmw?oc=5",
+        "title": "2012년 모바일 rpg게임 이용 중 휴식 알림 설정 - Calgary Roughnecks",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBublEtaGNaZGo4RjA2Vi1jMXp2VDNzNVhmWHRuRFI5aGdSUnRvUklWemc1TzhzUk40eVhySnVtZ1ktV3ZnX3JDN1FrbDhFeWFvMXhueGJnd3RfVHhjSnhLYXBtT3VIa3I3UWhDNlBoM204aTRjTWVB?oc=5",
         "source": "Calgary Roughnecks",
-        "published": "Fri, 16 Oct 2026 18:09:06 GMT",
-        "description": "게임 기록 메뉴가 제공되는지 확인하는 모바일 신규게임&nbsp;&nbsp;Calgary Roughnecks"
-      },
-      {
-        "title": "보너스가 없는 구성도 있을까? 혼자 하는 모바일 게임 유형 설명 - Calgary Roughnecks",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPaVhUZUxoMjRUeHBIejlrZkdXRW9pYlhaR1lGYi1YaTBwRTViNnFtQ2V6MmZhQlQ1ejgwYzJ5R2ZmYVI4WmU1dmVfZ3A3T0JoNTBqZEM3ODNrOG5SaFVCcVdSM3lCLTlnTG1mTnNYdzJNNDF4Qi1DQnNDclJKWkltb1Q3SjlFV3BWWTk5elpYRm9HN25vWnNjYThieXYtRjQ3WVJ2QXozQXZmdThDUFJJcXp1bGNUVGM?oc=5",
-        "source": "Calgary Roughnecks",
-        "published": "Fri, 16 Oct 2026 21:05:16 GMT",
-        "description": "보너스가 없는 구성도 있을까? 혼자 하는 모바일 게임 유형 설명&nbsp;&nbsp;Calgary Roughnecks"
+        "published": "Fri, 16 Oct 2026 19:10:50 GMT",
+        "description": "2012년 모바일 rpg게임 이용 중 휴식 알림 설정&nbsp;&nbsp;Calgary Roughnecks"
       }
     ],
     "s3_wemade": [
@@ -586,6 +586,13 @@
         "description": "보너스가 없는 구성도 있을까? 위메이드 카지노 유형 설명&nbsp;&nbsp;Calgary Roughnecks"
       },
       {
+        "title": "새 화면이 나타났을 때 참고하는 대형 카지노 이용 문답 - www.icaremn.com",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wWE5CQk00cVRkYUdFekctX0hNMl9BLTlhX0M1UU9OTXoyOTExaEZMQ09pcDBFaDlGclVGUjV0S204clFGaWNnbWJfdEhLcThiLTQ0RGV2MUJPdw?oc=5",
+        "source": "www.icaremn.com",
+        "published": "Fri, 16 Oct 2026 19:31:43 GMT",
+        "description": "새 화면이 나타났을 때 참고하는 대형 카지노 이용 문답&nbsp;&nbsp;www.icaremn.com"
+      },
+      {
         "title": "붙어 있는 심벌로 판정하나요? 토토 사이트 대여 후기 제로 규칙 질문 - Calgary Roughnecks",
         "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1oN0xvWldXcy02TXFrYmJjRlpIVDFULVR2a0pVdFc5cWtQSnhrRUhyTkdWMi0xNEJIdi1aYjQzNzQwQlh4TGlDbE1fZkRWQ3VqMlVGOU5tQTgxSUVnNFBsQUN0TjRTbkxJSDJNS2xsb3hUYkRES0E?oc=5",
         "source": "Calgary Roughnecks",
@@ -605,13 +612,6 @@
         "source": "내외경제TV",
         "published": "Sat, 17 Oct 2026 07:13:03 GMT",
         "description": "판타스틱 베이스볼, 2년 9개월 만에 아웃&nbsp;&nbsp;내외경제TV"
-      },
-      {
-        "title": "무료 슬롯머신 뉴헤븐카지노 화면 안의 카운터 뜻 - Calgary Roughnecks",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1FTFlZY05IZ1NtR3NQbGdZa1B3Wk0ya3VCTUhaRFRGYjg5Mm1xc0R1RnVqOEJHNHlvTkhpby16N2UyaERjMnc4S00zR1FDWGpsRWlhSEFaeTV2cFZiWUdfWDR2Wm9HZmZoY2otVUJaeWZ2Mmg3?oc=5",
-        "source": "Calgary Roughnecks",
-        "published": "Fri, 16 Oct 2026 13:49:40 GMT",
-        "description": "무료 슬롯머신 뉴헤븐카지노 화면 안의 카운터 뜻&nbsp;&nbsp;Calgary Roughnecks"
       }
     ],
     "s3_blockchain": [
@@ -644,6 +644,13 @@
         "description": "Gamba, 자체 게임 엔진·Provably Fair 앞세워 Web3 게이밍 경쟁력 강화&nbsp;&nbsp;코인리더스"
       },
       {
+        "title": "GWDC 2026 KOREA, 서울서 성료…한·홍 Web3 정책 협력 강화·AI 에이전트·스테이블코인·RWA 혁신 논의 - 토큰포스트",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9Kbk85T1NqUXpjZmI1SXc5LWJBdV9CQXhzZGR6X3p4WUpET0s1aFoxaDM3eG1BVnZ0MGZyTU1rUlMzQkUwLVZvanA5R1ZFdzFTZWFCcWJORQ?oc=5",
+        "source": "토큰포스트",
+        "published": "Fri, 16 Oct 2026 03:20:13 GMT",
+        "description": "GWDC 2026 KOREA, 서울서 성료…한·홍 Web3 정책 협력 강화·AI 에이전트·스테이블코인·RWA 혁신 논의&nbsp;&nbsp;토큰포스트"
+      },
+      {
         "title": "블록 체인 게임 이란 게임 결과 내역 열람 기능 확인 - Calgary Roughnecks",
         "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNkxpRUJVV1Azd2pzNTZfMEl6UGFFTjRvRGRwUU9CS0J0eTJvQ0ZzNjc4RFRfNGZBVTdQbnkzNUhhajFYcEFUZ2k0LTlacWYzNldLTlMwLWpfbjVtbk0taDZGNFhKTkNZR3JXS3RJcHNZWEtKemZWb0lneko5cUFQaXhPaXNiZDhPSXh3R0JQZk5xM29RbFVlT3JXT1BRVFFEOHVNV3Vn?oc=5",
         "source": "Calgary Roughnecks",
@@ -665,11 +672,11 @@
         "description": "연출 길이도 비교 항목이 될까? 카카오 뱅크 블록 체인 게임 비교&nbsp;&nbsp;Calgary Roughnecks"
       },
       {
-        "title": "종류별 차이를 찾는 첫 기준, 멀티 체인 블록 체인 게임 방식 - Calgary Roughnecks",
-        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPODZzdGtMSktON25nSC0wOVhwNm92UEdtUzFzX01kTEVXU0wtS3Z6ZTA3eTVOY3h0U3daaVV2a1I5ZUpvQV9TNkUxSWJpcnNzb0xnUktqSmQtaDhIZXdpak5zQXE2MFRHR0tuS1FoQmF2cVNrRDktVlExelRRYmx3MmVHUXJqcUdaZUd1ajdjeG8xeUN1a3BIOUVUTElsTmFSTS16N2ExbHExcHhmM2RuSzhtdndWUG14TzUzTkswRWRPc1BSS0NYOTlLNkljaTdyWjVWUkNfS01LVWM1ZDRBREl3?oc=5",
+        "title": "처음 보는 버전명을 확인하는 블록체인 게임 정보 페이지 - Calgary Roughnecks",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBSWndWdEdLdF9mRGtqb0Y0YXRaVjNrZUNTNVJQY3pPMk00MXhGWFR6dU9UTGE3bEJnSV91bEpfV2libVdMSmZETFhhN09jc0syVllVU0I3TlBsTkdTMmt3cl9pV3V2bVJvdURiYUw5NlB1S2c?oc=5",
         "source": "Calgary Roughnecks",
-        "published": "Fri, 16 Oct 2026 20:43:02 GMT",
-        "description": "종류별 차이를 찾는 첫 기준, 멀티 체인 블록 체인 게임 방식&nbsp;&nbsp;Calgary Roughnecks"
+        "published": "Thu, 15 Oct 2026 17:07:42 GMT",
+        "description": "처음 보는 버전명을 확인하는 블록체인 게임 정보 페이지&nbsp;&nbsp;Calgary Roughnecks"
       },
       {
         "title": "\"기술보다 재미 먼저\" 트랄라랩의 출사표 '주사위의 신:리롤' - 머니투데이 - 머니투데이",
@@ -677,13 +684,6 @@
         "source": "머니투데이",
         "published": "Fri, 16 Oct 2026 23:00:00 GMT",
         "description": "\"기술보다 재미 먼저\" 트랄라랩의 출사표 '주사위의 신:리롤' - 머니투데이&nbsp;&nbsp;머니투데이"
-      },
-      {
-        "title": "Defined VC 리뷰: 벤처캐피털은 어떻게 기술 스타트업의 규모 확장을 돕는가! - quasa.io",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWVdvLTlqN0ZzYTRrdExucm5KcHFPNTQ5YzUta1ZUNU9ONHFFZml2bEc4d1dWYW8xYkw3bjI1ZTVkS1JYdzVQQnMxMEFSTlJvNWJUUHVmTmdyU3Q5TVo2ZVFPU2E0dFhyeHBwclNHT3psSHNVb2Jxa0p1QzYyMzg3eG55cm5oaTd5eVBXYWtqUmdTYzZVaHpqWGJIcFJkdGZnT1BWbHk0dXJwNEFBbTRoLUw5T010NWVINXIw?oc=5",
-        "source": "quasa.io",
-        "published": "Sat, 17 Oct 2026 06:33:50 GMT",
-        "description": "Defined VC 리뷰: 벤처캐피털은 어떻게 기술 스타트업의 규모 확장을 돕는가!&nbsp;&nbsp;quasa.io"
       }
     ]
   },
@@ -832,8 +832,8 @@
       "sign": "+"
     },
     "wemix": {
-      "krw": 243.75,
-      "chg24h": 1.9808788685779817,
+      "krw": 243.44,
+      "chg24h": 0.5275716984872845,
       "dir": "RISING",
       "sign": "+"
     }
@@ -906,11 +906,11 @@
         "description": "Gen Z, Gen Alpha and the AI-ificiation of retail this holiday season&nbsp;&nbsp;Retail Dive"
       },
       {
-        "title": "‘Don’t be boring’: How Smirnoff, Hinge cozy up to Gen Z through culture - Marketing Dive",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSkJiN2ZleTdaYjNLVVNIVTh1akpFbUxPcWRNU3o5M285OEVJMmZpeWhGdUdPOUp1bGRsSHFJOElyN2xaNG5jV3BZcS1weEpWOGl1RThVUlFTWFpmOENtbGFWX2JRcTlQVXJyekRUdkZBV180YV8yZ1V1NDVoRTRKYnVKSWE4QTBBaFlkNENwSjc3WmJjLVVZTFRERWo4emFzSThDSHRpeUYtQWRXMWc?oc=5",
-        "source": "Marketing Dive",
-        "published": "Mon, 12 Oct 2026 13:44:21 GMT",
-        "description": "‘Don’t be boring’: How Smirnoff, Hinge cozy up to Gen Z through culture&nbsp;&nbsp;Marketing Dive"
+        "title": "Dead mascots, neon labels and internet trends: Inside the strategy wars to capture Gen Z's spending power - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE10U2RPTkwyXy1CVmhnYVJzOGc5Uk84ZS00ZXdtZ0JGbUNud3ZyTFZyMVNjNjluYndvNkJtX19yR1ZmeDZtLUZody1Td19VYVhLaWFMRVpwS3RDb19zaEtYMGlrbVJkZ2RIUHdLVnZmLW9CYjQyejMxT0FPTE_SAYIBQVVfeXFMTW5ieFpNTTA1eDFiZDVwM3VfNTVVNDh0clNSLW4zOXJ6TFZPcUlrYjdqN00zaEgyZ2hTSkpFeW9MRjc2QWRMTDVtYTN4X210ZmJQSGZTemIwQjJSQzFSWU4xdTJ5a2MxVkw1bzJCLXg3WGlYc1VKT3NvNFlmd25oMmF6QQ?oc=5",
+        "source": "CNBC",
+        "published": "Tue, 13 Oct 2026 16:46:37 GMT",
+        "description": "Dead mascots, neon labels and internet trends: Inside the strategy wars to capture Gen Z's spending power&nbsp;&nbsp;CNBC"
       }
     ],
     "s3": [
