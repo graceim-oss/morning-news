@@ -1,10 +1,10 @@
 {
-  "updated": "04:53:02",
+  "updated": "07:04:56",
   "news": {
     "wemade": [
       {
         "title": "[크립토리뷰] 위믹스, '서틱'과 손잡고 버그바운티 개편…위믹스3.0 보안 강화(10월2주차) - 더구루",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5KQVFPZVIwc1RTZzBkTWxGU2FBY0NFVm85bC1sMXcxX1NOOXBRd28xQlBpQXpHZ3lOZVM3YlZRbVp1TklxWDVfaGlKa2RJdkJBZGJlU2M2YUEwRm1PM2gzWjY3aw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1xSFpiR1l0RnpHYTBoUkFFdUhiaUVUbW1sR1Zvd2E3aF9teU9EWGtMVm56cXFKNTBNblc3X3BGSEo3TGkwSUhDd2x2WHl2TGMyLTZLRVhuODJ1MjY1SkE?oc=5",
         "source": "더구루",
         "published": "Sat, 17 Oct 2026 19:40:13 GMT",
         "description": "[크립토리뷰] 위믹스, '서틱'과 손잡고 버그바운티 개편…위믹스3.0 보안 강화(10월2주차)&nbsp;&nbsp;더구루"
@@ -17,6 +17,13 @@
         "description": "9천200억 위메이드 매각, 중국계 인수 12월로 연기&nbsp;&nbsp;연합뉴스"
       },
       {
+        "title": "위메이드, 중국 자본 매각 일정 두 달 연기 - 조선일보",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOenJsMDB0a2tlLWJxVm9YaEpSUzlGWUZObEp6VmFPUHYxUXZqallkekthTk1TcHdYbXJCcDJYb29RS2hNY2dzeUxDdWNpOUVObWJrXzhmcndxanVTZ29Ed1VENXFINGxNTktpbWlXcE43bDZkZERxd05YaWxyNjVCcnVJWQ?oc=5",
+        "source": "조선일보",
+        "published": "Wed, 14 Oct 2026 10:41:17 GMT",
+        "description": "위메이드, 중국 자본 매각 일정 두 달 연기&nbsp;&nbsp;조선일보"
+      },
+      {
         "title": "10년 소송 상대 中 킹넷, 위메이드 새 투자자로…창업주 박관호 의장 떠난다 - 이투데이",
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ydUxvTm4za1ZpTFBhb09zTjVNR2g5NXNobHF6R2xUeF9LaUNkV2FZNEVLUEl6TVUtTTYwNVJkVXZjNXdPQjJ2dHE0Y3dTNnBnTl84ZWUtbXM4QnM0aHhkelA4ZmQ3eGh2WTRzRkdn?oc=5",
         "source": "이투데이",
@@ -24,18 +31,11 @@
         "description": "10년 소송 상대 中 킹넷, 위메이드 새 투자자로…창업주 박관호 의장 떠난다&nbsp;&nbsp;이투데이"
       },
       {
-        "title": "위메이드, 중국 자본 매각 일정 두 달 연기 - 조선일보",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOenJsMDB0a2tlLWJxVm9YaEpSUzlGWUZObEp6VmFPUHYxUXZqallkekthTk1TcHdYbXJCcDJYb29RS2hNY2dzeUxDdWNpOUVObWJrXzhmcndxanVTZ29Ed1VENXFINGxNTktpbWlXcE43bDZkZERxd05YaWxyNjVCcnVJWQ?oc=5",
-        "source": "조선일보",
-        "published": "Wed, 14 Oct 2026 10:33:00 GMT",
-        "description": "위메이드, 중국 자본 매각 일정 두 달 연기&nbsp;&nbsp;조선일보"
-      },
-      {
-        "title": "위메이드 최대주주 변경 12월 30일로 연기 - 비건뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBSWnJla3lFeTZkTXlhZ2Z6b29kYWplT2hqSUhyUzVYVjdNczEzRXdMZmtGNlJCaFpBNTdwY0dTa0lTTWNDMGE1ekU1QVYwUnMyX0F4UFV6dTRrMkpobk5sS1hNbTZUZw?oc=5",
-        "source": "비건뉴스",
-        "published": "Sun, 18 Oct 2026 03:36:55 GMT",
-        "description": "위메이드 최대주주 변경 12월 30일로 연기&nbsp;&nbsp;비건뉴스"
+        "title": "위 믹스 상장 폐지 업 비트 정리 운동 피트니스 핵심 비법 - Calgary Roughnecks",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxObmU3UmlSQ2Z4bk5RUHFZbWNvX2ZDZlo0SExBdEZmSWxaSXFxNjdIVjJhd21ubFg2Tk5tMkE4NGRzR0k5RGhuUThFMlVJWWI2cE9MRHFBM0ZXR3k5RDVYN015d2Z6X0NsOG9mTjJVY3JFaWdvZ2R5N04zclRGN1p4TVc3RjdFMWh4YWJJY19yRDMxY0RILTJZTXlEX1ZkTGROTGtvM2tpX1lRaU45NlFzSHEyckNnVF9nZTVLTTV2SFczYXZj?oc=5",
+        "source": "Calgary Roughnecks",
+        "published": "Sun, 18 Oct 2026 00:34:24 GMT",
+        "description": "위 믹스 상장 폐지 업 비트 정리 운동 피트니스 핵심 비법&nbsp;&nbsp;Calgary Roughnecks"
       },
       {
         "title": "위메이드 9200억 M&amp;A ‘제동’… 中 킹넷 송금·선행조건 발목에 잔금 납입 연말로 늦춰져 - 인더스트리뉴스",
@@ -52,6 +52,13 @@
         "description": "위메이드 매각 불발 가능성 '솔솔' … 中 네오펄스, 잔금 8280억 납입 돌연 두 달 연기&nbsp;&nbsp;뉴데일리"
       },
       {
+        "title": "위메이드 최대주주 변경 12월 30일로 연기 - 비건뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBSWnJla3lFeTZkTXlhZ2Z6b29kYWplT2hqSUhyUzVYVjdNczEzRXdMZmtGNlJCaFpBNTdwY0dTa0lTTWNDMGE1ekU1QVYwUnMyX0F4UFV6dTRrMkpobk5sS1hNbTZUZw?oc=5",
+        "source": "비건뉴스",
+        "published": "Sun, 18 Oct 2026 03:36:55 GMT",
+        "description": "위메이드 최대주주 변경 12월 30일로 연기&nbsp;&nbsp;비건뉴스"
+      },
+      {
         "title": "위메이드 매각 2개월 연기…9200억원 지분거래 12월로 - 디일렉",
         "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5XX2UxYkJmSjRDRzlMVlpJT19lWG9GUUZpMjZLSUF6ZXp3LVN2RTZHYkZwY0tia19hMExUbzhhaFJzR0lwWUFHWVJFYlp0VGlOMUpnZmV0T3dsdGVwMzNDR0xPb2RlQQ?oc=5",
         "source": "디일렉",
@@ -64,22 +71,15 @@
         "source": "지디넷코리아",
         "published": "Wed, 14 Oct 2026 08:32:38 GMT",
         "description": "위메이드, 경영권 매각 잔금 납입일 12월 말로 연기…\"선행조건 충족 지연\"&nbsp;&nbsp;지디넷코리아"
-      },
-      {
-        "title": "위메이드 최대주주 교체 12월로 연기…잔금 8280억 납입 지연 - 뉴스1",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE50ME1raU8yUW5XYTFEVjB3RW9IUkJQS0NyWXBLazhQZFdtS2NhNUlkbzNXZjUtTlVWX0s4LXNhWHZIbThUWEdnVmpMd1B2LUVJdHFCUDRGd2tfYnYtQlY3Wg?oc=5",
-        "source": "뉴스1",
-        "published": "Wed, 14 Oct 2026 23:51:24 GMT",
-        "description": "위메이드 최대주주 교체 12월로 연기…잔금 8280억 납입 지연&nbsp;&nbsp;뉴스1"
       }
     ],
     "blockchain": [
       {
-        "title": "[단독] 사망자 금융거래 신속 차단… 코인은 여전히 보호망 ‘구멍’ - 서울신문",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBhMEFhcnpXWmlBdzJPTGVjT3VTQjNfU01aQi1yX0laTGVLOS1ScWJaamtldm5jaEpObEc3RXlXeXNRcTN2MzJacFlOUEZYUHlQdzZ0MUhfMXpHdTlfelc1V3ZONUd2VWJ1ekxaa0ltS3owVGFPQlNqaFV3?oc=5",
-        "source": "서울신문",
-        "published": "Sun, 18 Oct 2026 15:58:40 GMT",
-        "description": "[단독] 사망자 금융거래 신속 차단… 코인은 여전히 보호망 ‘구멍’&nbsp;&nbsp;서울신문"
+        "title": "투자자 울린 '논란의 코인'…고팍스는 제때 팔아 억대 이익 - 매일경제 마켓",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IUlAzcnZoZDYwOGwwYzFIek5OdlFMUXA2d1RqMlJrVm5idUp0WmpucGx2Ukh4cVh4R3RzVWlzcHhGT0dVYXFoSW8tb3JPR0x3Rmc?oc=5",
+        "source": "매일경제 마켓",
+        "published": "Sun, 18 Oct 2026 21:01:01 GMT",
+        "description": "투자자 울린 '논란의 코인'…고팍스는 제때 팔아 억대 이익&nbsp;&nbsp;매일경제 마켓"
       },
       {
         "title": "[미국 특징주] 써클, 신흥국 40곳 진출 추진…\"블록체인 대중화 변곡점\" - 뉴스핌",
@@ -89,18 +89,39 @@
         "description": "[미국 특징주] 써클, 신흥국 40곳 진출 추진…\"블록체인 대중화 변곡점\"&nbsp;&nbsp;뉴스핌"
       },
       {
+        "title": "e스포츠 넘어 코인 꽂혔다…‘지분 0.03%’ 한화 차남 승부수 - 중앙일보",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE10OE56aEdvSzFzOWZKYjRqaWpRNHY0OTVzN2JFSW1TRlllRDhkTFo2M3o1QWRxMDlSUWI1VVh0alpCYnhvMkhQdkQtbGpoekZDUk52amZ3?oc=5",
+        "source": "중앙일보",
+        "published": "Sun, 18 Oct 2026 20:19:14 GMT",
+        "description": "e스포츠 넘어 코인 꽂혔다…‘지분 0.03%’ 한화 차남 승부수&nbsp;&nbsp;중앙일보"
+      },
+      {
+        "title": "디지털엑스, ‘미래에셋 3.0’ 핵심축…디지털자산-금융 연계 중점 추진 [가상자산 거래소 2.0 (4)] - 한국금융신문",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1JNVlsZGNmTjc0U25ENTZYci1SZVIwc1ZENE1DcmZFTnVHUldpczRBeWxtTG9pcXVYRGhvUkVnT0JUVmlQOWx4cTA3M3FtcUZ3cW42bURLclk0VkhoeGdURWR5aWJrVFlwN09QRDZjM0FvanBqWlNrVjM3SVo?oc=5",
+        "source": "한국금융신문",
+        "published": "Sun, 18 Oct 2026 21:00:00 GMT",
+        "description": "디지털엑스, ‘미래에셋 3.0’ 핵심축…디지털자산-금융 연계 중점 추진 [가상자산 거래소 2.0 (4)]&nbsp;&nbsp;한국금융신문"
+      },
+      {
+        "title": "[단독] 사망자 금융거래 신속 차단… 코인은 여전히 보호망 ‘구멍’ - 서울신문",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBhMEFhcnpXWmlBdzJPTGVjT3VTQjNfU01aQi1yX0laTGVLOS1ScWJaamtldm5jaEpObEc3RXlXeXNRcTN2MzJacFlOUEZYUHlQdzZ0MUhfMXpHdTlfelc1V3ZONUd2VWJ1ekxaa0ltS3owVGFPQlNqaFV3?oc=5",
+        "source": "서울신문",
+        "published": "Sun, 18 Oct 2026 15:58:40 GMT",
+        "description": "[단독] 사망자 금융거래 신속 차단… 코인은 여전히 보호망 ‘구멍’&nbsp;&nbsp;서울신문"
+      },
+      {
+        "title": "알트코인 16종 무더기 퇴출 결정…이번주 또 '상폐 심사대' - 딜사이트",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE03VXFueDZxeWh6OFE0QXZqRFpPWnpKX20wdk9xUEpaZTBVcmZ0SldWRGN5MkMtSXZrMUlQaFI3ajdvbUxyN2ctUFdUd1FBbDg?oc=5",
+        "source": "딜사이트",
+        "published": "Sun, 18 Oct 2026 21:00:00 GMT",
+        "description": "알트코인 16종 무더기 퇴출 결정…이번주 또 '상폐 심사대'&nbsp;&nbsp;딜사이트"
+      },
+      {
         "title": "440조원대로 커진 스테이블코인 시장… 한국은 법인계좌 막혀 구경만 - 조선비즈 - Chosunbiz",
         "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMERLNVZFVVdLQ1djQVFDVVVyaWlCc3NZbF8zNzREeDVqSzR4bkdrZlpfY2tsUlJsbTJQWlU3NHhHUTNoUmJvZE5Ta3FxMzR1MHFNTmh5OGplRnY3a1pSeExNdWxJMUhsLVhXTVFCUGpxbG5sbzI0UkVzekdRblVIc9IBlAFBVV95cUxQS2lxelBOemxuUkVqWTZSSmp5dHdzamdRZG0xeUNlOEk1REd2RGwyUGpidlRoOEo5ZE1iU2NwUjF6LWh4LVNFcUNpTEo2amg4TGFEUldBYUlIa1hpb1F1cFhCdWtZSTliaHgwZ3A2dmpHc055VWtMMTNWdkR4bmZrSlRTTDlZVmVGaUpHc2tSQmhxVWxO?oc=5",
         "source": "Chosunbiz",
         "published": "Sun, 18 Oct 2026 01:41:00 GMT",
         "description": "440조원대로 커진 스테이블코인 시장… 한국은 법인계좌 막혀 구경만 - 조선비즈&nbsp;&nbsp;Chosunbiz"
-      },
-      {
-        "title": "동행 찾고, 좌석 바꾸고… 네이버페이 'NFT 티켓'의 무한 가능성 - 머니투데이 - 머니투데이",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBSMFQ0eE1kNjhWRmdKaUVWcXJZV1FUTlZ6Yno1d2FCZVJqN0pSSWNsUlExaHM5YXB3MkxHMzZ6Q1dERWVNV3hZQXQxREIyTUJROUk0dk9KUjloRE9DWWx0cU5RZnNPSkZaazI00gFwQVVfeXFMTXZRd3Vnakc3UFFOaE02VjhQRjh2MlJVWV93cFJTZk45NWQtVzJGT3o1QjhucHpyUnRIbEtITjVJai1CSDFLVlFIRnd0dHFXckl5Yms3VzhmWHlMbDduNTRSNUNQUXFrLWNLd1NCTEFZMg?oc=5",
-        "source": "머니투데이",
-        "published": "Sun, 18 Oct 2026 06:00:00 GMT",
-        "description": "동행 찾고, 좌석 바꾸고… 네이버페이 'NFT 티켓'의 무한 가능성 - 머니투데이&nbsp;&nbsp;머니투데이"
       },
       {
         "title": "이제 코인은 4050 중장년이 ‘큰손’···가상자산 거래규모 절반으로 축소 - 경향신문",
@@ -110,39 +131,18 @@
         "description": "이제 코인은 4050 중장년이 ‘큰손’···가상자산 거래규모 절반으로 축소&nbsp;&nbsp;경향신문"
       },
       {
-        "title": "뮤즈가 쇼핑하고 달러코인으로 결제한다 - 한국경제",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5CSm1QMkpweW1Lam1HRGV1anlVWTZZeHRFaENzTlRxcGdhZ0pVWnBoLWsweHVaWDBScS0wV0dBSk1sbEdsdVlpemVfbWFNM1FCem5MWHI2S0c4UQ?oc=5",
-        "source": "한국경제",
-        "published": "Sun, 18 Oct 2026 08:34:45 GMT",
-        "description": "뮤즈가 쇼핑하고 달러코인으로 결제한다&nbsp;&nbsp;한국경제"
+        "title": "동행 찾고, 좌석 바꾸고… 네이버페이 'NFT 티켓'의 무한 가능성 - 머니투데이 - 머니투데이",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBSMFQ0eE1kNjhWRmdKaUVWcXJZV1FUTlZ6Yno1d2FCZVJqN0pSSWNsUlExaHM5YXB3MkxHMzZ6Q1dERWVNV3hZQXQxREIyTUJROUk0dk9KUjloRE9DWWx0cU5RZnNPSkZaazI00gFwQVVfeXFMTXZRd3Vnakc3UFFOaE02VjhQRjh2MlJVWV93cFJTZk45NWQtVzJGT3o1QjhucHpyUnRIbEtITjVJai1CSDFLVlFIRnd0dHFXckl5Yms3VzhmWHlMbDduNTRSNUNQUXFrLWNLd1NCTEFZMg?oc=5",
+        "source": "머니투데이",
+        "published": "Sun, 18 Oct 2026 06:00:00 GMT",
+        "description": "동행 찾고, 좌석 바꾸고… 네이버페이 'NFT 티켓'의 무한 가능성 - 머니투데이&nbsp;&nbsp;머니투데이"
       },
       {
-        "title": "[르포]전국체전 입장 Npay NFT로…\"종이 없으니 편해요\" - 비즈워치",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE43aWR0OExTVXpKdlVNNmQ5LW95cHUwdlF3WVVmS25EakVQR2pJNjVnVnlLSXVRRkxac01fbUZLNko5M1JFaU5qR2pWdmR1VWJzT2lwdndMcHVGUThXLUIzbEl4b3g1TmV6N3Jz?oc=5",
-        "source": "비즈워치",
-        "published": "Sun, 18 Oct 2026 06:10:02 GMT",
-        "description": "[르포]전국체전 입장 Npay NFT로…\"종이 없으니 편해요\"&nbsp;&nbsp;비즈워치"
-      },
-      {
-        "title": "시바이누(SHIB), 거래소 대규모 이탈...조정 탈출 시그널? - 코인리더스",
-        "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE4xZ1k4aFBoNGtmSTBROXRZWnhjakwxWWpZYnJBSE5MakJsNUlwckFKRnRyQUpPUlMwNXV6aHRWd0NSejlDd2RheEdR?oc=5",
-        "source": "코인리더스",
-        "published": "Sun, 18 Oct 2026 17:00:00 GMT",
-        "description": "시바이누(SHIB), 거래소 대규모 이탈...조정 탈출 시그널?&nbsp;&nbsp;코인리더스"
-      },
-      {
-        "title": "손실 봤는데 세금까지…코인 과세 논란에 여야 “미루자” - 중앙일보",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBVYmRlX0xKUG5nc1VUaE5MRDRQbHVVV1AyRVBXMldkSU5PN21jUHRuNWpiMUNQMHpoM0dVZkYyandKdTd0dzVKNmVMQ0tpUWxIN3NsOVpB?oc=5",
-        "source": "중앙일보",
-        "published": "Thu, 15 Oct 2026 15:02:00 GMT",
-        "description": "손실 봤는데 세금까지…코인 과세 논란에 여야 “미루자”&nbsp;&nbsp;중앙일보"
-      },
-      {
-        "title": "체인링크, 월가가 블록체인으로 이사 오는 길목을 혼자 닦고 있다 - 네이버 프리미엄콘텐츠",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQVdsZzFKU3U2c19JUjFPb0RQTUZ6dTFjMm5BMkFmMV8xV2hxYnVObWIyQlZWZHgtNGRqb2ZuNFVZNm44RklCQWpKVDlqb1pIRFU2dWtROFpPT0NSd2o2azkzdTdJbnJhTWN6NmlIV0pmRHExRHh3ODVSb2hVMEVTS3R3WllsTFAzeFNyRw?oc=5",
-        "source": "네이버 프리미엄콘텐츠",
-        "published": "Sun, 18 Oct 2026 05:57:00 GMT",
-        "description": "체인링크, 월가가 블록체인으로 이사 오는 길목을 혼자 닦고 있다&nbsp;&nbsp;네이버 프리미엄콘텐츠"
+        "title": "고물가 시대, 비트코인이 인플레이션 헤지 수단될까? - 디지털투데이",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5aTEpWS2h5cmJEY1RIdjJ2cThqTVN3MUs0Z00yRkFmRE1Gc0t3NUEwR3ZPbFg5VXZfbXh6SENqa1ZKQTU2dlJuZmlEOHQ2VDkzaUt2R3dIbUJWcFNqNDg4b1l4VjNtaTBzckJYYTY3VEdhTEk?oc=5",
+        "source": "디지털투데이",
+        "published": "Sun, 18 Oct 2026 15:15:00 GMT",
+        "description": "고물가 시대, 비트코인이 인플레이션 헤지 수단될까?&nbsp;&nbsp;디지털투데이"
       }
     ],
     "aiit": [
@@ -152,13 +152,6 @@
         "source": "AI타임스",
         "published": "Sat, 17 Oct 2026 06:17:31 GMT",
         "description": "[AI 이슈트렌드] 삼전 최대 실적에도 코스피 붕괴…쿠팡 먹통·인천 흉기난동 등 주목&nbsp;&nbsp;AI타임스"
-      },
-      {
-        "title": "﻿그리는 AI, 연습하는 AI, 말하는 AI [정원훈의 AI 트렌드] - IT조선",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5TRzY0N1dNZjlnTXprekpRMVdvZGtoSWdPUGxzdkgxc0hvQVN5VnoxV3FiYTdIQ1dlVDFpU1VVcHZuU2RCbjNBLTZiSDZNcXF3SktFakdGRjlZTFBJMy1kOFhtZjBkdmNCME1nM0RzS3XSAXRBVV95cUxNajFJbTd2MTlhYnZ2LWRhWGJXWEV5OU9kbDFBcTdOSi1udHcwdFgybkcyTEN5QS14NGRXUDN4RFpKMk45Y0Y2U3AwTUkzcHpuYzZncm5IMW44ekozTE5mdlllSVBEVnJTOHExSVNlWGppZ2FzVQ?oc=5",
-        "source": "IT조선",
-        "published": "Thu, 15 Oct 2026 21:00:00 GMT",
-        "description": "﻿그리는 AI, 연습하는 AI, 말하는 AI [정원훈의 AI 트렌드]&nbsp;&nbsp;IT조선"
       },
       {
         "title": "[미래 헬스케어 트렌드] 딥노이드 최우식 대표 “의료AI, ‘찾아주는 AI’ 넘어 ‘일하는 AI’로” - MEDI:GATE NEWS",
@@ -175,6 +168,13 @@
         "description": "[헬로즈업] 룰 기반 검사는 끝났다(?)...2027년 머신비전 시장 흔들 ‘5대 메가트렌드’&nbsp;&nbsp;헬로티"
       },
       {
+        "title": "“AI 다음은 뭘까?” 2027년 트렌드 미리보기 - heyPOP",
+        "link": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE51bFBhWXhzMnhMVFVEUjhSbERMNHJLcHB2OC00MmRLZG5KcG1CaVR5VFdvN2tJaXhwTFNDZmpfVFg?oc=5",
+        "source": "heyPOP",
+        "published": "Fri, 16 Oct 2026 09:01:07 GMT",
+        "description": "“AI 다음은 뭘까?” 2027년 트렌드 미리보기&nbsp;&nbsp;heyPOP"
+      },
+      {
         "title": "하나증권 \"피지컬 AI가 ‘AI 거품론' 구원투수로 등장\" - 로봇신문",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE85bnNyUGdaeUJxek5JZ2w3dm9rYVJKWExSV2h5V3NrMklXTjBhRGVvRTlvSVg1SWU5dWZHSlJmem1vN2xUV01wVzVvNWlEWm5LS2pKdzFIX3V0QTJyNFY3eGhURHF6NUFIY3diQg?oc=5",
         "source": "로봇신문",
@@ -189,11 +189,11 @@
         "description": "[트렌드 심층분석] 검색하지 않고 답을 얻는다…‘제로클릭’이 바꾸는 정보 소비와 인터넷 경제&nbsp;&nbsp;시사프리즘"
       },
       {
-        "title": "토토 라크 감옥 : 학습 전략과 자원 - 최신 트렌드 - Calgary Roughnecks",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQ3hhQUp6S3ZWa214ekVkSFEzQTZGR3owa183ZmpjV25UNXduVVc1aURWSEhwRUltUW9rMFlDQjA3c3d4X1JEcUV2ZnRVNU5CLUc5QjRHVEFtZjVYN2FqM2xlMUV2ak1obk85TmpSWlUzNUtEN2pfR2d1X2Nubmh5cHVuSEdTd0NOZDhjRVl1Zm9BUWEtaV93UGt2bnBFQTh6bkU1Mm9wd1A4Zw?oc=5",
-        "source": "Calgary Roughnecks",
-        "published": "Sat, 17 Oct 2026 19:27:34 GMT",
-        "description": "토토 라크 감옥 : 학습 전략과 자원 - 최신 트렌드&nbsp;&nbsp;Calgary Roughnecks"
+        "title": "현대차증권, ‘트렌드코리아 2027’ 특강…자체 AI 플랫폼 사례 소개 - 매일일보",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1LOXhJNWN2TmVndzZ4OU5mdDFmdkpxb1lITVFKd2p6T1Z0YUFaVS15Y0h5X1FQWlJuQ3I1aWN5aTRUOTkwckZvT2pJV3IxS0pfMnBqeS1jcm92b1ZybWRleGxmbE8?oc=5",
+        "source": "매일일보",
+        "published": "Fri, 16 Oct 2026 06:41:55 GMT",
+        "description": "현대차증권, ‘트렌드코리아 2027’ 특강…자체 AI 플랫폼 사례 소개&nbsp;&nbsp;매일일보"
       },
       {
         "title": "[AI신간] 노벨문학상에 서점가 들썩…앤 카슨 작품 4권 베스트셀러 진입 - 뉴스핌",
@@ -203,18 +203,18 @@
         "description": "[AI신간] 노벨문학상에 서점가 들썩…앤 카슨 작품 4권 베스트셀러 진입&nbsp;&nbsp;뉴스핌"
       },
       {
+        "title": "토토 라크 감옥 : 학습 전략과 자원 - 최신 트렌드 - Calgary Roughnecks",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQ3hhQUp6S3ZWa214ekVkSFEzQTZGR3owa183ZmpjV25UNXduVVc1aURWSEhwRUltUW9rMFlDQjA3c3d4X1JEcUV2ZnRVNU5CLUc5QjRHVEFtZjVYN2FqM2xlMUV2ak1obk85TmpSWlUzNUtEN2pfR2d1X2Nubmh5cHVuSEdTd0NOZDhjRVl1Zm9BUWEtaV93UGt2bnBFQTh6bkU1Mm9wd1A4Zw?oc=5",
+        "source": "Calgary Roughnecks",
+        "published": "Sat, 17 Oct 2026 19:27:34 GMT",
+        "description": "토토 라크 감옥 : 학습 전략과 자원 - 최신 트렌드&nbsp;&nbsp;Calgary Roughnecks"
+      },
+      {
         "title": "금융권 AI 도입 확산에도 사업 혁신은 더뎌…“성패는 데이터·시스템·거버넌스에 달렸다” - 매드클럽",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1OQi00ZVYyTzhnZFRWQzh6TlpnMG9Pdnkyd0hfLXNjMVAza3hkZkJrUEVXZkoxVTNfNndkZ1pYanNCVE4wLWdiYm1mUlFGMWNGNHNFY1VUS1kzcnRWSW84VU9LNzFpbWVJbEHSAW5BVV95cUxPLXhhWkoyb0JrR2VJai1HSmdabWtjZFRtbHlOM2RtOC1VeklpeG9yMzc3MlpDR0t4UktjaUUxeGtSVHZzbHQ3UGJDSExUQTdWVnRzUFNmaFVvZ1NLdk5TTldSNmNUcHlpSElUNV9XQQ?oc=5",
         "source": "매드클럽",
         "published": "Sat, 17 Oct 2026 15:00:00 GMT",
         "description": "금융권 AI 도입 확산에도 사업 혁신은 더뎌…“성패는 데이터·시스템·거버넌스에 달렸다”&nbsp;&nbsp;매드클럽"
-      },
-      {
-        "title": "현대차증권, ‘트렌드코리아 2027’ 특강 개최…AI 업무 혁신 방향 모색 - 더퍼블릭",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9OcmNvcmJ5QkNVbm5RWDk2UGFIZFdtRGJJdVQ5LW41bTh0TEhOc2xCMnhOV2RxQVBia2FuVno0RUlXMzJqYUpOOWdEU1JjLU1qV0tlU2pJWGg1UGIydjRhZUhpOEFwcV9POFV30gFvQVVfeXFMUEJPYmphemkxRXp5eWpQTktVREFCUGdxUUlNZDBDXzZpSjVCV3N4WkE2T19VSnJuUXBKdXJuTDM2ZWpMaHBqc0h1RGswZnl1SWI4YTNlQ2VfQjRGbEtZRGR3bzdxcTdURHkxWlZXZXZn?oc=5",
-        "source": "더퍼블릭",
-        "published": "Sun, 18 Oct 2026 00:13:21 GMT",
-        "description": "현대차증권, ‘트렌드코리아 2027’ 특강 개최…AI 업무 혁신 방향 모색&nbsp;&nbsp;더퍼블릭"
       }
     ],
     "clipping": [
@@ -277,13 +277,6 @@
         "description": "AI가 소비자 대신 브랜드를 고르는 시대…마케팅 리더가 답해야 할 5가지 질문&nbsp;&nbsp;매드타임스"
       },
       {
-        "title": "관심을 비즈니스 성장으로, ‘틱톡 서밋 코리아 2026’에서 만납니다 - Newsroom | TikTok",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBMVXVEMmJfeG9EbWtwV2lieTkzWG9rUFRSY3NvZUJiQTYzUGpvOUMzeWV6TjhIekc3Zll6R2h6YlVaa1M3RzQ2LVFhUnNFMzlJYlBDZFRpTnZfUkc1aFcxZkstWHNmR0k5eFB1dlJTR2I?oc=5",
-        "source": "Newsroom | TikTok",
-        "published": "Thu, 15 Oct 2026 16:45:32 GMT",
-        "description": "관심을 비즈니스 성장으로, ‘틱톡 서밋 코리아 2026’에서 만납니다&nbsp;&nbsp;Newsroom | TikTok"
-      },
-      {
         "title": "무신사, 소상공인 성장 파트너 ‘2026 소담상회 소담클래스’ 본격 가동 ··· - 패션포스트",
         "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE13cmcyU3hnazE2TkVTZFNoc05hVEJDQ0MwU09hYWgwclpubkdtZzJzTVUyaElOcEhDSklZdkZYc21IcEdneE1SdEdsdmk5ejZDUkFJZ0tKQmJzQkZoejQzVzUxZWZGbENnOUJBemhrRzdnUUl1RldVbXNB?oc=5",
         "source": "패션포스트",
@@ -296,6 +289,13 @@
         "source": "오픈애즈",
         "published": "Tue, 13 Oct 2026 07:00:00 GMT",
         "description": "Kalodata는 IMPACT 2026에서 무엇을 선보일까요?&nbsp;&nbsp;오픈애즈"
+      },
+      {
+        "title": "틱톡, 최대 비즈니스 행사 ‘틱톡 서밋 코리아 2026’ 개최 - 스포츠경향",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBaUTJMOWRBbVFQcV9Hb0RTS1JocWJJSXVHUDRtRFFha2M2Y3ZmNl8zX3ltTXJ1REhsUktWaFBvV2xZN1M0ZklsbEg1eDNReWRTQjN0bjNjM1c4Q202anVteHJKWdIBY0FVX3lxTFBaUTJMOWRBbVFQcV9Hb0RTS1JocWJJSXVHUDRtRFFha2M2Y3ZmNl8zX3ltTXJ1REhsUktWaFBvV2xZN1M0ZklsbEg1eDNReWRTQjN0bjNjM1c4Q202anVteHJKWQ?oc=5",
+        "source": "스포츠경향",
+        "published": "Thu, 15 Oct 2026 14:51:00 GMT",
+        "description": "틱톡, 최대 비즈니스 행사 ‘틱톡 서밋 코리아 2026’ 개최&nbsp;&nbsp;스포츠경향"
       },
       {
         "title": "틱톡, AI로 광고 제작·운영 자동화…한국발 해외 판매 전략 제시 - 아이티데일리",
@@ -407,11 +407,11 @@
         "description": "제미나이 4 아르곤: 가장 까다로운 난제를 해결하도록 설계된 모델&nbsp;&nbsp;blog.google"
       },
       {
-        "title": "영남이공대, 남구 주민 대상 생성형 AI 활용 교육 - 경북신문",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBWVXN2cHNpNE1NdUVldy1wek1NRHJydVdZRndja2tpNHR5X2ZZM1JXa0c4UDc2QmFCclVDQnlhZWVwbVJQa2lnMFN5LUZ5bEdXYkpfdS1DaGU?oc=5",
-        "source": "경북신문",
-        "published": "Sun, 18 Oct 2026 02:45:00 GMT",
-        "description": "영남이공대, 남구 주민 대상 생성형 AI 활용 교육&nbsp;&nbsp;경북신문"
+        "title": "인적분할 앞둔 카카오, AI 서비스 3종 출격…내년엔 연계 추진 - 뉴스1",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9kd3VsaktoZ2VjSzBPMlJXVmlxME9YZmdfQnBDT0NXUnpTc042QWNGSjJvSmtjbUN2dWZlVENZYzdVUFpTQi1DRDhQd0lucS1wUmM5RmdaTjFrRExWMzV2VGZITkNfdTY0?oc=5",
+        "source": "뉴스1",
+        "published": "Sun, 18 Oct 2026 21:40:00 GMT",
+        "description": "인적분할 앞둔 카카오, AI 서비스 3종 출격…내년엔 연계 추진&nbsp;&nbsp;뉴스1"
       },
       {
         "title": "“생성형 AI로 가족 애니 제작”… 청소년 방과후 우수사례 선정 - 간호사신문",
@@ -426,6 +426,13 @@
         "source": "경북매일",
         "published": "Sun, 18 Oct 2026 06:14:00 GMT",
         "description": "경북도, 생성형 AI로 행정시스템 자체 개발…7000만원 절감&nbsp;&nbsp;경북매일"
+      },
+      {
+        "title": "영남이공대, 남구 주민 대상 생성형 AI 활용 교육 - 경북신문",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBWVXN2cHNpNE1NdUVldy1wek1NRHJydVdZRndja2tpNHR5X2ZZM1JXa0c4UDc2QmFCclVDQnlhZWVwbVJQa2lnMFN5LUZ5bEdXYkpfdS1DaGU?oc=5",
+        "source": "경북신문",
+        "published": "Sun, 18 Oct 2026 02:45:00 GMT",
+        "description": "영남이공대, 남구 주민 대상 생성형 AI 활용 교육&nbsp;&nbsp;경북신문"
       },
       {
         "title": "경북도, 생성형 AI로 행정시스템 자체 개발…예산 7000만원 절감 - 경상매일신문",
@@ -449,25 +456,18 @@
         "description": "코나미 \"생성형AI는 도구일 뿐, 혁신 본질은 사람\"&nbsp;&nbsp;지디넷코리아"
       },
       {
+        "title": "[해설] 많이 쓰는 AI와 돈 내고 쓰는 AI는 달랐다…기업의 선택 기준은? - 아웃소싱타임스",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5rRHdEV2VaZ0tiUklOY2RvbWwzYzVWbjZsYlRadW5XdHQyVzlINkdnTlNZZno5emQybXpoMFByY3hscG82Z1dQak1nWGhESFNNdzBJQUdzUEZTeFlDU2M4UGktaHVhV0VTODgxbE53dXlvQQ?oc=5",
+        "source": "아웃소싱타임스",
+        "published": "Sun, 18 Oct 2026 21:01:30 GMT",
+        "description": "[해설] 많이 쓰는 AI와 돈 내고 쓰는 AI는 달랐다…기업의 선택 기준은?&nbsp;&nbsp;아웃소싱타임스"
+      },
+      {
         "title": "한동대 홍참길 교수, 美 산타클라라대서 ‘LLM은 부정 표현에서 무엇을 배우나’ 연구 성과발표 - 글로컬타임스",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ROXM3YmFIc1I4VktWNnBobmVHVzNPRm9GaDBTTDU3RF9ZbGlMTEszNW1lbk9YQzRJVE05MkJHdXI5YVJWQlNyNkZaSWhqNVNEMU9vbFJYa1EzWkdncFlnTXFTWkJqeVZW0gFsQVVfeXFMTUxpc0owQXEtbGNFMDY0Qjd2d2ZBbEdPU216Vi1mQmIyNGxxOWZHdldvRE9iT3NxQ2ZXN3pfd0V6RnFOdTR2UDNjRlF4RnEwQ2JDN0hJOFBCOS1QOVRoZkdwcEpIaFI5dUFPeWhp?oc=5",
         "source": "글로컬타임스",
         "published": "Sun, 18 Oct 2026 13:03:01 GMT",
         "description": "한동대 홍참길 교수, 美 산타클라라대서 ‘LLM은 부정 표현에서 무엇을 배우나’ 연구 성과발표&nbsp;&nbsp;글로컬타임스"
-      },
-      {
-        "title": "[2026년 AI 챗봇 지형…ChatGPT 56.4%로 1위 수성, Gemini·Claude 맹추격] 2026년 9월 전 세계 웹사이트 방문 비율을 기준으로 산출됐으며, 각 챗봇 사이트의 데스크톱·모바일 웹 방문을 포함 - AI넷",
-        "link": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5sZ0NGTUc3dTBEOUZ4Q240ZXR1VFRaeFhIeFZwVWZoLWhCU0xlNUtmcWYyUHNkRk9relZEMXVDNjk?oc=5",
-        "source": "AI넷",
-        "published": "Sun, 18 Oct 2026 14:22:25 GMT",
-        "description": "[2026년 AI 챗봇 지형…ChatGPT 56.4%로 1위 수성, Gemini·Claude 맹추격] 2026년 9월 전 세계 웹사이트 방문 비율을 기준으로 산출됐으며, 각 챗봇 사이트의 데스크톱·모바일 웹 방문을 포함&nbsp;&nbsp;AI넷"
-      },
-      {
-        "title": "구미상공회의소, 생성형 AI 실무 활용 교육 개최:시대일보 - 시대일보",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9TMWlsVnZyLUR4cEFDZ3l1cXRNVzkxUHVQeC1wWGNvOEFpU3lkd0FLMTFDN2d1UEpsODAyVDdqd3pSaFFFSWt2VklGN0gxRXMzRkJYRlRaNS1kMUp5ZFY1OUpLdVM1SFnSAWdBVV95cUxPUzFpbFZ2ci1EeHBBQ2d5dXF0TVc5MVB1UHgtcFhjbzhBaVN5ZHdBSzExQzdndVBKbDgwMlQ3and6UmhRRUlrdlZJRjdIMUVzM0ZCWEZUWjUtZDFKeWRWNTlKS3VTNUhZ?oc=5",
-        "source": "시대일보",
-        "published": "Sun, 18 Oct 2026 13:30:18 GMT",
-        "description": "구미상공회의소, 생성형 AI 실무 활용 교육 개최:시대일보&nbsp;&nbsp;시대일보"
       }
     ],
     "s3_game": [
@@ -477,13 +477,6 @@
         "source": "Calgary Roughnecks",
         "published": "Sun, 18 Oct 2026 16:01:47 GMT",
         "description": "기본 규칙은 어디까지 공통일까? 웹게임 순위 2023 비교 해설&nbsp;&nbsp;Calgary Roughnecks"
-      },
-      {
-        "title": "스팀 유저 42.4%는 오로지 PC게임만 한다 - 게임메카",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ycFdKNXVLc29EdGt1cWZHVUcybnhPUHNlU21qWkRMWFRmdG1sTGd3RlF3QTNZVkdyd25RZFRyQXQ3ZW5odGJmYmpiS09WRWpMVkhKZWtYZnPSAVtBVV95cUxQQ2dPR2E4RC1TU25XQjJLaGhqR1JyQzBGaXp1OVRPQjRvWVJ0ZU95b19xeHVwR3JWaHNZZ3NFTTVfMjhEVlhjaFBfQnd0dzA3czBpSE1WZmpQbEdV?oc=5",
-        "source": "게임메카",
-        "published": "Sun, 18 Oct 2026 06:01:42 GMT",
-        "description": "스팀 유저 42.4%는 오로지 PC게임만 한다&nbsp;&nbsp;게임메카"
       },
       {
         "title": "초보자가 이해하기 쉬운 모바일 게임 프리서버 구축 판정 예시 - Calgary Roughnecks",
@@ -498,6 +491,13 @@
         "source": "Calgary Roughnecks",
         "published": "Sun, 18 Oct 2026 10:12:12 GMT",
         "description": "구글 무료 게임 순위 결과 창에 표시되는 상세 내역&nbsp;&nbsp;Calgary Roughnecks"
+      },
+      {
+        "title": "PC 온라인 게임 순위 에 대한 완벽한 가이드: 초보자부터 전문가까지 - Calgary Roughnecks",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUWhuTDJDaktvQ25NbmJpaHlJbVJROFdvUHZ0a3UycEVmc2oyVUdocjlKWm94ckx4REJjXzM5YnRBVHpkN3JPaE1lY0xQTHN4VDhOQjNBU0JEdVRyUDVQQkNmdm81N3NJV2lwLV96OFlna3B5eDZmNlRKS0Q1X0Fna1ljdi02d2VmVXdhcER5T0JDam1FR3JpX2tYTDc1TmN0dGc?oc=5",
+        "source": "Calgary Roughnecks",
+        "published": "Sun, 18 Oct 2026 16:27:44 GMT",
+        "description": "PC 온라인 게임 순위 에 대한 완벽한 가이드: 초보자부터 전문가까지&nbsp;&nbsp;Calgary Roughnecks"
       },
       {
         "title": "새 화면이 나타났을 때 참고하는 포커 모바일 게임 이용 문답 - Calgary Roughnecks",
@@ -521,6 +521,13 @@
         "description": "내용이 긴 규칙 페이지를 탐색하는 인기게임 모바일 읽기 안내&nbsp;&nbsp;Calgary Roughnecks"
       },
       {
+        "title": "무 과금 모바일 게임 추천 2024 디시 : 2026년 톱 10 비교 분석 - Calgary Roughnecks",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcnR0RmFQM3Z4cW1rNnUyaDdXU0RlV2NNbG9JTG0ydENEeHgtQjVVQWN0SC1WVldoVVNQRmNkZHJ3cVBQMlJSVTBsMEZGN2VVOWVqSmhsMUFkakJXUVZSV0lkMHJTOFBNS0pfdmpWTm9uZVBVS1VTeFk0aUZkczU2OTBuSV9IQ1dHeGZSZl9mXy1OQVpaMjg3a2FlQm5WTktYWnVsRURNWUIycFVZck52eFJyWW1pejVjQk9CRXg0M2Q?oc=5",
+        "source": "Calgary Roughnecks",
+        "published": "Sun, 18 Oct 2026 10:58:13 GMT",
+        "description": "무 과금 모바일 게임 추천 2024 디시 : 2026년 톱 10 비교 분석&nbsp;&nbsp;Calgary Roughnecks"
+      },
+      {
         "title": "분고슬롯 화면 전환 중 입력 안내 - Calgary Roughnecks",
         "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWmdBQXVCNV9IdTVibHVISlpxNlJfYkhkVUtzT284eWVtX1cwUGNvNEJTdXVCbGM2TEJ3azg3dHBrSDZkUTlGTjVqVnc5bF9sVkNseXVrWjluUjBicm9mSTBOanN5UWtnaHptNFNOb3NpbVFPQUEtbVJJYzBVTzhUWThkZGN1d2M4?oc=5",
         "source": "Calgary Roughnecks",
@@ -528,18 +535,11 @@
         "description": "분고슬롯 화면 전환 중 입력 안내&nbsp;&nbsp;Calgary Roughnecks"
       },
       {
-        "title": "배당표에 없는 심벌이 보이면? 무료 모바일 게임 기능 확인 - Calgary Roughnecks",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE41a29HbFEzM0lKb2xLTGltUXBPS0ZwUlh6cUluR015R1UydWU5NjJFeE1EVnV6ZVF5eDJCU0dCX0k2Y0V0RUk2M3UtN3hKQ3Z3U21CZVo2V0pvTkZLWWZxTUdJZTBIUnkwUFk1VjdB?oc=5",
+        "title": "인기게임순위 게임 설명에 등장하는 배수 표기 - Calgary Roughnecks",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOVXNfbjRfNU9pMjZ1WkZFZENJWEZhX2ZMVy1iTVhtNG12YTJVYVkzb2dVNkxTaGxmYjhRbmFYZmJyT0pURnJ5czhxYklPTzVXMEotT2phTU9SUl9ZOXhBTWdBX3JjaXF1WVFrc3dPN3hUWHBfWkNXNXdIc1pOZ2c5Y2ZuM2dkbGRrRGRtVg?oc=5",
         "source": "Calgary Roughnecks",
-        "published": "Sun, 18 Oct 2026 13:45:09 GMT",
-        "description": "배당표에 없는 심벌이 보이면? 무료 모바일 게임 기능 확인&nbsp;&nbsp;Calgary Roughnecks"
-      },
-      {
-        "title": "게임 이름만으로 알기 어려운 블랙 잭 모바일 게임 세부 규칙 - Calgary Roughnecks",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNOTBBUGFFRGdrdG9vWlBTQ2JmM1VUcWt1ZnNSNkhuamdVUmdFYndtTlhsRkhjNmZSNzRSdWYyelppUElJTG5vTm9oNmczTmd3c1hjaHJIYVlSSmF2Z2k2cm9UbmNEZXhFNTV0NXU1UmtDbG9ZV01BRzZ4TGpBamgyWlVhckJJaXlxYmNEdGMzQkNNcm90cG1SYURGRmJ3UDZDcW92NnZYeEdMZUFj?oc=5",
-        "source": "Calgary Roughnecks",
-        "published": "Sun, 18 Oct 2026 04:11:19 GMT",
-        "description": "게임 이름만으로 알기 어려운 블랙 잭 모바일 게임 세부 규칙&nbsp;&nbsp;Calgary Roughnecks"
+        "published": "Sun, 18 Oct 2026 03:02:34 GMT",
+        "description": "인기게임순위 게임 설명에 등장하는 배수 표기&nbsp;&nbsp;Calgary Roughnecks"
       }
     ],
     "s3_wemade": [
@@ -616,6 +616,13 @@
     ],
     "s3_blockchain": [
       {
+        "title": "보너스 구매 옵션이 있다면 확인할 블록체인 게임 비용 표시 - Calgary Roughnecks",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA0MklEN1BETERqRFVhaXRpSmJXWEdpSjhmT2FiRDdMaFhZZ3hZQTllRkJyU1Zyc3JUdDhuRm9WbjNSU3ZkODc2ZHQwSXdQZW5DSWR2OGMxeUVtd1JzMzVsamh3dmp4SldINGpCdmtR?oc=5",
+        "source": "Calgary Roughnecks",
+        "published": "Sun, 18 Oct 2026 11:44:19 GMT",
+        "description": "보너스 구매 옵션이 있다면 확인할 블록체인 게임 비용 표시&nbsp;&nbsp;Calgary Roughnecks"
+      },
+      {
         "title": "Numbers Protocol 리뷰: Web3 미디어 출처 증명 및 디지털 자산 검증 - quasa.io",
         "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdVVpd25YRThlYzhuRVhDTGRPSkpidGdpMDB5cll5c1FNU2RVVWNDaHk5RlU5SERRSDBsckdpUGludDJRMzJFXzNWbGhNSUZvcEVHcUc1RnRyN2R5SjNnZUgxMVJOMzZuOEw2bldVRkRvTHJiVURaN29HbFRndGI5bTBuMXJwcjM1SmE0ZmpvN3VsSWtBWmlRd2RLNFB2TmJCOVV4Ym01WmdIekZi?oc=5",
         "source": "quasa.io",
@@ -623,25 +630,11 @@
         "description": "Numbers Protocol 리뷰: Web3 미디어 출처 증명 및 디지털 자산 검증&nbsp;&nbsp;quasa.io"
       },
       {
-        "title": "블록 체인 게임 전망 : 장점, 단점 및 활용 방법 - Calgary Roughnecks",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNR1JNZG5teUk4V0hVUkgzSmk0cU94OFVhN1ViZTVseEh3WDRIYm1BTWZqUG9mYkNIaWhVaXVNaGtDeE45OVdoeFoySkxuQlZSaDI4RnhIRllKU1dVMGZ1dWFzWnAyV0lxUmo3NjcxaHRpQlZ2cXdUR1Fad3NtOE85OUd4X0otUTFBelZVWkhFQUEyS01rUDM4UnlOV09yR1U?oc=5",
-        "source": "Calgary Roughnecks",
-        "published": "Fri, 16 Oct 2026 21:19:34 GMT",
-        "description": "블록 체인 게임 전망 : 장점, 단점 및 활용 방법&nbsp;&nbsp;Calgary Roughnecks"
-      },
-      {
         "title": "2026년 Web3 UGC 성장 도구 TOP 10 - FinanceFeeds",
         "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE52NkFFMXdVQm9fdk83U0ZXYnZiaEQzQWMtSkhVTmhKYUpYbEdzSjBaSGdxOTJDMDV2ZGFCdVNSR0dBUDFYeWpUeFNWNEJlcEhCU3VOZUhiRHRqMFF6RUFsdHlUblJQdFdzb3A2Y3hHXzBORDF5cHkw?oc=5",
         "source": "FinanceFeeds",
         "published": "Sat, 17 Oct 2026 07:35:16 GMT",
         "description": "2026년 Web3 UGC 성장 도구 TOP 10&nbsp;&nbsp;FinanceFeeds"
-      },
-      {
-        "title": "화면 테마와 사운드의 연결, 블록체인 게임 연출 해설 - www.icaremn.com",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Fc3BONmhrU2ZCZnlaTGF1TVBFWng4SmZKVENtSXY0LWRxWVMyLWtLcXRnSGlrY2JqdktGOTF5bUQ5N0ZGb3c1b0oyNFViUmdpWkVTNE1B?oc=5",
-        "source": "www.icaremn.com",
-        "published": "Fri, 16 Oct 2026 20:05:03 GMT",
-        "description": "화면 테마와 사운드의 연결, 블록체인 게임 연출 해설&nbsp;&nbsp;www.icaremn.com"
       },
       {
         "title": "블록체인 게임 베팅 한도 표기 읽는 법 - Calgary Roughnecks",
@@ -684,6 +677,13 @@
         "source": "quasa.io",
         "published": "Sat, 17 Oct 2026 07:45:26 GMT",
         "description": "LunarCrush 리뷰: 소셜 인텔리전스 및 암호화폐 심리 분석&nbsp;&nbsp;quasa.io"
+      },
+      {
+        "title": "GT Protocol 리뷰: AI는 어떻게 암호화폐 거래를 자동화할까! - quasa.io",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYTNWMldmeUkwUHo1NkVvSEIyUFIwUi1zYjRTX3NVbThWQ0NxdTQ2Y2NweHpKS2pGc1p6SGduazJ6dktqdTYzR056WW5vUElweFJhXzhjZG5GYmJZMUcwMHRIUm5Mcms2RmttT21ieWlVVUxuM2NYSW9rMlJBeFhOZXRPQm8tMkVJbV96MnFibi02cWZIc3RwRVNjaDBHdUE?oc=5",
+        "source": "quasa.io",
+        "published": "Sat, 17 Oct 2026 08:45:35 GMT",
+        "description": "GT Protocol 리뷰: AI는 어떻게 암호화폐 거래를 자동화할까!&nbsp;&nbsp;quasa.io"
       }
     ]
   },
@@ -703,14 +703,14 @@
       },
       {
         "rank": 3,
-        "name": "FC온라인",
-        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=FC%ec%98%a8%eb%9d%bc%ec%9d%b8",
+        "name": "배틀그라운드",
+        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%eb%b0%b0%ed%8b%80%ea%b7%b8%eb%9d%bc%ec%9a%b4%eb%93%9c",
         "pct": ""
       },
       {
         "rank": 4,
-        "name": "배틀그라운드",
-        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=%eb%b0%b0%ed%8b%80%ea%b7%b8%eb%9d%bc%ec%9a%b4%eb%93%9c",
+        "name": "FC온라인",
+        "link": "https://www.gametrics.com/gameinfo/gameinfo01.aspx?gamename=FC%ec%98%a8%eb%9d%bc%ec%9d%b8",
         "pct": ""
       },
       {
@@ -832,8 +832,8 @@
       "sign": "+"
     },
     "wemix": {
-      "krw": 240.81,
-      "chg24h": -1.2021355351486394,
+      "krw": 241.96,
+      "chg24h": -0.6032856653555456,
       "dir": "FALLING",
       "sign": "-"
     }
@@ -951,36 +951,6 @@
       }
     ],
     "s4": {
-      "lygl": [
-        {
-          "title": "WEMIX, CertiK Hunt 버그 바운티 전면 개편…네트워크 보안 한층 강화 - Yellow.com",
-          "link": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxOWDlzYWt2UW9ZcDI4Q3lfYjR6S1RJd3dKNzRNVmZyVU1DQVJfZm9yazdTbzNnVnhOZnRteFJtZmZkb2Z3ODhFeWZLSnM3QVVpdnE2NE82d0xiakpTQ1VYdmVqZ19GUDJpaUJaYnY2anVTOXlwNk9UalZGbURNY2kzMXRvbHpNREpHMWVmeDl5ZllPS1h3QlkwMmtyOGg4SnRtX3p3QUM3SnVLbEdDb0Vkc0JTVVlLWGg3cHBTaU5lZWpDMFYySW52b0s1OUQyd0U1enVNelpaYXZQc1BtT0h2MGdnVElmSkVmbmFXQjJ3aHZmUVRlbnV0dmFiVUtGWmZHX3RZN2VvalJQMURFaktpUzN5VHQ2MUNkdlhURG11ZWdkYXhCZ2RqcDVXZ0F3T2o2TE0xVHliUGduRGdfMENGNnVUcVZWam5qNkRybWFwby1ORi1maEJqQWVWRlZ5dw?oc=5",
-          "source": "Yellow.com",
-          "published": "Wed, 14 Oct 2026 05:50:23 GMT",
-          "description": "WEMIX, CertiK Hunt 버그 바운티 전면 개편…네트워크 보안 한층 강화&nbsp;&nbsp;Yellow.com"
-        },
-        {
-          "title": "WEMIX Fortifies Network Security with Upgraded CertiK Hunt Bug Bounty Program - PR Newswire",
-          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZ1lSZll5M3J2ZGZES2J4T2tJaVNEWUx2YndOQ3NUSWx5b1pyNFVDVy1fWVp4YVhjMEVicm9QbFA1SFRzZmNUdFBodVNvOXFlYm9tWGtMVFFfMFZPeWNsTDhxanFpT1BMekdScHFjanBheUNUemM0MURnMGRHN0E1MGlBNTJTZVBEVlJxVDNyMDRUOUVscDV4ZjNxRk9WS0I5STlNYVp3TGZaOGE4T1dLZzJtZFd4SExxN2hRSlRzVVFWWFBxbG9BUEg0by13dlhQX0FiWQ?oc=5",
-          "source": "PR Newswire",
-          "published": "Wed, 14 Oct 2026 04:54:00 GMT",
-          "description": "WEMIX Fortifies Network Security with Upgraded CertiK Hunt Bug Bounty Program&nbsp;&nbsp;PR Newswire"
-        },
-        {
-          "title": "Wemade Unveils New Assassin Class for Legend of YMIR’s First Anniversary - Enduins",
-          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdkpzT2t4UlRoc05UcnV1dWEwYng2SmlEVkllQXlUTktiajVBY282T2tqU1h6Z05uTTQxZnJpd3Z5SkFIbUVxS05kVTdfeDR6LWNCQ1dLLTVXZFJMeGxhSkxqYXk2Y2NtOEdtNlBFUU1Pa0c5QVZzdi1feVZPamVNbEdrMzd0X0swTVRPdGxxRmlNdkczM1lZaXBBM1pwTUk0RHc?oc=5",
-          "source": "Enduins",
-          "published": "Tue, 13 Oct 2026 02:51:54 GMT",
-          "description": "Wemade Unveils New Assassin Class for Legend of YMIR’s First Anniversary&nbsp;&nbsp;Enduins"
-        },
-        {
-          "title": "Sword Master Story tier list of every character [October 2026] - Pocket Gamer",
-          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9MSlNlT2JjYWlYX3diNWpnbzBEbUZOYVdHTTJFVG42ZGpkWUE1bWxsbG9pTjdLMG9nbUhyTzdNOWJpanJGVXpEdEN1QzFVSzVlejR3SmtxUlFXalBEakRtZEt1LU13MTg?oc=5",
-          "source": "Pocket Gamer",
-          "published": "Thu, 08 Oct 2026 07:00:00 GMT",
-          "description": "Sword Master Story tier list of every character [October 2026]&nbsp;&nbsp;Pocket Gamer"
-        }
-      ],
       "wemade": [
         {
           "title": "9천200억 위메이드 매각, 중국계 인수 12월로 연기 - 연합뉴스",
@@ -993,7 +963,7 @@
           "title": "위메이드, 중국 자본 매각 일정 두 달 연기 - 조선일보",
           "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOenJsMDB0a2tlLWJxVm9YaEpSUzlGWUZObEp6VmFPUHYxUXZqallkekthTk1TcHdYbXJCcDJYb29RS2hNY2dzeUxDdWNpOUVObWJrXzhmcndxanVTZ29Ed1VENXFINGxNTktpbWlXcE43bDZkZERxd05YaWxyNjVCcnVJWQ?oc=5",
           "source": "조선일보",
-          "published": "Wed, 14 Oct 2026 10:33:00 GMT",
+          "published": "Wed, 14 Oct 2026 10:41:17 GMT",
           "description": "위메이드, 중국 자본 매각 일정 두 달 연기&nbsp;&nbsp;조선일보"
         },
         {
@@ -1018,6 +988,29 @@
           "description": "위메이드 9200억 M&A ‘제동’… 中 킹넷 송금·선행조건 발목에 잔금 납입 연말로 늦춰져&nbsp;&nbsp;인더스트리뉴스"
         }
       ],
+      "lygl": [
+        {
+          "title": "WEMIX Fortifies Network Security with Upgraded CertiK Hunt Bug Bounty Program - PR Newswire",
+          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZ1lSZll5M3J2ZGZES2J4T2tJaVNEWUx2YndOQ3NUSWx5b1pyNFVDVy1fWVp4YVhjMEVicm9QbFA1SFRzZmNUdFBodVNvOXFlYm9tWGtMVFFfMFZPeWNsTDhxanFpT1BMekdScHFjanBheUNUemM0MURnMGRHN0E1MGlBNTJTZVBEVlJxVDNyMDRUOUVscDV4ZjNxRk9WS0I5STlNYVp3TGZaOGE4T1dLZzJtZFd4SExxN2hRSlRzVVFWWFBxbG9BUEg0by13dlhQX0FiWQ?oc=5",
+          "source": "PR Newswire",
+          "published": "Wed, 14 Oct 2026 04:54:00 GMT",
+          "description": "WEMIX Fortifies Network Security with Upgraded CertiK Hunt Bug Bounty Program&nbsp;&nbsp;PR Newswire"
+        },
+        {
+          "title": "Wemade Unveils New Assassin Class for Legend of YMIR’s First Anniversary - Enduins",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdkpzT2t4UlRoc05UcnV1dWEwYng2SmlEVkllQXlUTktiajVBY282T2tqU1h6Z05uTTQxZnJpd3Z5SkFIbUVxS05kVTdfeDR6LWNCQ1dLLTVXZFJMeGxhSkxqYXk2Y2NtOEdtNlBFUU1Pa0c5QVZzdi1feVZPamVNbEdrMzd0X0swTVRPdGxxRmlNdkczM1lZaXBBM1pwTUk0RHc?oc=5",
+          "source": "Enduins",
+          "published": "Tue, 13 Oct 2026 02:51:54 GMT",
+          "description": "Wemade Unveils New Assassin Class for Legend of YMIR’s First Anniversary&nbsp;&nbsp;Enduins"
+        },
+        {
+          "title": "Sword Master Story tier list of every character [October 2026] - Pocket Gamer",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9MSlNlT2JjYWlYX3diNWpnbzBEbUZOYVdHTTJFVG42ZGpkWUE1bWxsbG9pTjdLMG9nbUhyTzdNOWJpanJGVXpEdEN1QzFVSzVlejR3SmtxUlFXalBEakRtZEt1LU13MTg?oc=5",
+          "source": "Pocket Gamer",
+          "published": "Thu, 08 Oct 2026 07:00:00 GMT",
+          "description": "Sword Master Story tier list of every character [October 2026]&nbsp;&nbsp;Pocket Gamer"
+        }
+      ],
       "ncgl": [
         {
           "title": "The Crows Are Quiet Tonight | 1 Hour of Game of Thrones Inspired Music - YouTube",
@@ -1037,7 +1030,7 @@
           "title": "TETRARCH's Diamond Rowe to perform during the NFL's Sunday Night Football game - Lambgoat",
           "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQ0Q5MUxfNUlSUEpYYnh5TzlIY2x4SVhWODB6Y3N6YmFMYXpjWUxhVG5jb0VDbFR0cFFMQjUtb2w0akI2RzdOdzNoUkVCVUhuNTBJSGlEQUo2cW1ReGhXTnNPOW40UzZmQUlTeEl1NW43VlFPZ0E4a1g4VFltMVpCUHE0STJVY1oyc3BnSUtPVGFuQUpPYkN1TkppT21mb1dkV2o5VnhBdmVLRzdvYmc?oc=5",
           "source": "Lambgoat",
-          "published": "Sat, 10 Oct 2026 04:30:00 GMT",
+          "published": "Sat, 10 Oct 2026 07:00:00 GMT",
           "description": "TETRARCH's Diamond Rowe to perform during the NFL's Sunday Night Football game&nbsp;&nbsp;Lambgoat"
         },
         {
